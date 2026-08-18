@@ -2025,5 +2025,89 @@
         "cep": "99950000",
         "cidade": "Tapejara",
         "bairro": null
+    },
+    "04740020": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "04740020",
+        "cidade": "São Paulo",
+        "bairro": "Santo Amaro"
+    },
+    "06296220": {
+        "lat": -23.5325,
+        "lng": -46.79167,
+        "cep": "06296220",
+        "cidade": "Osasco",
+        "bairro": "Remédios"
+    },
+    "08011395": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "08011395",
+        "cidade": "São Paulo",
+        "bairro": "Vila São Silvestre (Zona Leste)"
+    },
+    "05119000": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "05119000",
+        "cidade": "São Paulo",
+        "bairro": "City América"
+    },
+    "05046001": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "05046001",
+        "cidade": "São Paulo",
+        "bairro": "Vila Romana"
+    },
+    "09181720": {
+        "lat": -23.66389,
+        "lng": -46.53833,
+        "cep": "09181720",
+        "cidade": "Santo André",
+        "bairro": "Vila Eldízia"
+    },
+    "03119040": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "03119040",
+        "cidade": "São Paulo",
+        "bairro": "Mooca"
+    },
+    "03976010": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "03976010",
+        "cidade": "São Paulo",
+        "bairro": "Jardim Sapopemba"
+    },
+    "03147100": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "03147100",
+        "cidade": "São Paulo",
+        "bairro": "Vila Bela"
+    },
+    "08664250": {
+        "lat": -23.5425,
+        "lng": -46.31083,
+        "cep": "08664250",
+        "cidade": "Suzano",
+        "bairro": "Jardim Carlos Cooper"
+    },
+    "02639000": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "02639000",
+        "cidade": "São Paulo",
+        "bairro": "Jardim Pedra Branca"
+    },
+    "01101000": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "01101000",
+        "cidade": "São Paulo",
+        "bairro": "Luz"
     }
 }

@@ -143,10 +143,7 @@ class MeasurementTool {
      */
     async medir() {
         if (!this.hubA || !this.hubB) {
-            throw new Error("Selecione os dois hubs (A e B) antes de medir.");
-        }
-        if (this.hubA.id === this.hubB.id) {
-            throw new Error("Os hubs A e B devem ser diferentes.");
+            throw new Error("Selecione o CD e o Parceiro antes de medir a rota.");
         }
 
         // Limpar medição anterior
@@ -201,7 +198,6 @@ class MeasurementTool {
         if (!this.hubA || !this.hubB || !this.isActive) {
             return "";
         }
-        // Os valores exibidos nos inputs de resultado serão usados
         const retaEl = document.getElementById("result-reta-value");
         const rotaEl = document.getElementById("result-rota-value");
         const tempoEl = document.getElementById("result-tempo-value");
@@ -210,12 +206,18 @@ class MeasurementTool {
         const rota = rotaEl ? rotaEl.textContent : "N/A";
         const tempo = tempoEl ? tempoEl.textContent : "N/A";
 
-        return `Medição de Rota\n` +
-               `De: ${this.hubA.nome} (${this.hubA.cidade} - ${this.hubA.uf})\n` +
-               `Até: ${this.hubB.nome} (${this.hubB.cidade} - ${this.hubB.uf})\n` +
-               `Linha reta: ${reta}\n` +
-               `Rota dirigida: ${rota}\n` +
-               `Tempo estimado: ${tempo}\n`;
+        const cd = this.hubA;
+        const partner = this.hubB;
+        const tipo = partner.tipo || "Parceiro";
+
+        return `Roteirização de Malha Logística Sabesp\n` +
+               `Centro de Distribuição (CD): ${cd.nome} (${cd.cidade} - ${cd.uf})\n` +
+               `Endereço CD: ${cd.endereco}\n` +
+               `Parceiro (${tipo}): ID ${partner.codigo} (${partner.cidade} - CEP ${partner.cep})\n` +
+               `Endereço Parceiro: ${partner.rua || "Não informado"}\n` +
+               `Rota por estrada: ${rota}\n` +
+               `Linha reta (geodésica): ${reta}\n` +
+               `Tempo de viagem estimado: ${tempo}\n`;
     }
 
 
@@ -244,40 +246,41 @@ class MeasurementTool {
     }
 
     _criarLabelPontoA() {
-        const hub = this.hubA;
+        const cd = this.hubA;
         const html = `
             <div class="point-label-card">
-                <div class="point-tag tag-a">PONTO A</div>
-                <div class="point-hub-name">${hub.nome}</div>
-                <div class="point-volume">Volume: ${formatarNumero(hub.volume)} pacotes</div>
+                <div class="point-tag tag-a">CD</div>
+                <div class="point-hub-name">${cd.nome}</div>
+                <div class="point-volume">${cd.cidade} - ${cd.uf}</div>
             </div>
         `;
-        this.pointLabelA = L.marker([hub.lat, hub.lng], {
+        this.pointLabelA = L.marker([cd.lat, cd.lng], {
             icon: L.divIcon({
                 className: "route-point-label",
                 html: html,
-                iconSize: [160, 70],
-                iconAnchor: [80, 90],
+                iconSize: [180, 70],
+                iconAnchor: [90, 90],
             }),
             interactive: false,
         }).addTo(this.map);
     }
 
     _criarLabelPontoB() {
-        const hub = this.hubB;
+        const partner = this.hubB;
+        const tipo = partner.tipo || "Parceiro";
         const html = `
             <div class="point-label-card">
-                <div class="point-tag tag-b">PONTO B</div>
-                <div class="point-hub-name">${hub.nome}</div>
-                <div class="point-volume">Volume: ${formatarNumero(hub.volume)} pacotes</div>
+                <div class="point-tag tag-b">${tipo.toUpperCase()}</div>
+                <div class="point-hub-name">ID: ${partner.codigo}</div>
+                <div class="point-volume">${partner.cidade} (CEP: ${partner.cep})</div>
             </div>
         `;
-        this.pointLabelB = L.marker([hub.lat, hub.lng], {
+        this.pointLabelB = L.marker([partner.lat, partner.lng], {
             icon: L.divIcon({
                 className: "route-point-label",
                 html: html,
-                iconSize: [160, 70],
-                iconAnchor: [80, -10],
+                iconSize: [180, 70],
+                iconAnchor: [90, -10],
             }),
             interactive: false,
         }).addTo(this.map);

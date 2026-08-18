@@ -1,136 +1,148 @@
 // Dados gerados automaticamente a partir do Excel consolidado
 
-const HUBS_DATA = [
-    {
-        "id": "D002",
-        "nome": "Materiais Gerais (Americana)",
-        "cidade": "Americana",
-        "uf": "SP",
-        "lat": -22.7388,
-        "lng": -47.3323,
-        "volume": 241890,
-        "movimentacoes": 888,
-        "tipo": "CD"
-    },
-    {
-        "id": "D019",
-        "nome": "Lapa",
-        "cidade": "Lapa",
-        "uf": "SP",
-        "lat": -23.5284,
-        "lng": -46.7025,
-        "volume": 5200957.475,
-        "movimentacoes": 1689,
-        "tipo": "CD"
-    },
-    {
-        "id": "D020",
-        "nome": "Mooca",
-        "cidade": "Mooca",
-        "uf": "SP",
-        "lat": -23.5593,
-        "lng": -46.6083,
-        "volume": 3236957.5259999996,
-        "movimentacoes": 1606,
-        "tipo": "CD"
-    },
+const CDS_DATA = [
     {
         "id": "D024",
         "nome": "ABV | Alto da Boa Vista",
-        "cidade": "Santo Amaro",
+        "endereco": "RUA ALBERTO HODGE, 247, ALTO DA BOA VISTA ,São Paulo ,04740-020",
+        "cidade": "SANTO AMARO",
         "uf": "SP",
-        "lat": -23.6335,
-        "lng": -46.6806,
+        "lat": -23.5475,
+        "lng": -46.63611,
         "volume": 18692192.826,
         "movimentacoes": 9385,
         "tipo": "CD"
     },
     {
-        "id": "D028",
-        "nome": "Pirituba",
-        "cidade": "Pirituba",
+        "id": "D094",
+        "nome": "Vila dos Remédios",
+        "endereco": "RUA PEDRO RISSATO, 221, VILA DOS REMÉDIOS ,Osasco ,06296-220",
+        "cidade": "VILA DOS REMEDIOS",
         "uf": "SP",
-        "lat": -23.493,
-        "lng": -46.723,
-        "volume": 9178747,
-        "movimentacoes": 7071,
+        "lat": -23.5325,
+        "lng": -46.79167,
+        "volume": 14110287.428,
+        "movimentacoes": 7091,
         "tipo": "CD"
     },
     {
         "id": "D029",
         "nome": "São Miguel Paulista",
-        "cidade": "São Miguel Paulista",
+        "endereco": "TRAVESSA LAMBERTO SILVESTRE, S/N, VILA SÃO SILVESTRE ,São Paulo ,08011-395",
+        "cidade": "SAO MIGUEL PAULISTA",
         "uf": "SP",
-        "lat": -23.4952,
-        "lng": -46.4388,
+        "lat": -23.5475,
+        "lng": -46.63611,
         "volume": 10060931.211,
         "movimentacoes": 3816,
         "tipo": "CD"
     },
     {
-        "id": "D030",
-        "nome": "Vila Prudente",
-        "cidade": "Vila Prudente",
+        "id": "D028",
+        "nome": "Pirituba",
+        "endereco": "AVENIDA DO ANASTÁCIO, 2445, PIRITUBA ,São Paulo ,05119-000",
+        "cidade": "PIRITUBA",
         "uf": "SP",
-        "lat": -23.5788,
-        "lng": -46.5922,
-        "volume": 1973574.2000000002,
-        "movimentacoes": 2378,
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "volume": 9178747,
+        "movimentacoes": 7071,
         "tipo": "CD"
     },
     {
-        "id": "D034",
-        "nome": "Guaraú",
-        "cidade": "Guaraú",
+        "id": "D019",
+        "nome": "Lapa",
+        "endereco": "RUA AURELIA, 1125, VILA ROMANA ,São Paulo ,05046-001",
+        "cidade": "LAPA",
         "uf": "SP",
-        "lat": -23.4357,
-        "lng": -46.6346,
-        "volume": 3378643,
-        "movimentacoes": 1001,
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "volume": 5200957.475,
+        "movimentacoes": 1689,
         "tipo": "CD"
     },
     {
         "id": "D035",
         "nome": "Santo André",
-        "cidade": "Santo André",
+        "endereco": "RUA JUQUIÁ, 50, JARDIM CRISTIANE ,Santo André ,09181-720",
+        "cidade": "SANTO ANDRE",
         "uf": "SP",
-        "lat": -23.6599,
-        "lng": -46.5298,
+        "lat": -23.66389,
+        "lng": -46.53833,
         "volume": 3467887.5,
         "movimentacoes": 2200,
         "tipo": "CD"
     },
     {
-        "id": "D040",
-        "nome": "Suzano",
-        "cidade": "Suzano",
+        "id": "D020",
+        "nome": "Mooca",
+        "endereco": "RUA SEBASTIÃO PRETO, 122, MOÓCA ,São Paulo ,03119-040",
+        "cidade": "MOOCA",
         "uf": "SP",
-        "lat": -23.5604,
-        "lng": -46.309,
-        "volume": 1726024.4000000001,
-        "movimentacoes": 4233,
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "volume": 3236957.5259999996,
+        "movimentacoes": 1606,
         "tipo": "CD"
     },
     {
         "id": "D075",
         "nome": "São Mateus",
-        "cidade": "São Mateus",
+        "endereco": "RUA NELSON DE OLIVEIRA, 50, JARDIM SAPOPEMBA ,São Paulo ,03976-010",
+        "cidade": "SAO MATEUS",
         "uf": "SP",
-        "lat": -23.6062,
-        "lng": -46.4678,
+        "lat": -23.5475,
+        "lng": -46.63611,
         "volume": 2366940.175,
         "movimentacoes": 2099,
         "tipo": "CD"
     },
     {
-        "id": "D094",
-        "nome": "Vila dos Remédios",
-        "cidade": "Vila dos Remédios",
+        "id": "D030",
+        "nome": "Vila Prudente",
+        "endereco": "RUA PARAMU, 716, VILA BELA ,São Paulo ,03147-100",
+        "cidade": "VILA PRUDENTE",
         "uf": "SP",
-        "lat": -23.523,
-        "lng": -46.7554,
-        "volume": 14110287.428,
-        "movimentacoes": 7091,
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "volume": 1973574.2000000002,
+        "movimentacoes": 2378,
+        "tipo": "CD"
+    },
+    {
+        "id": "D040",
+        "nome": "Suzano",
+        "endereco": "RUA LUIZ BIANCONI, 91, JARDIM CARLOS COOPER ,Suzano ,08664-250",
+        "cidade": "SUZANO",
+        "uf": "SP",
+        "lat": -23.5425,
+        "lng": -46.31083,
+        "volume": 1726024.4000000001,
+        "movimentacoes": 4233,
+        "tipo": "CD"
+    },
+    {
+        "id": "D034",
+        "nome": "Guaraú",
+        "endereco": "ESTRADA SANTA INÊS, KM 2, JARDIM PEDRA BRANCA ,São Paulo ,02639-000",
+        "cidade": "GUARAU",
+        "uf": "SP",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "volume": 3378643,
+        "movimentacoes": 1001,
+        "tipo": "CD"
+    },
+    {
+        "id": "D002",
+        "nome": "CD D002",
+        "endereco": "AVENIDA SANTOS DUMONT, 555, PONTE PEQUENA ,São Paulo ,01101-000",
+        "cidade": "São Paulo",
+        "uf": "SP",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "volume": 241890,
+        "movimentacoes": 888,
         "tipo": "CD"
     }
 ];
@@ -144,7 +156,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.7639458,
         "lng": -46.6869678,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 5477,
         "movimentacoes": 3
     },
@@ -156,7 +168,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 1465574,
         "movimentacoes": 684
     },
@@ -168,7 +180,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.69389,
         "lng": -46.565,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 1298862.88,
         "movimentacoes": 1069
     },
@@ -180,7 +192,7 @@ const PARCEIROS_DATA = [
         "rua": "EST.EREADOR NORBERTO VIEIRA DIN 380",
         "lat": -23.64889,
         "lng": -46.85222,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 9906,
         "movimentacoes": 31
     },
@@ -192,7 +204,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA MARIA APARECIDA CARDIA 224",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 65361,
         "movimentacoes": 189
     },
@@ -204,7 +216,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA BORBA PEREIRA, 121 - ",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 844470,
         "movimentacoes": 1115
     },
@@ -216,7 +228,7 @@ const PARCEIROS_DATA = [
         "rua": "Av. Afonso Monteiro da Cruz, 579 ",
         "lat": -23.69389,
         "lng": -46.565,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 1108989.7,
         "movimentacoes": 1066
     },
@@ -228,7 +240,7 @@ const PARCEIROS_DATA = [
         "rua": "R. José Solana, 1000 - Cidade Dutra, São Paulo - SP, 04829-280",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 894359.41,
         "movimentacoes": 707
     },
@@ -240,7 +252,7 @@ const PARCEIROS_DATA = [
         "rua": "RODOVIA ARMANDO SALES 2375",
         "lat": -23.71694,
         "lng": -46.84917,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 1029085.73,
         "movimentacoes": 918
     },
@@ -252,7 +264,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA NAARA LEAO 661",
         "lat": -22.9073714,
         "lng": -47.2174083,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 6109,
         "movimentacoes": 10
     },
@@ -264,7 +276,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA PAULO DI FAVARI 60",
         "lat": -23.69389,
         "lng": -46.565,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 54508,
         "movimentacoes": 29
     },
@@ -276,7 +288,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA AVANHANDAVA 56",
         "lat": -23.66389,
         "lng": -46.53833,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 64667.932,
         "movimentacoes": 16
     },
@@ -288,7 +300,7 @@ const PARCEIROS_DATA = [
         "rua": "RODOVIA ARMANDO SALLES 2375",
         "lat": -23.71694,
         "lng": -46.84917,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor/Canteiro",
         "volume": 10,
         "movimentacoes": 6
     },
@@ -300,7 +312,7 @@ const PARCEIROS_DATA = [
         "rua": "Rua Costa Carvalho 300",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 25,
         "movimentacoes": 1
     },
@@ -312,7 +324,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 35604,
         "movimentacoes": 8
     },
@@ -324,7 +336,7 @@ const PARCEIROS_DATA = [
         "rua": "ESTRADA DE SANTO AMARO, 98 ",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 1250175,
         "movimentacoes": 697
     },
@@ -336,7 +348,7 @@ const PARCEIROS_DATA = [
         "rua": "Avenida Otavio Braga de Mesquita, 264",
         "lat": -23.46278,
         "lng": -46.53333,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 461772.61,
         "movimentacoes": 680
     },
@@ -348,7 +360,7 @@ const PARCEIROS_DATA = [
         "rua": "AV. Água Chata, 2320 ",
         "lat": -23.46278,
         "lng": -46.53333,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 523340.627,
         "movimentacoes": 474
     },
@@ -360,7 +372,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA AGRIMENSOR SUGAYA, 32",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 1272292.3499999999,
         "movimentacoes": 1201
     },
@@ -372,7 +384,7 @@ const PARCEIROS_DATA = [
         "rua": "ESTRADA SANTA MONICA, 800",
         "lat": -23.5425,
         "lng": -46.31083,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 702867.2999999999,
         "movimentacoes": 1094
     },
@@ -384,7 +396,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA FLOR DE LIS, 465",
         "lat": -23.5425,
         "lng": -46.31083,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 883665.89,
         "movimentacoes": 1059
     },
@@ -396,7 +408,7 @@ const PARCEIROS_DATA = [
         "rua": "NORUEGA 399",
         "lat": -23.2120785,
         "lng": -45.8855585,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 266,
         "movimentacoes": 8
     },
@@ -408,7 +420,7 @@ const PARCEIROS_DATA = [
         "rua": "Rua Lótus, 205",
         "lat": -23.60389,
         "lng": -46.91917,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 2218595.78,
         "movimentacoes": 1423
     },
@@ -420,7 +432,7 @@ const PARCEIROS_DATA = [
         "rua": "GBBE - RUA MANOEL GAJO, 1254 ",
         "lat": -23.85444,
         "lng": -46.13861,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 3164,
         "movimentacoes": 45
     },
@@ -432,7 +444,7 @@ const PARCEIROS_DATA = [
         "rua": "Rua Guilherme Tell, 130 - Suiço, São Bernardo do Campo - SP, 09663-010",
         "lat": -23.69389,
         "lng": -46.565,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 29420,
         "movimentacoes": 6
     },
@@ -444,9 +456,9 @@ const PARCEIROS_DATA = [
         "rua": "Av. Alexios Jafet, 99 ",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
-        "volume": 960192.213,
-        "movimentacoes": 879
+        "tipo": "Canteiro",
+        "volume": 948417.213,
+        "movimentacoes": 878
     },
     {
         "id": "P_4600060683_12242000",
@@ -456,7 +468,7 @@ const PARCEIROS_DATA = [
         "rua": "AVENIDA SÃO JOÃO 2375",
         "lat": -23.17944,
         "lng": -45.88694,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 3389,
         "movimentacoes": 32
     },
@@ -468,7 +480,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA MAJOR BENJAMIM COELHO, 39",
         "lat": -21.46778,
         "lng": -47.00472,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 3017,
         "movimentacoes": 14
     },
@@ -480,7 +492,7 @@ const PARCEIROS_DATA = [
         "rua": "AV ARGEMIRO ROCHA DE MORAES 322",
         "lat": -22.9527,
         "lng": -46.54418,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 9209,
         "movimentacoes": 56
     },
@@ -492,7 +504,7 @@ const PARCEIROS_DATA = [
         "rua": "AVENIDA ROUXINOL 55",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor/Canteiro",
         "volume": 2160,
         "movimentacoes": 4
     },
@@ -504,7 +516,7 @@ const PARCEIROS_DATA = [
         "rua": "Rua Baetinga, 51",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 226,
         "movimentacoes": 11
     },
@@ -516,7 +528,7 @@ const PARCEIROS_DATA = [
         "rua": "AVENIDA ROUXINOL 55",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 540,
         "movimentacoes": 1
     },
@@ -528,7 +540,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA DAS ROSAS 74",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 2049114.25,
         "movimentacoes": 1063
     },
@@ -540,7 +552,7 @@ const PARCEIROS_DATA = [
         "rua": "R ANTONIO DO CAMPO 191",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 142577,
         "movimentacoes": 42
     },
@@ -552,7 +564,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA DOUTOR LUIZ MIGLIANO 1986",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor/Canteiro",
         "volume": 988,
         "movimentacoes": 4
     },
@@ -564,7 +576,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor/Canteiro",
         "volume": 8,
         "movimentacoes": 2
     },
@@ -576,7 +588,7 @@ const PARCEIROS_DATA = [
         "rua": "Rua do Cabral , 137 - Jardim Caravelas",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 22041,
         "movimentacoes": 60
     },
@@ -588,7 +600,7 @@ const PARCEIROS_DATA = [
         "rua": "AVENIDA ORDEM E PROGRESSO 157",
         "lat": -23.99306,
         "lng": -46.25639,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 1960,
         "movimentacoes": 6
     },
@@ -600,7 +612,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA BARTOLOME CARDUCHO 335",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 5352,
         "movimentacoes": 18
     },
@@ -612,7 +624,7 @@ const PARCEIROS_DATA = [
         "rua": "GJAP - RUA AUREO GUENAGA DE CASTRO, 521 ",
         "lat": -23.99306,
         "lng": -46.25639,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 21312,
         "movimentacoes": 10
     },
@@ -624,7 +636,7 @@ const PARCEIROS_DATA = [
         "rua": "R. Hugo D'Antola, 46",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 80117,
         "movimentacoes": 199
     },
@@ -636,7 +648,7 @@ const PARCEIROS_DATA = [
         "rua": "Av. Eng. Caetano Alvares, 431 ",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 826608.487,
         "movimentacoes": 1102
     },
@@ -648,7 +660,7 @@ const PARCEIROS_DATA = [
         "rua": "Rua Franciso Pignatari, 640",
         "lat": -23.52272,
         "lng": -46.835,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 1524071.39,
         "movimentacoes": 1164
     },
@@ -660,7 +672,7 @@ const PARCEIROS_DATA = [
         "rua": "Av Nisshimbo do Brasil nº 2096",
         "lat": -23.59167,
         "lng": -48.05306,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 103,
         "movimentacoes": 14
     },
@@ -672,7 +684,7 @@ const PARCEIROS_DATA = [
         "rua": "Rua Antônio Polaczek, 60 ",
         "lat": -24.4875,
         "lng": -47.84361,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 10,
         "movimentacoes": 4
     },
@@ -684,7 +696,7 @@ const PARCEIROS_DATA = [
         "rua": "Rua José Caetano de Lima, nº 361 ",
         "lat": -20.7725,
         "lng": -49.71417,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 217,
         "movimentacoes": 3
     },
@@ -696,7 +708,7 @@ const PARCEIROS_DATA = [
         "rua": "AV PEDROSO DE MORAIS 631",
         "lat": -23.5624825,
         "lng": -46.6924149,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 1456485.2249999999,
         "movimentacoes": 1119
     },
@@ -708,7 +720,7 @@ const PARCEIROS_DATA = [
         "rua": "Rua Cel Lodovido Homem de Gois 168",
         "lat": -23.48972,
         "lng": -48.41278,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 109,
         "movimentacoes": 7
     },
@@ -720,7 +732,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA SERAFIM DIAS MACHADO, 548",
         "lat": -23.1768244,
         "lng": -45.8820649,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 11,
         "movimentacoes": 1
     },
@@ -732,7 +744,7 @@ const PARCEIROS_DATA = [
         "rua": "AVENIDA BENEDITO ALVES BARBOSA SOBRINHO, 10 ",
         "lat": -23.20554,
         "lng": -46.7838,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 225,
         "movimentacoes": 29
     },
@@ -744,7 +756,7 @@ const PARCEIROS_DATA = [
         "rua": "Estrada dos Casas, 2.775 - Bairro dos Casas - SBC/SP ",
         "lat": -23.69389,
         "lng": -46.565,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 3954,
         "movimentacoes": 5
     },
@@ -756,7 +768,7 @@ const PARCEIROS_DATA = [
         "rua": "Rua Aroldo Crepalti nº 70",
         "lat": -24.00583,
         "lng": -48.34944,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 154,
         "movimentacoes": 3
     },
@@ -768,7 +780,7 @@ const PARCEIROS_DATA = [
         "rua": "9651 - RUA JÃO MENDES JUNIOR, 50 ",
         "lat": -24.00583,
         "lng": -46.40278,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 654,
         "movimentacoes": 7
     },
@@ -780,7 +792,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA CARDEAL ARCOVERDE 2365",
         "lat": -23.5546689,
         "lng": -46.6767559,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 5028,
         "movimentacoes": 41
     },
@@ -792,7 +804,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA LEONEL GUARNIERI 300",
         "lat": -23.69389,
         "lng": -46.565,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 3180,
         "movimentacoes": 4
     },
@@ -804,7 +816,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA AVANHANDAVA S/N",
         "lat": -23.66389,
         "lng": -46.53833,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 9368,
         "movimentacoes": 20
     },
@@ -816,7 +828,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA CLAUDIO MANOEL 1125",
         "lat": -19.92083,
         "lng": -43.93778,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor/Canteiro",
         "volume": 10000,
         "movimentacoes": 6
     },
@@ -828,7 +840,7 @@ const PARCEIROS_DATA = [
         "rua": "Av. Manoel Monteiro de Araújo 0",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 4000,
         "movimentacoes": 1
     },
@@ -840,7 +852,7 @@ const PARCEIROS_DATA = [
         "rua": "Américo Falcão N: 195, Vila Pirajussara",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 11141,
         "movimentacoes": 15
     },
@@ -852,7 +864,7 @@ const PARCEIROS_DATA = [
         "rua": "Américo Falcão N: 195, Vila Pirajussara",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 15225,
         "movimentacoes": 11
     },
@@ -864,7 +876,7 @@ const PARCEIROS_DATA = [
         "rua": "Rua Colégio Pio XII 58 Fazenda Morumbi",
         "lat": -23.6214874,
         "lng": -46.7153396,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 10529,
         "movimentacoes": 60
     },
@@ -876,7 +888,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA GRAUÇÁ, 77",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 32388,
         "movimentacoes": 12
     },
@@ -888,7 +900,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.52272,
         "lng": -46.835,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 111464,
         "movimentacoes": 271
     },
@@ -900,7 +912,7 @@ const PARCEIROS_DATA = [
         "rua": "AVENIDA FRANCISCO MATARAZZO 0",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 200,
         "movimentacoes": 1
     },
@@ -912,7 +924,7 @@ const PARCEIROS_DATA = [
         "rua": "Rua Presidente Médici, 1588",
         "lat": -23.5325,
         "lng": -46.79167,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 11525,
         "movimentacoes": 24
     },
@@ -924,7 +936,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA NOVO HAMBURGO, 249",
         "lat": -23.52272,
         "lng": -46.835,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 19886,
         "movimentacoes": 22
     },
@@ -936,7 +948,7 @@ const PARCEIROS_DATA = [
         "rua": "Rua Angela Maria Cardoso, 152 ",
         "lat": -23.44417,
         "lng": -46.91778,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 4315,
         "movimentacoes": 13
     },
@@ -948,7 +960,7 @@ const PARCEIROS_DATA = [
         "rua": "AV. AGUIA DE HAIA, 3463",
         "lat": -23.5097072,
         "lng": -46.4775691,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 904312.63,
         "movimentacoes": 1308
     },
@@ -960,7 +972,7 @@ const PARCEIROS_DATA = [
         "rua": "Av. Raimundo Pereira de Magalhães, 12011B ",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 10057.994999999999,
         "movimentacoes": 9
     },
@@ -972,7 +984,7 @@ const PARCEIROS_DATA = [
         "rua": "MAJOR PALADINO 300",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 109740,
         "movimentacoes": 87
     },
@@ -984,7 +996,7 @@ const PARCEIROS_DATA = [
         "rua": "ESTRADA DO JAGUARE 98",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor/Canteiro",
         "volume": 36,
         "movimentacoes": 7
     },
@@ -996,7 +1008,7 @@ const PARCEIROS_DATA = [
         "rua": "Rua Tucanos, 409",
         "lat": -23.52272,
         "lng": -46.835,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 120000,
         "movimentacoes": 4
     },
@@ -1008,7 +1020,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA MAJOR WALTER CARLSON, 596",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 266,
         "movimentacoes": 30
     },
@@ -1020,7 +1032,7 @@ const PARCEIROS_DATA = [
         "rua": "AVENIDA LIDER,  3241",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 39151,
         "movimentacoes": 109
     },
@@ -1032,7 +1044,7 @@ const PARCEIROS_DATA = [
         "rua": "AV. BARÃO DE MAUÁ, 3765 ",
         "lat": -23.66389,
         "lng": -46.53833,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 689520.55,
         "movimentacoes": 811
     },
@@ -1044,7 +1056,7 @@ const PARCEIROS_DATA = [
         "rua": "EZEQUIEL FREIRE 55",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 82,
         "movimentacoes": 4
     },
@@ -1056,7 +1068,7 @@ const PARCEIROS_DATA = [
         "rua": "Av. Engenheiro Luís Carlos Berrin 0",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 3,
         "movimentacoes": 1
     },
@@ -1068,7 +1080,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.17944,
         "lng": -45.88694,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 556766.5,
         "movimentacoes": 567
     },
@@ -1080,7 +1092,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA AVANHANDAVA 56",
         "lat": -23.66389,
         "lng": -46.53833,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 65539.394,
         "movimentacoes": 46
     },
@@ -1092,7 +1104,7 @@ const PARCEIROS_DATA = [
         "rua": "Av. Eng. Caetano Alvares, 431 ",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 250343,
         "movimentacoes": 456
     },
@@ -1104,7 +1116,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA NOVO HAMBURGO, 249",
         "lat": -23.52272,
         "lng": -46.835,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 12089,
         "movimentacoes": 4
     },
@@ -1116,7 +1128,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 3714,
         "movimentacoes": 9
     },
@@ -1128,7 +1140,7 @@ const PARCEIROS_DATA = [
         "rua": "R. BARTOLOME CARDUCHO, 335 ",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 3029,
         "movimentacoes": 37
     },
@@ -1140,7 +1152,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA JOSE SILVA DE AZEVEDO NETO 200",
         "lat": -22.99069,
         "lng": -43.3607904,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 1064,
         "movimentacoes": 8
     },
@@ -1152,7 +1164,7 @@ const PARCEIROS_DATA = [
         "rua": "JURUPARI 729",
         "lat": -23.6417939,
         "lng": -46.6531635,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 39977,
         "movimentacoes": 92
     },
@@ -1164,7 +1176,7 @@ const PARCEIROS_DATA = [
         "rua": "R. Alvarenga Peixoto, 110",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 27520,
         "movimentacoes": 79
     },
@@ -1176,7 +1188,7 @@ const PARCEIROS_DATA = [
         "rua": "Av. Geraldo Nogueira Silva, 282 ",
         "lat": -23.62028,
         "lng": -45.41306,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 63,
         "movimentacoes": 9
     },
@@ -1188,7 +1200,7 @@ const PARCEIROS_DATA = [
         "rua": "GCUB - RUA FRANCISCO CUNHA, 427 ",
         "lat": -23.96083,
         "lng": -46.33361,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 4742,
         "movimentacoes": 35
     },
@@ -1200,7 +1212,7 @@ const PARCEIROS_DATA = [
         "rua": "Av. José Medaglia Neto, 2166",
         "lat": -23.09861,
         "lng": -48.92583,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 359,
         "movimentacoes": 7
     },
@@ -1212,7 +1224,7 @@ const PARCEIROS_DATA = [
         "rua": "Av. Hemiterio Vicente, s/n ",
         "lat": -23.76,
         "lng": -45.40972,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 38,
         "movimentacoes": 6
     },
@@ -1224,7 +1236,7 @@ const PARCEIROS_DATA = [
         "rua": "Av Carlos Rios n° 913 (Barracão) e n°901 (terreno)",
         "lat": -22.89889,
         "lng": -49.6325,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 356,
         "movimentacoes": 7
     },
@@ -1236,7 +1248,7 @@ const PARCEIROS_DATA = [
         "rua": "Av capitão Constâncio n 368 ",
         "lat": -23.1768244,
         "lng": -45.8820649,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 2155,
         "movimentacoes": 11
     },
@@ -1248,7 +1260,7 @@ const PARCEIROS_DATA = [
         "rua": "Avenida Donato Flores 111 ",
         "lat": -23.35556,
         "lng": -47.85694,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 5502,
         "movimentacoes": 2
     },
@@ -1260,7 +1272,7 @@ const PARCEIROS_DATA = [
         "rua": "Avenida Virgílio Franceschi (Norte), 234 ",
         "lat": -22.1,
         "lng": -48.3175,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 7240,
         "movimentacoes": 8
     },
@@ -1272,7 +1284,7 @@ const PARCEIROS_DATA = [
         "rua": "ANTONIO POLACZEK 62",
         "lat": -24.50944,
         "lng": -48.8425,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 1700,
         "movimentacoes": 8
     },
@@ -1284,7 +1296,7 @@ const PARCEIROS_DATA = [
         "rua": "AVENIDA ANGELICA 2503",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor/Canteiro",
         "volume": 520,
         "movimentacoes": 6
     },
@@ -1296,7 +1308,7 @@ const PARCEIROS_DATA = [
         "rua": "Avenida Barão de Mauá, 3876",
         "lat": -23.66778,
         "lng": -46.46139,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 29156,
         "movimentacoes": 28
     },
@@ -1308,7 +1320,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA BARÃO DO TRIUNFO 550",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 2800,
         "movimentacoes": 1
     },
@@ -1320,7 +1332,7 @@ const PARCEIROS_DATA = [
         "rua": "AV. AGUIA DE HAIA, 3463 ",
         "lat": -23.5097072,
         "lng": -46.4775691,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 478554,
         "movimentacoes": 298
     },
@@ -1332,7 +1344,7 @@ const PARCEIROS_DATA = [
         "rua": "ESTRADA SANTA MONICA, 800",
         "lat": -23.5425,
         "lng": -46.31083,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 710558.2660000001,
         "movimentacoes": 449
     },
@@ -1344,7 +1356,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA AGRIMENSOR SUGAYA, 32",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 517498,
         "movimentacoes": 306
     },
@@ -1356,7 +1368,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA ENSEADA DAS GAROUPAS, 67B",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 13500,
         "movimentacoes": 3
     },
@@ -1368,7 +1380,7 @@ const PARCEIROS_DATA = [
         "rua": "Rua Antônio Francine, 313",
         "lat": -23.66778,
         "lng": -46.46139,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 66474,
         "movimentacoes": 244
     },
@@ -1380,7 +1392,7 @@ const PARCEIROS_DATA = [
         "rua": "Estrada Municipal Manoel de Jesus, 324 ",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 7451,
         "movimentacoes": 21
     },
@@ -1392,7 +1404,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA EMILIANO DI CAVALCANTE, 450",
         "lat": -20.53861,
         "lng": -47.40083,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 690,
         "movimentacoes": 4
     },
@@ -1404,7 +1416,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA AVANHANDAVA 56",
         "lat": -23.66389,
         "lng": -46.53833,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 67650,
         "movimentacoes": 12
     },
@@ -1416,7 +1428,7 @@ const PARCEIROS_DATA = [
         "rua": "AV TRINDADE 254",
         "lat": -23.51056,
         "lng": -46.87611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 1500,
         "movimentacoes": 3
     },
@@ -1428,7 +1440,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 5,
         "movimentacoes": 1
     },
@@ -1440,7 +1452,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA MINISTRO NELSON HUNGRIA 239",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 3232,
         "movimentacoes": 39
     },
@@ -1452,7 +1464,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 13878,
         "movimentacoes": 11
     },
@@ -1464,7 +1476,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.51056,
         "lng": -46.87611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 104340,
         "movimentacoes": 137
     },
@@ -1476,7 +1488,7 @@ const PARCEIROS_DATA = [
         "rua": "Rua Ipacaetá, 777",
         "lat": -23.46278,
         "lng": -46.53333,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 77474,
         "movimentacoes": 111
     },
@@ -1488,7 +1500,7 @@ const PARCEIROS_DATA = [
         "rua": "Rua Argemiro Rocha de Moraes, 322",
         "lat": -22.9527,
         "lng": -46.54418,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 34640,
         "movimentacoes": 100
     },
@@ -1500,7 +1512,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor/Canteiro",
         "volume": 4100,
         "movimentacoes": 26
     },
@@ -1512,7 +1524,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA VERBO DIVINO 2001",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor/Canteiro",
         "volume": 200,
         "movimentacoes": 2
     },
@@ -1524,7 +1536,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.46278,
         "lng": -46.53333,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor/Canteiro",
         "volume": 8,
         "movimentacoes": 4
     },
@@ -1536,7 +1548,7 @@ const PARCEIROS_DATA = [
         "rua": "Rodovia Gladys Bernardes Minhoto nº 416",
         "lat": -23.59167,
         "lng": -48.05306,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 50,
         "movimentacoes": 1
     },
@@ -1548,7 +1560,7 @@ const PARCEIROS_DATA = [
         "rua": "Av Carvalho Pinto,1705 ",
         "lat": -24.70806,
         "lng": -47.55528,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 141,
         "movimentacoes": 5
     },
@@ -1560,7 +1572,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 1469577,
         "movimentacoes": 635
     },
@@ -1572,7 +1584,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 459,
         "movimentacoes": 15
     },
@@ -1584,7 +1596,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 9002,
         "movimentacoes": 4
     },
@@ -1596,7 +1608,7 @@ const PARCEIROS_DATA = [
         "rua": "Rua: Angelo Franchini, 85",
         "lat": -23.66389,
         "lng": -46.53833,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 23058,
         "movimentacoes": 61
     },
@@ -1608,7 +1620,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA AVANHANDAVA 56",
         "lat": -23.66389,
         "lng": -46.53833,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 1538,
         "movimentacoes": 18
     },
@@ -1620,7 +1632,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor/Canteiro",
         "volume": 4,
         "movimentacoes": 2
     },
@@ -1632,7 +1644,7 @@ const PARCEIROS_DATA = [
         "rua": "AVENIDA ORDEM E PROGRESSO 157",
         "lat": -23.99306,
         "lng": -46.25639,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor/Canteiro",
         "volume": 8,
         "movimentacoes": 2
     },
@@ -1644,7 +1656,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 47,
         "movimentacoes": 8
     },
@@ -1656,7 +1668,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.66389,
         "lng": -46.53833,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 2700,
         "movimentacoes": 6
     },
@@ -1668,7 +1680,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 54815,
         "movimentacoes": 56
     },
@@ -1680,7 +1692,7 @@ const PARCEIROS_DATA = [
         "rua": "Rua Manuel Quirino de Mattos, 1725",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 26894,
         "movimentacoes": 120
     },
@@ -1692,7 +1704,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 17192,
         "movimentacoes": 5
     },
@@ -1704,7 +1716,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 1000,
         "movimentacoes": 1
     },
@@ -1716,7 +1728,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 3305.9,
         "movimentacoes": 11
     },
@@ -1728,7 +1740,7 @@ const PARCEIROS_DATA = [
         "rua": "Rua das Municipalidades, 20",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 27891,
         "movimentacoes": 127
     },
@@ -1740,7 +1752,7 @@ const PARCEIROS_DATA = [
         "rua": "AVENIDA ORDEM E PROGRESSO 157",
         "lat": -23.99306,
         "lng": -46.25639,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor/Canteiro",
         "volume": 4020,
         "movimentacoes": 4
     },
@@ -1752,7 +1764,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 25,
         "movimentacoes": 2
     },
@@ -1764,7 +1776,7 @@ const PARCEIROS_DATA = [
         "rua": "R. Ângelo Benetti, 402",
         "lat": -22.41444,
         "lng": -49.40389,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 79,
         "movimentacoes": 2
     },
@@ -1776,7 +1788,7 @@ const PARCEIROS_DATA = [
         "rua": "AVENIDA PEDROSO DE MORAIS 631",
         "lat": -23.5624825,
         "lng": -46.6924149,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor/Canteiro",
         "volume": 20,
         "movimentacoes": 2
     },
@@ -1788,7 +1800,7 @@ const PARCEIROS_DATA = [
         "rua": "Rua Francisco Pegorer Neto, 312",
         "lat": -22.89889,
         "lng": -49.6325,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 8,
         "movimentacoes": 4
     },
@@ -1800,7 +1812,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 921,
         "movimentacoes": 6
     },
@@ -1812,7 +1824,7 @@ const PARCEIROS_DATA = [
         "rua": "Sítio Dádiva - Google Maps Ac. Pref. Livo Tagliassachi, Araçariguama - SP, 18147-000",
         "lat": -23.43861,
         "lng": -47.06139,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 1,
         "movimentacoes": 1
     },
@@ -1824,7 +1836,7 @@ const PARCEIROS_DATA = [
         "rua": "R. Pérola Byington, 52",
         "lat": -23.96306,
         "lng": -46.39194,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 43,
         "movimentacoes": 5
     },
@@ -1836,7 +1848,7 @@ const PARCEIROS_DATA = [
         "rua": "VENIDA MARCOS PENTEADO DE ULHO 5100",
         "lat": -23.44417,
         "lng": -46.91778,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 36,
         "movimentacoes": 2
     },
@@ -1848,7 +1860,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA CAPITÃO MILITAO 215",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 23000,
         "movimentacoes": 4
     },
@@ -1860,7 +1872,7 @@ const PARCEIROS_DATA = [
         "rua": "Vereador Carlos Roberto de Paul 280",
         "lat": -24.74111,
         "lng": -47.54,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 3,
         "movimentacoes": 2
     },
@@ -1872,7 +1884,7 @@ const PARCEIROS_DATA = [
         "rua": "ALAMEDA NOTHMANN 526",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Canteiro",
         "volume": 340,
         "movimentacoes": 2
     },
@@ -1884,7 +1896,7 @@ const PARCEIROS_DATA = [
         "rua": "AV. DR. ISMAEL ALONSO Y ALONS 6.005",
         "lat": -20.53861,
         "lng": -47.40083,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 192378,
         "movimentacoes": 52
     },
@@ -1896,7 +1908,7 @@ const PARCEIROS_DATA = [
         "rua": "AVENIDA ARTHUR COSTA FILHO 937",
         "lat": -23.62028,
         "lng": -45.41306,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 2296582,
         "movimentacoes": 109
     },
@@ -1908,7 +1920,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -26.30444,
         "lng": -48.84556,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 36770,
         "movimentacoes": 78
     },
@@ -1920,7 +1932,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 324893,
         "movimentacoes": 194
     },
@@ -1932,7 +1944,7 @@ const PARCEIROS_DATA = [
         "rua": "AVENIDA D PEDRO I 10",
         "lat": -23.74417,
         "lng": -46.39833,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 90112,
         "movimentacoes": 53
     },
@@ -1944,7 +1956,7 @@ const PARCEIROS_DATA = [
         "rua": "AV. TREZE DE MAIO 23",
         "lat": -22.90642,
         "lng": -43.18223,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 177157,
         "movimentacoes": 161
     },
@@ -1956,7 +1968,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA SOLEDADE 160",
         "lat": -23.46278,
         "lng": -46.53333,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 388000,
         "movimentacoes": 17
     },
@@ -1968,7 +1980,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA BELGRADO 270",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 53200,
         "movimentacoes": 11
     },
@@ -1980,7 +1992,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA AURIVERDE 1455",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 10680,
         "movimentacoes": 7
     },
@@ -1992,7 +2004,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -29.70167,
         "lng": -51.24194,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 15256,
         "movimentacoes": 1044
     },
@@ -2004,7 +2016,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.02639,
         "lng": -45.55528,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 19786030.0,
         "movimentacoes": 1555
     },
@@ -2016,7 +2028,7 @@ const PARCEIROS_DATA = [
         "rua": "R GAL SOUSA NETO S/N",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 7345680,
         "movimentacoes": 415
     },
@@ -2028,7 +2040,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 60171,
         "movimentacoes": 39
     },
@@ -2040,7 +2052,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA BARTOLOMEU FEIO 86",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 1816,
         "movimentacoes": 32
     },
@@ -2052,7 +2064,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA SEBASTIAO FRANCISCO DA SILV 166",
         "lat": -23.62028,
         "lng": -45.41306,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 11211,
         "movimentacoes": 495
     },
@@ -2064,7 +2076,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -20.99139,
         "lng": -47.65861,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 22429,
         "movimentacoes": 594
     },
@@ -2076,7 +2088,7 @@ const PARCEIROS_DATA = [
         "rua": "R MILTON SOARES S/N",
         "lat": -23.5757023,
         "lng": -46.7614661,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 13150,
         "movimentacoes": 508
     },
@@ -2088,7 +2100,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.5186762,
         "lng": -46.583529,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 18,
         "movimentacoes": 16
     },
@@ -2100,7 +2112,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 2553,
         "movimentacoes": 182
     },
@@ -2112,7 +2124,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.52278,
         "lng": -46.18833,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 7278,
         "movimentacoes": 206
     },
@@ -2124,7 +2136,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 14134,
         "movimentacoes": 61
     },
@@ -2136,7 +2148,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.00583,
         "lng": -46.83889,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 2800,
         "movimentacoes": 6
     },
@@ -2148,7 +2160,7 @@ const PARCEIROS_DATA = [
         "rua": "ESTRADA DA SERVIDAO 5 5",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 143459,
         "movimentacoes": 42
     },
@@ -2160,7 +2172,7 @@ const PARCEIROS_DATA = [
         "rua": "Rua Coronel Brasilio Fonseca 35",
         "lat": -23.415,
         "lng": -46.035,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 22664,
         "movimentacoes": 177
     },
@@ -2172,7 +2184,7 @@ const PARCEIROS_DATA = [
         "rua": "R ISABELA 335",
         "lat": -22.665,
         "lng": -45.00944,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 891,
         "movimentacoes": 43
     },
@@ -2184,7 +2196,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA MARINO CAMURCA 30",
         "lat": -23.52917,
         "lng": -47.13528,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 13,
         "movimentacoes": 6
     },
@@ -2196,7 +2208,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.1576842,
         "lng": -46.9500033,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 9,
         "movimentacoes": 5
     },
@@ -2208,7 +2220,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.60389,
         "lng": -46.91917,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 18117,
         "movimentacoes": 52
     },
@@ -2220,7 +2232,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -22.9527,
         "lng": -46.54418,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 928,
         "movimentacoes": 112
     },
@@ -2232,9 +2244,9 @@ const PARCEIROS_DATA = [
         "rua": "Rua Jose Martins Fernandes S/N",
         "lat": -23.69389,
         "lng": -46.565,
-        "tipo": "Cliente/Fornecedor",
-        "volume": 1600,
-        "movimentacoes": 91
+        "tipo": "Fornecedor",
+        "volume": 1364,
+        "movimentacoes": 83
     },
     {
         "id": "P_7000015816_19010030",
@@ -2244,7 +2256,7 @@ const PARCEIROS_DATA = [
         "rua": "AV BRASIL S/N",
         "lat": -22.12556,
         "lng": -51.38889,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 92,
         "movimentacoes": 15
     },
@@ -2256,7 +2268,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 1920,
         "movimentacoes": 5
     },
@@ -2268,7 +2280,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA JOAO DE PINA 220",
         "lat": -23.52278,
         "lng": -46.18833,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 121.106,
         "movimentacoes": 2
     },
@@ -2280,7 +2292,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -22.48194,
         "lng": -47.45667,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 2,
         "movimentacoes": 2
     },
@@ -2292,7 +2304,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 47,
         "movimentacoes": 9
     },
@@ -2304,7 +2316,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.35611,
         "lng": -46.87694,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 1521,
         "movimentacoes": 15
     },
@@ -2316,7 +2328,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.18639,
         "lng": -46.88417,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 8,
         "movimentacoes": 2
     },
@@ -2328,7 +2340,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 6696,
         "movimentacoes": 1
     },
@@ -2340,7 +2352,7 @@ const PARCEIROS_DATA = [
         "rua": "ESTRADA KAIKO 11",
         "lat": -23.64889,
         "lng": -46.85222,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 2,
         "movimentacoes": 1
     },
@@ -2352,7 +2364,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA ALBERTO CORREIA FRANCFORT 141",
         "lat": -23.64889,
         "lng": -46.85222,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 235,
         "movimentacoes": 1
     },
@@ -2364,7 +2376,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA OLAVO BILAC 326",
         "lat": -23.62306,
         "lng": -46.55111,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 30,
         "movimentacoes": 1
     },
@@ -2376,7 +2388,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA LEONARDO FIORAVANTE 130",
         "lat": -23.66389,
         "lng": -46.53833,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 45,
         "movimentacoes": 5
     },
@@ -2388,7 +2400,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA FRANCISCO XAVIER DOS PASSOS 650",
         "lat": -23.96306,
         "lng": -46.39194,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 20,
         "movimentacoes": 1
     },
@@ -2400,7 +2412,7 @@ const PARCEIROS_DATA = [
         "rua": "AVENIDA DE PINEDO 325",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 6,
         "movimentacoes": 1
     },
@@ -2412,7 +2424,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA ANTONIO SILVESTRE FERREIRA 431",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 745284,
         "movimentacoes": 211
     },
@@ -2424,7 +2436,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -22.73917,
         "lng": -47.33139,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 105000,
         "movimentacoes": 22
     },
@@ -2436,7 +2448,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.64889,
         "lng": -46.85222,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 871,
         "movimentacoes": 116
     },
@@ -2448,7 +2460,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -3.96944,
         "lng": -38.52806,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 111200,
         "movimentacoes": 38
     },
@@ -2460,7 +2472,7 @@ const PARCEIROS_DATA = [
         "rua": "AVENIDA MOGI DAS CRUZES 244",
         "lat": -23.5425,
         "lng": -46.31083,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 141390,
         "movimentacoes": 37
     },
@@ -2472,7 +2484,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.69389,
         "lng": -46.565,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 21000,
         "movimentacoes": 10
     },
@@ -2484,7 +2496,7 @@ const PARCEIROS_DATA = [
         "rua": "RODOVIA BR-116 7698",
         "lat": -4.03972,
         "lng": -38.63722,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 84400,
         "movimentacoes": 24
     },
@@ -2496,7 +2508,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA DR EDUARDO DE SOUZA ARANHA 153",
         "lat": -23.69389,
         "lng": -46.565,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 22994,
         "movimentacoes": 18
     },
@@ -2508,7 +2520,7 @@ const PARCEIROS_DATA = [
         "rua": "AVENIDA DR.MAURO LINDENBERG MO 1003",
         "lat": -23.5325,
         "lng": -46.79167,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 19830,
         "movimentacoes": 4
     },
@@ -2520,7 +2532,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.64889,
         "lng": -46.85222,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 2925,
         "movimentacoes": 5
     },
@@ -2532,7 +2544,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA COMENDADOR FRANCO 276",
         "lat": -23.00583,
         "lng": -46.83889,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 3690,
         "movimentacoes": 20
     },
@@ -2544,7 +2556,7 @@ const PARCEIROS_DATA = [
         "rua": "Avenida do Cafe 238",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 7390,
         "movimentacoes": 172
     },
@@ -2556,7 +2568,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.35611,
         "lng": -46.87694,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 132908,
         "movimentacoes": 786
     },
@@ -2568,7 +2580,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA OSCAR TROMPOWISKY, 75 CASA",
         "lat": -19.92083,
         "lng": -43.93778,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 2108,
         "movimentacoes": 122
     },
@@ -2580,7 +2592,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA DA CONSTITUICAO 421",
         "lat": -23.96083,
         "lng": -46.33361,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 8987,
         "movimentacoes": 40
     },
@@ -2592,7 +2604,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -21.72583,
         "lng": -50.72222,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 357975,
         "movimentacoes": 928
     },
@@ -2604,7 +2616,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -21.705,
         "lng": -47.27444,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 60371,
         "movimentacoes": 118
     },
@@ -2616,7 +2628,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.51056,
         "lng": -46.87611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 36749,
         "movimentacoes": 75
     },
@@ -2628,7 +2640,7 @@ const PARCEIROS_DATA = [
         "rua": "R. JANGO FERRAZ 103",
         "lat": -23.86194,
         "lng": -49.13722,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 999281,
         "movimentacoes": 848
     },
@@ -2640,7 +2652,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.62611,
         "lng": -46.79167,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 69748,
         "movimentacoes": 98
     },
@@ -2652,7 +2664,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA NARCISO ROMAN 36-65",
         "lat": -20.68556,
         "lng": -50.55472,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 1792,
         "movimentacoes": 353
     },
@@ -2664,7 +2676,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -21.53944,
         "lng": -42.18028,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 8604,
         "movimentacoes": 231
     },
@@ -2676,7 +2688,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -20.55778,
         "lng": -44.87056,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 51211,
         "movimentacoes": 189
     },
@@ -2688,7 +2700,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 9460,
         "movimentacoes": 106
     },
@@ -2700,7 +2712,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.50167,
         "lng": -47.45806,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 10930,
         "movimentacoes": 597
     },
@@ -2712,7 +2724,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -20.32972,
         "lng": -40.2925,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 290,
         "movimentacoes": 34
     },
@@ -2724,7 +2736,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA DOUTOR FLAVIO AMERICO MAUR 1083",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 32,
         "movimentacoes": 15
     },
@@ -2736,7 +2748,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA CABO JOAO ROMEU TEIXEIRA 101",
         "lat": -23.66778,
         "lng": -46.46139,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 4784,
         "movimentacoes": 7
     },
@@ -2748,7 +2760,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA SOLD JOAO RODRIGUES 327",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 1448,
         "movimentacoes": 46
     },
@@ -2760,7 +2772,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA ROSA DE PIREDA 155",
         "lat": -20.32972,
         "lng": -40.2925,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 727,
         "movimentacoes": 36
     },
@@ -2772,7 +2784,7 @@ const PARCEIROS_DATA = [
         "rua": "AVENIDA LUIZ ALLY FAYRDIN 750",
         "lat": -23.35611,
         "lng": -46.87694,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 61355,
         "movimentacoes": 320
     },
@@ -2784,7 +2796,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -3.87667,
         "lng": -38.62556,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 21689,
         "movimentacoes": 147
     },
@@ -2796,7 +2808,7 @@ const PARCEIROS_DATA = [
         "rua": "AVENIDA BRIG FARIA LIMA 201",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 1654,
         "movimentacoes": 88
     },
@@ -2808,7 +2820,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -22.73917,
         "lng": -47.33139,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 2584,
         "movimentacoes": 134
     },
@@ -2820,7 +2832,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA HEITOR VILA LOBOS S/N",
         "lat": -23.66389,
         "lng": -46.53833,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 44022,
         "movimentacoes": 38
     },
@@ -2832,7 +2844,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA CARLOS ROCHA PARANHOS S/N",
         "lat": -22.41278,
         "lng": -49.13472,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 6059,
         "movimentacoes": 30
     },
@@ -2844,7 +2856,7 @@ const PARCEIROS_DATA = [
         "rua": "AVENIDA DAS CEREJEIRAS 1467",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 72,
         "movimentacoes": 10
     },
@@ -2856,7 +2868,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 5936,
         "movimentacoes": 39
     },
@@ -2868,7 +2880,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.66778,
         "lng": -46.46139,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 6584,
         "movimentacoes": 19
     },
@@ -2880,7 +2892,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA ALOYSIA AMPARO 440",
         "lat": -23.50167,
         "lng": -47.45806,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 62,
         "movimentacoes": 3
     },
@@ -2892,7 +2904,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -22.82694,
         "lng": -43.05389,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 400,
         "movimentacoes": 2
     },
@@ -2904,7 +2916,7 @@ const PARCEIROS_DATA = [
         "rua": "R. JOSÉ RAFAELI 284",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 1,
         "movimentacoes": 1
     },
@@ -2916,7 +2928,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -22.41139,
         "lng": -47.56139,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 1910964,
         "movimentacoes": 1261
     },
@@ -2928,7 +2940,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.3075,
         "lng": -47.13278,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 755260,
         "movimentacoes": 77
     },
@@ -2940,7 +2952,7 @@ const PARCEIROS_DATA = [
         "rua": "AVENIDA BRASIL 4",
         "lat": -22.41139,
         "lng": -47.56139,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 618138,
         "movimentacoes": 279
     },
@@ -2952,7 +2964,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.60389,
         "lng": -46.91917,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 7493,
         "movimentacoes": 3
     },
@@ -2964,7 +2976,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.54083,
         "lng": -46.36861,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 2063,
         "movimentacoes": 4
     },
@@ -2976,7 +2988,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -16.735,
         "lng": -43.86167,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 10,
         "movimentacoes": 1
     },
@@ -2988,7 +3000,7 @@ const PARCEIROS_DATA = [
         "rua": "AVENIDA FRANCISCO MATARAZZO 404",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 200,
         "movimentacoes": 1
     },
@@ -3000,7 +3012,7 @@ const PARCEIROS_DATA = [
         "rua": "AVENIDA MANOEL MONTEIRO DE ARA 1004",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 4000,
         "movimentacoes": 1
     },
@@ -3012,7 +3024,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA PADRE VENANCIO DE RESENDE 157",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 43,
         "movimentacoes": 6
     },
@@ -3024,7 +3036,7 @@ const PARCEIROS_DATA = [
         "rua": "Avenida Portugal 1604",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 1081,
         "movimentacoes": 106
     },
@@ -3036,7 +3048,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -22.43611,
         "lng": -46.82167,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 4,
         "movimentacoes": 4
     },
@@ -3048,7 +3060,7 @@ const PARCEIROS_DATA = [
         "rua": "AVENIDA ENGENHEIRO LUIZ CARLOS 1376",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 3,
         "movimentacoes": 1
     },
@@ -3060,7 +3072,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.54889,
         "lng": -46.93417,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 18048,
         "movimentacoes": 31
     },
@@ -3072,7 +3084,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA SOLD JOSE ANTONIO MOREIRA 223",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 64,
         "movimentacoes": 4
     },
@@ -3084,7 +3096,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.6130401,
         "lng": -46.5785025,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 5658,
         "movimentacoes": 31
     },
@@ -3096,7 +3108,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA REGINALDO NASCIMENTO DA SILV 49",
         "lat": -23.62611,
         "lng": -46.79167,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 2668,
         "movimentacoes": 7
     },
@@ -3108,7 +3120,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.18111,
         "lng": -46.395,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 1315,
         "movimentacoes": 6
     },
@@ -3120,7 +3132,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA LINO PETENONE 411",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 10,
         "movimentacoes": 2
     },
@@ -3132,7 +3144,7 @@ const PARCEIROS_DATA = [
         "rua": "RODOVIA  JOSE CARLOS DAUX S/N",
         "lat": -27.59667,
         "lng": -48.54917,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 600,
         "movimentacoes": 2
     },
@@ -3144,7 +3156,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -21.1775,
         "lng": -47.81028,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 1,
         "movimentacoes": 1
     },
@@ -3156,7 +3168,7 @@ const PARCEIROS_DATA = [
         "rua": "Rua Governador Pedro de Toledo S/N",
         "lat": -23.96083,
         "lng": -46.33361,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 164,
         "movimentacoes": 4
     },
@@ -3168,7 +3180,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA SERGIPE 70",
         "lat": -23.64889,
         "lng": -46.85222,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 8,
         "movimentacoes": 4
     },
@@ -3180,7 +3192,7 @@ const PARCEIROS_DATA = [
         "rua": "AVENIDA PREFEITO JOAO VILALLOB 1160",
         "lat": -23.51056,
         "lng": -46.87611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 76,
         "movimentacoes": 6
     },
@@ -3192,7 +3204,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA WADIA JAFET ASSAD 179",
         "lat": -23.69389,
         "lng": -46.565,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 242,
         "movimentacoes": 5
     },
@@ -3204,7 +3216,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA AVANHANDAVA 56",
         "lat": -23.44417,
         "lng": -46.91778,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 11080,
         "movimentacoes": 5
     },
@@ -3216,7 +3228,7 @@ const PARCEIROS_DATA = [
         "rua": "AV. III - (CJ. JEREISSATI I) S/N",
         "lat": -3.87667,
         "lng": -38.62556,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 270,
         "movimentacoes": 10
     },
@@ -3228,7 +3240,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA TEIXEIRA DE FREITAS 259",
         "lat": -23.6192058,
         "lng": -46.5403444,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 68,
         "movimentacoes": 6
     },
@@ -3240,7 +3252,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.6192058,
         "lng": -46.5403444,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 522,
         "movimentacoes": 6
     },
@@ -3252,7 +3264,7 @@ const PARCEIROS_DATA = [
         "rua": "AVENIDA SAO MIGUEL 962",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 24,
         "movimentacoes": 3
     },
@@ -3264,7 +3276,7 @@ const PARCEIROS_DATA = [
         "rua": "R JOSE BONIFACIO S/N",
         "lat": -21.72583,
         "lng": -50.72222,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 12,
         "movimentacoes": 2
     },
@@ -3276,7 +3288,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA GEORGE SALVATERRA S/N",
         "lat": -24.32083,
         "lng": -47.63472,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 50,
         "movimentacoes": 9
     },
@@ -3288,7 +3300,7 @@ const PARCEIROS_DATA = [
         "rua": "R SILVIO BUENO PERUCHE S/N",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 3,
         "movimentacoes": 1
     },
@@ -3300,7 +3312,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.5425,
         "lng": -46.31083,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 8,
         "movimentacoes": 1
     },
@@ -3312,7 +3324,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA VINICIUS ALEXANDRE CASSIANO 680",
         "lat": -20.53861,
         "lng": -47.40083,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 20,
         "movimentacoes": 1
     },
@@ -3324,7 +3336,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 3292,
         "movimentacoes": 32
     },
@@ -3336,7 +3348,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA CONSELHEIRO ANTONIO PRADO S/N",
         "lat": -20.73722,
         "lng": -48.91472,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 805000,
         "movimentacoes": 7
     },
@@ -3348,7 +3360,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 365000,
         "movimentacoes": 7
     },
@@ -3360,7 +3372,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.6008474,
         "lng": -46.8390873,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 40,
         "movimentacoes": 1
     },
@@ -3372,7 +3384,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -19.92083,
         "lng": -43.93778,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 32,
         "movimentacoes": 1
     },
@@ -3384,7 +3396,7 @@ const PARCEIROS_DATA = [
         "rua": "ESTRADA MUNICIPAL TEODOR CONDIE 909",
         "lat": -22.82194,
         "lng": -47.26694,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 9009,
         "movimentacoes": 2
     },
@@ -3396,7 +3408,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -18.41917,
         "lng": -49.21528,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 2,
         "movimentacoes": 1
     },
@@ -3408,7 +3420,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.52278,
         "lng": -46.18833,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 1177,
         "movimentacoes": 11
     },
@@ -3420,7 +3432,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 1160,
         "movimentacoes": 4
     },
@@ -3432,7 +3444,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 9822,
         "movimentacoes": 11
     },
@@ -3444,7 +3456,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 6,
         "movimentacoes": 1
     },
@@ -3456,7 +3468,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 120,
         "movimentacoes": 20
     },
@@ -3468,7 +3480,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA ALDEIA DE JOANES 64",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 1,
         "movimentacoes": 1
     },
@@ -3480,7 +3492,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA TAMANDUÁ BANDEIRA, SN, ALEG S/N",
         "lat": -24.185,
         "lng": -48.53278,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 592,
         "movimentacoes": 21
     },
@@ -3492,7 +3504,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 40,
         "movimentacoes": 4
     },
@@ -3504,7 +3516,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.44417,
         "lng": -46.91778,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 158,
         "movimentacoes": 8
     },
@@ -3516,7 +3528,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA BENEDITO ZACARIAS NEPOMUCEN 622",
         "lat": -23.62028,
         "lng": -45.41306,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 3,
         "movimentacoes": 3
     },
@@ -3528,7 +3540,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.66389,
         "lng": -46.53833,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 16,
         "movimentacoes": 4
     },
@@ -3540,7 +3552,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.69389,
         "lng": -46.565,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 60,
         "movimentacoes": 1
     },
@@ -3552,7 +3564,7 @@ const PARCEIROS_DATA = [
         "rua": "R MARIA MADALENA 100",
         "lat": -25.32472,
         "lng": -49.31,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 5,
         "movimentacoes": 1
     },
@@ -3564,7 +3576,7 @@ const PARCEIROS_DATA = [
         "rua": "R DOUTOR QUIRINO 1770",
         "lat": -22.9085531,
         "lng": -47.0560834,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 2495,
         "movimentacoes": 48
     },
@@ -3576,7 +3588,7 @@ const PARCEIROS_DATA = [
         "rua": "ROD CUNHA BUENO S/N",
         "lat": -21.49608,
         "lng": -48.03491,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 20,
         "movimentacoes": 4
     },
@@ -3588,7 +3600,7 @@ const PARCEIROS_DATA = [
         "rua": "R TOCANTINS 14",
         "lat": -21.46778,
         "lng": -47.00472,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 582,
         "movimentacoes": 2
     },
@@ -3600,7 +3612,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 140,
         "movimentacoes": 25
     },
@@ -3612,7 +3624,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.5279604,
         "lng": -46.7367439,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 5,
         "movimentacoes": 1
     },
@@ -3624,7 +3636,7 @@ const PARCEIROS_DATA = [
         "rua": "AV ONZE DE JUNHO 99",
         "lat": -23.601489924659198,
         "lng": -46.637745657107345,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 20,
         "movimentacoes": 16
     },
@@ -3636,7 +3648,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.18639,
         "lng": -46.88417,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 64,
         "movimentacoes": 2
     },
@@ -3648,7 +3660,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA ESTHER CURIATI BUENO 57",
         "lat": -23.09861,
         "lng": -48.92583,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 1,
         "movimentacoes": 1
     },
@@ -3660,7 +3672,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA LUIZ SPINELLI S/N",
         "lat": -21.46778,
         "lng": -47.00472,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 212,
         "movimentacoes": 3
     },
@@ -3672,7 +3684,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 24,
         "movimentacoes": 8
     },
@@ -3684,7 +3696,7 @@ const PARCEIROS_DATA = [
         "rua": "AVENIDA AFONSO PENA 265",
         "lat": -23.96083,
         "lng": -46.33361,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 28,
         "movimentacoes": 1
     },
@@ -3696,7 +3708,7 @@ const PARCEIROS_DATA = [
         "rua": "ESTM BELA VISTA 917",
         "lat": -23.44417,
         "lng": -46.91778,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 9,
         "movimentacoes": 1
     },
@@ -3708,7 +3720,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -25.5302,
         "lng": -49.20836,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 30,
         "movimentacoes": 2
     },
@@ -3720,7 +3732,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -22.90556,
         "lng": -47.06083,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 40,
         "movimentacoes": 1
     },
@@ -3732,7 +3744,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.18639,
         "lng": -46.88417,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 4,
         "movimentacoes": 3
     },
@@ -3744,7 +3756,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.66389,
         "lng": -46.53833,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 350,
         "movimentacoes": 2
     },
@@ -3756,7 +3768,7 @@ const PARCEIROS_DATA = [
         "rua": "AV CAMPOS FLORIDOS S/N",
         "lat": -23.1811842,
         "lng": -45.8072864,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 745,
         "movimentacoes": 28
     },
@@ -3768,7 +3780,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA SOLDADO LUIZ GONZAGA DAS VI S/N",
         "lat": -12.97563,
         "lng": -38.49096,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 100,
         "movimentacoes": 1
     },
@@ -3780,7 +3792,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 309,
         "movimentacoes": 6
     },
@@ -3792,7 +3804,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 240,
         "movimentacoes": 2
     },
@@ -3804,7 +3816,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 12,
         "movimentacoes": 8
     },
@@ -3816,7 +3828,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA HERBERT ALFRED LANDSBERGER 53",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 25,
         "movimentacoes": 11
     },
@@ -3828,7 +3840,7 @@ const PARCEIROS_DATA = [
         "rua": "AVENIDA PRES WILSON 5874",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 11,
         "movimentacoes": 1
     },
@@ -3840,7 +3852,7 @@ const PARCEIROS_DATA = [
         "rua": "AVENIDA DUQUESA DE GOIAS 235",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 6,
         "movimentacoes": 3
     },
@@ -3852,7 +3864,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 2000,
         "movimentacoes": 1
     },
@@ -3864,7 +3876,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -28.06806,
         "lng": -52.01389,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 204,
         "movimentacoes": 25
     },
@@ -3876,7 +3888,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA FLORESTOPOLIS 184",
         "lat": -23.46278,
         "lng": -46.53333,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 2,
         "movimentacoes": 2
     },
@@ -3888,7 +3900,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -21.41972,
         "lng": -50.0775,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 200,
         "movimentacoes": 1
     },
@@ -3900,7 +3912,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.51056,
         "lng": -46.87611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 16000,
         "movimentacoes": 10
     },
@@ -3912,7 +3924,7 @@ const PARCEIROS_DATA = [
         "rua": "R MAFALDA DEOLINDA FREGOLENTE D S/N",
         "lat": -23.62611,
         "lng": -46.79167,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 4,
         "movimentacoes": 1
     },
@@ -3924,7 +3936,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA DOUTOR LUIZ MIGLIANO 1986",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 3088.4260000000004,
         "movimentacoes": 4
     },
@@ -3936,7 +3948,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA DANILO VALBUZA (PRQ IND ARA 555",
         "lat": -23.36417,
         "lng": -46.74056,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 26,
         "movimentacoes": 1
     },
@@ -3948,7 +3960,7 @@ const PARCEIROS_DATA = [
         "rua": "AVENIDA FRANCISCO MATARAZZO 404",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 8,
         "movimentacoes": 4
     },
@@ -3960,7 +3972,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA CAMPOS SALES 226",
         "lat": -23.51056,
         "lng": -46.87611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 14,
         "movimentacoes": 6
     },
@@ -3972,7 +3984,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -29.91778,
         "lng": -51.18361,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 3541,
         "movimentacoes": 34
     },
@@ -3984,7 +3996,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -22.85833,
         "lng": -47.22,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 6971,
         "movimentacoes": 462
     },
@@ -3996,7 +4008,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.51056,
         "lng": -46.87611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 20,
         "movimentacoes": 5
     },
@@ -4008,7 +4020,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 202,
         "movimentacoes": 17
     },
@@ -4020,7 +4032,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -25.30556,
         "lng": -49.05528,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 186,
         "movimentacoes": 8
     },
@@ -4032,7 +4044,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 7650,
         "movimentacoes": 4
     },
@@ -4044,7 +4056,7 @@ const PARCEIROS_DATA = [
         "rua": "",
         "lat": -22.21389,
         "lng": -49.94583,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 178,
         "movimentacoes": 1
     },
@@ -4056,7 +4068,7 @@ const PARCEIROS_DATA = [
         "rua": "AVENIDA CARLOS GOMES 1672",
         "lat": -30.03283,
         "lng": -51.23019,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 50910,
         "movimentacoes": 9
     },
@@ -4068,7 +4080,7 @@ const PARCEIROS_DATA = [
         "rua": "RUA 7 JC 440",
         "lat": -22.41139,
         "lng": -47.56139,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 12320,
         "movimentacoes": 1
     },
@@ -4080,21 +4092,9 @@ const PARCEIROS_DATA = [
         "rua": "RUA ALFREDO PUJOL 972",
         "lat": -23.5475,
         "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
+        "tipo": "Fornecedor",
         "volume": 53040,
         "movimentacoes": 4
-    },
-    {
-        "id": "P_7000015737_02071010",
-        "codigo": "7000015737",
-        "cidade": "SAO PAULO",
-        "cep": "02071010",
-        "rua": "RUA MARIA CANDIDA 119",
-        "lat": -23.5475,
-        "lng": -46.63611,
-        "tipo": "Cliente/Fornecedor",
-        "volume": 484,
-        "movimentacoes": 8
     }
 ];
 
@@ -4105,7 +4105,9 @@ const FLUXOS_DATA = [
         "volume": 2000,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600041930_04855090"
     },
     {
         "origem": "D024",
@@ -4113,7 +4115,9 @@ const FLUXOS_DATA = [
         "volume": 88280,
         "movimentacoes": 49,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600042127_05846270"
     },
     {
         "origem": "D024",
@@ -4121,7 +4125,9 @@ const FLUXOS_DATA = [
         "volume": 90762,
         "movimentacoes": 63,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600042952_09840000"
     },
     {
         "origem": "D024",
@@ -4129,7 +4135,9 @@ const FLUXOS_DATA = [
         "volume": 5194,
         "movimentacoes": 16,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600059579_06844005"
     },
     {
         "origem": "D024",
@@ -4137,7 +4145,9 @@ const FLUXOS_DATA = [
         "volume": 10580,
         "movimentacoes": 23,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600059671_04781065"
     },
     {
         "origem": "D024",
@@ -4145,7 +4155,9 @@ const FLUXOS_DATA = [
         "volume": 74844,
         "movimentacoes": 37,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600059910_04456160"
     },
     {
         "origem": "D024",
@@ -4153,7 +4165,9 @@ const FLUXOS_DATA = [
         "volume": 85139,
         "movimentacoes": 41,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600059980_09840000"
     },
     {
         "origem": "D024",
@@ -4161,7 +4175,9 @@ const FLUXOS_DATA = [
         "volume": 56138,
         "movimentacoes": 31,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600060285_04829280"
     },
     {
         "origem": "D024",
@@ -4169,7 +4185,9 @@ const FLUXOS_DATA = [
         "volume": 74236,
         "movimentacoes": 41,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600060345_06856000"
     },
     {
         "origem": "D024",
@@ -4177,7 +4195,9 @@ const FLUXOS_DATA = [
         "volume": 200,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600062805_13187075"
     },
     {
         "origem": "D024",
@@ -4185,7 +4205,9 @@ const FLUXOS_DATA = [
         "volume": 35620,
         "movimentacoes": 7,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600063832_09618100"
     },
     {
         "origem": "D024",
@@ -4193,7 +4215,9 @@ const FLUXOS_DATA = [
         "volume": 20000,
         "movimentacoes": 2,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600064867_09190410"
     },
     {
         "origem": "D024",
@@ -4201,7 +4225,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_3000000343_06856000"
     },
     {
         "origem": "D024",
@@ -4209,7 +4235,9 @@ const FLUXOS_DATA = [
         "volume": 25,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600002300_05429060"
     },
     {
         "origem": "D024",
@@ -4217,7 +4245,9 @@ const FLUXOS_DATA = [
         "volume": 1228552,
         "movimentacoes": 114,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600042127_05846270"
     },
     {
         "origem": "D024",
@@ -4225,7 +4255,9 @@ const FLUXOS_DATA = [
         "volume": 35100,
         "movimentacoes": 6,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600042686_04351050"
     },
     {
         "origem": "D024",
@@ -4233,7 +4265,9 @@ const FLUXOS_DATA = [
         "volume": 1027183,
         "movimentacoes": 154,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600042952_09840000"
     },
     {
         "origem": "D024",
@@ -4241,7 +4275,9 @@ const FLUXOS_DATA = [
         "volume": 8750,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600043057_05544000"
     },
     {
         "origem": "D024",
@@ -4249,7 +4285,9 @@ const FLUXOS_DATA = [
         "volume": 200,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600059579_06844005"
     },
     {
         "origem": "D024",
@@ -4257,7 +4295,9 @@ const FLUXOS_DATA = [
         "volume": 1306,
         "movimentacoes": 12,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600059671_04781065"
     },
     {
         "origem": "D024",
@@ -4265,7 +4305,9 @@ const FLUXOS_DATA = [
         "volume": 585989,
         "movimentacoes": 151,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600059910_04456160"
     },
     {
         "origem": "D024",
@@ -4273,7 +4315,9 @@ const FLUXOS_DATA = [
         "volume": 8,
         "movimentacoes": 2,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600059912_07191000"
     },
     {
         "origem": "D024",
@@ -4281,7 +4325,9 @@ const FLUXOS_DATA = [
         "volume": 5,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600059951_07171150"
     },
     {
         "origem": "D024",
@@ -4289,7 +4335,9 @@ const FLUXOS_DATA = [
         "volume": 782026,
         "movimentacoes": 132,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600059980_09840000"
     },
     {
         "origem": "D024",
@@ -4297,7 +4345,9 @@ const FLUXOS_DATA = [
         "volume": 30,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600060030_08260030"
     },
     {
         "origem": "D024",
@@ -4305,7 +4355,9 @@ const FLUXOS_DATA = [
         "volume": 10,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600060107_08664015"
     },
     {
         "origem": "D024",
@@ -4313,7 +4365,9 @@ const FLUXOS_DATA = [
         "volume": 10,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600060108_08664015"
     },
     {
         "origem": "D024",
@@ -4321,7 +4375,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600060225_12231140"
     },
     {
         "origem": "D024",
@@ -4329,7 +4385,9 @@ const FLUXOS_DATA = [
         "volume": 678645,
         "movimentacoes": 93,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600060285_04829280"
     },
     {
         "origem": "D024",
@@ -4337,7 +4395,9 @@ const FLUXOS_DATA = [
         "volume": 10,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600060294_06715825"
     },
     {
         "origem": "D024",
@@ -4345,7 +4405,9 @@ const FLUXOS_DATA = [
         "volume": 103,
         "movimentacoes": 3,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600060323_11250462"
     },
     {
         "origem": "D024",
@@ -4353,7 +4415,9 @@ const FLUXOS_DATA = [
         "volume": 731979,
         "movimentacoes": 100,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600060345_06856000"
     },
     {
         "origem": "D024",
@@ -4361,7 +4425,9 @@ const FLUXOS_DATA = [
         "volume": 25000,
         "movimentacoes": 2,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600060346_09663010"
     },
     {
         "origem": "D024",
@@ -4369,7 +4435,9 @@ const FLUXOS_DATA = [
         "volume": 1510,
         "movimentacoes": 2,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600060565_05187010"
     },
     {
         "origem": "D024",
@@ -4377,7 +4445,9 @@ const FLUXOS_DATA = [
         "volume": 30,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600060683_12242000"
     },
     {
         "origem": "D024",
@@ -4385,7 +4455,9 @@ const FLUXOS_DATA = [
         "volume": 5,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600062532_13733060"
     },
     {
         "origem": "D024",
@@ -4393,7 +4465,9 @@ const FLUXOS_DATA = [
         "volume": 1150,
         "movimentacoes": 4,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600063172_12910610"
     },
     {
         "origem": "D024",
@@ -4401,7 +4475,9 @@ const FLUXOS_DATA = [
         "volume": 100,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600063832_09618100"
     },
     {
         "origem": "D024",
@@ -4409,7 +4485,9 @@ const FLUXOS_DATA = [
         "volume": 540,
         "movimentacoes": 1,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_3000000032_04516000"
     },
     {
         "origem": "D024",
@@ -4417,7 +4495,9 @@ const FLUXOS_DATA = [
         "volume": 3477,
         "movimentacoes": 2,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600041930_04855090"
     },
     {
         "origem": "D024",
@@ -4425,7 +4505,9 @@ const FLUXOS_DATA = [
         "volume": 20,
         "movimentacoes": 1,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600042058_04557010"
     },
     {
         "origem": "D024",
@@ -4433,7 +4515,9 @@ const FLUXOS_DATA = [
         "volume": 34491,
         "movimentacoes": 30,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600042127_05846270"
     },
     {
         "origem": "D024",
@@ -4441,7 +4525,9 @@ const FLUXOS_DATA = [
         "volume": 43236,
         "movimentacoes": 23,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600042952_09840000"
     },
     {
         "origem": "D024",
@@ -4449,7 +4535,9 @@ const FLUXOS_DATA = [
         "volume": 540,
         "movimentacoes": 1,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600047828_04516000"
     },
     {
         "origem": "D024",
@@ -4457,7 +4545,9 @@ const FLUXOS_DATA = [
         "volume": 2380,
         "movimentacoes": 5,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600059579_06844005"
     },
     {
         "origem": "D024",
@@ -4465,7 +4555,9 @@ const FLUXOS_DATA = [
         "volume": 4278,
         "movimentacoes": 5,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600059671_04781065"
     },
     {
         "origem": "D024",
@@ -4473,7 +4565,9 @@ const FLUXOS_DATA = [
         "volume": 20788,
         "movimentacoes": 76,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600059910_04456160"
     },
     {
         "origem": "D024",
@@ -4481,7 +4575,9 @@ const FLUXOS_DATA = [
         "volume": 20,
         "movimentacoes": 1,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600059968_04048000"
     },
     {
         "origem": "D024",
@@ -4489,7 +4585,9 @@ const FLUXOS_DATA = [
         "volume": 48960,
         "movimentacoes": 43,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600059980_09840000"
     },
     {
         "origem": "D024",
@@ -4497,7 +4595,9 @@ const FLUXOS_DATA = [
         "volume": 26821,
         "movimentacoes": 29,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600060285_04829280"
     },
     {
         "origem": "D024",
@@ -4505,7 +4605,9 @@ const FLUXOS_DATA = [
         "volume": 10,
         "movimentacoes": 3,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600060294_06715825"
     },
     {
         "origem": "D024",
@@ -4513,7 +4615,9 @@ const FLUXOS_DATA = [
         "volume": 46898,
         "movimentacoes": 43,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600060345_06856000"
     },
     {
         "origem": "D024",
@@ -4521,7 +4625,9 @@ const FLUXOS_DATA = [
         "volume": 6,
         "movimentacoes": 1,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600060565_05187010"
     },
     {
         "origem": "D024",
@@ -4529,7 +4635,9 @@ const FLUXOS_DATA = [
         "volume": 20,
         "movimentacoes": 1,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600063009_04459000"
     },
     {
         "origem": "D024",
@@ -4537,7 +4645,9 @@ const FLUXOS_DATA = [
         "volume": 17382,
         "movimentacoes": 17,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600063832_09618100"
     },
     {
         "origem": "D024",
@@ -4545,7 +4655,9 @@ const FLUXOS_DATA = [
         "volume": 494,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_3000000321_05711001"
     },
     {
         "origem": "D024",
@@ -4553,7 +4665,9 @@ const FLUXOS_DATA = [
         "volume": 3,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_3000000343_06856000"
     },
     {
         "origem": "D024",
@@ -4561,7 +4675,9 @@ const FLUXOS_DATA = [
         "volume": 4,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4_05429900"
     },
     {
         "origem": "D024",
@@ -4569,7 +4685,9 @@ const FLUXOS_DATA = [
         "volume": 34091,
         "movimentacoes": 395,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600042127_05846270"
     },
     {
         "origem": "D024",
@@ -4577,7 +4695,9 @@ const FLUXOS_DATA = [
         "volume": 4,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600042686_04351050"
     },
     {
         "origem": "D024",
@@ -4585,7 +4705,9 @@ const FLUXOS_DATA = [
         "volume": 42623,
         "movimentacoes": 689,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600042952_09840000"
     },
     {
         "origem": "D024",
@@ -4593,7 +4715,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600056260_04728210"
     },
     {
         "origem": "D024",
@@ -4601,7 +4725,9 @@ const FLUXOS_DATA = [
         "volume": 460,
         "movimentacoes": 3,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600056982_11410410"
     },
     {
         "origem": "D024",
@@ -4609,7 +4735,9 @@ const FLUXOS_DATA = [
         "volume": 40,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600057061_05541130"
     },
     {
         "origem": "D024",
@@ -4617,7 +4745,9 @@ const FLUXOS_DATA = [
         "volume": 308,
         "movimentacoes": 3,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600057296_11441000"
     },
     {
         "origem": "D024",
@@ -4625,7 +4755,9 @@ const FLUXOS_DATA = [
         "volume": 330,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600059579_06844005"
     },
     {
         "origem": "D024",
@@ -4633,7 +4765,9 @@ const FLUXOS_DATA = [
         "volume": 16056,
         "movimentacoes": 110,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600059671_04781065"
     },
     {
         "origem": "D024",
@@ -4641,7 +4775,9 @@ const FLUXOS_DATA = [
         "volume": 950,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600059854_05038090"
     },
     {
         "origem": "D024",
@@ -4649,7 +4785,9 @@ const FLUXOS_DATA = [
         "volume": 1370,
         "movimentacoes": 14,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600059895_02167010"
     },
     {
         "origem": "D024",
@@ -4657,7 +4795,9 @@ const FLUXOS_DATA = [
         "volume": 47375,
         "movimentacoes": 676,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600059910_04456160"
     },
     {
         "origem": "D024",
@@ -4665,7 +4805,9 @@ const FLUXOS_DATA = [
         "volume": 1447,
         "movimentacoes": 7,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600059912_07191000"
     },
     {
         "origem": "D024",
@@ -4673,7 +4815,9 @@ const FLUXOS_DATA = [
         "volume": 2513,
         "movimentacoes": 3,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600059951_07171150"
     },
     {
         "origem": "D024",
@@ -4681,7 +4825,9 @@ const FLUXOS_DATA = [
         "volume": 48373.799999999996,
         "movimentacoes": 665,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600059980_09840000"
     },
     {
         "origem": "D024",
@@ -4689,7 +4835,9 @@ const FLUXOS_DATA = [
         "volume": 25,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600060020_06381100"
     },
     {
         "origem": "D024",
@@ -4697,7 +4845,9 @@ const FLUXOS_DATA = [
         "volume": 505,
         "movimentacoes": 7,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600060030_08260030"
     },
     {
         "origem": "D024",
@@ -4705,7 +4855,9 @@ const FLUXOS_DATA = [
         "volume": 4,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600060107_08664015"
     },
     {
         "origem": "D024",
@@ -4713,7 +4865,9 @@ const FLUXOS_DATA = [
         "volume": 595,
         "movimentacoes": 5,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600060108_08664015"
     },
     {
         "origem": "D024",
@@ -4721,7 +4875,9 @@ const FLUXOS_DATA = [
         "volume": 25,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600060110_18205720"
     },
     {
         "origem": "D024",
@@ -4729,7 +4885,9 @@ const FLUXOS_DATA = [
         "volume": 4,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600060183_11900000"
     },
     {
         "origem": "D024",
@@ -4737,7 +4895,9 @@ const FLUXOS_DATA = [
         "volume": 15,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600060205_15150000"
     },
     {
         "origem": "D024",
@@ -4745,7 +4905,9 @@ const FLUXOS_DATA = [
         "volume": 32,
         "movimentacoes": 3,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600060225_12231140"
     },
     {
         "origem": "D024",
@@ -4753,7 +4915,9 @@ const FLUXOS_DATA = [
         "volume": 1990,
         "movimentacoes": 6,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600060240_05419000"
     },
     {
         "origem": "D024",
@@ -4761,7 +4925,9 @@ const FLUXOS_DATA = [
         "volume": 17,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600060241_18240000"
     },
     {
         "origem": "D024",
@@ -4769,7 +4935,9 @@ const FLUXOS_DATA = [
         "volume": 31175.31,
         "movimentacoes": 432,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600060285_04829280"
     },
     {
         "origem": "D024",
@@ -4777,7 +4945,9 @@ const FLUXOS_DATA = [
         "volume": 50,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600060294_06715825"
     },
     {
         "origem": "D024",
@@ -4785,7 +4955,9 @@ const FLUXOS_DATA = [
         "volume": 160,
         "movimentacoes": 9,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600060323_11250462"
     },
     {
         "origem": "D024",
@@ -4793,7 +4965,9 @@ const FLUXOS_DATA = [
         "volume": 43296,
         "movimentacoes": 581,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600060345_06856000"
     },
     {
         "origem": "D024",
@@ -4801,7 +4975,9 @@ const FLUXOS_DATA = [
         "volume": 373,
         "movimentacoes": 5,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600060565_05187010"
     },
     {
         "origem": "D024",
@@ -4809,7 +4985,9 @@ const FLUXOS_DATA = [
         "volume": 11,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600061011_12209240"
     },
     {
         "origem": "D024",
@@ -4817,7 +4995,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600062694_13231600"
     },
     {
         "origem": "D024",
@@ -4825,7 +5005,9 @@ const FLUXOS_DATA = [
         "volume": 800,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600062805_13187075"
     },
     {
         "origem": "D024",
@@ -4833,7 +5015,9 @@ const FLUXOS_DATA = [
         "volume": 425,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600063172_12910610"
     },
     {
         "origem": "D024",
@@ -4841,7 +5025,9 @@ const FLUXOS_DATA = [
         "volume": 61026,
         "movimentacoes": 32,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600042127_05846270"
     },
     {
         "origem": "D024",
@@ -4849,7 +5035,9 @@ const FLUXOS_DATA = [
         "volume": 500,
         "movimentacoes": 1,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600042686_04351050"
     },
     {
         "origem": "D024",
@@ -4857,7 +5045,9 @@ const FLUXOS_DATA = [
         "volume": 69523,
         "movimentacoes": 66,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600042952_09840000"
     },
     {
         "origem": "D024",
@@ -4865,7 +5055,9 @@ const FLUXOS_DATA = [
         "volume": 19000,
         "movimentacoes": 5,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600057296_11441000"
     },
     {
         "origem": "D024",
@@ -4873,7 +5065,9 @@ const FLUXOS_DATA = [
         "volume": 3954,
         "movimentacoes": 5,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600059288_09841720"
     },
     {
         "origem": "D024",
@@ -4881,7 +5075,9 @@ const FLUXOS_DATA = [
         "volume": 22420,
         "movimentacoes": 15,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600059671_04781065"
     },
     {
         "origem": "D024",
@@ -4889,7 +5085,9 @@ const FLUXOS_DATA = [
         "volume": 1100,
         "movimentacoes": 2,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600059895_02167010"
     },
     {
         "origem": "D024",
@@ -4897,7 +5095,9 @@ const FLUXOS_DATA = [
         "volume": 81013,
         "movimentacoes": 102,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600059910_04456160"
     },
     {
         "origem": "D024",
@@ -4905,7 +5105,9 @@ const FLUXOS_DATA = [
         "volume": 95453.45000000003,
         "movimentacoes": 89,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600059980_09840000"
     },
     {
         "origem": "D024",
@@ -4913,7 +5115,9 @@ const FLUXOS_DATA = [
         "volume": 600,
         "movimentacoes": 1,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600060030_08260030"
     },
     {
         "origem": "D024",
@@ -4921,7 +5125,9 @@ const FLUXOS_DATA = [
         "volume": 354,
         "movimentacoes": 1,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600060107_08664015"
     },
     {
         "origem": "D024",
@@ -4929,7 +5135,9 @@ const FLUXOS_DATA = [
         "volume": 144,
         "movimentacoes": 1,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600060228_18304110"
     },
     {
         "origem": "D024",
@@ -4937,7 +5145,9 @@ const FLUXOS_DATA = [
         "volume": 70534.95,
         "movimentacoes": 52,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600060285_04829280"
     },
     {
         "origem": "D024",
@@ -4945,7 +5155,9 @@ const FLUXOS_DATA = [
         "volume": 88458.54,
         "movimentacoes": 56,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600060345_06856000"
     },
     {
         "origem": "D024",
@@ -4953,7 +5165,9 @@ const FLUXOS_DATA = [
         "volume": 4420,
         "movimentacoes": 4,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600060346_09663010"
     },
     {
         "origem": "D024",
@@ -4961,7 +5175,9 @@ const FLUXOS_DATA = [
         "volume": 4000,
         "movimentacoes": 1,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600060565_05187010"
     },
     {
         "origem": "D024",
@@ -4969,7 +5185,9 @@ const FLUXOS_DATA = [
         "volume": 150,
         "movimentacoes": 1,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600060584_11725060"
     },
     {
         "origem": "D024",
@@ -4977,7 +5195,9 @@ const FLUXOS_DATA = [
         "volume": 90,
         "movimentacoes": 1,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600060880_05407003"
     },
     {
         "origem": "D024",
@@ -4985,7 +5205,9 @@ const FLUXOS_DATA = [
         "volume": 3180,
         "movimentacoes": 4,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600060924_09840070"
     },
     {
         "origem": "D024",
@@ -4993,7 +5215,9 @@ const FLUXOS_DATA = [
         "volume": 19134,
         "movimentacoes": 64,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600042127_05846270"
     },
     {
         "origem": "D024",
@@ -5001,7 +5225,9 @@ const FLUXOS_DATA = [
         "volume": 25535.88,
         "movimentacoes": 74,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600042952_09840000"
     },
     {
         "origem": "D024",
@@ -5009,7 +5235,9 @@ const FLUXOS_DATA = [
         "volume": 1800,
         "movimentacoes": 2,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600054151_09190410"
     },
     {
         "origem": "D024",
@@ -5017,7 +5245,9 @@ const FLUXOS_DATA = [
         "volume": 1200,
         "movimentacoes": 1,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600056982_11410410"
     },
     {
         "origem": "D024",
@@ -5025,7 +5255,9 @@ const FLUXOS_DATA = [
         "volume": 9678,
         "movimentacoes": 14,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600059671_04781065"
     },
     {
         "origem": "D024",
@@ -5033,7 +5265,9 @@ const FLUXOS_DATA = [
         "volume": 1200,
         "movimentacoes": 1,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600059895_02167010"
     },
     {
         "origem": "D024",
@@ -5041,7 +5275,9 @@ const FLUXOS_DATA = [
         "volume": 30382,
         "movimentacoes": 57,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600059910_04456160"
     },
     {
         "origem": "D024",
@@ -5049,7 +5285,9 @@ const FLUXOS_DATA = [
         "volume": 2400,
         "movimentacoes": 1,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600059912_07191000"
     },
     {
         "origem": "D024",
@@ -5057,7 +5295,9 @@ const FLUXOS_DATA = [
         "volume": 40172.450000000004,
         "movimentacoes": 67,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600059980_09840000"
     },
     {
         "origem": "D024",
@@ -5065,7 +5305,9 @@ const FLUXOS_DATA = [
         "volume": 180,
         "movimentacoes": 1,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600060107_08664015"
     },
     {
         "origem": "D024",
@@ -5073,7 +5315,9 @@ const FLUXOS_DATA = [
         "volume": 26303.149999999998,
         "movimentacoes": 51,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600060285_04829280"
     },
     {
         "origem": "D024",
@@ -5081,7 +5325,9 @@ const FLUXOS_DATA = [
         "volume": 38435.19,
         "movimentacoes": 68,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600060345_06856000"
     },
     {
         "origem": "D024",
@@ -5089,7 +5335,9 @@ const FLUXOS_DATA = [
         "volume": 600,
         "movimentacoes": 1,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600060565_05187010"
     },
     {
         "origem": "D024",
@@ -5097,7 +5345,9 @@ const FLUXOS_DATA = [
         "volume": 300,
         "movimentacoes": 1,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D024",
+        "parceiro": "P_4600063172_12910610"
     },
     {
         "origem": "D094",
@@ -5105,7 +5355,9 @@ const FLUXOS_DATA = [
         "volume": 3000,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_3000000310_30140140"
     },
     {
         "origem": "D094",
@@ -5113,7 +5365,9 @@ const FLUXOS_DATA = [
         "volume": 77340,
         "movimentacoes": 54,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600043057_05544000"
     },
     {
         "origem": "D094",
@@ -5121,7 +5375,9 @@ const FLUXOS_DATA = [
         "volume": 4000,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600051569_05113020"
     },
     {
         "origem": "D094",
@@ -5129,7 +5385,9 @@ const FLUXOS_DATA = [
         "volume": 3300,
         "movimentacoes": 6,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600053308_05786010"
     },
     {
         "origem": "D094",
@@ -5137,7 +5395,9 @@ const FLUXOS_DATA = [
         "volume": 613,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600054257_05786010"
     },
     {
         "origem": "D094",
@@ -5145,7 +5405,9 @@ const FLUXOS_DATA = [
         "volume": 20,
         "movimentacoes": 2,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600055659_05657140"
     },
     {
         "origem": "D094",
@@ -5153,7 +5415,9 @@ const FLUXOS_DATA = [
         "volume": 31300,
         "movimentacoes": 6,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600055937_05626020"
     },
     {
         "origem": "D094",
@@ -5161,7 +5425,9 @@ const FLUXOS_DATA = [
         "volume": 30768,
         "movimentacoes": 18,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600057275_06330281"
     },
     {
         "origem": "D094",
@@ -5169,7 +5435,9 @@ const FLUXOS_DATA = [
         "volume": 200,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600058493_05001000"
     },
     {
         "origem": "D094",
@@ -5177,7 +5445,9 @@ const FLUXOS_DATA = [
         "volume": 4467,
         "movimentacoes": 5,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600059444_06268000"
     },
     {
         "origem": "D094",
@@ -5185,7 +5455,9 @@ const FLUXOS_DATA = [
         "volume": 9886,
         "movimentacoes": 12,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600059502_06397110"
     },
     {
         "origem": "D094",
@@ -5193,7 +5465,9 @@ const FLUXOS_DATA = [
         "volume": 1240,
         "movimentacoes": 5,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600059508_06529190"
     },
     {
         "origem": "D094",
@@ -5201,7 +5475,9 @@ const FLUXOS_DATA = [
         "volume": 48,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600059671_04781065"
     },
     {
         "origem": "D094",
@@ -5209,7 +5485,9 @@ const FLUXOS_DATA = [
         "volume": 3008.141,
         "movimentacoes": 4,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600059895_02167010"
     },
     {
         "origem": "D094",
@@ -5217,7 +5495,9 @@ const FLUXOS_DATA = [
         "volume": 96,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600059910_04456160"
     },
     {
         "origem": "D094",
@@ -5225,7 +5505,9 @@ const FLUXOS_DATA = [
         "volume": 1663.335,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600059912_07191000"
     },
     {
         "origem": "D094",
@@ -5233,7 +5515,9 @@ const FLUXOS_DATA = [
         "volume": 50,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600059968_04048000"
     },
     {
         "origem": "D094",
@@ -5241,7 +5525,9 @@ const FLUXOS_DATA = [
         "volume": 80,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600059980_09840000"
     },
     {
         "origem": "D094",
@@ -5249,7 +5535,9 @@ const FLUXOS_DATA = [
         "volume": 137920,
         "movimentacoes": 44,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060020_06381100"
     },
     {
         "origem": "D094",
@@ -5257,7 +5545,9 @@ const FLUXOS_DATA = [
         "volume": 350,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060030_08260030"
     },
     {
         "origem": "D094",
@@ -5265,7 +5555,9 @@ const FLUXOS_DATA = [
         "volume": 350,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060062_03889000"
     },
     {
         "origem": "D094",
@@ -5273,7 +5565,9 @@ const FLUXOS_DATA = [
         "volume": 400,
         "movimentacoes": 2,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060107_08664015"
     },
     {
         "origem": "D094",
@@ -5281,7 +5575,9 @@ const FLUXOS_DATA = [
         "volume": 350,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060108_08664015"
     },
     {
         "origem": "D094",
@@ -5289,7 +5585,9 @@ const FLUXOS_DATA = [
         "volume": 626,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060240_05419000"
     },
     {
         "origem": "D094",
@@ -5297,7 +5595,9 @@ const FLUXOS_DATA = [
         "volume": 80,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060285_04829280"
     },
     {
         "origem": "D094",
@@ -5305,7 +5605,9 @@ const FLUXOS_DATA = [
         "volume": 117811,
         "movimentacoes": 52,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060294_06715825"
     },
     {
         "origem": "D094",
@@ -5313,7 +5615,9 @@ const FLUXOS_DATA = [
         "volume": 48,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060345_06856000"
     },
     {
         "origem": "D094",
@@ -5321,7 +5625,9 @@ const FLUXOS_DATA = [
         "volume": 2002.995,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060464_02989095"
     },
     {
         "origem": "D094",
@@ -5329,7 +5635,9 @@ const FLUXOS_DATA = [
         "volume": 8952.041000000001,
         "movimentacoes": 3,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060565_05187010"
     },
     {
         "origem": "D094",
@@ -5337,7 +5645,9 @@ const FLUXOS_DATA = [
         "volume": 1236,
         "movimentacoes": 4,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600063172_12910610"
     },
     {
         "origem": "D094",
@@ -5345,7 +5655,9 @@ const FLUXOS_DATA = [
         "volume": 61596,
         "movimentacoes": 10,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600063664_05307000"
     },
     {
         "origem": "D094",
@@ -5353,7 +5665,9 @@ const FLUXOS_DATA = [
         "volume": 48,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600063832_09618100"
     },
     {
         "origem": "D094",
@@ -5361,7 +5675,9 @@ const FLUXOS_DATA = [
         "volume": 16,
         "movimentacoes": 3,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_3000000332_05525080"
     },
     {
         "origem": "D094",
@@ -5369,7 +5685,9 @@ const FLUXOS_DATA = [
         "volume": 1041111,
         "movimentacoes": 107,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600043057_05544000"
     },
     {
         "origem": "D094",
@@ -5377,7 +5695,9 @@ const FLUXOS_DATA = [
         "volume": 120000,
         "movimentacoes": 4,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600043552_06362042"
     },
     {
         "origem": "D094",
@@ -5385,7 +5705,9 @@ const FLUXOS_DATA = [
         "volume": 30,
         "movimentacoes": 4,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600044617_05565210"
     },
     {
         "origem": "D094",
@@ -5393,7 +5715,9 @@ const FLUXOS_DATA = [
         "volume": 4,
         "movimentacoes": 2,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600053308_05786010"
     },
     {
         "origem": "D094",
@@ -5401,7 +5725,9 @@ const FLUXOS_DATA = [
         "volume": 9000,
         "movimentacoes": 2,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600054257_05786010"
     },
     {
         "origem": "D094",
@@ -5409,7 +5735,9 @@ const FLUXOS_DATA = [
         "volume": 40,
         "movimentacoes": 6,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600055659_05657140"
     },
     {
         "origem": "D094",
@@ -5417,7 +5745,9 @@ const FLUXOS_DATA = [
         "volume": 500,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600056260_04728210"
     },
     {
         "origem": "D094",
@@ -5425,7 +5755,9 @@ const FLUXOS_DATA = [
         "volume": 8,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600057156_08285000"
     },
     {
         "origem": "D094",
@@ -5433,7 +5765,9 @@ const FLUXOS_DATA = [
         "volume": 4850,
         "movimentacoes": 9,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600057275_06330281"
     },
     {
         "origem": "D094",
@@ -5441,7 +5775,9 @@ const FLUXOS_DATA = [
         "volume": 100,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600059444_06268000"
     },
     {
         "origem": "D094",
@@ -5449,7 +5785,9 @@ const FLUXOS_DATA = [
         "volume": 7,
         "movimentacoes": 2,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600059508_06529190"
     },
     {
         "origem": "D094",
@@ -5457,7 +5795,9 @@ const FLUXOS_DATA = [
         "volume": 300,
         "movimentacoes": 3,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600059671_04781065"
     },
     {
         "origem": "D094",
@@ -5465,7 +5805,9 @@ const FLUXOS_DATA = [
         "volume": 2948.217,
         "movimentacoes": 5,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600059895_02167010"
     },
     {
         "origem": "D094",
@@ -5473,7 +5815,9 @@ const FLUXOS_DATA = [
         "volume": 1340.663,
         "movimentacoes": 2,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600059951_07171150"
     },
     {
         "origem": "D094",
@@ -5481,7 +5825,9 @@ const FLUXOS_DATA = [
         "volume": 1098362,
         "movimentacoes": 107,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060020_06381100"
     },
     {
         "origem": "D094",
@@ -5489,7 +5835,9 @@ const FLUXOS_DATA = [
         "volume": 100,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060037_09290260"
     },
     {
         "origem": "D094",
@@ -5497,7 +5845,9 @@ const FLUXOS_DATA = [
         "volume": 21504.175,
         "movimentacoes": 4,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060240_05419000"
     },
     {
         "origem": "D094",
@@ -5505,7 +5855,9 @@ const FLUXOS_DATA = [
         "volume": 1788720,
         "movimentacoes": 168,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060294_06715825"
     },
     {
         "origem": "D094",
@@ -5513,7 +5865,9 @@ const FLUXOS_DATA = [
         "volume": 1117.975,
         "movimentacoes": 11,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060565_05187010"
     },
     {
         "origem": "D094",
@@ -5521,7 +5875,9 @@ const FLUXOS_DATA = [
         "volume": 4,
         "movimentacoes": 2,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600062381_02034000"
     },
     {
         "origem": "D094",
@@ -5529,7 +5885,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600062694_13231600"
     },
     {
         "origem": "D094",
@@ -5537,7 +5895,9 @@ const FLUXOS_DATA = [
         "volume": 40,
         "movimentacoes": 2,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600063172_12910610"
     },
     {
         "origem": "D094",
@@ -5545,7 +5905,9 @@ const FLUXOS_DATA = [
         "volume": 2000,
         "movimentacoes": 3,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_3000000310_30140140"
     },
     {
         "origem": "D094",
@@ -5553,7 +5915,9 @@ const FLUXOS_DATA = [
         "volume": 3,
         "movimentacoes": 1,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600037457_04571936"
     },
     {
         "origem": "D094",
@@ -5561,7 +5925,9 @@ const FLUXOS_DATA = [
         "volume": 10,
         "movimentacoes": 1,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600042058_04557010"
     },
     {
         "origem": "D094",
@@ -5569,7 +5935,9 @@ const FLUXOS_DATA = [
         "volume": 25900,
         "movimentacoes": 52,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600043057_05544000"
     },
     {
         "origem": "D094",
@@ -5577,7 +5945,9 @@ const FLUXOS_DATA = [
         "volume": 10,
         "movimentacoes": 2,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600049948_12245820"
     },
     {
         "origem": "D094",
@@ -5585,7 +5955,9 @@ const FLUXOS_DATA = [
         "volume": 1405,
         "movimentacoes": 1,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600053308_05786010"
     },
     {
         "origem": "D094",
@@ -5593,7 +5965,9 @@ const FLUXOS_DATA = [
         "volume": 2400,
         "movimentacoes": 2,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600054257_05786010"
     },
     {
         "origem": "D094",
@@ -5601,7 +5975,9 @@ const FLUXOS_DATA = [
         "volume": 1088,
         "movimentacoes": 6,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600055937_05626020"
     },
     {
         "origem": "D094",
@@ -5609,7 +5985,9 @@ const FLUXOS_DATA = [
         "volume": 26165,
         "movimentacoes": 19,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600057275_06330281"
     },
     {
         "origem": "D094",
@@ -5617,7 +5995,9 @@ const FLUXOS_DATA = [
         "volume": 3030,
         "movimentacoes": 7,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600059444_06268000"
     },
     {
         "origem": "D094",
@@ -5625,7 +6005,9 @@ const FLUXOS_DATA = [
         "volume": 3000,
         "movimentacoes": 6,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600059502_06397110"
     },
     {
         "origem": "D094",
@@ -5633,7 +6015,9 @@ const FLUXOS_DATA = [
         "volume": 3000,
         "movimentacoes": 3,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600059508_06529190"
     },
     {
         "origem": "D094",
@@ -5641,7 +6025,9 @@ const FLUXOS_DATA = [
         "volume": 3035.119,
         "movimentacoes": 4,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600059895_02167010"
     },
     {
         "origem": "D094",
@@ -5649,7 +6035,9 @@ const FLUXOS_DATA = [
         "volume": 3,
         "movimentacoes": 1,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600059910_04456160"
     },
     {
         "origem": "D094",
@@ -5657,7 +6045,9 @@ const FLUXOS_DATA = [
         "volume": 1625.373,
         "movimentacoes": 1,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600059912_07191000"
     },
     {
         "origem": "D094",
@@ -5665,7 +6055,9 @@ const FLUXOS_DATA = [
         "volume": 5761.232999999999,
         "movimentacoes": 2,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600059951_07171150"
     },
     {
         "origem": "D094",
@@ -5673,7 +6065,9 @@ const FLUXOS_DATA = [
         "volume": 97507,
         "movimentacoes": 159,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060020_06381100"
     },
     {
         "origem": "D094",
@@ -5681,7 +6075,9 @@ const FLUXOS_DATA = [
         "volume": 11,
         "movimentacoes": 2,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060240_05419000"
     },
     {
         "origem": "D094",
@@ -5689,7 +6085,9 @@ const FLUXOS_DATA = [
         "volume": 66273,
         "movimentacoes": 174,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060294_06715825"
     },
     {
         "origem": "D094",
@@ -5697,7 +6095,9 @@ const FLUXOS_DATA = [
         "volume": 10,
         "movimentacoes": 1,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060323_11250462"
     },
     {
         "origem": "D094",
@@ -5705,7 +6105,9 @@ const FLUXOS_DATA = [
         "volume": 5650.392,
         "movimentacoes": 7,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060565_05187010"
     },
     {
         "origem": "D094",
@@ -5713,7 +6115,9 @@ const FLUXOS_DATA = [
         "volume": 2603.394,
         "movimentacoes": 1,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600063048_09190410"
     },
     {
         "origem": "D094",
@@ -5721,7 +6125,9 @@ const FLUXOS_DATA = [
         "volume": 45420,
         "movimentacoes": 74,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600063664_05307000"
     },
     {
         "origem": "D094",
@@ -5729,7 +6135,9 @@ const FLUXOS_DATA = [
         "volume": 1356,
         "movimentacoes": 2,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600063832_09618100"
     },
     {
         "origem": "D094",
@@ -5737,7 +6145,9 @@ const FLUXOS_DATA = [
         "volume": 3065.932,
         "movimentacoes": 2,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600064867_09190410"
     },
     {
         "origem": "D094",
@@ -5745,7 +6155,9 @@ const FLUXOS_DATA = [
         "volume": 500,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600042911_02167010"
     },
     {
         "origem": "D094",
@@ -5753,7 +6165,9 @@ const FLUXOS_DATA = [
         "volume": 20678,
         "movimentacoes": 341,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600043057_05544000"
     },
     {
         "origem": "D094",
@@ -5761,7 +6175,9 @@ const FLUXOS_DATA = [
         "volume": 136,
         "movimentacoes": 25,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600044617_05565210"
     },
     {
         "origem": "D094",
@@ -5769,7 +6185,9 @@ const FLUXOS_DATA = [
         "volume": 100,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600049948_12245820"
     },
     {
         "origem": "D094",
@@ -5777,7 +6195,9 @@ const FLUXOS_DATA = [
         "volume": 20,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600054151_09190410"
     },
     {
         "origem": "D094",
@@ -5785,7 +6205,9 @@ const FLUXOS_DATA = [
         "volume": 32,
         "movimentacoes": 3,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600054257_05786010"
     },
     {
         "origem": "D094",
@@ -5793,7 +6215,9 @@ const FLUXOS_DATA = [
         "volume": 2169,
         "movimentacoes": 42,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600055659_05657140"
     },
     {
         "origem": "D094",
@@ -5801,7 +6225,9 @@ const FLUXOS_DATA = [
         "volume": 4089,
         "movimentacoes": 3,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600055660_06397110"
     },
     {
         "origem": "D094",
@@ -5809,7 +6235,9 @@ const FLUXOS_DATA = [
         "volume": 4715,
         "movimentacoes": 46,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600056260_04728210"
     },
     {
         "origem": "D094",
@@ -5817,7 +6245,9 @@ const FLUXOS_DATA = [
         "volume": 535,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600057061_05541130"
     },
     {
         "origem": "D094",
@@ -5825,7 +6255,9 @@ const FLUXOS_DATA = [
         "volume": 1284,
         "movimentacoes": 7,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600057062_04048000"
     },
     {
         "origem": "D094",
@@ -5833,7 +6265,9 @@ const FLUXOS_DATA = [
         "volume": 490,
         "movimentacoes": 11,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600057156_08285000"
     },
     {
         "origem": "D094",
@@ -5841,7 +6275,9 @@ const FLUXOS_DATA = [
         "volume": 29,
         "movimentacoes": 4,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600057205_05541130"
     },
     {
         "origem": "D094",
@@ -5849,7 +6285,9 @@ const FLUXOS_DATA = [
         "volume": 14343,
         "movimentacoes": 168,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600057275_06330281"
     },
     {
         "origem": "D094",
@@ -5857,7 +6295,9 @@ const FLUXOS_DATA = [
         "volume": 1528,
         "movimentacoes": 7,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600059444_06268000"
     },
     {
         "origem": "D094",
@@ -5865,7 +6305,9 @@ const FLUXOS_DATA = [
         "volume": 68,
         "movimentacoes": 3,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600059508_06529190"
     },
     {
         "origem": "D094",
@@ -5873,7 +6315,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600059554_22775056"
     },
     {
         "origem": "D094",
@@ -5881,7 +6325,9 @@ const FLUXOS_DATA = [
         "volume": 20,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600059671_04781065"
     },
     {
         "origem": "D094",
@@ -5889,7 +6335,9 @@ const FLUXOS_DATA = [
         "volume": 122,
         "movimentacoes": 5,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600059852_04348070"
     },
     {
         "origem": "D094",
@@ -5897,7 +6345,9 @@ const FLUXOS_DATA = [
         "volume": 51,
         "movimentacoes": 3,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600059854_05038090"
     },
     {
         "origem": "D094",
@@ -5905,7 +6355,9 @@ const FLUXOS_DATA = [
         "volume": 5611.85,
         "movimentacoes": 37,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600059895_02167010"
     },
     {
         "origem": "D094",
@@ -5913,7 +6365,9 @@ const FLUXOS_DATA = [
         "volume": 200,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600059910_04456160"
     },
     {
         "origem": "D094",
@@ -5921,7 +6375,9 @@ const FLUXOS_DATA = [
         "volume": 4290.9220000000005,
         "movimentacoes": 19,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600059912_07191000"
     },
     {
         "origem": "D094",
@@ -5929,7 +6385,9 @@ const FLUXOS_DATA = [
         "volume": 6582.171,
         "movimentacoes": 24,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600059951_07171150"
     },
     {
         "origem": "D094",
@@ -5937,7 +6395,9 @@ const FLUXOS_DATA = [
         "volume": 1850,
         "movimentacoes": 4,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600059968_04048000"
     },
     {
         "origem": "D094",
@@ -5945,7 +6405,9 @@ const FLUXOS_DATA = [
         "volume": 512,
         "movimentacoes": 7,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600059980_09840000"
     },
     {
         "origem": "D094",
@@ -5953,7 +6415,9 @@ const FLUXOS_DATA = [
         "volume": 112,
         "movimentacoes": 5,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600059990_05095010"
     },
     {
         "origem": "D094",
@@ -5961,7 +6425,9 @@ const FLUXOS_DATA = [
         "volume": 48084.5,
         "movimentacoes": 593,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060020_06381100"
     },
     {
         "origem": "D094",
@@ -5969,7 +6435,9 @@ const FLUXOS_DATA = [
         "volume": 623,
         "movimentacoes": 14,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060030_08260030"
     },
     {
         "origem": "D094",
@@ -5977,7 +6445,9 @@ const FLUXOS_DATA = [
         "volume": 530,
         "movimentacoes": 4,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060037_09290260"
     },
     {
         "origem": "D094",
@@ -5985,7 +6455,9 @@ const FLUXOS_DATA = [
         "volume": 168,
         "movimentacoes": 16,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060062_03889000"
     },
     {
         "origem": "D094",
@@ -5993,7 +6465,9 @@ const FLUXOS_DATA = [
         "volume": 79,
         "movimentacoes": 11,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060107_08664015"
     },
     {
         "origem": "D094",
@@ -6001,7 +6475,9 @@ const FLUXOS_DATA = [
         "volume": 94,
         "movimentacoes": 12,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060108_08664015"
     },
     {
         "origem": "D094",
@@ -6009,7 +6485,9 @@ const FLUXOS_DATA = [
         "volume": 54,
         "movimentacoes": 10,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060110_18205720"
     },
     {
         "origem": "D094",
@@ -6017,7 +6495,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060183_11900000"
     },
     {
         "origem": "D094",
@@ -6025,7 +6505,9 @@ const FLUXOS_DATA = [
         "volume": 4,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060208_11666590"
     },
     {
         "origem": "D094",
@@ -6033,7 +6515,9 @@ const FLUXOS_DATA = [
         "volume": 74,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060225_12231140"
     },
     {
         "origem": "D094",
@@ -6041,7 +6525,9 @@ const FLUXOS_DATA = [
         "volume": 10,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060228_18304110"
     },
     {
         "origem": "D094",
@@ -6049,7 +6535,9 @@ const FLUXOS_DATA = [
         "volume": 1848,
         "movimentacoes": 15,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060240_05419000"
     },
     {
         "origem": "D094",
@@ -6057,7 +6545,9 @@ const FLUXOS_DATA = [
         "volume": 92,
         "movimentacoes": 5,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060241_18240000"
     },
     {
         "origem": "D094",
@@ -6065,7 +6555,9 @@ const FLUXOS_DATA = [
         "volume": 134,
         "movimentacoes": 6,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060243_11085601"
     },
     {
         "origem": "D094",
@@ -6073,7 +6565,9 @@ const FLUXOS_DATA = [
         "volume": 92,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060264_18705650"
     },
     {
         "origem": "D094",
@@ -6081,7 +6575,9 @@ const FLUXOS_DATA = [
         "volume": 6,
         "movimentacoes": 3,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060267_11600733"
     },
     {
         "origem": "D094",
@@ -6089,7 +6585,9 @@ const FLUXOS_DATA = [
         "volume": 140,
         "movimentacoes": 3,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060285_04829280"
     },
     {
         "origem": "D094",
@@ -6097,7 +6595,9 @@ const FLUXOS_DATA = [
         "volume": 49057.5,
         "movimentacoes": 656,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060294_06715825"
     },
     {
         "origem": "D094",
@@ -6105,7 +6605,9 @@ const FLUXOS_DATA = [
         "volume": 148,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060299_18900440"
     },
     {
         "origem": "D094",
@@ -6113,7 +6615,9 @@ const FLUXOS_DATA = [
         "volume": 330,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060322_12209240"
     },
     {
         "origem": "D094",
@@ -6121,7 +6625,9 @@ const FLUXOS_DATA = [
         "volume": 107,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060323_11250462"
     },
     {
         "origem": "D094",
@@ -6129,7 +6635,9 @@ const FLUXOS_DATA = [
         "volume": 1142,
         "movimentacoes": 10,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060345_06856000"
     },
     {
         "origem": "D094",
@@ -6137,7 +6645,9 @@ const FLUXOS_DATA = [
         "volume": 4708.045000000001,
         "movimentacoes": 60,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060565_05187010"
     },
     {
         "origem": "D094",
@@ -6145,7 +6655,9 @@ const FLUXOS_DATA = [
         "volume": 22,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060683_12242000"
     },
     {
         "origem": "D094",
@@ -6153,7 +6665,9 @@ const FLUXOS_DATA = [
         "volume": 241,
         "movimentacoes": 6,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600062532_13733060"
     },
     {
         "origem": "D094",
@@ -6161,7 +6675,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600062590_18276120"
     },
     {
         "origem": "D094",
@@ -6169,7 +6685,9 @@ const FLUXOS_DATA = [
         "volume": 19,
         "movimentacoes": 8,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600062694_13231600"
     },
     {
         "origem": "D094",
@@ -6177,7 +6695,9 @@ const FLUXOS_DATA = [
         "volume": 5,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600062805_13187075"
     },
     {
         "origem": "D094",
@@ -6185,7 +6705,9 @@ const FLUXOS_DATA = [
         "volume": 131,
         "movimentacoes": 3,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600062946_13590000"
     },
     {
         "origem": "D094",
@@ -6193,7 +6715,9 @@ const FLUXOS_DATA = [
         "volume": 31,
         "movimentacoes": 5,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600062989_18320000"
     },
     {
         "origem": "D094",
@@ -6201,7 +6725,9 @@ const FLUXOS_DATA = [
         "volume": 327,
         "movimentacoes": 8,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600063172_12910610"
     },
     {
         "origem": "D094",
@@ -6209,7 +6735,9 @@ const FLUXOS_DATA = [
         "volume": 258,
         "movimentacoes": 1,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_3000000324_01227200"
     },
     {
         "origem": "D094",
@@ -6217,7 +6745,9 @@ const FLUXOS_DATA = [
         "volume": 60341,
         "movimentacoes": 79,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600043057_05544000"
     },
     {
         "origem": "D094",
@@ -6225,7 +6755,9 @@ const FLUXOS_DATA = [
         "volume": 100,
         "movimentacoes": 1,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600044617_05565210"
     },
     {
         "origem": "D094",
@@ -6233,7 +6765,9 @@ const FLUXOS_DATA = [
         "volume": 6000,
         "movimentacoes": 4,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600053308_05786010"
     },
     {
         "origem": "D094",
@@ -6241,7 +6775,9 @@ const FLUXOS_DATA = [
         "volume": 3000,
         "movimentacoes": 2,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600054257_05786010"
     },
     {
         "origem": "D094",
@@ -6249,7 +6785,9 @@ const FLUXOS_DATA = [
         "volume": 8300,
         "movimentacoes": 10,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600055659_05657140"
     },
     {
         "origem": "D094",
@@ -6257,7 +6795,9 @@ const FLUXOS_DATA = [
         "volume": 8000,
         "movimentacoes": 1,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600055660_06397110"
     },
     {
         "origem": "D094",
@@ -6265,7 +6805,9 @@ const FLUXOS_DATA = [
         "volume": 16800,
         "movimentacoes": 9,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600056260_04728210"
     },
     {
         "origem": "D094",
@@ -6273,7 +6815,9 @@ const FLUXOS_DATA = [
         "volume": 3000,
         "movimentacoes": 33,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600057205_05541130"
     },
     {
         "origem": "D094",
@@ -6281,7 +6825,9 @@ const FLUXOS_DATA = [
         "volume": 27562,
         "movimentacoes": 31,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600057275_06330281"
     },
     {
         "origem": "D094",
@@ -6289,7 +6835,9 @@ const FLUXOS_DATA = [
         "volume": 690,
         "movimentacoes": 1,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600058865_09310000"
     },
     {
         "origem": "D094",
@@ -6297,7 +6845,9 @@ const FLUXOS_DATA = [
         "volume": 1400,
         "movimentacoes": 3,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600059444_06268000"
     },
     {
         "origem": "D094",
@@ -6305,7 +6855,9 @@ const FLUXOS_DATA = [
         "volume": 6000,
         "movimentacoes": 2,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600059502_06397110"
     },
     {
         "origem": "D094",
@@ -6313,7 +6865,9 @@ const FLUXOS_DATA = [
         "volume": 1062,
         "movimentacoes": 7,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600059554_22775056"
     },
     {
         "origem": "D094",
@@ -6321,7 +6875,9 @@ const FLUXOS_DATA = [
         "volume": 2800,
         "movimentacoes": 1,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600059744_04602909"
     },
     {
         "origem": "D094",
@@ -6329,7 +6885,9 @@ const FLUXOS_DATA = [
         "volume": 5600,
         "movimentacoes": 6,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600059854_05038090"
     },
     {
         "origem": "D094",
@@ -6337,7 +6895,9 @@ const FLUXOS_DATA = [
         "volume": 4170.23,
         "movimentacoes": 9,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600059895_02167010"
     },
     {
         "origem": "D094",
@@ -6345,7 +6905,9 @@ const FLUXOS_DATA = [
         "volume": 2930.46,
         "movimentacoes": 7,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600059912_07191000"
     },
     {
         "origem": "D094",
@@ -6353,7 +6915,9 @@ const FLUXOS_DATA = [
         "volume": 10247.3,
         "movimentacoes": 7,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600059951_07171150"
     },
     {
         "origem": "D094",
@@ -6361,7 +6925,9 @@ const FLUXOS_DATA = [
         "volume": 103198.89,
         "movimentacoes": 107,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060020_06381100"
     },
     {
         "origem": "D094",
@@ -6369,7 +6935,9 @@ const FLUXOS_DATA = [
         "volume": 18500,
         "movimentacoes": 8,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060030_08260030"
     },
     {
         "origem": "D094",
@@ -6377,7 +6945,9 @@ const FLUXOS_DATA = [
         "volume": 462,
         "movimentacoes": 1,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060037_09290260"
     },
     {
         "origem": "D094",
@@ -6385,7 +6955,9 @@ const FLUXOS_DATA = [
         "volume": 1004,
         "movimentacoes": 3,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060062_03889000"
     },
     {
         "origem": "D094",
@@ -6393,7 +6965,9 @@ const FLUXOS_DATA = [
         "volume": 1400,
         "movimentacoes": 2,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060107_08664015"
     },
     {
         "origem": "D094",
@@ -6401,7 +6975,9 @@ const FLUXOS_DATA = [
         "volume": 8550,
         "movimentacoes": 5,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060108_08664015"
     },
     {
         "origem": "D094",
@@ -6409,7 +6985,9 @@ const FLUXOS_DATA = [
         "volume": 500,
         "movimentacoes": 2,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060240_05419000"
     },
     {
         "origem": "D094",
@@ -6417,7 +6995,9 @@ const FLUXOS_DATA = [
         "volume": 2000,
         "movimentacoes": 1,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060243_11085601"
     },
     {
         "origem": "D094",
@@ -6425,7 +7005,9 @@ const FLUXOS_DATA = [
         "volume": 4000,
         "movimentacoes": 1,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060285_04829280"
     },
     {
         "origem": "D094",
@@ -6433,7 +7015,9 @@ const FLUXOS_DATA = [
         "volume": 136652,
         "movimentacoes": 204,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060294_06715825"
     },
     {
         "origem": "D094",
@@ -6441,7 +7025,9 @@ const FLUXOS_DATA = [
         "volume": 669.3299999999999,
         "movimentacoes": 8,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060565_05187010"
     },
     {
         "origem": "D094",
@@ -6449,7 +7035,9 @@ const FLUXOS_DATA = [
         "volume": 396,
         "movimentacoes": 1,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060584_11725060"
     },
     {
         "origem": "D094",
@@ -6457,7 +7045,9 @@ const FLUXOS_DATA = [
         "volume": 78,
         "movimentacoes": 2,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600062381_02034000"
     },
     {
         "origem": "D094",
@@ -6465,7 +7055,9 @@ const FLUXOS_DATA = [
         "volume": 2184,
         "movimentacoes": 2,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600062532_13733060"
     },
     {
         "origem": "D094",
@@ -6473,7 +7065,9 @@ const FLUXOS_DATA = [
         "volume": 5500,
         "movimentacoes": 1,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600062590_18276120"
     },
     {
         "origem": "D094",
@@ -6481,7 +7075,9 @@ const FLUXOS_DATA = [
         "volume": 2000,
         "movimentacoes": 1,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600062805_13187075"
     },
     {
         "origem": "D094",
@@ -6489,7 +7085,9 @@ const FLUXOS_DATA = [
         "volume": 7000,
         "movimentacoes": 1,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600062946_13590000"
     },
     {
         "origem": "D094",
@@ -6497,7 +7095,9 @@ const FLUXOS_DATA = [
         "volume": 3300,
         "movimentacoes": 2,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600063172_12910610"
     },
     {
         "origem": "D094",
@@ -6505,7 +7105,9 @@ const FLUXOS_DATA = [
         "volume": 474,
         "movimentacoes": 1,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600042911_02167010"
     },
     {
         "origem": "D094",
@@ -6513,7 +7115,9 @@ const FLUXOS_DATA = [
         "volume": 16055,
         "movimentacoes": 63,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600043057_05544000"
     },
     {
         "origem": "D094",
@@ -6521,7 +7125,9 @@ const FLUXOS_DATA = [
         "volume": 432,
         "movimentacoes": 2,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600053308_05786010"
     },
     {
         "origem": "D094",
@@ -6529,7 +7135,9 @@ const FLUXOS_DATA = [
         "volume": 600,
         "movimentacoes": 1,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600054151_09190410"
     },
     {
         "origem": "D094",
@@ -6537,7 +7145,9 @@ const FLUXOS_DATA = [
         "volume": 180,
         "movimentacoes": 1,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600054257_05786010"
     },
     {
         "origem": "D094",
@@ -6545,7 +7155,9 @@ const FLUXOS_DATA = [
         "volume": 2430,
         "movimentacoes": 2,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600057062_04048000"
     },
     {
         "origem": "D094",
@@ -6553,7 +7165,9 @@ const FLUXOS_DATA = [
         "volume": 504,
         "movimentacoes": 1,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600057156_08285000"
     },
     {
         "origem": "D094",
@@ -6561,7 +7175,9 @@ const FLUXOS_DATA = [
         "volume": 7776,
         "movimentacoes": 26,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600057275_06330281"
     },
     {
         "origem": "D094",
@@ -6569,7 +7185,9 @@ const FLUXOS_DATA = [
         "volume": 4366.93,
         "movimentacoes": 11,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600059895_02167010"
     },
     {
         "origem": "D094",
@@ -6577,7 +7195,9 @@ const FLUXOS_DATA = [
         "volume": 600,
         "movimentacoes": 1,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600059910_04456160"
     },
     {
         "origem": "D094",
@@ -6585,7 +7205,9 @@ const FLUXOS_DATA = [
         "volume": 2669.52,
         "movimentacoes": 5,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600059912_07191000"
     },
     {
         "origem": "D094",
@@ -6593,7 +7215,9 @@ const FLUXOS_DATA = [
         "volume": 6417.26,
         "movimentacoes": 13,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600059951_07171150"
     },
     {
         "origem": "D094",
@@ -6601,7 +7225,9 @@ const FLUXOS_DATA = [
         "volume": 3000,
         "movimentacoes": 2,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600059968_04048000"
     },
     {
         "origem": "D094",
@@ -6609,7 +7235,9 @@ const FLUXOS_DATA = [
         "volume": 240,
         "movimentacoes": 1,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600059980_09840000"
     },
     {
         "origem": "D094",
@@ -6617,7 +7245,9 @@ const FLUXOS_DATA = [
         "volume": 34862,
         "movimentacoes": 92,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060020_06381100"
     },
     {
         "origem": "D094",
@@ -6625,7 +7255,9 @@ const FLUXOS_DATA = [
         "volume": 600,
         "movimentacoes": 2,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060030_08260030"
     },
     {
         "origem": "D094",
@@ -6633,7 +7265,9 @@ const FLUXOS_DATA = [
         "volume": 1200,
         "movimentacoes": 1,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060037_09290260"
     },
     {
         "origem": "D094",
@@ -6641,7 +7275,9 @@ const FLUXOS_DATA = [
         "volume": 1916,
         "movimentacoes": 4,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060108_08664015"
     },
     {
         "origem": "D094",
@@ -6649,7 +7285,9 @@ const FLUXOS_DATA = [
         "volume": 3600,
         "movimentacoes": 3,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060240_05419000"
     },
     {
         "origem": "D094",
@@ -6657,7 +7295,9 @@ const FLUXOS_DATA = [
         "volume": 54066.28,
         "movimentacoes": 134,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060294_06715825"
     },
     {
         "origem": "D094",
@@ -6665,7 +7305,9 @@ const FLUXOS_DATA = [
         "volume": 216,
         "movimentacoes": 1,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060345_06856000"
     },
     {
         "origem": "D094",
@@ -6673,7 +7315,9 @@ const FLUXOS_DATA = [
         "volume": 6210.43,
         "movimentacoes": 13,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600060565_05187010"
     },
     {
         "origem": "D094",
@@ -6681,7 +7325,9 @@ const FLUXOS_DATA = [
         "volume": 198,
         "movimentacoes": 1,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D094",
+        "parceiro": "P_4600062532_13733060"
     },
     {
         "origem": "D029",
@@ -6689,7 +7335,9 @@ const FLUXOS_DATA = [
         "volume": 6076,
         "movimentacoes": 8,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600041302_03889000"
     },
     {
         "origem": "D029",
@@ -6697,7 +7345,9 @@ const FLUXOS_DATA = [
         "volume": 14481,
         "movimentacoes": 25,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600042975_08664015"
     },
     {
         "origem": "D029",
@@ -6705,7 +7355,9 @@ const FLUXOS_DATA = [
         "volume": 8000,
         "movimentacoes": 8,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600056089_08260030"
     },
     {
         "origem": "D029",
@@ -6713,7 +7365,9 @@ const FLUXOS_DATA = [
         "volume": 13500,
         "movimentacoes": 3,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600056513_08110210"
     },
     {
         "origem": "D029",
@@ -6721,7 +7375,9 @@ const FLUXOS_DATA = [
         "volume": 500,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600057056_09340730"
     },
     {
         "origem": "D029",
@@ -6729,7 +7385,9 @@ const FLUXOS_DATA = [
         "volume": 1500,
         "movimentacoes": 2,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600057156_08285000"
     },
     {
         "origem": "D029",
@@ -6737,7 +7395,9 @@ const FLUXOS_DATA = [
         "volume": 5000,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600059895_02167010"
     },
     {
         "origem": "D029",
@@ -6745,7 +7405,9 @@ const FLUXOS_DATA = [
         "volume": 1000,
         "movimentacoes": 2,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600059922_02945030"
     },
     {
         "origem": "D029",
@@ -6753,7 +7415,9 @@ const FLUXOS_DATA = [
         "volume": 1,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600059968_04048000"
     },
     {
         "origem": "D029",
@@ -6761,7 +7425,9 @@ const FLUXOS_DATA = [
         "volume": 93973,
         "movimentacoes": 55,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600060030_08260030"
     },
     {
         "origem": "D029",
@@ -6769,7 +7435,9 @@ const FLUXOS_DATA = [
         "volume": 42781,
         "movimentacoes": 44,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600060062_03889000"
     },
     {
         "origem": "D029",
@@ -6777,7 +7445,9 @@ const FLUXOS_DATA = [
         "volume": 66528,
         "movimentacoes": 65,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600060107_08664015"
     },
     {
         "origem": "D029",
@@ -6785,7 +7455,9 @@ const FLUXOS_DATA = [
         "volume": 62455,
         "movimentacoes": 73,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600060108_08664015"
     },
     {
         "origem": "D029",
@@ -6793,7 +7465,9 @@ const FLUXOS_DATA = [
         "volume": 1750,
         "movimentacoes": 4,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600060243_11085601"
     },
     {
         "origem": "D029",
@@ -6801,7 +7475,9 @@ const FLUXOS_DATA = [
         "volume": 1000,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600060294_06715825"
     },
     {
         "origem": "D029",
@@ -6809,7 +7485,9 @@ const FLUXOS_DATA = [
         "volume": 30,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600060324_14409406"
     },
     {
         "origem": "D029",
@@ -6817,7 +7495,9 @@ const FLUXOS_DATA = [
         "volume": 4000,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600060345_06856000"
     },
     {
         "origem": "D029",
@@ -6825,7 +7505,9 @@ const FLUXOS_DATA = [
         "volume": 400,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600062805_13187075"
     },
     {
         "origem": "D029",
@@ -6833,7 +7515,9 @@ const FLUXOS_DATA = [
         "volume": 61409,
         "movimentacoes": 8,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600064845_09190410"
     },
     {
         "origem": "D029",
@@ -6841,7 +7525,9 @@ const FLUXOS_DATA = [
         "volume": 425901,
         "movimentacoes": 9,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600041302_03889000"
     },
     {
         "origem": "D029",
@@ -6849,7 +7535,9 @@ const FLUXOS_DATA = [
         "volume": 593380,
         "movimentacoes": 13,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600042975_08664015"
     },
     {
         "origem": "D029",
@@ -6857,7 +7545,9 @@ const FLUXOS_DATA = [
         "volume": 396800,
         "movimentacoes": 9,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600056089_08260030"
     },
     {
         "origem": "D029",
@@ -6865,7 +7555,9 @@ const FLUXOS_DATA = [
         "volume": 100,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600056982_11410410"
     },
     {
         "origem": "D029",
@@ -6873,7 +7565,9 @@ const FLUXOS_DATA = [
         "volume": 503,
         "movimentacoes": 3,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600059895_02167010"
     },
     {
         "origem": "D029",
@@ -6881,7 +7575,9 @@ const FLUXOS_DATA = [
         "volume": 400,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600059912_07191000"
     },
     {
         "origem": "D029",
@@ -6889,7 +7585,9 @@ const FLUXOS_DATA = [
         "volume": 876865,
         "movimentacoes": 51,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600060030_08260030"
     },
     {
         "origem": "D029",
@@ -6897,7 +7595,9 @@ const FLUXOS_DATA = [
         "volume": 665754,
         "movimentacoes": 51,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600060062_03889000"
     },
     {
         "origem": "D029",
@@ -6905,7 +7605,9 @@ const FLUXOS_DATA = [
         "volume": 459971,
         "movimentacoes": 28,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600060107_08664015"
     },
     {
         "origem": "D029",
@@ -6913,7 +7615,9 @@ const FLUXOS_DATA = [
         "volume": 632948,
         "movimentacoes": 26,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600060108_08664015"
     },
     {
         "origem": "D029",
@@ -6921,7 +7625,9 @@ const FLUXOS_DATA = [
         "volume": 13,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600060225_12231140"
     },
     {
         "origem": "D029",
@@ -6929,7 +7635,9 @@ const FLUXOS_DATA = [
         "volume": 4,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600060264_18705650"
     },
     {
         "origem": "D029",
@@ -6937,7 +7645,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600062694_13231600"
     },
     {
         "origem": "D029",
@@ -6945,7 +7655,9 @@ const FLUXOS_DATA = [
         "volume": 2000,
         "movimentacoes": 1,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600054151_09190410"
     },
     {
         "origem": "D029",
@@ -6953,7 +7665,9 @@ const FLUXOS_DATA = [
         "volume": 1500,
         "movimentacoes": 2,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600056089_08260030"
     },
     {
         "origem": "D029",
@@ -6961,7 +7675,9 @@ const FLUXOS_DATA = [
         "volume": 775,
         "movimentacoes": 1,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600059951_07171150"
     },
     {
         "origem": "D029",
@@ -6969,7 +7685,9 @@ const FLUXOS_DATA = [
         "volume": 1000,
         "movimentacoes": 1,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600059968_04048000"
     },
     {
         "origem": "D029",
@@ -6977,7 +7695,9 @@ const FLUXOS_DATA = [
         "volume": 630,
         "movimentacoes": 1,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600060020_06381100"
     },
     {
         "origem": "D029",
@@ -6985,7 +7705,9 @@ const FLUXOS_DATA = [
         "volume": 63648,
         "movimentacoes": 53,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600060030_08260030"
     },
     {
         "origem": "D029",
@@ -6993,7 +7715,9 @@ const FLUXOS_DATA = [
         "volume": 42232,
         "movimentacoes": 40,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600060062_03889000"
     },
     {
         "origem": "D029",
@@ -7001,7 +7725,9 @@ const FLUXOS_DATA = [
         "volume": 37510,
         "movimentacoes": 53,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600060107_08664015"
     },
     {
         "origem": "D029",
@@ -7009,7 +7735,9 @@ const FLUXOS_DATA = [
         "volume": 41928,
         "movimentacoes": 54,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600060108_08664015"
     },
     {
         "origem": "D029",
@@ -7017,7 +7745,9 @@ const FLUXOS_DATA = [
         "volume": 3000,
         "movimentacoes": 1,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600060240_05419000"
     },
     {
         "origem": "D029",
@@ -7025,7 +7755,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 1,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600060294_06715825"
     },
     {
         "origem": "D029",
@@ -7033,7 +7765,9 @@ const FLUXOS_DATA = [
         "volume": 100,
         "movimentacoes": 1,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600062946_13590000"
     },
     {
         "origem": "D029",
@@ -7041,7 +7775,9 @@ const FLUXOS_DATA = [
         "volume": 700,
         "movimentacoes": 1,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600063009_04459000"
     },
     {
         "origem": "D029",
@@ -7049,7 +7785,9 @@ const FLUXOS_DATA = [
         "volume": 1200,
         "movimentacoes": 1,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600063048_09190410"
     },
     {
         "origem": "D029",
@@ -7057,7 +7795,9 @@ const FLUXOS_DATA = [
         "volume": 2720,
         "movimentacoes": 2,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600063664_05307000"
     },
     {
         "origem": "D029",
@@ -7065,7 +7805,9 @@ const FLUXOS_DATA = [
         "volume": 6241,
         "movimentacoes": 4,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600064845_09190410"
     },
     {
         "origem": "D029",
@@ -7073,7 +7815,9 @@ const FLUXOS_DATA = [
         "volume": 720,
         "movimentacoes": 1,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600064867_09190410"
     },
     {
         "origem": "D029",
@@ -7081,7 +7825,9 @@ const FLUXOS_DATA = [
         "volume": 1000,
         "movimentacoes": 1,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600066304_06404326"
     },
     {
         "origem": "D029",
@@ -7089,7 +7835,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_3000000332_05525080"
     },
     {
         "origem": "D029",
@@ -7097,7 +7845,9 @@ const FLUXOS_DATA = [
         "volume": 7748,
         "movimentacoes": 122,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600041302_03889000"
     },
     {
         "origem": "D029",
@@ -7105,7 +7855,9 @@ const FLUXOS_DATA = [
         "volume": 8498,
         "movimentacoes": 146,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600042975_08664015"
     },
     {
         "origem": "D029",
@@ -7113,7 +7865,9 @@ const FLUXOS_DATA = [
         "volume": 7986,
         "movimentacoes": 122,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600056089_08260030"
     },
     {
         "origem": "D029",
@@ -7121,7 +7875,9 @@ const FLUXOS_DATA = [
         "volume": 5,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600057059_08460245"
     },
     {
         "origem": "D029",
@@ -7129,7 +7885,9 @@ const FLUXOS_DATA = [
         "volume": 550,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600057061_05541130"
     },
     {
         "origem": "D029",
@@ -7137,7 +7895,9 @@ const FLUXOS_DATA = [
         "volume": 3589,
         "movimentacoes": 23,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600057156_08285000"
     },
     {
         "origem": "D029",
@@ -7145,7 +7905,9 @@ const FLUXOS_DATA = [
         "volume": 16,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600059852_04348070"
     },
     {
         "origem": "D029",
@@ -7153,7 +7915,9 @@ const FLUXOS_DATA = [
         "volume": 114,
         "movimentacoes": 5,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600059854_05038090"
     },
     {
         "origem": "D029",
@@ -7161,7 +7925,9 @@ const FLUXOS_DATA = [
         "volume": 40,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600059895_02167010"
     },
     {
         "origem": "D029",
@@ -7169,7 +7935,9 @@ const FLUXOS_DATA = [
         "volume": 30,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600059910_04456160"
     },
     {
         "origem": "D029",
@@ -7177,7 +7945,9 @@ const FLUXOS_DATA = [
         "volume": 26,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600059912_07191000"
     },
     {
         "origem": "D029",
@@ -7185,7 +7955,9 @@ const FLUXOS_DATA = [
         "volume": 34,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600059968_04048000"
     },
     {
         "origem": "D029",
@@ -7193,7 +7965,9 @@ const FLUXOS_DATA = [
         "volume": 920,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600059980_09840000"
     },
     {
         "origem": "D029",
@@ -7201,7 +7975,9 @@ const FLUXOS_DATA = [
         "volume": 26,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600060020_06381100"
     },
     {
         "origem": "D029",
@@ -7209,7 +7985,9 @@ const FLUXOS_DATA = [
         "volume": 22429,
         "movimentacoes": 294,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600060030_08260030"
     },
     {
         "origem": "D029",
@@ -7217,7 +7995,9 @@ const FLUXOS_DATA = [
         "volume": 2023,
         "movimentacoes": 4,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600060037_09290260"
     },
     {
         "origem": "D029",
@@ -7225,7 +8005,9 @@ const FLUXOS_DATA = [
         "volume": 27749,
         "movimentacoes": 421,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600060062_03889000"
     },
     {
         "origem": "D029",
@@ -7233,7 +8015,9 @@ const FLUXOS_DATA = [
         "volume": 8141,
         "movimentacoes": 235,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600060107_08664015"
     },
     {
         "origem": "D029",
@@ -7241,7 +8025,9 @@ const FLUXOS_DATA = [
         "volume": 11085,
         "movimentacoes": 232,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600060108_08664015"
     },
     {
         "origem": "D029",
@@ -7249,7 +8035,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600060208_11666590"
     },
     {
         "origem": "D029",
@@ -7257,7 +8045,9 @@ const FLUXOS_DATA = [
         "volume": 609,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600060240_05419000"
     },
     {
         "origem": "D029",
@@ -7265,7 +8055,9 @@ const FLUXOS_DATA = [
         "volume": 8,
         "movimentacoes": 6,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600060243_11085601"
     },
     {
         "origem": "D029",
@@ -7273,7 +8065,9 @@ const FLUXOS_DATA = [
         "volume": 10,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600060285_04829280"
     },
     {
         "origem": "D029",
@@ -7281,7 +8075,9 @@ const FLUXOS_DATA = [
         "volume": 1010,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600060294_06715825"
     },
     {
         "origem": "D029",
@@ -7289,7 +8085,9 @@ const FLUXOS_DATA = [
         "volume": 36,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600060323_11250462"
     },
     {
         "origem": "D029",
@@ -7297,7 +8095,9 @@ const FLUXOS_DATA = [
         "volume": 5,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600060345_06856000"
     },
     {
         "origem": "D029",
@@ -7305,7 +8105,9 @@ const FLUXOS_DATA = [
         "volume": 11,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600060539_05690050"
     },
     {
         "origem": "D029",
@@ -7313,7 +8115,9 @@ const FLUXOS_DATA = [
         "volume": 15,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600060565_05187010"
     },
     {
         "origem": "D029",
@@ -7321,7 +8125,9 @@ const FLUXOS_DATA = [
         "volume": 1,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600060584_11725060"
     },
     {
         "origem": "D029",
@@ -7329,7 +8135,9 @@ const FLUXOS_DATA = [
         "volume": 45,
         "movimentacoes": 4,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600060683_12242000"
     },
     {
         "origem": "D029",
@@ -7337,7 +8145,9 @@ const FLUXOS_DATA = [
         "volume": 5433.706,
         "movimentacoes": 5,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600042975_08664015"
     },
     {
         "origem": "D029",
@@ -7345,7 +8155,9 @@ const FLUXOS_DATA = [
         "volume": 106,
         "movimentacoes": 2,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600056089_08260030"
     },
     {
         "origem": "D029",
@@ -7353,7 +8165,9 @@ const FLUXOS_DATA = [
         "volume": 2100,
         "movimentacoes": 3,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600057156_08285000"
     },
     {
         "origem": "D029",
@@ -7361,7 +8175,9 @@ const FLUXOS_DATA = [
         "volume": 9307.95,
         "movimentacoes": 22,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600060030_08260030"
     },
     {
         "origem": "D029",
@@ -7369,7 +8185,9 @@ const FLUXOS_DATA = [
         "volume": 1840,
         "movimentacoes": 7,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600060062_03889000"
     },
     {
         "origem": "D029",
@@ -7377,7 +8195,9 @@ const FLUXOS_DATA = [
         "volume": 34315.7,
         "movimentacoes": 25,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600060107_08664015"
     },
     {
         "origem": "D029",
@@ -7385,7 +8205,9 @@ const FLUXOS_DATA = [
         "volume": 7335.02,
         "movimentacoes": 20,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600060108_08664015"
     },
     {
         "origem": "D029",
@@ -7393,7 +8215,9 @@ const FLUXOS_DATA = [
         "volume": 516,
         "movimentacoes": 3,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600056089_08260030"
     },
     {
         "origem": "D029",
@@ -7401,7 +8225,9 @@ const FLUXOS_DATA = [
         "volume": 1332,
         "movimentacoes": 1,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600057156_08285000"
     },
     {
         "origem": "D029",
@@ -7409,7 +8235,9 @@ const FLUXOS_DATA = [
         "volume": 2748.79,
         "movimentacoes": 8,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600060030_08260030"
     },
     {
         "origem": "D029",
@@ -7417,7 +8245,9 @@ const FLUXOS_DATA = [
         "volume": 1650,
         "movimentacoes": 2,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600060062_03889000"
     },
     {
         "origem": "D029",
@@ -7425,7 +8255,9 @@ const FLUXOS_DATA = [
         "volume": 2279,
         "movimentacoes": 6,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600060107_08664015"
     },
     {
         "origem": "D029",
@@ -7433,7 +8265,9 @@ const FLUXOS_DATA = [
         "volume": 2018.87,
         "movimentacoes": 5,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D029",
+        "parceiro": "P_4600060108_08664015"
     },
     {
         "origem": "D028",
@@ -7441,7 +8275,9 @@ const FLUXOS_DATA = [
         "volume": 112014,
         "movimentacoes": 59,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600042911_02167010"
     },
     {
         "origem": "D028",
@@ -7449,7 +8285,9 @@ const FLUXOS_DATA = [
         "volume": 11000,
         "movimentacoes": 4,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600043148_05058000"
     },
     {
         "origem": "D028",
@@ -7457,7 +8295,9 @@ const FLUXOS_DATA = [
         "volume": 33478,
         "movimentacoes": 11,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600045747_06460040"
     },
     {
         "origem": "D028",
@@ -7465,7 +8305,9 @@ const FLUXOS_DATA = [
         "volume": 27986,
         "movimentacoes": 10,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600046032_07171150"
     },
     {
         "origem": "D028",
@@ -7473,7 +8315,9 @@ const FLUXOS_DATA = [
         "volume": 12480,
         "movimentacoes": 11,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600048762_12922670"
     },
     {
         "origem": "D028",
@@ -7481,7 +8325,9 @@ const FLUXOS_DATA = [
         "volume": 10,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600054151_09190410"
     },
     {
         "origem": "D028",
@@ -7489,7 +8335,9 @@ const FLUXOS_DATA = [
         "volume": 600,
         "movimentacoes": 2,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600059579_06844005"
     },
     {
         "origem": "D028",
@@ -7497,7 +8345,9 @@ const FLUXOS_DATA = [
         "volume": 145200,
         "movimentacoes": 54,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600059895_02167010"
     },
     {
         "origem": "D028",
@@ -7505,7 +8355,9 @@ const FLUXOS_DATA = [
         "volume": 11755,
         "movimentacoes": 13,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600059912_07191000"
     },
     {
         "origem": "D028",
@@ -7513,7 +8365,9 @@ const FLUXOS_DATA = [
         "volume": 3751,
         "movimentacoes": 13,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600059922_02945030"
     },
     {
         "origem": "D028",
@@ -7521,7 +8375,9 @@ const FLUXOS_DATA = [
         "volume": 21284,
         "movimentacoes": 17,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600059951_07171150"
     },
     {
         "origem": "D028",
@@ -7529,7 +8385,9 @@ const FLUXOS_DATA = [
         "volume": 50,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600060323_11250462"
     },
     {
         "origem": "D028",
@@ -7537,7 +8395,9 @@ const FLUXOS_DATA = [
         "volume": 500,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600060324_14409406"
     },
     {
         "origem": "D028",
@@ -7545,7 +8405,9 @@ const FLUXOS_DATA = [
         "volume": 5655,
         "movimentacoes": 5,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600060464_02989095"
     },
     {
         "origem": "D028",
@@ -7553,7 +8415,9 @@ const FLUXOS_DATA = [
         "volume": 127125,
         "movimentacoes": 33,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600060565_05187010"
     },
     {
         "origem": "D028",
@@ -7561,7 +8425,9 @@ const FLUXOS_DATA = [
         "volume": 2300,
         "movimentacoes": 4,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600060683_12242000"
     },
     {
         "origem": "D028",
@@ -7569,7 +8435,9 @@ const FLUXOS_DATA = [
         "volume": 50,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600062694_13231600"
     },
     {
         "origem": "D028",
@@ -7577,7 +8445,9 @@ const FLUXOS_DATA = [
         "volume": 40,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600062989_18320000"
     },
     {
         "origem": "D028",
@@ -7585,7 +8455,9 @@ const FLUXOS_DATA = [
         "volume": 48320,
         "movimentacoes": 13,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600063048_09190410"
     },
     {
         "origem": "D028",
@@ -7593,7 +8465,9 @@ const FLUXOS_DATA = [
         "volume": 32000,
         "movimentacoes": 5,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600064867_09190410"
     },
     {
         "origem": "D028",
@@ -7601,7 +8475,9 @@ const FLUXOS_DATA = [
         "volume": 10,
         "movimentacoes": 4,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_3000001937_01227200"
     },
     {
         "origem": "D028",
@@ -7609,7 +8485,9 @@ const FLUXOS_DATA = [
         "volume": 6390,
         "movimentacoes": 40,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600042911_02167010"
     },
     {
         "origem": "D028",
@@ -7617,7 +8495,9 @@ const FLUXOS_DATA = [
         "volume": 17913,
         "movimentacoes": 14,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600045747_06460040"
     },
     {
         "origem": "D028",
@@ -7625,7 +8505,9 @@ const FLUXOS_DATA = [
         "volume": 876,
         "movimentacoes": 6,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600046032_07171150"
     },
     {
         "origem": "D028",
@@ -7633,7 +8515,9 @@ const FLUXOS_DATA = [
         "volume": 1765,
         "movimentacoes": 9,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600048762_12922670"
     },
     {
         "origem": "D028",
@@ -7641,7 +8525,9 @@ const FLUXOS_DATA = [
         "volume": 600,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600059852_04348070"
     },
     {
         "origem": "D028",
@@ -7649,7 +8535,9 @@ const FLUXOS_DATA = [
         "volume": 600,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600059854_05038090"
     },
     {
         "origem": "D028",
@@ -7657,7 +8545,9 @@ const FLUXOS_DATA = [
         "volume": 434390,
         "movimentacoes": 113,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600059895_02167010"
     },
     {
         "origem": "D028",
@@ -7665,7 +8555,9 @@ const FLUXOS_DATA = [
         "volume": 257765,
         "movimentacoes": 75,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600059912_07191000"
     },
     {
         "origem": "D028",
@@ -7673,7 +8565,9 @@ const FLUXOS_DATA = [
         "volume": 337977,
         "movimentacoes": 44,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600059951_07171150"
     },
     {
         "origem": "D028",
@@ -7681,7 +8575,9 @@ const FLUXOS_DATA = [
         "volume": 200,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600059990_05095010"
     },
     {
         "origem": "D028",
@@ -7689,7 +8585,9 @@ const FLUXOS_DATA = [
         "volume": 1510,
         "movimentacoes": 2,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600060020_06381100"
     },
     {
         "origem": "D028",
@@ -7697,7 +8595,9 @@ const FLUXOS_DATA = [
         "volume": 505,
         "movimentacoes": 2,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600060030_08260030"
     },
     {
         "origem": "D028",
@@ -7705,7 +8605,9 @@ const FLUXOS_DATA = [
         "volume": 35,
         "movimentacoes": 4,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600060062_03889000"
     },
     {
         "origem": "D028",
@@ -7713,7 +8615,9 @@ const FLUXOS_DATA = [
         "volume": 5,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600060107_08664015"
     },
     {
         "origem": "D028",
@@ -7721,7 +8625,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600060108_08664015"
     },
     {
         "origem": "D028",
@@ -7729,7 +8635,9 @@ const FLUXOS_DATA = [
         "volume": 1,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600060110_18205720"
     },
     {
         "origem": "D028",
@@ -7737,7 +8645,9 @@ const FLUXOS_DATA = [
         "volume": 110,
         "movimentacoes": 2,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600060240_05419000"
     },
     {
         "origem": "D028",
@@ -7745,7 +8655,9 @@ const FLUXOS_DATA = [
         "volume": 1,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600060285_04829280"
     },
     {
         "origem": "D028",
@@ -7753,7 +8665,9 @@ const FLUXOS_DATA = [
         "volume": 1000,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600060294_06715825"
     },
     {
         "origem": "D028",
@@ -7761,7 +8675,9 @@ const FLUXOS_DATA = [
         "volume": 95,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600060299_18900440"
     },
     {
         "origem": "D028",
@@ -7769,7 +8685,9 @@ const FLUXOS_DATA = [
         "volume": 522477,
         "movimentacoes": 120,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600060565_05187010"
     },
     {
         "origem": "D028",
@@ -7777,7 +8695,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600060683_12242000"
     },
     {
         "origem": "D028",
@@ -7785,7 +8705,9 @@ const FLUXOS_DATA = [
         "volume": 2000,
         "movimentacoes": 1,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_3000001937_01227200"
     },
     {
         "origem": "D028",
@@ -7793,7 +8715,9 @@ const FLUXOS_DATA = [
         "volume": 36896,
         "movimentacoes": 32,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600042911_02167010"
     },
     {
         "origem": "D028",
@@ -7801,7 +8725,9 @@ const FLUXOS_DATA = [
         "volume": 820,
         "movimentacoes": 2,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600043148_05058000"
     },
     {
         "origem": "D028",
@@ -7809,7 +8735,9 @@ const FLUXOS_DATA = [
         "volume": 15480,
         "movimentacoes": 10,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600045747_06460040"
     },
     {
         "origem": "D028",
@@ -7817,7 +8745,9 @@ const FLUXOS_DATA = [
         "volume": 22440,
         "movimentacoes": 10,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600046032_07171150"
     },
     {
         "origem": "D028",
@@ -7825,7 +8755,9 @@ const FLUXOS_DATA = [
         "volume": 6980,
         "movimentacoes": 7,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600048762_12922670"
     },
     {
         "origem": "D028",
@@ -7833,7 +8765,9 @@ const FLUXOS_DATA = [
         "volume": 65896,
         "movimentacoes": 55,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600059895_02167010"
     },
     {
         "origem": "D028",
@@ -7841,7 +8775,9 @@ const FLUXOS_DATA = [
         "volume": 25832,
         "movimentacoes": 25,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600059912_07191000"
     },
     {
         "origem": "D028",
@@ -7849,7 +8785,9 @@ const FLUXOS_DATA = [
         "volume": 2700,
         "movimentacoes": 6,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600059922_02945030"
     },
     {
         "origem": "D028",
@@ -7857,7 +8795,9 @@ const FLUXOS_DATA = [
         "volume": 12662,
         "movimentacoes": 13,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600059951_07171150"
     },
     {
         "origem": "D028",
@@ -7865,7 +8805,9 @@ const FLUXOS_DATA = [
         "volume": 5000,
         "movimentacoes": 3,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600059968_04048000"
     },
     {
         "origem": "D028",
@@ -7873,7 +8815,9 @@ const FLUXOS_DATA = [
         "volume": 1005,
         "movimentacoes": 2,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600060030_08260030"
     },
     {
         "origem": "D028",
@@ -7881,7 +8825,9 @@ const FLUXOS_DATA = [
         "volume": 2400,
         "movimentacoes": 3,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600060464_02989095"
     },
     {
         "origem": "D028",
@@ -7889,7 +8835,9 @@ const FLUXOS_DATA = [
         "volume": 91599,
         "movimentacoes": 58,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600060565_05187010"
     },
     {
         "origem": "D028",
@@ -7897,7 +8845,9 @@ const FLUXOS_DATA = [
         "volume": 1,
         "movimentacoes": 1,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600062805_13187075"
     },
     {
         "origem": "D028",
@@ -7905,7 +8855,9 @@ const FLUXOS_DATA = [
         "volume": 13416,
         "movimentacoes": 31,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600063048_09190410"
     },
     {
         "origem": "D028",
@@ -7913,7 +8865,9 @@ const FLUXOS_DATA = [
         "volume": 8882,
         "movimentacoes": 6,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600064867_09190410"
     },
     {
         "origem": "D028",
@@ -7921,7 +8875,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_3000000324_01227200"
     },
     {
         "origem": "D028",
@@ -7929,7 +8885,9 @@ const FLUXOS_DATA = [
         "volume": 100,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_3000000326_04719002"
     },
     {
         "origem": "D028",
@@ -7937,7 +8895,9 @@ const FLUXOS_DATA = [
         "volume": 37,
         "movimentacoes": 7,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_3000001937_01227200"
     },
     {
         "origem": "D028",
@@ -7945,7 +8905,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_3000001938_07171150"
     },
     {
         "origem": "D028",
@@ -7953,7 +8915,9 @@ const FLUXOS_DATA = [
         "volume": 18113,
         "movimentacoes": 284,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600042911_02167010"
     },
     {
         "origem": "D028",
@@ -7961,7 +8925,9 @@ const FLUXOS_DATA = [
         "volume": 58,
         "movimentacoes": 4,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600043148_05058000"
     },
     {
         "origem": "D028",
@@ -7969,7 +8935,9 @@ const FLUXOS_DATA = [
         "volume": 5967,
         "movimentacoes": 96,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600045747_06460040"
     },
     {
         "origem": "D028",
@@ -7977,7 +8945,9 @@ const FLUXOS_DATA = [
         "volume": 5172,
         "movimentacoes": 82,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600046032_07171150"
     },
     {
         "origem": "D028",
@@ -7985,7 +8955,9 @@ const FLUXOS_DATA = [
         "volume": 3715,
         "movimentacoes": 67,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600048762_12922670"
     },
     {
         "origem": "D028",
@@ -7993,7 +8965,9 @@ const FLUXOS_DATA = [
         "volume": 1138,
         "movimentacoes": 10,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600054151_09190410"
     },
     {
         "origem": "D028",
@@ -8001,7 +8975,9 @@ const FLUXOS_DATA = [
         "volume": 50,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600055784_18211265"
     },
     {
         "origem": "D028",
@@ -8009,7 +8985,9 @@ const FLUXOS_DATA = [
         "volume": 400,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600059671_04781065"
     },
     {
         "origem": "D028",
@@ -8017,7 +8995,9 @@ const FLUXOS_DATA = [
         "volume": 104,
         "movimentacoes": 4,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600059852_04348070"
     },
     {
         "origem": "D028",
@@ -8025,7 +9005,9 @@ const FLUXOS_DATA = [
         "volume": 214,
         "movimentacoes": 4,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600059854_05038090"
     },
     {
         "origem": "D028",
@@ -8033,7 +9015,9 @@ const FLUXOS_DATA = [
         "volume": 43403,
         "movimentacoes": 661,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600059895_02167010"
     },
     {
         "origem": "D028",
@@ -8041,7 +9025,9 @@ const FLUXOS_DATA = [
         "volume": 20,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600059910_04456160"
     },
     {
         "origem": "D028",
@@ -8049,7 +9035,9 @@ const FLUXOS_DATA = [
         "volume": 32275,
         "movimentacoes": 422,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600059912_07191000"
     },
     {
         "origem": "D028",
@@ -8057,7 +9045,9 @@ const FLUXOS_DATA = [
         "volume": 35561,
         "movimentacoes": 265,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600059951_07171150"
     },
     {
         "origem": "D028",
@@ -8065,7 +9055,9 @@ const FLUXOS_DATA = [
         "volume": 710,
         "movimentacoes": 5,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600059968_04048000"
     },
     {
         "origem": "D028",
@@ -8073,7 +9065,9 @@ const FLUXOS_DATA = [
         "volume": 36,
         "movimentacoes": 4,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600059980_09840000"
     },
     {
         "origem": "D028",
@@ -8081,7 +9075,9 @@ const FLUXOS_DATA = [
         "volume": 600,
         "movimentacoes": 3,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600059990_05095010"
     },
     {
         "origem": "D028",
@@ -8089,7 +9085,9 @@ const FLUXOS_DATA = [
         "volume": 906,
         "movimentacoes": 13,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600060020_06381100"
     },
     {
         "origem": "D028",
@@ -8097,7 +9095,9 @@ const FLUXOS_DATA = [
         "volume": 2268,
         "movimentacoes": 10,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600060030_08260030"
     },
     {
         "origem": "D028",
@@ -8105,7 +9105,9 @@ const FLUXOS_DATA = [
         "volume": 530,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600060037_09290260"
     },
     {
         "origem": "D028",
@@ -8113,7 +9115,9 @@ const FLUXOS_DATA = [
         "volume": 522,
         "movimentacoes": 25,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600060062_03889000"
     },
     {
         "origem": "D028",
@@ -8121,7 +9125,9 @@ const FLUXOS_DATA = [
         "volume": 132,
         "movimentacoes": 12,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600060107_08664015"
     },
     {
         "origem": "D028",
@@ -8129,7 +9135,9 @@ const FLUXOS_DATA = [
         "volume": 277,
         "movimentacoes": 12,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600060108_08664015"
     },
     {
         "origem": "D028",
@@ -8137,7 +9145,9 @@ const FLUXOS_DATA = [
         "volume": 20,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600060110_18205720"
     },
     {
         "origem": "D028",
@@ -8145,7 +9155,9 @@ const FLUXOS_DATA = [
         "volume": 45,
         "movimentacoes": 4,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600060169_11920000"
     },
     {
         "origem": "D028",
@@ -8153,7 +9165,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600060183_11900000"
     },
     {
         "origem": "D028",
@@ -8161,7 +9175,9 @@ const FLUXOS_DATA = [
         "volume": 18,
         "movimentacoes": 3,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600060208_11666590"
     },
     {
         "origem": "D028",
@@ -8169,7 +9185,9 @@ const FLUXOS_DATA = [
         "volume": 220,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600060240_05419000"
     },
     {
         "origem": "D028",
@@ -8177,7 +9195,9 @@ const FLUXOS_DATA = [
         "volume": 1,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600060243_11085601"
     },
     {
         "origem": "D028",
@@ -8185,7 +9205,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600060267_11600733"
     },
     {
         "origem": "D028",
@@ -8193,7 +9215,9 @@ const FLUXOS_DATA = [
         "volume": 242,
         "movimentacoes": 5,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600060285_04829280"
     },
     {
         "origem": "D028",
@@ -8201,7 +9225,9 @@ const FLUXOS_DATA = [
         "volume": 306,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600060294_06715825"
     },
     {
         "origem": "D028",
@@ -8209,7 +9235,9 @@ const FLUXOS_DATA = [
         "volume": 93,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600060299_18900440"
     },
     {
         "origem": "D028",
@@ -8217,7 +9245,9 @@ const FLUXOS_DATA = [
         "volume": 300,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600060322_12209240"
     },
     {
         "origem": "D028",
@@ -8225,7 +9255,9 @@ const FLUXOS_DATA = [
         "volume": 979,
         "movimentacoes": 8,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600060323_11250462"
     },
     {
         "origem": "D028",
@@ -8233,7 +9265,9 @@ const FLUXOS_DATA = [
         "volume": 60,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600060324_14409406"
     },
     {
         "origem": "D028",
@@ -8241,7 +9275,9 @@ const FLUXOS_DATA = [
         "volume": 21,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600060345_06856000"
     },
     {
         "origem": "D028",
@@ -8249,7 +9285,9 @@ const FLUXOS_DATA = [
         "volume": 43784,
         "movimentacoes": 449,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600060565_05187010"
     },
     {
         "origem": "D028",
@@ -8257,7 +9295,9 @@ const FLUXOS_DATA = [
         "volume": 5,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600060584_11725060"
     },
     {
         "origem": "D028",
@@ -8265,7 +9305,9 @@ const FLUXOS_DATA = [
         "volume": 249,
         "movimentacoes": 5,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600060683_12242000"
     },
     {
         "origem": "D028",
@@ -8273,7 +9315,9 @@ const FLUXOS_DATA = [
         "volume": 375,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600062532_13733060"
     },
     {
         "origem": "D028",
@@ -8281,7 +9325,9 @@ const FLUXOS_DATA = [
         "volume": 23,
         "movimentacoes": 4,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600062694_13231600"
     },
     {
         "origem": "D028",
@@ -8289,7 +9335,9 @@ const FLUXOS_DATA = [
         "volume": 69,
         "movimentacoes": 3,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600063172_12910610"
     },
     {
         "origem": "D028",
@@ -8297,7 +9345,9 @@ const FLUXOS_DATA = [
         "volume": 75770,
         "movimentacoes": 38,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600042911_02167010"
     },
     {
         "origem": "D028",
@@ -8305,7 +9355,9 @@ const FLUXOS_DATA = [
         "volume": 2000,
         "movimentacoes": 1,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600043148_05058000"
     },
     {
         "origem": "D028",
@@ -8313,7 +9365,9 @@ const FLUXOS_DATA = [
         "volume": 31100,
         "movimentacoes": 5,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600045747_06460040"
     },
     {
         "origem": "D028",
@@ -8321,7 +9375,9 @@ const FLUXOS_DATA = [
         "volume": 21000,
         "movimentacoes": 3,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600046032_07171150"
     },
     {
         "origem": "D028",
@@ -8329,7 +9385,9 @@ const FLUXOS_DATA = [
         "volume": 9700,
         "movimentacoes": 6,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600048762_12922670"
     },
     {
         "origem": "D028",
@@ -8337,7 +9395,9 @@ const FLUXOS_DATA = [
         "volume": 3700,
         "movimentacoes": 3,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600054151_09190410"
     },
     {
         "origem": "D028",
@@ -8345,7 +9405,9 @@ const FLUXOS_DATA = [
         "volume": 69278,
         "movimentacoes": 55,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600059895_02167010"
     },
     {
         "origem": "D028",
@@ -8353,7 +9415,9 @@ const FLUXOS_DATA = [
         "volume": 2000,
         "movimentacoes": 1,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600059910_04456160"
     },
     {
         "origem": "D028",
@@ -8361,7 +9425,9 @@ const FLUXOS_DATA = [
         "volume": 95828,
         "movimentacoes": 47,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600059912_07191000"
     },
     {
         "origem": "D028",
@@ -8369,7 +9435,9 @@ const FLUXOS_DATA = [
         "volume": 62160,
         "movimentacoes": 41,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600059951_07171150"
     },
     {
         "origem": "D028",
@@ -8377,7 +9445,9 @@ const FLUXOS_DATA = [
         "volume": 1000,
         "movimentacoes": 1,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600060323_11250462"
     },
     {
         "origem": "D028",
@@ -8385,7 +9455,9 @@ const FLUXOS_DATA = [
         "volume": 103899,
         "movimentacoes": 61,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600060565_05187010"
     },
     {
         "origem": "D028",
@@ -8393,7 +9465,9 @@ const FLUXOS_DATA = [
         "volume": 2000,
         "movimentacoes": 1,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600062805_13187075"
     },
     {
         "origem": "D028",
@@ -8401,7 +9475,9 @@ const FLUXOS_DATA = [
         "volume": 186,
         "movimentacoes": 1,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600042911_02167010"
     },
     {
         "origem": "D028",
@@ -8409,7 +9485,9 @@ const FLUXOS_DATA = [
         "volume": 402,
         "movimentacoes": 1,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600045747_06460040"
     },
     {
         "origem": "D028",
@@ -8417,7 +9495,9 @@ const FLUXOS_DATA = [
         "volume": 35748,
         "movimentacoes": 60,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600059895_02167010"
     },
     {
         "origem": "D028",
@@ -8425,7 +9505,9 @@ const FLUXOS_DATA = [
         "volume": 18150,
         "movimentacoes": 29,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600059912_07191000"
     },
     {
         "origem": "D028",
@@ -8433,7 +9515,9 @@ const FLUXOS_DATA = [
         "volume": 19332,
         "movimentacoes": 27,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600059951_07171150"
     },
     {
         "origem": "D028",
@@ -8441,7 +9525,9 @@ const FLUXOS_DATA = [
         "volume": 1,
         "movimentacoes": 1,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600060240_05419000"
     },
     {
         "origem": "D028",
@@ -8449,7 +9535,9 @@ const FLUXOS_DATA = [
         "volume": 21826,
         "movimentacoes": 26,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D028",
+        "parceiro": "P_4600060565_05187010"
     },
     {
         "origem": "D019",
@@ -8457,7 +9545,9 @@ const FLUXOS_DATA = [
         "volume": 10445,
         "movimentacoes": 6,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600050357_04048000"
     },
     {
         "origem": "D019",
@@ -8465,7 +9555,9 @@ const FLUXOS_DATA = [
         "volume": 200,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600051554_02501010"
     },
     {
         "origem": "D019",
@@ -8473,7 +9565,9 @@ const FLUXOS_DATA = [
         "volume": 5000,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600056505_03512050"
     },
     {
         "origem": "D019",
@@ -8481,7 +9575,9 @@ const FLUXOS_DATA = [
         "volume": 400,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600059912_07191000"
     },
     {
         "origem": "D019",
@@ -8489,7 +9585,9 @@ const FLUXOS_DATA = [
         "volume": 2564,
         "movimentacoes": 10,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600059968_04048000"
     },
     {
         "origem": "D019",
@@ -8497,7 +9595,9 @@ const FLUXOS_DATA = [
         "volume": 146,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600060037_09290260"
     },
     {
         "origem": "D019",
@@ -8505,7 +9605,9 @@ const FLUXOS_DATA = [
         "volume": 30,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600060108_08664015"
     },
     {
         "origem": "D019",
@@ -8513,7 +9615,9 @@ const FLUXOS_DATA = [
         "volume": 3477,
         "movimentacoes": 4,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600060240_05419000"
     },
     {
         "origem": "D019",
@@ -8521,7 +9625,9 @@ const FLUXOS_DATA = [
         "volume": 2000,
         "movimentacoes": 2,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600060565_05187010"
     },
     {
         "origem": "D019",
@@ -8529,7 +9635,9 @@ const FLUXOS_DATA = [
         "volume": 36,
         "movimentacoes": 3,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600060683_12242000"
     },
     {
         "origem": "D019",
@@ -8537,7 +9645,9 @@ const FLUXOS_DATA = [
         "volume": 69792,
         "movimentacoes": 5,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600063009_04459000"
     },
     {
         "origem": "D019",
@@ -8545,7 +9655,9 @@ const FLUXOS_DATA = [
         "volume": 1243707,
         "movimentacoes": 72,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600050357_04048000"
     },
     {
         "origem": "D019",
@@ -8553,7 +9665,9 @@ const FLUXOS_DATA = [
         "volume": 226,
         "movimentacoes": 4,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600051554_02501010"
     },
     {
         "origem": "D019",
@@ -8561,7 +9675,9 @@ const FLUXOS_DATA = [
         "volume": 13,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600057056_09340730"
     },
     {
         "origem": "D019",
@@ -8569,7 +9685,9 @@ const FLUXOS_DATA = [
         "volume": 23,
         "movimentacoes": 4,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600059751_09290416"
     },
     {
         "origem": "D019",
@@ -8577,7 +9695,9 @@ const FLUXOS_DATA = [
         "volume": 14,
         "movimentacoes": 2,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600059854_05038090"
     },
     {
         "origem": "D019",
@@ -8585,7 +9705,9 @@ const FLUXOS_DATA = [
         "volume": 755960,
         "movimentacoes": 66,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600059968_04048000"
     },
     {
         "origem": "D019",
@@ -8593,7 +9715,9 @@ const FLUXOS_DATA = [
         "volume": 8,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600059990_05095010"
     },
     {
         "origem": "D019",
@@ -8601,7 +9725,9 @@ const FLUXOS_DATA = [
         "volume": 40916.5,
         "movimentacoes": 13,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600060037_09290260"
     },
     {
         "origem": "D019",
@@ -8609,7 +9735,9 @@ const FLUXOS_DATA = [
         "volume": 1,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600060107_08664015"
     },
     {
         "origem": "D019",
@@ -8617,7 +9745,9 @@ const FLUXOS_DATA = [
         "volume": 11,
         "movimentacoes": 2,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600060108_08664015"
     },
     {
         "origem": "D019",
@@ -8625,7 +9755,9 @@ const FLUXOS_DATA = [
         "volume": 200,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600060205_15150000"
     },
     {
         "origem": "D019",
@@ -8633,7 +9765,9 @@ const FLUXOS_DATA = [
         "volume": 400510.375,
         "movimentacoes": 11,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600060240_05419000"
     },
     {
         "origem": "D019",
@@ -8641,7 +9775,9 @@ const FLUXOS_DATA = [
         "volume": 300,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600060323_11250462"
     },
     {
         "origem": "D019",
@@ -8649,7 +9785,9 @@ const FLUXOS_DATA = [
         "volume": 45,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600061053_09190410"
     },
     {
         "origem": "D019",
@@ -8657,7 +9795,9 @@ const FLUXOS_DATA = [
         "volume": 17,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600063172_12910610"
     },
     {
         "origem": "D019",
@@ -8665,7 +9805,9 @@ const FLUXOS_DATA = [
         "volume": 50,
         "movimentacoes": 4,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600042058_04557010"
     },
     {
         "origem": "D019",
@@ -8673,7 +9815,9 @@ const FLUXOS_DATA = [
         "volume": 2025,
         "movimentacoes": 16,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600050357_04048000"
     },
     {
         "origem": "D019",
@@ -8681,7 +9825,9 @@ const FLUXOS_DATA = [
         "volume": 4117,
         "movimentacoes": 10,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600059968_04048000"
     },
     {
         "origem": "D019",
@@ -8689,7 +9835,9 @@ const FLUXOS_DATA = [
         "volume": 1,
         "movimentacoes": 1,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600059980_09840000"
     },
     {
         "origem": "D019",
@@ -8697,7 +9845,9 @@ const FLUXOS_DATA = [
         "volume": 6,
         "movimentacoes": 2,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600060030_08260030"
     },
     {
         "origem": "D019",
@@ -8705,7 +9855,9 @@ const FLUXOS_DATA = [
         "volume": 9882,
         "movimentacoes": 11,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600060037_09290260"
     },
     {
         "origem": "D019",
@@ -8713,7 +9865,9 @@ const FLUXOS_DATA = [
         "volume": 2602,
         "movimentacoes": 13,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600060240_05419000"
     },
     {
         "origem": "D019",
@@ -8721,7 +9875,9 @@ const FLUXOS_DATA = [
         "volume": 6309,
         "movimentacoes": 11,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600063009_04459000"
     },
     {
         "origem": "D019",
@@ -8729,7 +9885,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 1,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600063832_09618100"
     },
     {
         "origem": "D019",
@@ -8737,7 +9895,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_2_05429900"
     },
     {
         "origem": "D019",
@@ -8745,7 +9905,9 @@ const FLUXOS_DATA = [
         "volume": 4,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_3000000337_11410410"
     },
     {
         "origem": "D019",
@@ -8753,7 +9915,9 @@ const FLUXOS_DATA = [
         "volume": 13764,
         "movimentacoes": 162,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600050357_04048000"
     },
     {
         "origem": "D019",
@@ -8761,7 +9925,9 @@ const FLUXOS_DATA = [
         "volume": 33,
         "movimentacoes": 10,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600051554_02501010"
     },
     {
         "origem": "D019",
@@ -8769,7 +9935,9 @@ const FLUXOS_DATA = [
         "volume": 35,
         "movimentacoes": 7,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600053789_01204001"
     },
     {
         "origem": "D019",
@@ -8777,7 +9945,9 @@ const FLUXOS_DATA = [
         "volume": 164,
         "movimentacoes": 4,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600057056_09340730"
     },
     {
         "origem": "D019",
@@ -8785,7 +9955,9 @@ const FLUXOS_DATA = [
         "volume": 280,
         "movimentacoes": 4,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600057061_05541130"
     },
     {
         "origem": "D019",
@@ -8793,7 +9965,9 @@ const FLUXOS_DATA = [
         "volume": 108,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600058865_09310000"
     },
     {
         "origem": "D019",
@@ -8801,7 +9975,9 @@ const FLUXOS_DATA = [
         "volume": 1938,
         "movimentacoes": 40,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600059852_04348070"
     },
     {
         "origem": "D019",
@@ -8809,7 +9985,9 @@ const FLUXOS_DATA = [
         "volume": 3492,
         "movimentacoes": 82,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600059854_05038090"
     },
     {
         "origem": "D019",
@@ -8817,7 +9995,9 @@ const FLUXOS_DATA = [
         "volume": 8,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600059895_02167010"
     },
     {
         "origem": "D019",
@@ -8825,7 +10005,9 @@ const FLUXOS_DATA = [
         "volume": 4,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600059910_04456160"
     },
     {
         "origem": "D019",
@@ -8833,7 +10015,9 @@ const FLUXOS_DATA = [
         "volume": 3,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600059951_07171150"
     },
     {
         "origem": "D019",
@@ -8841,7 +10025,9 @@ const FLUXOS_DATA = [
         "volume": 10022.65,
         "movimentacoes": 139,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600059968_04048000"
     },
     {
         "origem": "D019",
@@ -8849,7 +10035,9 @@ const FLUXOS_DATA = [
         "volume": 18,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600059980_09840000"
     },
     {
         "origem": "D019",
@@ -8857,7 +10045,9 @@ const FLUXOS_DATA = [
         "volume": 1943,
         "movimentacoes": 39,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600059990_05095010"
     },
     {
         "origem": "D019",
@@ -8865,7 +10055,9 @@ const FLUXOS_DATA = [
         "volume": 175,
         "movimentacoes": 6,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600060020_06381100"
     },
     {
         "origem": "D019",
@@ -8873,7 +10065,9 @@ const FLUXOS_DATA = [
         "volume": 20,
         "movimentacoes": 4,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600060030_08260030"
     },
     {
         "origem": "D019",
@@ -8881,7 +10075,9 @@ const FLUXOS_DATA = [
         "volume": 4569,
         "movimentacoes": 74,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600060037_09290260"
     },
     {
         "origem": "D019",
@@ -8889,7 +10085,9 @@ const FLUXOS_DATA = [
         "volume": 12,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600060062_03889000"
     },
     {
         "origem": "D019",
@@ -8897,7 +10095,9 @@ const FLUXOS_DATA = [
         "volume": 10,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600060107_08664015"
     },
     {
         "origem": "D019",
@@ -8905,7 +10105,9 @@ const FLUXOS_DATA = [
         "volume": 12194.5,
         "movimentacoes": 116,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600060240_05419000"
     },
     {
         "origem": "D019",
@@ -8913,7 +10115,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600060243_11085601"
     },
     {
         "origem": "D019",
@@ -8921,7 +10125,9 @@ const FLUXOS_DATA = [
         "volume": 4,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600060323_11250462"
     },
     {
         "origem": "D019",
@@ -8929,7 +10135,9 @@ const FLUXOS_DATA = [
         "volume": 103,
         "movimentacoes": 9,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600060539_05690050"
     },
     {
         "origem": "D019",
@@ -8937,7 +10145,9 @@ const FLUXOS_DATA = [
         "volume": 14,
         "movimentacoes": 3,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600060683_12242000"
     },
     {
         "origem": "D019",
@@ -8945,7 +10155,9 @@ const FLUXOS_DATA = [
         "volume": 257,
         "movimentacoes": 6,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600060880_05407003"
     },
     {
         "origem": "D019",
@@ -8953,7 +10165,9 @@ const FLUXOS_DATA = [
         "volume": 89,
         "movimentacoes": 5,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600061053_09190410"
     },
     {
         "origem": "D019",
@@ -8961,7 +10175,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600062694_13231600"
     },
     {
         "origem": "D019",
@@ -8969,7 +10185,9 @@ const FLUXOS_DATA = [
         "volume": 14,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600063172_12910610"
     },
     {
         "origem": "D019",
@@ -8977,7 +10195,9 @@ const FLUXOS_DATA = [
         "volume": 13827,
         "movimentacoes": 13,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600050357_04048000"
     },
     {
         "origem": "D019",
@@ -8985,7 +10205,9 @@ const FLUXOS_DATA = [
         "volume": 12,
         "movimentacoes": 1,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600053789_01204001"
     },
     {
         "origem": "D019",
@@ -8993,7 +10215,9 @@ const FLUXOS_DATA = [
         "volume": 600,
         "movimentacoes": 2,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600057056_09340730"
     },
     {
         "origem": "D019",
@@ -9001,7 +10225,9 @@ const FLUXOS_DATA = [
         "volume": 1182,
         "movimentacoes": 1,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600059751_09290416"
     },
     {
         "origem": "D019",
@@ -9009,7 +10235,9 @@ const FLUXOS_DATA = [
         "volume": 14314,
         "movimentacoes": 9,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600059852_04348070"
     },
     {
         "origem": "D019",
@@ -9017,7 +10245,9 @@ const FLUXOS_DATA = [
         "volume": 20768,
         "movimentacoes": 13,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600059854_05038090"
     },
     {
         "origem": "D019",
@@ -9025,7 +10255,9 @@ const FLUXOS_DATA = [
         "volume": 20426.6,
         "movimentacoes": 12,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600059968_04048000"
     },
     {
         "origem": "D019",
@@ -9033,7 +10265,9 @@ const FLUXOS_DATA = [
         "volume": 5200,
         "movimentacoes": 2,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600059990_05095010"
     },
     {
         "origem": "D019",
@@ -9041,7 +10275,9 @@ const FLUXOS_DATA = [
         "volume": 2364.5499999999997,
         "movimentacoes": 3,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600060037_09290260"
     },
     {
         "origem": "D019",
@@ -9049,7 +10285,9 @@ const FLUXOS_DATA = [
         "volume": 96,
         "movimentacoes": 1,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600060169_11920000"
     },
     {
         "origem": "D019",
@@ -9057,7 +10295,9 @@ const FLUXOS_DATA = [
         "volume": 9115.1,
         "movimentacoes": 8,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600060240_05419000"
     },
     {
         "origem": "D019",
@@ -9065,7 +10305,9 @@ const FLUXOS_DATA = [
         "volume": 100,
         "movimentacoes": 1,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600060539_05690050"
     },
     {
         "origem": "D019",
@@ -9073,7 +10315,9 @@ const FLUXOS_DATA = [
         "volume": 570,
         "movimentacoes": 2,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600060880_05407003"
     },
     {
         "origem": "D019",
@@ -9081,7 +10325,9 @@ const FLUXOS_DATA = [
         "volume": 500,
         "movimentacoes": 1,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600061053_09190410"
     },
     {
         "origem": "D019",
@@ -9089,7 +10335,9 @@ const FLUXOS_DATA = [
         "volume": 2838,
         "movimentacoes": 5,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600050357_04048000"
     },
     {
         "origem": "D019",
@@ -9097,7 +10345,9 @@ const FLUXOS_DATA = [
         "volume": 1512,
         "movimentacoes": 1,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600059854_05038090"
     },
     {
         "origem": "D019",
@@ -9105,7 +10355,9 @@ const FLUXOS_DATA = [
         "volume": 138,
         "movimentacoes": 2,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600059895_02167010"
     },
     {
         "origem": "D019",
@@ -9113,7 +10365,9 @@ const FLUXOS_DATA = [
         "volume": 102,
         "movimentacoes": 1,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600059912_07191000"
     },
     {
         "origem": "D019",
@@ -9121,7 +10375,9 @@ const FLUXOS_DATA = [
         "volume": 8044,
         "movimentacoes": 16,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600059968_04048000"
     },
     {
         "origem": "D019",
@@ -9129,7 +10385,9 @@ const FLUXOS_DATA = [
         "volume": 135.5,
         "movimentacoes": 1,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600060037_09290260"
     },
     {
         "origem": "D019",
@@ -9137,7 +10395,9 @@ const FLUXOS_DATA = [
         "volume": 300,
         "movimentacoes": 1,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600060107_08664015"
     },
     {
         "origem": "D019",
@@ -9145,7 +10405,9 @@ const FLUXOS_DATA = [
         "volume": 4735.7,
         "movimentacoes": 10,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600060240_05419000"
     },
     {
         "origem": "D019",
@@ -9153,7 +10415,9 @@ const FLUXOS_DATA = [
         "volume": 360,
         "movimentacoes": 3,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600060294_06715825"
     },
     {
         "origem": "D019",
@@ -9161,7 +10425,9 @@ const FLUXOS_DATA = [
         "volume": 1176,
         "movimentacoes": 2,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D019",
+        "parceiro": "P_4600063172_12910610"
     },
     {
         "origem": "D035",
@@ -9169,7 +10435,9 @@ const FLUXOS_DATA = [
         "volume": 20617,
         "movimentacoes": 29,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600049948_12245820"
     },
     {
         "origem": "D035",
@@ -9177,7 +10445,9 @@ const FLUXOS_DATA = [
         "volume": 2700,
         "movimentacoes": 6,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600052767_09190410"
     },
     {
         "origem": "D035",
@@ -9185,7 +10455,9 @@ const FLUXOS_DATA = [
         "volume": 10466,
         "movimentacoes": 21,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600057056_09340730"
     },
     {
         "origem": "D035",
@@ -9193,7 +10465,9 @@ const FLUXOS_DATA = [
         "volume": 1000,
         "movimentacoes": 2,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600059502_06397110"
     },
     {
         "origem": "D035",
@@ -9201,7 +10475,9 @@ const FLUXOS_DATA = [
         "volume": 5000,
         "movimentacoes": 2,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600059854_05038090"
     },
     {
         "origem": "D035",
@@ -9209,7 +10485,9 @@ const FLUXOS_DATA = [
         "volume": 23500,
         "movimentacoes": 7,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600059968_04048000"
     },
     {
         "origem": "D035",
@@ -9217,7 +10495,9 @@ const FLUXOS_DATA = [
         "volume": 37974,
         "movimentacoes": 28,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600060037_09290260"
     },
     {
         "origem": "D035",
@@ -9225,7 +10505,9 @@ const FLUXOS_DATA = [
         "volume": 15080,
         "movimentacoes": 5,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600060240_05419000"
     },
     {
         "origem": "D035",
@@ -9233,7 +10515,9 @@ const FLUXOS_DATA = [
         "volume": 8000,
         "movimentacoes": 3,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600063009_04459000"
     },
     {
         "origem": "D035",
@@ -9241,7 +10525,9 @@ const FLUXOS_DATA = [
         "volume": 500,
         "movimentacoes": 2,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600066304_06404326"
     },
     {
         "origem": "D035",
@@ -9249,7 +10535,9 @@ const FLUXOS_DATA = [
         "volume": 440431,
         "movimentacoes": 79,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600049948_12245820"
     },
     {
         "origem": "D035",
@@ -9257,7 +10545,9 @@ const FLUXOS_DATA = [
         "volume": 46500,
         "movimentacoes": 3,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600050553_01141030"
     },
     {
         "origem": "D035",
@@ -9265,7 +10555,9 @@ const FLUXOS_DATA = [
         "volume": 545,
         "movimentacoes": 14,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600057056_09340730"
     },
     {
         "origem": "D035",
@@ -9273,7 +10565,9 @@ const FLUXOS_DATA = [
         "volume": 1,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600059751_09290416"
     },
     {
         "origem": "D035",
@@ -9281,7 +10575,9 @@ const FLUXOS_DATA = [
         "volume": 100653,
         "movimentacoes": 10,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600059968_04048000"
     },
     {
         "origem": "D035",
@@ -9289,7 +10585,9 @@ const FLUXOS_DATA = [
         "volume": 5,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600060030_08260030"
     },
     {
         "origem": "D035",
@@ -9297,7 +10595,9 @@ const FLUXOS_DATA = [
         "volume": 372766,
         "movimentacoes": 60,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600060037_09290260"
     },
     {
         "origem": "D035",
@@ -9305,7 +10605,9 @@ const FLUXOS_DATA = [
         "volume": 4,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600060108_08664015"
     },
     {
         "origem": "D035",
@@ -9313,7 +10615,9 @@ const FLUXOS_DATA = [
         "volume": 70,
         "movimentacoes": 4,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600060240_05419000"
     },
     {
         "origem": "D035",
@@ -9321,7 +10625,9 @@ const FLUXOS_DATA = [
         "volume": 50,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600063172_12910610"
     },
     {
         "origem": "D035",
@@ -9329,7 +10635,9 @@ const FLUXOS_DATA = [
         "volume": 5086,
         "movimentacoes": 23,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600049948_12245820"
     },
     {
         "origem": "D035",
@@ -9337,7 +10645,9 @@ const FLUXOS_DATA = [
         "volume": 2301,
         "movimentacoes": 5,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600057056_09340730"
     },
     {
         "origem": "D035",
@@ -9345,7 +10655,9 @@ const FLUXOS_DATA = [
         "volume": 423,
         "movimentacoes": 10,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600060037_09290260"
     },
     {
         "origem": "D035",
@@ -9353,7 +10665,9 @@ const FLUXOS_DATA = [
         "volume": 80,
         "movimentacoes": 4,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600060240_05419000"
     },
     {
         "origem": "D035",
@@ -9361,7 +10675,9 @@ const FLUXOS_DATA = [
         "volume": 1,
         "movimentacoes": 1,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600063009_04459000"
     },
     {
         "origem": "D035",
@@ -9369,7 +10685,9 @@ const FLUXOS_DATA = [
         "volume": 27008.5,
         "movimentacoes": 337,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600049948_12245820"
     },
     {
         "origem": "D035",
@@ -9377,7 +10695,9 @@ const FLUXOS_DATA = [
         "volume": 160,
         "movimentacoes": 8,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600050357_04048000"
     },
     {
         "origem": "D035",
@@ -9385,7 +10705,9 @@ const FLUXOS_DATA = [
         "volume": 785,
         "movimentacoes": 19,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600050553_01141030"
     },
     {
         "origem": "D035",
@@ -9393,7 +10715,9 @@ const FLUXOS_DATA = [
         "volume": 100,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600054151_09190410"
     },
     {
         "origem": "D035",
@@ -9401,7 +10725,9 @@ const FLUXOS_DATA = [
         "volume": 567,
         "movimentacoes": 5,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600057020_03969000"
     },
     {
         "origem": "D035",
@@ -9409,7 +10735,9 @@ const FLUXOS_DATA = [
         "volume": 8112,
         "movimentacoes": 119,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600057056_09340730"
     },
     {
         "origem": "D035",
@@ -9417,7 +10745,9 @@ const FLUXOS_DATA = [
         "volume": 6,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600058865_09310000"
     },
     {
         "origem": "D035",
@@ -9425,7 +10755,9 @@ const FLUXOS_DATA = [
         "volume": 23,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600059852_04348070"
     },
     {
         "origem": "D035",
@@ -9433,7 +10765,9 @@ const FLUXOS_DATA = [
         "volume": 8,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600059912_07191000"
     },
     {
         "origem": "D035",
@@ -9441,7 +10775,9 @@ const FLUXOS_DATA = [
         "volume": 522,
         "movimentacoes": 4,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600059951_07171150"
     },
     {
         "origem": "D035",
@@ -9449,7 +10785,9 @@ const FLUXOS_DATA = [
         "volume": 1803,
         "movimentacoes": 41,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600059968_04048000"
     },
     {
         "origem": "D035",
@@ -9457,7 +10795,9 @@ const FLUXOS_DATA = [
         "volume": 34,
         "movimentacoes": 3,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600059990_05095010"
     },
     {
         "origem": "D035",
@@ -9465,7 +10805,9 @@ const FLUXOS_DATA = [
         "volume": 350,
         "movimentacoes": 3,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600060020_06381100"
     },
     {
         "origem": "D035",
@@ -9473,7 +10815,9 @@ const FLUXOS_DATA = [
         "volume": 15823,
         "movimentacoes": 247,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600060037_09290260"
     },
     {
         "origem": "D035",
@@ -9481,7 +10825,9 @@ const FLUXOS_DATA = [
         "volume": 240,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600060107_08664015"
     },
     {
         "origem": "D035",
@@ -9489,7 +10835,9 @@ const FLUXOS_DATA = [
         "volume": 185,
         "movimentacoes": 4,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600060108_08664015"
     },
     {
         "origem": "D035",
@@ -9497,7 +10845,9 @@ const FLUXOS_DATA = [
         "volume": 1503,
         "movimentacoes": 19,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600060240_05419000"
     },
     {
         "origem": "D035",
@@ -9505,7 +10855,9 @@ const FLUXOS_DATA = [
         "volume": 139,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600060285_04829280"
     },
     {
         "origem": "D035",
@@ -9513,7 +10865,9 @@ const FLUXOS_DATA = [
         "volume": 50,
         "movimentacoes": 5,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600060539_05690050"
     },
     {
         "origem": "D035",
@@ -9521,7 +10875,9 @@ const FLUXOS_DATA = [
         "volume": 990,
         "movimentacoes": 3,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600060565_05187010"
     },
     {
         "origem": "D035",
@@ -9529,7 +10885,9 @@ const FLUXOS_DATA = [
         "volume": 100,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600060584_11725060"
     },
     {
         "origem": "D035",
@@ -9537,7 +10895,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600060880_05407003"
     },
     {
         "origem": "D035",
@@ -9545,7 +10905,9 @@ const FLUXOS_DATA = [
         "volume": 4,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600062694_13231600"
     },
     {
         "origem": "D035",
@@ -9553,7 +10915,9 @@ const FLUXOS_DATA = [
         "volume": 46980,
         "movimentacoes": 37,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600049948_12245820"
     },
     {
         "origem": "D035",
@@ -9561,7 +10925,9 @@ const FLUXOS_DATA = [
         "volume": 17192,
         "movimentacoes": 5,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600057005_01156000"
     },
     {
         "origem": "D035",
@@ -9569,7 +10935,9 @@ const FLUXOS_DATA = [
         "volume": 29680,
         "movimentacoes": 29,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600057056_09340730"
     },
     {
         "origem": "D035",
@@ -9577,7 +10945,9 @@ const FLUXOS_DATA = [
         "volume": 2000,
         "movimentacoes": 1,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600057296_11441000"
     },
     {
         "origem": "D035",
@@ -9585,7 +10955,9 @@ const FLUXOS_DATA = [
         "volume": 26950,
         "movimentacoes": 17,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600058865_09310000"
     },
     {
         "origem": "D035",
@@ -9593,7 +10965,9 @@ const FLUXOS_DATA = [
         "volume": 7326,
         "movimentacoes": 17,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600059751_09290416"
     },
     {
         "origem": "D035",
@@ -9601,7 +10975,9 @@ const FLUXOS_DATA = [
         "volume": 4800,
         "movimentacoes": 3,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600059852_04348070"
     },
     {
         "origem": "D035",
@@ -9609,7 +10985,9 @@ const FLUXOS_DATA = [
         "volume": 8528,
         "movimentacoes": 3,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600059968_04048000"
     },
     {
         "origem": "D035",
@@ -9617,7 +10995,9 @@ const FLUXOS_DATA = [
         "volume": 5000,
         "movimentacoes": 1,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600059980_09840000"
     },
     {
         "origem": "D035",
@@ -9625,7 +11005,9 @@ const FLUXOS_DATA = [
         "volume": 38540,
         "movimentacoes": 32,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600060037_09290260"
     },
     {
         "origem": "D035",
@@ -9633,7 +11015,9 @@ const FLUXOS_DATA = [
         "volume": 9004,
         "movimentacoes": 13,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600060240_05419000"
     },
     {
         "origem": "D035",
@@ -9641,7 +11025,9 @@ const FLUXOS_DATA = [
         "volume": 2618,
         "movimentacoes": 9,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600060539_05690050"
     },
     {
         "origem": "D035",
@@ -9649,7 +11035,9 @@ const FLUXOS_DATA = [
         "volume": 1600,
         "movimentacoes": 3,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600060880_05407003"
     },
     {
         "origem": "D035",
@@ -9657,7 +11045,9 @@ const FLUXOS_DATA = [
         "volume": 11412,
         "movimentacoes": 35,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600049948_12245820"
     },
     {
         "origem": "D035",
@@ -9665,7 +11055,9 @@ const FLUXOS_DATA = [
         "volume": 7074,
         "movimentacoes": 32,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600050553_01141030"
     },
     {
         "origem": "D035",
@@ -9673,7 +11065,9 @@ const FLUXOS_DATA = [
         "volume": 2202,
         "movimentacoes": 5,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600057056_09340730"
     },
     {
         "origem": "D035",
@@ -9681,7 +11075,9 @@ const FLUXOS_DATA = [
         "volume": 102,
         "movimentacoes": 1,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600059951_07171150"
     },
     {
         "origem": "D035",
@@ -9689,7 +11085,9 @@ const FLUXOS_DATA = [
         "volume": 5724,
         "movimentacoes": 17,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600059968_04048000"
     },
     {
         "origem": "D035",
@@ -9697,7 +11095,9 @@ const FLUXOS_DATA = [
         "volume": 1134,
         "movimentacoes": 1,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600060030_08260030"
     },
     {
         "origem": "D035",
@@ -9705,7 +11105,9 @@ const FLUXOS_DATA = [
         "volume": 10296,
         "movimentacoes": 37,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600060037_09290260"
     },
     {
         "origem": "D035",
@@ -9713,7 +11115,9 @@ const FLUXOS_DATA = [
         "volume": 1800,
         "movimentacoes": 1,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600060107_08664015"
     },
     {
         "origem": "D035",
@@ -9721,7 +11125,9 @@ const FLUXOS_DATA = [
         "volume": 2400,
         "movimentacoes": 7,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D035",
+        "parceiro": "P_4600060240_05419000"
     },
     {
         "origem": "D020",
@@ -9729,7 +11135,9 @@ const FLUXOS_DATA = [
         "volume": 18550,
         "movimentacoes": 24,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600050357_04048000"
     },
     {
         "origem": "D020",
@@ -9737,7 +11145,9 @@ const FLUXOS_DATA = [
         "volume": 1000,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600053582_05001000"
     },
     {
         "origem": "D020",
@@ -9745,7 +11155,9 @@ const FLUXOS_DATA = [
         "volume": 2300,
         "movimentacoes": 4,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600054608_08371440"
     },
     {
         "origem": "D020",
@@ -9753,7 +11165,9 @@ const FLUXOS_DATA = [
         "volume": 4000,
         "movimentacoes": 2,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600056505_03512050"
     },
     {
         "origem": "D020",
@@ -9761,7 +11175,9 @@ const FLUXOS_DATA = [
         "volume": 23488,
         "movimentacoes": 16,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600059968_04048000"
     },
     {
         "origem": "D020",
@@ -9769,7 +11185,9 @@ const FLUXOS_DATA = [
         "volume": 17200,
         "movimentacoes": 9,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600060037_09290260"
     },
     {
         "origem": "D020",
@@ -9777,7 +11195,9 @@ const FLUXOS_DATA = [
         "volume": 130,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600060225_12231140"
     },
     {
         "origem": "D020",
@@ -9785,7 +11205,9 @@ const FLUXOS_DATA = [
         "volume": 13299,
         "movimentacoes": 14,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600060240_05419000"
     },
     {
         "origem": "D020",
@@ -9793,7 +11215,9 @@ const FLUXOS_DATA = [
         "volume": 480,
         "movimentacoes": 2,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600060683_12242000"
     },
     {
         "origem": "D020",
@@ -9801,7 +11225,9 @@ const FLUXOS_DATA = [
         "volume": 42395,
         "movimentacoes": 8,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600063009_04459000"
     },
     {
         "origem": "D020",
@@ -9809,7 +11235,9 @@ const FLUXOS_DATA = [
         "volume": 380,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600049948_12245820"
     },
     {
         "origem": "D020",
@@ -9817,7 +11245,9 @@ const FLUXOS_DATA = [
         "volume": 95698,
         "movimentacoes": 37,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600050357_04048000"
     },
     {
         "origem": "D020",
@@ -9825,7 +11255,9 @@ const FLUXOS_DATA = [
         "volume": 2503,
         "movimentacoes": 3,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600052270_04214040"
     },
     {
         "origem": "D020",
@@ -9833,7 +11265,9 @@ const FLUXOS_DATA = [
         "volume": 100,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600057056_09340730"
     },
     {
         "origem": "D020",
@@ -9841,7 +11275,9 @@ const FLUXOS_DATA = [
         "volume": 38,
         "movimentacoes": 9,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600059751_09290416"
     },
     {
         "origem": "D020",
@@ -9849,7 +11285,9 @@ const FLUXOS_DATA = [
         "volume": 20,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600059852_04348070"
     },
     {
         "origem": "D020",
@@ -9857,7 +11295,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600059895_02167010"
     },
     {
         "origem": "D020",
@@ -9865,7 +11305,9 @@ const FLUXOS_DATA = [
         "volume": 868800,
         "movimentacoes": 84,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600059968_04048000"
     },
     {
         "origem": "D020",
@@ -9873,7 +11315,9 @@ const FLUXOS_DATA = [
         "volume": 8,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600060020_06381100"
     },
     {
         "origem": "D020",
@@ -9881,7 +11325,9 @@ const FLUXOS_DATA = [
         "volume": 42,
         "movimentacoes": 2,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600060030_08260030"
     },
     {
         "origem": "D020",
@@ -9889,7 +11335,9 @@ const FLUXOS_DATA = [
         "volume": 2750,
         "movimentacoes": 11,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600060037_09290260"
     },
     {
         "origem": "D020",
@@ -9897,7 +11345,9 @@ const FLUXOS_DATA = [
         "volume": 4,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600060062_03889000"
     },
     {
         "origem": "D020",
@@ -9905,7 +11355,9 @@ const FLUXOS_DATA = [
         "volume": 12624,
         "movimentacoes": 18,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600060240_05419000"
     },
     {
         "origem": "D020",
@@ -9913,7 +11365,9 @@ const FLUXOS_DATA = [
         "volume": 146,
         "movimentacoes": 5,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600042058_04557010"
     },
     {
         "origem": "D020",
@@ -9921,7 +11375,9 @@ const FLUXOS_DATA = [
         "volume": 3712,
         "movimentacoes": 9,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600049948_12245820"
     },
     {
         "origem": "D020",
@@ -9929,7 +11385,9 @@ const FLUXOS_DATA = [
         "volume": 8310,
         "movimentacoes": 50,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600050357_04048000"
     },
     {
         "origem": "D020",
@@ -9937,7 +11395,9 @@ const FLUXOS_DATA = [
         "volume": 50,
         "movimentacoes": 1,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600054608_08371440"
     },
     {
         "origem": "D020",
@@ -9945,7 +11405,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 1,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600056505_03512050"
     },
     {
         "origem": "D020",
@@ -9953,7 +11415,9 @@ const FLUXOS_DATA = [
         "volume": 1897,
         "movimentacoes": 3,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600057056_09340730"
     },
     {
         "origem": "D020",
@@ -9961,7 +11425,9 @@ const FLUXOS_DATA = [
         "volume": 8818,
         "movimentacoes": 29,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600059968_04048000"
     },
     {
         "origem": "D020",
@@ -9969,7 +11435,9 @@ const FLUXOS_DATA = [
         "volume": 16938,
         "movimentacoes": 29,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600060037_09290260"
     },
     {
         "origem": "D020",
@@ -9977,7 +11445,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 1,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600060107_08664015"
     },
     {
         "origem": "D020",
@@ -9985,7 +11455,9 @@ const FLUXOS_DATA = [
         "volume": 14253,
         "movimentacoes": 43,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600060240_05419000"
     },
     {
         "origem": "D020",
@@ -9993,7 +11465,9 @@ const FLUXOS_DATA = [
         "volume": 14860,
         "movimentacoes": 11,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600063009_04459000"
     },
     {
         "origem": "D020",
@@ -10001,7 +11475,9 @@ const FLUXOS_DATA = [
         "volume": 4,
         "movimentacoes": 1,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600063664_05307000"
     },
     {
         "origem": "D020",
@@ -10009,7 +11485,9 @@ const FLUXOS_DATA = [
         "volume": 10,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_3000000341_11410410"
     },
     {
         "origem": "D020",
@@ -10017,7 +11495,9 @@ const FLUXOS_DATA = [
         "volume": 4,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600049948_12245820"
     },
     {
         "origem": "D020",
@@ -10025,7 +11505,9 @@ const FLUXOS_DATA = [
         "volume": 7896,
         "movimentacoes": 109,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600050357_04048000"
     },
     {
         "origem": "D020",
@@ -10033,7 +11515,9 @@ const FLUXOS_DATA = [
         "volume": 90,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600050553_01141030"
     },
     {
         "origem": "D020",
@@ -10041,7 +11525,9 @@ const FLUXOS_DATA = [
         "volume": 87,
         "movimentacoes": 6,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600052270_04214040"
     },
     {
         "origem": "D020",
@@ -10049,7 +11535,9 @@ const FLUXOS_DATA = [
         "volume": 24,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600052411_03126007"
     },
     {
         "origem": "D020",
@@ -10057,7 +11545,9 @@ const FLUXOS_DATA = [
         "volume": 440,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600054608_08371440"
     },
     {
         "origem": "D020",
@@ -10065,7 +11555,9 @@ const FLUXOS_DATA = [
         "volume": 200,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600056982_11410410"
     },
     {
         "origem": "D020",
@@ -10073,7 +11565,9 @@ const FLUXOS_DATA = [
         "volume": 3,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600057020_03969000"
     },
     {
         "origem": "D020",
@@ -10081,7 +11575,9 @@ const FLUXOS_DATA = [
         "volume": 1184,
         "movimentacoes": 3,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600057056_09340730"
     },
     {
         "origem": "D020",
@@ -10089,7 +11585,9 @@ const FLUXOS_DATA = [
         "volume": 100,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600057061_05541130"
     },
     {
         "origem": "D020",
@@ -10097,7 +11595,9 @@ const FLUXOS_DATA = [
         "volume": 352,
         "movimentacoes": 3,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600058865_09310000"
     },
     {
         "origem": "D020",
@@ -10105,7 +11605,9 @@ const FLUXOS_DATA = [
         "volume": 44,
         "movimentacoes": 4,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600059852_04348070"
     },
     {
         "origem": "D020",
@@ -10113,7 +11615,9 @@ const FLUXOS_DATA = [
         "volume": 158,
         "movimentacoes": 11,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600059854_05038090"
     },
     {
         "origem": "D020",
@@ -10121,7 +11625,9 @@ const FLUXOS_DATA = [
         "volume": 84,
         "movimentacoes": 4,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600059895_02167010"
     },
     {
         "origem": "D020",
@@ -10129,7 +11635,9 @@ const FLUXOS_DATA = [
         "volume": 53,
         "movimentacoes": 3,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600059912_07191000"
     },
     {
         "origem": "D020",
@@ -10137,7 +11645,9 @@ const FLUXOS_DATA = [
         "volume": 15844,
         "movimentacoes": 190,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600059968_04048000"
     },
     {
         "origem": "D020",
@@ -10145,7 +11655,9 @@ const FLUXOS_DATA = [
         "volume": 400,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600059980_09840000"
     },
     {
         "origem": "D020",
@@ -10153,7 +11665,9 @@ const FLUXOS_DATA = [
         "volume": 168,
         "movimentacoes": 7,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600060020_06381100"
     },
     {
         "origem": "D020",
@@ -10161,7 +11675,9 @@ const FLUXOS_DATA = [
         "volume": 170,
         "movimentacoes": 4,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600060030_08260030"
     },
     {
         "origem": "D020",
@@ -10169,7 +11685,9 @@ const FLUXOS_DATA = [
         "volume": 11973,
         "movimentacoes": 39,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600060037_09290260"
     },
     {
         "origem": "D020",
@@ -10177,7 +11695,9 @@ const FLUXOS_DATA = [
         "volume": 8,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600060062_03889000"
     },
     {
         "origem": "D020",
@@ -10185,7 +11705,9 @@ const FLUXOS_DATA = [
         "volume": 43,
         "movimentacoes": 6,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600060107_08664015"
     },
     {
         "origem": "D020",
@@ -10193,7 +11715,9 @@ const FLUXOS_DATA = [
         "volume": 15,
         "movimentacoes": 3,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600060108_08664015"
     },
     {
         "origem": "D020",
@@ -10201,7 +11725,9 @@ const FLUXOS_DATA = [
         "volume": 6839,
         "movimentacoes": 74,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600060240_05419000"
     },
     {
         "origem": "D020",
@@ -10209,7 +11735,9 @@ const FLUXOS_DATA = [
         "volume": 5,
         "movimentacoes": 3,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600060243_11085601"
     },
     {
         "origem": "D020",
@@ -10217,7 +11745,9 @@ const FLUXOS_DATA = [
         "volume": 30,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600060294_06715825"
     },
     {
         "origem": "D020",
@@ -10225,7 +11755,9 @@ const FLUXOS_DATA = [
         "volume": 15,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600060539_05690050"
     },
     {
         "origem": "D020",
@@ -10233,7 +11765,9 @@ const FLUXOS_DATA = [
         "volume": 5,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600060565_05187010"
     },
     {
         "origem": "D020",
@@ -10241,7 +11775,9 @@ const FLUXOS_DATA = [
         "volume": 100,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600060683_12242000"
     },
     {
         "origem": "D020",
@@ -10249,7 +11785,9 @@ const FLUXOS_DATA = [
         "volume": 6,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600060880_05407003"
     },
     {
         "origem": "D020",
@@ -10257,7 +11795,9 @@ const FLUXOS_DATA = [
         "volume": 15,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600061053_09190410"
     },
     {
         "origem": "D020",
@@ -10265,7 +11805,9 @@ const FLUXOS_DATA = [
         "volume": 9,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600062532_13733060"
     },
     {
         "origem": "D020",
@@ -10273,7 +11815,9 @@ const FLUXOS_DATA = [
         "volume": 400,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600062805_13187075"
     },
     {
         "origem": "D020",
@@ -10281,7 +11825,9 @@ const FLUXOS_DATA = [
         "volume": 56,
         "movimentacoes": 5,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600063172_12910610"
     },
     {
         "origem": "D020",
@@ -10289,7 +11835,9 @@ const FLUXOS_DATA = [
         "volume": 120,
         "movimentacoes": 1,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600049948_12245820"
     },
     {
         "origem": "D020",
@@ -10297,7 +11845,9 @@ const FLUXOS_DATA = [
         "volume": 4650,
         "movimentacoes": 6,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600050357_04048000"
     },
     {
         "origem": "D020",
@@ -10305,7 +11855,9 @@ const FLUXOS_DATA = [
         "volume": 1000,
         "movimentacoes": 1,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600052270_04214040"
     },
     {
         "origem": "D020",
@@ -10313,7 +11865,9 @@ const FLUXOS_DATA = [
         "volume": 513.9000000000001,
         "movimentacoes": 3,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600054608_08371440"
     },
     {
         "origem": "D020",
@@ -10321,7 +11875,9 @@ const FLUXOS_DATA = [
         "volume": 5396,
         "movimentacoes": 2,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600059854_05038090"
     },
     {
         "origem": "D020",
@@ -10329,7 +11885,9 @@ const FLUXOS_DATA = [
         "volume": 14178,
         "movimentacoes": 12,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600059968_04048000"
     },
     {
         "origem": "D020",
@@ -10337,7 +11895,9 @@ const FLUXOS_DATA = [
         "volume": 4112,
         "movimentacoes": 4,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600060037_09290260"
     },
     {
         "origem": "D020",
@@ -10345,7 +11905,9 @@ const FLUXOS_DATA = [
         "volume": 10516.2,
         "movimentacoes": 19,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600060240_05419000"
     },
     {
         "origem": "D020",
@@ -10353,7 +11915,9 @@ const FLUXOS_DATA = [
         "volume": 204,
         "movimentacoes": 3,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600060539_05690050"
     },
     {
         "origem": "D020",
@@ -10361,7 +11925,9 @@ const FLUXOS_DATA = [
         "volume": 2556,
         "movimentacoes": 13,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600050357_04048000"
     },
     {
         "origem": "D020",
@@ -10369,7 +11935,9 @@ const FLUXOS_DATA = [
         "volume": 90,
         "movimentacoes": 1,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600059895_02167010"
     },
     {
         "origem": "D020",
@@ -10377,7 +11945,9 @@ const FLUXOS_DATA = [
         "volume": 1002,
         "movimentacoes": 1,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600059910_04456160"
     },
     {
         "origem": "D020",
@@ -10385,7 +11955,9 @@ const FLUXOS_DATA = [
         "volume": 8634,
         "movimentacoes": 15,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600059968_04048000"
     },
     {
         "origem": "D020",
@@ -10393,7 +11965,9 @@ const FLUXOS_DATA = [
         "volume": 1368,
         "movimentacoes": 4,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600060037_09290260"
     },
     {
         "origem": "D020",
@@ -10401,7 +11975,9 @@ const FLUXOS_DATA = [
         "volume": 846,
         "movimentacoes": 1,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600060062_03889000"
     },
     {
         "origem": "D020",
@@ -10409,7 +11985,9 @@ const FLUXOS_DATA = [
         "volume": 1998,
         "movimentacoes": 1,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600060108_08664015"
     },
     {
         "origem": "D020",
@@ -10417,7 +11995,9 @@ const FLUXOS_DATA = [
         "volume": 4662,
         "movimentacoes": 9,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D020",
+        "parceiro": "P_4600060240_05419000"
     },
     {
         "origem": "D075",
@@ -10425,7 +12005,9 @@ const FLUXOS_DATA = [
         "volume": 380,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600057056_09340730"
     },
     {
         "origem": "D075",
@@ -10433,7 +12015,9 @@ const FLUXOS_DATA = [
         "volume": 570,
         "movimentacoes": 2,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600059968_04048000"
     },
     {
         "origem": "D075",
@@ -10441,7 +12025,9 @@ const FLUXOS_DATA = [
         "volume": 4,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600060037_09290260"
     },
     {
         "origem": "D075",
@@ -10449,7 +12035,9 @@ const FLUXOS_DATA = [
         "volume": 40,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600060108_08664015"
     },
     {
         "origem": "D075",
@@ -10457,7 +12045,9 @@ const FLUXOS_DATA = [
         "volume": 14686,
         "movimentacoes": 26,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600060240_05419000"
     },
     {
         "origem": "D075",
@@ -10465,7 +12055,9 @@ const FLUXOS_DATA = [
         "volume": 500,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600063009_04459000"
     },
     {
         "origem": "D075",
@@ -10473,7 +12065,9 @@ const FLUXOS_DATA = [
         "volume": 6,
         "movimentacoes": 2,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600057020_03969000"
     },
     {
         "origem": "D075",
@@ -10481,7 +12075,9 @@ const FLUXOS_DATA = [
         "volume": 50,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600059854_05038090"
     },
     {
         "origem": "D075",
@@ -10489,7 +12085,9 @@ const FLUXOS_DATA = [
         "volume": 16,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600059910_04456160"
     },
     {
         "origem": "D075",
@@ -10497,7 +12095,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600059912_07191000"
     },
     {
         "origem": "D075",
@@ -10505,7 +12105,9 @@ const FLUXOS_DATA = [
         "volume": 78204,
         "movimentacoes": 16,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600059968_04048000"
     },
     {
         "origem": "D075",
@@ -10513,7 +12115,9 @@ const FLUXOS_DATA = [
         "volume": 5,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600060030_08260030"
     },
     {
         "origem": "D075",
@@ -10521,7 +12125,9 @@ const FLUXOS_DATA = [
         "volume": 909,
         "movimentacoes": 9,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600060037_09290260"
     },
     {
         "origem": "D075",
@@ -10529,7 +12135,9 @@ const FLUXOS_DATA = [
         "volume": 11,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600060107_08664015"
     },
     {
         "origem": "D075",
@@ -10537,7 +12145,9 @@ const FLUXOS_DATA = [
         "volume": 16,
         "movimentacoes": 2,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600060108_08664015"
     },
     {
         "origem": "D075",
@@ -10545,7 +12155,9 @@ const FLUXOS_DATA = [
         "volume": 20,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600060208_11666590"
     },
     {
         "origem": "D075",
@@ -10553,7 +12165,9 @@ const FLUXOS_DATA = [
         "volume": 403850.175,
         "movimentacoes": 76,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600060240_05419000"
     },
     {
         "origem": "D075",
@@ -10561,7 +12175,9 @@ const FLUXOS_DATA = [
         "volume": 20,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600060323_11250462"
     },
     {
         "origem": "D075",
@@ -10569,7 +12185,9 @@ const FLUXOS_DATA = [
         "volume": 12,
         "movimentacoes": 2,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600060345_06856000"
     },
     {
         "origem": "D075",
@@ -10577,7 +12195,9 @@ const FLUXOS_DATA = [
         "volume": 70,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600063172_12910610"
     },
     {
         "origem": "D075",
@@ -10585,7 +12205,9 @@ const FLUXOS_DATA = [
         "volume": 1920,
         "movimentacoes": 1,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600050357_04048000"
     },
     {
         "origem": "D075",
@@ -10593,7 +12215,9 @@ const FLUXOS_DATA = [
         "volume": 14,
         "movimentacoes": 4,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600060240_05419000"
     },
     {
         "origem": "D075",
@@ -10601,7 +12225,9 @@ const FLUXOS_DATA = [
         "volume": 9,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600050357_04048000"
     },
     {
         "origem": "D075",
@@ -10609,7 +12235,9 @@ const FLUXOS_DATA = [
         "volume": 5684,
         "movimentacoes": 60,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600057020_03969000"
     },
     {
         "origem": "D075",
@@ -10617,7 +12245,9 @@ const FLUXOS_DATA = [
         "volume": 394,
         "movimentacoes": 10,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600057056_09340730"
     },
     {
         "origem": "D075",
@@ -10625,7 +12255,9 @@ const FLUXOS_DATA = [
         "volume": 475,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600057061_05541130"
     },
     {
         "origem": "D075",
@@ -10633,7 +12265,9 @@ const FLUXOS_DATA = [
         "volume": 10,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600057156_08285000"
     },
     {
         "origem": "D075",
@@ -10641,7 +12275,9 @@ const FLUXOS_DATA = [
         "volume": 4,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600057296_11441000"
     },
     {
         "origem": "D075",
@@ -10649,7 +12285,9 @@ const FLUXOS_DATA = [
         "volume": 950,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600059854_05038090"
     },
     {
         "origem": "D075",
@@ -10657,7 +12295,9 @@ const FLUXOS_DATA = [
         "volume": 12,
         "movimentacoes": 4,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600059912_07191000"
     },
     {
         "origem": "D075",
@@ -10665,7 +12305,9 @@ const FLUXOS_DATA = [
         "volume": 84,
         "movimentacoes": 3,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600059951_07171150"
     },
     {
         "origem": "D075",
@@ -10673,7 +12315,9 @@ const FLUXOS_DATA = [
         "volume": 5350,
         "movimentacoes": 69,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600059968_04048000"
     },
     {
         "origem": "D075",
@@ -10681,7 +12325,9 @@ const FLUXOS_DATA = [
         "volume": 10,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600059980_09840000"
     },
     {
         "origem": "D075",
@@ -10689,7 +12335,9 @@ const FLUXOS_DATA = [
         "volume": 231,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600060030_08260030"
     },
     {
         "origem": "D075",
@@ -10697,7 +12345,9 @@ const FLUXOS_DATA = [
         "volume": 3164,
         "movimentacoes": 52,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600060037_09290260"
     },
     {
         "origem": "D075",
@@ -10705,7 +12355,9 @@ const FLUXOS_DATA = [
         "volume": 19,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600060062_03889000"
     },
     {
         "origem": "D075",
@@ -10713,7 +12365,9 @@ const FLUXOS_DATA = [
         "volume": 200,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600060107_08664015"
     },
     {
         "origem": "D075",
@@ -10721,7 +12375,9 @@ const FLUXOS_DATA = [
         "volume": 145,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600060108_08664015"
     },
     {
         "origem": "D075",
@@ -10729,7 +12385,9 @@ const FLUXOS_DATA = [
         "volume": 42,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600060160_17470000"
     },
     {
         "origem": "D075",
@@ -10737,7 +12395,9 @@ const FLUXOS_DATA = [
         "volume": 19,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600060208_11666590"
     },
     {
         "origem": "D075",
@@ -10745,7 +12405,9 @@ const FLUXOS_DATA = [
         "volume": 11414,
         "movimentacoes": 179,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600060240_05419000"
     },
     {
         "origem": "D075",
@@ -10753,7 +12415,9 @@ const FLUXOS_DATA = [
         "volume": 11,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600060323_11250462"
     },
     {
         "origem": "D075",
@@ -10761,7 +12425,9 @@ const FLUXOS_DATA = [
         "volume": 30,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600060345_06856000"
     },
     {
         "origem": "D075",
@@ -10769,7 +12435,9 @@ const FLUXOS_DATA = [
         "volume": 7,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600060539_05690050"
     },
     {
         "origem": "D075",
@@ -10777,7 +12445,9 @@ const FLUXOS_DATA = [
         "volume": 4,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600060565_05187010"
     },
     {
         "origem": "D075",
@@ -10785,7 +12455,9 @@ const FLUXOS_DATA = [
         "volume": 8,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600060683_12242000"
     },
     {
         "origem": "D075",
@@ -10793,7 +12465,9 @@ const FLUXOS_DATA = [
         "volume": 10,
         "movimentacoes": 3,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600062694_13231600"
     },
     {
         "origem": "D075",
@@ -10801,7 +12475,9 @@ const FLUXOS_DATA = [
         "volume": 6,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600062946_13590000"
     },
     {
         "origem": "D075",
@@ -10809,7 +12485,9 @@ const FLUXOS_DATA = [
         "volume": 30,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600063172_12910610"
     },
     {
         "origem": "D075",
@@ -10817,7 +12495,9 @@ const FLUXOS_DATA = [
         "volume": 300,
         "movimentacoes": 1,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600052270_04214040"
     },
     {
         "origem": "D075",
@@ -10825,7 +12505,9 @@ const FLUXOS_DATA = [
         "volume": 4904,
         "movimentacoes": 4,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600057056_09340730"
     },
     {
         "origem": "D075",
@@ -10833,7 +12515,9 @@ const FLUXOS_DATA = [
         "volume": 648,
         "movimentacoes": 3,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600058865_09310000"
     },
     {
         "origem": "D075",
@@ -10841,7 +12525,9 @@ const FLUXOS_DATA = [
         "volume": 14488,
         "movimentacoes": 29,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600059751_09290416"
     },
     {
         "origem": "D075",
@@ -10849,7 +12535,9 @@ const FLUXOS_DATA = [
         "volume": 14636,
         "movimentacoes": 9,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600059852_04348070"
     },
     {
         "origem": "D075",
@@ -10857,7 +12545,9 @@ const FLUXOS_DATA = [
         "volume": 32008,
         "movimentacoes": 29,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600059854_05038090"
     },
     {
         "origem": "D075",
@@ -10865,7 +12555,9 @@ const FLUXOS_DATA = [
         "volume": 14926,
         "movimentacoes": 11,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600059968_04048000"
     },
     {
         "origem": "D075",
@@ -10873,7 +12565,9 @@ const FLUXOS_DATA = [
         "volume": 14100,
         "movimentacoes": 5,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600059990_05095010"
     },
     {
         "origem": "D075",
@@ -10881,7 +12575,9 @@ const FLUXOS_DATA = [
         "volume": 26396,
         "movimentacoes": 16,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600060037_09290260"
     },
     {
         "origem": "D075",
@@ -10889,7 +12585,9 @@ const FLUXOS_DATA = [
         "volume": 76064,
         "movimentacoes": 69,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600060240_05419000"
     },
     {
         "origem": "D075",
@@ -10897,7 +12595,9 @@ const FLUXOS_DATA = [
         "volume": 234,
         "movimentacoes": 2,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600060264_18705650"
     },
     {
         "origem": "D075",
@@ -10905,7 +12605,9 @@ const FLUXOS_DATA = [
         "volume": 750,
         "movimentacoes": 4,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600060880_05407003"
     },
     {
         "origem": "D075",
@@ -10913,7 +12615,9 @@ const FLUXOS_DATA = [
         "volume": 500,
         "movimentacoes": 1,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600061053_09190410"
     },
     {
         "origem": "D075",
@@ -10921,7 +12625,9 @@ const FLUXOS_DATA = [
         "volume": 20430,
         "movimentacoes": 50,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600057020_03969000"
     },
     {
         "origem": "D075",
@@ -10929,7 +12635,9 @@ const FLUXOS_DATA = [
         "volume": 4272,
         "movimentacoes": 18,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600059968_04048000"
     },
     {
         "origem": "D075",
@@ -10937,7 +12645,9 @@ const FLUXOS_DATA = [
         "volume": 4452,
         "movimentacoes": 13,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600060037_09290260"
     },
     {
         "origem": "D075",
@@ -10945,7 +12655,9 @@ const FLUXOS_DATA = [
         "volume": 18786,
         "movimentacoes": 62,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D075",
+        "parceiro": "P_4600060240_05419000"
     },
     {
         "origem": "D030",
@@ -10953,7 +12665,9 @@ const FLUXOS_DATA = [
         "volume": 1936,
         "movimentacoes": 4,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600050357_04048000"
     },
     {
         "origem": "D030",
@@ -10961,7 +12675,9 @@ const FLUXOS_DATA = [
         "volume": 430,
         "movimentacoes": 3,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600052270_04214040"
     },
     {
         "origem": "D030",
@@ -10969,7 +12685,9 @@ const FLUXOS_DATA = [
         "volume": 915,
         "movimentacoes": 4,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600059968_04048000"
     },
     {
         "origem": "D030",
@@ -10977,7 +12695,9 @@ const FLUXOS_DATA = [
         "volume": 20,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600060037_09290260"
     },
     {
         "origem": "D030",
@@ -10985,7 +12705,9 @@ const FLUXOS_DATA = [
         "volume": 549,
         "movimentacoes": 7,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600060240_05419000"
     },
     {
         "origem": "D030",
@@ -10993,7 +12715,9 @@ const FLUXOS_DATA = [
         "volume": 300,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600062805_13187075"
     },
     {
         "origem": "D030",
@@ -11001,7 +12725,9 @@ const FLUXOS_DATA = [
         "volume": 150,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600049948_12245820"
     },
     {
         "origem": "D030",
@@ -11009,7 +12735,9 @@ const FLUXOS_DATA = [
         "volume": 29411,
         "movimentacoes": 13,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600050357_04048000"
     },
     {
         "origem": "D030",
@@ -11017,7 +12745,9 @@ const FLUXOS_DATA = [
         "volume": 16381,
         "movimentacoes": 24,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600052270_04214040"
     },
     {
         "origem": "D030",
@@ -11025,7 +12755,9 @@ const FLUXOS_DATA = [
         "volume": 1500,
         "movimentacoes": 2,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600059852_04348070"
     },
     {
         "origem": "D030",
@@ -11033,7 +12765,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600059895_02167010"
     },
     {
         "origem": "D030",
@@ -11041,7 +12775,9 @@ const FLUXOS_DATA = [
         "volume": 28545,
         "movimentacoes": 38,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600059968_04048000"
     },
     {
         "origem": "D030",
@@ -11049,7 +12785,9 @@ const FLUXOS_DATA = [
         "volume": 500,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600059990_05095010"
     },
     {
         "origem": "D030",
@@ -11057,7 +12795,9 @@ const FLUXOS_DATA = [
         "volume": 51566,
         "movimentacoes": 8,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600060037_09290260"
     },
     {
         "origem": "D030",
@@ -11065,7 +12805,9 @@ const FLUXOS_DATA = [
         "volume": 4,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600060062_03889000"
     },
     {
         "origem": "D030",
@@ -11073,7 +12815,9 @@ const FLUXOS_DATA = [
         "volume": 350435,
         "movimentacoes": 65,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600060240_05419000"
     },
     {
         "origem": "D030",
@@ -11081,7 +12825,9 @@ const FLUXOS_DATA = [
         "volume": 50,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600060323_11250462"
     },
     {
         "origem": "D030",
@@ -11089,7 +12835,9 @@ const FLUXOS_DATA = [
         "volume": 400,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600060565_05187010"
     },
     {
         "origem": "D030",
@@ -11097,7 +12845,9 @@ const FLUXOS_DATA = [
         "volume": 45,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600061053_09190410"
     },
     {
         "origem": "D030",
@@ -11105,7 +12855,9 @@ const FLUXOS_DATA = [
         "volume": 1,
         "movimentacoes": 1,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600049948_12245820"
     },
     {
         "origem": "D030",
@@ -11113,7 +12865,9 @@ const FLUXOS_DATA = [
         "volume": 1,
         "movimentacoes": 1,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600050357_04048000"
     },
     {
         "origem": "D030",
@@ -11121,7 +12875,9 @@ const FLUXOS_DATA = [
         "volume": 1,
         "movimentacoes": 1,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600059968_04048000"
     },
     {
         "origem": "D030",
@@ -11129,7 +12885,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 1,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600060037_09290260"
     },
     {
         "origem": "D030",
@@ -11137,7 +12895,9 @@ const FLUXOS_DATA = [
         "volume": 16,
         "movimentacoes": 3,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600060240_05419000"
     },
     {
         "origem": "D030",
@@ -11145,7 +12905,9 @@ const FLUXOS_DATA = [
         "volume": 10,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_3000000348_05419000"
     },
     {
         "origem": "D030",
@@ -11153,7 +12915,9 @@ const FLUXOS_DATA = [
         "volume": 8,
         "movimentacoes": 4,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600049259_18915792"
     },
     {
         "origem": "D030",
@@ -11161,7 +12925,9 @@ const FLUXOS_DATA = [
         "volume": 305,
         "movimentacoes": 8,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600049948_12245820"
     },
     {
         "origem": "D030",
@@ -11169,7 +12935,9 @@ const FLUXOS_DATA = [
         "volume": 5988,
         "movimentacoes": 87,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600050357_04048000"
     },
     {
         "origem": "D030",
@@ -11177,7 +12945,9 @@ const FLUXOS_DATA = [
         "volume": 351,
         "movimentacoes": 4,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600051503_01141030"
     },
     {
         "origem": "D030",
@@ -11185,7 +12955,9 @@ const FLUXOS_DATA = [
         "volume": 3990,
         "movimentacoes": 85,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600052270_04214040"
     },
     {
         "origem": "D030",
@@ -11193,7 +12965,9 @@ const FLUXOS_DATA = [
         "volume": 1,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600052411_03126007"
     },
     {
         "origem": "D030",
@@ -11201,7 +12975,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600054608_08371440"
     },
     {
         "origem": "D030",
@@ -11209,7 +12985,9 @@ const FLUXOS_DATA = [
         "volume": 204,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600057020_03969000"
     },
     {
         "origem": "D030",
@@ -11217,7 +12995,9 @@ const FLUXOS_DATA = [
         "volume": 2630,
         "movimentacoes": 20,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600057056_09340730"
     },
     {
         "origem": "D030",
@@ -11225,7 +13005,9 @@ const FLUXOS_DATA = [
         "volume": 1,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600059193_18147000"
     },
     {
         "origem": "D030",
@@ -11233,7 +13015,9 @@ const FLUXOS_DATA = [
         "volume": 50,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600059671_04781065"
     },
     {
         "origem": "D030",
@@ -11241,7 +13025,9 @@ const FLUXOS_DATA = [
         "volume": 790,
         "movimentacoes": 8,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600059852_04348070"
     },
     {
         "origem": "D030",
@@ -11249,7 +13035,9 @@ const FLUXOS_DATA = [
         "volume": 2104,
         "movimentacoes": 25,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600059854_05038090"
     },
     {
         "origem": "D030",
@@ -11257,7 +13045,9 @@ const FLUXOS_DATA = [
         "volume": 50,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600059910_04456160"
     },
     {
         "origem": "D030",
@@ -11265,7 +13055,9 @@ const FLUXOS_DATA = [
         "volume": 461,
         "movimentacoes": 5,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600059912_07191000"
     },
     {
         "origem": "D030",
@@ -11273,7 +13065,9 @@ const FLUXOS_DATA = [
         "volume": 3,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600059951_07171150"
     },
     {
         "origem": "D030",
@@ -11281,7 +13075,9 @@ const FLUXOS_DATA = [
         "volume": 16666,
         "movimentacoes": 200,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600059968_04048000"
     },
     {
         "origem": "D030",
@@ -11289,7 +13085,9 @@ const FLUXOS_DATA = [
         "volume": 506,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600059980_09840000"
     },
     {
         "origem": "D030",
@@ -11297,7 +13095,9 @@ const FLUXOS_DATA = [
         "volume": 1743,
         "movimentacoes": 13,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600059990_05095010"
     },
     {
         "origem": "D030",
@@ -11305,7 +13105,9 @@ const FLUXOS_DATA = [
         "volume": 186,
         "movimentacoes": 7,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600060020_06381100"
     },
     {
         "origem": "D030",
@@ -11313,7 +13115,9 @@ const FLUXOS_DATA = [
         "volume": 8540,
         "movimentacoes": 71,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600060037_09290260"
     },
     {
         "origem": "D030",
@@ -11321,7 +13125,9 @@ const FLUXOS_DATA = [
         "volume": 1,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600060062_03889000"
     },
     {
         "origem": "D030",
@@ -11329,7 +13135,9 @@ const FLUXOS_DATA = [
         "volume": 21,
         "movimentacoes": 3,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600060107_08664015"
     },
     {
         "origem": "D030",
@@ -11337,7 +13145,9 @@ const FLUXOS_DATA = [
         "volume": 24,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600060108_08664015"
     },
     {
         "origem": "D030",
@@ -11345,7 +13155,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600060205_15150000"
     },
     {
         "origem": "D030",
@@ -11353,7 +13165,9 @@ const FLUXOS_DATA = [
         "volume": 11716,
         "movimentacoes": 171,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600060240_05419000"
     },
     {
         "origem": "D030",
@@ -11361,7 +13175,9 @@ const FLUXOS_DATA = [
         "volume": 38,
         "movimentacoes": 4,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600060242_11330220"
     },
     {
         "origem": "D030",
@@ -11369,7 +13185,9 @@ const FLUXOS_DATA = [
         "volume": 15,
         "movimentacoes": 6,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600060243_11085601"
     },
     {
         "origem": "D030",
@@ -11377,7 +13195,9 @@ const FLUXOS_DATA = [
         "volume": 7,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600060264_18705650"
     },
     {
         "origem": "D030",
@@ -11385,7 +13205,9 @@ const FLUXOS_DATA = [
         "volume": 6,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600060285_04829280"
     },
     {
         "origem": "D030",
@@ -11393,7 +13215,9 @@ const FLUXOS_DATA = [
         "volume": 166,
         "movimentacoes": 6,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600060294_06715825"
     },
     {
         "origem": "D030",
@@ -11401,7 +13225,9 @@ const FLUXOS_DATA = [
         "volume": 20,
         "movimentacoes": 3,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600060299_18900440"
     },
     {
         "origem": "D030",
@@ -11409,7 +13235,9 @@ const FLUXOS_DATA = [
         "volume": 44,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600060322_12209240"
     },
     {
         "origem": "D030",
@@ -11417,7 +13245,9 @@ const FLUXOS_DATA = [
         "volume": 249,
         "movimentacoes": 5,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600060323_11250462"
     },
     {
         "origem": "D030",
@@ -11425,7 +13255,9 @@ const FLUXOS_DATA = [
         "volume": 150,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600060345_06856000"
     },
     {
         "origem": "D030",
@@ -11433,7 +13265,9 @@ const FLUXOS_DATA = [
         "volume": 106,
         "movimentacoes": 8,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600060539_05690050"
     },
     {
         "origem": "D030",
@@ -11441,7 +13275,9 @@ const FLUXOS_DATA = [
         "volume": 24,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600060565_05187010"
     },
     {
         "origem": "D030",
@@ -11449,7 +13285,9 @@ const FLUXOS_DATA = [
         "volume": 3,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600060683_12242000"
     },
     {
         "origem": "D030",
@@ -11457,7 +13295,9 @@ const FLUXOS_DATA = [
         "volume": 496,
         "movimentacoes": 18,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600060880_05407003"
     },
     {
         "origem": "D030",
@@ -11465,7 +13305,9 @@ const FLUXOS_DATA = [
         "volume": 344,
         "movimentacoes": 8,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600061053_09190410"
     },
     {
         "origem": "D030",
@@ -11473,7 +13315,9 @@ const FLUXOS_DATA = [
         "volume": 14,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600062694_13231600"
     },
     {
         "origem": "D030",
@@ -11481,7 +13325,9 @@ const FLUXOS_DATA = [
         "volume": 209,
         "movimentacoes": 12,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600063172_12910610"
     },
     {
         "origem": "D030",
@@ -11489,7 +13335,9 @@ const FLUXOS_DATA = [
         "volume": 5802,
         "movimentacoes": 5,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600050357_04048000"
     },
     {
         "origem": "D030",
@@ -11497,7 +13345,9 @@ const FLUXOS_DATA = [
         "volume": 3200,
         "movimentacoes": 4,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600052270_04214040"
     },
     {
         "origem": "D030",
@@ -11505,7 +13355,9 @@ const FLUXOS_DATA = [
         "volume": 402,
         "movimentacoes": 1,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600057056_09340730"
     },
     {
         "origem": "D030",
@@ -11513,7 +13365,9 @@ const FLUXOS_DATA = [
         "volume": 402,
         "movimentacoes": 1,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600058865_09310000"
     },
     {
         "origem": "D030",
@@ -11521,7 +13375,9 @@ const FLUXOS_DATA = [
         "volume": 1032,
         "movimentacoes": 1,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600059852_04348070"
     },
     {
         "origem": "D030",
@@ -11529,7 +13385,9 @@ const FLUXOS_DATA = [
         "volume": 1002,
         "movimentacoes": 1,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600059854_05038090"
     },
     {
         "origem": "D030",
@@ -11537,7 +13395,9 @@ const FLUXOS_DATA = [
         "volume": 3000,
         "movimentacoes": 4,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600059990_05095010"
     },
     {
         "origem": "D030",
@@ -11545,7 +13405,9 @@ const FLUXOS_DATA = [
         "volume": 60,
         "movimentacoes": 1,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600060037_09290260"
     },
     {
         "origem": "D030",
@@ -11553,7 +13415,9 @@ const FLUXOS_DATA = [
         "volume": 240,
         "movimentacoes": 2,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600060108_08664015"
     },
     {
         "origem": "D030",
@@ -11561,7 +13425,9 @@ const FLUXOS_DATA = [
         "volume": 7208,
         "movimentacoes": 5,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600060240_05419000"
     },
     {
         "origem": "D030",
@@ -11569,7 +13435,9 @@ const FLUXOS_DATA = [
         "volume": 804,
         "movimentacoes": 4,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600060243_11085601"
     },
     {
         "origem": "D030",
@@ -11577,7 +13445,9 @@ const FLUXOS_DATA = [
         "volume": 18,
         "movimentacoes": 1,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600060539_05690050"
     },
     {
         "origem": "D030",
@@ -11585,7 +13455,9 @@ const FLUXOS_DATA = [
         "volume": 1236,
         "movimentacoes": 3,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600060880_05407003"
     },
     {
         "origem": "D030",
@@ -11593,7 +13465,9 @@ const FLUXOS_DATA = [
         "volume": 450,
         "movimentacoes": 1,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600049948_12245820"
     },
     {
         "origem": "D030",
@@ -11601,7 +13475,9 @@ const FLUXOS_DATA = [
         "volume": 84,
         "movimentacoes": 1,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600050357_04048000"
     },
     {
         "origem": "D030",
@@ -11609,7 +13485,9 @@ const FLUXOS_DATA = [
         "volume": 366,
         "movimentacoes": 1,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600050553_01141030"
     },
     {
         "origem": "D030",
@@ -11617,7 +13495,9 @@ const FLUXOS_DATA = [
         "volume": 570,
         "movimentacoes": 2,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600051503_01141030"
     },
     {
         "origem": "D030",
@@ -11625,7 +13505,9 @@ const FLUXOS_DATA = [
         "volume": 6396,
         "movimentacoes": 6,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600059968_04048000"
     },
     {
         "origem": "D030",
@@ -11633,7 +13515,9 @@ const FLUXOS_DATA = [
         "volume": 4458,
         "movimentacoes": 16,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D030",
+        "parceiro": "P_4600060240_05419000"
     },
     {
         "origem": "D040",
@@ -11641,7 +13525,9 @@ const FLUXOS_DATA = [
         "volume": 1200,
         "movimentacoes": 3,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600059579_06844005"
     },
     {
         "origem": "D040",
@@ -11649,7 +13535,9 @@ const FLUXOS_DATA = [
         "volume": 4683,
         "movimentacoes": 7,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600060030_08260030"
     },
     {
         "origem": "D040",
@@ -11657,7 +13545,9 @@ const FLUXOS_DATA = [
         "volume": 2994,
         "movimentacoes": 7,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600060062_03889000"
     },
     {
         "origem": "D040",
@@ -11665,7 +13555,9 @@ const FLUXOS_DATA = [
         "volume": 2405,
         "movimentacoes": 9,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600060107_08664015"
     },
     {
         "origem": "D040",
@@ -11673,7 +13565,9 @@ const FLUXOS_DATA = [
         "volume": 3386,
         "movimentacoes": 10,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600060108_08664015"
     },
     {
         "origem": "D040",
@@ -11681,7 +13575,9 @@ const FLUXOS_DATA = [
         "volume": 12,
         "movimentacoes": 6,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600041302_03889000"
     },
     {
         "origem": "D040",
@@ -11689,7 +13585,9 @@ const FLUXOS_DATA = [
         "volume": 25063,
         "movimentacoes": 16,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600042975_08664015"
     },
     {
         "origem": "D040",
@@ -11697,7 +13595,9 @@ const FLUXOS_DATA = [
         "volume": 45003,
         "movimentacoes": 3,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600056089_08260030"
     },
     {
         "origem": "D040",
@@ -11705,7 +13605,9 @@ const FLUXOS_DATA = [
         "volume": 13,
         "movimentacoes": 7,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600057156_08285000"
     },
     {
         "origem": "D040",
@@ -11713,7 +13615,9 @@ const FLUXOS_DATA = [
         "volume": 969,
         "movimentacoes": 48,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600060030_08260030"
     },
     {
         "origem": "D040",
@@ -11721,7 +13625,9 @@ const FLUXOS_DATA = [
         "volume": 4371,
         "movimentacoes": 56,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600060062_03889000"
     },
     {
         "origem": "D040",
@@ -11729,7 +13635,9 @@ const FLUXOS_DATA = [
         "volume": 13140,
         "movimentacoes": 67,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600060107_08664015"
     },
     {
         "origem": "D040",
@@ -11737,7 +13645,9 @@ const FLUXOS_DATA = [
         "volume": 2823,
         "movimentacoes": 51,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600060108_08664015"
     },
     {
         "origem": "D040",
@@ -11745,7 +13655,9 @@ const FLUXOS_DATA = [
         "volume": 4,
         "movimentacoes": 2,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600042975_08664015"
     },
     {
         "origem": "D040",
@@ -11753,7 +13665,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 2,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600059579_06844005"
     },
     {
         "origem": "D040",
@@ -11761,7 +13675,9 @@ const FLUXOS_DATA = [
         "volume": 2250,
         "movimentacoes": 6,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600060030_08260030"
     },
     {
         "origem": "D040",
@@ -11769,7 +13685,9 @@ const FLUXOS_DATA = [
         "volume": 3428,
         "movimentacoes": 8,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600060062_03889000"
     },
     {
         "origem": "D040",
@@ -11777,7 +13695,9 @@ const FLUXOS_DATA = [
         "volume": 1605,
         "movimentacoes": 3,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600060107_08664015"
     },
     {
         "origem": "D040",
@@ -11785,7 +13705,9 @@ const FLUXOS_DATA = [
         "volume": 973,
         "movimentacoes": 8,
         "material": "Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600060108_08664015"
     },
     {
         "origem": "D040",
@@ -11793,7 +13715,9 @@ const FLUXOS_DATA = [
         "volume": 2187,
         "movimentacoes": 103,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600041302_03889000"
     },
     {
         "origem": "D040",
@@ -11801,7 +13725,9 @@ const FLUXOS_DATA = [
         "volume": 3438,
         "movimentacoes": 163,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600042975_08664015"
     },
     {
         "origem": "D040",
@@ -11809,7 +13735,9 @@ const FLUXOS_DATA = [
         "volume": 2895,
         "movimentacoes": 102,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600056089_08260030"
     },
     {
         "origem": "D040",
@@ -11817,7 +13745,9 @@ const FLUXOS_DATA = [
         "volume": 10,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600056260_04728210"
     },
     {
         "origem": "D040",
@@ -11825,7 +13755,9 @@ const FLUXOS_DATA = [
         "volume": 912,
         "movimentacoes": 4,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600057061_05541130"
     },
     {
         "origem": "D040",
@@ -11833,7 +13765,9 @@ const FLUXOS_DATA = [
         "volume": 2645,
         "movimentacoes": 39,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600057156_08285000"
     },
     {
         "origem": "D040",
@@ -11841,7 +13775,9 @@ const FLUXOS_DATA = [
         "volume": 36,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600058100_06543001"
     },
     {
         "origem": "D040",
@@ -11849,7 +13785,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600059852_04348070"
     },
     {
         "origem": "D040",
@@ -11857,7 +13795,9 @@ const FLUXOS_DATA = [
         "volume": 6,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600059895_02167010"
     },
     {
         "origem": "D040",
@@ -11865,7 +13805,9 @@ const FLUXOS_DATA = [
         "volume": 37,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600059910_04456160"
     },
     {
         "origem": "D040",
@@ -11873,7 +13815,9 @@ const FLUXOS_DATA = [
         "volume": 1060,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600059912_07191000"
     },
     {
         "origem": "D040",
@@ -11881,7 +13825,9 @@ const FLUXOS_DATA = [
         "volume": 8,
         "movimentacoes": 3,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600059951_07171150"
     },
     {
         "origem": "D040",
@@ -11889,7 +13835,9 @@ const FLUXOS_DATA = [
         "volume": 500,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600059968_04048000"
     },
     {
         "origem": "D040",
@@ -11897,7 +13845,9 @@ const FLUXOS_DATA = [
         "volume": 532,
         "movimentacoes": 4,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600059980_09840000"
     },
     {
         "origem": "D040",
@@ -11905,7 +13855,9 @@ const FLUXOS_DATA = [
         "volume": 37,
         "movimentacoes": 5,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600060020_06381100"
     },
     {
         "origem": "D040",
@@ -11913,7 +13865,9 @@ const FLUXOS_DATA = [
         "volume": 22271.260000000002,
         "movimentacoes": 409,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600060030_08260030"
     },
     {
         "origem": "D040",
@@ -11921,7 +13875,9 @@ const FLUXOS_DATA = [
         "volume": 1008,
         "movimentacoes": 6,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600060037_09290260"
     },
     {
         "origem": "D040",
@@ -11929,7 +13885,9 @@ const FLUXOS_DATA = [
         "volume": 17017,
         "movimentacoes": 440,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600060062_03889000"
     },
     {
         "origem": "D040",
@@ -11937,7 +13895,9 @@ const FLUXOS_DATA = [
         "volume": 7825.73,
         "movimentacoes": 400,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600060107_08664015"
     },
     {
         "origem": "D040",
@@ -11945,7 +13905,9 @@ const FLUXOS_DATA = [
         "volume": 10056,
         "movimentacoes": 379,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600060108_08664015"
     },
     {
         "origem": "D040",
@@ -11953,7 +13915,9 @@ const FLUXOS_DATA = [
         "volume": 3,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600060110_18205720"
     },
     {
         "origem": "D040",
@@ -11961,7 +13925,9 @@ const FLUXOS_DATA = [
         "volume": 37,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600060160_17470000"
     },
     {
         "origem": "D040",
@@ -11969,7 +13935,9 @@ const FLUXOS_DATA = [
         "volume": 15,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600060225_12231140"
     },
     {
         "origem": "D040",
@@ -11977,7 +13945,9 @@ const FLUXOS_DATA = [
         "volume": 10,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600060240_05419000"
     },
     {
         "origem": "D040",
@@ -11985,7 +13955,9 @@ const FLUXOS_DATA = [
         "volume": 22,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600060264_18705650"
     },
     {
         "origem": "D040",
@@ -11993,7 +13965,9 @@ const FLUXOS_DATA = [
         "volume": 100,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600060285_04829280"
     },
     {
         "origem": "D040",
@@ -12001,7 +13975,9 @@ const FLUXOS_DATA = [
         "volume": 181,
         "movimentacoes": 5,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600060322_12209240"
     },
     {
         "origem": "D040",
@@ -12009,7 +13985,9 @@ const FLUXOS_DATA = [
         "volume": 33,
         "movimentacoes": 4,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600060323_11250462"
     },
     {
         "origem": "D040",
@@ -12017,7 +13995,9 @@ const FLUXOS_DATA = [
         "volume": 1,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600060345_06856000"
     },
     {
         "origem": "D040",
@@ -12025,7 +14005,9 @@ const FLUXOS_DATA = [
         "volume": 100,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600060565_05187010"
     },
     {
         "origem": "D040",
@@ -12033,7 +14015,9 @@ const FLUXOS_DATA = [
         "volume": 100,
         "movimentacoes": 3,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600060683_12242000"
     },
     {
         "origem": "D040",
@@ -12041,7 +14025,9 @@ const FLUXOS_DATA = [
         "volume": 3,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600062989_18320000"
     },
     {
         "origem": "D040",
@@ -12049,7 +14035,9 @@ const FLUXOS_DATA = [
         "volume": 740,
         "movimentacoes": 4,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600063172_12910610"
     },
     {
         "origem": "D040",
@@ -12057,7 +14045,9 @@ const FLUXOS_DATA = [
         "volume": 2000,
         "movimentacoes": 1,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_3000000341_11410410"
     },
     {
         "origem": "D040",
@@ -12065,7 +14055,9 @@ const FLUXOS_DATA = [
         "volume": 30300,
         "movimentacoes": 33,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600041302_03889000"
     },
     {
         "origem": "D040",
@@ -12073,7 +14065,9 @@ const FLUXOS_DATA = [
         "volume": 45350,
         "movimentacoes": 41,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600042975_08664015"
     },
     {
         "origem": "D040",
@@ -12081,7 +14075,9 @@ const FLUXOS_DATA = [
         "volume": 45446,
         "movimentacoes": 35,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600056089_08260030"
     },
     {
         "origem": "D040",
@@ -12089,7 +14085,9 @@ const FLUXOS_DATA = [
         "volume": 22700,
         "movimentacoes": 11,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600057156_08285000"
     },
     {
         "origem": "D040",
@@ -12097,7 +14095,9 @@ const FLUXOS_DATA = [
         "volume": 600,
         "movimentacoes": 1,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600059980_09840000"
     },
     {
         "origem": "D040",
@@ -12105,7 +14105,9 @@ const FLUXOS_DATA = [
         "volume": 104837.4,
         "movimentacoes": 78,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600060030_08260030"
     },
     {
         "origem": "D040",
@@ -12113,7 +14115,9 @@ const FLUXOS_DATA = [
         "volume": 348,
         "movimentacoes": 2,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600060037_09290260"
     },
     {
         "origem": "D040",
@@ -12121,7 +14125,9 @@ const FLUXOS_DATA = [
         "volume": 60978.03,
         "movimentacoes": 84,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600060062_03889000"
     },
     {
         "origem": "D040",
@@ -12129,7 +14135,9 @@ const FLUXOS_DATA = [
         "volume": 38034.94,
         "movimentacoes": 64,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600060107_08664015"
     },
     {
         "origem": "D040",
@@ -12137,7 +14145,9 @@ const FLUXOS_DATA = [
         "volume": 69722,
         "movimentacoes": 78,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600060108_08664015"
     },
     {
         "origem": "D040",
@@ -12145,7 +14155,9 @@ const FLUXOS_DATA = [
         "volume": 300,
         "movimentacoes": 1,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600060565_05187010"
     },
     {
         "origem": "D040",
@@ -12153,7 +14165,9 @@ const FLUXOS_DATA = [
         "volume": 6330,
         "movimentacoes": 17,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600041302_03889000"
     },
     {
         "origem": "D040",
@@ -12161,7 +14175,9 @@ const FLUXOS_DATA = [
         "volume": 14910.56,
         "movimentacoes": 38,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600042975_08664015"
     },
     {
         "origem": "D040",
@@ -12169,7 +14185,9 @@ const FLUXOS_DATA = [
         "volume": 9246,
         "movimentacoes": 20,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600056089_08260030"
     },
     {
         "origem": "D040",
@@ -12177,7 +14195,9 @@ const FLUXOS_DATA = [
         "volume": 2460,
         "movimentacoes": 3,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600057061_05541130"
     },
     {
         "origem": "D040",
@@ -12185,7 +14205,9 @@ const FLUXOS_DATA = [
         "volume": 4260,
         "movimentacoes": 9,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600057156_08285000"
     },
     {
         "origem": "D040",
@@ -12193,7 +14215,9 @@ const FLUXOS_DATA = [
         "volume": 600,
         "movimentacoes": 2,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600059912_07191000"
     },
     {
         "origem": "D040",
@@ -12201,7 +14225,9 @@ const FLUXOS_DATA = [
         "volume": 41144.95,
         "movimentacoes": 103,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600060030_08260030"
     },
     {
         "origem": "D040",
@@ -12209,7 +14235,9 @@ const FLUXOS_DATA = [
         "volume": 30544.6,
         "movimentacoes": 91,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600060062_03889000"
     },
     {
         "origem": "D040",
@@ -12217,7 +14245,9 @@ const FLUXOS_DATA = [
         "volume": 24802.93,
         "movimentacoes": 77,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600060107_08664015"
     },
     {
         "origem": "D040",
@@ -12225,7 +14255,9 @@ const FLUXOS_DATA = [
         "volume": 24418,
         "movimentacoes": 59,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600060108_08664015"
     },
     {
         "origem": "D040",
@@ -12233,7 +14265,9 @@ const FLUXOS_DATA = [
         "volume": 1626,
         "movimentacoes": 1,
         "material": "Tubos rígidos",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D040",
+        "parceiro": "P_4600062989_18320000"
     },
     {
         "origem": "D034",
@@ -12241,7 +14275,9 @@ const FLUXOS_DATA = [
         "volume": 560,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D034",
+        "parceiro": "P_4600060030_08260030"
     },
     {
         "origem": "D034",
@@ -12249,7 +14285,9 @@ const FLUXOS_DATA = [
         "volume": 2000,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D034",
+        "parceiro": "P_4600060294_06715825"
     },
     {
         "origem": "D034",
@@ -12257,7 +14295,9 @@ const FLUXOS_DATA = [
         "volume": 23000,
         "movimentacoes": 4,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D034",
+        "parceiro": "P_4600062663_03332050"
     },
     {
         "origem": "D034",
@@ -12265,7 +14305,9 @@ const FLUXOS_DATA = [
         "volume": 60,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D034",
+        "parceiro": "P_4600062694_13231600"
     },
     {
         "origem": "D034",
@@ -12273,7 +14315,9 @@ const FLUXOS_DATA = [
         "volume": 25,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D034",
+        "parceiro": "P_4600059671_04781065"
     },
     {
         "origem": "D034",
@@ -12281,7 +14325,9 @@ const FLUXOS_DATA = [
         "volume": 10,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D034",
+        "parceiro": "P_4600059980_09840000"
     },
     {
         "origem": "D034",
@@ -12289,7 +14335,9 @@ const FLUXOS_DATA = [
         "volume": 20,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D034",
+        "parceiro": "P_4600060267_11600733"
     },
     {
         "origem": "D034",
@@ -12297,7 +14345,9 @@ const FLUXOS_DATA = [
         "volume": 10,
         "movimentacoes": 2,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D034",
+        "parceiro": "P_4600060294_06715825"
     },
     {
         "origem": "D034",
@@ -12305,7 +14355,9 @@ const FLUXOS_DATA = [
         "volume": 5,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D034",
+        "parceiro": "P_4600062532_13733060"
     },
     {
         "origem": "D034",
@@ -12313,7 +14365,9 @@ const FLUXOS_DATA = [
         "volume": 30,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D034",
+        "parceiro": "P_4600059852_04348070"
     },
     {
         "origem": "D034",
@@ -12321,7 +14375,9 @@ const FLUXOS_DATA = [
         "volume": 10,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D034",
+        "parceiro": "P_4600059895_02167010"
     },
     {
         "origem": "D034",
@@ -12329,7 +14385,9 @@ const FLUXOS_DATA = [
         "volume": 1,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D034",
+        "parceiro": "P_4600059910_04456160"
     },
     {
         "origem": "D034",
@@ -12337,7 +14395,9 @@ const FLUXOS_DATA = [
         "volume": 9,
         "movimentacoes": 3,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D034",
+        "parceiro": "P_4600059912_07191000"
     },
     {
         "origem": "D034",
@@ -12345,7 +14405,9 @@ const FLUXOS_DATA = [
         "volume": 1,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D034",
+        "parceiro": "P_4600059951_07171150"
     },
     {
         "origem": "D034",
@@ -12353,7 +14415,9 @@ const FLUXOS_DATA = [
         "volume": 96,
         "movimentacoes": 12,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D034",
+        "parceiro": "P_4600060020_06381100"
     },
     {
         "origem": "D034",
@@ -12361,7 +14425,9 @@ const FLUXOS_DATA = [
         "volume": 6,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D034",
+        "parceiro": "P_4600060030_08260030"
     },
     {
         "origem": "D034",
@@ -12369,7 +14435,9 @@ const FLUXOS_DATA = [
         "volume": 1,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D034",
+        "parceiro": "P_4600060062_03889000"
     },
     {
         "origem": "D034",
@@ -12377,7 +14445,9 @@ const FLUXOS_DATA = [
         "volume": 16,
         "movimentacoes": 8,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D034",
+        "parceiro": "P_4600060107_08664015"
     },
     {
         "origem": "D034",
@@ -12385,7 +14455,9 @@ const FLUXOS_DATA = [
         "volume": 10,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D034",
+        "parceiro": "P_4600060108_08664015"
     },
     {
         "origem": "D034",
@@ -12393,7 +14465,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D034",
+        "parceiro": "P_4600060183_11900000"
     },
     {
         "origem": "D034",
@@ -12401,7 +14475,9 @@ const FLUXOS_DATA = [
         "volume": 5,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D034",
+        "parceiro": "P_4600060242_11330220"
     },
     {
         "origem": "D034",
@@ -12409,7 +14485,9 @@ const FLUXOS_DATA = [
         "volume": 10,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D034",
+        "parceiro": "P_4600060267_11600733"
     },
     {
         "origem": "D034",
@@ -12417,7 +14495,9 @@ const FLUXOS_DATA = [
         "volume": 6,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D034",
+        "parceiro": "P_4600060285_04829280"
     },
     {
         "origem": "D034",
@@ -12425,7 +14505,9 @@ const FLUXOS_DATA = [
         "volume": 52,
         "movimentacoes": 7,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D034",
+        "parceiro": "P_4600060294_06715825"
     },
     {
         "origem": "D034",
@@ -12433,7 +14515,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D034",
+        "parceiro": "P_4600060323_11250462"
     },
     {
         "origem": "D034",
@@ -12441,7 +14525,9 @@ const FLUXOS_DATA = [
         "volume": 17,
         "movimentacoes": 3,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D034",
+        "parceiro": "P_4600060345_06856000"
     },
     {
         "origem": "D034",
@@ -12449,7 +14535,9 @@ const FLUXOS_DATA = [
         "volume": 71,
         "movimentacoes": 5,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D034",
+        "parceiro": "P_4600060565_05187010"
     },
     {
         "origem": "D034",
@@ -12457,7 +14545,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D034",
+        "parceiro": "P_4600060584_11725060"
     },
     {
         "origem": "D034",
@@ -12465,7 +14555,9 @@ const FLUXOS_DATA = [
         "volume": 35,
         "movimentacoes": 3,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D034",
+        "parceiro": "P_4600062694_13231600"
     },
     {
         "origem": "D034",
@@ -12473,7 +14565,9 @@ const FLUXOS_DATA = [
         "volume": 3,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D034",
+        "parceiro": "P_4600062805_13187075"
     },
     {
         "origem": "D034",
@@ -12481,7 +14575,9 @@ const FLUXOS_DATA = [
         "volume": 3,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D034",
+        "parceiro": "P_4600062946_13590000"
     },
     {
         "origem": "D034",
@@ -12489,7 +14585,9 @@ const FLUXOS_DATA = [
         "volume": 3,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D034",
+        "parceiro": "P_4600066038_11925000"
     },
     {
         "origem": "D034",
@@ -12497,7 +14595,9 @@ const FLUXOS_DATA = [
         "volume": 1100,
         "movimentacoes": 1,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D034",
+        "parceiro": "P_4600060107_08664015"
     },
     {
         "origem": "D034",
@@ -12505,15 +14605,9 @@ const FLUXOS_DATA = [
         "volume": 1300,
         "movimentacoes": 2,
         "material": "Tubos flexíveis",
-        "direcao": "SAÍDA"
-    },
-    {
-        "origem": 0,
-        "destino": "P_4600060565_05187010",
-        "volume": 11775,
-        "movimentacoes": 1,
-        "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D034",
+        "parceiro": "P_4600060322_12209240"
     },
     {
         "origem": "D002",
@@ -12521,7 +14615,9 @@ const FLUXOS_DATA = [
         "volume": 1000,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D002",
+        "parceiro": "P_4600059444_06268000"
     },
     {
         "origem": "D002",
@@ -12529,7 +14625,9 @@ const FLUXOS_DATA = [
         "volume": 200,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D002",
+        "parceiro": "P_4600059671_04781065"
     },
     {
         "origem": "D002",
@@ -12537,7 +14635,9 @@ const FLUXOS_DATA = [
         "volume": 30,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D002",
+        "parceiro": "P_4600060323_11250462"
     },
     {
         "origem": "D002",
@@ -12545,7 +14645,9 @@ const FLUXOS_DATA = [
         "volume": 1,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D002",
+        "parceiro": "P_4600060565_05187010"
     },
     {
         "origem": "D002",
@@ -12553,7 +14655,9 @@ const FLUXOS_DATA = [
         "volume": 14,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D002",
+        "parceiro": "P_4600056260_04728210"
     },
     {
         "origem": "D002",
@@ -12561,7 +14665,9 @@ const FLUXOS_DATA = [
         "volume": 6,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D002",
+        "parceiro": "P_4600059852_04348070"
     },
     {
         "origem": "D002",
@@ -12569,7 +14675,9 @@ const FLUXOS_DATA = [
         "volume": 134,
         "movimentacoes": 9,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D002",
+        "parceiro": "P_4600059854_05038090"
     },
     {
         "origem": "D002",
@@ -12577,7 +14685,9 @@ const FLUXOS_DATA = [
         "volume": 340,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D002",
+        "parceiro": "P_4600059893_01216000"
     },
     {
         "origem": "D002",
@@ -12585,7 +14695,9 @@ const FLUXOS_DATA = [
         "volume": 20,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D002",
+        "parceiro": "P_4600059910_04456160"
     },
     {
         "origem": "D002",
@@ -12593,7 +14705,9 @@ const FLUXOS_DATA = [
         "volume": 80,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D002",
+        "parceiro": "P_4600059990_05095010"
     },
     {
         "origem": "D002",
@@ -12601,7 +14715,9 @@ const FLUXOS_DATA = [
         "volume": 20,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D002",
+        "parceiro": "P_4600060020_06381100"
     },
     {
         "origem": "D002",
@@ -12609,7 +14725,9 @@ const FLUXOS_DATA = [
         "volume": 30,
         "movimentacoes": 4,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D002",
+        "parceiro": "P_4600060037_09290260"
     },
     {
         "origem": "D002",
@@ -12617,7 +14735,9 @@ const FLUXOS_DATA = [
         "volume": 1,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D002",
+        "parceiro": "P_4600060107_08664015"
     },
     {
         "origem": "D002",
@@ -12625,7 +14745,9 @@ const FLUXOS_DATA = [
         "volume": 6,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D002",
+        "parceiro": "P_4600060108_08664015"
     },
     {
         "origem": "D002",
@@ -12633,7 +14755,9 @@ const FLUXOS_DATA = [
         "volume": 295,
         "movimentacoes": 3,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D002",
+        "parceiro": "P_4600060240_05419000"
     },
     {
         "origem": "D002",
@@ -12641,7 +14765,9 @@ const FLUXOS_DATA = [
         "volume": 23,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D002",
+        "parceiro": "P_4600060243_11085601"
     },
     {
         "origem": "D002",
@@ -12649,7 +14775,9 @@ const FLUXOS_DATA = [
         "volume": 18,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D002",
+        "parceiro": "P_4600060285_04829280"
     },
     {
         "origem": "D002",
@@ -12657,7 +14785,9 @@ const FLUXOS_DATA = [
         "volume": 10,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D002",
+        "parceiro": "P_4600060294_06715825"
     },
     {
         "origem": "D002",
@@ -12665,7 +14795,9 @@ const FLUXOS_DATA = [
         "volume": 20,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D002",
+        "parceiro": "P_4600060323_11250462"
     },
     {
         "origem": "D002",
@@ -12673,7 +14805,9 @@ const FLUXOS_DATA = [
         "volume": 100,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D002",
+        "parceiro": "P_4600060324_14409406"
     },
     {
         "origem": "D002",
@@ -12681,7 +14815,9 @@ const FLUXOS_DATA = [
         "volume": 141,
         "movimentacoes": 4,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D002",
+        "parceiro": "P_4600060345_06856000"
     },
     {
         "origem": "D002",
@@ -12689,7 +14825,9 @@ const FLUXOS_DATA = [
         "volume": 21,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D002",
+        "parceiro": "P_4600060880_05407003"
     },
     {
         "origem": "D002",
@@ -12697,7 +14835,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "SAÍDA"
+        "direcao": "SAÍDA",
+        "cd": "D002",
+        "parceiro": "P_4600062694_13231600"
     },
     {
         "origem": "P_7000016468_14401426",
@@ -12705,7 +14845,9 @@ const FLUXOS_DATA = [
         "volume": 58720,
         "movimentacoes": 22,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000016468_14401426"
     },
     {
         "origem": "P_7000014785_11660660",
@@ -12713,7 +14855,9 @@ const FLUXOS_DATA = [
         "volume": 513500,
         "movimentacoes": 19,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000014785_11660660"
     },
     {
         "origem": "P_7000018322_89219550",
@@ -12721,7 +14865,9 @@ const FLUXOS_DATA = [
         "volume": 6593,
         "movimentacoes": 26,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000018322_89219550"
     },
     {
         "origem": "P_7000019920_08320280",
@@ -12729,7 +14875,9 @@ const FLUXOS_DATA = [
         "volume": 106,
         "movimentacoes": 3,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000019920_08320280"
     },
     {
         "origem": "P_7000013011_09450000",
@@ -12737,7 +14885,9 @@ const FLUXOS_DATA = [
         "volume": 16152,
         "movimentacoes": 3,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000013011_09450000"
     },
     {
         "origem": "P_7000016882_20031902",
@@ -12745,7 +14895,9 @@ const FLUXOS_DATA = [
         "volume": 8251,
         "movimentacoes": 5,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000016882_20031902"
     },
     {
         "origem": "P_7000009927_07224210",
@@ -12753,7 +14905,9 @@ const FLUXOS_DATA = [
         "volume": 103000,
         "movimentacoes": 4,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000009927_07224210"
     },
     {
         "origem": "P_7000005544_04164180",
@@ -12761,7 +14915,9 @@ const FLUXOS_DATA = [
         "volume": 4124,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000005544_04164180"
     },
     {
         "origem": "P_7000010858_04222902",
@@ -12769,7 +14925,9 @@ const FLUXOS_DATA = [
         "volume": 1182,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000010858_04222902"
     },
     {
         "origem": "P_3000000343_06856000",
@@ -12777,7 +14935,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_3000000343_06856000"
     },
     {
         "origem": "P_7000019088_93180000",
@@ -12785,7 +14945,9 @@ const FLUXOS_DATA = [
         "volume": 2025,
         "movimentacoes": 206,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000019088_93180000"
     },
     {
         "origem": "P_7000033719_12072250",
@@ -12793,7 +14955,9 @@ const FLUXOS_DATA = [
         "volume": 6065370,
         "movimentacoes": 407,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000033719_12072250"
     },
     {
         "origem": "P_7000009012_03502020",
@@ -12801,7 +14965,9 @@ const FLUXOS_DATA = [
         "volume": 1233065,
         "movimentacoes": 82,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000009012_03502020"
     },
     {
         "origem": "P_7000067890_08290220",
@@ -12809,7 +14975,9 @@ const FLUXOS_DATA = [
         "volume": 16840,
         "movimentacoes": 7,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000067890_08290220"
     },
     {
         "origem": "P_7000019920_08320280",
@@ -12817,7 +14985,9 @@ const FLUXOS_DATA = [
         "volume": 32245,
         "movimentacoes": 16,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000019920_08320280"
     },
     {
         "origem": "P_7000017323_04580000",
@@ -12825,7 +14995,9 @@ const FLUXOS_DATA = [
         "volume": 16,
         "movimentacoes": 8,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000017323_04580000"
     },
     {
         "origem": "P_7000014073_11669320",
@@ -12833,7 +15005,9 @@ const FLUXOS_DATA = [
         "volume": 2263,
         "movimentacoes": 129,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000014073_11669320"
     },
     {
         "origem": "P_7000048172_14340000",
@@ -12841,7 +15015,9 @@ const FLUXOS_DATA = [
         "volume": 4106,
         "movimentacoes": 165,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000048172_14340000"
     },
     {
         "origem": "P_7000003745_05382010",
@@ -12849,7 +15025,9 @@ const FLUXOS_DATA = [
         "volume": 5216,
         "movimentacoes": 148,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000003745_05382010"
     },
     {
         "origem": "P_7000060976_02123050",
@@ -12857,7 +15035,9 @@ const FLUXOS_DATA = [
         "volume": 5,
         "movimentacoes": 5,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000060976_02123050"
     },
     {
         "origem": "P_7000017846_03022000",
@@ -12865,7 +15045,9 @@ const FLUXOS_DATA = [
         "volume": 1048,
         "movimentacoes": 58,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000017846_03022000"
     },
     {
         "origem": "P_7000040109_08790260",
@@ -12873,7 +15055,9 @@ const FLUXOS_DATA = [
         "volume": 2720,
         "movimentacoes": 64,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000040109_08790260"
     },
     {
         "origem": "P_7000019760_02046090",
@@ -12881,7 +15065,9 @@ const FLUXOS_DATA = [
         "volume": 5364,
         "movimentacoes": 20,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000019760_02046090"
     },
     {
         "origem": "P_7000030063_13255425",
@@ -12889,7 +15075,9 @@ const FLUXOS_DATA = [
         "volume": 600,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000030063_13255425"
     },
     {
         "origem": "P_7000015122_08320280",
@@ -12897,7 +15085,9 @@ const FLUXOS_DATA = [
         "volume": 6687,
         "movimentacoes": 2,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000015122_08320280"
     },
     {
         "origem": "P_7000017408_08900000",
@@ -12905,7 +15095,9 @@ const FLUXOS_DATA = [
         "volume": 32,
         "movimentacoes": 10,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000017408_08900000"
     },
     {
         "origem": "P_7000016932_12630000",
@@ -12913,7 +15105,9 @@ const FLUXOS_DATA = [
         "volume": 68,
         "movimentacoes": 4,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000016932_12630000"
     },
     {
         "origem": "P_7000011789_18130130",
@@ -12921,7 +15115,9 @@ const FLUXOS_DATA = [
         "volume": 7,
         "movimentacoes": 3,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000011789_18130130"
     },
     {
         "origem": "P_7000022742_13213080",
@@ -12929,7 +15125,9 @@ const FLUXOS_DATA = [
         "volume": 4,
         "movimentacoes": 2,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000022742_13213080"
     },
     {
         "origem": "P_7000021004_06703570",
@@ -12937,7 +15135,9 @@ const FLUXOS_DATA = [
         "volume": 897,
         "movimentacoes": 3,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000021004_06703570"
     },
     {
         "origem": "P_7000018782_12929899",
@@ -12945,7 +15145,9 @@ const FLUXOS_DATA = [
         "volume": 626,
         "movimentacoes": 98,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000018782_12929899"
     },
     {
         "origem": "P_7000001501_09843400",
@@ -12953,7 +15155,9 @@ const FLUXOS_DATA = [
         "volume": 301,
         "movimentacoes": 17,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000001501_09843400"
     },
     {
         "origem": "P_7000015816_19010030",
@@ -12961,7 +15165,9 @@ const FLUXOS_DATA = [
         "volume": 4,
         "movimentacoes": 4,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000015816_19010030"
     },
     {
         "origem": "P_7000021903_02115000",
@@ -12969,7 +15175,9 @@ const FLUXOS_DATA = [
         "volume": 120,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000021903_02115000"
     },
     {
         "origem": "P_7000014341_08770480",
@@ -12977,7 +15185,9 @@ const FLUXOS_DATA = [
         "volume": 121.106,
         "movimentacoes": 2,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000014341_08770480"
     },
     {
         "origem": "P_7000059132_13490000",
@@ -12985,7 +15195,9 @@ const FLUXOS_DATA = [
         "volume": 1,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000059132_13490000"
     },
     {
         "origem": "P_7000051373_04561004",
@@ -12993,7 +15205,9 @@ const FLUXOS_DATA = [
         "volume": 47,
         "movimentacoes": 9,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000051373_04561004"
     },
     {
         "origem": "P_7000057031_07790890",
@@ -13001,7 +15215,9 @@ const FLUXOS_DATA = [
         "volume": 1211,
         "movimentacoes": 10,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000057031_07790890"
     },
     {
         "origem": "P_7000018429_13213105",
@@ -13009,7 +15225,9 @@ const FLUXOS_DATA = [
         "volume": 8,
         "movimentacoes": 2,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000018429_13213105"
     },
     {
         "origem": "P_7000029973_03109000",
@@ -13017,7 +15235,9 @@ const FLUXOS_DATA = [
         "volume": 6696,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000029973_03109000"
     },
     {
         "origem": "P_7000007457_06843195",
@@ -13025,7 +15245,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000007457_06843195"
     },
     {
         "origem": "P_7000004993_06807461",
@@ -13033,7 +15255,9 @@ const FLUXOS_DATA = [
         "volume": 235,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000004993_06807461"
     },
     {
         "origem": "P_7000010203_09530260",
@@ -13041,7 +15265,9 @@ const FLUXOS_DATA = [
         "volume": 30,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000010203_09530260"
     },
     {
         "origem": "P_7000009139_09182470",
@@ -13049,7 +15275,9 @@ const FLUXOS_DATA = [
         "volume": 45,
         "movimentacoes": 5,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000009139_09182470"
     },
     {
         "origem": "P_7000015013_11380380",
@@ -13057,7 +15285,9 @@ const FLUXOS_DATA = [
         "volume": 20,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000015013_11380380"
     },
     {
         "origem": "P_7000006522_04764001",
@@ -13065,7 +15295,9 @@ const FLUXOS_DATA = [
         "volume": 6,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000006522_04764001"
     },
     {
         "origem": "P_3000000032_04516000",
@@ -13073,7 +15305,9 @@ const FLUXOS_DATA = [
         "volume": 1620,
         "movimentacoes": 3,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_3000000032_04516000"
     },
     {
         "origem": "P_7000016590_08412070",
@@ -13081,7 +15315,9 @@ const FLUXOS_DATA = [
         "volume": 115079,
         "movimentacoes": 37,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000016590_08412070"
     },
     {
         "origem": "P_7000051739_13478540",
@@ -13089,7 +15325,9 @@ const FLUXOS_DATA = [
         "volume": 27000,
         "movimentacoes": 4,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000051739_13478540"
     },
     {
         "origem": "P_7000077946_06835701",
@@ -13097,7 +15335,9 @@ const FLUXOS_DATA = [
         "volume": 230,
         "movimentacoes": 30,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000077946_06835701"
     },
     {
         "origem": "P_7000052709_61888090",
@@ -13105,7 +15345,9 @@ const FLUXOS_DATA = [
         "volume": 24200,
         "movimentacoes": 8,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000052709_61888090"
     },
     {
         "origem": "P_7000014279_08673010",
@@ -13113,7 +15355,9 @@ const FLUXOS_DATA = [
         "volume": 25000,
         "movimentacoes": 6,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000014279_08673010"
     },
     {
         "origem": "P_7000051961_09890001",
@@ -13121,7 +15365,9 @@ const FLUXOS_DATA = [
         "volume": 1000,
         "movimentacoes": 1,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000051961_09890001"
     },
     {
         "origem": "P_7000009110_61890000",
@@ -13129,7 +15375,9 @@ const FLUXOS_DATA = [
         "volume": 6400,
         "movimentacoes": 2,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000009110_61890000"
     },
     {
         "origem": "P_7000008353_09890001",
@@ -13137,7 +15385,9 @@ const FLUXOS_DATA = [
         "volume": 6000,
         "movimentacoes": 2,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000008353_09890001"
     },
     {
         "origem": "P_7000005716_06278010",
@@ -13145,7 +15395,9 @@ const FLUXOS_DATA = [
         "volume": 6000,
         "movimentacoes": 1,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000005716_06278010"
     },
     {
         "origem": "P_7000018634_06835701",
@@ -13153,7 +15405,9 @@ const FLUXOS_DATA = [
         "volume": 15,
         "movimentacoes": 1,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000018634_06835701"
     },
     {
         "origem": "P_7000014674_13250250",
@@ -13161,7 +15415,9 @@ const FLUXOS_DATA = [
         "volume": 32,
         "movimentacoes": 4,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000014674_13250250"
     },
     {
         "origem": "P_3000000321_05711001",
@@ -13169,7 +15425,9 @@ const FLUXOS_DATA = [
         "volume": 494,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_3000000321_05711001"
     },
     {
         "origem": "P_3000000343_06856000",
@@ -13177,7 +15435,9 @@ const FLUXOS_DATA = [
         "volume": 3,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_3000000343_06856000"
     },
     {
         "origem": "P_4_05429900",
@@ -13185,7 +15445,9 @@ const FLUXOS_DATA = [
         "volume": 4,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_4_05429900"
     },
     {
         "origem": "P_7000017217_04311000",
@@ -13193,7 +15455,9 @@ const FLUXOS_DATA = [
         "volume": 286,
         "movimentacoes": 20,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000017217_04311000"
     },
     {
         "origem": "P_7000018986_07776235",
@@ -13201,7 +15465,9 @@ const FLUXOS_DATA = [
         "volume": 533,
         "movimentacoes": 52,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000018986_07776235"
     },
     {
         "origem": "P_7000019920_08320280",
@@ -13209,7 +15475,9 @@ const FLUXOS_DATA = [
         "volume": 39425,
         "movimentacoes": 11,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000019920_08320280"
     },
     {
         "origem": "P_7000016835_30441055",
@@ -13217,7 +15485,9 @@ const FLUXOS_DATA = [
         "volume": 248,
         "movimentacoes": 28,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000016835_30441055"
     },
     {
         "origem": "P_7000016007_11015015",
@@ -13225,7 +15495,9 @@ const FLUXOS_DATA = [
         "volume": 35,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000016007_11015015"
     },
     {
         "origem": "P_7000071015_17740000",
@@ -13233,7 +15505,9 @@ const FLUXOS_DATA = [
         "volume": 11667,
         "movimentacoes": 166,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000071015_17740000"
     },
     {
         "origem": "P_7000016882_20031902",
@@ -13241,7 +15515,9 @@ const FLUXOS_DATA = [
         "volume": 34849,
         "movimentacoes": 26,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000016882_20031902"
     },
     {
         "origem": "P_7000019797_13710000",
@@ -13249,7 +15525,9 @@ const FLUXOS_DATA = [
         "volume": 11237,
         "movimentacoes": 19,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000019797_13710000"
     },
     {
         "origem": "P_7000020425_06422122",
@@ -13257,7 +15535,9 @@ const FLUXOS_DATA = [
         "volume": 7065,
         "movimentacoes": 15,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000020425_06422122"
     },
     {
         "origem": "P_7000016598_18440000",
@@ -13265,7 +15545,9 @@ const FLUXOS_DATA = [
         "volume": 33195,
         "movimentacoes": 13,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000016598_18440000"
     },
     {
         "origem": "P_7000020635_06790160",
@@ -13273,7 +15555,9 @@ const FLUXOS_DATA = [
         "volume": 13064,
         "movimentacoes": 21,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000020635_06790160"
     },
     {
         "origem": "P_7000008031_15350350",
@@ -13281,7 +15565,9 @@ const FLUXOS_DATA = [
         "volume": 88,
         "movimentacoes": 32,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000008031_15350350"
     },
     {
         "origem": "P_7000038540_28470000",
@@ -13289,7 +15575,9 @@ const FLUXOS_DATA = [
         "volume": 4140,
         "movimentacoes": 90,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000038540_28470000"
     },
     {
         "origem": "P_7000019502_35547000",
@@ -13297,7 +15585,9 @@ const FLUXOS_DATA = [
         "volume": 5031,
         "movimentacoes": 24,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000019502_35547000"
     },
     {
         "origem": "P_7000032351_02143060",
@@ -13305,7 +15595,9 @@ const FLUXOS_DATA = [
         "volume": 335,
         "movimentacoes": 4,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000032351_02143060"
     },
     {
         "origem": "P_7000019400_18087156",
@@ -13313,7 +15605,9 @@ const FLUXOS_DATA = [
         "volume": 627,
         "movimentacoes": 64,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000019400_18087156"
     },
     {
         "origem": "P_7000035977_29124076",
@@ -13321,7 +15615,9 @@ const FLUXOS_DATA = [
         "volume": 206,
         "movimentacoes": 13,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000035977_29124076"
     },
     {
         "origem": "P_7000015122_08320280",
@@ -13329,7 +15625,9 @@ const FLUXOS_DATA = [
         "volume": 5300,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000015122_08320280"
     },
     {
         "origem": "P_7000006413_05656020",
@@ -13337,7 +15635,9 @@ const FLUXOS_DATA = [
         "volume": 4,
         "movimentacoes": 3,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000006413_05656020"
     },
     {
         "origem": "P_7000002834_09380170",
@@ -13345,7 +15645,9 @@ const FLUXOS_DATA = [
         "volume": 94,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000002834_09380170"
     },
     {
         "origem": "P_7000005995_02143060",
@@ -13353,7 +15655,9 @@ const FLUXOS_DATA = [
         "volume": 54,
         "movimentacoes": 4,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000005995_02143060"
     },
     {
         "origem": "P_7000001662_29124124",
@@ -13361,7 +15665,9 @@ const FLUXOS_DATA = [
         "volume": 47,
         "movimentacoes": 8,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000001662_29124124"
     },
     {
         "origem": "P_7000002368_07776235",
@@ -13369,7 +15675,9 @@ const FLUXOS_DATA = [
         "volume": 37,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000002368_07776235"
     },
     {
         "origem": "P_7000070971_61900360",
@@ -13377,7 +15685,9 @@ const FLUXOS_DATA = [
         "volume": 15334,
         "movimentacoes": 78,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000070971_61900360"
     },
     {
         "origem": "P_7000008209_05426100",
@@ -13385,7 +15695,9 @@ const FLUXOS_DATA = [
         "volume": 205,
         "movimentacoes": 23,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000008209_05426100"
     },
     {
         "origem": "P_7000047986_13477250",
@@ -13393,7 +15705,9 @@ const FLUXOS_DATA = [
         "volume": 481,
         "movimentacoes": 20,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000047986_13477250"
     },
     {
         "origem": "P_7000017408_08900000",
@@ -13401,7 +15715,9 @@ const FLUXOS_DATA = [
         "volume": 11238,
         "movimentacoes": 36,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000017408_08900000"
     },
     {
         "origem": "P_7000005483_09260760",
@@ -13409,7 +15725,9 @@ const FLUXOS_DATA = [
         "volume": 11921,
         "movimentacoes": 6,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000005483_09260760"
     },
     {
         "origem": "P_7000012058_17495288",
@@ -13417,7 +15735,9 @@ const FLUXOS_DATA = [
         "volume": 642,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000012058_17495288"
     },
     {
         "origem": "P_7000010658_02124001",
@@ -13425,7 +15745,9 @@ const FLUXOS_DATA = [
         "volume": 32,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000010658_02124001"
     },
     {
         "origem": "P_7000021663_02552020",
@@ -13433,7 +15755,9 @@ const FLUXOS_DATA = [
         "volume": 30,
         "movimentacoes": 8,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000021663_02552020"
     },
     {
         "origem": "P_7000037848_09380170",
@@ -13441,7 +15765,9 @@ const FLUXOS_DATA = [
         "volume": 3342,
         "movimentacoes": 9,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000037848_09380170"
     },
     {
         "origem": "P_7000002905_18087087",
@@ -13449,7 +15775,9 @@ const FLUXOS_DATA = [
         "volume": 38,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000002905_18087087"
     },
     {
         "origem": "P_7000020944_24465270",
@@ -13457,7 +15785,9 @@ const FLUXOS_DATA = [
         "volume": 400,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000020944_24465270"
     },
     {
         "origem": "P_7000001317_04763280",
@@ -13465,7 +15795,9 @@ const FLUXOS_DATA = [
         "volume": 1,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000001317_04763280"
     },
     {
         "origem": "P_7000018986_07776235",
@@ -13473,7 +15805,9 @@ const FLUXOS_DATA = [
         "volume": 14820,
         "movimentacoes": 78,
         "material": "Tubos flexíveis",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000018986_07776235"
     },
     {
         "origem": "P_7000016598_18440000",
@@ -13481,7 +15815,9 @@ const FLUXOS_DATA = [
         "volume": 9786,
         "movimentacoes": 31,
         "material": "Tubos flexíveis",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000016598_18440000"
     },
     {
         "origem": "P_7000030242_13505600",
@@ -13489,7 +15825,9 @@ const FLUXOS_DATA = [
         "volume": 447672,
         "movimentacoes": 298,
         "material": "Tubos flexíveis",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000030242_13505600"
     },
     {
         "origem": "P_7000047953_13318000",
@@ -13497,7 +15835,9 @@ const FLUXOS_DATA = [
         "volume": 164968,
         "movimentacoes": 31,
         "material": "Tubos flexíveis",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000047953_13318000"
     },
     {
         "origem": "P_7000002368_07776235",
@@ -13505,7 +15845,9 @@ const FLUXOS_DATA = [
         "volume": 4644,
         "movimentacoes": 16,
         "material": "Tubos flexíveis",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000002368_07776235"
     },
     {
         "origem": "P_7000007747_13505505",
@@ -13513,7 +15855,9 @@ const FLUXOS_DATA = [
         "volume": 34554,
         "movimentacoes": 25,
         "material": "Tubos flexíveis",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000007747_13505505"
     },
     {
         "origem": "P_7000016598_18440000",
@@ -13521,7 +15865,9 @@ const FLUXOS_DATA = [
         "volume": 179222,
         "movimentacoes": 143,
         "material": "Tubos rígidos",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000016598_18440000"
     },
     {
         "origem": "P_7000030242_13505600",
@@ -13529,7 +15875,9 @@ const FLUXOS_DATA = [
         "volume": 11376,
         "movimentacoes": 43,
         "material": "Tubos rígidos",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000030242_13505600"
     },
     {
         "origem": "P_7000007747_13505505",
@@ -13537,7 +15885,9 @@ const FLUXOS_DATA = [
         "volume": 3336,
         "movimentacoes": 20,
         "material": "Tubos rígidos",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D024",
+        "parceiro": "P_7000007747_13505505"
     },
     {
         "origem": "P_3000000310_30140140",
@@ -13545,7 +15895,9 @@ const FLUXOS_DATA = [
         "volume": 3000,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_3000000310_30140140"
     },
     {
         "origem": "P_7000016468_14401426",
@@ -13553,7 +15905,9 @@ const FLUXOS_DATA = [
         "volume": 53458,
         "movimentacoes": 7,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000016468_14401426"
     },
     {
         "origem": "P_7000014785_11660660",
@@ -13561,7 +15915,9 @@ const FLUXOS_DATA = [
         "volume": 404400,
         "movimentacoes": 17,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000014785_11660660"
     },
     {
         "origem": "P_7000018322_89219550",
@@ -13569,7 +15925,9 @@ const FLUXOS_DATA = [
         "volume": 7375,
         "movimentacoes": 21,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000018322_89219550"
     },
     {
         "origem": "P_7000019920_08320280",
@@ -13577,7 +15935,9 @@ const FLUXOS_DATA = [
         "volume": 2020,
         "movimentacoes": 9,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000019920_08320280"
     },
     {
         "origem": "P_7000013011_09450000",
@@ -13585,7 +15945,9 @@ const FLUXOS_DATA = [
         "volume": 14000,
         "movimentacoes": 4,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000013011_09450000"
     },
     {
         "origem": "P_7000016882_20031902",
@@ -13593,7 +15955,9 @@ const FLUXOS_DATA = [
         "volume": 1588,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000016882_20031902"
     },
     {
         "origem": "P_7000020402_06727195",
@@ -13601,7 +15965,9 @@ const FLUXOS_DATA = [
         "volume": 160,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000020402_06727195"
     },
     {
         "origem": "P_7000028135_08536440",
@@ -13609,7 +15975,9 @@ const FLUXOS_DATA = [
         "volume": 625,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000028135_08536440"
     },
     {
         "origem": "P_7000009927_07224210",
@@ -13617,7 +15985,9 @@ const FLUXOS_DATA = [
         "volume": 69000,
         "movimentacoes": 3,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000009927_07224210"
     },
     {
         "origem": "P_7000005544_04164180",
@@ -13625,7 +15995,9 @@ const FLUXOS_DATA = [
         "volume": 19032,
         "movimentacoes": 2,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000005544_04164180"
     },
     {
         "origem": "P_7000010858_04222902",
@@ -13633,7 +16005,9 @@ const FLUXOS_DATA = [
         "volume": 2674,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000010858_04222902"
     },
     {
         "origem": "P_7000018540_39404166",
@@ -13641,7 +16015,9 @@ const FLUXOS_DATA = [
         "volume": 10,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000018540_39404166"
     },
     {
         "origem": "P_7000015863_05001000",
@@ -13649,7 +16025,9 @@ const FLUXOS_DATA = [
         "volume": 200,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000015863_05001000"
     },
     {
         "origem": "P_7000015418_05113020",
@@ -13657,7 +16035,9 @@ const FLUXOS_DATA = [
         "volume": 4000,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000015418_05113020"
     },
     {
         "origem": "P_3000000332_05525080",
@@ -13665,7 +16045,9 @@ const FLUXOS_DATA = [
         "volume": 16,
         "movimentacoes": 2,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_3000000332_05525080"
     },
     {
         "origem": "P_7000019088_93180000",
@@ -13673,7 +16055,9 @@ const FLUXOS_DATA = [
         "volume": 967,
         "movimentacoes": 88,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000019088_93180000"
     },
     {
         "origem": "P_7000033719_12072250",
@@ -13681,7 +16065,9 @@ const FLUXOS_DATA = [
         "volume": 4854349.825,
         "movimentacoes": 310,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000033719_12072250"
     },
     {
         "origem": "P_7000009012_03502020",
@@ -13689,7 +16075,9 @@ const FLUXOS_DATA = [
         "volume": 1193200,
         "movimentacoes": 56,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000009012_03502020"
     },
     {
         "origem": "P_7000067890_08290220",
@@ -13697,7 +16085,9 @@ const FLUXOS_DATA = [
         "volume": 6200,
         "movimentacoes": 4,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000067890_08290220"
     },
     {
         "origem": "P_7000019920_08320280",
@@ -13705,7 +16095,9 @@ const FLUXOS_DATA = [
         "volume": 29975,
         "movimentacoes": 15,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000019920_08320280"
     },
     {
         "origem": "P_7000014073_11669320",
@@ -13713,7 +16105,9 @@ const FLUXOS_DATA = [
         "volume": 49,
         "movimentacoes": 9,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000014073_11669320"
     },
     {
         "origem": "P_7000048172_14340000",
@@ -13721,7 +16115,9 @@ const FLUXOS_DATA = [
         "volume": 252,
         "movimentacoes": 14,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000048172_14340000"
     },
     {
         "origem": "P_7000016882_20031902",
@@ -13729,7 +16125,9 @@ const FLUXOS_DATA = [
         "volume": 8950,
         "movimentacoes": 3,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000016882_20031902"
     },
     {
         "origem": "P_7000003745_05382010",
@@ -13737,7 +16135,9 @@ const FLUXOS_DATA = [
         "volume": 60,
         "movimentacoes": 4,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000003745_05382010"
     },
     {
         "origem": "P_7000060976_02123050",
@@ -13745,7 +16145,9 @@ const FLUXOS_DATA = [
         "volume": 1,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000060976_02123050"
     },
     {
         "origem": "P_7000030063_13255425",
@@ -13753,7 +16155,9 @@ const FLUXOS_DATA = [
         "volume": 1000,
         "movimentacoes": 2,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000030063_13255425"
     },
     {
         "origem": "P_7000015122_08320280",
@@ -13761,7 +16165,9 @@ const FLUXOS_DATA = [
         "volume": 33198,
         "movimentacoes": 8,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000015122_08320280"
     },
     {
         "origem": "P_7000014034_02552020",
@@ -13769,7 +16175,9 @@ const FLUXOS_DATA = [
         "volume": 5,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000014034_02552020"
     },
     {
         "origem": "P_7000017408_08900000",
@@ -13777,7 +16185,9 @@ const FLUXOS_DATA = [
         "volume": 195,
         "movimentacoes": 28,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000017408_08900000"
     },
     {
         "origem": "P_7000016932_12630000",
@@ -13785,7 +16195,9 @@ const FLUXOS_DATA = [
         "volume": 61,
         "movimentacoes": 5,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000016932_12630000"
     },
     {
         "origem": "P_7000011789_18130130",
@@ -13793,7 +16205,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000011789_18130130"
     },
     {
         "origem": "P_7000022742_13213080",
@@ -13801,7 +16215,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 2,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000022742_13213080"
     },
     {
         "origem": "P_7000021663_02552020",
@@ -13809,7 +16225,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 2,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000021663_02552020"
     },
     {
         "origem": "P_7000001501_09843400",
@@ -13817,7 +16235,9 @@ const FLUXOS_DATA = [
         "volume": 78,
         "movimentacoes": 10,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000001501_09843400"
     },
     {
         "origem": "P_7000017691_04559003",
@@ -13825,7 +16245,9 @@ const FLUXOS_DATA = [
         "volume": 682,
         "movimentacoes": 55,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000017691_04559003"
     },
     {
         "origem": "P_7000016393_13971045",
@@ -13833,7 +16255,9 @@ const FLUXOS_DATA = [
         "volume": 4,
         "movimentacoes": 4,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000016393_13971045"
     },
     {
         "origem": "P_7000059132_13490000",
@@ -13841,7 +16265,9 @@ const FLUXOS_DATA = [
         "volume": 1,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000059132_13490000"
     },
     {
         "origem": "P_3000000310_30140140",
@@ -13849,7 +16275,9 @@ const FLUXOS_DATA = [
         "volume": 2000,
         "movimentacoes": 1,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_3000000310_30140140"
     },
     {
         "origem": "P_7000016590_08412070",
@@ -13857,7 +16285,9 @@ const FLUXOS_DATA = [
         "volume": 165265,
         "movimentacoes": 34,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000016590_08412070"
     },
     {
         "origem": "P_7000051739_13478540",
@@ -13865,7 +16295,9 @@ const FLUXOS_DATA = [
         "volume": 15000,
         "movimentacoes": 4,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000051739_13478540"
     },
     {
         "origem": "P_7000077946_06835701",
@@ -13873,7 +16305,9 @@ const FLUXOS_DATA = [
         "volume": 68,
         "movimentacoes": 11,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000077946_06835701"
     },
     {
         "origem": "P_7000052709_61888090",
@@ -13881,7 +16315,9 @@ const FLUXOS_DATA = [
         "volume": 18200,
         "movimentacoes": 7,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000052709_61888090"
     },
     {
         "origem": "P_7000014279_08673010",
@@ -13889,7 +16325,9 @@ const FLUXOS_DATA = [
         "volume": 34500,
         "movimentacoes": 7,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000014279_08673010"
     },
     {
         "origem": "P_7000051961_09890001",
@@ -13897,7 +16335,9 @@ const FLUXOS_DATA = [
         "volume": 1000,
         "movimentacoes": 1,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000051961_09890001"
     },
     {
         "origem": "P_7000009110_61890000",
@@ -13905,7 +16345,9 @@ const FLUXOS_DATA = [
         "volume": 19200,
         "movimentacoes": 6,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000009110_61890000"
     },
     {
         "origem": "P_7000008353_09890001",
@@ -13913,7 +16355,9 @@ const FLUXOS_DATA = [
         "volume": 5998,
         "movimentacoes": 6,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000008353_09890001"
     },
     {
         "origem": "P_7000005716_06278010",
@@ -13921,7 +16365,9 @@ const FLUXOS_DATA = [
         "volume": 6000,
         "movimentacoes": 1,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000005716_06278010"
     },
     {
         "origem": "P_7000018634_06835701",
@@ -13929,7 +16375,9 @@ const FLUXOS_DATA = [
         "volume": 15,
         "movimentacoes": 1,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000018634_06835701"
     },
     {
         "origem": "P_7000014674_13250250",
@@ -13937,7 +16385,9 @@ const FLUXOS_DATA = [
         "volume": 3593,
         "movimentacoes": 5,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000014674_13250250"
     },
     {
         "origem": "P_7000015083_04571936",
@@ -13945,7 +16395,9 @@ const FLUXOS_DATA = [
         "volume": 3,
         "movimentacoes": 1,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000015083_04571936"
     },
     {
         "origem": "P_3000000332_05525080",
@@ -13953,7 +16405,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_3000000332_05525080"
     },
     {
         "origem": "P_7000017217_04311000",
@@ -13961,7 +16415,9 @@ const FLUXOS_DATA = [
         "volume": 1257,
         "movimentacoes": 37,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000017217_04311000"
     },
     {
         "origem": "P_7000018986_07776235",
@@ -13969,7 +16425,9 @@ const FLUXOS_DATA = [
         "volume": 20714,
         "movimentacoes": 88,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000018986_07776235"
     },
     {
         "origem": "P_7000019920_08320280",
@@ -13977,7 +16435,9 @@ const FLUXOS_DATA = [
         "volume": 4058,
         "movimentacoes": 6,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000019920_08320280"
     },
     {
         "origem": "P_7000016835_30441055",
@@ -13985,7 +16445,9 @@ const FLUXOS_DATA = [
         "volume": 81,
         "movimentacoes": 9,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000016835_30441055"
     },
     {
         "origem": "P_7000016007_11015015",
@@ -13993,7 +16455,9 @@ const FLUXOS_DATA = [
         "volume": 182,
         "movimentacoes": 3,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000016007_11015015"
     },
     {
         "origem": "P_7000071015_17740000",
@@ -14001,7 +16465,9 @@ const FLUXOS_DATA = [
         "volume": 88138,
         "movimentacoes": 187,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000071015_17740000"
     },
     {
         "origem": "P_7000016882_20031902",
@@ -14009,7 +16475,9 @@ const FLUXOS_DATA = [
         "volume": 16126,
         "movimentacoes": 27,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000016882_20031902"
     },
     {
         "origem": "P_7000019797_13710000",
@@ -14017,7 +16485,9 @@ const FLUXOS_DATA = [
         "volume": 14649,
         "movimentacoes": 18,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000019797_13710000"
     },
     {
         "origem": "P_7000020425_06422122",
@@ -14025,7 +16495,9 @@ const FLUXOS_DATA = [
         "volume": 1817,
         "movimentacoes": 10,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000020425_06422122"
     },
     {
         "origem": "P_7000016598_18440000",
@@ -14033,7 +16505,9 @@ const FLUXOS_DATA = [
         "volume": 7358,
         "movimentacoes": 16,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000016598_18440000"
     },
     {
         "origem": "P_7000020635_06790160",
@@ -14041,7 +16515,9 @@ const FLUXOS_DATA = [
         "volume": 5084,
         "movimentacoes": 16,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000020635_06790160"
     },
     {
         "origem": "P_7000008031_15350350",
@@ -14049,7 +16525,9 @@ const FLUXOS_DATA = [
         "volume": 481,
         "movimentacoes": 96,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000008031_15350350"
     },
     {
         "origem": "P_7000059039_06680056",
@@ -14057,7 +16535,9 @@ const FLUXOS_DATA = [
         "volume": 935,
         "movimentacoes": 3,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000059039_06680056"
     },
     {
         "origem": "P_7000038540_28470000",
@@ -14065,7 +16545,9 @@ const FLUXOS_DATA = [
         "volume": 849,
         "movimentacoes": 25,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000038540_28470000"
     },
     {
         "origem": "P_7000019502_35547000",
@@ -14073,7 +16555,9 @@ const FLUXOS_DATA = [
         "volume": 7657,
         "movimentacoes": 32,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000019502_35547000"
     },
     {
         "origem": "P_7000032351_02143060",
@@ -14081,7 +16565,9 @@ const FLUXOS_DATA = [
         "volume": 1159,
         "movimentacoes": 14,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000032351_02143060"
     },
     {
         "origem": "P_7000019400_18087156",
@@ -14089,7 +16575,9 @@ const FLUXOS_DATA = [
         "volume": 750,
         "movimentacoes": 51,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000019400_18087156"
     },
     {
         "origem": "P_7000035977_29124076",
@@ -14097,7 +16585,9 @@ const FLUXOS_DATA = [
         "volume": 10,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000035977_29124076"
     },
     {
         "origem": "P_7000015122_08320280",
@@ -14105,7 +16595,9 @@ const FLUXOS_DATA = [
         "volume": 4610,
         "movimentacoes": 4,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000015122_08320280"
     },
     {
         "origem": "P_7000006816_02143060",
@@ -14113,7 +16605,9 @@ const FLUXOS_DATA = [
         "volume": 34,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000006816_02143060"
     },
     {
         "origem": "P_7000005995_02143060",
@@ -14121,7 +16615,9 @@ const FLUXOS_DATA = [
         "volume": 270,
         "movimentacoes": 8,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000005995_02143060"
     },
     {
         "origem": "P_7000001662_29124124",
@@ -14129,7 +16625,9 @@ const FLUXOS_DATA = [
         "volume": 34,
         "movimentacoes": 8,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000001662_29124124"
     },
     {
         "origem": "P_7000002368_07776235",
@@ -14137,7 +16635,9 @@ const FLUXOS_DATA = [
         "volume": 60,
         "movimentacoes": 4,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000002368_07776235"
     },
     {
         "origem": "P_7000070971_61900360",
@@ -14145,7 +16645,9 @@ const FLUXOS_DATA = [
         "volume": 3395,
         "movimentacoes": 33,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000070971_61900360"
     },
     {
         "origem": "P_7000008209_05426100",
@@ -14153,7 +16655,9 @@ const FLUXOS_DATA = [
         "volume": 912,
         "movimentacoes": 25,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000008209_05426100"
     },
     {
         "origem": "P_7000047986_13477250",
@@ -14161,7 +16665,9 @@ const FLUXOS_DATA = [
         "volume": 357,
         "movimentacoes": 39,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000047986_13477250"
     },
     {
         "origem": "P_7000017408_08900000",
@@ -14169,7 +16675,9 @@ const FLUXOS_DATA = [
         "volume": 3528,
         "movimentacoes": 28,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000017408_08900000"
     },
     {
         "origem": "P_7000041943_09521320",
@@ -14177,7 +16685,9 @@ const FLUXOS_DATA = [
         "volume": 3855,
         "movimentacoes": 19,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000041943_09521320"
     },
     {
         "origem": "P_7000005483_09260760",
@@ -14185,7 +16695,9 @@ const FLUXOS_DATA = [
         "volume": 825,
         "movimentacoes": 6,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000005483_09260760"
     },
     {
         "origem": "P_7000012058_17495288",
@@ -14193,7 +16705,9 @@ const FLUXOS_DATA = [
         "volume": 1619,
         "movimentacoes": 6,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000012058_17495288"
     },
     {
         "origem": "P_7000010658_02124001",
@@ -14201,7 +16715,9 @@ const FLUXOS_DATA = [
         "volume": 10,
         "movimentacoes": 3,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000010658_02124001"
     },
     {
         "origem": "P_7000021663_02552020",
@@ -14209,7 +16725,9 @@ const FLUXOS_DATA = [
         "volume": 6,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000021663_02552020"
     },
     {
         "origem": "P_7000007747_13505505",
@@ -14217,7 +16735,9 @@ const FLUXOS_DATA = [
         "volume": 100,
         "movimentacoes": 6,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000007747_13505505"
     },
     {
         "origem": "P_7000015682_06790160",
@@ -14225,7 +16745,9 @@ const FLUXOS_DATA = [
         "volume": 672,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000015682_06790160"
     },
     {
         "origem": "P_7000029703_12960000",
@@ -14233,7 +16755,9 @@ const FLUXOS_DATA = [
         "volume": 115,
         "movimentacoes": 5,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000029703_12960000"
     },
     {
         "origem": "P_7000015957_03808120",
@@ -14241,7 +16765,9 @@ const FLUXOS_DATA = [
         "volume": 10,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000015957_03808120"
     },
     {
         "origem": "P_7000018986_07776235",
@@ -14249,7 +16775,9 @@ const FLUXOS_DATA = [
         "volume": 12546,
         "movimentacoes": 69,
         "material": "Tubos flexíveis",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000018986_07776235"
     },
     {
         "origem": "P_7000016598_18440000",
@@ -14257,7 +16785,9 @@ const FLUXOS_DATA = [
         "volume": 2040,
         "movimentacoes": 13,
         "material": "Tubos flexíveis",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000016598_18440000"
     },
     {
         "origem": "P_7000030242_13505600",
@@ -14265,7 +16795,9 @@ const FLUXOS_DATA = [
         "volume": 274780,
         "movimentacoes": 167,
         "material": "Tubos flexíveis",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000030242_13505600"
     },
     {
         "origem": "P_7000047953_13318000",
@@ -14273,7 +16805,9 @@ const FLUXOS_DATA = [
         "volume": 35000,
         "movimentacoes": 3,
         "material": "Tubos flexíveis",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000047953_13318000"
     },
     {
         "origem": "P_7000002368_07776235",
@@ -14281,7 +16815,9 @@ const FLUXOS_DATA = [
         "volume": 31560,
         "movimentacoes": 172,
         "material": "Tubos flexíveis",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000002368_07776235"
     },
     {
         "origem": "P_7000007747_13505505",
@@ -14289,7 +16825,9 @@ const FLUXOS_DATA = [
         "volume": 439972,
         "movimentacoes": 92,
         "material": "Tubos flexíveis",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000007747_13505505"
     },
     {
         "origem": "P_7000014235_88030902",
@@ -14297,7 +16835,9 @@ const FLUXOS_DATA = [
         "volume": 400,
         "movimentacoes": 1,
         "material": "Tubos flexíveis",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000014235_88030902"
     },
     {
         "origem": "P_7000016598_18440000",
@@ -14305,7 +16845,9 @@ const FLUXOS_DATA = [
         "volume": 143598,
         "movimentacoes": 77,
         "material": "Tubos rígidos",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000016598_18440000"
     },
     {
         "origem": "P_7000030242_13505600",
@@ -14313,7 +16855,9 @@ const FLUXOS_DATA = [
         "volume": 16158,
         "movimentacoes": 96,
         "material": "Tubos rígidos",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000030242_13505600"
     },
     {
         "origem": "P_7000007747_13505505",
@@ -14321,7 +16865,9 @@ const FLUXOS_DATA = [
         "volume": 3024,
         "movimentacoes": 18,
         "material": "Tubos rígidos",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D094",
+        "parceiro": "P_7000007747_13505505"
     },
     {
         "origem": "P_7000016468_14401426",
@@ -14329,7 +16875,9 @@ const FLUXOS_DATA = [
         "volume": 31906,
         "movimentacoes": 8,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000016468_14401426"
     },
     {
         "origem": "P_7000014785_11660660",
@@ -14337,7 +16885,9 @@ const FLUXOS_DATA = [
         "volume": 618417,
         "movimentacoes": 20,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000014785_11660660"
     },
     {
         "origem": "P_7000018322_89219550",
@@ -14345,7 +16895,9 @@ const FLUXOS_DATA = [
         "volume": 5364,
         "movimentacoes": 6,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000018322_89219550"
     },
     {
         "origem": "P_7000019920_08320280",
@@ -14353,7 +16905,9 @@ const FLUXOS_DATA = [
         "volume": 2030,
         "movimentacoes": 5,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000019920_08320280"
     },
     {
         "origem": "P_7000013011_09450000",
@@ -14361,7 +16915,9 @@ const FLUXOS_DATA = [
         "volume": 24500,
         "movimentacoes": 3,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000013011_09450000"
     },
     {
         "origem": "P_7000016882_20031902",
@@ -14369,7 +16925,9 @@ const FLUXOS_DATA = [
         "volume": 34817,
         "movimentacoes": 10,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000016882_20031902"
     },
     {
         "origem": "P_7000020402_06727195",
@@ -14377,7 +16935,9 @@ const FLUXOS_DATA = [
         "volume": 3333,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000020402_06727195"
     },
     {
         "origem": "P_7000028135_08536440",
@@ -14385,7 +16945,9 @@ const FLUXOS_DATA = [
         "volume": 438,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000028135_08536440"
     },
     {
         "origem": "P_7000009927_07224210",
@@ -14393,7 +16955,9 @@ const FLUXOS_DATA = [
         "volume": 73000,
         "movimentacoes": 3,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000009927_07224210"
     },
     {
         "origem": "P_7000005544_04164180",
@@ -14401,7 +16965,9 @@ const FLUXOS_DATA = [
         "volume": 9478,
         "movimentacoes": 2,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000005544_04164180"
     },
     {
         "origem": "P_7000010858_04222902",
@@ -14409,7 +16975,9 @@ const FLUXOS_DATA = [
         "volume": 4418,
         "movimentacoes": 2,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000010858_04222902"
     },
     {
         "origem": "P_3000001937_01227200",
@@ -14417,7 +16985,9 @@ const FLUXOS_DATA = [
         "volume": 10,
         "movimentacoes": 4,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_3000001937_01227200"
     },
     {
         "origem": "P_7000016468_14401426",
@@ -14425,7 +16995,9 @@ const FLUXOS_DATA = [
         "volume": 2789,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000016468_14401426"
     },
     {
         "origem": "P_7000019088_93180000",
@@ -14433,7 +17005,9 @@ const FLUXOS_DATA = [
         "volume": 6108,
         "movimentacoes": 307,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000019088_93180000"
     },
     {
         "origem": "P_7000033719_12072250",
@@ -14441,7 +17015,9 @@ const FLUXOS_DATA = [
         "volume": 2998750,
         "movimentacoes": 229,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000033719_12072250"
     },
     {
         "origem": "P_7000009012_03502020",
@@ -14449,7 +17025,9 @@ const FLUXOS_DATA = [
         "volume": 159575,
         "movimentacoes": 13,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000009012_03502020"
     },
     {
         "origem": "P_7000067890_08290220",
@@ -14457,7 +17035,9 @@ const FLUXOS_DATA = [
         "volume": 16684,
         "movimentacoes": 6,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000067890_08290220"
     },
     {
         "origem": "P_7000019920_08320280",
@@ -14465,7 +17045,9 @@ const FLUXOS_DATA = [
         "volume": 21776,
         "movimentacoes": 17,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000019920_08320280"
     },
     {
         "origem": "P_7000014073_11669320",
@@ -14473,7 +17055,9 @@ const FLUXOS_DATA = [
         "volume": 1884,
         "movimentacoes": 83,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000014073_11669320"
     },
     {
         "origem": "P_7000048172_14340000",
@@ -14481,7 +17065,9 @@ const FLUXOS_DATA = [
         "volume": 1780,
         "movimentacoes": 120,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000048172_14340000"
     },
     {
         "origem": "P_7000016882_20031902",
@@ -14489,7 +17075,9 @@ const FLUXOS_DATA = [
         "volume": 2500,
         "movimentacoes": 2,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000016882_20031902"
     },
     {
         "origem": "P_7000003745_05382010",
@@ -14497,7 +17085,9 @@ const FLUXOS_DATA = [
         "volume": 3128,
         "movimentacoes": 195,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000003745_05382010"
     },
     {
         "origem": "P_7000060976_02123050",
@@ -14505,7 +17095,9 @@ const FLUXOS_DATA = [
         "volume": 4,
         "movimentacoes": 2,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000060976_02123050"
     },
     {
         "origem": "P_7000017846_03022000",
@@ -14513,7 +17105,9 @@ const FLUXOS_DATA = [
         "volume": 988,
         "movimentacoes": 84,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000017846_03022000"
     },
     {
         "origem": "P_7000040109_08790260",
@@ -14521,7 +17115,9 @@ const FLUXOS_DATA = [
         "volume": 1140,
         "movimentacoes": 45,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000040109_08790260"
     },
     {
         "origem": "P_7000030063_13255425",
@@ -14529,7 +17125,9 @@ const FLUXOS_DATA = [
         "volume": 500,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000030063_13255425"
     },
     {
         "origem": "P_7000015122_08320280",
@@ -14537,7 +17135,9 @@ const FLUXOS_DATA = [
         "volume": 51384,
         "movimentacoes": 8,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000015122_08320280"
     },
     {
         "origem": "P_7000006413_05656020",
@@ -14545,7 +17145,9 @@ const FLUXOS_DATA = [
         "volume": 6,
         "movimentacoes": 2,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000006413_05656020"
     },
     {
         "origem": "P_7000017408_08900000",
@@ -14553,7 +17155,9 @@ const FLUXOS_DATA = [
         "volume": 6,
         "movimentacoes": 3,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000017408_08900000"
     },
     {
         "origem": "P_7000016932_12630000",
@@ -14561,7 +17165,9 @@ const FLUXOS_DATA = [
         "volume": 421,
         "movimentacoes": 14,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000016932_12630000"
     },
     {
         "origem": "P_7000021663_02552020",
@@ -14569,7 +17175,9 @@ const FLUXOS_DATA = [
         "volume": 6,
         "movimentacoes": 3,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000021663_02552020"
     },
     {
         "origem": "P_7000021004_06703570",
@@ -14577,7 +17185,9 @@ const FLUXOS_DATA = [
         "volume": 5280,
         "movimentacoes": 18,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000021004_06703570"
     },
     {
         "origem": "P_7000017691_04559003",
@@ -14585,7 +17195,9 @@ const FLUXOS_DATA = [
         "volume": 114,
         "movimentacoes": 12,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000017691_04559003"
     },
     {
         "origem": "P_7000019289_14078600",
@@ -14593,7 +17205,9 @@ const FLUXOS_DATA = [
         "volume": 1,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000019289_14078600"
     },
     {
         "origem": "P_7000003766_11045550",
@@ -14601,7 +17215,9 @@ const FLUXOS_DATA = [
         "volume": 164,
         "movimentacoes": 4,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000003766_11045550"
     },
     {
         "origem": "P_7000008538_06804260",
@@ -14609,7 +17225,9 @@ const FLUXOS_DATA = [
         "volume": 8,
         "movimentacoes": 4,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000008538_06804260"
     },
     {
         "origem": "P_7000012115_06422122",
@@ -14617,7 +17235,9 @@ const FLUXOS_DATA = [
         "volume": 76,
         "movimentacoes": 6,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000012115_06422122"
     },
     {
         "origem": "P_7000006054_09850090",
@@ -14625,7 +17245,9 @@ const FLUXOS_DATA = [
         "volume": 242,
         "movimentacoes": 5,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000006054_09850090"
     },
     {
         "origem": "P_3000001937_01227200",
@@ -14633,7 +17255,9 @@ const FLUXOS_DATA = [
         "volume": 2000,
         "movimentacoes": 1,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_3000001937_01227200"
     },
     {
         "origem": "P_7000016590_08412070",
@@ -14641,7 +17265,9 @@ const FLUXOS_DATA = [
         "volume": 217408,
         "movimentacoes": 67,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000016590_08412070"
     },
     {
         "origem": "P_7000051739_13478540",
@@ -14649,7 +17275,9 @@ const FLUXOS_DATA = [
         "volume": 19000,
         "movimentacoes": 4,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000051739_13478540"
     },
     {
         "origem": "P_7000077946_06835701",
@@ -14657,7 +17285,9 @@ const FLUXOS_DATA = [
         "volume": 185,
         "movimentacoes": 6,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000077946_06835701"
     },
     {
         "origem": "P_7000052709_61888090",
@@ -14665,7 +17295,9 @@ const FLUXOS_DATA = [
         "volume": 29800,
         "movimentacoes": 10,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000052709_61888090"
     },
     {
         "origem": "P_7000014279_08673010",
@@ -14673,7 +17305,9 @@ const FLUXOS_DATA = [
         "volume": 26000,
         "movimentacoes": 7,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000014279_08673010"
     },
     {
         "origem": "P_7000051961_09890001",
@@ -14681,7 +17315,9 @@ const FLUXOS_DATA = [
         "volume": 1000,
         "movimentacoes": 1,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000051961_09890001"
     },
     {
         "origem": "P_7000009110_61890000",
@@ -14689,7 +17325,9 @@ const FLUXOS_DATA = [
         "volume": 10800,
         "movimentacoes": 6,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000009110_61890000"
     },
     {
         "origem": "P_7000008353_09890001",
@@ -14697,7 +17335,9 @@ const FLUXOS_DATA = [
         "volume": 7998,
         "movimentacoes": 6,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000008353_09890001"
     },
     {
         "origem": "P_7000014674_13250250",
@@ -14705,7 +17345,9 @@ const FLUXOS_DATA = [
         "volume": 46,
         "movimentacoes": 8,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000014674_13250250"
     },
     {
         "origem": "P_7000015375_06541065",
@@ -14713,7 +17355,9 @@ const FLUXOS_DATA = [
         "volume": 11080,
         "movimentacoes": 5,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000015375_06541065"
     },
     {
         "origem": "P_3000000324_01227200",
@@ -14721,7 +17365,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_3000000324_01227200"
     },
     {
         "origem": "P_3000000326_04719002",
@@ -14729,7 +17375,9 @@ const FLUXOS_DATA = [
         "volume": 100,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_3000000326_04719002"
     },
     {
         "origem": "P_3000001937_01227200",
@@ -14737,7 +17385,9 @@ const FLUXOS_DATA = [
         "volume": 43,
         "movimentacoes": 9,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_3000001937_01227200"
     },
     {
         "origem": "P_3000001938_07171150",
@@ -14745,7 +17395,9 @@ const FLUXOS_DATA = [
         "volume": 6,
         "movimentacoes": 3,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_3000001938_07171150"
     },
     {
         "origem": "P_7000017217_04311000",
@@ -14753,7 +17405,9 @@ const FLUXOS_DATA = [
         "volume": 1385,
         "movimentacoes": 42,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000017217_04311000"
     },
     {
         "origem": "P_7000018986_07776235",
@@ -14761,7 +17415,9 @@ const FLUXOS_DATA = [
         "volume": 33959,
         "movimentacoes": 111,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000018986_07776235"
     },
     {
         "origem": "P_7000019920_08320280",
@@ -14769,7 +17425,9 @@ const FLUXOS_DATA = [
         "volume": 46804,
         "movimentacoes": 12,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000019920_08320280"
     },
     {
         "origem": "P_7000016835_30441055",
@@ -14777,7 +17435,9 @@ const FLUXOS_DATA = [
         "volume": 933,
         "movimentacoes": 41,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000016835_30441055"
     },
     {
         "origem": "P_7000016007_11015015",
@@ -14785,7 +17445,9 @@ const FLUXOS_DATA = [
         "volume": 2321,
         "movimentacoes": 11,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000016007_11015015"
     },
     {
         "origem": "P_7000071015_17740000",
@@ -14793,7 +17455,9 @@ const FLUXOS_DATA = [
         "volume": 176805,
         "movimentacoes": 328,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000071015_17740000"
     },
     {
         "origem": "P_7000016882_20031902",
@@ -14801,7 +17465,9 @@ const FLUXOS_DATA = [
         "volume": 32904,
         "movimentacoes": 37,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000016882_20031902"
     },
     {
         "origem": "P_7000019797_13710000",
@@ -14809,7 +17475,9 @@ const FLUXOS_DATA = [
         "volume": 13424,
         "movimentacoes": 23,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000019797_13710000"
     },
     {
         "origem": "P_7000020425_06422122",
@@ -14817,7 +17485,9 @@ const FLUXOS_DATA = [
         "volume": 10141,
         "movimentacoes": 17,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000020425_06422122"
     },
     {
         "origem": "P_7000016598_18440000",
@@ -14825,7 +17495,9 @@ const FLUXOS_DATA = [
         "volume": 39641,
         "movimentacoes": 22,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000016598_18440000"
     },
     {
         "origem": "P_7000020635_06790160",
@@ -14833,7 +17505,9 @@ const FLUXOS_DATA = [
         "volume": 19570,
         "movimentacoes": 17,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000020635_06790160"
     },
     {
         "origem": "P_7000008031_15350350",
@@ -14841,7 +17515,9 @@ const FLUXOS_DATA = [
         "volume": 525,
         "movimentacoes": 95,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000008031_15350350"
     },
     {
         "origem": "P_7000059039_06680056",
@@ -14849,7 +17525,9 @@ const FLUXOS_DATA = [
         "volume": 2940,
         "movimentacoes": 4,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000059039_06680056"
     },
     {
         "origem": "P_7000038540_28470000",
@@ -14857,7 +17535,9 @@ const FLUXOS_DATA = [
         "volume": 1760,
         "movimentacoes": 64,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000038540_28470000"
     },
     {
         "origem": "P_7000019502_35547000",
@@ -14865,7 +17545,9 @@ const FLUXOS_DATA = [
         "volume": 21257,
         "movimentacoes": 48,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000019502_35547000"
     },
     {
         "origem": "P_7000032351_02143060",
@@ -14873,7 +17555,9 @@ const FLUXOS_DATA = [
         "volume": 1313,
         "movimentacoes": 11,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000032351_02143060"
     },
     {
         "origem": "P_7000019400_18087156",
@@ -14881,7 +17565,9 @@ const FLUXOS_DATA = [
         "volume": 1675,
         "movimentacoes": 139,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000019400_18087156"
     },
     {
         "origem": "P_7000035977_29124076",
@@ -14889,7 +17575,9 @@ const FLUXOS_DATA = [
         "volume": 33,
         "movimentacoes": 8,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000035977_29124076"
     },
     {
         "origem": "P_7000002834_09380170",
@@ -14897,7 +17585,9 @@ const FLUXOS_DATA = [
         "volume": 2432,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000002834_09380170"
     },
     {
         "origem": "P_7000005995_02143060",
@@ -14905,7 +17595,9 @@ const FLUXOS_DATA = [
         "volume": 266,
         "movimentacoes": 8,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000005995_02143060"
     },
     {
         "origem": "P_7000007917_61900360",
@@ -14913,7 +17605,9 @@ const FLUXOS_DATA = [
         "volume": 170,
         "movimentacoes": 6,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000007917_61900360"
     },
     {
         "origem": "P_7000001662_29124124",
@@ -14921,7 +17615,9 @@ const FLUXOS_DATA = [
         "volume": 156,
         "movimentacoes": 6,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000001662_29124124"
     },
     {
         "origem": "P_7000002368_07776235",
@@ -14929,7 +17625,9 @@ const FLUXOS_DATA = [
         "volume": 4,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000002368_07776235"
     },
     {
         "origem": "P_7000014034_02552020",
@@ -14937,7 +17635,9 @@ const FLUXOS_DATA = [
         "volume": 18,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000014034_02552020"
     },
     {
         "origem": "P_7000070971_61900360",
@@ -14945,7 +17645,9 @@ const FLUXOS_DATA = [
         "volume": 1448,
         "movimentacoes": 14,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000070971_61900360"
     },
     {
         "origem": "P_7000008209_05426100",
@@ -14953,7 +17655,9 @@ const FLUXOS_DATA = [
         "volume": 142,
         "movimentacoes": 13,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000008209_05426100"
     },
     {
         "origem": "P_7000047986_13477250",
@@ -14961,7 +17665,9 @@ const FLUXOS_DATA = [
         "volume": 1462,
         "movimentacoes": 65,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000047986_13477250"
     },
     {
         "origem": "P_7000017408_08900000",
@@ -14969,7 +17675,9 @@ const FLUXOS_DATA = [
         "volume": 78,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000017408_08900000"
     },
     {
         "origem": "P_7000041943_09521320",
@@ -14977,7 +17685,9 @@ const FLUXOS_DATA = [
         "volume": 1790,
         "movimentacoes": 9,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000041943_09521320"
     },
     {
         "origem": "P_7000005483_09260760",
@@ -14985,7 +17695,9 @@ const FLUXOS_DATA = [
         "volume": 5566,
         "movimentacoes": 8,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000005483_09260760"
     },
     {
         "origem": "P_7000012058_17495288",
@@ -14993,7 +17705,9 @@ const FLUXOS_DATA = [
         "volume": 3125,
         "movimentacoes": 6,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000012058_17495288"
     },
     {
         "origem": "P_7000010658_02124001",
@@ -15001,7 +17715,9 @@ const FLUXOS_DATA = [
         "volume": 6,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000010658_02124001"
     },
     {
         "origem": "P_7000021663_02552020",
@@ -15009,7 +17725,9 @@ const FLUXOS_DATA = [
         "volume": 52,
         "movimentacoes": 11,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000021663_02552020"
     },
     {
         "origem": "P_7000010625_09220720",
@@ -15017,7 +17735,9 @@ const FLUXOS_DATA = [
         "volume": 28,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000010625_09220720"
     },
     {
         "origem": "P_7000015682_06790160",
@@ -15025,7 +17745,9 @@ const FLUXOS_DATA = [
         "volume": 988,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000015682_06790160"
     },
     {
         "origem": "P_7000050097_09220720",
@@ -15033,7 +17755,9 @@ const FLUXOS_DATA = [
         "volume": 522,
         "movimentacoes": 6,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000050097_09220720"
     },
     {
         "origem": "P_7000016092_03620000",
@@ -15041,7 +17765,9 @@ const FLUXOS_DATA = [
         "volume": 24,
         "movimentacoes": 3,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000016092_03620000"
     },
     {
         "origem": "P_7000007944_17740000",
@@ -15049,7 +17775,9 @@ const FLUXOS_DATA = [
         "volume": 12,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000007944_17740000"
     },
     {
         "origem": "P_3000000324_01227200",
@@ -15057,7 +17785,9 @@ const FLUXOS_DATA = [
         "volume": 258,
         "movimentacoes": 1,
         "material": "Tubos flexíveis",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_3000000324_01227200"
     },
     {
         "origem": "P_7000018986_07776235",
@@ -15065,7 +17795,9 @@ const FLUXOS_DATA = [
         "volume": 26382,
         "movimentacoes": 114,
         "material": "Tubos flexíveis",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000018986_07776235"
     },
     {
         "origem": "P_7000016598_18440000",
@@ -15073,7 +17805,9 @@ const FLUXOS_DATA = [
         "volume": 9296,
         "movimentacoes": 22,
         "material": "Tubos flexíveis",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000016598_18440000"
     },
     {
         "origem": "P_7000030242_13505600",
@@ -15081,7 +17815,9 @@ const FLUXOS_DATA = [
         "volume": 406100,
         "movimentacoes": 111,
         "material": "Tubos flexíveis",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000030242_13505600"
     },
     {
         "origem": "P_7000047953_13318000",
@@ -15089,7 +17825,9 @@ const FLUXOS_DATA = [
         "volume": 259100,
         "movimentacoes": 12,
         "material": "Tubos flexíveis",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000047953_13318000"
     },
     {
         "origem": "P_7000014235_88030902",
@@ -15097,7 +17835,9 @@ const FLUXOS_DATA = [
         "volume": 200,
         "movimentacoes": 1,
         "material": "Tubos flexíveis",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000014235_88030902"
     },
     {
         "origem": "P_7000016598_18440000",
@@ -15105,7 +17845,9 @@ const FLUXOS_DATA = [
         "volume": 268781,
         "movimentacoes": 152,
         "material": "Tubos rígidos",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000016598_18440000"
     },
     {
         "origem": "P_7000030242_13505600",
@@ -15113,7 +17855,9 @@ const FLUXOS_DATA = [
         "volume": 21996,
         "movimentacoes": 81,
         "material": "Tubos rígidos",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D028",
+        "parceiro": "P_7000030242_13505600"
     },
     {
         "origem": "P_7000016468_14401426",
@@ -15121,7 +17865,9 @@ const FLUXOS_DATA = [
         "volume": 3367,
         "movimentacoes": 2,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000016468_14401426"
     },
     {
         "origem": "P_7000014785_11660660",
@@ -15129,7 +17875,9 @@ const FLUXOS_DATA = [
         "volume": 349705,
         "movimentacoes": 18,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000014785_11660660"
     },
     {
         "origem": "P_7000018322_89219550",
@@ -15137,7 +17885,9 @@ const FLUXOS_DATA = [
         "volume": 6863,
         "movimentacoes": 12,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000018322_89219550"
     },
     {
         "origem": "P_7000013011_09450000",
@@ -15145,7 +17895,9 @@ const FLUXOS_DATA = [
         "volume": 15000,
         "movimentacoes": 4,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000013011_09450000"
     },
     {
         "origem": "P_7000016882_20031902",
@@ -15153,7 +17905,9 @@ const FLUXOS_DATA = [
         "volume": 14500,
         "movimentacoes": 5,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000016882_20031902"
     },
     {
         "origem": "P_7000020402_06727195",
@@ -15161,7 +17915,9 @@ const FLUXOS_DATA = [
         "volume": 4000,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000020402_06727195"
     },
     {
         "origem": "P_7000028135_08536440",
@@ -15169,7 +17925,9 @@ const FLUXOS_DATA = [
         "volume": 500,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000028135_08536440"
     },
     {
         "origem": "P_7000009927_07224210",
@@ -15177,7 +17935,9 @@ const FLUXOS_DATA = [
         "volume": 53000,
         "movimentacoes": 3,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000009927_07224210"
     },
     {
         "origem": "P_7000005544_04164180",
@@ -15185,7 +17945,9 @@ const FLUXOS_DATA = [
         "volume": 18712,
         "movimentacoes": 4,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000005544_04164180"
     },
     {
         "origem": "P_7000010858_04222902",
@@ -15193,7 +17955,9 @@ const FLUXOS_DATA = [
         "volume": 1904,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000010858_04222902"
     },
     {
         "origem": "P_7000019088_93180000",
@@ -15201,7 +17965,9 @@ const FLUXOS_DATA = [
         "volume": 2675,
         "movimentacoes": 131,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000019088_93180000"
     },
     {
         "origem": "P_7000033719_12072250",
@@ -15209,7 +17975,9 @@ const FLUXOS_DATA = [
         "volume": 3356629.175,
         "movimentacoes": 308,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000033719_12072250"
     },
     {
         "origem": "P_7000003090_11800000",
@@ -15217,7 +17985,9 @@ const FLUXOS_DATA = [
         "volume": 48,
         "movimentacoes": 8,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000003090_11800000"
     },
     {
         "origem": "P_7000003801_02871050",
@@ -15225,7 +17995,9 @@ const FLUXOS_DATA = [
         "volume": 3,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000003801_02871050"
     },
     {
         "origem": "P_7000009012_03502020",
@@ -15233,7 +18005,9 @@ const FLUXOS_DATA = [
         "volume": 816025,
         "movimentacoes": 50,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000009012_03502020"
     },
     {
         "origem": "P_7000067890_08290220",
@@ -15241,7 +18015,9 @@ const FLUXOS_DATA = [
         "volume": 11847,
         "movimentacoes": 5,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000067890_08290220"
     },
     {
         "origem": "P_7000019920_08320280",
@@ -15249,7 +18025,9 @@ const FLUXOS_DATA = [
         "volume": 25177,
         "movimentacoes": 14,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000019920_08320280"
     },
     {
         "origem": "P_7000017323_04580000",
@@ -15257,7 +18035,9 @@ const FLUXOS_DATA = [
         "volume": 800,
         "movimentacoes": 8,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000017323_04580000"
     },
     {
         "origem": "P_7000014073_11669320",
@@ -15265,7 +18045,9 @@ const FLUXOS_DATA = [
         "volume": 1739,
         "movimentacoes": 69,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000014073_11669320"
     },
     {
         "origem": "P_7000048172_14340000",
@@ -15273,7 +18055,9 @@ const FLUXOS_DATA = [
         "volume": 2200,
         "movimentacoes": 49,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000048172_14340000"
     },
     {
         "origem": "P_7000003745_05382010",
@@ -15281,7 +18065,9 @@ const FLUXOS_DATA = [
         "volume": 1156,
         "movimentacoes": 36,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000003745_05382010"
     },
     {
         "origem": "P_7000060976_02123050",
@@ -15289,7 +18075,9 @@ const FLUXOS_DATA = [
         "volume": 8,
         "movimentacoes": 8,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000060976_02123050"
     },
     {
         "origem": "P_7000017846_03022000",
@@ -15297,7 +18085,9 @@ const FLUXOS_DATA = [
         "volume": 29,
         "movimentacoes": 9,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000017846_03022000"
     },
     {
         "origem": "P_7000040109_08790260",
@@ -15305,7 +18095,9 @@ const FLUXOS_DATA = [
         "volume": 520,
         "movimentacoes": 8,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000040109_08790260"
     },
     {
         "origem": "P_7000019760_02046090",
@@ -15313,7 +18105,9 @@ const FLUXOS_DATA = [
         "volume": 4350,
         "movimentacoes": 10,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000019760_02046090"
     },
     {
         "origem": "P_7000036835_08675000",
@@ -15321,7 +18115,9 @@ const FLUXOS_DATA = [
         "volume": 8,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000036835_08675000"
     },
     {
         "origem": "P_7000030063_13255425",
@@ -15329,7 +18125,9 @@ const FLUXOS_DATA = [
         "volume": 500,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000030063_13255425"
     },
     {
         "origem": "P_7000019400_18087156",
@@ -15337,7 +18135,9 @@ const FLUXOS_DATA = [
         "volume": 10,
         "movimentacoes": 4,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000019400_18087156"
     },
     {
         "origem": "P_7000015122_08320280",
@@ -15345,7 +18145,9 @@ const FLUXOS_DATA = [
         "volume": 7244,
         "movimentacoes": 2,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000015122_08320280"
     },
     {
         "origem": "P_7000014034_02552020",
@@ -15353,7 +18155,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 2,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000014034_02552020"
     },
     {
         "origem": "P_7000016590_08412070",
@@ -15361,7 +18165,9 @@ const FLUXOS_DATA = [
         "volume": 113014,
         "movimentacoes": 23,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000016590_08412070"
     },
     {
         "origem": "P_7000051739_13478540",
@@ -15369,7 +18175,9 @@ const FLUXOS_DATA = [
         "volume": 27000,
         "movimentacoes": 7,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000051739_13478540"
     },
     {
         "origem": "P_7000077946_06835701",
@@ -15377,7 +18185,9 @@ const FLUXOS_DATA = [
         "volume": 43,
         "movimentacoes": 16,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000077946_06835701"
     },
     {
         "origem": "P_7000052709_61888090",
@@ -15385,7 +18195,9 @@ const FLUXOS_DATA = [
         "volume": 28000,
         "movimentacoes": 10,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000052709_61888090"
     },
     {
         "origem": "P_7000014279_08673010",
@@ -15393,7 +18205,9 @@ const FLUXOS_DATA = [
         "volume": 31000,
         "movimentacoes": 7,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000014279_08673010"
     },
     {
         "origem": "P_7000051961_09890001",
@@ -15401,7 +18215,9 @@ const FLUXOS_DATA = [
         "volume": 17000,
         "movimentacoes": 6,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000051961_09890001"
     },
     {
         "origem": "P_7000009110_61890000",
@@ -15409,7 +18225,9 @@ const FLUXOS_DATA = [
         "volume": 12000,
         "movimentacoes": 4,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000009110_61890000"
     },
     {
         "origem": "P_7000008353_09890001",
@@ -15417,7 +18235,9 @@ const FLUXOS_DATA = [
         "volume": 1000,
         "movimentacoes": 2,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000008353_09890001"
     },
     {
         "origem": "P_7000005716_06278010",
@@ -15425,7 +18245,9 @@ const FLUXOS_DATA = [
         "volume": 6000,
         "movimentacoes": 1,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000005716_06278010"
     },
     {
         "origem": "P_7000003090_11800000",
@@ -15433,7 +18255,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000003090_11800000"
     },
     {
         "origem": "P_7000017217_04311000",
@@ -15441,7 +18265,9 @@ const FLUXOS_DATA = [
         "volume": 247,
         "movimentacoes": 14,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000017217_04311000"
     },
     {
         "origem": "P_7000018986_07776235",
@@ -15449,7 +18275,9 @@ const FLUXOS_DATA = [
         "volume": 84,
         "movimentacoes": 8,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000018986_07776235"
     },
     {
         "origem": "P_7000019920_08320280",
@@ -15457,7 +18285,9 @@ const FLUXOS_DATA = [
         "volume": 22557,
         "movimentacoes": 10,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000019920_08320280"
     },
     {
         "origem": "P_7000016835_30441055",
@@ -15465,7 +18295,9 @@ const FLUXOS_DATA = [
         "volume": 335,
         "movimentacoes": 27,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000016835_30441055"
     },
     {
         "origem": "P_7000016007_11015015",
@@ -15473,7 +18305,9 @@ const FLUXOS_DATA = [
         "volume": 2710,
         "movimentacoes": 3,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000016007_11015015"
     },
     {
         "origem": "P_7000071015_17740000",
@@ -15481,7 +18315,9 @@ const FLUXOS_DATA = [
         "volume": 7492,
         "movimentacoes": 32,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000071015_17740000"
     },
     {
         "origem": "P_7000016882_20031902",
@@ -15489,7 +18325,9 @@ const FLUXOS_DATA = [
         "volume": 9779,
         "movimentacoes": 11,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000016882_20031902"
     },
     {
         "origem": "P_7000019797_13710000",
@@ -15497,7 +18335,9 @@ const FLUXOS_DATA = [
         "volume": 1494,
         "movimentacoes": 12,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000019797_13710000"
     },
     {
         "origem": "P_7000020425_06422122",
@@ -15505,7 +18345,9 @@ const FLUXOS_DATA = [
         "volume": 10348,
         "movimentacoes": 19,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000020425_06422122"
     },
     {
         "origem": "P_7000016598_18440000",
@@ -15513,7 +18355,9 @@ const FLUXOS_DATA = [
         "volume": 3295,
         "movimentacoes": 6,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000016598_18440000"
     },
     {
         "origem": "P_7000030242_13505600",
@@ -15521,7 +18365,9 @@ const FLUXOS_DATA = [
         "volume": 100,
         "movimentacoes": 4,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000030242_13505600"
     },
     {
         "origem": "P_7000020635_06790160",
@@ -15529,7 +18375,9 @@ const FLUXOS_DATA = [
         "volume": 9489,
         "movimentacoes": 10,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000020635_06790160"
     },
     {
         "origem": "P_7000008031_15350350",
@@ -15537,7 +18385,9 @@ const FLUXOS_DATA = [
         "volume": 40,
         "movimentacoes": 4,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000008031_15350350"
     },
     {
         "origem": "P_7000059039_06680056",
@@ -15545,7 +18395,9 @@ const FLUXOS_DATA = [
         "volume": 3529,
         "movimentacoes": 3,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000059039_06680056"
     },
     {
         "origem": "P_7000038540_28470000",
@@ -15553,7 +18405,9 @@ const FLUXOS_DATA = [
         "volume": 569,
         "movimentacoes": 11,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000038540_28470000"
     },
     {
         "origem": "P_7000019502_35547000",
@@ -15561,7 +18415,9 @@ const FLUXOS_DATA = [
         "volume": 2337,
         "movimentacoes": 10,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000019502_35547000"
     },
     {
         "origem": "P_7000032351_02143060",
@@ -15569,7 +18425,9 @@ const FLUXOS_DATA = [
         "volume": 776,
         "movimentacoes": 29,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000032351_02143060"
     },
     {
         "origem": "P_7000019400_18087156",
@@ -15577,7 +18435,9 @@ const FLUXOS_DATA = [
         "volume": 684,
         "movimentacoes": 20,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000019400_18087156"
     },
     {
         "origem": "P_7000035977_29124076",
@@ -15585,7 +18445,9 @@ const FLUXOS_DATA = [
         "volume": 5,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000035977_29124076"
     },
     {
         "origem": "P_7000006413_05656020",
@@ -15593,7 +18455,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000006413_05656020"
     },
     {
         "origem": "P_7000002834_09380170",
@@ -15601,7 +18465,9 @@ const FLUXOS_DATA = [
         "volume": 632,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000002834_09380170"
     },
     {
         "origem": "P_7000006816_02143060",
@@ -15609,7 +18475,9 @@ const FLUXOS_DATA = [
         "volume": 30,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000006816_02143060"
     },
     {
         "origem": "P_7000005995_02143060",
@@ -15617,7 +18485,9 @@ const FLUXOS_DATA = [
         "volume": 118,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000005995_02143060"
     },
     {
         "origem": "P_7000007917_61900360",
@@ -15625,7 +18495,9 @@ const FLUXOS_DATA = [
         "volume": 54,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000007917_61900360"
     },
     {
         "origem": "P_7000001662_29124124",
@@ -15633,7 +18505,9 @@ const FLUXOS_DATA = [
         "volume": 54,
         "movimentacoes": 4,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000001662_29124124"
     },
     {
         "origem": "P_7000002368_07776235",
@@ -15641,7 +18515,9 @@ const FLUXOS_DATA = [
         "volume": 74,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000002368_07776235"
     },
     {
         "origem": "P_7000018986_07776235",
@@ -15649,7 +18525,9 @@ const FLUXOS_DATA = [
         "volume": 150,
         "movimentacoes": 1,
         "material": "Tubos flexíveis",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000018986_07776235"
     },
     {
         "origem": "P_7000016598_18440000",
@@ -15657,7 +18535,9 @@ const FLUXOS_DATA = [
         "volume": 8705,
         "movimentacoes": 12,
         "material": "Tubos flexíveis",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000016598_18440000"
     },
     {
         "origem": "P_7000030242_13505600",
@@ -15665,7 +18545,9 @@ const FLUXOS_DATA = [
         "volume": 25014,
         "movimentacoes": 48,
         "material": "Tubos flexíveis",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000030242_13505600"
     },
     {
         "origem": "P_7000047953_13318000",
@@ -15673,7 +18555,9 @@ const FLUXOS_DATA = [
         "volume": 192,
         "movimentacoes": 1,
         "material": "Tubos flexíveis",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000047953_13318000"
     },
     {
         "origem": "P_7000016598_18440000",
@@ -15681,7 +18565,9 @@ const FLUXOS_DATA = [
         "volume": 111145,
         "movimentacoes": 103,
         "material": "Tubos rígidos",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D029",
+        "parceiro": "P_7000016598_18440000"
     },
     {
         "origem": "P_7000009927_07224210",
@@ -15689,7 +18575,9 @@ const FLUXOS_DATA = [
         "volume": 25000,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000009927_07224210"
     },
     {
         "origem": "P_7000015595_14406406",
@@ -15697,7 +18585,9 @@ const FLUXOS_DATA = [
         "volume": 20,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000015595_14406406"
     },
     {
         "origem": "P_7000019088_93180000",
@@ -15705,7 +18595,9 @@ const FLUXOS_DATA = [
         "volume": 1660,
         "movimentacoes": 188,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000019088_93180000"
     },
     {
         "origem": "P_7000014073_11669320",
@@ -15713,7 +18605,9 @@ const FLUXOS_DATA = [
         "volume": 832,
         "movimentacoes": 68,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000014073_11669320"
     },
     {
         "origem": "P_7000048172_14340000",
@@ -15721,7 +18615,9 @@ const FLUXOS_DATA = [
         "volume": 826,
         "movimentacoes": 56,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000048172_14340000"
     },
     {
         "origem": "P_7000003745_05382010",
@@ -15729,7 +18625,9 @@ const FLUXOS_DATA = [
         "volume": 192,
         "movimentacoes": 16,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000003745_05382010"
     },
     {
         "origem": "P_7000017846_03022000",
@@ -15737,7 +18635,9 @@ const FLUXOS_DATA = [
         "volume": 88,
         "movimentacoes": 16,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000017846_03022000"
     },
     {
         "origem": "P_7000040109_08790260",
@@ -15745,7 +18645,9 @@ const FLUXOS_DATA = [
         "volume": 196,
         "movimentacoes": 36,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000040109_08790260"
     },
     {
         "origem": "P_7000019400_18087156",
@@ -15753,7 +18655,9 @@ const FLUXOS_DATA = [
         "volume": 335,
         "movimentacoes": 45,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000019400_18087156"
     },
     {
         "origem": "P_7000001501_09843400",
@@ -15761,7 +18665,9 @@ const FLUXOS_DATA = [
         "volume": 376,
         "movimentacoes": 17,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000001501_09843400"
     },
     {
         "origem": "P_7000034474_04206000",
@@ -15769,7 +18675,9 @@ const FLUXOS_DATA = [
         "volume": 3292,
         "movimentacoes": 32,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000034474_04206000"
     },
     {
         "origem": "P_7000014230_15400069",
@@ -15777,7 +18685,9 @@ const FLUXOS_DATA = [
         "volume": 805000,
         "movimentacoes": 7,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000014230_15400069"
     },
     {
         "origem": "P_7000032439_04717003",
@@ -15785,7 +18695,9 @@ const FLUXOS_DATA = [
         "volume": 365000,
         "movimentacoes": 7,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000032439_04717003"
     },
     {
         "origem": "P_7000030368_06711250",
@@ -15793,7 +18705,9 @@ const FLUXOS_DATA = [
         "volume": 40,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000030368_06711250"
     },
     {
         "origem": "P_7000038859_30140091",
@@ -15801,7 +18715,9 @@ const FLUXOS_DATA = [
         "volume": 32,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000038859_30140091"
     },
     {
         "origem": "P_7000004454_13171171",
@@ -15809,7 +18725,9 @@ const FLUXOS_DATA = [
         "volume": 9009,
         "movimentacoes": 2,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000004454_13171171"
     },
     {
         "origem": "P_7000030136_75515610",
@@ -15817,7 +18735,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000030136_75515610"
     },
     {
         "origem": "P_7000022141_08740110",
@@ -15825,7 +18745,9 @@ const FLUXOS_DATA = [
         "volume": 1177,
         "movimentacoes": 11,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000022141_08740110"
     },
     {
         "origem": "P_7000070807_05136001",
@@ -15833,7 +18755,9 @@ const FLUXOS_DATA = [
         "volume": 1160,
         "movimentacoes": 4,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000070807_05136001"
     },
     {
         "origem": "P_7000070968_02615060",
@@ -15841,7 +18765,9 @@ const FLUXOS_DATA = [
         "volume": 9822,
         "movimentacoes": 11,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000070968_02615060"
     },
     {
         "origem": "P_7000032018_04782000",
@@ -15849,7 +18775,9 @@ const FLUXOS_DATA = [
         "volume": 6,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000032018_04782000"
     },
     {
         "origem": "P_7000018565_02120020",
@@ -15857,7 +18785,9 @@ const FLUXOS_DATA = [
         "volume": 120,
         "movimentacoes": 20,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000018565_02120020"
     },
     {
         "origem": "P_7000016592_05814110",
@@ -15865,7 +18795,9 @@ const FLUXOS_DATA = [
         "volume": 1,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000016592_05814110"
     },
     {
         "origem": "P_7000000086_18314899",
@@ -15873,7 +18805,9 @@ const FLUXOS_DATA = [
         "volume": 592,
         "movimentacoes": 21,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000000086_18314899"
     },
     {
         "origem": "P_7000021061_03408020",
@@ -15881,7 +18815,9 @@ const FLUXOS_DATA = [
         "volume": 40,
         "movimentacoes": 4,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000021061_03408020"
     },
     {
         "origem": "P_7000019372_06543308",
@@ -15889,7 +18825,9 @@ const FLUXOS_DATA = [
         "volume": 158,
         "movimentacoes": 8,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000019372_06543308"
     },
     {
         "origem": "P_7000016464_11660410",
@@ -15897,7 +18835,9 @@ const FLUXOS_DATA = [
         "volume": 3,
         "movimentacoes": 3,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000016464_11660410"
     },
     {
         "origem": "P_7000018916_09190610",
@@ -15905,7 +18845,9 @@ const FLUXOS_DATA = [
         "volume": 16,
         "movimentacoes": 4,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000018916_09190610"
     },
     {
         "origem": "P_7000072229_09890510",
@@ -15913,7 +18855,9 @@ const FLUXOS_DATA = [
         "volume": 60,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000072229_09890510"
     },
     {
         "origem": "P_7000017066_83504450",
@@ -15921,7 +18865,9 @@ const FLUXOS_DATA = [
         "volume": 5,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000017066_83504450"
     },
     {
         "origem": "P_7000017415_13015082",
@@ -15929,7 +18875,9 @@ const FLUXOS_DATA = [
         "volume": 2495,
         "movimentacoes": 48,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000017415_13015082"
     },
     {
         "origem": "P_7000003219_14115000",
@@ -15937,7 +18885,9 @@ const FLUXOS_DATA = [
         "volume": 20,
         "movimentacoes": 4,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000003219_14115000"
     },
     {
         "origem": "P_7000016943_13731285",
@@ -15945,7 +18895,9 @@ const FLUXOS_DATA = [
         "volume": 582,
         "movimentacoes": 2,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000016943_13731285"
     },
     {
         "origem": "P_7000015816_19010030",
@@ -15953,7 +18905,9 @@ const FLUXOS_DATA = [
         "volume": 88,
         "movimentacoes": 11,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000015816_19010030"
     },
     {
         "origem": "P_7000035449_03073070",
@@ -15961,7 +18915,9 @@ const FLUXOS_DATA = [
         "volume": 140,
         "movimentacoes": 25,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000035449_03073070"
     },
     {
         "origem": "P_7000018927_05311030",
@@ -15969,7 +18925,9 @@ const FLUXOS_DATA = [
         "volume": 5,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000018927_05311030"
     },
     {
         "origem": "P_7000017494_04041901",
@@ -15977,7 +18935,9 @@ const FLUXOS_DATA = [
         "volume": 20,
         "movimentacoes": 16,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000017494_04041901"
     },
     {
         "origem": "P_7000019433_13202570",
@@ -15985,7 +18945,9 @@ const FLUXOS_DATA = [
         "volume": 64,
         "movimentacoes": 2,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000019433_13202570"
     },
     {
         "origem": "P_7000016121_18706706",
@@ -15993,7 +18955,9 @@ const FLUXOS_DATA = [
         "volume": 1,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000016121_18706706"
     },
     {
         "origem": "P_7000021903_02115000",
@@ -16001,7 +18965,9 @@ const FLUXOS_DATA = [
         "volume": 1800,
         "movimentacoes": 4,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000021903_02115000"
     },
     {
         "origem": "P_7000006390_13732540",
@@ -16009,7 +18975,9 @@ const FLUXOS_DATA = [
         "volume": 212,
         "movimentacoes": 3,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000006390_13732540"
     },
     {
         "origem": "P_7000017471_03102060",
@@ -16017,7 +18985,9 @@ const FLUXOS_DATA = [
         "volume": 24,
         "movimentacoes": 8,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000017471_03102060"
     },
     {
         "origem": "P_7000015038_11020020",
@@ -16025,7 +18995,9 @@ const FLUXOS_DATA = [
         "volume": 28,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000015038_11020020"
     },
     {
         "origem": "P_7000016917_06539010",
@@ -16033,7 +19005,9 @@ const FLUXOS_DATA = [
         "volume": 9,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000016917_06539010"
     },
     {
         "origem": "P_7000051533_83015130",
@@ -16041,7 +19015,9 @@ const FLUXOS_DATA = [
         "volume": 30,
         "movimentacoes": 2,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000051533_83015130"
     },
     {
         "origem": "P_7000021604_13040093",
@@ -16049,7 +19025,9 @@ const FLUXOS_DATA = [
         "volume": 40,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000021604_13040093"
     },
     {
         "origem": "P_7000018229_13213180",
@@ -16057,7 +19035,9 @@ const FLUXOS_DATA = [
         "volume": 4,
         "movimentacoes": 3,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000018229_13213180"
     },
     {
         "origem": "P_7000057073_09290330",
@@ -16065,7 +19045,9 @@ const FLUXOS_DATA = [
         "volume": 350,
         "movimentacoes": 2,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000057073_09290330"
     },
     {
         "origem": "P_7000007189_12224853",
@@ -16073,7 +19055,9 @@ const FLUXOS_DATA = [
         "volume": 475,
         "movimentacoes": 18,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000007189_12224853"
     },
     {
         "origem": "P_7000002544_41820560",
@@ -16081,7 +19065,9 @@ const FLUXOS_DATA = [
         "volume": 100,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000002544_41820560"
     },
     {
         "origem": "P_7000021398_08485525",
@@ -16089,7 +19075,9 @@ const FLUXOS_DATA = [
         "volume": 100,
         "movimentacoes": 2,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000021398_08485525"
     },
     {
         "origem": "P_7000037790_05069900",
@@ -16097,7 +19085,9 @@ const FLUXOS_DATA = [
         "volume": 240,
         "movimentacoes": 2,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000037790_05069900"
     },
     {
         "origem": "P_7000016312_03105000",
@@ -16105,7 +19095,9 @@ const FLUXOS_DATA = [
         "volume": 12,
         "movimentacoes": 8,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000016312_03105000"
     },
     {
         "origem": "P_7000008291_04571010",
@@ -16113,7 +19105,9 @@ const FLUXOS_DATA = [
         "volume": 25,
         "movimentacoes": 11,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000008291_04571010"
     },
     {
         "origem": "P_7000008954_04220002",
@@ -16121,7 +19115,9 @@ const FLUXOS_DATA = [
         "volume": 11,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000008954_04220002"
     },
     {
         "origem": "P_7000010273_05686900",
@@ -16129,7 +19125,9 @@ const FLUXOS_DATA = [
         "volume": 6,
         "movimentacoes": 3,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000010273_05686900"
     },
     {
         "origem": "P_7000077946_06835701",
@@ -16137,7 +19135,9 @@ const FLUXOS_DATA = [
         "volume": 50,
         "movimentacoes": 12,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000077946_06835701"
     },
     {
         "origem": "P_7000019748_04571936",
@@ -16145,7 +19145,9 @@ const FLUXOS_DATA = [
         "volume": 2000,
         "movimentacoes": 1,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000019748_04571936"
     },
     {
         "origem": "P_7000059039_06680056",
@@ -16153,7 +19155,9 @@ const FLUXOS_DATA = [
         "volume": 5,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000059039_06680056"
     },
     {
         "origem": "P_7000019502_35547000",
@@ -16161,7 +19165,9 @@ const FLUXOS_DATA = [
         "volume": 66,
         "movimentacoes": 5,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000019502_35547000"
     },
     {
         "origem": "P_7000005995_02143060",
@@ -16169,7 +19175,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D034",
+        "parceiro": "P_7000005995_02143060"
     },
     {
         "origem": "P_7000014785_11660660",
@@ -16177,7 +19185,9 @@ const FLUXOS_DATA = [
         "volume": 92000,
         "movimentacoes": 9,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D019",
+        "parceiro": "P_7000014785_11660660"
     },
     {
         "origem": "P_7000018322_89219550",
@@ -16185,7 +19195,9 @@ const FLUXOS_DATA = [
         "volume": 2575,
         "movimentacoes": 9,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D019",
+        "parceiro": "P_7000018322_89219550"
     },
     {
         "origem": "P_7000016882_20031902",
@@ -16193,7 +19205,9 @@ const FLUXOS_DATA = [
         "volume": 2880,
         "movimentacoes": 2,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D019",
+        "parceiro": "P_7000016882_20031902"
     },
     {
         "origem": "P_7000028135_08536440",
@@ -16201,7 +19215,9 @@ const FLUXOS_DATA = [
         "volume": 500,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D019",
+        "parceiro": "P_7000028135_08536440"
     },
     {
         "origem": "P_7000019088_93180000",
@@ -16209,7 +19225,9 @@ const FLUXOS_DATA = [
         "volume": 550,
         "movimentacoes": 11,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D019",
+        "parceiro": "P_7000019088_93180000"
     },
     {
         "origem": "P_7000033719_12072250",
@@ -16217,7 +19235,9 @@ const FLUXOS_DATA = [
         "volume": 721650,
         "movimentacoes": 90,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D019",
+        "parceiro": "P_7000033719_12072250"
     },
     {
         "origem": "P_7000009012_03502020",
@@ -16225,7 +19245,9 @@ const FLUXOS_DATA = [
         "volume": 1455725,
         "movimentacoes": 60,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D019",
+        "parceiro": "P_7000009012_03502020"
     },
     {
         "origem": "P_7000017323_04580000",
@@ -16233,7 +19255,9 @@ const FLUXOS_DATA = [
         "volume": 200,
         "movimentacoes": 4,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D019",
+        "parceiro": "P_7000017323_04580000"
     },
     {
         "origem": "P_7000048172_14340000",
@@ -16241,7 +19265,9 @@ const FLUXOS_DATA = [
         "volume": 1486,
         "movimentacoes": 42,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D019",
+        "parceiro": "P_7000048172_14340000"
     },
     {
         "origem": "P_7000003745_05382010",
@@ -16249,7 +19275,9 @@ const FLUXOS_DATA = [
         "volume": 95,
         "movimentacoes": 11,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D019",
+        "parceiro": "P_7000003745_05382010"
     },
     {
         "origem": "P_7000019760_02046090",
@@ -16257,7 +19285,9 @@ const FLUXOS_DATA = [
         "volume": 585,
         "movimentacoes": 5,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D019",
+        "parceiro": "P_7000019760_02046090"
     },
     {
         "origem": "P_7000019400_18087156",
@@ -16265,7 +19295,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 2,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D019",
+        "parceiro": "P_7000019400_18087156"
     },
     {
         "origem": "P_7000015122_08320280",
@@ -16273,7 +19305,9 @@ const FLUXOS_DATA = [
         "volume": 32,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D019",
+        "parceiro": "P_7000015122_08320280"
     },
     {
         "origem": "P_7000016932_12630000",
@@ -16281,7 +19315,9 @@ const FLUXOS_DATA = [
         "volume": 56,
         "movimentacoes": 4,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D019",
+        "parceiro": "P_7000016932_12630000"
     },
     {
         "origem": "P_7000021004_06703570",
@@ -16289,7 +19325,9 @@ const FLUXOS_DATA = [
         "volume": 2260,
         "movimentacoes": 9,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D019",
+        "parceiro": "P_7000021004_06703570"
     },
     {
         "origem": "P_7000033580_99950000",
@@ -16297,7 +19335,9 @@ const FLUXOS_DATA = [
         "volume": 26,
         "movimentacoes": 4,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D019",
+        "parceiro": "P_7000033580_99950000"
     },
     {
         "origem": "P_7000018782_12929899",
@@ -16305,7 +19345,9 @@ const FLUXOS_DATA = [
         "volume": 15,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D019",
+        "parceiro": "P_7000018782_12929899"
     },
     {
         "origem": "P_7000016614_07171030",
@@ -16313,7 +19355,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 2,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D019",
+        "parceiro": "P_7000016614_07171030"
     },
     {
         "origem": "P_7000032772_16306172",
@@ -16321,7 +19365,9 @@ const FLUXOS_DATA = [
         "volume": 200,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D019",
+        "parceiro": "P_7000032772_16306172"
     },
     {
         "origem": "P_7000001501_09843400",
@@ -16329,7 +19375,9 @@ const FLUXOS_DATA = [
         "volume": 331,
         "movimentacoes": 18,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D019",
+        "parceiro": "P_7000001501_09843400"
     },
     {
         "origem": "P_7000016590_08412070",
@@ -16337,7 +19385,9 @@ const FLUXOS_DATA = [
         "volume": 33368,
         "movimentacoes": 11,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D019",
+        "parceiro": "P_7000016590_08412070"
     },
     {
         "origem": "P_7000051739_13478540",
@@ -16345,7 +19395,9 @@ const FLUXOS_DATA = [
         "volume": 5000,
         "movimentacoes": 1,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D019",
+        "parceiro": "P_7000051739_13478540"
     },
     {
         "origem": "P_7000077946_06835701",
@@ -16353,7 +19405,9 @@ const FLUXOS_DATA = [
         "volume": 38,
         "movimentacoes": 3,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D019",
+        "parceiro": "P_7000077946_06835701"
     },
     {
         "origem": "P_7000052709_61888090",
@@ -16361,7 +19415,9 @@ const FLUXOS_DATA = [
         "volume": 5000,
         "movimentacoes": 2,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D019",
+        "parceiro": "P_7000052709_61888090"
     },
     {
         "origem": "P_7000014279_08673010",
@@ -16369,7 +19425,9 @@ const FLUXOS_DATA = [
         "volume": 19890,
         "movimentacoes": 9,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D019",
+        "parceiro": "P_7000014279_08673010"
     },
     {
         "origem": "P_7000051961_09890001",
@@ -16377,7 +19435,9 @@ const FLUXOS_DATA = [
         "volume": 1000,
         "movimentacoes": 1,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D019",
+        "parceiro": "P_7000051961_09890001"
     },
     {
         "origem": "P_7000008353_09890001",
@@ -16385,7 +19445,9 @@ const FLUXOS_DATA = [
         "volume": 1998,
         "movimentacoes": 2,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D019",
+        "parceiro": "P_7000008353_09890001"
     },
     {
         "origem": "P_7000005716_06278010",
@@ -16393,7 +19455,9 @@ const FLUXOS_DATA = [
         "volume": 1830,
         "movimentacoes": 1,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D019",
+        "parceiro": "P_7000005716_06278010"
     },
     {
         "origem": "P_2_05429900",
@@ -16401,7 +19465,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D019",
+        "parceiro": "P_2_05429900"
     },
     {
         "origem": "P_3000000337_11410410",
@@ -16409,7 +19475,9 @@ const FLUXOS_DATA = [
         "volume": 4,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D019",
+        "parceiro": "P_3000000337_11410410"
     },
     {
         "origem": "P_7000019797_13710000",
@@ -16417,7 +19485,9 @@ const FLUXOS_DATA = [
         "volume": 3429,
         "movimentacoes": 8,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D019",
+        "parceiro": "P_7000019797_13710000"
     },
     {
         "origem": "P_7000016598_18440000",
@@ -16425,7 +19495,9 @@ const FLUXOS_DATA = [
         "volume": 900,
         "movimentacoes": 4,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D019",
+        "parceiro": "P_7000016598_18440000"
     },
     {
         "origem": "P_7000020635_06790160",
@@ -16433,7 +19505,9 @@ const FLUXOS_DATA = [
         "volume": 396,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D019",
+        "parceiro": "P_7000020635_06790160"
     },
     {
         "origem": "P_7000008031_15350350",
@@ -16441,7 +19515,9 @@ const FLUXOS_DATA = [
         "volume": 105,
         "movimentacoes": 41,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D019",
+        "parceiro": "P_7000008031_15350350"
     },
     {
         "origem": "P_7000019502_35547000",
@@ -16449,7 +19525,9 @@ const FLUXOS_DATA = [
         "volume": 2099,
         "movimentacoes": 12,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D019",
+        "parceiro": "P_7000019502_35547000"
     },
     {
         "origem": "P_7000032351_02143060",
@@ -16457,7 +19535,9 @@ const FLUXOS_DATA = [
         "volume": 31,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D019",
+        "parceiro": "P_7000032351_02143060"
     },
     {
         "origem": "P_7000035977_29124076",
@@ -16465,7 +19545,9 @@ const FLUXOS_DATA = [
         "volume": 6,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D019",
+        "parceiro": "P_7000035977_29124076"
     },
     {
         "origem": "P_7000008209_05426100",
@@ -16473,7 +19555,9 @@ const FLUXOS_DATA = [
         "volume": 90,
         "movimentacoes": 3,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D019",
+        "parceiro": "P_7000008209_05426100"
     },
     {
         "origem": "P_7000017408_08900000",
@@ -16481,7 +19565,9 @@ const FLUXOS_DATA = [
         "volume": 1530,
         "movimentacoes": 5,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D019",
+        "parceiro": "P_7000017408_08900000"
     },
     {
         "origem": "P_7000041943_09521320",
@@ -16489,7 +19575,9 @@ const FLUXOS_DATA = [
         "volume": 10,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D019",
+        "parceiro": "P_7000041943_09521320"
     },
     {
         "origem": "P_7000037848_09380170",
@@ -16497,7 +19585,9 @@ const FLUXOS_DATA = [
         "volume": 300,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D019",
+        "parceiro": "P_7000037848_09380170"
     },
     {
         "origem": "P_7000016598_18440000",
@@ -16505,7 +19595,9 @@ const FLUXOS_DATA = [
         "volume": 1008,
         "movimentacoes": 4,
         "material": "Tubos flexíveis",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D019",
+        "parceiro": "P_7000016598_18440000"
     },
     {
         "origem": "P_7000030242_13505600",
@@ -16513,7 +19605,9 @@ const FLUXOS_DATA = [
         "volume": 62100,
         "movimentacoes": 8,
         "material": "Tubos flexíveis",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D019",
+        "parceiro": "P_7000030242_13505600"
     },
     {
         "origem": "P_7000016598_18440000",
@@ -16521,7 +19615,9 @@ const FLUXOS_DATA = [
         "volume": 27546,
         "movimentacoes": 25,
         "material": "Tubos rígidos",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D019",
+        "parceiro": "P_7000016598_18440000"
     },
     {
         "origem": "P_7000016468_14401426",
@@ -16529,7 +19625,9 @@ const FLUXOS_DATA = [
         "volume": 32850,
         "movimentacoes": 4,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D035",
+        "parceiro": "P_7000016468_14401426"
     },
     {
         "origem": "P_7000014785_11660660",
@@ -16537,7 +19635,9 @@ const FLUXOS_DATA = [
         "volume": 179560,
         "movimentacoes": 10,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D035",
+        "parceiro": "P_7000014785_11660660"
     },
     {
         "origem": "P_7000018322_89219550",
@@ -16545,7 +19645,9 @@ const FLUXOS_DATA = [
         "volume": 8000,
         "movimentacoes": 4,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D035",
+        "parceiro": "P_7000018322_89219550"
     },
     {
         "origem": "P_7000013011_09450000",
@@ -16553,7 +19655,9 @@ const FLUXOS_DATA = [
         "volume": 5490,
         "movimentacoes": 2,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D035",
+        "parceiro": "P_7000013011_09450000"
     },
     {
         "origem": "P_7000033719_12072250",
@@ -16561,7 +19665,9 @@ const FLUXOS_DATA = [
         "volume": 751500,
         "movimentacoes": 75,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D035",
+        "parceiro": "P_7000033719_12072250"
     },
     {
         "origem": "P_7000009012_03502020",
@@ -16569,7 +19675,9 @@ const FLUXOS_DATA = [
         "volume": 658975,
         "movimentacoes": 44,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D035",
+        "parceiro": "P_7000009012_03502020"
     },
     {
         "origem": "P_7000014073_11669320",
@@ -16577,7 +19685,9 @@ const FLUXOS_DATA = [
         "volume": 960,
         "movimentacoes": 24,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D035",
+        "parceiro": "P_7000014073_11669320"
     },
     {
         "origem": "P_7000048172_14340000",
@@ -16585,7 +19695,9 @@ const FLUXOS_DATA = [
         "volume": 3088,
         "movimentacoes": 28,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D035",
+        "parceiro": "P_7000048172_14340000"
     },
     {
         "origem": "P_7000003745_05382010",
@@ -16593,7 +19705,9 @@ const FLUXOS_DATA = [
         "volume": 1691,
         "movimentacoes": 78,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D035",
+        "parceiro": "P_7000003745_05382010"
     },
     {
         "origem": "P_7000017846_03022000",
@@ -16601,7 +19715,9 @@ const FLUXOS_DATA = [
         "volume": 400,
         "movimentacoes": 15,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D035",
+        "parceiro": "P_7000017846_03022000"
     },
     {
         "origem": "P_7000040109_08790260",
@@ -16609,7 +19725,9 @@ const FLUXOS_DATA = [
         "volume": 1200,
         "movimentacoes": 12,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D035",
+        "parceiro": "P_7000040109_08790260"
     },
     {
         "origem": "P_7000019760_02046090",
@@ -16617,7 +19735,9 @@ const FLUXOS_DATA = [
         "volume": 1030,
         "movimentacoes": 8,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D035",
+        "parceiro": "P_7000019760_02046090"
     },
     {
         "origem": "P_7000030063_13255425",
@@ -16625,7 +19745,9 @@ const FLUXOS_DATA = [
         "volume": 200,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D035",
+        "parceiro": "P_7000030063_13255425"
     },
     {
         "origem": "P_7000015122_08320280",
@@ -16633,7 +19755,9 @@ const FLUXOS_DATA = [
         "volume": 64,
         "movimentacoes": 2,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D035",
+        "parceiro": "P_7000015122_08320280"
     },
     {
         "origem": "P_7000016932_12630000",
@@ -16641,7 +19765,9 @@ const FLUXOS_DATA = [
         "volume": 7,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D035",
+        "parceiro": "P_7000016932_12630000"
     },
     {
         "origem": "P_7000033580_99950000",
@@ -16649,7 +19775,9 @@ const FLUXOS_DATA = [
         "volume": 26,
         "movimentacoes": 4,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D035",
+        "parceiro": "P_7000033580_99950000"
     },
     {
         "origem": "P_7000018782_12929899",
@@ -16657,7 +19785,9 @@ const FLUXOS_DATA = [
         "volume": 50,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D035",
+        "parceiro": "P_7000018782_12929899"
     },
     {
         "origem": "P_7000057031_07790890",
@@ -16665,7 +19795,9 @@ const FLUXOS_DATA = [
         "volume": 310,
         "movimentacoes": 5,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D035",
+        "parceiro": "P_7000057031_07790890"
     },
     {
         "origem": "P_7000017217_04311000",
@@ -16673,7 +19805,9 @@ const FLUXOS_DATA = [
         "volume": 100,
         "movimentacoes": 3,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D035",
+        "parceiro": "P_7000017217_04311000"
     },
     {
         "origem": "P_7000018986_07776235",
@@ -16681,7 +19815,9 @@ const FLUXOS_DATA = [
         "volume": 90,
         "movimentacoes": 9,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D035",
+        "parceiro": "P_7000018986_07776235"
     },
     {
         "origem": "P_7000016835_30441055",
@@ -16689,7 +19825,9 @@ const FLUXOS_DATA = [
         "volume": 5,
         "movimentacoes": 3,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D035",
+        "parceiro": "P_7000016835_30441055"
     },
     {
         "origem": "P_7000016007_11015015",
@@ -16697,7 +19835,9 @@ const FLUXOS_DATA = [
         "volume": 90,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D035",
+        "parceiro": "P_7000016007_11015015"
     },
     {
         "origem": "P_7000071015_17740000",
@@ -16705,7 +19845,9 @@ const FLUXOS_DATA = [
         "volume": 156,
         "movimentacoes": 4,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D035",
+        "parceiro": "P_7000071015_17740000"
     },
     {
         "origem": "P_7000016882_20031902",
@@ -16713,7 +19855,9 @@ const FLUXOS_DATA = [
         "volume": 4000,
         "movimentacoes": 7,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D035",
+        "parceiro": "P_7000016882_20031902"
     },
     {
         "origem": "P_7000019797_13710000",
@@ -16721,7 +19865,9 @@ const FLUXOS_DATA = [
         "volume": 600,
         "movimentacoes": 3,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D035",
+        "parceiro": "P_7000019797_13710000"
     },
     {
         "origem": "P_7000008031_15350350",
@@ -16729,7 +19875,9 @@ const FLUXOS_DATA = [
         "volume": 40,
         "movimentacoes": 12,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D035",
+        "parceiro": "P_7000008031_15350350"
     },
     {
         "origem": "P_7000059039_06680056",
@@ -16737,7 +19885,9 @@ const FLUXOS_DATA = [
         "volume": 2782,
         "movimentacoes": 3,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D035",
+        "parceiro": "P_7000059039_06680056"
     },
     {
         "origem": "P_7000019502_35547000",
@@ -16745,7 +19895,9 @@ const FLUXOS_DATA = [
         "volume": 2536,
         "movimentacoes": 9,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D035",
+        "parceiro": "P_7000019502_35547000"
     },
     {
         "origem": "P_7000032351_02143060",
@@ -16753,7 +19905,9 @@ const FLUXOS_DATA = [
         "volume": 33,
         "movimentacoes": 9,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D035",
+        "parceiro": "P_7000032351_02143060"
     },
     {
         "origem": "P_7000006413_05656020",
@@ -16761,7 +19915,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D035",
+        "parceiro": "P_7000006413_05656020"
     },
     {
         "origem": "P_7000001662_29124124",
@@ -16769,7 +19925,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D035",
+        "parceiro": "P_7000001662_29124124"
     },
     {
         "origem": "P_7000021663_02552020",
@@ -16777,7 +19935,9 @@ const FLUXOS_DATA = [
         "volume": 34,
         "movimentacoes": 4,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D035",
+        "parceiro": "P_7000021663_02552020"
     },
     {
         "origem": "P_7000037848_09380170",
@@ -16785,7 +19945,9 @@ const FLUXOS_DATA = [
         "volume": 540,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D035",
+        "parceiro": "P_7000037848_09380170"
     },
     {
         "origem": "P_7000018986_07776235",
@@ -16793,7 +19955,9 @@ const FLUXOS_DATA = [
         "volume": 3402,
         "movimentacoes": 14,
         "material": "Tubos flexíveis",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D035",
+        "parceiro": "P_7000018986_07776235"
     },
     {
         "origem": "P_7000013011_09450000",
@@ -16801,7 +19965,9 @@ const FLUXOS_DATA = [
         "volume": 13770,
         "movimentacoes": 36,
         "material": "Tubos flexíveis",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D035",
+        "parceiro": "P_7000013011_09450000"
     },
     {
         "origem": "P_7000016598_18440000",
@@ -16809,7 +19975,9 @@ const FLUXOS_DATA = [
         "volume": 678,
         "movimentacoes": 10,
         "material": "Tubos flexíveis",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D035",
+        "parceiro": "P_7000016598_18440000"
     },
     {
         "origem": "P_7000030242_13505600",
@@ -16817,7 +19985,9 @@ const FLUXOS_DATA = [
         "volume": 54200,
         "movimentacoes": 5,
         "material": "Tubos flexíveis",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D035",
+        "parceiro": "P_7000030242_13505600"
     },
     {
         "origem": "P_7000047953_13318000",
@@ -16825,7 +19995,9 @@ const FLUXOS_DATA = [
         "volume": 87000,
         "movimentacoes": 11,
         "material": "Tubos flexíveis",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D035",
+        "parceiro": "P_7000047953_13318000"
     },
     {
         "origem": "P_7000002368_07776235",
@@ -16833,7 +20005,9 @@ const FLUXOS_DATA = [
         "volume": 4848,
         "movimentacoes": 22,
         "material": "Tubos flexíveis",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D035",
+        "parceiro": "P_7000002368_07776235"
     },
     {
         "origem": "P_7000007747_13505505",
@@ -16841,7 +20015,9 @@ const FLUXOS_DATA = [
         "volume": 39964,
         "movimentacoes": 12,
         "material": "Tubos flexíveis",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D035",
+        "parceiro": "P_7000007747_13505505"
     },
     {
         "origem": "P_7000016598_18440000",
@@ -16849,7 +20025,9 @@ const FLUXOS_DATA = [
         "volume": 41112,
         "movimentacoes": 39,
         "material": "Tubos rígidos",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D035",
+        "parceiro": "P_7000016598_18440000"
     },
     {
         "origem": "P_7000030242_13505600",
@@ -16857,7 +20035,9 @@ const FLUXOS_DATA = [
         "volume": 8664,
         "movimentacoes": 52,
         "material": "Tubos rígidos",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D035",
+        "parceiro": "P_7000030242_13505600"
     },
     {
         "origem": "P_7000007747_13505505",
@@ -16865,7 +20045,9 @@ const FLUXOS_DATA = [
         "volume": 6000,
         "movimentacoes": 36,
         "material": "Tubos rígidos",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D035",
+        "parceiro": "P_7000007747_13505505"
     },
     {
         "origem": "P_7000016468_14401426",
@@ -16873,7 +20055,9 @@ const FLUXOS_DATA = [
         "volume": 700,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_7000016468_14401426"
     },
     {
         "origem": "P_7000014785_11660660",
@@ -16881,7 +20065,9 @@ const FLUXOS_DATA = [
         "volume": 110500,
         "movimentacoes": 8,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_7000014785_11660660"
     },
     {
         "origem": "P_7000013011_09450000",
@@ -16889,7 +20075,9 @@ const FLUXOS_DATA = [
         "volume": 1200,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_7000013011_09450000"
     },
     {
         "origem": "P_7000009927_07224210",
@@ -16897,7 +20085,9 @@ const FLUXOS_DATA = [
         "volume": 65000,
         "movimentacoes": 3,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_7000009927_07224210"
     },
     {
         "origem": "P_7000005544_04164180",
@@ -16905,7 +20095,9 @@ const FLUXOS_DATA = [
         "volume": 1854,
         "movimentacoes": 2,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_7000005544_04164180"
     },
     {
         "origem": "P_7000010858_04222902",
@@ -16913,7 +20105,9 @@ const FLUXOS_DATA = [
         "volume": 502,
         "movimentacoes": 2,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_7000010858_04222902"
     },
     {
         "origem": "P_7000019040_06411310",
@@ -16921,7 +20115,9 @@ const FLUXOS_DATA = [
         "volume": 16000,
         "movimentacoes": 10,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_7000019040_06411310"
     },
     {
         "origem": "P_7000033719_12072250",
@@ -16929,7 +20125,9 @@ const FLUXOS_DATA = [
         "volume": 301208,
         "movimentacoes": 35,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_7000033719_12072250"
     },
     {
         "origem": "P_7000009012_03502020",
@@ -16937,7 +20135,9 @@ const FLUXOS_DATA = [
         "volume": 862850,
         "movimentacoes": 44,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_7000009012_03502020"
     },
     {
         "origem": "P_7000067890_08290220",
@@ -16945,7 +20145,9 @@ const FLUXOS_DATA = [
         "volume": 3800,
         "movimentacoes": 7,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_7000067890_08290220"
     },
     {
         "origem": "P_7000019920_08320280",
@@ -16953,7 +20155,9 @@ const FLUXOS_DATA = [
         "volume": 5960,
         "movimentacoes": 12,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_7000019920_08320280"
     },
     {
         "origem": "P_7000019760_02046090",
@@ -16961,7 +20165,9 @@ const FLUXOS_DATA = [
         "volume": 265,
         "movimentacoes": 3,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_7000019760_02046090"
     },
     {
         "origem": "P_7000015122_08320280",
@@ -16969,7 +20175,9 @@ const FLUXOS_DATA = [
         "volume": 64,
         "movimentacoes": 2,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_7000015122_08320280"
     },
     {
         "origem": "P_7000021663_02552020",
@@ -16977,7 +20185,9 @@ const FLUXOS_DATA = [
         "volume": 100,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_7000021663_02552020"
     },
     {
         "origem": "P_7000033580_99950000",
@@ -16985,7 +20195,9 @@ const FLUXOS_DATA = [
         "volume": 42,
         "movimentacoes": 7,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_7000033580_99950000"
     },
     {
         "origem": "P_7000018782_12929899",
@@ -16993,7 +20205,9 @@ const FLUXOS_DATA = [
         "volume": 37,
         "movimentacoes": 5,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_7000018782_12929899"
     },
     {
         "origem": "P_7000001501_09843400",
@@ -17001,7 +20215,9 @@ const FLUXOS_DATA = [
         "volume": 200,
         "movimentacoes": 9,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_7000001501_09843400"
     },
     {
         "origem": "P_7000007189_12224853",
@@ -17009,7 +20225,9 @@ const FLUXOS_DATA = [
         "volume": 270,
         "movimentacoes": 10,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_7000007189_12224853"
     },
     {
         "origem": "P_7000007656_06765310",
@@ -17017,7 +20235,9 @@ const FLUXOS_DATA = [
         "volume": 4,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_7000007656_06765310"
     },
     {
         "origem": "P_7000012869_05711001",
@@ -17025,7 +20245,9 @@ const FLUXOS_DATA = [
         "volume": 3088.4260000000004,
         "movimentacoes": 4,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_7000012869_05711001"
     },
     {
         "origem": "P_7000016590_08412070",
@@ -17033,7 +20255,9 @@ const FLUXOS_DATA = [
         "volume": 101150,
         "movimentacoes": 39,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_7000016590_08412070"
     },
     {
         "origem": "P_7000051739_13478540",
@@ -17041,7 +20265,9 @@ const FLUXOS_DATA = [
         "volume": 12000,
         "movimentacoes": 2,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_7000051739_13478540"
     },
     {
         "origem": "P_7000077946_06835701",
@@ -17049,7 +20275,9 @@ const FLUXOS_DATA = [
         "volume": 248,
         "movimentacoes": 31,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_7000077946_06835701"
     },
     {
         "origem": "P_7000052709_61888090",
@@ -17057,7 +20285,9 @@ const FLUXOS_DATA = [
         "volume": 6000,
         "movimentacoes": 1,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_7000052709_61888090"
     },
     {
         "origem": "P_7000014279_08673010",
@@ -17065,7 +20295,9 @@ const FLUXOS_DATA = [
         "volume": 5000,
         "movimentacoes": 1,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_7000014279_08673010"
     },
     {
         "origem": "P_7000009110_61890000",
@@ -17073,7 +20305,9 @@ const FLUXOS_DATA = [
         "volume": 36000,
         "movimentacoes": 6,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_7000009110_61890000"
     },
     {
         "origem": "P_7000018634_06835701",
@@ -17081,7 +20315,9 @@ const FLUXOS_DATA = [
         "volume": 2895,
         "movimentacoes": 3,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_7000018634_06835701"
     },
     {
         "origem": "P_7000014674_13250250",
@@ -17089,7 +20325,9 @@ const FLUXOS_DATA = [
         "volume": 19,
         "movimentacoes": 3,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_7000014674_13250250"
     },
     {
         "origem": "P_3000000341_11410410",
@@ -17097,7 +20335,9 @@ const FLUXOS_DATA = [
         "volume": 10,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_3000000341_11410410"
     },
     {
         "origem": "P_7000018986_07776235",
@@ -17105,7 +20345,9 @@ const FLUXOS_DATA = [
         "volume": 16,
         "movimentacoes": 6,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_7000018986_07776235"
     },
     {
         "origem": "P_7000019920_08320280",
@@ -17113,7 +20355,9 @@ const FLUXOS_DATA = [
         "volume": 7000,
         "movimentacoes": 6,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_7000019920_08320280"
     },
     {
         "origem": "P_7000016835_30441055",
@@ -17121,7 +20365,9 @@ const FLUXOS_DATA = [
         "volume": 456,
         "movimentacoes": 3,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_7000016835_30441055"
     },
     {
         "origem": "P_7000071015_17740000",
@@ -17129,7 +20375,9 @@ const FLUXOS_DATA = [
         "volume": 72,
         "movimentacoes": 4,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_7000071015_17740000"
     },
     {
         "origem": "P_7000016882_20031902",
@@ -17137,7 +20385,9 @@ const FLUXOS_DATA = [
         "volume": 400,
         "movimentacoes": 6,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_7000016882_20031902"
     },
     {
         "origem": "P_7000019797_13710000",
@@ -17145,7 +20395,9 @@ const FLUXOS_DATA = [
         "volume": 980,
         "movimentacoes": 3,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_7000019797_13710000"
     },
     {
         "origem": "P_7000020425_06422122",
@@ -17153,7 +20405,9 @@ const FLUXOS_DATA = [
         "volume": 830,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_7000020425_06422122"
     },
     {
         "origem": "P_7000020635_06790160",
@@ -17161,7 +20415,9 @@ const FLUXOS_DATA = [
         "volume": 3132,
         "movimentacoes": 7,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_7000020635_06790160"
     },
     {
         "origem": "P_7000008031_15350350",
@@ -17169,7 +20425,9 @@ const FLUXOS_DATA = [
         "volume": 1,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_7000008031_15350350"
     },
     {
         "origem": "P_7000059039_06680056",
@@ -17177,7 +20435,9 @@ const FLUXOS_DATA = [
         "volume": 2994,
         "movimentacoes": 6,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_7000059039_06680056"
     },
     {
         "origem": "P_7000038540_28470000",
@@ -17185,7 +20445,9 @@ const FLUXOS_DATA = [
         "volume": 56,
         "movimentacoes": 8,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_7000038540_28470000"
     },
     {
         "origem": "P_7000019502_35547000",
@@ -17193,7 +20455,9 @@ const FLUXOS_DATA = [
         "volume": 4196,
         "movimentacoes": 15,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_7000019502_35547000"
     },
     {
         "origem": "P_7000032351_02143060",
@@ -17201,7 +20465,9 @@ const FLUXOS_DATA = [
         "volume": 29,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_7000032351_02143060"
     },
     {
         "origem": "P_7000035977_29124076",
@@ -17209,7 +20475,9 @@ const FLUXOS_DATA = [
         "volume": 3,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_7000035977_29124076"
     },
     {
         "origem": "P_7000002834_09380170",
@@ -17217,7 +20485,9 @@ const FLUXOS_DATA = [
         "volume": 1626,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_7000002834_09380170"
     },
     {
         "origem": "P_7000008209_05426100",
@@ -17225,7 +20495,9 @@ const FLUXOS_DATA = [
         "volume": 56,
         "movimentacoes": 5,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_7000008209_05426100"
     },
     {
         "origem": "P_7000047986_13477250",
@@ -17233,7 +20505,9 @@ const FLUXOS_DATA = [
         "volume": 18,
         "movimentacoes": 6,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_7000047986_13477250"
     },
     {
         "origem": "P_7000017408_08900000",
@@ -17241,7 +20515,9 @@ const FLUXOS_DATA = [
         "volume": 354,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_7000017408_08900000"
     },
     {
         "origem": "P_7000021663_02552020",
@@ -17249,7 +20525,9 @@ const FLUXOS_DATA = [
         "volume": 26,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_7000021663_02552020"
     },
     {
         "origem": "P_7000015682_06790160",
@@ -17257,7 +20535,9 @@ const FLUXOS_DATA = [
         "volume": 672,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_7000015682_06790160"
     },
     {
         "origem": "P_7000037848_09380170",
@@ -17265,7 +20545,9 @@ const FLUXOS_DATA = [
         "volume": 2034,
         "movimentacoes": 6,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_7000037848_09380170"
     },
     {
         "origem": "P_7000029703_12960000",
@@ -17273,7 +20555,9 @@ const FLUXOS_DATA = [
         "volume": 1200,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_7000029703_12960000"
     },
     {
         "origem": "P_7000018986_07776235",
@@ -17281,7 +20565,9 @@ const FLUXOS_DATA = [
         "volume": 10740,
         "movimentacoes": 62,
         "material": "Tubos flexíveis",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_7000018986_07776235"
     },
     {
         "origem": "P_7000016598_18440000",
@@ -17289,7 +20575,9 @@ const FLUXOS_DATA = [
         "volume": 300,
         "movimentacoes": 1,
         "material": "Tubos flexíveis",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_7000016598_18440000"
     },
     {
         "origem": "P_7000047953_13318000",
@@ -17297,7 +20585,9 @@ const FLUXOS_DATA = [
         "volume": 15000,
         "movimentacoes": 3,
         "material": "Tubos flexíveis",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_7000047953_13318000"
     },
     {
         "origem": "P_7000002368_07776235",
@@ -17305,7 +20595,9 @@ const FLUXOS_DATA = [
         "volume": 576,
         "movimentacoes": 2,
         "material": "Tubos flexíveis",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_7000002368_07776235"
     },
     {
         "origem": "P_7000016598_18440000",
@@ -17313,7 +20605,9 @@ const FLUXOS_DATA = [
         "volume": 21966,
         "movimentacoes": 30,
         "material": "Tubos rígidos",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D020",
+        "parceiro": "P_7000016598_18440000"
     },
     {
         "origem": "P_7000016468_14401426",
@@ -17321,7 +20615,9 @@ const FLUXOS_DATA = [
         "volume": 1860,
         "movimentacoes": 2,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D075",
+        "parceiro": "P_7000016468_14401426"
     },
     {
         "origem": "P_7000014785_11660660",
@@ -17329,7 +20625,9 @@ const FLUXOS_DATA = [
         "volume": 19000,
         "movimentacoes": 5,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D075",
+        "parceiro": "P_7000014785_11660660"
     },
     {
         "origem": "P_7000033719_12072250",
@@ -17337,7 +20635,9 @@ const FLUXOS_DATA = [
         "volume": 288338,
         "movimentacoes": 39,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D075",
+        "parceiro": "P_7000033719_12072250"
     },
     {
         "origem": "P_7000009012_03502020",
@@ -17345,7 +20645,9 @@ const FLUXOS_DATA = [
         "volume": 424515,
         "movimentacoes": 28,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D075",
+        "parceiro": "P_7000009012_03502020"
     },
     {
         "origem": "P_7000067890_08290220",
@@ -17353,7 +20655,9 @@ const FLUXOS_DATA = [
         "volume": 3600,
         "movimentacoes": 6,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D075",
+        "parceiro": "P_7000067890_08290220"
     },
     {
         "origem": "P_7000019920_08320280",
@@ -17361,7 +20665,9 @@ const FLUXOS_DATA = [
         "volume": 9370,
         "movimentacoes": 17,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D075",
+        "parceiro": "P_7000019920_08320280"
     },
     {
         "origem": "P_7000048172_14340000",
@@ -17369,7 +20675,9 @@ const FLUXOS_DATA = [
         "volume": 2708,
         "movimentacoes": 12,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D075",
+        "parceiro": "P_7000048172_14340000"
     },
     {
         "origem": "P_7000019760_02046090",
@@ -17377,7 +20685,9 @@ const FLUXOS_DATA = [
         "volume": 265,
         "movimentacoes": 3,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D075",
+        "parceiro": "P_7000019760_02046090"
     },
     {
         "origem": "P_7000015122_08320280",
@@ -17385,7 +20695,9 @@ const FLUXOS_DATA = [
         "volume": 64,
         "movimentacoes": 2,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D075",
+        "parceiro": "P_7000015122_08320280"
     },
     {
         "origem": "P_7000016932_12630000",
@@ -17393,7 +20705,9 @@ const FLUXOS_DATA = [
         "volume": 23,
         "movimentacoes": 2,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D075",
+        "parceiro": "P_7000016932_12630000"
     },
     {
         "origem": "P_7000021004_06703570",
@@ -17401,7 +20715,9 @@ const FLUXOS_DATA = [
         "volume": 80,
         "movimentacoes": 4,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D075",
+        "parceiro": "P_7000021004_06703570"
     },
     {
         "origem": "P_7000033580_99950000",
@@ -17409,7 +20725,9 @@ const FLUXOS_DATA = [
         "volume": 60,
         "movimentacoes": 5,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D075",
+        "parceiro": "P_7000033580_99950000"
     },
     {
         "origem": "P_7000018782_12929899",
@@ -17417,7 +20735,9 @@ const FLUXOS_DATA = [
         "volume": 50,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D075",
+        "parceiro": "P_7000018782_12929899"
     },
     {
         "origem": "P_7000018986_07776235",
@@ -17425,7 +20745,9 @@ const FLUXOS_DATA = [
         "volume": 80,
         "movimentacoes": 4,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D075",
+        "parceiro": "P_7000018986_07776235"
     },
     {
         "origem": "P_7000019920_08320280",
@@ -17433,7 +20755,9 @@ const FLUXOS_DATA = [
         "volume": 11000,
         "movimentacoes": 7,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D075",
+        "parceiro": "P_7000019920_08320280"
     },
     {
         "origem": "P_7000016007_11015015",
@@ -17441,7 +20765,9 @@ const FLUXOS_DATA = [
         "volume": 958,
         "movimentacoes": 4,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D075",
+        "parceiro": "P_7000016007_11015015"
     },
     {
         "origem": "P_7000016882_20031902",
@@ -17449,7 +20775,9 @@ const FLUXOS_DATA = [
         "volume": 1710,
         "movimentacoes": 9,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D075",
+        "parceiro": "P_7000016882_20031902"
     },
     {
         "origem": "P_7000019797_13710000",
@@ -17457,7 +20785,9 @@ const FLUXOS_DATA = [
         "volume": 2150,
         "movimentacoes": 15,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D075",
+        "parceiro": "P_7000019797_13710000"
     },
     {
         "origem": "P_7000020425_06422122",
@@ -17465,7 +20795,9 @@ const FLUXOS_DATA = [
         "volume": 4815,
         "movimentacoes": 9,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D075",
+        "parceiro": "P_7000020425_06422122"
     },
     {
         "origem": "P_7000016598_18440000",
@@ -17473,7 +20805,9 @@ const FLUXOS_DATA = [
         "volume": 1078,
         "movimentacoes": 5,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D075",
+        "parceiro": "P_7000016598_18440000"
     },
     {
         "origem": "P_7000030242_13505600",
@@ -17481,7 +20815,9 @@ const FLUXOS_DATA = [
         "volume": 50,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D075",
+        "parceiro": "P_7000030242_13505600"
     },
     {
         "origem": "P_7000020635_06790160",
@@ -17489,7 +20825,9 @@ const FLUXOS_DATA = [
         "volume": 396,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D075",
+        "parceiro": "P_7000020635_06790160"
     },
     {
         "origem": "P_7000019502_35547000",
@@ -17497,7 +20835,9 @@ const FLUXOS_DATA = [
         "volume": 499,
         "movimentacoes": 4,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D075",
+        "parceiro": "P_7000019502_35547000"
     },
     {
         "origem": "P_7000032351_02143060",
@@ -17505,7 +20845,9 @@ const FLUXOS_DATA = [
         "volume": 63,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D075",
+        "parceiro": "P_7000032351_02143060"
     },
     {
         "origem": "P_7000019400_18087156",
@@ -17513,7 +20855,9 @@ const FLUXOS_DATA = [
         "volume": 238,
         "movimentacoes": 41,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D075",
+        "parceiro": "P_7000019400_18087156"
     },
     {
         "origem": "P_7000006413_05656020",
@@ -17521,7 +20865,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D075",
+        "parceiro": "P_7000006413_05656020"
     },
     {
         "origem": "P_7000007917_61900360",
@@ -17529,7 +20875,9 @@ const FLUXOS_DATA = [
         "volume": 46,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D075",
+        "parceiro": "P_7000007917_61900360"
     },
     {
         "origem": "P_7000014034_02552020",
@@ -17537,7 +20885,9 @@ const FLUXOS_DATA = [
         "volume": 15,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D075",
+        "parceiro": "P_7000014034_02552020"
     },
     {
         "origem": "P_7000008209_05426100",
@@ -17545,7 +20895,9 @@ const FLUXOS_DATA = [
         "volume": 22,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D075",
+        "parceiro": "P_7000008209_05426100"
     },
     {
         "origem": "P_7000017408_08900000",
@@ -17553,7 +20905,9 @@ const FLUXOS_DATA = [
         "volume": 3568,
         "movimentacoes": 8,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D075",
+        "parceiro": "P_7000017408_08900000"
     },
     {
         "origem": "P_7000005483_09260760",
@@ -17561,7 +20915,9 @@ const FLUXOS_DATA = [
         "volume": 3733,
         "movimentacoes": 7,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D075",
+        "parceiro": "P_7000005483_09260760"
     },
     {
         "origem": "P_7000012058_17495288",
@@ -17569,7 +20925,9 @@ const FLUXOS_DATA = [
         "volume": 287,
         "movimentacoes": 4,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D075",
+        "parceiro": "P_7000012058_17495288"
     },
     {
         "origem": "P_7000010658_02124001",
@@ -17577,7 +20935,9 @@ const FLUXOS_DATA = [
         "volume": 12,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D075",
+        "parceiro": "P_7000010658_02124001"
     },
     {
         "origem": "P_7000037848_09380170",
@@ -17585,7 +20945,9 @@ const FLUXOS_DATA = [
         "volume": 320,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D075",
+        "parceiro": "P_7000037848_09380170"
     },
     {
         "origem": "P_7000018986_07776235",
@@ -17593,7 +20955,9 @@ const FLUXOS_DATA = [
         "volume": 3432,
         "movimentacoes": 25,
         "material": "Tubos flexíveis",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D075",
+        "parceiro": "P_7000018986_07776235"
     },
     {
         "origem": "P_7000016598_18440000",
@@ -17601,7 +20965,9 @@ const FLUXOS_DATA = [
         "volume": 1008,
         "movimentacoes": 4,
         "material": "Tubos flexíveis",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D075",
+        "parceiro": "P_7000016598_18440000"
     },
     {
         "origem": "P_7000030242_13505600",
@@ -17609,7 +20975,9 @@ const FLUXOS_DATA = [
         "volume": 327884,
         "movimentacoes": 221,
         "material": "Tubos flexíveis",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D075",
+        "parceiro": "P_7000030242_13505600"
     },
     {
         "origem": "P_7000047953_13318000",
@@ -17617,7 +20985,9 @@ const FLUXOS_DATA = [
         "volume": 28000,
         "movimentacoes": 4,
         "material": "Tubos flexíveis",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D075",
+        "parceiro": "P_7000047953_13318000"
     },
     {
         "origem": "P_7000002368_07776235",
@@ -17625,7 +20995,9 @@ const FLUXOS_DATA = [
         "volume": 19056,
         "movimentacoes": 86,
         "material": "Tubos flexíveis",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D075",
+        "parceiro": "P_7000002368_07776235"
     },
     {
         "origem": "P_7000007747_13505505",
@@ -17633,7 +21005,9 @@ const FLUXOS_DATA = [
         "volume": 43600,
         "movimentacoes": 16,
         "material": "Tubos flexíveis",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D075",
+        "parceiro": "P_7000007747_13505505"
     },
     {
         "origem": "P_7000016598_18440000",
@@ -17641,7 +21015,9 @@ const FLUXOS_DATA = [
         "volume": 28446,
         "movimentacoes": 56,
         "material": "Tubos rígidos",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D075",
+        "parceiro": "P_7000016598_18440000"
     },
     {
         "origem": "P_7000030242_13505600",
@@ -17649,7 +21025,9 @@ const FLUXOS_DATA = [
         "volume": 3000,
         "movimentacoes": 18,
         "material": "Tubos rígidos",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D075",
+        "parceiro": "P_7000030242_13505600"
     },
     {
         "origem": "P_7000016468_14401426",
@@ -17657,7 +21035,9 @@ const FLUXOS_DATA = [
         "volume": 400,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D030",
+        "parceiro": "P_7000016468_14401426"
     },
     {
         "origem": "P_7000014785_11660660",
@@ -17665,7 +21045,9 @@ const FLUXOS_DATA = [
         "volume": 9500,
         "movimentacoes": 3,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D030",
+        "parceiro": "P_7000014785_11660660"
     },
     {
         "origem": "P_7000016882_20031902",
@@ -17673,7 +21055,9 @@ const FLUXOS_DATA = [
         "volume": 880,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D030",
+        "parceiro": "P_7000016882_20031902"
     },
     {
         "origem": "P_7000003015_07747300",
@@ -17681,7 +21065,9 @@ const FLUXOS_DATA = [
         "volume": 26,
         "movimentacoes": 1,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D030",
+        "parceiro": "P_7000003015_07747300"
     },
     {
         "origem": "P_7000016468_14401426",
@@ -17689,7 +21075,9 @@ const FLUXOS_DATA = [
         "volume": 1800,
         "movimentacoes": 2,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D030",
+        "parceiro": "P_7000016468_14401426"
     },
     {
         "origem": "P_7000019088_93180000",
@@ -17697,7 +21085,9 @@ const FLUXOS_DATA = [
         "volume": 20,
         "movimentacoes": 10,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D030",
+        "parceiro": "P_7000019088_93180000"
     },
     {
         "origem": "P_7000033719_12072250",
@@ -17705,7 +21095,9 @@ const FLUXOS_DATA = [
         "volume": 448235,
         "movimentacoes": 62,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D030",
+        "parceiro": "P_7000033719_12072250"
     },
     {
         "origem": "P_7000009012_03502020",
@@ -17713,7 +21105,9 @@ const FLUXOS_DATA = [
         "volume": 342250,
         "movimentacoes": 25,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D030",
+        "parceiro": "P_7000009012_03502020"
     },
     {
         "origem": "P_7000067890_08290220",
@@ -17721,7 +21115,9 @@ const FLUXOS_DATA = [
         "volume": 1200,
         "movimentacoes": 4,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D030",
+        "parceiro": "P_7000067890_08290220"
     },
     {
         "origem": "P_7000019920_08320280",
@@ -17729,7 +21125,9 @@ const FLUXOS_DATA = [
         "volume": 45846,
         "movimentacoes": 23,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D030",
+        "parceiro": "P_7000019920_08320280"
     },
     {
         "origem": "P_7000017323_04580000",
@@ -17737,7 +21135,9 @@ const FLUXOS_DATA = [
         "volume": 400,
         "movimentacoes": 4,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D030",
+        "parceiro": "P_7000017323_04580000"
     },
     {
         "origem": "P_7000014073_11669320",
@@ -17745,7 +21145,9 @@ const FLUXOS_DATA = [
         "volume": 2580,
         "movimentacoes": 29,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D030",
+        "parceiro": "P_7000014073_11669320"
     },
     {
         "origem": "P_7000048172_14340000",
@@ -17753,7 +21155,9 @@ const FLUXOS_DATA = [
         "volume": 5182,
         "movimentacoes": 51,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D030",
+        "parceiro": "P_7000048172_14340000"
     },
     {
         "origem": "P_7000003745_05382010",
@@ -17761,7 +21165,9 @@ const FLUXOS_DATA = [
         "volume": 1560,
         "movimentacoes": 16,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D030",
+        "parceiro": "P_7000003745_05382010"
     },
     {
         "origem": "P_7000040109_08790260",
@@ -17769,7 +21175,9 @@ const FLUXOS_DATA = [
         "volume": 1502,
         "movimentacoes": 41,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D030",
+        "parceiro": "P_7000040109_08790260"
     },
     {
         "origem": "P_7000019760_02046090",
@@ -17777,7 +21185,9 @@ const FLUXOS_DATA = [
         "volume": 1265,
         "movimentacoes": 4,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D030",
+        "parceiro": "P_7000019760_02046090"
     },
     {
         "origem": "P_7000015122_08320280",
@@ -17785,7 +21195,9 @@ const FLUXOS_DATA = [
         "volume": 22608,
         "movimentacoes": 6,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D030",
+        "parceiro": "P_7000015122_08320280"
     },
     {
         "origem": "P_7000016932_12630000",
@@ -17793,7 +21205,9 @@ const FLUXOS_DATA = [
         "volume": 30,
         "movimentacoes": 3,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D030",
+        "parceiro": "P_7000016932_12630000"
     },
     {
         "origem": "P_7000021663_02552020",
@@ -17801,7 +21215,9 @@ const FLUXOS_DATA = [
         "volume": 5600,
         "movimentacoes": 2,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D030",
+        "parceiro": "P_7000021663_02552020"
     },
     {
         "origem": "P_7000021004_06703570",
@@ -17809,7 +21225,9 @@ const FLUXOS_DATA = [
         "volume": 9600,
         "movimentacoes": 18,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D030",
+        "parceiro": "P_7000021004_06703570"
     },
     {
         "origem": "P_7000033580_99950000",
@@ -17817,7 +21235,9 @@ const FLUXOS_DATA = [
         "volume": 50,
         "movimentacoes": 5,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D030",
+        "parceiro": "P_7000033580_99950000"
     },
     {
         "origem": "P_7000018782_12929899",
@@ -17825,7 +21245,9 @@ const FLUXOS_DATA = [
         "volume": 150,
         "movimentacoes": 6,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D030",
+        "parceiro": "P_7000018782_12929899"
     },
     {
         "origem": "P_7000017691_04559003",
@@ -17833,7 +21255,9 @@ const FLUXOS_DATA = [
         "volume": 285,
         "movimentacoes": 39,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D030",
+        "parceiro": "P_7000017691_04559003"
     },
     {
         "origem": "P_3000000348_05419000",
@@ -17841,7 +21265,9 @@ const FLUXOS_DATA = [
         "volume": 10,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D030",
+        "parceiro": "P_3000000348_05419000"
     },
     {
         "origem": "P_7000017217_04311000",
@@ -17849,7 +21275,9 @@ const FLUXOS_DATA = [
         "volume": 3614,
         "movimentacoes": 36,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D030",
+        "parceiro": "P_7000017217_04311000"
     },
     {
         "origem": "P_7000018986_07776235",
@@ -17857,7 +21285,9 @@ const FLUXOS_DATA = [
         "volume": 3731,
         "movimentacoes": 100,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D030",
+        "parceiro": "P_7000018986_07776235"
     },
     {
         "origem": "P_7000019920_08320280",
@@ -17865,7 +21295,9 @@ const FLUXOS_DATA = [
         "volume": 19544,
         "movimentacoes": 11,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D030",
+        "parceiro": "P_7000019920_08320280"
     },
     {
         "origem": "P_7000016835_30441055",
@@ -17873,7 +21305,9 @@ const FLUXOS_DATA = [
         "volume": 44,
         "movimentacoes": 8,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D030",
+        "parceiro": "P_7000016835_30441055"
     },
     {
         "origem": "P_7000016007_11015015",
@@ -17881,7 +21315,9 @@ const FLUXOS_DATA = [
         "volume": 409,
         "movimentacoes": 6,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D030",
+        "parceiro": "P_7000016007_11015015"
     },
     {
         "origem": "P_7000071015_17740000",
@@ -17889,7 +21325,9 @@ const FLUXOS_DATA = [
         "volume": 32930,
         "movimentacoes": 130,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D030",
+        "parceiro": "P_7000071015_17740000"
     },
     {
         "origem": "P_7000016882_20031902",
@@ -17897,7 +21335,9 @@ const FLUXOS_DATA = [
         "volume": 2403,
         "movimentacoes": 8,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D030",
+        "parceiro": "P_7000016882_20031902"
     },
     {
         "origem": "P_7000019797_13710000",
@@ -17905,7 +21345,9 @@ const FLUXOS_DATA = [
         "volume": 3315,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D030",
+        "parceiro": "P_7000019797_13710000"
     },
     {
         "origem": "P_7000020425_06422122",
@@ -17913,7 +21355,9 @@ const FLUXOS_DATA = [
         "volume": 1733,
         "movimentacoes": 4,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D030",
+        "parceiro": "P_7000020425_06422122"
     },
     {
         "origem": "P_7000016598_18440000",
@@ -17921,7 +21365,9 @@ const FLUXOS_DATA = [
         "volume": 900,
         "movimentacoes": 4,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D030",
+        "parceiro": "P_7000016598_18440000"
     },
     {
         "origem": "P_7000020635_06790160",
@@ -17929,7 +21375,9 @@ const FLUXOS_DATA = [
         "volume": 2734,
         "movimentacoes": 8,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D030",
+        "parceiro": "P_7000020635_06790160"
     },
     {
         "origem": "P_7000008031_15350350",
@@ -17937,7 +21385,9 @@ const FLUXOS_DATA = [
         "volume": 388,
         "movimentacoes": 24,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D030",
+        "parceiro": "P_7000008031_15350350"
     },
     {
         "origem": "P_7000038540_28470000",
@@ -17945,7 +21395,9 @@ const FLUXOS_DATA = [
         "volume": 46,
         "movimentacoes": 6,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D030",
+        "parceiro": "P_7000038540_28470000"
     },
     {
         "origem": "P_7000019502_35547000",
@@ -17953,7 +21405,9 @@ const FLUXOS_DATA = [
         "volume": 1336,
         "movimentacoes": 10,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D030",
+        "parceiro": "P_7000019502_35547000"
     },
     {
         "origem": "P_7000032351_02143060",
@@ -17961,7 +21415,9 @@ const FLUXOS_DATA = [
         "volume": 5721,
         "movimentacoes": 33,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D030",
+        "parceiro": "P_7000032351_02143060"
     },
     {
         "origem": "P_7000019400_18087156",
@@ -17969,7 +21425,9 @@ const FLUXOS_DATA = [
         "volume": 5492,
         "movimentacoes": 155,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D030",
+        "parceiro": "P_7000019400_18087156"
     },
     {
         "origem": "P_7000035977_29124076",
@@ -17977,7 +21435,9 @@ const FLUXOS_DATA = [
         "volume": 23,
         "movimentacoes": 5,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D030",
+        "parceiro": "P_7000035977_29124076"
     },
     {
         "origem": "P_7000015122_08320280",
@@ -17985,7 +21445,9 @@ const FLUXOS_DATA = [
         "volume": 204,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D030",
+        "parceiro": "P_7000015122_08320280"
     },
     {
         "origem": "P_7000005995_02143060",
@@ -17993,7 +21455,9 @@ const FLUXOS_DATA = [
         "volume": 372,
         "movimentacoes": 10,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D030",
+        "parceiro": "P_7000005995_02143060"
     },
     {
         "origem": "P_7000001662_29124124",
@@ -18001,7 +21465,9 @@ const FLUXOS_DATA = [
         "volume": 432,
         "movimentacoes": 6,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D030",
+        "parceiro": "P_7000001662_29124124"
     },
     {
         "origem": "P_7000070971_61900360",
@@ -18009,7 +21475,9 @@ const FLUXOS_DATA = [
         "volume": 80,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D030",
+        "parceiro": "P_7000070971_61900360"
     },
     {
         "origem": "P_7000008209_05426100",
@@ -18017,7 +21485,9 @@ const FLUXOS_DATA = [
         "volume": 180,
         "movimentacoes": 10,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D030",
+        "parceiro": "P_7000008209_05426100"
     },
     {
         "origem": "P_7000047986_13477250",
@@ -18025,7 +21495,9 @@ const FLUXOS_DATA = [
         "volume": 265,
         "movimentacoes": 3,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D030",
+        "parceiro": "P_7000047986_13477250"
     },
     {
         "origem": "P_7000017408_08900000",
@@ -18033,7 +21505,9 @@ const FLUXOS_DATA = [
         "volume": 672,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D030",
+        "parceiro": "P_7000017408_08900000"
     },
     {
         "origem": "P_7000037848_09380170",
@@ -18041,7 +21515,9 @@ const FLUXOS_DATA = [
         "volume": 48,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D030",
+        "parceiro": "P_7000037848_09380170"
     },
     {
         "origem": "P_7000015976_05001000",
@@ -18049,7 +21525,9 @@ const FLUXOS_DATA = [
         "volume": 8,
         "movimentacoes": 4,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D030",
+        "parceiro": "P_7000015976_05001000"
     },
     {
         "origem": "P_7000002905_18087087",
@@ -18057,7 +21535,9 @@ const FLUXOS_DATA = [
         "volume": 24,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D030",
+        "parceiro": "P_7000002905_18087087"
     },
     {
         "origem": "P_7000047953_13318000",
@@ -18065,7 +21545,9 @@ const FLUXOS_DATA = [
         "volume": 33000,
         "movimentacoes": 4,
         "material": "Tubos flexíveis",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D030",
+        "parceiro": "P_7000047953_13318000"
     },
     {
         "origem": "P_7000016598_18440000",
@@ -18073,7 +21555,9 @@ const FLUXOS_DATA = [
         "volume": 14688,
         "movimentacoes": 19,
         "material": "Tubos rígidos",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D030",
+        "parceiro": "P_7000016598_18440000"
     },
     {
         "origem": "P_7000016468_14401426",
@@ -18081,7 +21565,9 @@ const FLUXOS_DATA = [
         "volume": 4528,
         "movimentacoes": 2,
         "material": "Componentes de Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D040",
+        "parceiro": "P_7000016468_14401426"
     },
     {
         "origem": "P_7000019088_93180000",
@@ -18089,7 +21575,9 @@ const FLUXOS_DATA = [
         "volume": 16,
         "movimentacoes": 4,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D040",
+        "parceiro": "P_7000019088_93180000"
     },
     {
         "origem": "P_7000009012_03502020",
@@ -18097,7 +21585,9 @@ const FLUXOS_DATA = [
         "volume": 199500,
         "movimentacoes": 13,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D040",
+        "parceiro": "P_7000009012_03502020"
     },
     {
         "origem": "P_7000014073_11669320",
@@ -18105,7 +21595,9 @@ const FLUXOS_DATA = [
         "volume": 368,
         "movimentacoes": 20,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D040",
+        "parceiro": "P_7000014073_11669320"
     },
     {
         "origem": "P_7000048172_14340000",
@@ -18113,7 +21605,9 @@ const FLUXOS_DATA = [
         "volume": 1,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D040",
+        "parceiro": "P_7000048172_14340000"
     },
     {
         "origem": "P_7000019760_02046090",
@@ -18121,7 +21615,9 @@ const FLUXOS_DATA = [
         "volume": 310,
         "movimentacoes": 5,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D040",
+        "parceiro": "P_7000019760_02046090"
     },
     {
         "origem": "P_7000017408_08900000",
@@ -18129,7 +21625,9 @@ const FLUXOS_DATA = [
         "volume": 339,
         "movimentacoes": 35,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D040",
+        "parceiro": "P_7000017408_08900000"
     },
     {
         "origem": "P_7000016932_12630000",
@@ -18137,7 +21635,9 @@ const FLUXOS_DATA = [
         "volume": 225,
         "movimentacoes": 10,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D040",
+        "parceiro": "P_7000016932_12630000"
     },
     {
         "origem": "P_7000011789_18130130",
@@ -18145,7 +21645,9 @@ const FLUXOS_DATA = [
         "volume": 4,
         "movimentacoes": 2,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D040",
+        "parceiro": "P_7000011789_18130130"
     },
     {
         "origem": "P_7000022742_13213080",
@@ -18153,7 +21655,9 @@ const FLUXOS_DATA = [
         "volume": 3,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D040",
+        "parceiro": "P_7000022742_13213080"
     },
     {
         "origem": "P_7000077946_06835701",
@@ -18161,7 +21665,9 @@ const FLUXOS_DATA = [
         "volume": 9,
         "movimentacoes": 7,
         "material": "Hidrômetros",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D040",
+        "parceiro": "P_7000077946_06835701"
     },
     {
         "origem": "P_7000017217_04311000",
@@ -18169,7 +21675,9 @@ const FLUXOS_DATA = [
         "volume": 501,
         "movimentacoes": 20,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D040",
+        "parceiro": "P_7000017217_04311000"
     },
     {
         "origem": "P_7000018986_07776235",
@@ -18177,7 +21685,9 @@ const FLUXOS_DATA = [
         "volume": 825,
         "movimentacoes": 33,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D040",
+        "parceiro": "P_7000018986_07776235"
     },
     {
         "origem": "P_7000016835_30441055",
@@ -18185,7 +21695,9 @@ const FLUXOS_DATA = [
         "volume": 6,
         "movimentacoes": 3,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D040",
+        "parceiro": "P_7000016835_30441055"
     },
     {
         "origem": "P_7000016007_11015015",
@@ -18193,7 +21705,9 @@ const FLUXOS_DATA = [
         "volume": 2282,
         "movimentacoes": 11,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D040",
+        "parceiro": "P_7000016007_11015015"
     },
     {
         "origem": "P_7000071015_17740000",
@@ -18201,7 +21715,9 @@ const FLUXOS_DATA = [
         "volume": 40715,
         "movimentacoes": 77,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D040",
+        "parceiro": "P_7000071015_17740000"
     },
     {
         "origem": "P_7000016882_20031902",
@@ -18209,7 +21725,9 @@ const FLUXOS_DATA = [
         "volume": 620,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D040",
+        "parceiro": "P_7000016882_20031902"
     },
     {
         "origem": "P_7000019797_13710000",
@@ -18217,7 +21735,9 @@ const FLUXOS_DATA = [
         "volume": 9093,
         "movimentacoes": 15,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D040",
+        "parceiro": "P_7000019797_13710000"
     },
     {
         "origem": "P_7000016598_18440000",
@@ -18225,7 +21745,9 @@ const FLUXOS_DATA = [
         "volume": 5501,
         "movimentacoes": 8,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D040",
+        "parceiro": "P_7000016598_18440000"
     },
     {
         "origem": "P_7000020635_06790160",
@@ -18233,7 +21755,9 @@ const FLUXOS_DATA = [
         "volume": 15883,
         "movimentacoes": 15,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D040",
+        "parceiro": "P_7000020635_06790160"
     },
     {
         "origem": "P_7000008031_15350350",
@@ -18241,7 +21765,9 @@ const FLUXOS_DATA = [
         "volume": 124,
         "movimentacoes": 48,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D040",
+        "parceiro": "P_7000008031_15350350"
     },
     {
         "origem": "P_7000059039_06680056",
@@ -18249,7 +21775,9 @@ const FLUXOS_DATA = [
         "volume": 4733,
         "movimentacoes": 10,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D040",
+        "parceiro": "P_7000059039_06680056"
     },
     {
         "origem": "P_7000038540_28470000",
@@ -18257,7 +21785,9 @@ const FLUXOS_DATA = [
         "volume": 1184,
         "movimentacoes": 27,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D040",
+        "parceiro": "P_7000038540_28470000"
     },
     {
         "origem": "P_7000019502_35547000",
@@ -18265,7 +21795,9 @@ const FLUXOS_DATA = [
         "volume": 4197,
         "movimentacoes": 20,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D040",
+        "parceiro": "P_7000019502_35547000"
     },
     {
         "origem": "P_7000019400_18087156",
@@ -18273,7 +21805,9 @@ const FLUXOS_DATA = [
         "volume": 1117,
         "movimentacoes": 76,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D040",
+        "parceiro": "P_7000019400_18087156"
     },
     {
         "origem": "P_7000035977_29124076",
@@ -18281,7 +21815,9 @@ const FLUXOS_DATA = [
         "volume": 4,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D040",
+        "parceiro": "P_7000035977_29124076"
     },
     {
         "origem": "P_7000015122_08320280",
@@ -18289,7 +21825,9 @@ const FLUXOS_DATA = [
         "volume": 12000,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D040",
+        "parceiro": "P_7000015122_08320280"
     },
     {
         "origem": "P_7000006413_05656020",
@@ -18297,7 +21835,9 @@ const FLUXOS_DATA = [
         "volume": 16,
         "movimentacoes": 4,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D040",
+        "parceiro": "P_7000006413_05656020"
     },
     {
         "origem": "P_7000005995_02143060",
@@ -18305,7 +21845,9 @@ const FLUXOS_DATA = [
         "volume": 366,
         "movimentacoes": 12,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D040",
+        "parceiro": "P_7000005995_02143060"
     },
     {
         "origem": "P_7000001662_29124124",
@@ -18313,7 +21855,9 @@ const FLUXOS_DATA = [
         "volume": 2,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D040",
+        "parceiro": "P_7000001662_29124124"
     },
     {
         "origem": "P_7000002368_07776235",
@@ -18321,7 +21865,9 @@ const FLUXOS_DATA = [
         "volume": 112,
         "movimentacoes": 10,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D040",
+        "parceiro": "P_7000002368_07776235"
     },
     {
         "origem": "P_7000014034_02552020",
@@ -18329,7 +21875,9 @@ const FLUXOS_DATA = [
         "volume": 3,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D040",
+        "parceiro": "P_7000014034_02552020"
     },
     {
         "origem": "P_7000070971_61900360",
@@ -18337,7 +21885,9 @@ const FLUXOS_DATA = [
         "volume": 1432,
         "movimentacoes": 20,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D040",
+        "parceiro": "P_7000070971_61900360"
     },
     {
         "origem": "P_7000008209_05426100",
@@ -18345,7 +21895,9 @@ const FLUXOS_DATA = [
         "volume": 47,
         "movimentacoes": 7,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D040",
+        "parceiro": "P_7000008209_05426100"
     },
     {
         "origem": "P_7000047986_13477250",
@@ -18353,7 +21905,9 @@ const FLUXOS_DATA = [
         "volume": 1,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D040",
+        "parceiro": "P_7000047986_13477250"
     },
     {
         "origem": "P_7000017408_08900000",
@@ -18361,7 +21915,9 @@ const FLUXOS_DATA = [
         "volume": 1124,
         "movimentacoes": 19,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D040",
+        "parceiro": "P_7000017408_08900000"
     },
     {
         "origem": "P_7000041943_09521320",
@@ -18369,7 +21925,9 @@ const FLUXOS_DATA = [
         "volume": 3,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D040",
+        "parceiro": "P_7000041943_09521320"
     },
     {
         "origem": "P_7000005483_09260760",
@@ -18377,7 +21935,9 @@ const FLUXOS_DATA = [
         "volume": 21977,
         "movimentacoes": 11,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D040",
+        "parceiro": "P_7000005483_09260760"
     },
     {
         "origem": "P_7000012058_17495288",
@@ -18385,7 +21945,9 @@ const FLUXOS_DATA = [
         "volume": 386,
         "movimentacoes": 12,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D040",
+        "parceiro": "P_7000012058_17495288"
     },
     {
         "origem": "P_7000010658_02124001",
@@ -18393,7 +21955,9 @@ const FLUXOS_DATA = [
         "volume": 12,
         "movimentacoes": 2,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D040",
+        "parceiro": "P_7000010658_02124001"
     },
     {
         "origem": "P_7000021663_02552020",
@@ -18401,7 +21965,9 @@ const FLUXOS_DATA = [
         "volume": 80,
         "movimentacoes": 4,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D040",
+        "parceiro": "P_7000021663_02552020"
     },
     {
         "origem": "P_7000003513_06401000",
@@ -18409,7 +21975,9 @@ const FLUXOS_DATA = [
         "volume": 14,
         "movimentacoes": 6,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D040",
+        "parceiro": "P_7000003513_06401000"
     },
     {
         "origem": "P_7000010625_09220720",
@@ -18417,7 +21985,9 @@ const FLUXOS_DATA = [
         "volume": 40,
         "movimentacoes": 4,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D040",
+        "parceiro": "P_7000010625_09220720"
     },
     {
         "origem": "P_7000015682_06790160",
@@ -18425,7 +21995,9 @@ const FLUXOS_DATA = [
         "volume": 336,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D040",
+        "parceiro": "P_7000015682_06790160"
     },
     {
         "origem": "P_3000000341_11410410",
@@ -18433,7 +22005,9 @@ const FLUXOS_DATA = [
         "volume": 2000,
         "movimentacoes": 1,
         "material": "Tubos flexíveis",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D040",
+        "parceiro": "P_3000000341_11410410"
     },
     {
         "origem": "P_7000018986_07776235",
@@ -18441,7 +22015,9 @@ const FLUXOS_DATA = [
         "volume": 1404,
         "movimentacoes": 12,
         "material": "Tubos flexíveis",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D040",
+        "parceiro": "P_7000018986_07776235"
     },
     {
         "origem": "P_7000016598_18440000",
@@ -18449,7 +22025,9 @@ const FLUXOS_DATA = [
         "volume": 1320,
         "movimentacoes": 1,
         "material": "Tubos flexíveis",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D040",
+        "parceiro": "P_7000016598_18440000"
     },
     {
         "origem": "P_7000030242_13505600",
@@ -18457,7 +22035,9 @@ const FLUXOS_DATA = [
         "volume": 239800,
         "movimentacoes": 63,
         "material": "Tubos flexíveis",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D040",
+        "parceiro": "P_7000030242_13505600"
     },
     {
         "origem": "P_7000047953_13318000",
@@ -18465,7 +22045,9 @@ const FLUXOS_DATA = [
         "volume": 133000,
         "movimentacoes": 8,
         "material": "Tubos flexíveis",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D040",
+        "parceiro": "P_7000047953_13318000"
     },
     {
         "origem": "P_7000002368_07776235",
@@ -18473,7 +22055,9 @@ const FLUXOS_DATA = [
         "volume": 384,
         "movimentacoes": 3,
         "material": "Tubos flexíveis",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D040",
+        "parceiro": "P_7000002368_07776235"
     },
     {
         "origem": "P_7000007747_13505505",
@@ -18481,7 +22065,9 @@ const FLUXOS_DATA = [
         "volume": 42584,
         "movimentacoes": 24,
         "material": "Tubos flexíveis",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D040",
+        "parceiro": "P_7000007747_13505505"
     },
     {
         "origem": "P_7000016598_18440000",
@@ -18489,7 +22075,9 @@ const FLUXOS_DATA = [
         "volume": 36768,
         "movimentacoes": 28,
         "material": "Tubos rígidos",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D040",
+        "parceiro": "P_7000016598_18440000"
     },
     {
         "origem": "P_7000030242_13505600",
@@ -18497,7 +22085,9 @@ const FLUXOS_DATA = [
         "volume": 11514,
         "movimentacoes": 42,
         "material": "Tubos rígidos",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D040",
+        "parceiro": "P_7000030242_13505600"
     },
     {
         "origem": "P_7000007747_13505505",
@@ -18505,7 +22095,9 @@ const FLUXOS_DATA = [
         "volume": 5004,
         "movimentacoes": 30,
         "material": "Tubos rígidos",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D040",
+        "parceiro": "P_7000007747_13505505"
     },
     {
         "origem": "P_7000019088_93180000",
@@ -18513,7 +22105,9 @@ const FLUXOS_DATA = [
         "volume": 1235,
         "movimentacoes": 99,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D002",
+        "parceiro": "P_7000019088_93180000"
     },
     {
         "origem": "P_7000017323_04580000",
@@ -18521,7 +22115,9 @@ const FLUXOS_DATA = [
         "volume": 400,
         "movimentacoes": 8,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D002",
+        "parceiro": "P_7000017323_04580000"
     },
     {
         "origem": "P_7000014073_11669320",
@@ -18529,7 +22125,9 @@ const FLUXOS_DATA = [
         "volume": 536,
         "movimentacoes": 64,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D002",
+        "parceiro": "P_7000014073_11669320"
     },
     {
         "origem": "P_7000048172_14340000",
@@ -18537,7 +22135,9 @@ const FLUXOS_DATA = [
         "volume": 800,
         "movimentacoes": 56,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D002",
+        "parceiro": "P_7000048172_14340000"
     },
     {
         "origem": "P_7000003745_05382010",
@@ -18545,7 +22145,9 @@ const FLUXOS_DATA = [
         "volume": 52,
         "movimentacoes": 4,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D002",
+        "parceiro": "P_7000003745_05382010"
     },
     {
         "origem": "P_7000019760_02046090",
@@ -18553,7 +22155,9 @@ const FLUXOS_DATA = [
         "volume": 700,
         "movimentacoes": 3,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D002",
+        "parceiro": "P_7000019760_02046090"
     },
     {
         "origem": "P_7000001501_09843400",
@@ -18561,7 +22165,9 @@ const FLUXOS_DATA = [
         "volume": 78,
         "movimentacoes": 12,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D002",
+        "parceiro": "P_7000001501_09843400"
     },
     {
         "origem": "P_7000021398_08485525",
@@ -18569,7 +22175,9 @@ const FLUXOS_DATA = [
         "volume": 209,
         "movimentacoes": 4,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D002",
+        "parceiro": "P_7000021398_08485525"
     },
     {
         "origem": "P_7000031443_92420530",
@@ -18577,7 +22185,9 @@ const FLUXOS_DATA = [
         "volume": 3541,
         "movimentacoes": 34,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D002",
+        "parceiro": "P_7000031443_92420530"
     },
     {
         "origem": "P_7000018590_13188900",
@@ -18585,7 +22195,9 @@ const FLUXOS_DATA = [
         "volume": 6971,
         "movimentacoes": 462,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D002",
+        "parceiro": "P_7000018590_13188900"
     },
     {
         "origem": "P_7000019405_06454000",
@@ -18593,7 +22205,9 @@ const FLUXOS_DATA = [
         "volume": 20,
         "movimentacoes": 5,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D002",
+        "parceiro": "P_7000019405_06454000"
     },
     {
         "origem": "P_7000079592_05089000",
@@ -18601,7 +22215,9 @@ const FLUXOS_DATA = [
         "volume": 202,
         "movimentacoes": 17,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D002",
+        "parceiro": "P_7000079592_05089000"
     },
     {
         "origem": "P_7000079600_83434715",
@@ -18609,7 +22225,9 @@ const FLUXOS_DATA = [
         "volume": 186,
         "movimentacoes": 8,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D002",
+        "parceiro": "P_7000079600_83434715"
     },
     {
         "origem": "P_7000071707_05092000",
@@ -18617,7 +22235,9 @@ const FLUXOS_DATA = [
         "volume": 7650,
         "movimentacoes": 4,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D002",
+        "parceiro": "P_7000071707_05092000"
     },
     {
         "origem": "P_7000080291_17512875",
@@ -18625,7 +22245,9 @@ const FLUXOS_DATA = [
         "volume": 178,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D002",
+        "parceiro": "P_7000080291_17512875"
     },
     {
         "origem": "P_7000013109_90470470",
@@ -18633,7 +22255,9 @@ const FLUXOS_DATA = [
         "volume": 50910,
         "movimentacoes": 9,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D002",
+        "parceiro": "P_7000013109_90470470"
     },
     {
         "origem": "P_7000001702_13503503",
@@ -18641,7 +22265,9 @@ const FLUXOS_DATA = [
         "volume": 12320,
         "movimentacoes": 1,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D002",
+        "parceiro": "P_7000001702_13503503"
     },
     {
         "origem": "P_7000009511_02017002",
@@ -18649,7 +22275,9 @@ const FLUXOS_DATA = [
         "volume": 53040,
         "movimentacoes": 4,
         "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D002",
+        "parceiro": "P_7000009511_02017002"
     },
     {
         "origem": "P_7000059039_06680056",
@@ -18657,7 +22285,9 @@ const FLUXOS_DATA = [
         "volume": 130,
         "movimentacoes": 1,
         "material": "Tubos e etc",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D002",
+        "parceiro": "P_7000059039_06680056"
     },
     {
         "origem": "P_7000030242_13505600",
@@ -18665,22 +22295,8 @@ const FLUXOS_DATA = [
         "volume": 556,
         "movimentacoes": 3,
         "material": "Tubos flexíveis",
-        "direcao": "ENTRADA"
-    },
-    {
-        "origem": "P_7000001501_09843400",
-        "destino": 0,
-        "volume": 236,
-        "movimentacoes": 8,
-        "material": "Demais materiais",
-        "direcao": "ENTRADA"
-    },
-    {
-        "origem": "P_7000015737_02071010",
-        "destino": 0,
-        "volume": 484,
-        "movimentacoes": 8,
-        "material": "Demais materiais",
-        "direcao": "ENTRADA"
+        "direcao": "ENTRADA",
+        "cd": "D002",
+        "parceiro": "P_7000030242_13505600"
     }
 ];

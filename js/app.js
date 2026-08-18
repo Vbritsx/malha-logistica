@@ -2,8 +2,8 @@
  * app.js — Inicialização do mapa e orquestração geral
  *
  * - Cria o mapa Leaflet com tiles escuros (CartoDB Dark Matter)
- * - Plota marcadores dos hubs (de data.js)
- * - Conecta o painel lateral com a ferramenta de medição (measurement.js)
+ * - Plota marcadores dos CDs da Sabesp (de data.js)
+ * - Conecta o painel lateral com a ferramenta de medição CD-Parceiro
  */
 
 /* ══════════════════════════════════════════════════════════════════════════════
@@ -12,7 +12,7 @@
 
 let map;
 let measurementTool;
-let hubMarkers = {};  // id → L.marker
+let cdMarkers = {};  // id → L.marker
 let partnerMarkers = {}; // partner_id → L.circleMarker
 let partnerLayerGroup;
 let flowLayerGroup;
@@ -31,19 +31,19 @@ function formatarNumero(num) {
 
 document.addEventListener("DOMContentLoaded", () => {
     initMap();
-    plotHubs();
+    plotCDs();
     plotPartners();
     initMeasurementTool();
     initPanelControls();
 });
 
 /**
- * Inicializa o mapa Leaflet centrado no Sudeste do Brasil.
+ * Inicializa o mapa Leaflet centrado no Estado de São Paulo.
  */
 function initMap() {
     map = L.map("map", {
-        center: [-22.5, -46.5],
-        zoom: 7,
+        center: [-23.5, -46.6],
+        zoom: 8,
         zoomControl: true,
         attributionControl: true,
     });
@@ -65,37 +65,37 @@ function initMap() {
 }
 
 /**
- * Plota todos os hubs do HUBS_DATA como marcadores no mapa.
+ * Plota todos os CDs do CDS_DATA como marcadores no mapa.
  */
-function plotHubs() {
-    HUBS_DATA.forEach(hub => {
-        const marker = L.marker([hub.lat, hub.lng], {
+function plotCDs() {
+    CDS_DATA.forEach(cd => {
+        const marker = L.marker([cd.lat, cd.lng], {
             icon: L.divIcon({
                 className: "",
-                html: `<div class="hub-marker" data-hub-id="${hub.id}"></div>`,
+                html: `<div class="hub-marker" data-cd-id="${cd.id}"></div>`,
                 iconSize: [14, 14],
                 iconAnchor: [7, 7],
             }),
         });
 
-        // Popup ao clicar
         const popupContent = `
             <div class="hub-popup">
                 <div class="hub-name">
                     <span class="status-dot"></span>
-                    ${hub.nome}
+                    CD: ${cd.nome}
                 </div>
-                <div class="hub-location">${hub.cidade} - ${hub.uf}</div>
-                <div class="hub-volume">Volume: <strong>${formatarNumero(hub.volume)}</strong> pacotes</div>
+                <div class="hub-location">${cd.cidade} - ${cd.uf}</div>
+                <div class="hub-location" style="font-size: 11px; margin-top: -6px; color: var(--text-muted);">${cd.endereco}</div>
+                <div class="hub-volume">Volume Total: <strong>${formatarNumero(cd.volume)}</strong></div>
             </div>
         `;
         marker.bindPopup(popupContent, {
             closeButton: true,
-            maxWidth: 250,
+            maxWidth: 280,
         });
 
         marker.addTo(map);
-        hubMarkers[hub.id] = marker;
+        cdMarkers[cd.id] = marker;
     });
 }
 
@@ -112,13 +112,13 @@ function initMeasurementTool() {
    ══════════════════════════════════════════════════════════════════════════════ */
 
 function initPanelControls() {
-    // Selects de Hub
-    const selectA = document.getElementById("select-hub-a");
-    const selectB = document.getElementById("select-hub-b");
+    const selectCd = document.getElementById("select-cd");
+    const selectParceiro = document.getElementById("select-parceiro");
+    const checkInbound = document.getElementById("check-inbound");
+    const checkOutbound = document.getElementById("check-outbound");
 
-    // Popular selects com os hubs
-    _popularSelect(selectA);
-    _popularSelect(selectB);
+    // Popular select de CDs
+    _popularSelectCDs(selectCd);
 
     // Botões
     const btnMedir = document.getElementById("btn-medir");
@@ -131,35 +131,67 @@ function initPanelControls() {
     const panelClose = document.getElementById("panel-close");
     const sidePanel = document.getElementById("side-panel");
 
-    // Ao mudar os selects, atualizar marcadores visuais e exibir fluxos
-    selectA.addEventListener("change", () => {
-        const hub = HUBS_DATA.find(h => h.id === selectA.value);
-        measurementTool.setHubA(hub || null);
+    // Ao mudar o CD, atualizar mapa e dropdown de parceiros
+    selectCd.addEventListener("change", () => {
+        const cdId = selectCd.value;
+        const inboundChecked = checkInbound.checked;
+        const outboundChecked = checkOutbound.checked;
+        
+        measurementTool.limpar();
+        document.getElementById("measurement-results").classList.remove("active");
+        
+        atualizarDropdownParceiros(cdId, inboundChecked, outboundChecked);
+        atualizarMapaFluxos(cdId);
         _atualizarMarcadoresVisuais();
         _atualizarEstadoBotaoMedir();
-        atualizarMapaFluxos(selectA.value);
     });
 
-    selectB.addEventListener("change", () => {
-        const hub = HUBS_DATA.find(h => h.id === selectB.value);
-        measurementTool.setHubB(hub || null);
+    // Ao mudar os checkboxes
+    const triggerFiltroDirecao = () => {
+        const cdId = selectCd.value;
+        const inboundChecked = checkInbound.checked;
+        const outboundChecked = checkOutbound.checked;
+        
+        measurementTool.limpar();
+        document.getElementById("measurement-results").classList.remove("active");
+        
+        atualizarDropdownParceiros(cdId, inboundChecked, outboundChecked);
+        atualizarMapaFluxos(cdId);
         _atualizarMarcadoresVisuais();
         _atualizarEstadoBotaoMedir();
-        if (selectA.value) {
-            atualizarMapaFluxos(selectA.value);
-        } else {
-            atualizarMapaFluxos(selectB.value);
-        }
+    };
+
+    checkInbound.addEventListener("change", triggerFiltroDirecao);
+    checkOutbound.addEventListener("change", triggerFiltroDirecao);
+
+    // Ao mudar o parceiro
+    selectParceiro.addEventListener("change", () => {
+        measurementTool.limpar();
+        document.getElementById("measurement-results").classList.remove("active");
+        
+        _atualizarMarcadoresVisuais();
+        _atualizarEstadoBotaoMedir();
     });
 
     // Medir Rota
     btnMedir.addEventListener("click", async () => {
+        const cdId = selectCd.value;
+        const partnerId = selectParceiro.value;
+        
+        const cdObj = CDS_DATA.find(c => c.id === cdId);
+        const partnerObj = PARCEIROS_DATA.find(p => p.id === partnerId);
+
+        if (!cdObj || !partnerObj) return;
+
         btnMedir.disabled = true;
-        btnMedir.innerHTML = '<span>⏳</span> Calculando...';
+        btnMedir.innerHTML = '<span>⏳</span> Calculando Rota...';
 
         try {
+            measurementTool.setHubA(cdObj);
+            measurementTool.setHubB(partnerObj);
             const resultado = await measurementTool.medir();
             _exibirResultados(resultado);
+            _atualizarMarcadoresVisuais(); // Realça o parceiro destino no mapa
         } catch (err) {
             alert("Erro: " + err.message);
         } finally {
@@ -168,9 +200,13 @@ function initPanelControls() {
         }
     });
 
-    // Nova Medição
+    // Nova Medição (Limpa a rota ativa para selecionar outro parceiro)
     btnNovaMedicao.addEventListener("click", () => {
-        _resetarMedicao(selectA, selectB);
+        measurementTool.limpar();
+        selectParceiro.value = "";
+        _atualizarMarcadoresVisuais();
+        _atualizarEstadoBotaoMedir();
+        document.getElementById("measurement-results").classList.remove("active");
     });
 
     // Copiar Dados
@@ -180,15 +216,14 @@ function initPanelControls() {
             navigator.clipboard.writeText(texto).then(() => {
                 _mostrarToast("✅ Dados copiados para a área de transferência!");
             }).catch(() => {
-                // Fallback
                 _mostrarToast("⚠️ Não foi possível copiar.");
             });
         }
     });
 
-    // Desativar Régua
+    // Limpar Filtros
     btnDesativar.addEventListener("click", () => {
-        _resetarMedicao(selectA, selectB);
+        _resetarFiltros(selectCd, selectParceiro, checkInbound, checkOutbound);
     });
 
     // Painel — Abrir/Fechar
@@ -209,23 +244,23 @@ function initPanelControls() {
    ══════════════════════════════════════════════════════════════════════════════ */
 
 /**
- * Popula um <select> com os hubs.
+ * Popula o select com os CDs disponíveis.
  */
-function _popularSelect(selectEl) {
-    HUBS_DATA.forEach(hub => {
+function _popularSelectCDs(selectEl) {
+    CDS_DATA.forEach(cd => {
         const opt = document.createElement("option");
-        opt.value = hub.id;
-        opt.textContent = `${hub.id} — ${hub.cidade} (${hub.uf})`;
+        opt.value = cd.id;
+        opt.textContent = `${cd.id} — ${cd.nome}`;
         selectEl.appendChild(opt);
     });
 }
 
 /**
- * Atualiza o visual dos marcadores para refletir seleção A/B.
+ * Atualiza o visual dos marcadores para refletir seleção do CD.
  */
 function _atualizarMarcadoresVisuais() {
-    // Reset all
-    Object.values(hubMarkers).forEach(marker => {
+    // Reset de estilos de realce de CD
+    Object.values(cdMarkers).forEach(marker => {
         const el = marker.getElement();
         if (el) {
             const dot = el.querySelector(".hub-marker");
@@ -235,21 +270,29 @@ function _atualizarMarcadoresVisuais() {
         }
     });
 
-    // Highlight A
-    if (measurementTool.hubA && hubMarkers[measurementTool.hubA.id]) {
-        const el = hubMarkers[measurementTool.hubA.id].getElement();
+    const selectCdVal = document.getElementById("select-cd").value;
+    const selectPartnerVal = document.getElementById("select-parceiro").value;
+
+    // Highlight CD (Ponto A)
+    if (selectCdVal && cdMarkers[selectCdVal]) {
+        const el = cdMarkers[selectCdVal].getElement();
         if (el) {
             const dot = el.querySelector(".hub-marker");
             if (dot) dot.classList.add("selected-a");
         }
     }
 
-    // Highlight B
-    if (measurementTool.hubB && hubMarkers[measurementTool.hubB.id]) {
-        const el = hubMarkers[measurementTool.hubB.id].getElement();
-        if (el) {
-            const dot = el.querySelector(".hub-marker");
-            if (dot) dot.classList.add("selected-b");
+    // Ponto B (Parceiro) é tratado no redesenho dos fluxos, mas se medido, realça ele.
+    if (selectPartnerVal && partnerMarkers[selectPartnerVal]) {
+        // Estilizar parceiro selecionado se medição estiver ativa
+        if (measurementTool.isActive) {
+            partnerMarkers[selectPartnerVal].setStyle({
+                radius: 8,
+                fillColor: "#fbbf24", // Amarelo para Ponto B final
+                fillOpacity: 1.0,
+                weight: 2,
+                color: "#ffffff"
+            });
         }
     }
 }
@@ -258,8 +301,10 @@ function _atualizarMarcadoresVisuais() {
  * Habilita/desabilita o botão Medir conforme seleção.
  */
 function _atualizarEstadoBotaoMedir() {
+    const cdId = document.getElementById("select-cd").value;
+    const partnerId = document.getElementById("select-parceiro").value;
     const btn = document.getElementById("btn-medir");
-    btn.disabled = !(measurementTool.hubA && measurementTool.hubB);
+    btn.disabled = !(cdId && partnerId);
 }
 
 /**
@@ -269,11 +314,13 @@ function _exibirResultados(resultado) {
     const container = document.getElementById("measurement-results");
     container.classList.add("active");
 
-    // Preencher valores
+    const cd = CDS_DATA.find(c => c.id === document.getElementById("select-cd").value);
+    const partner = PARCEIROS_DATA.find(p => p.id === document.getElementById("select-parceiro").value);
+
     document.getElementById("result-from").innerHTML =
-        `De: <strong>🔶 ${measurementTool.hubA.nome}</strong>`;
+        `Origem: <strong>🔶 CD ${cd.nome}</strong>`;
     document.getElementById("result-to").innerHTML =
-        `Até: <strong>🔷 ${measurementTool.hubB.nome}</strong>`;
+        `Destino: <strong>🔷 ID ${partner.codigo} (${partner.tipo})</strong>`;
 
     document.getElementById("result-reta-value").textContent =
         `${resultado.reta.toFixed(1)} km`;
@@ -284,15 +331,15 @@ function _exibirResultados(resultado) {
 }
 
 /**
- * Reseta toda a medição (limpa mapa, reseta selects e resultados).
+ * Reseta todos os filtros e medições do mapa.
  */
-function _resetarMedicao(selectA, selectB) {
+function _resetarFiltros(selectCd, selectParceiro, checkInbound, checkOutbound) {
     measurementTool.limpar();
-    measurementTool.setHubA(null);
-    measurementTool.setHubB(null);
-
-    selectA.value = "";
-    selectB.value = "";
+    selectCd.value = "";
+    selectParceiro.value = "";
+    selectParceiro.disabled = true;
+    checkInbound.checked = true;
+    checkOutbound.checked = true;
 
     _atualizarMarcadoresVisuais();
     _atualizarEstadoBotaoMedir();
@@ -347,19 +394,77 @@ function plotPartners() {
 }
 
 /**
+ * Atualiza o dropdown de parceiros com base no CD e tipo de operação selecionados.
+ */
+function atualizarDropdownParceiros(cdId, inboundChecked, outboundChecked) {
+    const selectParceiro = document.getElementById("select-parceiro");
+    selectParceiro.innerHTML = '<option value="">Selecione o Parceiro...</option>';
+    
+    if (!cdId || (!inboundChecked && !outboundChecked)) {
+        selectParceiro.disabled = true;
+        return;
+    }
+    
+    // Filtrar fluxos do CD
+    const fluxosCD = FLUXOS_DATA.filter(f => {
+        const matchCD = f.origem === cdId || f.destino === cdId;
+        if (!matchCD) return false;
+        
+        if (f.direcao === "SAÍDA") return outboundChecked;
+        if (f.direcao === "ENTRADA") return inboundChecked;
+        return false;
+    });
+    
+    const parceirosVistos = new Set();
+    const parceirosFiltrados = [];
+    
+    fluxosCD.forEach(f => {
+        const partnerId = f.origem === cdId ? f.destino : f.origem;
+        if (!parceirosVistos.has(partnerId)) {
+            parceirosVistos.add(partnerId);
+            const pObj = PARCEIROS_DATA.find(p => p.id === partnerId);
+            if (pObj) {
+                parceirosFiltrados.push(pObj);
+            }
+        }
+    });
+    
+    // Ordenar parceiros por código numérico/alfabético
+    parceirosFiltrados.sort((a, b) => a.codigo.localeCompare(b.codigo));
+    
+    if (parceirosFiltrados.length > 0) {
+        selectParceiro.disabled = false;
+        parceirosFiltrados.forEach(p => {
+            const opt = document.createElement("option");
+            opt.value = p.id;
+            const labelTipo = p.tipo === "Canteiro" ? "Canteiro" : (p.tipo === "Fornecedor" ? "Forn." : "Parc.");
+            opt.textContent = `[${labelTipo}] ${p.codigo} — ${p.cidade} (${p.cep.substring(0, 5)})`;
+            selectParceiro.appendChild(opt);
+        });
+    } else {
+        selectParceiro.disabled = true;
+    }
+}
+
+/**
  * Atualiza o mapa exibindo apenas os parceiros e fluxos vinculados ao CD selecionado.
  */
 function atualizarMapaFluxos(cdId) {
+    const inboundChecked = document.getElementById("check-inbound").checked;
+    const outboundChecked = document.getElementById("check-outbound").checked;
+
     // 1. Limpar fluxos anteriores
     flowLayerGroup.clearLayers();
 
-    // 2. Se nenhum CD selecionado, restaurar todos os parceiros com estilo original
-    if (!cdId) {
+    // 2. Se nenhum CD selecionado ou nenhuma direção marcada, restaurar todos os parceiros
+    if (!cdId || (!inboundChecked && !outboundChecked)) {
         Object.values(partnerMarkers).forEach(marker => {
             marker.setStyle({
                 radius: 4,
                 fillColor: "#9898b8",
-                fillOpacity: 0.6
+                fillOpacity: 0.6,
+                weight: 1,
+                color: "#1a1a2e"
             });
             if (!partnerLayerGroup.hasLayer(marker)) {
                 partnerLayerGroup.addLayer(marker);
@@ -368,10 +473,17 @@ function atualizarMapaFluxos(cdId) {
         return;
     }
 
-    // 3. Filtrar fluxos do CD selecionado
-    const fluxosCD = FLUXOS_DATA.filter(f => f.origem === cdId || f.destino === cdId);
-    const parceirosConectados = new Set();
+    // 3. Filtrar fluxos do CD selecionado respeitando as direções
+    const fluxosCD = FLUXOS_DATA.filter(f => {
+        const matchCD = f.origem === cdId || f.destino === cdId;
+        if (!matchCD) return false;
+        
+        if (f.direcao === "SAÍDA") return outboundChecked;
+        if (f.direcao === "ENTRADA") return inboundChecked;
+        return false;
+    });
 
+    const parceirosConectados = new Set();
     fluxosCD.forEach(f => {
         const partnerId = f.origem === cdId ? f.destino : f.origem;
         parceirosConectados.add(partnerId);
@@ -386,20 +498,22 @@ function atualizarMapaFluxos(cdId) {
             marker.setStyle({
                 radius: 6,
                 fillColor: isSaida ? "#00d4ff" : "#ff8c42", // Ciano para saída (Clientes), Laranja para entrada (Fornecedores)
-                fillOpacity: 0.95
+                fillOpacity: 0.95,
+                weight: 1,
+                color: "#1a1a2e"
             });
 
             if (!partnerLayerGroup.hasLayer(marker)) {
                 partnerLayerGroup.addLayer(marker);
             }
         } else {
-            // Ocultar parceiros sem relação com este CD
+            // Ocultar parceiros sem relação
             partnerLayerGroup.removeLayer(marker);
         }
     });
 
     // 5. Desenhar linhas de fluxo
-    const cdObj = HUBS_DATA.find(h => h.id === cdId);
+    const cdObj = CDS_DATA.find(h => h.id === cdId);
     if (!cdObj) return;
 
     const cdLatLng = [cdObj.lat, cdObj.lng];
@@ -428,7 +542,7 @@ function atualizarMapaFluxos(cdId) {
 
         const tooltipContent = `
             <div style="font-family: 'Inter', sans-serif; font-size: 11px; padding: 4px 8px; background: rgba(15, 15, 35, 0.92); border: 1px solid ${corLinha}; border-radius: 4px; color: #fff; box-shadow: 0 4px 12px rgba(0,0,0,0.5);">
-                <strong>${isSaida ? "Outbound ➔ Cliente" : "Inbound ➔ CD"}</strong><br/>
+                <strong>${isSaida ? "Outbound (Saída para Canteiro)" : "Inbound (Entrada de Fornecedor)"}</strong><br/>
                 Material: ${f.material}<br/>
                 Volume: ${formatarNumero(f.volume)}<br/>
                 Movs: ${f.movimentacoes}

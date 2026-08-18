@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dashboard interativo de malha logística com mapa, medição de rotas e análise de hubs.">
+    <meta name="description" content="Dashboard interativo de malha logística com mapa, medição de rotas e análise de CDs.">
 
     <title>Logistics Network Dashboard</title>
 
@@ -43,32 +43,49 @@
             <button id="panel-close" class="panel-close-btn" aria-label="Fechar painel">✕</button>
         </div>
 
-        <!-- Measurement Tool Card -->
+        <!-- CD & Flow Filters -->
         <div class="panel-card">
             <div class="section-title">
-                <span class="icon">📐</span>
-                Ferramenta de Medição
+                <span class="icon">📊</span>
+                Painel de Controle
             </div>
 
-            <!-- Hub A Selector -->
+            <!-- CD Selector -->
             <div class="hub-selector">
-                <label>
-                    <span class="point-badge point-a">A</span>
-                    Hub de Origem
+                <label for="select-cd">
+                    <span class="point-badge point-a">CD</span>
+                    Centro de Distribuição
                 </label>
-                <select id="select-hub-a" class="hub-select">
-                    <option value="">Selecione o Hub A...</option>
+                <select id="select-cd" class="hub-select">
+                    <option value="">Selecione o CD...</option>
                 </select>
             </div>
 
-            <!-- Hub B Selector -->
+            <!-- Flow Direction Filter -->
             <div class="hub-selector">
-                <label>
-                    <span class="point-badge point-b">B</span>
-                    Hub de Destino
+                <label>Tipo de Operação</label>
+                <div class="direction-filter-container">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="check-inbound" checked>
+                        <span class="checkbox-custom inbound"></span>
+                        Inbound (Entrada / Fornecedores)
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="check-outbound" checked>
+                        <span class="checkbox-custom outbound"></span>
+                        Outbound (Saída / Canteiros)
+                    </label>
+                </div>
+            </div>
+
+            <!-- Partner Selector (Dynamic) -->
+            <div class="hub-selector">
+                <label for="select-parceiro">
+                    <span class="point-badge point-b">Parc</span>
+                    Parceiro (Fornecedor/Canteiro)
                 </label>
-                <select id="select-hub-b" class="hub-select">
-                    <option value="">Selecione o Hub B...</option>
+                <select id="select-parceiro" class="hub-select" disabled>
+                    <option value="">Selecione o Parceiro...</option>
                 </select>
             </div>
 
@@ -79,7 +96,7 @@
 
             <div style="margin-top: var(--sp-md);">
                 <button id="btn-desativar" class="btn btn-danger">
-                    <span>✖</span> Desativar Régua
+                    <span>✖</span> Limpar Filtros
                 </button>
             </div>
 
@@ -92,17 +109,17 @@
                 </div>
 
                 <div class="result-route-info">
-                    <div id="result-from" class="result-from-to">De: <strong>—</strong></div>
-                    <div id="result-to" class="result-from-to">Até: <strong>—</strong></div>
+                    <div id="result-from" class="result-from-to">Origem: <strong>—</strong></div>
+                    <div id="result-to" class="result-from-to">Destino: <strong>—</strong></div>
                 </div>
 
                 <div class="result-box">
-                    <div class="result-title">Resultados</div>
+                    <div class="result-title">Resultados da Rota</div>
 
                     <div class="result-row">
                         <div class="label">
                             <span class="dot cyan"></span>
-                            Rota dirigida
+                            Rota por estrada
                         </div>
                         <div class="value">
                             <span id="result-rota-value">—</span>
@@ -112,7 +129,7 @@
                     <div class="result-row">
                         <div class="label">
                             <span class="dot yellow"></span>
-                            Linha reta
+                            Linha reta (geodésica)
                         </div>
                         <div class="value">
                             <span id="result-reta-value">—</span>
@@ -124,7 +141,7 @@
                     <div class="result-row">
                         <div class="label">
                             <span class="dot orange"></span>
-                            Tempo estimado
+                            Tempo de viagem
                         </div>
                         <div class="value">
                             <span id="result-tempo-value">—</span>
