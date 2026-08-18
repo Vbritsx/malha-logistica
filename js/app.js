@@ -13,6 +13,17 @@
 let map;
 let measurementTool;
 let hubMarkers = {};  // id → L.marker
+let partnerMarkers = {}; // partner_id → L.circleMarker
+let partnerLayerGroup;
+let flowLayerGroup;
+
+/**
+ * Formata um número para o padrão de exibição brasileiro.
+ */
+function formatarNumero(num) {
+    if (num === null || num === undefined) return "0";
+    return Number(num).toLocaleString("pt-BR");
+}
 
 /* ══════════════════════════════════════════════════════════════════════════════
    Inicialização
@@ -21,6 +32,7 @@ let hubMarkers = {};  // id → L.marker
 document.addEventListener("DOMContentLoaded", () => {
     initMap();
     plotHubs();
+    plotPartners();
     initMeasurementTool();
     initPanelControls();
 });
@@ -46,6 +58,10 @@ function initMap() {
             maxZoom: 19,
         }
     ).addTo(map);
+
+    // Grupos de camadas para parceiros e fluxos
+    partnerLayerGroup = L.layerGroup().addTo(map);
+    flowLayerGroup = L.layerGroup().addTo(map);
 }
 
 /**
@@ -115,12 +131,13 @@ function initPanelControls() {
     const panelClose = document.getElementById("panel-close");
     const sidePanel = document.getElementById("side-panel");
 
-    // Ao mudar os selects, atualizar marcadores visuais
+    // Ao mudar os selects, atualizar marcadores visuais e exibir fluxos
     selectA.addEventListener("change", () => {
         const hub = HUBS_DATA.find(h => h.id === selectA.value);
         measurementTool.setHubA(hub || null);
         _atualizarMarcadoresVisuais();
         _atualizarEstadoBotaoMedir();
+        atualizarMapaFluxos(selectA.value);
     });
 
     selectB.addEventListener("change", () => {
@@ -128,6 +145,11 @@ function initPanelControls() {
         measurementTool.setHubB(hub || null);
         _atualizarMarcadoresVisuais();
         _atualizarEstadoBotaoMedir();
+        if (selectA.value) {
+            atualizarMapaFluxos(selectA.value);
+        } else {
+            atualizarMapaFluxos(selectB.value);
+        }
     });
 
     // Medir Rota
@@ -274,6 +296,7 @@ function _resetarMedicao(selectA, selectB) {
 
     _atualizarMarcadoresVisuais();
     _atualizarEstadoBotaoMedir();
+    atualizarMapaFluxos(null);
 
     const container = document.getElementById("measurement-results");
     container.classList.remove("active");
@@ -289,4 +312,134 @@ function _mostrarToast(msg) {
     setTimeout(() => {
         toast.classList.remove("show");
     }, 2500);
+}
+
+/**
+ * Plota todos os parceiros (Clientes/Fornecedores) como pequenos círculos no mapa.
+ */
+function plotPartners() {
+    PARCEIROS_DATA.forEach(p => {
+        const marker = L.circleMarker([p.lat, p.lng], {
+            radius: 4,
+            fillColor: "#9898b8",
+            color: "#1a1a2e",
+            weight: 1,
+            opacity: 0.8,
+            fillOpacity: 0.6
+        });
+
+        const popupContent = `
+            <div class="hub-popup">
+                <div class="hub-name">
+                    <span class="status-dot" style="background-color: var(--text-secondary)"></span>
+                    Parceiro: ${p.codigo}
+                </div>
+                <div class="hub-location">${p.cidade} | CEP: ${p.cep}</div>
+                <div class="hub-volume">Volume Total: <strong>${formatarNumero(p.volume)}</strong></div>
+                <div class="hub-volume">Movimentações: <strong>${formatarNumero(p.movimentacoes)}</strong></div>
+            </div>
+        `;
+        marker.bindPopup(popupContent, { maxWidth: 250 });
+
+        partnerMarkers[p.id] = marker;
+        partnerLayerGroup.addLayer(marker);
+    });
+}
+
+/**
+ * Atualiza o mapa exibindo apenas os parceiros e fluxos vinculados ao CD selecionado.
+ */
+function atualizarMapaFluxos(cdId) {
+    // 1. Limpar fluxos anteriores
+    flowLayerGroup.clearLayers();
+
+    // 2. Se nenhum CD selecionado, restaurar todos os parceiros com estilo original
+    if (!cdId) {
+        Object.values(partnerMarkers).forEach(marker => {
+            marker.setStyle({
+                radius: 4,
+                fillColor: "#9898b8",
+                fillOpacity: 0.6
+            });
+            if (!partnerLayerGroup.hasLayer(marker)) {
+                partnerLayerGroup.addLayer(marker);
+            }
+        });
+        return;
+    }
+
+    // 3. Filtrar fluxos do CD selecionado
+    const fluxosCD = FLUXOS_DATA.filter(f => f.origem === cdId || f.destino === cdId);
+    const parceirosConectados = new Set();
+
+    fluxosCD.forEach(f => {
+        const partnerId = f.origem === cdId ? f.destino : f.origem;
+        parceirosConectados.add(partnerId);
+    });
+
+    // 4. Mostrar e estilizar apenas os parceiros conectados
+    Object.entries(partnerMarkers).forEach(([id, marker]) => {
+        if (parceirosConectados.has(id)) {
+            const fluxo = fluxosCD.find(f => f.origem === id || f.destino === id);
+            const isSaida = fluxo.direcao === "SAÍDA";
+
+            marker.setStyle({
+                radius: 6,
+                fillColor: isSaida ? "#00d4ff" : "#ff8c42", // Ciano para saída (Clientes), Laranja para entrada (Fornecedores)
+                fillOpacity: 0.95
+            });
+
+            if (!partnerLayerGroup.hasLayer(marker)) {
+                partnerLayerGroup.addLayer(marker);
+            }
+        } else {
+            // Ocultar parceiros sem relação com este CD
+            partnerLayerGroup.removeLayer(marker);
+        }
+    });
+
+    // 5. Desenhar linhas de fluxo
+    const cdObj = HUBS_DATA.find(h => h.id === cdId);
+    if (!cdObj) return;
+
+    const cdLatLng = [cdObj.lat, cdObj.lng];
+    const bounds = L.latLngBounds([cdLatLng]);
+
+    fluxosCD.forEach(f => {
+        const partnerId = f.origem === cdId ? f.destino : f.origem;
+        const partnerObj = PARCEIROS_DATA.find(p => p.id === partnerId);
+        if (!partnerObj) return;
+
+        const partnerLatLng = [partnerObj.lat, partnerObj.lng];
+        bounds.extend(partnerLatLng);
+
+        const isSaida = f.direcao === "SAÍDA";
+        const corLinha = isSaida ? "#00d4ff" : "#ff8c42";
+
+        // Espessura proporcional ao volume
+        const peso = Math.max(1.5, Math.min(7, f.volume / 50000));
+
+        const poly = L.polyline([cdLatLng, partnerLatLng], {
+            color: corLinha,
+            weight: peso,
+            opacity: 0.5,
+            dashArray: isSaida ? null : "6, 6" // Tracejado para Entrada/Fornecedores, contínuo para Saída/Clientes
+        });
+
+        const tooltipContent = `
+            <div style="font-family: 'Inter', sans-serif; font-size: 11px; padding: 4px 8px; background: rgba(15, 15, 35, 0.92); border: 1px solid ${corLinha}; border-radius: 4px; color: #fff; box-shadow: 0 4px 12px rgba(0,0,0,0.5);">
+                <strong>${isSaida ? "Outbound ➔ Cliente" : "Inbound ➔ CD"}</strong><br/>
+                Material: ${f.material}<br/>
+                Volume: ${formatarNumero(f.volume)}<br/>
+                Movs: ${f.movimentacoes}
+            </div>
+        `;
+        poly.bindTooltip(tooltipContent, { sticky: true, opacity: 0.95 });
+        flowLayerGroup.addLayer(poly);
+    });
+
+    // 6. Enquadrar no mapa
+    if (parceirosConectados.size > 0) {
+        map.fitBounds(bounds.pad(0.15));
+    }
 }

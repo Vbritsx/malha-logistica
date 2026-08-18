@@ -1,0 +1,2029 @@
+{
+    "01141030": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "01141030",
+        "cidade": "São Paulo",
+        "bairro": "Várzea da Barra Funda"
+    },
+    "01156000": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "01156000",
+        "cidade": "São Paulo",
+        "bairro": "Barra Funda"
+    },
+    "01204001": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "01204001",
+        "cidade": "São Paulo",
+        "bairro": "Campos Elíseos"
+    },
+    "01216000": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "01216000",
+        "cidade": "São Paulo",
+        "bairro": "Campos Elíseos"
+    },
+    "01227200": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "01227200",
+        "cidade": "São Paulo",
+        "bairro": "Consolação"
+    },
+    "02017002": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "02017002",
+        "cidade": "São Paulo",
+        "bairro": "Santana"
+    },
+    "02034000": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "02034000",
+        "cidade": "São Paulo",
+        "bairro": "Santana"
+    },
+    "02046090": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "02046090",
+        "cidade": "São Paulo",
+        "bairro": "Jardim São Paulo(Zona Norte)"
+    },
+    "02071010": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "02071010",
+        "cidade": "São Paulo",
+        "bairro": "Vila Guilherme"
+    },
+    "02115000": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "02115000",
+        "cidade": "São Paulo",
+        "bairro": "Vila Maria Baixa"
+    },
+    "02120020": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "02120020",
+        "cidade": "São Paulo",
+        "bairro": "Vila Maria Baixa"
+    },
+    "02123050": {
+        "lat": -23.5186762,
+        "lng": -46.583529,
+        "cep": "02123050",
+        "cidade": "São Paulo",
+        "bairro": "Vila Maria"
+    },
+    "02124001": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "02124001",
+        "cidade": "São Paulo",
+        "bairro": "Jardim Japão"
+    },
+    "02143060": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "02143060",
+        "cidade": "São Paulo",
+        "bairro": "Jardim Japão"
+    },
+    "02167010": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "02167010",
+        "cidade": "São Paulo",
+        "bairro": "Jardim Andaraí"
+    },
+    "02196080": null,
+    "02501010": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "02501010",
+        "cidade": "São Paulo",
+        "bairro": "Casa Verde Baixa"
+    },
+    "02552020": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "02552020",
+        "cidade": "São Paulo",
+        "bairro": "Vila Bandeirantes"
+    },
+    "02615060": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "02615060",
+        "cidade": "São Paulo",
+        "bairro": "Vila Amélia"
+    },
+    "02871050": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "02871050",
+        "cidade": "São Paulo",
+        "bairro": "Jardim Ondina"
+    },
+    "02945030": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "02945030",
+        "cidade": "São Paulo",
+        "bairro": "Jardim Cidade Pirituba"
+    },
+    "02989095": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "02989095",
+        "cidade": "São Paulo",
+        "bairro": "Jardim Marilu"
+    },
+    "03022000": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "03022000",
+        "cidade": "São Paulo",
+        "bairro": "Alto do Pari"
+    },
+    "03073070": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "03073070",
+        "cidade": "São Paulo",
+        "bairro": "Maranhão"
+    },
+    "03102060": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "03102060",
+        "cidade": "São Paulo",
+        "bairro": "Mooca"
+    },
+    "03105000": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "03105000",
+        "cidade": "São Paulo",
+        "bairro": "Mooca"
+    },
+    "03109000": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "03109000",
+        "cidade": "São Paulo",
+        "bairro": "Parque da Mooca"
+    },
+    "03126007": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "03126007",
+        "cidade": "São Paulo",
+        "bairro": "Parque da Mooca"
+    },
+    "03332050": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "03332050",
+        "cidade": "São Paulo",
+        "bairro": "Cidade Mãe do Céu"
+    },
+    "03408020": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "03408020",
+        "cidade": "São Paulo",
+        "bairro": "Chácara Santo Antônio (Zona Leste)"
+    },
+    "03502020": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "03502020",
+        "cidade": "São Paulo",
+        "bairro": "Vila Aricanduva"
+    },
+    "03512050": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "03512050",
+        "cidade": "São Paulo",
+        "bairro": "Vila Matilde"
+    },
+    "03620000": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "03620000",
+        "cidade": "São Paulo",
+        "bairro": "Vila Marieta"
+    },
+    "03808120": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "03808120",
+        "cidade": "São Paulo",
+        "bairro": "Vila Paranaguá"
+    },
+    "03889000": {
+        "lat": -23.5097072,
+        "lng": -46.4775691,
+        "cep": "03889000",
+        "cidade": "São Paulo",
+        "bairro": "Jardim Soraia"
+    },
+    "03969000": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "03969000",
+        "cidade": "São Paulo",
+        "bairro": "Jardim Sapopemba"
+    },
+    "04041901": {
+        "lat": -23.601489924659198,
+        "lng": -46.637745657107345,
+        "cep": "04041901",
+        "cidade": "São Paulo",
+        "bairro": "Vila Clementino"
+    },
+    "04048000": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "04048000",
+        "cidade": "São Paulo",
+        "bairro": "Mirandópolis"
+    },
+    "04164180": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "04164180",
+        "cidade": "São Paulo",
+        "bairro": "Vila Moraes"
+    },
+    "04206000": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "04206000",
+        "cidade": "São Paulo",
+        "bairro": "Ipiranga"
+    },
+    "04214040": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "04214040",
+        "cidade": "São Paulo",
+        "bairro": "Ipiranga"
+    },
+    "04220002": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "04220002",
+        "cidade": "São Paulo",
+        "bairro": "Vila Independência"
+    },
+    "04222902": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "04222902",
+        "cidade": "São Paulo",
+        "bairro": "Vila Independência"
+    },
+    "04311000": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "04311000",
+        "cidade": "São Paulo",
+        "bairro": "Vila Guarani (Z Sul)"
+    },
+    "04348070": {
+        "lat": -23.6417939,
+        "lng": -46.6531635,
+        "cep": "04348070",
+        "cidade": "São Paulo",
+        "bairro": "Jardim Oriental"
+    },
+    "04351050": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "04351050",
+        "cidade": "São Paulo",
+        "bairro": "Vila Babilônia"
+    },
+    "04456160": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "04456160",
+        "cidade": "São Paulo",
+        "bairro": "Jardim Santa Cruz (Campo Grande)"
+    },
+    "04459000": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "04459000",
+        "cidade": "São Paulo",
+        "bairro": "Pedreira"
+    },
+    "04516000": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "04516000",
+        "cidade": "São Paulo",
+        "bairro": "Indianópolis"
+    },
+    "04526012": null,
+    "04557010": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "04557010",
+        "cidade": "São Paulo",
+        "bairro": "Brooklin Paulista"
+    },
+    "04559003": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "04559003",
+        "cidade": "São Paulo",
+        "bairro": "Brooklin Paulista"
+    },
+    "04561004": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "04561004",
+        "cidade": "São Paulo",
+        "bairro": "Brooklin Paulista"
+    },
+    "04571010": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "04571010",
+        "cidade": "São Paulo",
+        "bairro": "Cidade Monções"
+    },
+    "04571936": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "04571936",
+        "cidade": "São Paulo",
+        "bairro": "Cidade Monções"
+    },
+    "04580000": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "04580000",
+        "cidade": "São Paulo",
+        "bairro": "Vila Cordeiro"
+    },
+    "04602909": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "04602909",
+        "cidade": "São Paulo",
+        "bairro": "Brooklin Paulista"
+    },
+    "04717003": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "04717003",
+        "cidade": "São Paulo",
+        "bairro": "Chácara Santo Antônio (Zona Sul)"
+    },
+    "04719002": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "04719002",
+        "cidade": "São Paulo",
+        "bairro": "Chácara Santo Antônio (Zona Sul)"
+    },
+    "04728210": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "04728210",
+        "cidade": "São Paulo",
+        "bairro": "Jardim Caravelas"
+    },
+    "04763280": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "04763280",
+        "cidade": "São Paulo",
+        "bairro": "Socorro"
+    },
+    "04764001": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "04764001",
+        "cidade": "São Paulo",
+        "bairro": "Socorro"
+    },
+    "04781065": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "04781065",
+        "cidade": "São Paulo",
+        "bairro": "Vila Friburgo"
+    },
+    "04782000": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "04782000",
+        "cidade": "São Paulo",
+        "bairro": "Capela do Socorro"
+    },
+    "04829280": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "04829280",
+        "cidade": "São Paulo",
+        "bairro": "Jardim das Camélias (Zona Sul)"
+    },
+    "04855090": {
+        "lat": -23.7639458,
+        "lng": -46.6869678,
+        "cep": "04855090",
+        "cidade": "São Paulo",
+        "bairro": "Jardim Belcito"
+    },
+    "05001000": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "05001000",
+        "cidade": "São Paulo",
+        "bairro": "Água Branca"
+    },
+    "05038090": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "05038090",
+        "cidade": "São Paulo",
+        "bairro": "Lapa"
+    },
+    "05058000": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "05058000",
+        "cidade": "São Paulo",
+        "bairro": "Vila Ipojuca"
+    },
+    "05069900": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "05069900",
+        "cidade": "São Paulo",
+        "bairro": "Lapa de Baixo"
+    },
+    "05089000": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "05089000",
+        "cidade": "São Paulo",
+        "bairro": "Vila Leopoldina"
+    },
+    "05092000": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "05092000",
+        "cidade": "São Paulo",
+        "bairro": "Vila Anastácio"
+    },
+    "05095010": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "05095010",
+        "cidade": "São Paulo",
+        "bairro": "Vila Anastácio"
+    },
+    "05113020": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "05113020",
+        "cidade": "São Paulo",
+        "bairro": "Parque São Domingos"
+    },
+    "05136001": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "05136001",
+        "cidade": "São Paulo",
+        "bairro": "Jardim Santo Elias"
+    },
+    "05187010": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "05187010",
+        "cidade": "São Paulo",
+        "bairro": "Jardim Ipanema (Zona Oeste)"
+    },
+    "05307000": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "05307000",
+        "cidade": "São Paulo",
+        "bairro": "Vila Ribeiro de Barros"
+    },
+    "05311030": {
+        "lat": -23.5279604,
+        "lng": -46.7367439,
+        "cep": "05311030",
+        "cidade": "São Paulo",
+        "bairro": "Vila Leopoldina"
+    },
+    "05350050": null,
+    "05382010": {
+        "lat": -23.5757023,
+        "lng": -46.7614661,
+        "cep": "05382010",
+        "cidade": "São Paulo",
+        "bairro": "Jardim Sarah"
+    },
+    "05407003": {
+        "lat": -23.5546689,
+        "lng": -46.6767559,
+        "cep": "05407003",
+        "cidade": "São Paulo",
+        "bairro": "Pinheiros"
+    },
+    "05419000": {
+        "lat": -23.5624825,
+        "lng": -46.6924149,
+        "cep": "05419000",
+        "cidade": "São Paulo",
+        "bairro": "Pinheiros"
+    },
+    "05426100": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "05426100",
+        "cidade": "São Paulo",
+        "bairro": "Pinheiros"
+    },
+    "05429060": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "05429060",
+        "cidade": "São Paulo",
+        "bairro": "Pinheiros"
+    },
+    "05429900": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "05429900",
+        "cidade": "São Paulo",
+        "bairro": "Pinheiros"
+    },
+    "05525080": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "05525080",
+        "cidade": "São Paulo",
+        "bairro": "Jardim Jussara"
+    },
+    "05541130": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "05541130",
+        "cidade": "São Paulo",
+        "bairro": "Jardim das Vertentes"
+    },
+    "05544000": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "05544000",
+        "cidade": "São Paulo",
+        "bairro": "Jardim Guarau"
+    },
+    "05565210": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "05565210",
+        "cidade": "São Paulo",
+        "bairro": "Jardim Arpoador"
+    },
+    "05626020": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "05626020",
+        "cidade": "São Paulo",
+        "bairro": "Vila Sônia"
+    },
+    "05656020": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "05656020",
+        "cidade": "São Paulo",
+        "bairro": "Fazenda Morumbi"
+    },
+    "05657140": {
+        "lat": -23.6214874,
+        "lng": -46.7153396,
+        "cep": "05657140",
+        "cidade": "São Paulo",
+        "bairro": "Fazenda Morumbi"
+    },
+    "05686900": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "05686900",
+        "cidade": "São Paulo",
+        "bairro": "Real Parque"
+    },
+    "05690050": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "05690050",
+        "cidade": "São Paulo",
+        "bairro": "Vila Tramontano"
+    },
+    "05711001": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "05711001",
+        "cidade": "São Paulo",
+        "bairro": "Jardim Caboré"
+    },
+    "05786010": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "05786010",
+        "cidade": "São Paulo",
+        "bairro": "Vila Pirajussara"
+    },
+    "05814110": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "05814110",
+        "cidade": "São Paulo",
+        "bairro": "Jardim Ibirapuera"
+    },
+    "05846270": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "05846270",
+        "cidade": "São Paulo",
+        "bairro": "Jardim Casablanca"
+    },
+    "06268000": {
+        "lat": -23.5325,
+        "lng": -46.79167,
+        "cep": "06268000",
+        "cidade": "Osasco",
+        "bairro": "Aliança"
+    },
+    "06278010": {
+        "lat": -23.5325,
+        "lng": -46.79167,
+        "cep": "06278010",
+        "cidade": "Osasco",
+        "bairro": "Santa Fé"
+    },
+    "06330281": {
+        "lat": -23.52272,
+        "lng": -46.835,
+        "cep": "06330281",
+        "cidade": "Carapicuíba",
+        "bairro": "Sítio Guarehy"
+    },
+    "06362042": {
+        "lat": -23.52272,
+        "lng": -46.835,
+        "cep": "06362042",
+        "cidade": "Carapicuíba",
+        "bairro": "Jardim Elzinha"
+    },
+    "06381100": {
+        "lat": -23.52272,
+        "lng": -46.835,
+        "cep": "06381100",
+        "cidade": "Carapicuíba",
+        "bairro": "Vila Silviânia"
+    },
+    "06397110": {
+        "lat": -23.52272,
+        "lng": -46.835,
+        "cep": "06397110",
+        "cidade": "Carapicuíba",
+        "bairro": "Vila Sul Americana"
+    },
+    "06401000": {
+        "lat": -23.51056,
+        "lng": -46.87611,
+        "cep": "06401000",
+        "cidade": "Barueri",
+        "bairro": "Centro"
+    },
+    "06404326": {
+        "lat": -23.51056,
+        "lng": -46.87611,
+        "cep": "06404326",
+        "cidade": "Barueri",
+        "bairro": "Bethaville I"
+    },
+    "06411310": {
+        "lat": -23.51056,
+        "lng": -46.87611,
+        "cep": "06411310",
+        "cidade": "Barueri",
+        "bairro": "Jardim Barueri"
+    },
+    "06422122": {
+        "lat": -23.51056,
+        "lng": -46.87611,
+        "cep": "06422122",
+        "cidade": "Barueri",
+        "bairro": "Jardim Belval"
+    },
+    "06454000": {
+        "lat": -23.51056,
+        "lng": -46.87611,
+        "cep": "06454000",
+        "cidade": "Barueri",
+        "bairro": "Alphaville Centro Industrial e Empresarial/Alphaville."
+    },
+    "06460040": {
+        "lat": -23.51056,
+        "lng": -46.87611,
+        "cep": "06460040",
+        "cidade": "Barueri",
+        "bairro": "Tamboré"
+    },
+    "06529190": {
+        "lat": -23.44417,
+        "lng": -46.91778,
+        "cep": "06529190",
+        "cidade": "Santana de Parnaíba",
+        "bairro": "Jardim Santa Marta (Fazendinha)"
+    },
+    "06539010": {
+        "lat": -23.44417,
+        "lng": -46.91778,
+        "cep": "06539010",
+        "cidade": "Santana de Parnaíba",
+        "bairro": "Alphaville"
+    },
+    "06541065": {
+        "lat": -23.44417,
+        "lng": -46.91778,
+        "cep": "06541065",
+        "cidade": "Santana de Parnaíba",
+        "bairro": "Alphaville"
+    },
+    "06543001": {
+        "lat": -23.44417,
+        "lng": -46.91778,
+        "cep": "06543001",
+        "cidade": "Santana de Parnaíba",
+        "bairro": "Tamboré"
+    },
+    "06543308": {
+        "lat": -23.44417,
+        "lng": -46.91778,
+        "cep": "06543308",
+        "cidade": "Santana de Parnaíba",
+        "bairro": "Tamboré"
+    },
+    "06680056": {
+        "lat": -23.54889,
+        "lng": -46.93417,
+        "cep": "06680056",
+        "cidade": "Itapevi",
+        "bairro": "Estância São Francisco"
+    },
+    "06703570": {
+        "lat": -23.60389,
+        "lng": -46.91917,
+        "cep": "06703570",
+        "cidade": "Cotia",
+        "bairro": "Jardim Maria Tereza"
+    },
+    "06711250": {
+        "lat": -23.6008474,
+        "lng": -46.8390873,
+        "cep": "06711250",
+        "cidade": "Cotia",
+        "bairro": "Jardim da Glória"
+    },
+    "06715825": {
+        "lat": -23.60389,
+        "lng": -46.91917,
+        "cep": "06715825",
+        "cidade": "Cotia",
+        "bairro": "Jardim Cláudio"
+    },
+    "06727195": {
+        "lat": -23.60389,
+        "lng": -46.91917,
+        "cep": "06727195",
+        "cidade": "Cotia",
+        "bairro": "Centro (Caucaia do Alto)"
+    },
+    "06765310": {
+        "lat": -23.62611,
+        "lng": -46.79167,
+        "cep": "06765310",
+        "cidade": "Taboão da Serra",
+        "bairro": "Parque Industrial das Oliveiras"
+    },
+    "06790160": {
+        "lat": -23.62611,
+        "lng": -46.79167,
+        "cep": "06790160",
+        "cidade": "Taboão da Serra",
+        "bairro": "Jardim Três Marias"
+    },
+    "06804260": {
+        "lat": -23.64889,
+        "lng": -46.85222,
+        "cep": "06804260",
+        "cidade": "Embu das Artes",
+        "bairro": "Jardim Sílvia"
+    },
+    "06807461": {
+        "lat": -23.64889,
+        "lng": -46.85222,
+        "cep": "06807461",
+        "cidade": "Embu das Artes",
+        "bairro": "Jardim Mimas"
+    },
+    "06835701": {
+        "lat": -23.64889,
+        "lng": -46.85222,
+        "cep": "06835701",
+        "cidade": "Embu das Artes",
+        "bairro": "Parque Industrial do Pinheirinho"
+    },
+    "06843195": {
+        "lat": -23.64889,
+        "lng": -46.85222,
+        "cep": "06843195",
+        "cidade": "Embu das Artes",
+        "bairro": "Maria Auxiliadora"
+    },
+    "06844005": {
+        "lat": -23.64889,
+        "lng": -46.85222,
+        "cep": "06844005",
+        "cidade": "Embu das Artes",
+        "bairro": "Jardim Itatiaia"
+    },
+    "06856000": {
+        "lat": -23.71694,
+        "lng": -46.84917,
+        "cep": "06856000",
+        "cidade": "Itapecerica da Serra",
+        "bairro": "Recreio Campestre"
+    },
+    "07171030": {
+        "lat": -23.46278,
+        "lng": -46.53333,
+        "cep": "07171030",
+        "cidade": "Guarulhos",
+        "bairro": "Cidade Parque São Luiz"
+    },
+    "07171150": {
+        "lat": -23.46278,
+        "lng": -46.53333,
+        "cep": "07171150",
+        "cidade": "Guarulhos",
+        "bairro": "Jardim Presidente Dutra"
+    },
+    "07191000": {
+        "lat": -23.46278,
+        "lng": -46.53333,
+        "cep": "07191000",
+        "cidade": "Guarulhos",
+        "bairro": "Vila Flórida"
+    },
+    "07224210": {
+        "lat": -23.46278,
+        "lng": -46.53333,
+        "cep": "07224210",
+        "cidade": "Guarulhos",
+        "bairro": "Cidade Industrial Satélite de São Paulo"
+    },
+    "07747300": {
+        "lat": -23.36417,
+        "lng": -46.74056,
+        "cep": "07747300",
+        "cidade": "Caieiras",
+        "bairro": "Laranjeiras"
+    },
+    "07776235": {
+        "lat": -23.35611,
+        "lng": -46.87694,
+        "cep": "07776235",
+        "cidade": "Cajamar",
+        "bairro": "Jordanésia (Jordanésia)"
+    },
+    "07790890": {
+        "lat": -23.35611,
+        "lng": -46.87694,
+        "cep": "07790890",
+        "cidade": "Cajamar",
+        "bairro": "Portais (Polvilho)"
+    },
+    "08110210": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "08110210",
+        "cidade": "São Paulo",
+        "bairro": "Vila Silva Teles"
+    },
+    "08260030": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "08260030",
+        "cidade": "São Paulo",
+        "bairro": "Colônia (Zona Leste)"
+    },
+    "08285000": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "08285000",
+        "cidade": "São Paulo",
+        "bairro": "Cidade Líder"
+    },
+    "08290220": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "08290220",
+        "cidade": "São Paulo",
+        "bairro": "Vila Carmosina"
+    },
+    "08320280": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "08320280",
+        "cidade": "São Paulo",
+        "bairro": "Parque São Rafael"
+    },
+    "08371440": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "08371440",
+        "cidade": "São Paulo",
+        "bairro": "Jardim Marilu"
+    },
+    "08412070": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "08412070",
+        "cidade": "São Paulo",
+        "bairro": "Vila Cruzeiro"
+    },
+    "08460245": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "08460245",
+        "cidade": "São Paulo",
+        "bairro": "Jardim Soares"
+    },
+    "08485525": {
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "cep": "08485525",
+        "cidade": "São Paulo",
+        "bairro": "Palanque"
+    },
+    "08536440": {
+        "lat": -23.54083,
+        "lng": -46.36861,
+        "cep": "08536440",
+        "cidade": "Ferraz de Vasconcelos",
+        "bairro": "Jardim Santa Rosa"
+    },
+    "08664015": {
+        "lat": -23.5425,
+        "lng": -46.31083,
+        "cep": "08664015",
+        "cidade": "Suzano",
+        "bairro": "Parque Santa Rosa"
+    },
+    "08673010": {
+        "lat": -23.5425,
+        "lng": -46.31083,
+        "cep": "08673010",
+        "cidade": "Suzano",
+        "bairro": "Parque Suzano"
+    },
+    "08675000": {
+        "lat": -23.5425,
+        "lng": -46.31083,
+        "cep": "08675000",
+        "cidade": "Suzano",
+        "bairro": "Vila Costa"
+    },
+    "08740110": {
+        "lat": -23.52278,
+        "lng": -46.18833,
+        "cep": "08740110",
+        "cidade": "Mogi das Cruzes",
+        "bairro": "Braz Cubas"
+    },
+    "08770480": {
+        "lat": -23.52278,
+        "lng": -46.18833,
+        "cep": "08770480",
+        "cidade": "Mogi das Cruzes",
+        "bairro": "Jardim Ponte Grande"
+    },
+    "08790260": {
+        "lat": -23.52278,
+        "lng": -46.18833,
+        "cep": "08790260",
+        "cidade": "Mogi das Cruzes",
+        "bairro": "Vila Oliveira"
+    },
+    "08900000": {
+        "lat": -23.415,
+        "lng": -46.035,
+        "cep": "08900000",
+        "cidade": "Guararema",
+        "bairro": null
+    },
+    "09182470": {
+        "lat": -23.66389,
+        "lng": -46.53833,
+        "cep": "09182470",
+        "cidade": "Santo André",
+        "bairro": "Jardim Las Vegas"
+    },
+    "09190410": {
+        "lat": -23.66389,
+        "lng": -46.53833,
+        "cep": "09190410",
+        "cidade": "Santo André",
+        "bairro": "Vila Gilda"
+    },
+    "09190610": {
+        "lat": -23.66389,
+        "lng": -46.53833,
+        "cep": "09190610",
+        "cidade": "Santo André",
+        "bairro": "Paraíso"
+    },
+    "09194450": null,
+    "09220720": {
+        "lat": -23.6192058,
+        "lng": -46.5403444,
+        "cep": "09220720",
+        "cidade": "Santo André",
+        "bairro": "Utinga"
+    },
+    "09260760": {
+        "lat": -23.66389,
+        "lng": -46.53833,
+        "cep": "09260760",
+        "cidade": "Santo André",
+        "bairro": "Parque Novo Oratório"
+    },
+    "09290260": {
+        "lat": -23.66389,
+        "lng": -46.53833,
+        "cep": "09290260",
+        "cidade": "Santo André",
+        "bairro": "Parque João Ramalho"
+    },
+    "09290330": {
+        "lat": -23.66389,
+        "lng": -46.53833,
+        "cep": "09290330",
+        "cidade": "Santo André",
+        "bairro": "Jardim Alzira Franco"
+    },
+    "09290416": {
+        "lat": -23.66389,
+        "lng": -46.53833,
+        "cep": "09290416",
+        "cidade": "Santo André",
+        "bairro": "Parque Jaçatuba"
+    },
+    "09310000": {
+        "lat": -23.66778,
+        "lng": -46.46139,
+        "cep": "09310000",
+        "cidade": "Mauá",
+        "bairro": "Vila Bocaina"
+    },
+    "09340730": {
+        "lat": -23.66778,
+        "lng": -46.46139,
+        "cep": "09340730",
+        "cidade": "Mauá",
+        "bairro": "Jardim São José"
+    },
+    "09380170": {
+        "lat": -23.66778,
+        "lng": -46.46139,
+        "cep": "09380170",
+        "cidade": "Mauá",
+        "bairro": "Capuava"
+    },
+    "09450000": {
+        "lat": -23.74417,
+        "lng": -46.39833,
+        "cep": "09450000",
+        "cidade": "Rio Grande da Serra",
+        "bairro": null
+    },
+    "09521320": {
+        "lat": -23.6130401,
+        "lng": -46.5785025,
+        "cep": "09521320",
+        "cidade": "São Caetano do Sul",
+        "bairro": "Centro"
+    },
+    "09530260": {
+        "lat": -23.62306,
+        "lng": -46.55111,
+        "cep": "09530260",
+        "cidade": "São Caetano do Sul",
+        "bairro": "Santo Antônio"
+    },
+    "09618100": {
+        "lat": -23.69389,
+        "lng": -46.565,
+        "cep": "09618100",
+        "cidade": "São Bernardo do Campo",
+        "bairro": "Rudge Ramos"
+    },
+    "09663010": {
+        "lat": -23.69389,
+        "lng": -46.565,
+        "cep": "09663010",
+        "cidade": "São Bernardo do Campo",
+        "bairro": "Taboão"
+    },
+    "09840000": {
+        "lat": -23.69389,
+        "lng": -46.565,
+        "cep": "09840000",
+        "cidade": "São Bernardo do Campo",
+        "bairro": "Dos Casa"
+    },
+    "09840070": {
+        "lat": -23.69389,
+        "lng": -46.565,
+        "cep": "09840070",
+        "cidade": "São Bernardo do Campo",
+        "bairro": "Dos Casa"
+    },
+    "09841720": {
+        "lat": -23.69389,
+        "lng": -46.565,
+        "cep": "09841720",
+        "cidade": "São Bernardo do Campo",
+        "bairro": "Alvarenga"
+    },
+    "09843400": {
+        "lat": -23.69389,
+        "lng": -46.565,
+        "cep": "09843400",
+        "cidade": "São Bernardo do Campo",
+        "bairro": "Batistini"
+    },
+    "09850090": {
+        "lat": -23.69389,
+        "lng": -46.565,
+        "cep": "09850090",
+        "cidade": "São Bernardo do Campo",
+        "bairro": "Dos Casa"
+    },
+    "09890001": {
+        "lat": -23.69389,
+        "lng": -46.565,
+        "cep": "09890001",
+        "cidade": "São Bernardo do Campo",
+        "bairro": "Planalto"
+    },
+    "09890510": {
+        "lat": -23.69389,
+        "lng": -46.565,
+        "cep": "09890510",
+        "cidade": "São Bernardo do Campo",
+        "bairro": "Planalto"
+    },
+    "11015015": {
+        "lat": -23.96083,
+        "lng": -46.33361,
+        "cep": "11015015",
+        "cidade": "Santos",
+        "bairro": "Macuco"
+    },
+    "11020020": {
+        "lat": -23.96083,
+        "lng": -46.33361,
+        "cep": "11020020",
+        "cidade": "Santos",
+        "bairro": "Estuário"
+    },
+    "11045550": {
+        "lat": -23.96083,
+        "lng": -46.33361,
+        "cep": "11045550",
+        "cidade": "Santos",
+        "bairro": "Boqueirão"
+    },
+    "11085601": {
+        "lat": -23.96083,
+        "lng": -46.33361,
+        "cep": "11085601",
+        "cidade": "Santos",
+        "bairro": "Caneleira"
+    },
+    "11250462": {
+        "lat": -23.85444,
+        "lng": -46.13861,
+        "cep": "11250462",
+        "cidade": "Bertioga",
+        "bairro": "Centro"
+    },
+    "11330220": {
+        "lat": -23.96306,
+        "lng": -46.39194,
+        "cep": "11330220",
+        "cidade": "São Vicente",
+        "bairro": "Parque Bitaru"
+    },
+    "11380380": {
+        "lat": -23.96306,
+        "lng": -46.39194,
+        "cep": "11380380",
+        "cidade": "São Vicente",
+        "bairro": "Jardim Independência"
+    },
+    "11410410": {
+        "lat": -23.99306,
+        "lng": -46.25639,
+        "cep": "11410410",
+        "cidade": "Guarujá",
+        "bairro": "Pitangueiras"
+    },
+    "11441000": {
+        "lat": -23.99306,
+        "lng": -46.25639,
+        "cep": "11441000",
+        "cidade": "Guarujá",
+        "bairro": "Enseada"
+    },
+    "11573573": null,
+    "11600733": {
+        "lat": -23.76,
+        "lng": -45.40972,
+        "cep": "11600733",
+        "cidade": "São Sebastião",
+        "bairro": "Jaraguá"
+    },
+    "11660410": {
+        "lat": -23.62028,
+        "lng": -45.41306,
+        "cep": "11660410",
+        "cidade": "Caraguatatuba",
+        "bairro": "Caputera"
+    },
+    "11660660": {
+        "lat": -23.62028,
+        "lng": -45.41306,
+        "cep": "11660660",
+        "cidade": "Caraguatatuba",
+        "bairro": "Jardim Primavera"
+    },
+    "11666590": {
+        "lat": -23.62028,
+        "lng": -45.41306,
+        "cep": "11666590",
+        "cidade": "Caraguatatuba",
+        "bairro": "Praia das Palmeiras"
+    },
+    "11669320": {
+        "lat": -23.62028,
+        "lng": -45.41306,
+        "cep": "11669320",
+        "cidade": "Caraguatatuba",
+        "bairro": "Travessão"
+    },
+    "11725060": {
+        "lat": -24.00583,
+        "lng": -46.40278,
+        "cep": "11725060",
+        "cidade": "Praia Grande",
+        "bairro": "Sítio do Campo"
+    },
+    "11800000": {
+        "lat": -24.32083,
+        "lng": -47.63472,
+        "cep": "11800000",
+        "cidade": "Juquiá",
+        "bairro": null
+    },
+    "11900000": {
+        "lat": -24.4875,
+        "lng": -47.84361,
+        "cep": "11900000",
+        "cidade": "Registro",
+        "bairro": null
+    },
+    "11920000": {
+        "lat": -24.70806,
+        "lng": -47.55528,
+        "cep": "11920000",
+        "cidade": "Iguape",
+        "bairro": null
+    },
+    "11925000": {
+        "lat": -24.74111,
+        "lng": -47.54,
+        "cep": "11925000",
+        "cidade": "Ilha Comprida",
+        "bairro": null
+    },
+    "11950950": null,
+    "12072072": null,
+    "12072250": {
+        "lat": -23.02639,
+        "lng": -45.55528,
+        "cep": "12072250",
+        "cidade": "Taubaté",
+        "bairro": "UNA"
+    },
+    "12209240": {
+        "lat": -23.1768244,
+        "lng": -45.8820649,
+        "cep": "12209240",
+        "cidade": "São José dos Campos",
+        "bairro": "Vila Maria"
+    },
+    "12224853": {
+        "lat": -23.1811842,
+        "lng": -45.8072864,
+        "cep": "12224853",
+        "cidade": "São José dos Campos",
+        "bairro": "Condomínio Residencial Campo Belo"
+    },
+    "12231140": {
+        "lat": -23.2120785,
+        "lng": -45.8855585,
+        "cep": "12231140",
+        "cidade": "São José dos Campos",
+        "bairro": "Jardim Aeroporto"
+    },
+    "12242000": {
+        "lat": -23.17944,
+        "lng": -45.88694,
+        "cep": "12242000",
+        "cidade": "São José dos Campos",
+        "bairro": "Jardim das Colinas"
+    },
+    "12245820": {
+        "lat": -23.17944,
+        "lng": -45.88694,
+        "cep": "12245820",
+        "cidade": "São José dos Campos",
+        "bairro": "Centro"
+    },
+    "12246246": null,
+    "12272272": null,
+    "12630000": {
+        "lat": -22.665,
+        "lng": -45.00944,
+        "cep": "12630000",
+        "cidade": "Cachoeira Paulista",
+        "bairro": null
+    },
+    "12763763": null,
+    "12910610": {
+        "lat": -22.9527,
+        "lng": -46.54418,
+        "cep": "12910610",
+        "cidade": "Bragança Paulista",
+        "bairro": "Jardim Doutor Júlio de Mesquita Filho"
+    },
+    "12922670": {
+        "lat": -22.9527,
+        "lng": -46.54418,
+        "cep": "12922670",
+        "cidade": "Bragança Paulista",
+        "bairro": "Cidade Planejada II"
+    },
+    "12929899": {
+        "lat": -22.9527,
+        "lng": -46.54418,
+        "cep": "12929899",
+        "cidade": "Bragança Paulista",
+        "bairro": "Área Rural de Bragança Paulista"
+    },
+    "12929929": null,
+    "12960000": {
+        "lat": -23.18111,
+        "lng": -46.395,
+        "cep": "12960000",
+        "cidade": "Nazaré Paulista",
+        "bairro": null
+    },
+    "13015082": {
+        "lat": -22.9085531,
+        "lng": -47.0560834,
+        "cep": "13015082",
+        "cidade": "Campinas",
+        "bairro": "Centro"
+    },
+    "13040093": {
+        "lat": -22.90556,
+        "lng": -47.06083,
+        "cep": "13040093",
+        "cidade": "Campinas",
+        "bairro": "Jardim Nova Europa"
+    },
+    "13140000": null,
+    "13171171": {
+        "lat": -22.82194,
+        "lng": -47.26694,
+        "cep": "13171171",
+        "cidade": "Sumaré",
+        "bairro": "Parque Emília"
+    },
+    "13187075": {
+        "lat": -22.9073714,
+        "lng": -47.2174083,
+        "cep": "13187075",
+        "cidade": "Hortolândia",
+        "bairro": "Jardim São Bento"
+    },
+    "13188900": {
+        "lat": -22.85833,
+        "lng": -47.22,
+        "cep": "13188900",
+        "cidade": "Hortolândia",
+        "bairro": "Chácaras Assay"
+    },
+    "13202570": {
+        "lat": -23.18639,
+        "lng": -46.88417,
+        "cep": "13202570",
+        "cidade": "Jundiaí",
+        "bairro": "Vila Arens II"
+    },
+    "13213080": {
+        "lat": -23.1576842,
+        "lng": -46.9500033,
+        "cep": "13213080",
+        "cidade": "Jundiaí",
+        "bairro": "Distrito Industrial"
+    },
+    "13213105": {
+        "lat": -23.18639,
+        "lng": -46.88417,
+        "cep": "13213105",
+        "cidade": "Jundiaí",
+        "bairro": "Distrito Industrial"
+    },
+    "13213180": {
+        "lat": -23.18639,
+        "lng": -46.88417,
+        "cep": "13213180",
+        "cidade": "Jundiaí",
+        "bairro": "Loteamento Parque Industrial"
+    },
+    "13213213": null,
+    "13231600": {
+        "lat": -23.20554,
+        "lng": -46.7838,
+        "cep": "13231600",
+        "cidade": "Campo Limpo Paulista",
+        "bairro": "Chácara Lagoa Branca"
+    },
+    "13250250": {
+        "lat": -23.00583,
+        "lng": -46.83889,
+        "cep": "13250250",
+        "cidade": "Itatiba",
+        "bairro": "Centro"
+    },
+    "13255425": {
+        "lat": -23.00583,
+        "lng": -46.83889,
+        "cep": "13255425",
+        "cidade": "Itatiba",
+        "bairro": "Distrito Industrial Alfredo Relo"
+    },
+    "13257257": null,
+    "13318000": {
+        "lat": -23.3075,
+        "lng": -47.13278,
+        "cep": "13318000",
+        "cidade": "Cabreúva",
+        "bairro": "Jacaré"
+    },
+    "13318318": null,
+    "13390000": null,
+    "13457457": null,
+    "13459459": null,
+    "13477250": {
+        "lat": -22.73917,
+        "lng": -47.33139,
+        "cep": "13477250",
+        "cidade": "Americana",
+        "bairro": "Jardim Helena"
+    },
+    "13477477": null,
+    "13478540": {
+        "lat": -22.73917,
+        "lng": -47.33139,
+        "cep": "13478540",
+        "cidade": "Americana",
+        "bairro": "Vila Israel"
+    },
+    "13490000": {
+        "lat": -22.48194,
+        "lng": -47.45667,
+        "cep": "13490000",
+        "cidade": "Cordeirópolis",
+        "bairro": null
+    },
+    "13503503": {
+        "lat": -22.41139,
+        "lng": -47.56139,
+        "cep": "13503503",
+        "cidade": "Rio Claro",
+        "bairro": "Jardim Centenário"
+    },
+    "13505505": {
+        "lat": -22.41139,
+        "lng": -47.56139,
+        "cep": "13505505",
+        "cidade": "Rio Claro",
+        "bairro": "Jardim Residencial São José"
+    },
+    "13505600": {
+        "lat": -22.41139,
+        "lng": -47.56139,
+        "cep": "13505600",
+        "cidade": "Rio Claro",
+        "bairro": "Distrito Industrial"
+    },
+    "13590000": {
+        "lat": -22.1,
+        "lng": -48.3175,
+        "cep": "13590000",
+        "cidade": "Dourado",
+        "bairro": null
+    },
+    "13610610": null,
+    "13710000": {
+        "lat": -21.705,
+        "lng": -47.27444,
+        "cep": "13710000",
+        "cidade": "Tambaú",
+        "bairro": null
+    },
+    "13712712": null,
+    "13731285": {
+        "lat": -21.46778,
+        "lng": -47.00472,
+        "cep": "13731285",
+        "cidade": "Mococa",
+        "bairro": "Jardim Nova Mococa"
+    },
+    "13732540": {
+        "lat": -21.46778,
+        "lng": -47.00472,
+        "cep": "13732540",
+        "cidade": "Mococa",
+        "bairro": "Jardim Alvorada"
+    },
+    "13733060": {
+        "lat": -21.46778,
+        "lng": -47.00472,
+        "cep": "13733060",
+        "cidade": "Mococa",
+        "bairro": "Jardim Santa Cecília"
+    },
+    "13971045": {
+        "lat": -22.43611,
+        "lng": -46.82167,
+        "cep": "13971045",
+        "cidade": "Itapira",
+        "bairro": "Vila Penha do Rio do Peixe"
+    },
+    "14075075": null,
+    "14078600": {
+        "lat": -21.1775,
+        "lng": -47.81028,
+        "cep": "14078600",
+        "cidade": "Ribeirão Preto",
+        "bairro": "Jardim Jóquei Clube"
+    },
+    "14115000": {
+        "lat": -21.49608,
+        "lng": -48.03491,
+        "cep": "14115000",
+        "cidade": "Guatapará",
+        "bairro": null
+    },
+    "14340000": {
+        "lat": -20.99139,
+        "lng": -47.65861,
+        "cep": "14340000",
+        "cidade": "Brodowski",
+        "bairro": null
+    },
+    "14401426": {
+        "lat": -20.53861,
+        "lng": -47.40083,
+        "cep": "14401426",
+        "cidade": "Franca",
+        "bairro": "Jardim Piratininga II"
+    },
+    "14406406": {
+        "lat": -20.53861,
+        "lng": -47.40083,
+        "cep": "14406406",
+        "cidade": "Franca",
+        "bairro": "Jardim Dermínio"
+    },
+    "14409406": {
+        "lat": -20.53861,
+        "lng": -47.40083,
+        "cep": "14409406",
+        "cidade": "Franca",
+        "bairro": "Recreio Campo Belo"
+    },
+    "14520520": null,
+    "14730730": null,
+    "15150000": {
+        "lat": -20.7725,
+        "lng": -49.71417,
+        "cep": "15150000",
+        "cidade": "Monte Aprazível",
+        "bairro": null
+    },
+    "15350350": {
+        "lat": -20.68556,
+        "lng": -50.55472,
+        "cep": "15350350",
+        "cidade": "Auriflama",
+        "bairro": "Parque Imperial I"
+    },
+    "15400069": {
+        "lat": -20.73722,
+        "lng": -48.91472,
+        "cep": "15400069",
+        "cidade": "Olímpia",
+        "bairro": "Patrimônio de São João Batista"
+    },
+    "15482482": null,
+    "15600000": null,
+    "15685685": null,
+    "16306172": {
+        "lat": -21.41972,
+        "lng": -50.0775,
+        "cep": "16306172",
+        "cidade": "Penápolis",
+        "bairro": "Jardim Tokio"
+    },
+    "17284284": null,
+    "17470000": {
+        "lat": -22.41444,
+        "lng": -49.40389,
+        "cep": "17470000",
+        "cidade": "Duartina",
+        "bairro": "Duartina"
+    },
+    "17495288": {
+        "lat": -22.41278,
+        "lng": -49.13472,
+        "cep": "17495288",
+        "cidade": "Piratininga",
+        "bairro": "Olympio Fernandes"
+    },
+    "17512875": {
+        "lat": -22.21389,
+        "lng": -49.94583,
+        "cep": "17512875",
+        "cidade": "Marília",
+        "bairro": "Conjunto Habitacional Lindomar Gomes de Carvalho"
+    },
+    "17539539": null,
+    "17740000": {
+        "lat": -21.72583,
+        "lng": -50.72222,
+        "cep": "17740000",
+        "cidade": "Rinópolis",
+        "bairro": null
+    },
+    "18087087": {
+        "lat": -23.50167,
+        "lng": -47.45806,
+        "cep": "18087087",
+        "cidade": "Sorocaba",
+        "bairro": "Jardim do Paço"
+    },
+    "18087156": {
+        "lat": -23.50167,
+        "lng": -47.45806,
+        "cep": "18087156",
+        "cidade": "Sorocaba",
+        "bairro": "Iporanga"
+    },
+    "18130000": null,
+    "18130130": {
+        "lat": -23.52917,
+        "lng": -47.13528,
+        "cep": "18130130",
+        "cidade": "São Roque",
+        "bairro": "Centro"
+    },
+    "18140140": null,
+    "18147000": {
+        "lat": -23.43861,
+        "lng": -47.06139,
+        "cep": "18147000",
+        "cidade": "Araçariguama",
+        "bairro": null
+    },
+    "18205720": {
+        "lat": -23.59167,
+        "lng": -48.05306,
+        "cep": "18205720",
+        "cidade": "Itapetininga",
+        "bairro": "Vila Camarão"
+    },
+    "18211265": {
+        "lat": -23.59167,
+        "lng": -48.05306,
+        "cep": "18211265",
+        "cidade": "Itapetininga",
+        "bairro": "Vila Belo Horizonte"
+    },
+    "18240000": {
+        "lat": -23.48972,
+        "lng": -48.41278,
+        "cep": "18240000",
+        "cidade": "Angatuba",
+        "bairro": null
+    },
+    "18276120": {
+        "lat": -23.35556,
+        "lng": -47.85694,
+        "cep": "18276120",
+        "cidade": "Tatuí",
+        "bairro": "Loteamento Modena"
+    },
+    "18304110": {
+        "lat": -24.00583,
+        "lng": -48.34944,
+        "cep": "18304110",
+        "cidade": "Capão Bonito",
+        "bairro": "Vila Nova Capão Bonito"
+    },
+    "18314899": {
+        "lat": -24.185,
+        "lng": -48.53278,
+        "cep": "18314899",
+        "cidade": "Guapiara",
+        "bairro": "Área Rural de Guapiara"
+    },
+    "18320000": {
+        "lat": -24.50944,
+        "lng": -48.8425,
+        "cep": "18320000",
+        "cidade": "Apiaí",
+        "bairro": null
+    },
+    "18440000": {
+        "lat": -23.86194,
+        "lng": -49.13722,
+        "cep": "18440000",
+        "cidade": "Itaberá",
+        "bairro": null
+    },
+    "18603603": null,
+    "18608820": null,
+    "18705650": {
+        "lat": -23.09861,
+        "lng": -48.92583,
+        "cep": "18705650",
+        "cidade": "Avaré",
+        "bairro": "Jardim Paineiras"
+    },
+    "18706706": {
+        "lat": -23.09861,
+        "lng": -48.92583,
+        "cep": "18706706",
+        "cidade": "Avaré",
+        "bairro": "Conjunto Habitacional Duílio Contrucci Gambini"
+    },
+    "18800000": null,
+    "18900440": {
+        "lat": -22.89889,
+        "lng": -49.6325,
+        "cep": "18900440",
+        "cidade": "Santa Cruz do Rio Pardo",
+        "bairro": "Chácara Peixe"
+    },
+    "18915792": {
+        "lat": -22.89889,
+        "lng": -49.6325,
+        "cep": "18915792",
+        "cidade": "Santa Cruz do Rio Pardo",
+        "bairro": "Jardim São João"
+    },
+    "19010030": {
+        "lat": -22.12556,
+        "lng": -51.38889,
+        "cep": "19010030",
+        "cidade": "Presidente Prudente",
+        "bairro": "Vila Jesus"
+    },
+    "19033033": null,
+    "19806806": null,
+    "20031902": {
+        "lat": -22.90642,
+        "lng": -43.18223,
+        "cep": "20031902",
+        "cidade": "Rio de Janeiro",
+        "bairro": "Centro"
+    },
+    "22775056": {
+        "lat": -22.99069,
+        "lng": -43.3607904,
+        "cep": "22775056",
+        "cidade": "Rio de Janeiro",
+        "bairro": "Barra da Tijuca"
+    },
+    "24465270": {
+        "lat": -22.82694,
+        "lng": -43.05389,
+        "cep": "24465270",
+        "cidade": "São Gonçalo",
+        "bairro": "Brasilândia"
+    },
+    "25850850": null,
+    "28470000": {
+        "lat": -21.53944,
+        "lng": -42.18028,
+        "cep": "28470000",
+        "cidade": "Santo Antônio de Pádua",
+        "bairro": null
+    },
+    "29124076": {
+        "lat": -20.32972,
+        "lng": -40.2925,
+        "cep": "29124076",
+        "cidade": "Vila Velha",
+        "bairro": "São Conrado"
+    },
+    "29124124": {
+        "lat": -20.32972,
+        "lng": -40.2925,
+        "cep": "29124124",
+        "cidade": "Vila Velha",
+        "bairro": "São Conrado"
+    },
+    "30140091": {
+        "lat": -19.92083,
+        "lng": -43.93778,
+        "cep": "30140091",
+        "cidade": "Belo Horizonte",
+        "bairro": "Savassi"
+    },
+    "30140140": {
+        "lat": -19.92083,
+        "lng": -43.93778,
+        "cep": "30140140",
+        "cidade": "Belo Horizonte",
+        "bairro": "Savassi"
+    },
+    "30441055": {
+        "lat": -19.92083,
+        "lng": -43.93778,
+        "cep": "30441055",
+        "cidade": "Belo Horizonte",
+        "bairro": "Gutierrez"
+    },
+    "35547000": {
+        "lat": -20.55778,
+        "lng": -44.87056,
+        "cep": "35547000",
+        "cidade": "Carmo da Mata",
+        "bairro": null
+    },
+    "35547547": null,
+    "35568568": null,
+    "35770770": null,
+    "39390390": null,
+    "39404166": {
+        "lat": -16.735,
+        "lng": -43.86167,
+        "cep": "39404166",
+        "cidade": "Montes Claros",
+        "bairro": "Jaraguá"
+    },
+    "41820560": {
+        "lat": -12.97563,
+        "lng": -38.49096,
+        "cep": "41820560",
+        "cidade": "Salvador",
+        "bairro": "Caminho das Árvores"
+    },
+    "42703703": null,
+    "61888090": {
+        "lat": -3.96944,
+        "lng": -38.52806,
+        "cep": "61888090",
+        "cidade": "Itaitinga",
+        "bairro": "Pedras"
+    },
+    "61890000": {
+        "lat": -4.03972,
+        "lng": -38.63722,
+        "cep": "61890000",
+        "cidade": "Guaiúba",
+        "bairro": null
+    },
+    "61900360": {
+        "lat": -3.87667,
+        "lng": -38.62556,
+        "cep": "61900360",
+        "cidade": "Maracanaú",
+        "bairro": "Jereissati"
+    },
+    "75515610": {
+        "lat": -18.41917,
+        "lng": -49.21528,
+        "cep": "75515610",
+        "cidade": "Itumbiara",
+        "bairro": "Distrito Agroindustrial II"
+    },
+    "79780780": null,
+    "83015130": {
+        "lat": -25.5302,
+        "lng": -49.20836,
+        "cep": "83015130",
+        "cidade": "São José dos Pinhais",
+        "bairro": "Ouro Fino"
+    },
+    "83434715": {
+        "lat": -25.30556,
+        "lng": -49.05528,
+        "cep": "83434715",
+        "cidade": "Campina Grande do Sul",
+        "bairro": "Campo Fundo"
+    },
+    "83504450": {
+        "lat": -25.32472,
+        "lng": -49.31,
+        "cep": "83504450",
+        "cidade": "Almirante Tamandaré",
+        "bairro": "Cachoeira"
+    },
+    "88030902": {
+        "lat": -27.59667,
+        "lng": -48.54917,
+        "cep": "88030902",
+        "cidade": "Florianópolis",
+        "bairro": "João Paulo"
+    },
+    "89219219": null,
+    "89219550": {
+        "lat": -26.30444,
+        "lng": -48.84556,
+        "cep": "89219550",
+        "cidade": "Joinville",
+        "bairro": "Zona Industrial Norte"
+    },
+    "90470470": {
+        "lat": -30.03283,
+        "lng": -51.23019,
+        "cep": "90470470",
+        "cidade": "Porto Alegre",
+        "bairro": "Petrópolis"
+    },
+    "92420530": {
+        "lat": -29.91778,
+        "lng": -51.18361,
+        "cep": "92420530",
+        "cidade": "Canoas",
+        "bairro": "Industrial"
+    },
+    "92990990": null,
+    "93180000": {
+        "lat": -29.70167,
+        "lng": -51.24194,
+        "cep": "93180000",
+        "cidade": "Portão",
+        "bairro": null
+    },
+    "93214214": null,
+    "99950000": {
+        "lat": -28.06806,
+        "lng": -52.01389,
+        "cep": "99950000",
+        "cidade": "Tapejara",
+        "bairro": null
+    }
+}

@@ -1,125 +1,18686 @@
-/**
- * data.js — Dados mock dos hubs logísticos
- *
- * Estrutura preparada para substituição fácil por dados reais (Excel → JSON).
- * Cada hub possui: id, nome, lat, lng, volume, cidade, uf
- */
+// Dados gerados automaticamente a partir do Excel consolidado
 
 const HUBS_DATA = [
     {
-        id: "HBAU",
-        nome: "Hub HBAU",
-        lat: -22.3147,
-        lng: -49.0606,
-        volume: 2733933,
-        cidade: "Bauru",
-        uf: "SP"
+        "id": "D002",
+        "nome": "Materiais Gerais (Americana)",
+        "cidade": "Americana",
+        "uf": "SP",
+        "lat": -22.7388,
+        "lng": -47.3323,
+        "volume": 241890,
+        "movimentacoes": 888,
+        "tipo": "CD"
     },
     {
-        id: "JDI",
-        nome: "Hub JDI",
-        lat: -23.1864,
-        lng: -46.8974,
-        volume: 2203167,
-        cidade: "Jundiaí",
-        uf: "SP"
+        "id": "D019",
+        "nome": "Lapa",
+        "cidade": "Lapa",
+        "uf": "SP",
+        "lat": -23.5284,
+        "lng": -46.7025,
+        "volume": 5200957.475,
+        "movimentacoes": 1689,
+        "tipo": "CD"
     },
     {
-        id: "IND",
-        nome: "Hub IND",
-        lat: -23.0905,
-        lng: -47.2082,
-        volume: 701567,
-        cidade: "Indaiatuba",
-        uf: "SP"
+        "id": "D020",
+        "nome": "Mooca",
+        "cidade": "Mooca",
+        "uf": "SP",
+        "lat": -23.5593,
+        "lng": -46.6083,
+        "volume": 3236957.5259999996,
+        "movimentacoes": 1606,
+        "tipo": "CD"
     },
     {
-        id: "PIR",
-        nome: "Hub PIR",
-        lat: -22.7338,
-        lng: -47.6476,
-        volume: 494000,
-        cidade: "Piracicaba",
-        uf: "SP"
+        "id": "D024",
+        "nome": "ABV | Alto da Boa Vista",
+        "cidade": "Santo Amaro",
+        "uf": "SP",
+        "lat": -23.6335,
+        "lng": -46.6806,
+        "volume": 18692192.826,
+        "movimentacoes": 9385,
+        "tipo": "CD"
     },
     {
-        id: "LIM",
-        nome: "Hub LIM",
-        lat: -22.5641,
-        lng: -47.4015,
-        volume: 497000,
-        cidade: "Limeira",
-        uf: "SP"
+        "id": "D028",
+        "nome": "Pirituba",
+        "cidade": "Pirituba",
+        "uf": "SP",
+        "lat": -23.493,
+        "lng": -46.723,
+        "volume": 9178747,
+        "movimentacoes": 7071,
+        "tipo": "CD"
     },
     {
-        id: "CPS",
-        nome: "Hub CPS",
-        lat: -22.9099,
-        lng: -47.0626,
-        volume: 1850420,
-        cidade: "Campinas",
-        uf: "SP"
+        "id": "D029",
+        "nome": "São Miguel Paulista",
+        "cidade": "São Miguel Paulista",
+        "uf": "SP",
+        "lat": -23.4952,
+        "lng": -46.4388,
+        "volume": 10060931.211,
+        "movimentacoes": 3816,
+        "tipo": "CD"
     },
     {
-        id: "GRU",
-        nome: "Hub GRU",
-        lat: -23.4356,
-        lng: -46.4731,
-        volume: 4120300,
-        cidade: "Guarulhos",
-        uf: "SP"
+        "id": "D030",
+        "nome": "Vila Prudente",
+        "cidade": "Vila Prudente",
+        "uf": "SP",
+        "lat": -23.5788,
+        "lng": -46.5922,
+        "volume": 1973574.2000000002,
+        "movimentacoes": 2378,
+        "tipo": "CD"
     },
     {
-        id: "CWB",
-        nome: "Hub CWB",
-        lat: -25.4284,
-        lng: -49.2733,
-        volume: 1620800,
-        cidade: "Curitiba",
-        uf: "PR"
+        "id": "D034",
+        "nome": "Guaraú",
+        "cidade": "Guaraú",
+        "uf": "SP",
+        "lat": -23.4357,
+        "lng": -46.6346,
+        "volume": 3378643,
+        "movimentacoes": 1001,
+        "tipo": "CD"
     },
     {
-        id: "RIO",
-        nome: "Hub RIO",
-        lat: -22.9068,
-        lng: -43.1729,
-        volume: 3450100,
-        cidade: "Rio de Janeiro",
-        uf: "RJ"
+        "id": "D035",
+        "nome": "Santo André",
+        "cidade": "Santo André",
+        "uf": "SP",
+        "lat": -23.6599,
+        "lng": -46.5298,
+        "volume": 3467887.5,
+        "movimentacoes": 2200,
+        "tipo": "CD"
     },
     {
-        id: "BHZ",
-        nome: "Hub BHZ",
-        lat: -19.9167,
-        lng: -43.9345,
-        volume: 1980750,
-        cidade: "Belo Horizonte",
-        uf: "MG"
+        "id": "D040",
+        "nome": "Suzano",
+        "cidade": "Suzano",
+        "uf": "SP",
+        "lat": -23.5604,
+        "lng": -46.309,
+        "volume": 1726024.4000000001,
+        "movimentacoes": 4233,
+        "tipo": "CD"
     },
     {
-        id: "VTM",
-        nome: "Hub VTM",
-        lat: -23.5431,
-        lng: -46.6327,
-        volume: 5200000,
-        cidade: "São Paulo",
-        uf: "SP"
+        "id": "D075",
+        "nome": "São Mateus",
+        "cidade": "São Mateus",
+        "uf": "SP",
+        "lat": -23.6062,
+        "lng": -46.4678,
+        "volume": 2366940.175,
+        "movimentacoes": 2099,
+        "tipo": "CD"
     },
     {
-        id: "SJC",
-        nome: "Hub SJC",
-        lat: -23.1791,
-        lng: -45.8872,
-        volume: 890340,
-        cidade: "São José dos Campos",
-        uf: "SP"
+        "id": "D094",
+        "nome": "Vila dos Remédios",
+        "cidade": "Vila dos Remédios",
+        "uf": "SP",
+        "lat": -23.523,
+        "lng": -46.7554,
+        "volume": 14110287.428,
+        "movimentacoes": 7091,
+        "tipo": "CD"
     }
 ];
 
-/**
- * Formata um número com separador de milhar (ponto)
- * Ex: 2733933 → "2.733.933"
- */
-function formatarNumero(num) {
-    return num.toLocaleString("pt-BR");
-}
+const PARCEIROS_DATA = [
+    {
+        "id": "P_4600041930_04855090",
+        "codigo": "4600041930",
+        "cidade": "SAO PAULO",
+        "cep": "04855090",
+        "rua": "",
+        "lat": -23.7639458,
+        "lng": -46.6869678,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 5477,
+        "movimentacoes": 3
+    },
+    {
+        "id": "P_4600042127_05846270",
+        "codigo": "4600042127",
+        "cidade": "SAO PAULO",
+        "cep": "05846270",
+        "rua": "",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 1465574,
+        "movimentacoes": 684
+    },
+    {
+        "id": "P_4600042952_09840000",
+        "codigo": "4600042952",
+        "cidade": "SAO BERNARDO DO CAMPO",
+        "cep": "09840000",
+        "rua": "",
+        "lat": -23.69389,
+        "lng": -46.565,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 1298862.88,
+        "movimentacoes": 1069
+    },
+    {
+        "id": "P_4600059579_06844005",
+        "codigo": "4600059579",
+        "cidade": "EMBU DAS ARTES",
+        "cep": "06844005",
+        "rua": "EST.EREADOR NORBERTO VIEIRA DIN 380",
+        "lat": -23.64889,
+        "lng": -46.85222,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 9906,
+        "movimentacoes": 31
+    },
+    {
+        "id": "P_4600059671_04781065",
+        "codigo": "4600059671",
+        "cidade": "SAO PAULO",
+        "cep": "04781065",
+        "rua": "RUA MARIA APARECIDA CARDIA 224",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 65361,
+        "movimentacoes": 189
+    },
+    {
+        "id": "P_4600059910_04456160",
+        "codigo": "4600059910",
+        "cidade": "SAO PAULO",
+        "cep": "04456160",
+        "rua": "RUA BORBA PEREIRA, 121 - ",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 844470,
+        "movimentacoes": 1115
+    },
+    {
+        "id": "P_4600059980_09840000",
+        "codigo": "4600059980",
+        "cidade": "SAO BERNARDO DO CAMPO",
+        "cep": "09840000",
+        "rua": "Av. Afonso Monteiro da Cruz, 579 ",
+        "lat": -23.69389,
+        "lng": -46.565,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 1108989.7,
+        "movimentacoes": 1066
+    },
+    {
+        "id": "P_4600060285_04829280",
+        "codigo": "4600060285",
+        "cidade": "SAO PAULO",
+        "cep": "04829280",
+        "rua": "R. José Solana, 1000 - Cidade Dutra, São Paulo - SP, 04829-280",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 894359.41,
+        "movimentacoes": 707
+    },
+    {
+        "id": "P_4600060345_06856000",
+        "codigo": "4600060345",
+        "cidade": "ITAPECERICA DA SERRA",
+        "cep": "06856000",
+        "rua": "RODOVIA ARMANDO SALES 2375",
+        "lat": -23.71694,
+        "lng": -46.84917,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 1029085.73,
+        "movimentacoes": 918
+    },
+    {
+        "id": "P_4600062805_13187075",
+        "codigo": "4600062805",
+        "cidade": "HORTOLANDIA",
+        "cep": "13187075",
+        "rua": "RUA NAARA LEAO 661",
+        "lat": -22.9073714,
+        "lng": -47.2174083,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 6109,
+        "movimentacoes": 10
+    },
+    {
+        "id": "P_4600063832_09618100",
+        "codigo": "4600063832",
+        "cidade": "SAO BERNARDO DO CAMPO",
+        "cep": "09618100",
+        "rua": "RUA PAULO DI FAVARI 60",
+        "lat": -23.69389,
+        "lng": -46.565,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 54508,
+        "movimentacoes": 29
+    },
+    {
+        "id": "P_4600064867_09190410",
+        "codigo": "4600064867",
+        "cidade": "SANTO ANDRE",
+        "cep": "09190410",
+        "rua": "RUA AVANHANDAVA 56",
+        "lat": -23.66389,
+        "lng": -46.53833,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 64667.932,
+        "movimentacoes": 16
+    },
+    {
+        "id": "P_3000000343_06856000",
+        "codigo": "3000000343",
+        "cidade": "ITAPECERICA DA SERRA",
+        "cep": "06856000",
+        "rua": "RODOVIA ARMANDO SALLES 2375",
+        "lat": -23.71694,
+        "lng": -46.84917,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 10,
+        "movimentacoes": 6
+    },
+    {
+        "id": "P_4600002300_05429060",
+        "codigo": "4600002300",
+        "cidade": "SAO PAULO",
+        "cep": "05429060",
+        "rua": "Rua Costa Carvalho 300",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 25,
+        "movimentacoes": 1
+    },
+    {
+        "id": "P_4600042686_04351050",
+        "codigo": "4600042686",
+        "cidade": "SAO PAULO",
+        "cep": "04351050",
+        "rua": "",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 35604,
+        "movimentacoes": 8
+    },
+    {
+        "id": "P_4600043057_05544000",
+        "codigo": "4600043057",
+        "cidade": "SAO PAULO",
+        "cep": "05544000",
+        "rua": "ESTRADA DE SANTO AMARO, 98 ",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 1250175,
+        "movimentacoes": 697
+    },
+    {
+        "id": "P_4600059912_07191000",
+        "codigo": "4600059912",
+        "cidade": "SAO PAULO",
+        "cep": "07191000",
+        "rua": "Avenida Otavio Braga de Mesquita, 264",
+        "lat": -23.46278,
+        "lng": -46.53333,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 461772.61,
+        "movimentacoes": 680
+    },
+    {
+        "id": "P_4600059951_07171150",
+        "codigo": "4600059951",
+        "cidade": "SAO PAULO",
+        "cep": "07171150",
+        "rua": "AV. Água Chata, 2320 ",
+        "lat": -23.46278,
+        "lng": -46.53333,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 523340.627,
+        "movimentacoes": 474
+    },
+    {
+        "id": "P_4600060030_08260030",
+        "codigo": "4600060030",
+        "cidade": "SAO PAULO",
+        "cep": "08260030",
+        "rua": "RUA AGRIMENSOR SUGAYA, 32",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 1272292.3499999999,
+        "movimentacoes": 1201
+    },
+    {
+        "id": "P_4600060107_08664015",
+        "codigo": "4600060107",
+        "cidade": "SUZANO",
+        "cep": "08664015",
+        "rua": "ESTRADA SANTA MONICA, 800",
+        "lat": -23.5425,
+        "lng": -46.31083,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 702867.2999999999,
+        "movimentacoes": 1094
+    },
+    {
+        "id": "P_4600060108_08664015",
+        "codigo": "4600060108",
+        "cidade": "ITAQUAQUECETUBA",
+        "cep": "08664015",
+        "rua": "RUA FLOR DE LIS, 465",
+        "lat": -23.5425,
+        "lng": -46.31083,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 883665.89,
+        "movimentacoes": 1059
+    },
+    {
+        "id": "P_4600060225_12231140",
+        "codigo": "4600060225",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "cep": "12231140",
+        "rua": "NORUEGA 399",
+        "lat": -23.2120785,
+        "lng": -45.8855585,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 266,
+        "movimentacoes": 8
+    },
+    {
+        "id": "P_4600060294_06715825",
+        "codigo": "4600060294",
+        "cidade": "SAO PAULO",
+        "cep": "06715825",
+        "rua": "Rua Lótus, 205",
+        "lat": -23.60389,
+        "lng": -46.91917,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 2218595.78,
+        "movimentacoes": 1423
+    },
+    {
+        "id": "P_4600060323_11250462",
+        "codigo": "4600060323",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "cep": "11250462",
+        "rua": "GBBE - RUA MANOEL GAJO, 1254 ",
+        "lat": -23.85444,
+        "lng": -46.13861,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 3164,
+        "movimentacoes": 45
+    },
+    {
+        "id": "P_4600060346_09663010",
+        "codigo": "4600060346",
+        "cidade": "SAO BERNARDO DO CAMPO",
+        "cep": "09663010",
+        "rua": "Rua Guilherme Tell, 130 - Suiço, São Bernardo do Campo - SP, 09663-010",
+        "lat": -23.69389,
+        "lng": -46.565,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 29420,
+        "movimentacoes": 6
+    },
+    {
+        "id": "P_4600060565_05187010",
+        "codigo": "4600060565",
+        "cidade": "SAO PAULO",
+        "cep": "05187010",
+        "rua": "Av. Alexios Jafet, 99 ",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 960192.213,
+        "movimentacoes": 879
+    },
+    {
+        "id": "P_4600060683_12242000",
+        "codigo": "4600060683",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "cep": "12242000",
+        "rua": "AVENIDA SÃO JOÃO 2375",
+        "lat": -23.17944,
+        "lng": -45.88694,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 3389,
+        "movimentacoes": 32
+    },
+    {
+        "id": "P_4600062532_13733060",
+        "codigo": "4600062532",
+        "cidade": "MOCOCA",
+        "cep": "13733060",
+        "rua": "RUA MAJOR BENJAMIM COELHO, 39",
+        "lat": -21.46778,
+        "lng": -47.00472,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 3017,
+        "movimentacoes": 14
+    },
+    {
+        "id": "P_4600063172_12910610",
+        "codigo": "4600063172",
+        "cidade": "BRAGANCA PAULISTA",
+        "cep": "12910610",
+        "rua": "AV ARGEMIRO ROCHA DE MORAES 322",
+        "lat": -22.9527,
+        "lng": -46.54418,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 9209,
+        "movimentacoes": 56
+    },
+    {
+        "id": "P_3000000032_04516000",
+        "codigo": "3000000032",
+        "cidade": "SAO PAULO",
+        "cep": "04516000",
+        "rua": "AVENIDA ROUXINOL 55",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 2160,
+        "movimentacoes": 4
+    },
+    {
+        "id": "P_4600042058_04557010",
+        "codigo": "4600042058",
+        "cidade": "SAO PAULO",
+        "cep": "04557010",
+        "rua": "Rua Baetinga, 51",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 226,
+        "movimentacoes": 11
+    },
+    {
+        "id": "P_4600047828_04516000",
+        "codigo": "4600047828",
+        "cidade": "0",
+        "cep": "04516000",
+        "rua": "AVENIDA ROUXINOL 55",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 540,
+        "movimentacoes": 1
+    },
+    {
+        "id": "P_4600059968_04048000",
+        "codigo": "4600059968",
+        "cidade": "SAO PAULO",
+        "cep": "04048000",
+        "rua": "RUA DAS ROSAS 74",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 2049114.25,
+        "movimentacoes": 1063
+    },
+    {
+        "id": "P_4600063009_04459000",
+        "codigo": "4600063009",
+        "cidade": "SAO PAULO",
+        "cep": "04459000",
+        "rua": "R ANTONIO DO CAMPO 191",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 142577,
+        "movimentacoes": 42
+    },
+    {
+        "id": "P_3000000321_05711001",
+        "codigo": "3000000321",
+        "cidade": "SAO PAULO",
+        "cep": "05711001",
+        "rua": "RUA DOUTOR LUIZ MIGLIANO 1986",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 988,
+        "movimentacoes": 4
+    },
+    {
+        "id": "P_4_05429900",
+        "codigo": "4",
+        "cidade": "SAO PAULO",
+        "cep": "05429900",
+        "rua": "",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 8,
+        "movimentacoes": 2
+    },
+    {
+        "id": "P_4600056260_04728210",
+        "codigo": "4600056260",
+        "cidade": "SAO PAULO",
+        "cep": "04728210",
+        "rua": "Rua do Cabral , 137 - Jardim Caravelas",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 22041,
+        "movimentacoes": 60
+    },
+    {
+        "id": "P_4600056982_11410410",
+        "codigo": "4600056982",
+        "cidade": "0",
+        "cep": "11410410",
+        "rua": "AVENIDA ORDEM E PROGRESSO 157",
+        "lat": -23.99306,
+        "lng": -46.25639,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 1960,
+        "movimentacoes": 6
+    },
+    {
+        "id": "P_4600057061_05541130",
+        "codigo": "4600057061",
+        "cidade": "SAO PAULO",
+        "cep": "05541130",
+        "rua": "RUA BARTOLOME CARDUCHO 335",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 5352,
+        "movimentacoes": 18
+    },
+    {
+        "id": "P_4600057296_11441000",
+        "codigo": "4600057296",
+        "cidade": "SAO PAULO",
+        "cep": "11441000",
+        "rua": "GJAP - RUA AUREO GUENAGA DE CASTRO, 521 ",
+        "lat": -23.99306,
+        "lng": -46.25639,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 21312,
+        "movimentacoes": 10
+    },
+    {
+        "id": "P_4600059854_05038090",
+        "codigo": "4600059854",
+        "cidade": "SAO PAULO",
+        "cep": "05038090",
+        "rua": "R. Hugo D'Antola, 46",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 80117,
+        "movimentacoes": 199
+    },
+    {
+        "id": "P_4600059895_02167010",
+        "codigo": "4600059895",
+        "cidade": "SAO PAULO",
+        "cep": "02167010",
+        "rua": "Av. Eng. Caetano Alvares, 431 ",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 826608.487,
+        "movimentacoes": 1102
+    },
+    {
+        "id": "P_4600060020_06381100",
+        "codigo": "4600060020",
+        "cidade": "SAO PAULO",
+        "cep": "06381100",
+        "rua": "Rua Franciso Pignatari, 640",
+        "lat": -23.52272,
+        "lng": -46.835,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 1524071.39,
+        "movimentacoes": 1164
+    },
+    {
+        "id": "P_4600060110_18205720",
+        "codigo": "4600060110",
+        "cidade": "SAO PAULO",
+        "cep": "18205720",
+        "rua": "Av Nisshimbo do Brasil nº 2096",
+        "lat": -23.59167,
+        "lng": -48.05306,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 103,
+        "movimentacoes": 14
+    },
+    {
+        "id": "P_4600060183_11900000",
+        "codigo": "4600060183",
+        "cidade": "REGISTRO",
+        "cep": "11900000",
+        "rua": "Rua Antônio Polaczek, 60 ",
+        "lat": -24.4875,
+        "lng": -47.84361,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 10,
+        "movimentacoes": 4
+    },
+    {
+        "id": "P_4600060205_15150000",
+        "codigo": "4600060205",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "cep": "15150000",
+        "rua": "Rua José Caetano de Lima, nº 361 ",
+        "lat": -20.7725,
+        "lng": -49.71417,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 217,
+        "movimentacoes": 3
+    },
+    {
+        "id": "P_4600060240_05419000",
+        "codigo": "4600060240",
+        "cidade": "SAO PAULO",
+        "cep": "05419000",
+        "rua": "AV PEDROSO DE MORAIS 631",
+        "lat": -23.5624825,
+        "lng": -46.6924149,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 1456485.2249999999,
+        "movimentacoes": 1119
+    },
+    {
+        "id": "P_4600060241_18240000",
+        "codigo": "4600060241",
+        "cidade": "ANGATUBA",
+        "cep": "18240000",
+        "rua": "Rua Cel Lodovido Homem de Gois 168",
+        "lat": -23.48972,
+        "lng": -48.41278,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 109,
+        "movimentacoes": 7
+    },
+    {
+        "id": "P_4600061011_12209240",
+        "codigo": "4600061011",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "cep": "12209240",
+        "rua": "RUA SERAFIM DIAS MACHADO, 548",
+        "lat": -23.1768244,
+        "lng": -45.8820649,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 11,
+        "movimentacoes": 1
+    },
+    {
+        "id": "P_4600062694_13231600",
+        "codigo": "4600062694",
+        "cidade": "ITATIBA",
+        "cep": "13231600",
+        "rua": "AVENIDA BENEDITO ALVES BARBOSA SOBRINHO, 10 ",
+        "lat": -23.20554,
+        "lng": -46.7838,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 225,
+        "movimentacoes": 29
+    },
+    {
+        "id": "P_4600059288_09841720",
+        "codigo": "4600059288",
+        "cidade": "SAO BERNARDO DO CAMPO",
+        "cep": "09841720",
+        "rua": "Estrada dos Casas, 2.775 - Bairro dos Casas - SBC/SP ",
+        "lat": -23.69389,
+        "lng": -46.565,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 3954,
+        "movimentacoes": 5
+    },
+    {
+        "id": "P_4600060228_18304110",
+        "codigo": "4600060228",
+        "cidade": "CAPAO BONITO",
+        "cep": "18304110",
+        "rua": "Rua Aroldo Crepalti nº 70",
+        "lat": -24.00583,
+        "lng": -48.34944,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 154,
+        "movimentacoes": 3
+    },
+    {
+        "id": "P_4600060584_11725060",
+        "codigo": "4600060584",
+        "cidade": "ITATIBA",
+        "cep": "11725060",
+        "rua": "9651 - RUA JÃO MENDES JUNIOR, 50 ",
+        "lat": -24.00583,
+        "lng": -46.40278,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 654,
+        "movimentacoes": 7
+    },
+    {
+        "id": "P_4600060880_05407003",
+        "codigo": "4600060880",
+        "cidade": "SAO PAULO",
+        "cep": "05407003",
+        "rua": "RUA CARDEAL ARCOVERDE 2365",
+        "lat": -23.5546689,
+        "lng": -46.6767559,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 5028,
+        "movimentacoes": 41
+    },
+    {
+        "id": "P_4600060924_09840070",
+        "codigo": "4600060924",
+        "cidade": "SAO BERNARDO DO CAMPO",
+        "cep": "09840070",
+        "rua": "RUA LEONEL GUARNIERI 300",
+        "lat": -23.69389,
+        "lng": -46.565,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 3180,
+        "movimentacoes": 4
+    },
+    {
+        "id": "P_4600054151_09190410",
+        "codigo": "4600054151",
+        "cidade": "SANTO ANDRE",
+        "cep": "09190410",
+        "rua": "RUA AVANHANDAVA S/N",
+        "lat": -23.66389,
+        "lng": -46.53833,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 9368,
+        "movimentacoes": 20
+    },
+    {
+        "id": "P_3000000310_30140140",
+        "codigo": "3000000310",
+        "cidade": "BELO HORIZONTE",
+        "cep": "30140140",
+        "rua": "RUA CLAUDIO MANOEL 1125",
+        "lat": -19.92083,
+        "lng": -43.93778,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 10000,
+        "movimentacoes": 6
+    },
+    {
+        "id": "P_4600051569_05113020",
+        "codigo": "4600051569",
+        "cidade": "0",
+        "cep": "05113020",
+        "rua": "Av. Manoel Monteiro de Araújo 0",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 4000,
+        "movimentacoes": 1
+    },
+    {
+        "id": "P_4600053308_05786010",
+        "codigo": "4600053308",
+        "cidade": "SAO PAULO",
+        "cep": "05786010",
+        "rua": "Américo Falcão N: 195, Vila Pirajussara",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 11141,
+        "movimentacoes": 15
+    },
+    {
+        "id": "P_4600054257_05786010",
+        "codigo": "4600054257",
+        "cidade": "SAO PAULO",
+        "cep": "05786010",
+        "rua": "Américo Falcão N: 195, Vila Pirajussara",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 15225,
+        "movimentacoes": 11
+    },
+    {
+        "id": "P_4600055659_05657140",
+        "codigo": "4600055659",
+        "cidade": "BARUERI",
+        "cep": "05657140",
+        "rua": "Rua Colégio Pio XII 58 Fazenda Morumbi",
+        "lat": -23.6214874,
+        "lng": -46.7153396,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 10529,
+        "movimentacoes": 60
+    },
+    {
+        "id": "P_4600055937_05626020",
+        "codigo": "4600055937",
+        "cidade": "SAO PAULO",
+        "cep": "05626020",
+        "rua": "RUA GRAUÇÁ, 77",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 32388,
+        "movimentacoes": 12
+    },
+    {
+        "id": "P_4600057275_06330281",
+        "codigo": "4600057275",
+        "cidade": "CARAPICUIBA",
+        "cep": "06330281",
+        "rua": "",
+        "lat": -23.52272,
+        "lng": -46.835,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 111464,
+        "movimentacoes": 271
+    },
+    {
+        "id": "P_4600058493_05001000",
+        "codigo": "4600058493",
+        "cidade": "0",
+        "cep": "05001000",
+        "rua": "AVENIDA FRANCISCO MATARAZZO 0",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 200,
+        "movimentacoes": 1
+    },
+    {
+        "id": "P_4600059444_06268000",
+        "codigo": "4600059444",
+        "cidade": "BELO HORIZONTE",
+        "cep": "06268000",
+        "rua": "Rua Presidente Médici, 1588",
+        "lat": -23.5325,
+        "lng": -46.79167,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 11525,
+        "movimentacoes": 24
+    },
+    {
+        "id": "P_4600059502_06397110",
+        "codigo": "4600059502",
+        "cidade": "SAO PAULO",
+        "cep": "06397110",
+        "rua": "RUA NOVO HAMBURGO, 249",
+        "lat": -23.52272,
+        "lng": -46.835,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 19886,
+        "movimentacoes": 22
+    },
+    {
+        "id": "P_4600059508_06529190",
+        "codigo": "4600059508",
+        "cidade": "SAO PAULO",
+        "cep": "06529190",
+        "rua": "Rua Angela Maria Cardoso, 152 ",
+        "lat": -23.44417,
+        "lng": -46.91778,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 4315,
+        "movimentacoes": 13
+    },
+    {
+        "id": "P_4600060062_03889000",
+        "codigo": "4600060062",
+        "cidade": "SAO PAULO",
+        "cep": "03889000",
+        "rua": "AV. AGUIA DE HAIA, 3463",
+        "lat": -23.5097072,
+        "lng": -46.4775691,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 904312.63,
+        "movimentacoes": 1308
+    },
+    {
+        "id": "P_4600060464_02989095",
+        "codigo": "4600060464",
+        "cidade": "SALVADOR",
+        "cep": "02989095",
+        "rua": "Av. Raimundo Pereira de Magalhães, 12011B ",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 10057.994999999999,
+        "movimentacoes": 9
+    },
+    {
+        "id": "P_4600063664_05307000",
+        "codigo": "4600063664",
+        "cidade": "SAO PAULO",
+        "cep": "05307000",
+        "rua": "MAJOR PALADINO 300",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 109740,
+        "movimentacoes": 87
+    },
+    {
+        "id": "P_3000000332_05525080",
+        "codigo": "3000000332",
+        "cidade": "SAO PAULO",
+        "cep": "05525080",
+        "rua": "ESTRADA DO JAGUARE 98",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 36,
+        "movimentacoes": 7
+    },
+    {
+        "id": "P_4600043552_06362042",
+        "codigo": "4600043552",
+        "cidade": "CARAPICUIBA",
+        "cep": "06362042",
+        "rua": "Rua Tucanos, 409",
+        "lat": -23.52272,
+        "lng": -46.835,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 120000,
+        "movimentacoes": 4
+    },
+    {
+        "id": "P_4600044617_05565210",
+        "codigo": "4600044617",
+        "cidade": "SAO PAULO",
+        "cep": "05565210",
+        "rua": "RUA MAJOR WALTER CARLSON, 596",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 266,
+        "movimentacoes": 30
+    },
+    {
+        "id": "P_4600057156_08285000",
+        "codigo": "4600057156",
+        "cidade": "SAO PAULO",
+        "cep": "08285000",
+        "rua": "AVENIDA LIDER,  3241",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 39151,
+        "movimentacoes": 109
+    },
+    {
+        "id": "P_4600060037_09290260",
+        "codigo": "4600060037",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "cep": "09290260",
+        "rua": "AV. BARÃO DE MAUÁ, 3765 ",
+        "lat": -23.66389,
+        "lng": -46.53833,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 689520.55,
+        "movimentacoes": 811
+    },
+    {
+        "id": "P_4600062381_02034000",
+        "codigo": "4600062381",
+        "cidade": "SAO PAULO",
+        "cep": "02034000",
+        "rua": "EZEQUIEL FREIRE 55",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 82,
+        "movimentacoes": 4
+    },
+    {
+        "id": "P_4600037457_04571936",
+        "codigo": "4600037457",
+        "cidade": "0",
+        "cep": "04571936",
+        "rua": "Av. Engenheiro Luís Carlos Berrin 0",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 3,
+        "movimentacoes": 1
+    },
+    {
+        "id": "P_4600049948_12245820",
+        "codigo": "4600049948",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "cep": "12245820",
+        "rua": "",
+        "lat": -23.17944,
+        "lng": -45.88694,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 556766.5,
+        "movimentacoes": 567
+    },
+    {
+        "id": "P_4600063048_09190410",
+        "codigo": "4600063048",
+        "cidade": "SANTO ANDRE",
+        "cep": "09190410",
+        "rua": "RUA AVANHANDAVA 56",
+        "lat": -23.66389,
+        "lng": -46.53833,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 65539.394,
+        "movimentacoes": 46
+    },
+    {
+        "id": "P_4600042911_02167010",
+        "codigo": "4600042911",
+        "cidade": "SAO PAULO",
+        "cep": "02167010",
+        "rua": "Av. Eng. Caetano Alvares, 431 ",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 250343,
+        "movimentacoes": 456
+    },
+    {
+        "id": "P_4600055660_06397110",
+        "codigo": "4600055660",
+        "cidade": "SAO PAULO",
+        "cep": "06397110",
+        "rua": "RUA NOVO HAMBURGO, 249",
+        "lat": -23.52272,
+        "lng": -46.835,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 12089,
+        "movimentacoes": 4
+    },
+    {
+        "id": "P_4600057062_04048000",
+        "codigo": "4600057062",
+        "cidade": "SAO PAULO",
+        "cep": "04048000",
+        "rua": "",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 3714,
+        "movimentacoes": 9
+    },
+    {
+        "id": "P_4600057205_05541130",
+        "codigo": "4600057205",
+        "cidade": "SAO PAULO",
+        "cep": "05541130",
+        "rua": "R. BARTOLOME CARDUCHO, 335 ",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 3029,
+        "movimentacoes": 37
+    },
+    {
+        "id": "P_4600059554_22775056",
+        "codigo": "4600059554",
+        "cidade": "RIO DE JANEIRO",
+        "cep": "22775056",
+        "rua": "RUA JOSE SILVA DE AZEVEDO NETO 200",
+        "lat": -22.99069,
+        "lng": -43.3607904,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 1064,
+        "movimentacoes": 8
+    },
+    {
+        "id": "P_4600059852_04348070",
+        "codigo": "4600059852",
+        "cidade": "SAO PAULO",
+        "cep": "04348070",
+        "rua": "JURUPARI 729",
+        "lat": -23.6417939,
+        "lng": -46.6531635,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 39977,
+        "movimentacoes": 92
+    },
+    {
+        "id": "P_4600059990_05095010",
+        "codigo": "4600059990",
+        "cidade": "SAO PAULO",
+        "cep": "05095010",
+        "rua": "R. Alvarenga Peixoto, 110",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 27520,
+        "movimentacoes": 79
+    },
+    {
+        "id": "P_4600060208_11666590",
+        "codigo": "4600060208",
+        "cidade": "SAO PAULO",
+        "cep": "11666590",
+        "rua": "Av. Geraldo Nogueira Silva, 282 ",
+        "lat": -23.62028,
+        "lng": -45.41306,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 63,
+        "movimentacoes": 9
+    },
+    {
+        "id": "P_4600060243_11085601",
+        "codigo": "4600060243",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "cep": "11085601",
+        "rua": "GCUB - RUA FRANCISCO CUNHA, 427 ",
+        "lat": -23.96083,
+        "lng": -46.33361,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 4742,
+        "movimentacoes": 35
+    },
+    {
+        "id": "P_4600060264_18705650",
+        "codigo": "4600060264",
+        "cidade": "SAO PAULO",
+        "cep": "18705650",
+        "rua": "Av. José Medaglia Neto, 2166",
+        "lat": -23.09861,
+        "lng": -48.92583,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 359,
+        "movimentacoes": 7
+    },
+    {
+        "id": "P_4600060267_11600733",
+        "codigo": "4600060267",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "cep": "11600733",
+        "rua": "Av. Hemiterio Vicente, s/n ",
+        "lat": -23.76,
+        "lng": -45.40972,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 38,
+        "movimentacoes": 6
+    },
+    {
+        "id": "P_4600060299_18900440",
+        "codigo": "4600060299",
+        "cidade": "SAO PAULO",
+        "cep": "18900440",
+        "rua": "Av Carlos Rios n° 913 (Barracão) e n°901 (terreno)",
+        "lat": -22.89889,
+        "lng": -49.6325,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 356,
+        "movimentacoes": 7
+    },
+    {
+        "id": "P_4600060322_12209240",
+        "codigo": "4600060322",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "cep": "12209240",
+        "rua": "Av capitão Constâncio n 368 ",
+        "lat": -23.1768244,
+        "lng": -45.8820649,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 2155,
+        "movimentacoes": 11
+    },
+    {
+        "id": "P_4600062590_18276120",
+        "codigo": "4600062590",
+        "cidade": "SAO PAULO",
+        "cep": "18276120",
+        "rua": "Avenida Donato Flores 111 ",
+        "lat": -23.35556,
+        "lng": -47.85694,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 5502,
+        "movimentacoes": 2
+    },
+    {
+        "id": "P_4600062946_13590000",
+        "codigo": "4600062946",
+        "cidade": "SAO PAULO",
+        "cep": "13590000",
+        "rua": "Avenida Virgílio Franceschi (Norte), 234 ",
+        "lat": -22.1,
+        "lng": -48.3175,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 7240,
+        "movimentacoes": 8
+    },
+    {
+        "id": "P_4600062989_18320000",
+        "codigo": "4600062989",
+        "cidade": "APIAI",
+        "cep": "18320000",
+        "rua": "ANTONIO POLACZEK 62",
+        "lat": -24.50944,
+        "lng": -48.8425,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 1700,
+        "movimentacoes": 8
+    },
+    {
+        "id": "P_3000000324_01227200",
+        "codigo": "3000000324",
+        "cidade": "SAO PAULO",
+        "cep": "01227200",
+        "rua": "AVENIDA ANGELICA 2503",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 520,
+        "movimentacoes": 6
+    },
+    {
+        "id": "P_4600058865_09310000",
+        "codigo": "4600058865",
+        "cidade": "SAO PAULO",
+        "cep": "09310000",
+        "rua": "Avenida Barão de Mauá, 3876",
+        "lat": -23.66778,
+        "lng": -46.46139,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 29156,
+        "movimentacoes": 28
+    },
+    {
+        "id": "P_4600059744_04602909",
+        "codigo": "4600059744",
+        "cidade": "SAO PAULO",
+        "cep": "04602909",
+        "rua": "RUA BARÃO DO TRIUNFO 550",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 2800,
+        "movimentacoes": 1
+    },
+    {
+        "id": "P_4600041302_03889000",
+        "codigo": "4600041302",
+        "cidade": "SAO PAULO",
+        "cep": "03889000",
+        "rua": "AV. AGUIA DE HAIA, 3463 ",
+        "lat": -23.5097072,
+        "lng": -46.4775691,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 478554,
+        "movimentacoes": 298
+    },
+    {
+        "id": "P_4600042975_08664015",
+        "codigo": "4600042975",
+        "cidade": "SAO PAULO",
+        "cep": "08664015",
+        "rua": "ESTRADA SANTA MONICA, 800",
+        "lat": -23.5425,
+        "lng": -46.31083,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 710558.2660000001,
+        "movimentacoes": 449
+    },
+    {
+        "id": "P_4600056089_08260030",
+        "codigo": "4600056089",
+        "cidade": "SAO PAULO",
+        "cep": "08260030",
+        "rua": "RUA AGRIMENSOR SUGAYA, 32",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 517498,
+        "movimentacoes": 306
+    },
+    {
+        "id": "P_4600056513_08110210",
+        "codigo": "4600056513",
+        "cidade": "SAO PAULO",
+        "cep": "08110210",
+        "rua": "RUA ENSEADA DAS GAROUPAS, 67B",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 13500,
+        "movimentacoes": 3
+    },
+    {
+        "id": "P_4600057056_09340730",
+        "codigo": "4600057056",
+        "cidade": "SAO PAULO",
+        "cep": "09340730",
+        "rua": "Rua Antônio Francine, 313",
+        "lat": -23.66778,
+        "lng": -46.46139,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 66474,
+        "movimentacoes": 244
+    },
+    {
+        "id": "P_4600059922_02945030",
+        "codigo": "4600059922",
+        "cidade": "SAO PAULO",
+        "cep": "02945030",
+        "rua": "Estrada Municipal Manoel de Jesus, 324 ",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 7451,
+        "movimentacoes": 21
+    },
+    {
+        "id": "P_4600060324_14409406",
+        "codigo": "4600060324",
+        "cidade": "FRANCA",
+        "cep": "14409406",
+        "rua": "RUA EMILIANO DI CAVALCANTE, 450",
+        "lat": -20.53861,
+        "lng": -47.40083,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 690,
+        "movimentacoes": 4
+    },
+    {
+        "id": "P_4600064845_09190410",
+        "codigo": "4600064845",
+        "cidade": "SANTO ANDRE",
+        "cep": "09190410",
+        "rua": "RUA AVANHANDAVA 56",
+        "lat": -23.66389,
+        "lng": -46.53833,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 67650,
+        "movimentacoes": 12
+    },
+    {
+        "id": "P_4600066304_06404326",
+        "codigo": "4600066304",
+        "cidade": "0",
+        "cep": "06404326",
+        "rua": "AV TRINDADE 254",
+        "lat": -23.51056,
+        "lng": -46.87611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 1500,
+        "movimentacoes": 3
+    },
+    {
+        "id": "P_4600057059_08460245",
+        "codigo": "4600057059",
+        "cidade": "SAO PAULO",
+        "cep": "08460245",
+        "rua": "",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 5,
+        "movimentacoes": 1
+    },
+    {
+        "id": "P_4600060539_05690050",
+        "codigo": "4600060539",
+        "cidade": "SAO PAULO",
+        "cep": "05690050",
+        "rua": "RUA MINISTRO NELSON HUNGRIA 239",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 3232,
+        "movimentacoes": 39
+    },
+    {
+        "id": "P_4600043148_05058000",
+        "codigo": "4600043148",
+        "cidade": "SAO PAULO",
+        "cep": "05058000",
+        "rua": "",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 13878,
+        "movimentacoes": 11
+    },
+    {
+        "id": "P_4600045747_06460040",
+        "codigo": "4600045747",
+        "cidade": "BARUERI",
+        "cep": "06460040",
+        "rua": "",
+        "lat": -23.51056,
+        "lng": -46.87611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 104340,
+        "movimentacoes": 137
+    },
+    {
+        "id": "P_4600046032_07171150",
+        "codigo": "4600046032",
+        "cidade": "GUARULHOS",
+        "cep": "07171150",
+        "rua": "Rua Ipacaetá, 777",
+        "lat": -23.46278,
+        "lng": -46.53333,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 77474,
+        "movimentacoes": 111
+    },
+    {
+        "id": "P_4600048762_12922670",
+        "codigo": "4600048762",
+        "cidade": "SAO PAULO",
+        "cep": "12922670",
+        "rua": "Rua Argemiro Rocha de Moraes, 322",
+        "lat": -22.9527,
+        "lng": -46.54418,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 34640,
+        "movimentacoes": 100
+    },
+    {
+        "id": "P_3000001937_01227200",
+        "codigo": "3000001937",
+        "cidade": "SAO PAULO",
+        "cep": "01227200",
+        "rua": "",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 4100,
+        "movimentacoes": 26
+    },
+    {
+        "id": "P_3000000326_04719002",
+        "codigo": "3000000326",
+        "cidade": "SAO PAULO",
+        "cep": "04719002",
+        "rua": "RUA VERBO DIVINO 2001",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 200,
+        "movimentacoes": 2
+    },
+    {
+        "id": "P_3000001938_07171150",
+        "codigo": "3000001938",
+        "cidade": "GUARULHOS",
+        "cep": "07171150",
+        "rua": "",
+        "lat": -23.46278,
+        "lng": -46.53333,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 8,
+        "movimentacoes": 4
+    },
+    {
+        "id": "P_4600055784_18211265",
+        "codigo": "4600055784",
+        "cidade": "ITAPETININGA",
+        "cep": "18211265",
+        "rua": "Rodovia Gladys Bernardes Minhoto nº 416",
+        "lat": -23.59167,
+        "lng": -48.05306,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 50,
+        "movimentacoes": 1
+    },
+    {
+        "id": "P_4600060169_11920000",
+        "codigo": "4600060169",
+        "cidade": "IGUAPE",
+        "cep": "11920000",
+        "rua": "Av Carvalho Pinto,1705 ",
+        "lat": -24.70806,
+        "lng": -47.55528,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 141,
+        "movimentacoes": 5
+    },
+    {
+        "id": "P_4600050357_04048000",
+        "codigo": "4600050357",
+        "cidade": "SAO PAULO",
+        "cep": "04048000",
+        "rua": "",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 1469577,
+        "movimentacoes": 635
+    },
+    {
+        "id": "P_4600051554_02501010",
+        "codigo": "4600051554",
+        "cidade": "SAO PAULO",
+        "cep": "02501010",
+        "rua": "",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 459,
+        "movimentacoes": 15
+    },
+    {
+        "id": "P_4600056505_03512050",
+        "codigo": "4600056505",
+        "cidade": "SAO PAULO",
+        "cep": "03512050",
+        "rua": "",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 9002,
+        "movimentacoes": 4
+    },
+    {
+        "id": "P_4600059751_09290416",
+        "codigo": "4600059751",
+        "cidade": "SANTO ANDRE",
+        "cep": "09290416",
+        "rua": "Rua: Angelo Franchini, 85",
+        "lat": -23.66389,
+        "lng": -46.53833,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 23058,
+        "movimentacoes": 61
+    },
+    {
+        "id": "P_4600061053_09190410",
+        "codigo": "4600061053",
+        "cidade": "SANTO ANDRE",
+        "cep": "09190410",
+        "rua": "RUA AVANHANDAVA 56",
+        "lat": -23.66389,
+        "lng": -46.53833,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 1538,
+        "movimentacoes": 18
+    },
+    {
+        "id": "P_2_05429900",
+        "codigo": "2",
+        "cidade": "SAO PAULO",
+        "cep": "05429900",
+        "rua": "",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 4,
+        "movimentacoes": 2
+    },
+    {
+        "id": "P_3000000337_11410410",
+        "codigo": "3000000337",
+        "cidade": "GUARUJA",
+        "cep": "11410410",
+        "rua": "AVENIDA ORDEM E PROGRESSO 157",
+        "lat": -23.99306,
+        "lng": -46.25639,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 8,
+        "movimentacoes": 2
+    },
+    {
+        "id": "P_4600053789_01204001",
+        "codigo": "4600053789",
+        "cidade": "SAO PAULO",
+        "cep": "01204001",
+        "rua": "",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 47,
+        "movimentacoes": 8
+    },
+    {
+        "id": "P_4600052767_09190410",
+        "codigo": "4600052767",
+        "cidade": "SANTO ANDRE",
+        "cep": "09190410",
+        "rua": "",
+        "lat": -23.66389,
+        "lng": -46.53833,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 2700,
+        "movimentacoes": 6
+    },
+    {
+        "id": "P_4600050553_01141030",
+        "codigo": "4600050553",
+        "cidade": "SAO PAULO",
+        "cep": "01141030",
+        "rua": "",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 54815,
+        "movimentacoes": 56
+    },
+    {
+        "id": "P_4600057020_03969000",
+        "codigo": "4600057020",
+        "cidade": "SAO PAULO",
+        "cep": "03969000",
+        "rua": "Rua Manuel Quirino de Mattos, 1725",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 26894,
+        "movimentacoes": 120
+    },
+    {
+        "id": "P_4600057005_01156000",
+        "codigo": "4600057005",
+        "cidade": "SAO PAULO",
+        "cep": "01156000",
+        "rua": "",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 17192,
+        "movimentacoes": 5
+    },
+    {
+        "id": "P_4600053582_05001000",
+        "codigo": "4600053582",
+        "cidade": "SAO PAULO",
+        "cep": "05001000",
+        "rua": "",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 1000,
+        "movimentacoes": 1
+    },
+    {
+        "id": "P_4600054608_08371440",
+        "codigo": "4600054608",
+        "cidade": "SAO PAULO",
+        "cep": "08371440",
+        "rua": "",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 3305.9,
+        "movimentacoes": 11
+    },
+    {
+        "id": "P_4600052270_04214040",
+        "codigo": "4600052270",
+        "cidade": "SAO PAULO/SP",
+        "cep": "04214040",
+        "rua": "Rua das Municipalidades, 20",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 27891,
+        "movimentacoes": 127
+    },
+    {
+        "id": "P_3000000341_11410410",
+        "codigo": "3000000341",
+        "cidade": "GUARUJA",
+        "cep": "11410410",
+        "rua": "AVENIDA ORDEM E PROGRESSO 157",
+        "lat": -23.99306,
+        "lng": -46.25639,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 4020,
+        "movimentacoes": 4
+    },
+    {
+        "id": "P_4600052411_03126007",
+        "codigo": "4600052411",
+        "cidade": "SAO PAULO",
+        "cep": "03126007",
+        "rua": "",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 25,
+        "movimentacoes": 2
+    },
+    {
+        "id": "P_4600060160_17470000",
+        "codigo": "4600060160",
+        "cidade": "SAO PAULO",
+        "cep": "17470000",
+        "rua": "R. Ângelo Benetti, 402",
+        "lat": -22.41444,
+        "lng": -49.40389,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 79,
+        "movimentacoes": 2
+    },
+    {
+        "id": "P_3000000348_05419000",
+        "codigo": "3000000348",
+        "cidade": "SAO PAULO",
+        "cep": "05419000",
+        "rua": "AVENIDA PEDROSO DE MORAIS 631",
+        "lat": -23.5624825,
+        "lng": -46.6924149,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 20,
+        "movimentacoes": 2
+    },
+    {
+        "id": "P_4600049259_18915792",
+        "codigo": "4600049259",
+        "cidade": "SANTA CRUZ DO RIO PARDO, SP",
+        "cep": "18915792",
+        "rua": "Rua Francisco Pegorer Neto, 312",
+        "lat": -22.89889,
+        "lng": -49.6325,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 8,
+        "movimentacoes": 4
+    },
+    {
+        "id": "P_4600051503_01141030",
+        "codigo": "4600051503",
+        "cidade": "SAO PAULO",
+        "cep": "01141030",
+        "rua": "",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 921,
+        "movimentacoes": 6
+    },
+    {
+        "id": "P_4600059193_18147000",
+        "codigo": "4600059193",
+        "cidade": "TABOAO DA SERRA",
+        "cep": "18147000",
+        "rua": "Sítio Dádiva - Google Maps Ac. Pref. Livo Tagliassachi, Araçariguama - SP, 18147-000",
+        "lat": -23.43861,
+        "lng": -47.06139,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 1,
+        "movimentacoes": 1
+    },
+    {
+        "id": "P_4600060242_11330220",
+        "codigo": "4600060242",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "cep": "11330220",
+        "rua": "R. Pérola Byington, 52",
+        "lat": -23.96306,
+        "lng": -46.39194,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 43,
+        "movimentacoes": 5
+    },
+    {
+        "id": "P_4600058100_06543001",
+        "codigo": "4600058100",
+        "cidade": "SAO MIGUEL ARCANJO",
+        "cep": "06543001",
+        "rua": "VENIDA MARCOS PENTEADO DE ULHO 5100",
+        "lat": -23.44417,
+        "lng": -46.91778,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 36,
+        "movimentacoes": 2
+    },
+    {
+        "id": "P_4600062663_03332050",
+        "codigo": "4600062663",
+        "cidade": "SAO PAULO",
+        "cep": "03332050",
+        "rua": "RUA CAPITÃO MILITAO 215",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 23000,
+        "movimentacoes": 4
+    },
+    {
+        "id": "P_4600066038_11925000",
+        "codigo": "4600066038",
+        "cidade": "ILHA COMPRIDA",
+        "cep": "11925000",
+        "rua": "Vereador Carlos Roberto de Paul 280",
+        "lat": -24.74111,
+        "lng": -47.54,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 3,
+        "movimentacoes": 2
+    },
+    {
+        "id": "P_4600059893_01216000",
+        "codigo": "4600059893",
+        "cidade": "SAO PAULO",
+        "cep": "01216000",
+        "rua": "ALAMEDA NOTHMANN 526",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 340,
+        "movimentacoes": 2
+    },
+    {
+        "id": "P_7000016468_14401426",
+        "codigo": "7000016468",
+        "cidade": "FRANCA",
+        "cep": "14401426",
+        "rua": "AV. DR. ISMAEL ALONSO Y ALONS 6.005",
+        "lat": -20.53861,
+        "lng": -47.40083,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 192378,
+        "movimentacoes": 52
+    },
+    {
+        "id": "P_7000014785_11660660",
+        "codigo": "7000014785",
+        "cidade": "CARAGUATATUBA",
+        "cep": "11660660",
+        "rua": "AVENIDA ARTHUR COSTA FILHO 937",
+        "lat": -23.62028,
+        "lng": -45.41306,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 2296582,
+        "movimentacoes": 109
+    },
+    {
+        "id": "P_7000018322_89219550",
+        "codigo": "7000018322",
+        "cidade": "JOINVILLE",
+        "cep": "89219550",
+        "rua": "",
+        "lat": -26.30444,
+        "lng": -48.84556,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 36770,
+        "movimentacoes": 78
+    },
+    {
+        "id": "P_7000019920_08320280",
+        "codigo": "7000019920",
+        "cidade": "SAO PAULO",
+        "cep": "08320280",
+        "rua": "",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 324893,
+        "movimentacoes": 194
+    },
+    {
+        "id": "P_7000013011_09450000",
+        "codigo": "7000013011",
+        "cidade": "RIO GRANDE DA SERRA",
+        "cep": "09450000",
+        "rua": "AVENIDA D PEDRO I 10",
+        "lat": -23.74417,
+        "lng": -46.39833,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 90112,
+        "movimentacoes": 53
+    },
+    {
+        "id": "P_7000016882_20031902",
+        "codigo": "7000016882",
+        "cidade": "RIO DE JANEIRO",
+        "cep": "20031902",
+        "rua": "AV. TREZE DE MAIO 23",
+        "lat": -22.90642,
+        "lng": -43.18223,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 177157,
+        "movimentacoes": 161
+    },
+    {
+        "id": "P_7000009927_07224210",
+        "codigo": "7000009927",
+        "cidade": "GUARULHOS",
+        "cep": "07224210",
+        "rua": "RUA SOLEDADE 160",
+        "lat": -23.46278,
+        "lng": -46.53333,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 388000,
+        "movimentacoes": 17
+    },
+    {
+        "id": "P_7000005544_04164180",
+        "codigo": "7000005544",
+        "cidade": "SAO PAULO",
+        "cep": "04164180",
+        "rua": "RUA BELGRADO 270",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 53200,
+        "movimentacoes": 11
+    },
+    {
+        "id": "P_7000010858_04222902",
+        "codigo": "7000010858",
+        "cidade": "SAO PAULO",
+        "cep": "04222902",
+        "rua": "RUA AURIVERDE 1455",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 10680,
+        "movimentacoes": 7
+    },
+    {
+        "id": "P_7000019088_93180000",
+        "codigo": "7000019088",
+        "cidade": "PORTAO",
+        "cep": "93180000",
+        "rua": "",
+        "lat": -29.70167,
+        "lng": -51.24194,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 15256,
+        "movimentacoes": 1044
+    },
+    {
+        "id": "P_7000033719_12072250",
+        "codigo": "7000033719",
+        "cidade": "TAUBATE",
+        "cep": "12072250",
+        "rua": "",
+        "lat": -23.02639,
+        "lng": -45.55528,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 19786030.0,
+        "movimentacoes": 1555
+    },
+    {
+        "id": "P_7000009012_03502020",
+        "codigo": "7000009012",
+        "cidade": "SAO PAULO",
+        "cep": "03502020",
+        "rua": "R GAL SOUSA NETO S/N",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 7345680,
+        "movimentacoes": 415
+    },
+    {
+        "id": "P_7000067890_08290220",
+        "codigo": "7000067890",
+        "cidade": "SAO PAULO",
+        "cep": "08290220",
+        "rua": "",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 60171,
+        "movimentacoes": 39
+    },
+    {
+        "id": "P_7000017323_04580000",
+        "codigo": "7000017323",
+        "cidade": "CAMPO LIMPO PAULISTA",
+        "cep": "04580000",
+        "rua": "RUA BARTOLOMEU FEIO 86",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 1816,
+        "movimentacoes": 32
+    },
+    {
+        "id": "P_7000014073_11669320",
+        "codigo": "7000014073",
+        "cidade": "NAVEGANTES",
+        "cep": "11669320",
+        "rua": "RUA SEBASTIAO FRANCISCO DA SILV 166",
+        "lat": -23.62028,
+        "lng": -45.41306,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 11211,
+        "movimentacoes": 495
+    },
+    {
+        "id": "P_7000048172_14340000",
+        "codigo": "7000048172",
+        "cidade": "BRODOWSKI",
+        "cep": "14340000",
+        "rua": "",
+        "lat": -20.99139,
+        "lng": -47.65861,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 22429,
+        "movimentacoes": 594
+    },
+    {
+        "id": "P_7000003745_05382010",
+        "codigo": "7000003745",
+        "cidade": "SAO PAULO",
+        "cep": "05382010",
+        "rua": "R MILTON SOARES S/N",
+        "lat": -23.5757023,
+        "lng": -46.7614661,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 13150,
+        "movimentacoes": 508
+    },
+    {
+        "id": "P_7000060976_02123050",
+        "codigo": "7000060976",
+        "cidade": "SAO PAULO",
+        "cep": "02123050",
+        "rua": "",
+        "lat": -23.5186762,
+        "lng": -46.583529,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 18,
+        "movimentacoes": 16
+    },
+    {
+        "id": "P_7000017846_03022000",
+        "codigo": "7000017846",
+        "cidade": "SAO PAULO",
+        "cep": "03022000",
+        "rua": "",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 2553,
+        "movimentacoes": 182
+    },
+    {
+        "id": "P_7000040109_08790260",
+        "codigo": "7000040109",
+        "cidade": "MOGI DAS CRUZES",
+        "cep": "08790260",
+        "rua": "",
+        "lat": -23.52278,
+        "lng": -46.18833,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 7278,
+        "movimentacoes": 206
+    },
+    {
+        "id": "P_7000019760_02046090",
+        "codigo": "7000019760",
+        "cidade": "SAO PAULO",
+        "cep": "02046090",
+        "rua": "",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 14134,
+        "movimentacoes": 61
+    },
+    {
+        "id": "P_7000030063_13255425",
+        "codigo": "7000030063",
+        "cidade": "ITATIBA",
+        "cep": "13255425",
+        "rua": "",
+        "lat": -23.00583,
+        "lng": -46.83889,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 2800,
+        "movimentacoes": 6
+    },
+    {
+        "id": "P_7000015122_08320280",
+        "codigo": "7000015122",
+        "cidade": "SAO PAULO",
+        "cep": "08320280",
+        "rua": "ESTRADA DA SERVIDAO 5 5",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 143459,
+        "movimentacoes": 42
+    },
+    {
+        "id": "P_7000017408_08900000",
+        "codigo": "7000017408",
+        "cidade": "BARRA MANSA",
+        "cep": "08900000",
+        "rua": "Rua Coronel Brasilio Fonseca 35",
+        "lat": -23.415,
+        "lng": -46.035,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 22664,
+        "movimentacoes": 177
+    },
+    {
+        "id": "P_7000016932_12630000",
+        "codigo": "7000016932",
+        "cidade": "CACHOEIRA PAULISTA",
+        "cep": "12630000",
+        "rua": "R ISABELA 335",
+        "lat": -22.665,
+        "lng": -45.00944,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 891,
+        "movimentacoes": 43
+    },
+    {
+        "id": "P_7000011789_18130130",
+        "codigo": "7000011789",
+        "cidade": "SAO ROQUE",
+        "cep": "18130130",
+        "rua": "RUA MARINO CAMURCA 30",
+        "lat": -23.52917,
+        "lng": -47.13528,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 13,
+        "movimentacoes": 6
+    },
+    {
+        "id": "P_7000022742_13213080",
+        "codigo": "7000022742",
+        "cidade": "JUNDIAI",
+        "cep": "13213080",
+        "rua": "",
+        "lat": -23.1576842,
+        "lng": -46.9500033,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 9,
+        "movimentacoes": 5
+    },
+    {
+        "id": "P_7000021004_06703570",
+        "codigo": "7000021004",
+        "cidade": "COTIA",
+        "cep": "06703570",
+        "rua": "",
+        "lat": -23.60389,
+        "lng": -46.91917,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 18117,
+        "movimentacoes": 52
+    },
+    {
+        "id": "P_7000018782_12929899",
+        "codigo": "7000018782",
+        "cidade": "BRAGANCA PAULISTA",
+        "cep": "12929899",
+        "rua": "",
+        "lat": -22.9527,
+        "lng": -46.54418,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 928,
+        "movimentacoes": 112
+    },
+    {
+        "id": "P_7000001501_09843400",
+        "codigo": "7000001501",
+        "cidade": "SAO BERNARDO DO CAMPO",
+        "cep": "09843400",
+        "rua": "Rua Jose Martins Fernandes S/N",
+        "lat": -23.69389,
+        "lng": -46.565,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 1600,
+        "movimentacoes": 91
+    },
+    {
+        "id": "P_7000015816_19010030",
+        "codigo": "7000015816",
+        "cidade": "PRESIDENTE PRUDENTE",
+        "cep": "19010030",
+        "rua": "AV BRASIL S/N",
+        "lat": -22.12556,
+        "lng": -51.38889,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 92,
+        "movimentacoes": 15
+    },
+    {
+        "id": "P_7000021903_02115000",
+        "codigo": "7000021903",
+        "cidade": "SAO PAULO",
+        "cep": "02115000",
+        "rua": "",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 1920,
+        "movimentacoes": 5
+    },
+    {
+        "id": "P_7000014341_08770480",
+        "codigo": "7000014341",
+        "cidade": "MOGI DAS CRUZES",
+        "cep": "08770480",
+        "rua": "RUA JOAO DE PINA 220",
+        "lat": -23.52278,
+        "lng": -46.18833,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 121.106,
+        "movimentacoes": 2
+    },
+    {
+        "id": "P_7000059132_13490000",
+        "codigo": "7000059132",
+        "cidade": "CORDEIROPOLIS",
+        "cep": "13490000",
+        "rua": "",
+        "lat": -22.48194,
+        "lng": -47.45667,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 2,
+        "movimentacoes": 2
+    },
+    {
+        "id": "P_7000051373_04561004",
+        "codigo": "7000051373",
+        "cidade": "SAO PAULO",
+        "cep": "04561004",
+        "rua": "",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 47,
+        "movimentacoes": 9
+    },
+    {
+        "id": "P_7000057031_07790890",
+        "codigo": "7000057031",
+        "cidade": "FRANCO DA ROCHA",
+        "cep": "07790890",
+        "rua": "",
+        "lat": -23.35611,
+        "lng": -46.87694,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 1521,
+        "movimentacoes": 15
+    },
+    {
+        "id": "P_7000018429_13213105",
+        "codigo": "7000018429",
+        "cidade": "JUNDIAI",
+        "cep": "13213105",
+        "rua": "",
+        "lat": -23.18639,
+        "lng": -46.88417,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 8,
+        "movimentacoes": 2
+    },
+    {
+        "id": "P_7000029973_03109000",
+        "codigo": "7000029973",
+        "cidade": "SAO PAULO",
+        "cep": "03109000",
+        "rua": "",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 6696,
+        "movimentacoes": 1
+    },
+    {
+        "id": "P_7000007457_06843195",
+        "codigo": "7000007457",
+        "cidade": "EMBU DAS ARTES",
+        "cep": "06843195",
+        "rua": "ESTRADA KAIKO 11",
+        "lat": -23.64889,
+        "lng": -46.85222,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 2,
+        "movimentacoes": 1
+    },
+    {
+        "id": "P_7000004993_06807461",
+        "codigo": "7000004993",
+        "cidade": "EMBU DAS ARTES",
+        "cep": "06807461",
+        "rua": "RUA ALBERTO CORREIA FRANCFORT 141",
+        "lat": -23.64889,
+        "lng": -46.85222,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 235,
+        "movimentacoes": 1
+    },
+    {
+        "id": "P_7000010203_09530260",
+        "codigo": "7000010203",
+        "cidade": "SAO CAETANO DO SUL",
+        "cep": "09530260",
+        "rua": "RUA OLAVO BILAC 326",
+        "lat": -23.62306,
+        "lng": -46.55111,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 30,
+        "movimentacoes": 1
+    },
+    {
+        "id": "P_7000009139_09182470",
+        "codigo": "7000009139",
+        "cidade": "SANTO ANDRE",
+        "cep": "09182470",
+        "rua": "RUA LEONARDO FIORAVANTE 130",
+        "lat": -23.66389,
+        "lng": -46.53833,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 45,
+        "movimentacoes": 5
+    },
+    {
+        "id": "P_7000015013_11380380",
+        "codigo": "7000015013",
+        "cidade": "SAO VICENTE",
+        "cep": "11380380",
+        "rua": "RUA FRANCISCO XAVIER DOS PASSOS 650",
+        "lat": -23.96306,
+        "lng": -46.39194,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 20,
+        "movimentacoes": 1
+    },
+    {
+        "id": "P_7000006522_04764001",
+        "codigo": "7000006522",
+        "cidade": "SAO PAULO",
+        "cep": "04764001",
+        "rua": "AVENIDA DE PINEDO 325",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 6,
+        "movimentacoes": 1
+    },
+    {
+        "id": "P_7000016590_08412070",
+        "codigo": "7000016590",
+        "cidade": "SAO PAULO",
+        "cep": "08412070",
+        "rua": "RUA ANTONIO SILVESTRE FERREIRA 431",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 745284,
+        "movimentacoes": 211
+    },
+    {
+        "id": "P_7000051739_13478540",
+        "codigo": "7000051739",
+        "cidade": "AMERICANA",
+        "cep": "13478540",
+        "rua": "",
+        "lat": -22.73917,
+        "lng": -47.33139,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 105000,
+        "movimentacoes": 22
+    },
+    {
+        "id": "P_7000077946_06835701",
+        "codigo": "7000077946",
+        "cidade": "EMBU DAS ARTES",
+        "cep": "06835701",
+        "rua": "",
+        "lat": -23.64889,
+        "lng": -46.85222,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 871,
+        "movimentacoes": 116
+    },
+    {
+        "id": "P_7000052709_61888090",
+        "codigo": "7000052709",
+        "cidade": "ITAITINGA",
+        "cep": "61888090",
+        "rua": "",
+        "lat": -3.96944,
+        "lng": -38.52806,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 111200,
+        "movimentacoes": 38
+    },
+    {
+        "id": "P_7000014279_08673010",
+        "codigo": "7000014279",
+        "cidade": "SUZANO",
+        "cep": "08673010",
+        "rua": "AVENIDA MOGI DAS CRUZES 244",
+        "lat": -23.5425,
+        "lng": -46.31083,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 141390,
+        "movimentacoes": 37
+    },
+    {
+        "id": "P_7000051961_09890001",
+        "codigo": "7000051961",
+        "cidade": "SAO BERNARDO DO CAMPO",
+        "cep": "09890001",
+        "rua": "",
+        "lat": -23.69389,
+        "lng": -46.565,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 21000,
+        "movimentacoes": 10
+    },
+    {
+        "id": "P_7000009110_61890000",
+        "codigo": "7000009110",
+        "cidade": "GUAIUBA",
+        "cep": "61890000",
+        "rua": "RODOVIA BR-116 7698",
+        "lat": -4.03972,
+        "lng": -38.63722,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 84400,
+        "movimentacoes": 24
+    },
+    {
+        "id": "P_7000008353_09890001",
+        "codigo": "7000008353",
+        "cidade": "SAO BERNARDO DO CAMPO",
+        "cep": "09890001",
+        "rua": "RUA DR EDUARDO DE SOUZA ARANHA 153",
+        "lat": -23.69389,
+        "lng": -46.565,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 22994,
+        "movimentacoes": 18
+    },
+    {
+        "id": "P_7000005716_06278010",
+        "codigo": "7000005716",
+        "cidade": "OSASCO",
+        "cep": "06278010",
+        "rua": "AVENIDA DR.MAURO LINDENBERG MO 1003",
+        "lat": -23.5325,
+        "lng": -46.79167,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 19830,
+        "movimentacoes": 4
+    },
+    {
+        "id": "P_7000018634_06835701",
+        "codigo": "7000018634",
+        "cidade": "EMBU DAS ARTES",
+        "cep": "06835701",
+        "rua": "",
+        "lat": -23.64889,
+        "lng": -46.85222,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 2925,
+        "movimentacoes": 5
+    },
+    {
+        "id": "P_7000014674_13250250",
+        "codigo": "7000014674",
+        "cidade": "ITATIBA",
+        "cep": "13250250",
+        "rua": "RUA COMENDADOR FRANCO 276",
+        "lat": -23.00583,
+        "lng": -46.83889,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 3690,
+        "movimentacoes": 20
+    },
+    {
+        "id": "P_7000017217_04311000",
+        "codigo": "7000017217",
+        "cidade": "SAO PAULO",
+        "cep": "04311000",
+        "rua": "Avenida do Cafe 238",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 7390,
+        "movimentacoes": 172
+    },
+    {
+        "id": "P_7000018986_07776235",
+        "codigo": "7000018986",
+        "cidade": "CAJAMAR",
+        "cep": "07776235",
+        "rua": "",
+        "lat": -23.35611,
+        "lng": -46.87694,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 132908,
+        "movimentacoes": 786
+    },
+    {
+        "id": "P_7000016835_30441055",
+        "codigo": "7000016835",
+        "cidade": "BELO HORIZONTE",
+        "cep": "30441055",
+        "rua": "RUA OSCAR TROMPOWISKY, 75 CASA",
+        "lat": -19.92083,
+        "lng": -43.93778,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 2108,
+        "movimentacoes": 122
+    },
+    {
+        "id": "P_7000016007_11015015",
+        "codigo": "7000016007",
+        "cidade": "SANTOS",
+        "cep": "11015015",
+        "rua": "RUA DA CONSTITUICAO 421",
+        "lat": -23.96083,
+        "lng": -46.33361,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 8987,
+        "movimentacoes": 40
+    },
+    {
+        "id": "P_7000071015_17740000",
+        "codigo": "7000071015",
+        "cidade": "RINOPOLIS",
+        "cep": "17740000",
+        "rua": "",
+        "lat": -21.72583,
+        "lng": -50.72222,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 357975,
+        "movimentacoes": 928
+    },
+    {
+        "id": "P_7000019797_13710000",
+        "codigo": "7000019797",
+        "cidade": "TAMBAU",
+        "cep": "13710000",
+        "rua": "",
+        "lat": -21.705,
+        "lng": -47.27444,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 60371,
+        "movimentacoes": 118
+    },
+    {
+        "id": "P_7000020425_06422122",
+        "codigo": "7000020425",
+        "cidade": "BARUERI",
+        "cep": "06422122",
+        "rua": "",
+        "lat": -23.51056,
+        "lng": -46.87611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 36749,
+        "movimentacoes": 75
+    },
+    {
+        "id": "P_7000016598_18440000",
+        "codigo": "7000016598",
+        "cidade": "CABREUVA",
+        "cep": "18440000",
+        "rua": "R. JANGO FERRAZ 103",
+        "lat": -23.86194,
+        "lng": -49.13722,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 999281,
+        "movimentacoes": 848
+    },
+    {
+        "id": "P_7000020635_06790160",
+        "codigo": "7000020635",
+        "cidade": "TABOAO DA SERRA",
+        "cep": "06790160",
+        "rua": "",
+        "lat": -23.62611,
+        "lng": -46.79167,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 69748,
+        "movimentacoes": 98
+    },
+    {
+        "id": "P_7000008031_15350350",
+        "codigo": "7000008031",
+        "cidade": "AURIFLAMA",
+        "cep": "15350350",
+        "rua": "RUA NARCISO ROMAN 36-65",
+        "lat": -20.68556,
+        "lng": -50.55472,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 1792,
+        "movimentacoes": 353
+    },
+    {
+        "id": "P_7000038540_28470000",
+        "codigo": "7000038540",
+        "cidade": "SANTO ANTONIO DE PADUA",
+        "cep": "28470000",
+        "rua": "",
+        "lat": -21.53944,
+        "lng": -42.18028,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 8604,
+        "movimentacoes": 231
+    },
+    {
+        "id": "P_7000019502_35547000",
+        "codigo": "7000019502",
+        "cidade": "CARMO DA MATA",
+        "cep": "35547000",
+        "rua": "",
+        "lat": -20.55778,
+        "lng": -44.87056,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 51211,
+        "movimentacoes": 189
+    },
+    {
+        "id": "P_7000032351_02143060",
+        "codigo": "7000032351",
+        "cidade": "SAO PAULO",
+        "cep": "02143060",
+        "rua": "",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 9460,
+        "movimentacoes": 106
+    },
+    {
+        "id": "P_7000019400_18087156",
+        "codigo": "7000019400",
+        "cidade": "SOROCABA",
+        "cep": "18087156",
+        "rua": "",
+        "lat": -23.50167,
+        "lng": -47.45806,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 10930,
+        "movimentacoes": 597
+    },
+    {
+        "id": "P_7000035977_29124076",
+        "codigo": "7000035977",
+        "cidade": "VILA VELHA",
+        "cep": "29124076",
+        "rua": "",
+        "lat": -20.32972,
+        "lng": -40.2925,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 290,
+        "movimentacoes": 34
+    },
+    {
+        "id": "P_7000006413_05656020",
+        "codigo": "7000006413",
+        "cidade": "SAO PAULO",
+        "cep": "05656020",
+        "rua": "RUA DOUTOR FLAVIO AMERICO MAUR 1083",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 32,
+        "movimentacoes": 15
+    },
+    {
+        "id": "P_7000002834_09380170",
+        "codigo": "7000002834",
+        "cidade": "MAUA",
+        "cep": "09380170",
+        "rua": "RUA CABO JOAO ROMEU TEIXEIRA 101",
+        "lat": -23.66778,
+        "lng": -46.46139,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 4784,
+        "movimentacoes": 7
+    },
+    {
+        "id": "P_7000005995_02143060",
+        "codigo": "7000005995",
+        "cidade": "SAO PAULO",
+        "cep": "02143060",
+        "rua": "RUA SOLD JOAO RODRIGUES 327",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 1448,
+        "movimentacoes": 46
+    },
+    {
+        "id": "P_7000001662_29124124",
+        "codigo": "7000001662",
+        "cidade": "VILA VELHA",
+        "cep": "29124124",
+        "rua": "RUA ROSA DE PIREDA 155",
+        "lat": -20.32972,
+        "lng": -40.2925,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 727,
+        "movimentacoes": 36
+    },
+    {
+        "id": "P_7000002368_07776235",
+        "codigo": "7000002368",
+        "cidade": "CAJAMAR",
+        "cep": "07776235",
+        "rua": "AVENIDA LUIZ ALLY FAYRDIN 750",
+        "lat": -23.35611,
+        "lng": -46.87694,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 61355,
+        "movimentacoes": 320
+    },
+    {
+        "id": "P_7000070971_61900360",
+        "codigo": "7000070971",
+        "cidade": "MARACANAU",
+        "cep": "61900360",
+        "rua": "",
+        "lat": -3.87667,
+        "lng": -38.62556,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 21689,
+        "movimentacoes": 147
+    },
+    {
+        "id": "P_7000008209_05426100",
+        "codigo": "7000008209",
+        "cidade": "SAO PAULO",
+        "cep": "05426100",
+        "rua": "AVENIDA BRIG FARIA LIMA 201",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 1654,
+        "movimentacoes": 88
+    },
+    {
+        "id": "P_7000047986_13477250",
+        "codigo": "7000047986",
+        "cidade": "AMERICANA",
+        "cep": "13477250",
+        "rua": "",
+        "lat": -22.73917,
+        "lng": -47.33139,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 2584,
+        "movimentacoes": 134
+    },
+    {
+        "id": "P_7000005483_09260760",
+        "codigo": "7000005483",
+        "cidade": "SANTO ANDRE",
+        "cep": "09260760",
+        "rua": "RUA HEITOR VILA LOBOS S/N",
+        "lat": -23.66389,
+        "lng": -46.53833,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 44022,
+        "movimentacoes": 38
+    },
+    {
+        "id": "P_7000012058_17495288",
+        "codigo": "7000012058",
+        "cidade": "PIRATININGA",
+        "cep": "17495288",
+        "rua": "RUA CARLOS ROCHA PARANHOS S/N",
+        "lat": -22.41278,
+        "lng": -49.13472,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 6059,
+        "movimentacoes": 30
+    },
+    {
+        "id": "P_7000010658_02124001",
+        "codigo": "7000010658",
+        "cidade": "SAO PAULO",
+        "cep": "02124001",
+        "rua": "AVENIDA DAS CEREJEIRAS 1467",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 72,
+        "movimentacoes": 10
+    },
+    {
+        "id": "P_7000021663_02552020",
+        "codigo": "7000021663",
+        "cidade": "SAO PAULO",
+        "cep": "02552020",
+        "rua": "",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 5936,
+        "movimentacoes": 39
+    },
+    {
+        "id": "P_7000037848_09380170",
+        "codigo": "7000037848",
+        "cidade": "MAUA",
+        "cep": "09380170",
+        "rua": "",
+        "lat": -23.66778,
+        "lng": -46.46139,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 6584,
+        "movimentacoes": 19
+    },
+    {
+        "id": "P_7000002905_18087087",
+        "codigo": "7000002905",
+        "cidade": "SOROCABA",
+        "cep": "18087087",
+        "rua": "RUA ALOYSIA AMPARO 440",
+        "lat": -23.50167,
+        "lng": -47.45806,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 62,
+        "movimentacoes": 3
+    },
+    {
+        "id": "P_7000020944_24465270",
+        "codigo": "7000020944",
+        "cidade": "SAO GONCALO",
+        "cep": "24465270",
+        "rua": "",
+        "lat": -22.82694,
+        "lng": -43.05389,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 400,
+        "movimentacoes": 2
+    },
+    {
+        "id": "P_7000001317_04763280",
+        "codigo": "7000001317",
+        "cidade": "SAO PAULO",
+        "cep": "04763280",
+        "rua": "R. JOSÉ RAFAELI 284",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 1,
+        "movimentacoes": 1
+    },
+    {
+        "id": "P_7000030242_13505600",
+        "codigo": "7000030242",
+        "cidade": "RIO CLARO",
+        "cep": "13505600",
+        "rua": "",
+        "lat": -22.41139,
+        "lng": -47.56139,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 1910964,
+        "movimentacoes": 1261
+    },
+    {
+        "id": "P_7000047953_13318000",
+        "codigo": "7000047953",
+        "cidade": "CABREUVA",
+        "cep": "13318000",
+        "rua": "",
+        "lat": -23.3075,
+        "lng": -47.13278,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 755260,
+        "movimentacoes": 77
+    },
+    {
+        "id": "P_7000007747_13505505",
+        "codigo": "7000007747",
+        "cidade": "RIO CLARO",
+        "cep": "13505505",
+        "rua": "AVENIDA BRASIL 4",
+        "lat": -22.41139,
+        "lng": -47.56139,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 618138,
+        "movimentacoes": 279
+    },
+    {
+        "id": "P_7000020402_06727195",
+        "codigo": "7000020402",
+        "cidade": "COTIA",
+        "cep": "06727195",
+        "rua": "",
+        "lat": -23.60389,
+        "lng": -46.91917,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 7493,
+        "movimentacoes": 3
+    },
+    {
+        "id": "P_7000028135_08536440",
+        "codigo": "7000028135",
+        "cidade": "FERRAZ DE VASCONCELOS",
+        "cep": "08536440",
+        "rua": "",
+        "lat": -23.54083,
+        "lng": -46.36861,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 2063,
+        "movimentacoes": 4
+    },
+    {
+        "id": "P_7000018540_39404166",
+        "codigo": "7000018540",
+        "cidade": "MONTES CLAROS",
+        "cep": "39404166",
+        "rua": "",
+        "lat": -16.735,
+        "lng": -43.86167,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 10,
+        "movimentacoes": 1
+    },
+    {
+        "id": "P_7000015863_05001000",
+        "codigo": "7000015863",
+        "cidade": "SAO PAULO",
+        "cep": "05001000",
+        "rua": "AVENIDA FRANCISCO MATARAZZO 404",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 200,
+        "movimentacoes": 1
+    },
+    {
+        "id": "P_7000015418_05113020",
+        "codigo": "7000015418",
+        "cidade": "SAO PAULO",
+        "cep": "05113020",
+        "rua": "AVENIDA MANOEL MONTEIRO DE ARA 1004",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 4000,
+        "movimentacoes": 1
+    },
+    {
+        "id": "P_7000014034_02552020",
+        "codigo": "7000014034",
+        "cidade": "SAO PAULO",
+        "cep": "02552020",
+        "rua": "RUA PADRE VENANCIO DE RESENDE 157",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 43,
+        "movimentacoes": 6
+    },
+    {
+        "id": "P_7000017691_04559003",
+        "codigo": "7000017691",
+        "cidade": "TOLEDO",
+        "cep": "04559003",
+        "rua": "Avenida Portugal 1604",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 1081,
+        "movimentacoes": 106
+    },
+    {
+        "id": "P_7000016393_13971045",
+        "codigo": "7000016393",
+        "cidade": "ITAPIRA",
+        "cep": "13971045",
+        "rua": "",
+        "lat": -22.43611,
+        "lng": -46.82167,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 4,
+        "movimentacoes": 4
+    },
+    {
+        "id": "P_7000015083_04571936",
+        "codigo": "7000015083",
+        "cidade": "SAO PAULO",
+        "cep": "04571936",
+        "rua": "AVENIDA ENGENHEIRO LUIZ CARLOS 1376",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 3,
+        "movimentacoes": 1
+    },
+    {
+        "id": "P_7000059039_06680056",
+        "codigo": "7000059039",
+        "cidade": "ITAPEVI",
+        "cep": "06680056",
+        "rua": "",
+        "lat": -23.54889,
+        "lng": -46.93417,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 18048,
+        "movimentacoes": 31
+    },
+    {
+        "id": "P_7000006816_02143060",
+        "codigo": "7000006816",
+        "cidade": "SAO PAULO",
+        "cep": "02143060",
+        "rua": "RUA SOLD JOSE ANTONIO MOREIRA 223",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 64,
+        "movimentacoes": 4
+    },
+    {
+        "id": "P_7000041943_09521320",
+        "codigo": "7000041943",
+        "cidade": "SAO CAETANO DO SUL",
+        "cep": "09521320",
+        "rua": "",
+        "lat": -23.6130401,
+        "lng": -46.5785025,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 5658,
+        "movimentacoes": 31
+    },
+    {
+        "id": "P_7000015682_06790160",
+        "codigo": "7000015682",
+        "cidade": "TABOAO DA SERRA",
+        "cep": "06790160",
+        "rua": "RUA REGINALDO NASCIMENTO DA SILV 49",
+        "lat": -23.62611,
+        "lng": -46.79167,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 2668,
+        "movimentacoes": 7
+    },
+    {
+        "id": "P_7000029703_12960000",
+        "codigo": "7000029703",
+        "cidade": "NAZARE PAULISTA",
+        "cep": "12960000",
+        "rua": "",
+        "lat": -23.18111,
+        "lng": -46.395,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 1315,
+        "movimentacoes": 6
+    },
+    {
+        "id": "P_7000015957_03808120",
+        "codigo": "7000015957",
+        "cidade": "SAO PAULO",
+        "cep": "03808120",
+        "rua": "RUA LINO PETENONE 411",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 10,
+        "movimentacoes": 2
+    },
+    {
+        "id": "P_7000014235_88030902",
+        "codigo": "7000014235",
+        "cidade": "FLORIANOPOLIS",
+        "cep": "88030902",
+        "rua": "RODOVIA  JOSE CARLOS DAUX S/N",
+        "lat": -27.59667,
+        "lng": -48.54917,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 600,
+        "movimentacoes": 2
+    },
+    {
+        "id": "P_7000019289_14078600",
+        "codigo": "7000019289",
+        "cidade": "RIBEIRAO PRETO",
+        "cep": "14078600",
+        "rua": "",
+        "lat": -21.1775,
+        "lng": -47.81028,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 1,
+        "movimentacoes": 1
+    },
+    {
+        "id": "P_7000003766_11045550",
+        "codigo": "7000003766",
+        "cidade": "SANTOS",
+        "cep": "11045550",
+        "rua": "Rua Governador Pedro de Toledo S/N",
+        "lat": -23.96083,
+        "lng": -46.33361,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 164,
+        "movimentacoes": 4
+    },
+    {
+        "id": "P_7000008538_06804260",
+        "codigo": "7000008538",
+        "cidade": "EMBU DAS ARTES",
+        "cep": "06804260",
+        "rua": "RUA SERGIPE 70",
+        "lat": -23.64889,
+        "lng": -46.85222,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 8,
+        "movimentacoes": 4
+    },
+    {
+        "id": "P_7000012115_06422122",
+        "codigo": "7000012115",
+        "cidade": "BARUERI",
+        "cep": "06422122",
+        "rua": "AVENIDA PREFEITO JOAO VILALLOB 1160",
+        "lat": -23.51056,
+        "lng": -46.87611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 76,
+        "movimentacoes": 6
+    },
+    {
+        "id": "P_7000006054_09850090",
+        "codigo": "7000006054",
+        "cidade": "SAO BERNARDO DO CAMPO",
+        "cep": "09850090",
+        "rua": "RUA WADIA JAFET ASSAD 179",
+        "lat": -23.69389,
+        "lng": -46.565,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 242,
+        "movimentacoes": 5
+    },
+    {
+        "id": "P_7000015375_06541065",
+        "codigo": "7000015375",
+        "cidade": "SANTANA DE PARNAIBA",
+        "cep": "06541065",
+        "rua": "RUA AVANHANDAVA 56",
+        "lat": -23.44417,
+        "lng": -46.91778,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 11080,
+        "movimentacoes": 5
+    },
+    {
+        "id": "P_7000007917_61900360",
+        "codigo": "7000007917",
+        "cidade": "MARACANAU",
+        "cep": "61900360",
+        "rua": "AV. III - (CJ. JEREISSATI I) S/N",
+        "lat": -3.87667,
+        "lng": -38.62556,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 270,
+        "movimentacoes": 10
+    },
+    {
+        "id": "P_7000010625_09220720",
+        "codigo": "7000010625",
+        "cidade": "SANTO ANDRE",
+        "cep": "09220720",
+        "rua": "RUA TEIXEIRA DE FREITAS 259",
+        "lat": -23.6192058,
+        "lng": -46.5403444,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 68,
+        "movimentacoes": 6
+    },
+    {
+        "id": "P_7000050097_09220720",
+        "codigo": "7000050097",
+        "cidade": "SANTO ANDRE",
+        "cep": "09220720",
+        "rua": "",
+        "lat": -23.6192058,
+        "lng": -46.5403444,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 522,
+        "movimentacoes": 6
+    },
+    {
+        "id": "P_7000016092_03620000",
+        "codigo": "7000016092",
+        "cidade": "SAO PAULO",
+        "cep": "03620000",
+        "rua": "AVENIDA SAO MIGUEL 962",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 24,
+        "movimentacoes": 3
+    },
+    {
+        "id": "P_7000007944_17740000",
+        "codigo": "7000007944",
+        "cidade": "POLONI",
+        "cep": "17740000",
+        "rua": "R JOSE BONIFACIO S/N",
+        "lat": -21.72583,
+        "lng": -50.72222,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 12,
+        "movimentacoes": 2
+    },
+    {
+        "id": "P_7000003090_11800000",
+        "codigo": "7000003090",
+        "cidade": "JUQUIA",
+        "cep": "11800000",
+        "rua": "RUA GEORGE SALVATERRA S/N",
+        "lat": -24.32083,
+        "lng": -47.63472,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 50,
+        "movimentacoes": 9
+    },
+    {
+        "id": "P_7000003801_02871050",
+        "codigo": "7000003801",
+        "cidade": "SAO PAULO",
+        "cep": "02871050",
+        "rua": "R SILVIO BUENO PERUCHE S/N",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 3,
+        "movimentacoes": 1
+    },
+    {
+        "id": "P_7000036835_08675000",
+        "codigo": "7000036835",
+        "cidade": "SUZANO",
+        "cep": "08675000",
+        "rua": "",
+        "lat": -23.5425,
+        "lng": -46.31083,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 8,
+        "movimentacoes": 1
+    },
+    {
+        "id": "P_7000015595_14406406",
+        "codigo": "7000015595",
+        "cidade": "FRANCA",
+        "cep": "14406406",
+        "rua": "RUA VINICIUS ALEXANDRE CASSIANO 680",
+        "lat": -20.53861,
+        "lng": -47.40083,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 20,
+        "movimentacoes": 1
+    },
+    {
+        "id": "P_7000034474_04206000",
+        "codigo": "7000034474",
+        "cidade": "SAO PAULO",
+        "cep": "04206000",
+        "rua": "",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 3292,
+        "movimentacoes": 32
+    },
+    {
+        "id": "P_7000014230_15400069",
+        "codigo": "7000014230",
+        "cidade": "OLIMPIA",
+        "cep": "15400069",
+        "rua": "RUA CONSELHEIRO ANTONIO PRADO S/N",
+        "lat": -20.73722,
+        "lng": -48.91472,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 805000,
+        "movimentacoes": 7
+    },
+    {
+        "id": "P_7000032439_04717003",
+        "codigo": "7000032439",
+        "cidade": "SAO PAULO",
+        "cep": "04717003",
+        "rua": "",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 365000,
+        "movimentacoes": 7
+    },
+    {
+        "id": "P_7000030368_06711250",
+        "codigo": "7000030368",
+        "cidade": "COTIA",
+        "cep": "06711250",
+        "rua": "",
+        "lat": -23.6008474,
+        "lng": -46.8390873,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 40,
+        "movimentacoes": 1
+    },
+    {
+        "id": "P_7000038859_30140091",
+        "codigo": "7000038859",
+        "cidade": "BELO HORIZONTE",
+        "cep": "30140091",
+        "rua": "",
+        "lat": -19.92083,
+        "lng": -43.93778,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 32,
+        "movimentacoes": 1
+    },
+    {
+        "id": "P_7000004454_13171171",
+        "codigo": "7000004454",
+        "cidade": "SUMARE",
+        "cep": "13171171",
+        "rua": "ESTRADA MUNICIPAL TEODOR CONDIE 909",
+        "lat": -22.82194,
+        "lng": -47.26694,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 9009,
+        "movimentacoes": 2
+    },
+    {
+        "id": "P_7000030136_75515610",
+        "codigo": "7000030136",
+        "cidade": "ITUMBIARA",
+        "cep": "75515610",
+        "rua": "",
+        "lat": -18.41917,
+        "lng": -49.21528,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 2,
+        "movimentacoes": 1
+    },
+    {
+        "id": "P_7000022141_08740110",
+        "codigo": "7000022141",
+        "cidade": "MOGI DAS CRUZES",
+        "cep": "08740110",
+        "rua": "",
+        "lat": -23.52278,
+        "lng": -46.18833,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 1177,
+        "movimentacoes": 11
+    },
+    {
+        "id": "P_7000070807_05136001",
+        "codigo": "7000070807",
+        "cidade": "SAO PAULO",
+        "cep": "05136001",
+        "rua": "",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 1160,
+        "movimentacoes": 4
+    },
+    {
+        "id": "P_7000070968_02615060",
+        "codigo": "7000070968",
+        "cidade": "SAO PAULO",
+        "cep": "02615060",
+        "rua": "",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 9822,
+        "movimentacoes": 11
+    },
+    {
+        "id": "P_7000032018_04782000",
+        "codigo": "7000032018",
+        "cidade": "SAO PAULO",
+        "cep": "04782000",
+        "rua": "",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 6,
+        "movimentacoes": 1
+    },
+    {
+        "id": "P_7000018565_02120020",
+        "codigo": "7000018565",
+        "cidade": "SAO PAULO",
+        "cep": "02120020",
+        "rua": "",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 120,
+        "movimentacoes": 20
+    },
+    {
+        "id": "P_7000016592_05814110",
+        "codigo": "7000016592",
+        "cidade": "SAO PAULO",
+        "cep": "05814110",
+        "rua": "RUA ALDEIA DE JOANES 64",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 1,
+        "movimentacoes": 1
+    },
+    {
+        "id": "P_7000000086_18314899",
+        "codigo": "7000000086",
+        "cidade": "GUAPIARA",
+        "cep": "18314899",
+        "rua": "RUA TAMANDUÁ BANDEIRA, SN, ALEG S/N",
+        "lat": -24.185,
+        "lng": -48.53278,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 592,
+        "movimentacoes": 21
+    },
+    {
+        "id": "P_7000021061_03408020",
+        "codigo": "7000021061",
+        "cidade": "SAO PAULO",
+        "cep": "03408020",
+        "rua": "",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 40,
+        "movimentacoes": 4
+    },
+    {
+        "id": "P_7000019372_06543308",
+        "codigo": "7000019372",
+        "cidade": "SANTANA DE PARNAIBA",
+        "cep": "06543308",
+        "rua": "",
+        "lat": -23.44417,
+        "lng": -46.91778,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 158,
+        "movimentacoes": 8
+    },
+    {
+        "id": "P_7000016464_11660410",
+        "codigo": "7000016464",
+        "cidade": "CARAGUATATUBA",
+        "cep": "11660410",
+        "rua": "RUA BENEDITO ZACARIAS NEPOMUCEN 622",
+        "lat": -23.62028,
+        "lng": -45.41306,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 3,
+        "movimentacoes": 3
+    },
+    {
+        "id": "P_7000018916_09190610",
+        "codigo": "7000018916",
+        "cidade": "SANTO ANDRE",
+        "cep": "09190610",
+        "rua": "",
+        "lat": -23.66389,
+        "lng": -46.53833,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 16,
+        "movimentacoes": 4
+    },
+    {
+        "id": "P_7000072229_09890510",
+        "codigo": "7000072229",
+        "cidade": "SAO BERNARDO DO CAMPO",
+        "cep": "09890510",
+        "rua": "",
+        "lat": -23.69389,
+        "lng": -46.565,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 60,
+        "movimentacoes": 1
+    },
+    {
+        "id": "P_7000017066_83504450",
+        "codigo": "7000017066",
+        "cidade": "ALMIRANTE TAMANDARE",
+        "cep": "83504450",
+        "rua": "R MARIA MADALENA 100",
+        "lat": -25.32472,
+        "lng": -49.31,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 5,
+        "movimentacoes": 1
+    },
+    {
+        "id": "P_7000017415_13015082",
+        "codigo": "7000017415",
+        "cidade": "JUNDIAI",
+        "cep": "13015082",
+        "rua": "R DOUTOR QUIRINO 1770",
+        "lat": -22.9085531,
+        "lng": -47.0560834,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 2495,
+        "movimentacoes": 48
+    },
+    {
+        "id": "P_7000003219_14115000",
+        "codigo": "7000003219",
+        "cidade": "SAO CAETANO DO SUL",
+        "cep": "14115000",
+        "rua": "ROD CUNHA BUENO S/N",
+        "lat": -21.49608,
+        "lng": -48.03491,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 20,
+        "movimentacoes": 4
+    },
+    {
+        "id": "P_7000016943_13731285",
+        "codigo": "7000016943",
+        "cidade": "MOCOCA",
+        "cep": "13731285",
+        "rua": "R TOCANTINS 14",
+        "lat": -21.46778,
+        "lng": -47.00472,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 582,
+        "movimentacoes": 2
+    },
+    {
+        "id": "P_7000035449_03073070",
+        "codigo": "7000035449",
+        "cidade": "SAO PAULO",
+        "cep": "03073070",
+        "rua": "",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 140,
+        "movimentacoes": 25
+    },
+    {
+        "id": "P_7000018927_05311030",
+        "codigo": "7000018927",
+        "cidade": "SAO PAULO",
+        "cep": "05311030",
+        "rua": "",
+        "lat": -23.5279604,
+        "lng": -46.7367439,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 5,
+        "movimentacoes": 1
+    },
+    {
+        "id": "P_7000017494_04041901",
+        "codigo": "7000017494",
+        "cidade": "SAO PAULO",
+        "cep": "04041901",
+        "rua": "AV ONZE DE JUNHO 99",
+        "lat": -23.601489924659198,
+        "lng": -46.637745657107345,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 20,
+        "movimentacoes": 16
+    },
+    {
+        "id": "P_7000019433_13202570",
+        "codigo": "7000019433",
+        "cidade": "JUNDIAI",
+        "cep": "13202570",
+        "rua": "",
+        "lat": -23.18639,
+        "lng": -46.88417,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 64,
+        "movimentacoes": 2
+    },
+    {
+        "id": "P_7000016121_18706706",
+        "codigo": "7000016121",
+        "cidade": "AVARE",
+        "cep": "18706706",
+        "rua": "RUA ESTHER CURIATI BUENO 57",
+        "lat": -23.09861,
+        "lng": -48.92583,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 1,
+        "movimentacoes": 1
+    },
+    {
+        "id": "P_7000006390_13732540",
+        "codigo": "7000006390",
+        "cidade": "MOCOCA",
+        "cep": "13732540",
+        "rua": "RUA LUIZ SPINELLI S/N",
+        "lat": -21.46778,
+        "lng": -47.00472,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 212,
+        "movimentacoes": 3
+    },
+    {
+        "id": "P_7000017471_03102060",
+        "codigo": "7000017471",
+        "cidade": "SAO PAULO",
+        "cep": "03102060",
+        "rua": "",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 24,
+        "movimentacoes": 8
+    },
+    {
+        "id": "P_7000015038_11020020",
+        "codigo": "7000015038",
+        "cidade": "SANTOS",
+        "cep": "11020020",
+        "rua": "AVENIDA AFONSO PENA 265",
+        "lat": -23.96083,
+        "lng": -46.33361,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 28,
+        "movimentacoes": 1
+    },
+    {
+        "id": "P_7000016917_06539010",
+        "codigo": "7000016917",
+        "cidade": "SANTANA DE PARNAIBA",
+        "cep": "06539010",
+        "rua": "ESTM BELA VISTA 917",
+        "lat": -23.44417,
+        "lng": -46.91778,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 9,
+        "movimentacoes": 1
+    },
+    {
+        "id": "P_7000051533_83015130",
+        "codigo": "7000051533",
+        "cidade": "SAO JOSE DOS PINHAIS",
+        "cep": "83015130",
+        "rua": "",
+        "lat": -25.5302,
+        "lng": -49.20836,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 30,
+        "movimentacoes": 2
+    },
+    {
+        "id": "P_7000021604_13040093",
+        "codigo": "7000021604",
+        "cidade": "CAMPINAS",
+        "cep": "13040093",
+        "rua": "",
+        "lat": -22.90556,
+        "lng": -47.06083,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 40,
+        "movimentacoes": 1
+    },
+    {
+        "id": "P_7000018229_13213180",
+        "codigo": "7000018229",
+        "cidade": "JUNDIAI",
+        "cep": "13213180",
+        "rua": "",
+        "lat": -23.18639,
+        "lng": -46.88417,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 4,
+        "movimentacoes": 3
+    },
+    {
+        "id": "P_7000057073_09290330",
+        "codigo": "7000057073",
+        "cidade": "SANTO ANDRE",
+        "cep": "09290330",
+        "rua": "",
+        "lat": -23.66389,
+        "lng": -46.53833,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 350,
+        "movimentacoes": 2
+    },
+    {
+        "id": "P_7000007189_12224853",
+        "codigo": "7000007189",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "cep": "12224853",
+        "rua": "AV CAMPOS FLORIDOS S/N",
+        "lat": -23.1811842,
+        "lng": -45.8072864,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 745,
+        "movimentacoes": 28
+    },
+    {
+        "id": "P_7000002544_41820560",
+        "codigo": "7000002544",
+        "cidade": "SALVADOR",
+        "cep": "41820560",
+        "rua": "RUA SOLDADO LUIZ GONZAGA DAS VI S/N",
+        "lat": -12.97563,
+        "lng": -38.49096,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 100,
+        "movimentacoes": 1
+    },
+    {
+        "id": "P_7000021398_08485525",
+        "codigo": "7000021398",
+        "cidade": "SAO PAULO",
+        "cep": "08485525",
+        "rua": "",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 309,
+        "movimentacoes": 6
+    },
+    {
+        "id": "P_7000037790_05069900",
+        "codigo": "7000037790",
+        "cidade": "SAO PAULO",
+        "cep": "05069900",
+        "rua": "",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 240,
+        "movimentacoes": 2
+    },
+    {
+        "id": "P_7000016312_03105000",
+        "codigo": "7000016312",
+        "cidade": "SAO PAULO",
+        "cep": "03105000",
+        "rua": "",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 12,
+        "movimentacoes": 8
+    },
+    {
+        "id": "P_7000008291_04571010",
+        "codigo": "7000008291",
+        "cidade": "SAO PAULO",
+        "cep": "04571010",
+        "rua": "RUA HERBERT ALFRED LANDSBERGER 53",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 25,
+        "movimentacoes": 11
+    },
+    {
+        "id": "P_7000008954_04220002",
+        "codigo": "7000008954",
+        "cidade": "SAO PAULO",
+        "cep": "04220002",
+        "rua": "AVENIDA PRES WILSON 5874",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 11,
+        "movimentacoes": 1
+    },
+    {
+        "id": "P_7000010273_05686900",
+        "codigo": "7000010273",
+        "cidade": "SAO PAULO",
+        "cep": "05686900",
+        "rua": "AVENIDA DUQUESA DE GOIAS 235",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 6,
+        "movimentacoes": 3
+    },
+    {
+        "id": "P_7000019748_04571936",
+        "codigo": "7000019748",
+        "cidade": "SAO PAULO",
+        "cep": "04571936",
+        "rua": "",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 2000,
+        "movimentacoes": 1
+    },
+    {
+        "id": "P_7000033580_99950000",
+        "codigo": "7000033580",
+        "cidade": "MULITERNO",
+        "cep": "99950000",
+        "rua": "",
+        "lat": -28.06806,
+        "lng": -52.01389,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 204,
+        "movimentacoes": 25
+    },
+    {
+        "id": "P_7000016614_07171030",
+        "codigo": "7000016614",
+        "cidade": "GUARULHOS",
+        "cep": "07171030",
+        "rua": "RUA FLORESTOPOLIS 184",
+        "lat": -23.46278,
+        "lng": -46.53333,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 2,
+        "movimentacoes": 2
+    },
+    {
+        "id": "P_7000032772_16306172",
+        "codigo": "7000032772",
+        "cidade": "PENAPOLIS",
+        "cep": "16306172",
+        "rua": "",
+        "lat": -21.41972,
+        "lng": -50.0775,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 200,
+        "movimentacoes": 1
+    },
+    {
+        "id": "P_7000019040_06411310",
+        "codigo": "7000019040",
+        "cidade": "BARUERI",
+        "cep": "06411310",
+        "rua": "",
+        "lat": -23.51056,
+        "lng": -46.87611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 16000,
+        "movimentacoes": 10
+    },
+    {
+        "id": "P_7000007656_06765310",
+        "codigo": "7000007656",
+        "cidade": "TABOAO DA SERRA",
+        "cep": "06765310",
+        "rua": "R MAFALDA DEOLINDA FREGOLENTE D S/N",
+        "lat": -23.62611,
+        "lng": -46.79167,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 4,
+        "movimentacoes": 1
+    },
+    {
+        "id": "P_7000012869_05711001",
+        "codigo": "7000012869",
+        "cidade": "SAO PAULO",
+        "cep": "05711001",
+        "rua": "RUA DOUTOR LUIZ MIGLIANO 1986",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 3088.4260000000004,
+        "movimentacoes": 4
+    },
+    {
+        "id": "P_7000003015_07747300",
+        "codigo": "7000003015",
+        "cidade": "CAIEIRAS",
+        "cep": "07747300",
+        "rua": "RUA DANILO VALBUZA (PRQ IND ARA 555",
+        "lat": -23.36417,
+        "lng": -46.74056,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 26,
+        "movimentacoes": 1
+    },
+    {
+        "id": "P_7000015976_05001000",
+        "codigo": "7000015976",
+        "cidade": "SAO PAULO",
+        "cep": "05001000",
+        "rua": "AVENIDA FRANCISCO MATARAZZO 404",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 8,
+        "movimentacoes": 4
+    },
+    {
+        "id": "P_7000003513_06401000",
+        "codigo": "7000003513",
+        "cidade": "BARUERI",
+        "cep": "06401000",
+        "rua": "RUA CAMPOS SALES 226",
+        "lat": -23.51056,
+        "lng": -46.87611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 14,
+        "movimentacoes": 6
+    },
+    {
+        "id": "P_7000031443_92420530",
+        "codigo": "7000031443",
+        "cidade": "CANOAS",
+        "cep": "92420530",
+        "rua": "",
+        "lat": -29.91778,
+        "lng": -51.18361,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 3541,
+        "movimentacoes": 34
+    },
+    {
+        "id": "P_7000018590_13188900",
+        "codigo": "7000018590",
+        "cidade": "HORTOLANDIA",
+        "cep": "13188900",
+        "rua": "",
+        "lat": -22.85833,
+        "lng": -47.22,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 6971,
+        "movimentacoes": 462
+    },
+    {
+        "id": "P_7000019405_06454000",
+        "codigo": "7000019405",
+        "cidade": "BARUERI",
+        "cep": "06454000",
+        "rua": "",
+        "lat": -23.51056,
+        "lng": -46.87611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 20,
+        "movimentacoes": 5
+    },
+    {
+        "id": "P_7000079592_05089000",
+        "codigo": "7000079592",
+        "cidade": "SAO PAULO",
+        "cep": "05089000",
+        "rua": "",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 202,
+        "movimentacoes": 17
+    },
+    {
+        "id": "P_7000079600_83434715",
+        "codigo": "7000079600",
+        "cidade": "CAMPINA GRANDE DO SUL",
+        "cep": "83434715",
+        "rua": "",
+        "lat": -25.30556,
+        "lng": -49.05528,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 186,
+        "movimentacoes": 8
+    },
+    {
+        "id": "P_7000071707_05092000",
+        "codigo": "7000071707",
+        "cidade": "SAO PAULO",
+        "cep": "05092000",
+        "rua": "",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 7650,
+        "movimentacoes": 4
+    },
+    {
+        "id": "P_7000080291_17512875",
+        "codigo": "7000080291",
+        "cidade": "MARILIA",
+        "cep": "17512875",
+        "rua": "",
+        "lat": -22.21389,
+        "lng": -49.94583,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 178,
+        "movimentacoes": 1
+    },
+    {
+        "id": "P_7000013109_90470470",
+        "codigo": "7000013109",
+        "cidade": "PORTO ALEGRE",
+        "cep": "90470470",
+        "rua": "AVENIDA CARLOS GOMES 1672",
+        "lat": -30.03283,
+        "lng": -51.23019,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 50910,
+        "movimentacoes": 9
+    },
+    {
+        "id": "P_7000001702_13503503",
+        "codigo": "7000001702",
+        "cidade": "RIO CLARO",
+        "cep": "13503503",
+        "rua": "RUA 7 JC 440",
+        "lat": -22.41139,
+        "lng": -47.56139,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 12320,
+        "movimentacoes": 1
+    },
+    {
+        "id": "P_7000009511_02017002",
+        "codigo": "7000009511",
+        "cidade": "SAO PAULO",
+        "cep": "02017002",
+        "rua": "RUA ALFREDO PUJOL 972",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 53040,
+        "movimentacoes": 4
+    },
+    {
+        "id": "P_7000015737_02071010",
+        "codigo": "7000015737",
+        "cidade": "SAO PAULO",
+        "cep": "02071010",
+        "rua": "RUA MARIA CANDIDA 119",
+        "lat": -23.5475,
+        "lng": -46.63611,
+        "tipo": "Cliente/Fornecedor",
+        "volume": 484,
+        "movimentacoes": 8
+    }
+];
+
+const FLUXOS_DATA = [
+    {
+        "origem": "D024",
+        "destino": "P_4600041930_04855090",
+        "volume": 2000,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600042127_05846270",
+        "volume": 88280,
+        "movimentacoes": 49,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600042952_09840000",
+        "volume": 90762,
+        "movimentacoes": 63,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600059579_06844005",
+        "volume": 5194,
+        "movimentacoes": 16,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600059671_04781065",
+        "volume": 10580,
+        "movimentacoes": 23,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600059910_04456160",
+        "volume": 74844,
+        "movimentacoes": 37,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600059980_09840000",
+        "volume": 85139,
+        "movimentacoes": 41,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600060285_04829280",
+        "volume": 56138,
+        "movimentacoes": 31,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600060345_06856000",
+        "volume": 74236,
+        "movimentacoes": 41,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600062805_13187075",
+        "volume": 200,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600063832_09618100",
+        "volume": 35620,
+        "movimentacoes": 7,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600064867_09190410",
+        "volume": 20000,
+        "movimentacoes": 2,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_3000000343_06856000",
+        "volume": 2,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600002300_05429060",
+        "volume": 25,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600042127_05846270",
+        "volume": 1228552,
+        "movimentacoes": 114,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600042686_04351050",
+        "volume": 35100,
+        "movimentacoes": 6,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600042952_09840000",
+        "volume": 1027183,
+        "movimentacoes": 154,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600043057_05544000",
+        "volume": 8750,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600059579_06844005",
+        "volume": 200,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600059671_04781065",
+        "volume": 1306,
+        "movimentacoes": 12,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600059910_04456160",
+        "volume": 585989,
+        "movimentacoes": 151,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600059912_07191000",
+        "volume": 8,
+        "movimentacoes": 2,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600059951_07171150",
+        "volume": 5,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600059980_09840000",
+        "volume": 782026,
+        "movimentacoes": 132,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600060030_08260030",
+        "volume": 30,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600060107_08664015",
+        "volume": 10,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600060108_08664015",
+        "volume": 10,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600060225_12231140",
+        "volume": 2,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600060285_04829280",
+        "volume": 678645,
+        "movimentacoes": 93,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600060294_06715825",
+        "volume": 10,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600060323_11250462",
+        "volume": 103,
+        "movimentacoes": 3,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600060345_06856000",
+        "volume": 731979,
+        "movimentacoes": 100,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600060346_09663010",
+        "volume": 25000,
+        "movimentacoes": 2,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600060565_05187010",
+        "volume": 1510,
+        "movimentacoes": 2,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600060683_12242000",
+        "volume": 30,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600062532_13733060",
+        "volume": 5,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600063172_12910610",
+        "volume": 1150,
+        "movimentacoes": 4,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600063832_09618100",
+        "volume": 100,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_3000000032_04516000",
+        "volume": 540,
+        "movimentacoes": 1,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600041930_04855090",
+        "volume": 3477,
+        "movimentacoes": 2,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600042058_04557010",
+        "volume": 20,
+        "movimentacoes": 1,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600042127_05846270",
+        "volume": 34491,
+        "movimentacoes": 30,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600042952_09840000",
+        "volume": 43236,
+        "movimentacoes": 23,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600047828_04516000",
+        "volume": 540,
+        "movimentacoes": 1,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600059579_06844005",
+        "volume": 2380,
+        "movimentacoes": 5,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600059671_04781065",
+        "volume": 4278,
+        "movimentacoes": 5,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600059910_04456160",
+        "volume": 20788,
+        "movimentacoes": 76,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600059968_04048000",
+        "volume": 20,
+        "movimentacoes": 1,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600059980_09840000",
+        "volume": 48960,
+        "movimentacoes": 43,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600060285_04829280",
+        "volume": 26821,
+        "movimentacoes": 29,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600060294_06715825",
+        "volume": 10,
+        "movimentacoes": 3,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600060345_06856000",
+        "volume": 46898,
+        "movimentacoes": 43,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600060565_05187010",
+        "volume": 6,
+        "movimentacoes": 1,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600063009_04459000",
+        "volume": 20,
+        "movimentacoes": 1,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600063832_09618100",
+        "volume": 17382,
+        "movimentacoes": 17,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_3000000321_05711001",
+        "volume": 494,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_3000000343_06856000",
+        "volume": 3,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4_05429900",
+        "volume": 4,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600042127_05846270",
+        "volume": 34091,
+        "movimentacoes": 395,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600042686_04351050",
+        "volume": 4,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600042952_09840000",
+        "volume": 42623,
+        "movimentacoes": 689,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600056260_04728210",
+        "volume": 2,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600056982_11410410",
+        "volume": 460,
+        "movimentacoes": 3,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600057061_05541130",
+        "volume": 40,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600057296_11441000",
+        "volume": 308,
+        "movimentacoes": 3,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600059579_06844005",
+        "volume": 330,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600059671_04781065",
+        "volume": 16056,
+        "movimentacoes": 110,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600059854_05038090",
+        "volume": 950,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600059895_02167010",
+        "volume": 1370,
+        "movimentacoes": 14,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600059910_04456160",
+        "volume": 47375,
+        "movimentacoes": 676,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600059912_07191000",
+        "volume": 1447,
+        "movimentacoes": 7,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600059951_07171150",
+        "volume": 2513,
+        "movimentacoes": 3,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600059980_09840000",
+        "volume": 48373.799999999996,
+        "movimentacoes": 665,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600060020_06381100",
+        "volume": 25,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600060030_08260030",
+        "volume": 505,
+        "movimentacoes": 7,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600060107_08664015",
+        "volume": 4,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600060108_08664015",
+        "volume": 595,
+        "movimentacoes": 5,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600060110_18205720",
+        "volume": 25,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600060183_11900000",
+        "volume": 4,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600060205_15150000",
+        "volume": 15,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600060225_12231140",
+        "volume": 32,
+        "movimentacoes": 3,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600060240_05419000",
+        "volume": 1990,
+        "movimentacoes": 6,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600060241_18240000",
+        "volume": 17,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600060285_04829280",
+        "volume": 31175.31,
+        "movimentacoes": 432,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600060294_06715825",
+        "volume": 50,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600060323_11250462",
+        "volume": 160,
+        "movimentacoes": 9,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600060345_06856000",
+        "volume": 43296,
+        "movimentacoes": 581,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600060565_05187010",
+        "volume": 373,
+        "movimentacoes": 5,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600061011_12209240",
+        "volume": 11,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600062694_13231600",
+        "volume": 2,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600062805_13187075",
+        "volume": 800,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600063172_12910610",
+        "volume": 425,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600042127_05846270",
+        "volume": 61026,
+        "movimentacoes": 32,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600042686_04351050",
+        "volume": 500,
+        "movimentacoes": 1,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600042952_09840000",
+        "volume": 69523,
+        "movimentacoes": 66,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600057296_11441000",
+        "volume": 19000,
+        "movimentacoes": 5,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600059288_09841720",
+        "volume": 3954,
+        "movimentacoes": 5,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600059671_04781065",
+        "volume": 22420,
+        "movimentacoes": 15,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600059895_02167010",
+        "volume": 1100,
+        "movimentacoes": 2,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600059910_04456160",
+        "volume": 81013,
+        "movimentacoes": 102,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600059980_09840000",
+        "volume": 95453.45000000003,
+        "movimentacoes": 89,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600060030_08260030",
+        "volume": 600,
+        "movimentacoes": 1,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600060107_08664015",
+        "volume": 354,
+        "movimentacoes": 1,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600060228_18304110",
+        "volume": 144,
+        "movimentacoes": 1,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600060285_04829280",
+        "volume": 70534.95,
+        "movimentacoes": 52,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600060345_06856000",
+        "volume": 88458.54,
+        "movimentacoes": 56,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600060346_09663010",
+        "volume": 4420,
+        "movimentacoes": 4,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600060565_05187010",
+        "volume": 4000,
+        "movimentacoes": 1,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600060584_11725060",
+        "volume": 150,
+        "movimentacoes": 1,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600060880_05407003",
+        "volume": 90,
+        "movimentacoes": 1,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600060924_09840070",
+        "volume": 3180,
+        "movimentacoes": 4,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600042127_05846270",
+        "volume": 19134,
+        "movimentacoes": 64,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600042952_09840000",
+        "volume": 25535.88,
+        "movimentacoes": 74,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600054151_09190410",
+        "volume": 1800,
+        "movimentacoes": 2,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600056982_11410410",
+        "volume": 1200,
+        "movimentacoes": 1,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600059671_04781065",
+        "volume": 9678,
+        "movimentacoes": 14,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600059895_02167010",
+        "volume": 1200,
+        "movimentacoes": 1,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600059910_04456160",
+        "volume": 30382,
+        "movimentacoes": 57,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600059912_07191000",
+        "volume": 2400,
+        "movimentacoes": 1,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600059980_09840000",
+        "volume": 40172.450000000004,
+        "movimentacoes": 67,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600060107_08664015",
+        "volume": 180,
+        "movimentacoes": 1,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600060285_04829280",
+        "volume": 26303.149999999998,
+        "movimentacoes": 51,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600060345_06856000",
+        "volume": 38435.19,
+        "movimentacoes": 68,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600060565_05187010",
+        "volume": 600,
+        "movimentacoes": 1,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D024",
+        "destino": "P_4600063172_12910610",
+        "volume": 300,
+        "movimentacoes": 1,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_3000000310_30140140",
+        "volume": 3000,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600043057_05544000",
+        "volume": 77340,
+        "movimentacoes": 54,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600051569_05113020",
+        "volume": 4000,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600053308_05786010",
+        "volume": 3300,
+        "movimentacoes": 6,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600054257_05786010",
+        "volume": 613,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600055659_05657140",
+        "volume": 20,
+        "movimentacoes": 2,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600055937_05626020",
+        "volume": 31300,
+        "movimentacoes": 6,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600057275_06330281",
+        "volume": 30768,
+        "movimentacoes": 18,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600058493_05001000",
+        "volume": 200,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600059444_06268000",
+        "volume": 4467,
+        "movimentacoes": 5,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600059502_06397110",
+        "volume": 9886,
+        "movimentacoes": 12,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600059508_06529190",
+        "volume": 1240,
+        "movimentacoes": 5,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600059671_04781065",
+        "volume": 48,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600059895_02167010",
+        "volume": 3008.141,
+        "movimentacoes": 4,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600059910_04456160",
+        "volume": 96,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600059912_07191000",
+        "volume": 1663.335,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600059968_04048000",
+        "volume": 50,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600059980_09840000",
+        "volume": 80,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060020_06381100",
+        "volume": 137920,
+        "movimentacoes": 44,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060030_08260030",
+        "volume": 350,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060062_03889000",
+        "volume": 350,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060107_08664015",
+        "volume": 400,
+        "movimentacoes": 2,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060108_08664015",
+        "volume": 350,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060240_05419000",
+        "volume": 626,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060285_04829280",
+        "volume": 80,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060294_06715825",
+        "volume": 117811,
+        "movimentacoes": 52,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060345_06856000",
+        "volume": 48,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060464_02989095",
+        "volume": 2002.995,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060565_05187010",
+        "volume": 8952.041000000001,
+        "movimentacoes": 3,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600063172_12910610",
+        "volume": 1236,
+        "movimentacoes": 4,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600063664_05307000",
+        "volume": 61596,
+        "movimentacoes": 10,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600063832_09618100",
+        "volume": 48,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_3000000332_05525080",
+        "volume": 16,
+        "movimentacoes": 3,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600043057_05544000",
+        "volume": 1041111,
+        "movimentacoes": 107,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600043552_06362042",
+        "volume": 120000,
+        "movimentacoes": 4,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600044617_05565210",
+        "volume": 30,
+        "movimentacoes": 4,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600053308_05786010",
+        "volume": 4,
+        "movimentacoes": 2,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600054257_05786010",
+        "volume": 9000,
+        "movimentacoes": 2,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600055659_05657140",
+        "volume": 40,
+        "movimentacoes": 6,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600056260_04728210",
+        "volume": 500,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600057156_08285000",
+        "volume": 8,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600057275_06330281",
+        "volume": 4850,
+        "movimentacoes": 9,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600059444_06268000",
+        "volume": 100,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600059508_06529190",
+        "volume": 7,
+        "movimentacoes": 2,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600059671_04781065",
+        "volume": 300,
+        "movimentacoes": 3,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600059895_02167010",
+        "volume": 2948.217,
+        "movimentacoes": 5,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600059951_07171150",
+        "volume": 1340.663,
+        "movimentacoes": 2,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060020_06381100",
+        "volume": 1098362,
+        "movimentacoes": 107,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060037_09290260",
+        "volume": 100,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060240_05419000",
+        "volume": 21504.175,
+        "movimentacoes": 4,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060294_06715825",
+        "volume": 1788720,
+        "movimentacoes": 168,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060565_05187010",
+        "volume": 1117.975,
+        "movimentacoes": 11,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600062381_02034000",
+        "volume": 4,
+        "movimentacoes": 2,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600062694_13231600",
+        "volume": 2,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600063172_12910610",
+        "volume": 40,
+        "movimentacoes": 2,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_3000000310_30140140",
+        "volume": 2000,
+        "movimentacoes": 3,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600037457_04571936",
+        "volume": 3,
+        "movimentacoes": 1,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600042058_04557010",
+        "volume": 10,
+        "movimentacoes": 1,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600043057_05544000",
+        "volume": 25900,
+        "movimentacoes": 52,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600049948_12245820",
+        "volume": 10,
+        "movimentacoes": 2,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600053308_05786010",
+        "volume": 1405,
+        "movimentacoes": 1,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600054257_05786010",
+        "volume": 2400,
+        "movimentacoes": 2,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600055937_05626020",
+        "volume": 1088,
+        "movimentacoes": 6,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600057275_06330281",
+        "volume": 26165,
+        "movimentacoes": 19,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600059444_06268000",
+        "volume": 3030,
+        "movimentacoes": 7,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600059502_06397110",
+        "volume": 3000,
+        "movimentacoes": 6,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600059508_06529190",
+        "volume": 3000,
+        "movimentacoes": 3,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600059895_02167010",
+        "volume": 3035.119,
+        "movimentacoes": 4,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600059910_04456160",
+        "volume": 3,
+        "movimentacoes": 1,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600059912_07191000",
+        "volume": 1625.373,
+        "movimentacoes": 1,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600059951_07171150",
+        "volume": 5761.232999999999,
+        "movimentacoes": 2,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060020_06381100",
+        "volume": 97507,
+        "movimentacoes": 159,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060240_05419000",
+        "volume": 11,
+        "movimentacoes": 2,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060294_06715825",
+        "volume": 66273,
+        "movimentacoes": 174,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060323_11250462",
+        "volume": 10,
+        "movimentacoes": 1,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060565_05187010",
+        "volume": 5650.392,
+        "movimentacoes": 7,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600063048_09190410",
+        "volume": 2603.394,
+        "movimentacoes": 1,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600063664_05307000",
+        "volume": 45420,
+        "movimentacoes": 74,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600063832_09618100",
+        "volume": 1356,
+        "movimentacoes": 2,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600064867_09190410",
+        "volume": 3065.932,
+        "movimentacoes": 2,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600042911_02167010",
+        "volume": 500,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600043057_05544000",
+        "volume": 20678,
+        "movimentacoes": 341,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600044617_05565210",
+        "volume": 136,
+        "movimentacoes": 25,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600049948_12245820",
+        "volume": 100,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600054151_09190410",
+        "volume": 20,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600054257_05786010",
+        "volume": 32,
+        "movimentacoes": 3,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600055659_05657140",
+        "volume": 2169,
+        "movimentacoes": 42,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600055660_06397110",
+        "volume": 4089,
+        "movimentacoes": 3,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600056260_04728210",
+        "volume": 4715,
+        "movimentacoes": 46,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600057061_05541130",
+        "volume": 535,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600057062_04048000",
+        "volume": 1284,
+        "movimentacoes": 7,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600057156_08285000",
+        "volume": 490,
+        "movimentacoes": 11,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600057205_05541130",
+        "volume": 29,
+        "movimentacoes": 4,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600057275_06330281",
+        "volume": 14343,
+        "movimentacoes": 168,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600059444_06268000",
+        "volume": 1528,
+        "movimentacoes": 7,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600059508_06529190",
+        "volume": 68,
+        "movimentacoes": 3,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600059554_22775056",
+        "volume": 2,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600059671_04781065",
+        "volume": 20,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600059852_04348070",
+        "volume": 122,
+        "movimentacoes": 5,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600059854_05038090",
+        "volume": 51,
+        "movimentacoes": 3,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600059895_02167010",
+        "volume": 5611.85,
+        "movimentacoes": 37,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600059910_04456160",
+        "volume": 200,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600059912_07191000",
+        "volume": 4290.9220000000005,
+        "movimentacoes": 19,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600059951_07171150",
+        "volume": 6582.171,
+        "movimentacoes": 24,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600059968_04048000",
+        "volume": 1850,
+        "movimentacoes": 4,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600059980_09840000",
+        "volume": 512,
+        "movimentacoes": 7,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600059990_05095010",
+        "volume": 112,
+        "movimentacoes": 5,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060020_06381100",
+        "volume": 48084.5,
+        "movimentacoes": 593,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060030_08260030",
+        "volume": 623,
+        "movimentacoes": 14,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060037_09290260",
+        "volume": 530,
+        "movimentacoes": 4,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060062_03889000",
+        "volume": 168,
+        "movimentacoes": 16,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060107_08664015",
+        "volume": 79,
+        "movimentacoes": 11,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060108_08664015",
+        "volume": 94,
+        "movimentacoes": 12,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060110_18205720",
+        "volume": 54,
+        "movimentacoes": 10,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060183_11900000",
+        "volume": 2,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060208_11666590",
+        "volume": 4,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060225_12231140",
+        "volume": 74,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060228_18304110",
+        "volume": 10,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060240_05419000",
+        "volume": 1848,
+        "movimentacoes": 15,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060241_18240000",
+        "volume": 92,
+        "movimentacoes": 5,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060243_11085601",
+        "volume": 134,
+        "movimentacoes": 6,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060264_18705650",
+        "volume": 92,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060267_11600733",
+        "volume": 6,
+        "movimentacoes": 3,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060285_04829280",
+        "volume": 140,
+        "movimentacoes": 3,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060294_06715825",
+        "volume": 49057.5,
+        "movimentacoes": 656,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060299_18900440",
+        "volume": 148,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060322_12209240",
+        "volume": 330,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060323_11250462",
+        "volume": 107,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060345_06856000",
+        "volume": 1142,
+        "movimentacoes": 10,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060565_05187010",
+        "volume": 4708.045000000001,
+        "movimentacoes": 60,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060683_12242000",
+        "volume": 22,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600062532_13733060",
+        "volume": 241,
+        "movimentacoes": 6,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600062590_18276120",
+        "volume": 2,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600062694_13231600",
+        "volume": 19,
+        "movimentacoes": 8,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600062805_13187075",
+        "volume": 5,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600062946_13590000",
+        "volume": 131,
+        "movimentacoes": 3,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600062989_18320000",
+        "volume": 31,
+        "movimentacoes": 5,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600063172_12910610",
+        "volume": 327,
+        "movimentacoes": 8,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_3000000324_01227200",
+        "volume": 258,
+        "movimentacoes": 1,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600043057_05544000",
+        "volume": 60341,
+        "movimentacoes": 79,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600044617_05565210",
+        "volume": 100,
+        "movimentacoes": 1,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600053308_05786010",
+        "volume": 6000,
+        "movimentacoes": 4,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600054257_05786010",
+        "volume": 3000,
+        "movimentacoes": 2,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600055659_05657140",
+        "volume": 8300,
+        "movimentacoes": 10,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600055660_06397110",
+        "volume": 8000,
+        "movimentacoes": 1,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600056260_04728210",
+        "volume": 16800,
+        "movimentacoes": 9,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600057205_05541130",
+        "volume": 3000,
+        "movimentacoes": 33,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600057275_06330281",
+        "volume": 27562,
+        "movimentacoes": 31,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600058865_09310000",
+        "volume": 690,
+        "movimentacoes": 1,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600059444_06268000",
+        "volume": 1400,
+        "movimentacoes": 3,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600059502_06397110",
+        "volume": 6000,
+        "movimentacoes": 2,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600059554_22775056",
+        "volume": 1062,
+        "movimentacoes": 7,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600059744_04602909",
+        "volume": 2800,
+        "movimentacoes": 1,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600059854_05038090",
+        "volume": 5600,
+        "movimentacoes": 6,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600059895_02167010",
+        "volume": 4170.23,
+        "movimentacoes": 9,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600059912_07191000",
+        "volume": 2930.46,
+        "movimentacoes": 7,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600059951_07171150",
+        "volume": 10247.3,
+        "movimentacoes": 7,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060020_06381100",
+        "volume": 103198.89,
+        "movimentacoes": 107,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060030_08260030",
+        "volume": 18500,
+        "movimentacoes": 8,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060037_09290260",
+        "volume": 462,
+        "movimentacoes": 1,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060062_03889000",
+        "volume": 1004,
+        "movimentacoes": 3,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060107_08664015",
+        "volume": 1400,
+        "movimentacoes": 2,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060108_08664015",
+        "volume": 8550,
+        "movimentacoes": 5,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060240_05419000",
+        "volume": 500,
+        "movimentacoes": 2,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060243_11085601",
+        "volume": 2000,
+        "movimentacoes": 1,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060285_04829280",
+        "volume": 4000,
+        "movimentacoes": 1,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060294_06715825",
+        "volume": 136652,
+        "movimentacoes": 204,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060565_05187010",
+        "volume": 669.3299999999999,
+        "movimentacoes": 8,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060584_11725060",
+        "volume": 396,
+        "movimentacoes": 1,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600062381_02034000",
+        "volume": 78,
+        "movimentacoes": 2,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600062532_13733060",
+        "volume": 2184,
+        "movimentacoes": 2,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600062590_18276120",
+        "volume": 5500,
+        "movimentacoes": 1,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600062805_13187075",
+        "volume": 2000,
+        "movimentacoes": 1,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600062946_13590000",
+        "volume": 7000,
+        "movimentacoes": 1,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600063172_12910610",
+        "volume": 3300,
+        "movimentacoes": 2,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600042911_02167010",
+        "volume": 474,
+        "movimentacoes": 1,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600043057_05544000",
+        "volume": 16055,
+        "movimentacoes": 63,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600053308_05786010",
+        "volume": 432,
+        "movimentacoes": 2,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600054151_09190410",
+        "volume": 600,
+        "movimentacoes": 1,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600054257_05786010",
+        "volume": 180,
+        "movimentacoes": 1,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600057062_04048000",
+        "volume": 2430,
+        "movimentacoes": 2,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600057156_08285000",
+        "volume": 504,
+        "movimentacoes": 1,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600057275_06330281",
+        "volume": 7776,
+        "movimentacoes": 26,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600059895_02167010",
+        "volume": 4366.93,
+        "movimentacoes": 11,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600059910_04456160",
+        "volume": 600,
+        "movimentacoes": 1,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600059912_07191000",
+        "volume": 2669.52,
+        "movimentacoes": 5,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600059951_07171150",
+        "volume": 6417.26,
+        "movimentacoes": 13,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600059968_04048000",
+        "volume": 3000,
+        "movimentacoes": 2,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600059980_09840000",
+        "volume": 240,
+        "movimentacoes": 1,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060020_06381100",
+        "volume": 34862,
+        "movimentacoes": 92,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060030_08260030",
+        "volume": 600,
+        "movimentacoes": 2,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060037_09290260",
+        "volume": 1200,
+        "movimentacoes": 1,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060108_08664015",
+        "volume": 1916,
+        "movimentacoes": 4,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060240_05419000",
+        "volume": 3600,
+        "movimentacoes": 3,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060294_06715825",
+        "volume": 54066.28,
+        "movimentacoes": 134,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060345_06856000",
+        "volume": 216,
+        "movimentacoes": 1,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600060565_05187010",
+        "volume": 6210.43,
+        "movimentacoes": 13,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D094",
+        "destino": "P_4600062532_13733060",
+        "volume": 198,
+        "movimentacoes": 1,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600041302_03889000",
+        "volume": 6076,
+        "movimentacoes": 8,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600042975_08664015",
+        "volume": 14481,
+        "movimentacoes": 25,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600056089_08260030",
+        "volume": 8000,
+        "movimentacoes": 8,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600056513_08110210",
+        "volume": 13500,
+        "movimentacoes": 3,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600057056_09340730",
+        "volume": 500,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600057156_08285000",
+        "volume": 1500,
+        "movimentacoes": 2,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600059895_02167010",
+        "volume": 5000,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600059922_02945030",
+        "volume": 1000,
+        "movimentacoes": 2,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600059968_04048000",
+        "volume": 1,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600060030_08260030",
+        "volume": 93973,
+        "movimentacoes": 55,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600060062_03889000",
+        "volume": 42781,
+        "movimentacoes": 44,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600060107_08664015",
+        "volume": 66528,
+        "movimentacoes": 65,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600060108_08664015",
+        "volume": 62455,
+        "movimentacoes": 73,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600060243_11085601",
+        "volume": 1750,
+        "movimentacoes": 4,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600060294_06715825",
+        "volume": 1000,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600060324_14409406",
+        "volume": 30,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600060345_06856000",
+        "volume": 4000,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600062805_13187075",
+        "volume": 400,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600064845_09190410",
+        "volume": 61409,
+        "movimentacoes": 8,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600041302_03889000",
+        "volume": 425901,
+        "movimentacoes": 9,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600042975_08664015",
+        "volume": 593380,
+        "movimentacoes": 13,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600056089_08260030",
+        "volume": 396800,
+        "movimentacoes": 9,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600056982_11410410",
+        "volume": 100,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600059895_02167010",
+        "volume": 503,
+        "movimentacoes": 3,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600059912_07191000",
+        "volume": 400,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600060030_08260030",
+        "volume": 876865,
+        "movimentacoes": 51,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600060062_03889000",
+        "volume": 665754,
+        "movimentacoes": 51,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600060107_08664015",
+        "volume": 459971,
+        "movimentacoes": 28,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600060108_08664015",
+        "volume": 632948,
+        "movimentacoes": 26,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600060225_12231140",
+        "volume": 13,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600060264_18705650",
+        "volume": 4,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600062694_13231600",
+        "volume": 2,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600054151_09190410",
+        "volume": 2000,
+        "movimentacoes": 1,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600056089_08260030",
+        "volume": 1500,
+        "movimentacoes": 2,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600059951_07171150",
+        "volume": 775,
+        "movimentacoes": 1,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600059968_04048000",
+        "volume": 1000,
+        "movimentacoes": 1,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600060020_06381100",
+        "volume": 630,
+        "movimentacoes": 1,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600060030_08260030",
+        "volume": 63648,
+        "movimentacoes": 53,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600060062_03889000",
+        "volume": 42232,
+        "movimentacoes": 40,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600060107_08664015",
+        "volume": 37510,
+        "movimentacoes": 53,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600060108_08664015",
+        "volume": 41928,
+        "movimentacoes": 54,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600060240_05419000",
+        "volume": 3000,
+        "movimentacoes": 1,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600060294_06715825",
+        "volume": 2,
+        "movimentacoes": 1,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600062946_13590000",
+        "volume": 100,
+        "movimentacoes": 1,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600063009_04459000",
+        "volume": 700,
+        "movimentacoes": 1,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600063048_09190410",
+        "volume": 1200,
+        "movimentacoes": 1,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600063664_05307000",
+        "volume": 2720,
+        "movimentacoes": 2,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600064845_09190410",
+        "volume": 6241,
+        "movimentacoes": 4,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600064867_09190410",
+        "volume": 720,
+        "movimentacoes": 1,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600066304_06404326",
+        "volume": 1000,
+        "movimentacoes": 1,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_3000000332_05525080",
+        "volume": 2,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600041302_03889000",
+        "volume": 7748,
+        "movimentacoes": 122,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600042975_08664015",
+        "volume": 8498,
+        "movimentacoes": 146,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600056089_08260030",
+        "volume": 7986,
+        "movimentacoes": 122,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600057059_08460245",
+        "volume": 5,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600057061_05541130",
+        "volume": 550,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600057156_08285000",
+        "volume": 3589,
+        "movimentacoes": 23,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600059852_04348070",
+        "volume": 16,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600059854_05038090",
+        "volume": 114,
+        "movimentacoes": 5,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600059895_02167010",
+        "volume": 40,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600059910_04456160",
+        "volume": 30,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600059912_07191000",
+        "volume": 26,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600059968_04048000",
+        "volume": 34,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600059980_09840000",
+        "volume": 920,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600060020_06381100",
+        "volume": 26,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600060030_08260030",
+        "volume": 22429,
+        "movimentacoes": 294,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600060037_09290260",
+        "volume": 2023,
+        "movimentacoes": 4,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600060062_03889000",
+        "volume": 27749,
+        "movimentacoes": 421,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600060107_08664015",
+        "volume": 8141,
+        "movimentacoes": 235,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600060108_08664015",
+        "volume": 11085,
+        "movimentacoes": 232,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600060208_11666590",
+        "volume": 2,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600060240_05419000",
+        "volume": 609,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600060243_11085601",
+        "volume": 8,
+        "movimentacoes": 6,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600060285_04829280",
+        "volume": 10,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600060294_06715825",
+        "volume": 1010,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600060323_11250462",
+        "volume": 36,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600060345_06856000",
+        "volume": 5,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600060539_05690050",
+        "volume": 11,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600060565_05187010",
+        "volume": 15,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600060584_11725060",
+        "volume": 1,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600060683_12242000",
+        "volume": 45,
+        "movimentacoes": 4,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600042975_08664015",
+        "volume": 5433.706,
+        "movimentacoes": 5,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600056089_08260030",
+        "volume": 106,
+        "movimentacoes": 2,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600057156_08285000",
+        "volume": 2100,
+        "movimentacoes": 3,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600060030_08260030",
+        "volume": 9307.95,
+        "movimentacoes": 22,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600060062_03889000",
+        "volume": 1840,
+        "movimentacoes": 7,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600060107_08664015",
+        "volume": 34315.7,
+        "movimentacoes": 25,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600060108_08664015",
+        "volume": 7335.02,
+        "movimentacoes": 20,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600056089_08260030",
+        "volume": 516,
+        "movimentacoes": 3,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600057156_08285000",
+        "volume": 1332,
+        "movimentacoes": 1,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600060030_08260030",
+        "volume": 2748.79,
+        "movimentacoes": 8,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600060062_03889000",
+        "volume": 1650,
+        "movimentacoes": 2,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600060107_08664015",
+        "volume": 2279,
+        "movimentacoes": 6,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D029",
+        "destino": "P_4600060108_08664015",
+        "volume": 2018.87,
+        "movimentacoes": 5,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600042911_02167010",
+        "volume": 112014,
+        "movimentacoes": 59,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600043148_05058000",
+        "volume": 11000,
+        "movimentacoes": 4,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600045747_06460040",
+        "volume": 33478,
+        "movimentacoes": 11,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600046032_07171150",
+        "volume": 27986,
+        "movimentacoes": 10,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600048762_12922670",
+        "volume": 12480,
+        "movimentacoes": 11,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600054151_09190410",
+        "volume": 10,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600059579_06844005",
+        "volume": 600,
+        "movimentacoes": 2,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600059895_02167010",
+        "volume": 145200,
+        "movimentacoes": 54,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600059912_07191000",
+        "volume": 11755,
+        "movimentacoes": 13,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600059922_02945030",
+        "volume": 3751,
+        "movimentacoes": 13,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600059951_07171150",
+        "volume": 21284,
+        "movimentacoes": 17,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600060323_11250462",
+        "volume": 50,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600060324_14409406",
+        "volume": 500,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600060464_02989095",
+        "volume": 5655,
+        "movimentacoes": 5,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600060565_05187010",
+        "volume": 127125,
+        "movimentacoes": 33,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600060683_12242000",
+        "volume": 2300,
+        "movimentacoes": 4,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600062694_13231600",
+        "volume": 50,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600062989_18320000",
+        "volume": 40,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600063048_09190410",
+        "volume": 48320,
+        "movimentacoes": 13,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600064867_09190410",
+        "volume": 32000,
+        "movimentacoes": 5,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_3000001937_01227200",
+        "volume": 10,
+        "movimentacoes": 4,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600042911_02167010",
+        "volume": 6390,
+        "movimentacoes": 40,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600045747_06460040",
+        "volume": 17913,
+        "movimentacoes": 14,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600046032_07171150",
+        "volume": 876,
+        "movimentacoes": 6,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600048762_12922670",
+        "volume": 1765,
+        "movimentacoes": 9,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600059852_04348070",
+        "volume": 600,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600059854_05038090",
+        "volume": 600,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600059895_02167010",
+        "volume": 434390,
+        "movimentacoes": 113,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600059912_07191000",
+        "volume": 257765,
+        "movimentacoes": 75,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600059951_07171150",
+        "volume": 337977,
+        "movimentacoes": 44,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600059990_05095010",
+        "volume": 200,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600060020_06381100",
+        "volume": 1510,
+        "movimentacoes": 2,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600060030_08260030",
+        "volume": 505,
+        "movimentacoes": 2,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600060062_03889000",
+        "volume": 35,
+        "movimentacoes": 4,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600060107_08664015",
+        "volume": 5,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600060108_08664015",
+        "volume": 2,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600060110_18205720",
+        "volume": 1,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600060240_05419000",
+        "volume": 110,
+        "movimentacoes": 2,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600060285_04829280",
+        "volume": 1,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600060294_06715825",
+        "volume": 1000,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600060299_18900440",
+        "volume": 95,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600060565_05187010",
+        "volume": 522477,
+        "movimentacoes": 120,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600060683_12242000",
+        "volume": 2,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_3000001937_01227200",
+        "volume": 2000,
+        "movimentacoes": 1,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600042911_02167010",
+        "volume": 36896,
+        "movimentacoes": 32,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600043148_05058000",
+        "volume": 820,
+        "movimentacoes": 2,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600045747_06460040",
+        "volume": 15480,
+        "movimentacoes": 10,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600046032_07171150",
+        "volume": 22440,
+        "movimentacoes": 10,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600048762_12922670",
+        "volume": 6980,
+        "movimentacoes": 7,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600059895_02167010",
+        "volume": 65896,
+        "movimentacoes": 55,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600059912_07191000",
+        "volume": 25832,
+        "movimentacoes": 25,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600059922_02945030",
+        "volume": 2700,
+        "movimentacoes": 6,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600059951_07171150",
+        "volume": 12662,
+        "movimentacoes": 13,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600059968_04048000",
+        "volume": 5000,
+        "movimentacoes": 3,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600060030_08260030",
+        "volume": 1005,
+        "movimentacoes": 2,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600060464_02989095",
+        "volume": 2400,
+        "movimentacoes": 3,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600060565_05187010",
+        "volume": 91599,
+        "movimentacoes": 58,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600062805_13187075",
+        "volume": 1,
+        "movimentacoes": 1,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600063048_09190410",
+        "volume": 13416,
+        "movimentacoes": 31,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600064867_09190410",
+        "volume": 8882,
+        "movimentacoes": 6,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_3000000324_01227200",
+        "volume": 2,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_3000000326_04719002",
+        "volume": 100,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_3000001937_01227200",
+        "volume": 37,
+        "movimentacoes": 7,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_3000001938_07171150",
+        "volume": 2,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600042911_02167010",
+        "volume": 18113,
+        "movimentacoes": 284,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600043148_05058000",
+        "volume": 58,
+        "movimentacoes": 4,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600045747_06460040",
+        "volume": 5967,
+        "movimentacoes": 96,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600046032_07171150",
+        "volume": 5172,
+        "movimentacoes": 82,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600048762_12922670",
+        "volume": 3715,
+        "movimentacoes": 67,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600054151_09190410",
+        "volume": 1138,
+        "movimentacoes": 10,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600055784_18211265",
+        "volume": 50,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600059671_04781065",
+        "volume": 400,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600059852_04348070",
+        "volume": 104,
+        "movimentacoes": 4,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600059854_05038090",
+        "volume": 214,
+        "movimentacoes": 4,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600059895_02167010",
+        "volume": 43403,
+        "movimentacoes": 661,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600059910_04456160",
+        "volume": 20,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600059912_07191000",
+        "volume": 32275,
+        "movimentacoes": 422,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600059951_07171150",
+        "volume": 35561,
+        "movimentacoes": 265,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600059968_04048000",
+        "volume": 710,
+        "movimentacoes": 5,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600059980_09840000",
+        "volume": 36,
+        "movimentacoes": 4,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600059990_05095010",
+        "volume": 600,
+        "movimentacoes": 3,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600060020_06381100",
+        "volume": 906,
+        "movimentacoes": 13,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600060030_08260030",
+        "volume": 2268,
+        "movimentacoes": 10,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600060037_09290260",
+        "volume": 530,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600060062_03889000",
+        "volume": 522,
+        "movimentacoes": 25,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600060107_08664015",
+        "volume": 132,
+        "movimentacoes": 12,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600060108_08664015",
+        "volume": 277,
+        "movimentacoes": 12,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600060110_18205720",
+        "volume": 20,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600060169_11920000",
+        "volume": 45,
+        "movimentacoes": 4,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600060183_11900000",
+        "volume": 2,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600060208_11666590",
+        "volume": 18,
+        "movimentacoes": 3,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600060240_05419000",
+        "volume": 220,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600060243_11085601",
+        "volume": 1,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600060267_11600733",
+        "volume": 2,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600060285_04829280",
+        "volume": 242,
+        "movimentacoes": 5,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600060294_06715825",
+        "volume": 306,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600060299_18900440",
+        "volume": 93,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600060322_12209240",
+        "volume": 300,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600060323_11250462",
+        "volume": 979,
+        "movimentacoes": 8,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600060324_14409406",
+        "volume": 60,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600060345_06856000",
+        "volume": 21,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600060565_05187010",
+        "volume": 43784,
+        "movimentacoes": 449,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600060584_11725060",
+        "volume": 5,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600060683_12242000",
+        "volume": 249,
+        "movimentacoes": 5,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600062532_13733060",
+        "volume": 375,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600062694_13231600",
+        "volume": 23,
+        "movimentacoes": 4,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600063172_12910610",
+        "volume": 69,
+        "movimentacoes": 3,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600042911_02167010",
+        "volume": 75770,
+        "movimentacoes": 38,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600043148_05058000",
+        "volume": 2000,
+        "movimentacoes": 1,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600045747_06460040",
+        "volume": 31100,
+        "movimentacoes": 5,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600046032_07171150",
+        "volume": 21000,
+        "movimentacoes": 3,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600048762_12922670",
+        "volume": 9700,
+        "movimentacoes": 6,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600054151_09190410",
+        "volume": 3700,
+        "movimentacoes": 3,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600059895_02167010",
+        "volume": 69278,
+        "movimentacoes": 55,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600059910_04456160",
+        "volume": 2000,
+        "movimentacoes": 1,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600059912_07191000",
+        "volume": 95828,
+        "movimentacoes": 47,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600059951_07171150",
+        "volume": 62160,
+        "movimentacoes": 41,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600060323_11250462",
+        "volume": 1000,
+        "movimentacoes": 1,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600060565_05187010",
+        "volume": 103899,
+        "movimentacoes": 61,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600062805_13187075",
+        "volume": 2000,
+        "movimentacoes": 1,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600042911_02167010",
+        "volume": 186,
+        "movimentacoes": 1,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600045747_06460040",
+        "volume": 402,
+        "movimentacoes": 1,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600059895_02167010",
+        "volume": 35748,
+        "movimentacoes": 60,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600059912_07191000",
+        "volume": 18150,
+        "movimentacoes": 29,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600059951_07171150",
+        "volume": 19332,
+        "movimentacoes": 27,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600060240_05419000",
+        "volume": 1,
+        "movimentacoes": 1,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D028",
+        "destino": "P_4600060565_05187010",
+        "volume": 21826,
+        "movimentacoes": 26,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600050357_04048000",
+        "volume": 10445,
+        "movimentacoes": 6,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600051554_02501010",
+        "volume": 200,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600056505_03512050",
+        "volume": 5000,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600059912_07191000",
+        "volume": 400,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600059968_04048000",
+        "volume": 2564,
+        "movimentacoes": 10,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600060037_09290260",
+        "volume": 146,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600060108_08664015",
+        "volume": 30,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600060240_05419000",
+        "volume": 3477,
+        "movimentacoes": 4,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600060565_05187010",
+        "volume": 2000,
+        "movimentacoes": 2,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600060683_12242000",
+        "volume": 36,
+        "movimentacoes": 3,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600063009_04459000",
+        "volume": 69792,
+        "movimentacoes": 5,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600050357_04048000",
+        "volume": 1243707,
+        "movimentacoes": 72,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600051554_02501010",
+        "volume": 226,
+        "movimentacoes": 4,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600057056_09340730",
+        "volume": 13,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600059751_09290416",
+        "volume": 23,
+        "movimentacoes": 4,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600059854_05038090",
+        "volume": 14,
+        "movimentacoes": 2,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600059968_04048000",
+        "volume": 755960,
+        "movimentacoes": 66,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600059990_05095010",
+        "volume": 8,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600060037_09290260",
+        "volume": 40916.5,
+        "movimentacoes": 13,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600060107_08664015",
+        "volume": 1,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600060108_08664015",
+        "volume": 11,
+        "movimentacoes": 2,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600060205_15150000",
+        "volume": 200,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600060240_05419000",
+        "volume": 400510.375,
+        "movimentacoes": 11,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600060323_11250462",
+        "volume": 300,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600061053_09190410",
+        "volume": 45,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600063172_12910610",
+        "volume": 17,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600042058_04557010",
+        "volume": 50,
+        "movimentacoes": 4,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600050357_04048000",
+        "volume": 2025,
+        "movimentacoes": 16,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600059968_04048000",
+        "volume": 4117,
+        "movimentacoes": 10,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600059980_09840000",
+        "volume": 1,
+        "movimentacoes": 1,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600060030_08260030",
+        "volume": 6,
+        "movimentacoes": 2,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600060037_09290260",
+        "volume": 9882,
+        "movimentacoes": 11,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600060240_05419000",
+        "volume": 2602,
+        "movimentacoes": 13,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600063009_04459000",
+        "volume": 6309,
+        "movimentacoes": 11,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600063832_09618100",
+        "volume": 2,
+        "movimentacoes": 1,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_2_05429900",
+        "volume": 2,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_3000000337_11410410",
+        "volume": 4,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600050357_04048000",
+        "volume": 13764,
+        "movimentacoes": 162,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600051554_02501010",
+        "volume": 33,
+        "movimentacoes": 10,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600053789_01204001",
+        "volume": 35,
+        "movimentacoes": 7,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600057056_09340730",
+        "volume": 164,
+        "movimentacoes": 4,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600057061_05541130",
+        "volume": 280,
+        "movimentacoes": 4,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600058865_09310000",
+        "volume": 108,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600059852_04348070",
+        "volume": 1938,
+        "movimentacoes": 40,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600059854_05038090",
+        "volume": 3492,
+        "movimentacoes": 82,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600059895_02167010",
+        "volume": 8,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600059910_04456160",
+        "volume": 4,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600059951_07171150",
+        "volume": 3,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600059968_04048000",
+        "volume": 10022.65,
+        "movimentacoes": 139,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600059980_09840000",
+        "volume": 18,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600059990_05095010",
+        "volume": 1943,
+        "movimentacoes": 39,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600060020_06381100",
+        "volume": 175,
+        "movimentacoes": 6,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600060030_08260030",
+        "volume": 20,
+        "movimentacoes": 4,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600060037_09290260",
+        "volume": 4569,
+        "movimentacoes": 74,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600060062_03889000",
+        "volume": 12,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600060107_08664015",
+        "volume": 10,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600060240_05419000",
+        "volume": 12194.5,
+        "movimentacoes": 116,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600060243_11085601",
+        "volume": 2,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600060323_11250462",
+        "volume": 4,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600060539_05690050",
+        "volume": 103,
+        "movimentacoes": 9,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600060683_12242000",
+        "volume": 14,
+        "movimentacoes": 3,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600060880_05407003",
+        "volume": 257,
+        "movimentacoes": 6,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600061053_09190410",
+        "volume": 89,
+        "movimentacoes": 5,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600062694_13231600",
+        "volume": 2,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600063172_12910610",
+        "volume": 14,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600050357_04048000",
+        "volume": 13827,
+        "movimentacoes": 13,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600053789_01204001",
+        "volume": 12,
+        "movimentacoes": 1,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600057056_09340730",
+        "volume": 600,
+        "movimentacoes": 2,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600059751_09290416",
+        "volume": 1182,
+        "movimentacoes": 1,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600059852_04348070",
+        "volume": 14314,
+        "movimentacoes": 9,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600059854_05038090",
+        "volume": 20768,
+        "movimentacoes": 13,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600059968_04048000",
+        "volume": 20426.6,
+        "movimentacoes": 12,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600059990_05095010",
+        "volume": 5200,
+        "movimentacoes": 2,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600060037_09290260",
+        "volume": 2364.5499999999997,
+        "movimentacoes": 3,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600060169_11920000",
+        "volume": 96,
+        "movimentacoes": 1,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600060240_05419000",
+        "volume": 9115.1,
+        "movimentacoes": 8,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600060539_05690050",
+        "volume": 100,
+        "movimentacoes": 1,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600060880_05407003",
+        "volume": 570,
+        "movimentacoes": 2,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600061053_09190410",
+        "volume": 500,
+        "movimentacoes": 1,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600050357_04048000",
+        "volume": 2838,
+        "movimentacoes": 5,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600059854_05038090",
+        "volume": 1512,
+        "movimentacoes": 1,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600059895_02167010",
+        "volume": 138,
+        "movimentacoes": 2,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600059912_07191000",
+        "volume": 102,
+        "movimentacoes": 1,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600059968_04048000",
+        "volume": 8044,
+        "movimentacoes": 16,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600060037_09290260",
+        "volume": 135.5,
+        "movimentacoes": 1,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600060107_08664015",
+        "volume": 300,
+        "movimentacoes": 1,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600060240_05419000",
+        "volume": 4735.7,
+        "movimentacoes": 10,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600060294_06715825",
+        "volume": 360,
+        "movimentacoes": 3,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D019",
+        "destino": "P_4600063172_12910610",
+        "volume": 1176,
+        "movimentacoes": 2,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600049948_12245820",
+        "volume": 20617,
+        "movimentacoes": 29,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600052767_09190410",
+        "volume": 2700,
+        "movimentacoes": 6,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600057056_09340730",
+        "volume": 10466,
+        "movimentacoes": 21,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600059502_06397110",
+        "volume": 1000,
+        "movimentacoes": 2,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600059854_05038090",
+        "volume": 5000,
+        "movimentacoes": 2,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600059968_04048000",
+        "volume": 23500,
+        "movimentacoes": 7,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600060037_09290260",
+        "volume": 37974,
+        "movimentacoes": 28,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600060240_05419000",
+        "volume": 15080,
+        "movimentacoes": 5,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600063009_04459000",
+        "volume": 8000,
+        "movimentacoes": 3,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600066304_06404326",
+        "volume": 500,
+        "movimentacoes": 2,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600049948_12245820",
+        "volume": 440431,
+        "movimentacoes": 79,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600050553_01141030",
+        "volume": 46500,
+        "movimentacoes": 3,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600057056_09340730",
+        "volume": 545,
+        "movimentacoes": 14,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600059751_09290416",
+        "volume": 1,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600059968_04048000",
+        "volume": 100653,
+        "movimentacoes": 10,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600060030_08260030",
+        "volume": 5,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600060037_09290260",
+        "volume": 372766,
+        "movimentacoes": 60,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600060108_08664015",
+        "volume": 4,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600060240_05419000",
+        "volume": 70,
+        "movimentacoes": 4,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600063172_12910610",
+        "volume": 50,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600049948_12245820",
+        "volume": 5086,
+        "movimentacoes": 23,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600057056_09340730",
+        "volume": 2301,
+        "movimentacoes": 5,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600060037_09290260",
+        "volume": 423,
+        "movimentacoes": 10,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600060240_05419000",
+        "volume": 80,
+        "movimentacoes": 4,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600063009_04459000",
+        "volume": 1,
+        "movimentacoes": 1,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600049948_12245820",
+        "volume": 27008.5,
+        "movimentacoes": 337,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600050357_04048000",
+        "volume": 160,
+        "movimentacoes": 8,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600050553_01141030",
+        "volume": 785,
+        "movimentacoes": 19,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600054151_09190410",
+        "volume": 100,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600057020_03969000",
+        "volume": 567,
+        "movimentacoes": 5,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600057056_09340730",
+        "volume": 8112,
+        "movimentacoes": 119,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600058865_09310000",
+        "volume": 6,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600059852_04348070",
+        "volume": 23,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600059912_07191000",
+        "volume": 8,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600059951_07171150",
+        "volume": 522,
+        "movimentacoes": 4,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600059968_04048000",
+        "volume": 1803,
+        "movimentacoes": 41,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600059990_05095010",
+        "volume": 34,
+        "movimentacoes": 3,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600060020_06381100",
+        "volume": 350,
+        "movimentacoes": 3,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600060037_09290260",
+        "volume": 15823,
+        "movimentacoes": 247,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600060107_08664015",
+        "volume": 240,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600060108_08664015",
+        "volume": 185,
+        "movimentacoes": 4,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600060240_05419000",
+        "volume": 1503,
+        "movimentacoes": 19,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600060285_04829280",
+        "volume": 139,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600060539_05690050",
+        "volume": 50,
+        "movimentacoes": 5,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600060565_05187010",
+        "volume": 990,
+        "movimentacoes": 3,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600060584_11725060",
+        "volume": 100,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600060880_05407003",
+        "volume": 2,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600062694_13231600",
+        "volume": 4,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600049948_12245820",
+        "volume": 46980,
+        "movimentacoes": 37,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600057005_01156000",
+        "volume": 17192,
+        "movimentacoes": 5,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600057056_09340730",
+        "volume": 29680,
+        "movimentacoes": 29,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600057296_11441000",
+        "volume": 2000,
+        "movimentacoes": 1,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600058865_09310000",
+        "volume": 26950,
+        "movimentacoes": 17,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600059751_09290416",
+        "volume": 7326,
+        "movimentacoes": 17,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600059852_04348070",
+        "volume": 4800,
+        "movimentacoes": 3,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600059968_04048000",
+        "volume": 8528,
+        "movimentacoes": 3,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600059980_09840000",
+        "volume": 5000,
+        "movimentacoes": 1,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600060037_09290260",
+        "volume": 38540,
+        "movimentacoes": 32,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600060240_05419000",
+        "volume": 9004,
+        "movimentacoes": 13,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600060539_05690050",
+        "volume": 2618,
+        "movimentacoes": 9,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600060880_05407003",
+        "volume": 1600,
+        "movimentacoes": 3,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600049948_12245820",
+        "volume": 11412,
+        "movimentacoes": 35,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600050553_01141030",
+        "volume": 7074,
+        "movimentacoes": 32,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600057056_09340730",
+        "volume": 2202,
+        "movimentacoes": 5,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600059951_07171150",
+        "volume": 102,
+        "movimentacoes": 1,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600059968_04048000",
+        "volume": 5724,
+        "movimentacoes": 17,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600060030_08260030",
+        "volume": 1134,
+        "movimentacoes": 1,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600060037_09290260",
+        "volume": 10296,
+        "movimentacoes": 37,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600060107_08664015",
+        "volume": 1800,
+        "movimentacoes": 1,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D035",
+        "destino": "P_4600060240_05419000",
+        "volume": 2400,
+        "movimentacoes": 7,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600050357_04048000",
+        "volume": 18550,
+        "movimentacoes": 24,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600053582_05001000",
+        "volume": 1000,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600054608_08371440",
+        "volume": 2300,
+        "movimentacoes": 4,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600056505_03512050",
+        "volume": 4000,
+        "movimentacoes": 2,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600059968_04048000",
+        "volume": 23488,
+        "movimentacoes": 16,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600060037_09290260",
+        "volume": 17200,
+        "movimentacoes": 9,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600060225_12231140",
+        "volume": 130,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600060240_05419000",
+        "volume": 13299,
+        "movimentacoes": 14,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600060683_12242000",
+        "volume": 480,
+        "movimentacoes": 2,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600063009_04459000",
+        "volume": 42395,
+        "movimentacoes": 8,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600049948_12245820",
+        "volume": 380,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600050357_04048000",
+        "volume": 95698,
+        "movimentacoes": 37,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600052270_04214040",
+        "volume": 2503,
+        "movimentacoes": 3,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600057056_09340730",
+        "volume": 100,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600059751_09290416",
+        "volume": 38,
+        "movimentacoes": 9,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600059852_04348070",
+        "volume": 20,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600059895_02167010",
+        "volume": 2,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600059968_04048000",
+        "volume": 868800,
+        "movimentacoes": 84,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600060020_06381100",
+        "volume": 8,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600060030_08260030",
+        "volume": 42,
+        "movimentacoes": 2,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600060037_09290260",
+        "volume": 2750,
+        "movimentacoes": 11,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600060062_03889000",
+        "volume": 4,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600060240_05419000",
+        "volume": 12624,
+        "movimentacoes": 18,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600042058_04557010",
+        "volume": 146,
+        "movimentacoes": 5,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600049948_12245820",
+        "volume": 3712,
+        "movimentacoes": 9,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600050357_04048000",
+        "volume": 8310,
+        "movimentacoes": 50,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600054608_08371440",
+        "volume": 50,
+        "movimentacoes": 1,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600056505_03512050",
+        "volume": 2,
+        "movimentacoes": 1,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600057056_09340730",
+        "volume": 1897,
+        "movimentacoes": 3,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600059968_04048000",
+        "volume": 8818,
+        "movimentacoes": 29,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600060037_09290260",
+        "volume": 16938,
+        "movimentacoes": 29,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600060107_08664015",
+        "volume": 2,
+        "movimentacoes": 1,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600060240_05419000",
+        "volume": 14253,
+        "movimentacoes": 43,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600063009_04459000",
+        "volume": 14860,
+        "movimentacoes": 11,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600063664_05307000",
+        "volume": 4,
+        "movimentacoes": 1,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_3000000341_11410410",
+        "volume": 10,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600049948_12245820",
+        "volume": 4,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600050357_04048000",
+        "volume": 7896,
+        "movimentacoes": 109,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600050553_01141030",
+        "volume": 90,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600052270_04214040",
+        "volume": 87,
+        "movimentacoes": 6,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600052411_03126007",
+        "volume": 24,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600054608_08371440",
+        "volume": 440,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600056982_11410410",
+        "volume": 200,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600057020_03969000",
+        "volume": 3,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600057056_09340730",
+        "volume": 1184,
+        "movimentacoes": 3,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600057061_05541130",
+        "volume": 100,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600058865_09310000",
+        "volume": 352,
+        "movimentacoes": 3,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600059852_04348070",
+        "volume": 44,
+        "movimentacoes": 4,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600059854_05038090",
+        "volume": 158,
+        "movimentacoes": 11,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600059895_02167010",
+        "volume": 84,
+        "movimentacoes": 4,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600059912_07191000",
+        "volume": 53,
+        "movimentacoes": 3,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600059968_04048000",
+        "volume": 15844,
+        "movimentacoes": 190,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600059980_09840000",
+        "volume": 400,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600060020_06381100",
+        "volume": 168,
+        "movimentacoes": 7,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600060030_08260030",
+        "volume": 170,
+        "movimentacoes": 4,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600060037_09290260",
+        "volume": 11973,
+        "movimentacoes": 39,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600060062_03889000",
+        "volume": 8,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600060107_08664015",
+        "volume": 43,
+        "movimentacoes": 6,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600060108_08664015",
+        "volume": 15,
+        "movimentacoes": 3,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600060240_05419000",
+        "volume": 6839,
+        "movimentacoes": 74,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600060243_11085601",
+        "volume": 5,
+        "movimentacoes": 3,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600060294_06715825",
+        "volume": 30,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600060539_05690050",
+        "volume": 15,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600060565_05187010",
+        "volume": 5,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600060683_12242000",
+        "volume": 100,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600060880_05407003",
+        "volume": 6,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600061053_09190410",
+        "volume": 15,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600062532_13733060",
+        "volume": 9,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600062805_13187075",
+        "volume": 400,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600063172_12910610",
+        "volume": 56,
+        "movimentacoes": 5,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600049948_12245820",
+        "volume": 120,
+        "movimentacoes": 1,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600050357_04048000",
+        "volume": 4650,
+        "movimentacoes": 6,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600052270_04214040",
+        "volume": 1000,
+        "movimentacoes": 1,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600054608_08371440",
+        "volume": 513.9000000000001,
+        "movimentacoes": 3,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600059854_05038090",
+        "volume": 5396,
+        "movimentacoes": 2,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600059968_04048000",
+        "volume": 14178,
+        "movimentacoes": 12,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600060037_09290260",
+        "volume": 4112,
+        "movimentacoes": 4,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600060240_05419000",
+        "volume": 10516.2,
+        "movimentacoes": 19,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600060539_05690050",
+        "volume": 204,
+        "movimentacoes": 3,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600050357_04048000",
+        "volume": 2556,
+        "movimentacoes": 13,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600059895_02167010",
+        "volume": 90,
+        "movimentacoes": 1,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600059910_04456160",
+        "volume": 1002,
+        "movimentacoes": 1,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600059968_04048000",
+        "volume": 8634,
+        "movimentacoes": 15,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600060037_09290260",
+        "volume": 1368,
+        "movimentacoes": 4,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600060062_03889000",
+        "volume": 846,
+        "movimentacoes": 1,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600060108_08664015",
+        "volume": 1998,
+        "movimentacoes": 1,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D020",
+        "destino": "P_4600060240_05419000",
+        "volume": 4662,
+        "movimentacoes": 9,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600057056_09340730",
+        "volume": 380,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600059968_04048000",
+        "volume": 570,
+        "movimentacoes": 2,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600060037_09290260",
+        "volume": 4,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600060108_08664015",
+        "volume": 40,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600060240_05419000",
+        "volume": 14686,
+        "movimentacoes": 26,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600063009_04459000",
+        "volume": 500,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600057020_03969000",
+        "volume": 6,
+        "movimentacoes": 2,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600059854_05038090",
+        "volume": 50,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600059910_04456160",
+        "volume": 16,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600059912_07191000",
+        "volume": 2,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600059968_04048000",
+        "volume": 78204,
+        "movimentacoes": 16,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600060030_08260030",
+        "volume": 5,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600060037_09290260",
+        "volume": 909,
+        "movimentacoes": 9,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600060107_08664015",
+        "volume": 11,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600060108_08664015",
+        "volume": 16,
+        "movimentacoes": 2,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600060208_11666590",
+        "volume": 20,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600060240_05419000",
+        "volume": 403850.175,
+        "movimentacoes": 76,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600060323_11250462",
+        "volume": 20,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600060345_06856000",
+        "volume": 12,
+        "movimentacoes": 2,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600063172_12910610",
+        "volume": 70,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600050357_04048000",
+        "volume": 1920,
+        "movimentacoes": 1,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600060240_05419000",
+        "volume": 14,
+        "movimentacoes": 4,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600050357_04048000",
+        "volume": 9,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600057020_03969000",
+        "volume": 5684,
+        "movimentacoes": 60,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600057056_09340730",
+        "volume": 394,
+        "movimentacoes": 10,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600057061_05541130",
+        "volume": 475,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600057156_08285000",
+        "volume": 10,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600057296_11441000",
+        "volume": 4,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600059854_05038090",
+        "volume": 950,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600059912_07191000",
+        "volume": 12,
+        "movimentacoes": 4,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600059951_07171150",
+        "volume": 84,
+        "movimentacoes": 3,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600059968_04048000",
+        "volume": 5350,
+        "movimentacoes": 69,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600059980_09840000",
+        "volume": 10,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600060030_08260030",
+        "volume": 231,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600060037_09290260",
+        "volume": 3164,
+        "movimentacoes": 52,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600060062_03889000",
+        "volume": 19,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600060107_08664015",
+        "volume": 200,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600060108_08664015",
+        "volume": 145,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600060160_17470000",
+        "volume": 42,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600060208_11666590",
+        "volume": 19,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600060240_05419000",
+        "volume": 11414,
+        "movimentacoes": 179,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600060323_11250462",
+        "volume": 11,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600060345_06856000",
+        "volume": 30,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600060539_05690050",
+        "volume": 7,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600060565_05187010",
+        "volume": 4,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600060683_12242000",
+        "volume": 8,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600062694_13231600",
+        "volume": 10,
+        "movimentacoes": 3,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600062946_13590000",
+        "volume": 6,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600063172_12910610",
+        "volume": 30,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600052270_04214040",
+        "volume": 300,
+        "movimentacoes": 1,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600057056_09340730",
+        "volume": 4904,
+        "movimentacoes": 4,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600058865_09310000",
+        "volume": 648,
+        "movimentacoes": 3,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600059751_09290416",
+        "volume": 14488,
+        "movimentacoes": 29,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600059852_04348070",
+        "volume": 14636,
+        "movimentacoes": 9,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600059854_05038090",
+        "volume": 32008,
+        "movimentacoes": 29,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600059968_04048000",
+        "volume": 14926,
+        "movimentacoes": 11,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600059990_05095010",
+        "volume": 14100,
+        "movimentacoes": 5,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600060037_09290260",
+        "volume": 26396,
+        "movimentacoes": 16,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600060240_05419000",
+        "volume": 76064,
+        "movimentacoes": 69,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600060264_18705650",
+        "volume": 234,
+        "movimentacoes": 2,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600060880_05407003",
+        "volume": 750,
+        "movimentacoes": 4,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600061053_09190410",
+        "volume": 500,
+        "movimentacoes": 1,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600057020_03969000",
+        "volume": 20430,
+        "movimentacoes": 50,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600059968_04048000",
+        "volume": 4272,
+        "movimentacoes": 18,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600060037_09290260",
+        "volume": 4452,
+        "movimentacoes": 13,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D075",
+        "destino": "P_4600060240_05419000",
+        "volume": 18786,
+        "movimentacoes": 62,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600050357_04048000",
+        "volume": 1936,
+        "movimentacoes": 4,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600052270_04214040",
+        "volume": 430,
+        "movimentacoes": 3,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600059968_04048000",
+        "volume": 915,
+        "movimentacoes": 4,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600060037_09290260",
+        "volume": 20,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600060240_05419000",
+        "volume": 549,
+        "movimentacoes": 7,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600062805_13187075",
+        "volume": 300,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600049948_12245820",
+        "volume": 150,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600050357_04048000",
+        "volume": 29411,
+        "movimentacoes": 13,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600052270_04214040",
+        "volume": 16381,
+        "movimentacoes": 24,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600059852_04348070",
+        "volume": 1500,
+        "movimentacoes": 2,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600059895_02167010",
+        "volume": 2,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600059968_04048000",
+        "volume": 28545,
+        "movimentacoes": 38,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600059990_05095010",
+        "volume": 500,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600060037_09290260",
+        "volume": 51566,
+        "movimentacoes": 8,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600060062_03889000",
+        "volume": 4,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600060240_05419000",
+        "volume": 350435,
+        "movimentacoes": 65,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600060323_11250462",
+        "volume": 50,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600060565_05187010",
+        "volume": 400,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600061053_09190410",
+        "volume": 45,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600049948_12245820",
+        "volume": 1,
+        "movimentacoes": 1,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600050357_04048000",
+        "volume": 1,
+        "movimentacoes": 1,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600059968_04048000",
+        "volume": 1,
+        "movimentacoes": 1,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600060037_09290260",
+        "volume": 2,
+        "movimentacoes": 1,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600060240_05419000",
+        "volume": 16,
+        "movimentacoes": 3,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_3000000348_05419000",
+        "volume": 10,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600049259_18915792",
+        "volume": 8,
+        "movimentacoes": 4,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600049948_12245820",
+        "volume": 305,
+        "movimentacoes": 8,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600050357_04048000",
+        "volume": 5988,
+        "movimentacoes": 87,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600051503_01141030",
+        "volume": 351,
+        "movimentacoes": 4,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600052270_04214040",
+        "volume": 3990,
+        "movimentacoes": 85,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600052411_03126007",
+        "volume": 1,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600054608_08371440",
+        "volume": 2,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600057020_03969000",
+        "volume": 204,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600057056_09340730",
+        "volume": 2630,
+        "movimentacoes": 20,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600059193_18147000",
+        "volume": 1,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600059671_04781065",
+        "volume": 50,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600059852_04348070",
+        "volume": 790,
+        "movimentacoes": 8,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600059854_05038090",
+        "volume": 2104,
+        "movimentacoes": 25,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600059910_04456160",
+        "volume": 50,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600059912_07191000",
+        "volume": 461,
+        "movimentacoes": 5,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600059951_07171150",
+        "volume": 3,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600059968_04048000",
+        "volume": 16666,
+        "movimentacoes": 200,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600059980_09840000",
+        "volume": 506,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600059990_05095010",
+        "volume": 1743,
+        "movimentacoes": 13,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600060020_06381100",
+        "volume": 186,
+        "movimentacoes": 7,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600060037_09290260",
+        "volume": 8540,
+        "movimentacoes": 71,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600060062_03889000",
+        "volume": 1,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600060107_08664015",
+        "volume": 21,
+        "movimentacoes": 3,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600060108_08664015",
+        "volume": 24,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600060205_15150000",
+        "volume": 2,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600060240_05419000",
+        "volume": 11716,
+        "movimentacoes": 171,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600060242_11330220",
+        "volume": 38,
+        "movimentacoes": 4,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600060243_11085601",
+        "volume": 15,
+        "movimentacoes": 6,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600060264_18705650",
+        "volume": 7,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600060285_04829280",
+        "volume": 6,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600060294_06715825",
+        "volume": 166,
+        "movimentacoes": 6,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600060299_18900440",
+        "volume": 20,
+        "movimentacoes": 3,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600060322_12209240",
+        "volume": 44,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600060323_11250462",
+        "volume": 249,
+        "movimentacoes": 5,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600060345_06856000",
+        "volume": 150,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600060539_05690050",
+        "volume": 106,
+        "movimentacoes": 8,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600060565_05187010",
+        "volume": 24,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600060683_12242000",
+        "volume": 3,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600060880_05407003",
+        "volume": 496,
+        "movimentacoes": 18,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600061053_09190410",
+        "volume": 344,
+        "movimentacoes": 8,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600062694_13231600",
+        "volume": 14,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600063172_12910610",
+        "volume": 209,
+        "movimentacoes": 12,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600050357_04048000",
+        "volume": 5802,
+        "movimentacoes": 5,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600052270_04214040",
+        "volume": 3200,
+        "movimentacoes": 4,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600057056_09340730",
+        "volume": 402,
+        "movimentacoes": 1,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600058865_09310000",
+        "volume": 402,
+        "movimentacoes": 1,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600059852_04348070",
+        "volume": 1032,
+        "movimentacoes": 1,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600059854_05038090",
+        "volume": 1002,
+        "movimentacoes": 1,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600059990_05095010",
+        "volume": 3000,
+        "movimentacoes": 4,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600060037_09290260",
+        "volume": 60,
+        "movimentacoes": 1,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600060108_08664015",
+        "volume": 240,
+        "movimentacoes": 2,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600060240_05419000",
+        "volume": 7208,
+        "movimentacoes": 5,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600060243_11085601",
+        "volume": 804,
+        "movimentacoes": 4,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600060539_05690050",
+        "volume": 18,
+        "movimentacoes": 1,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600060880_05407003",
+        "volume": 1236,
+        "movimentacoes": 3,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600049948_12245820",
+        "volume": 450,
+        "movimentacoes": 1,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600050357_04048000",
+        "volume": 84,
+        "movimentacoes": 1,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600050553_01141030",
+        "volume": 366,
+        "movimentacoes": 1,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600051503_01141030",
+        "volume": 570,
+        "movimentacoes": 2,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600059968_04048000",
+        "volume": 6396,
+        "movimentacoes": 6,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D030",
+        "destino": "P_4600060240_05419000",
+        "volume": 4458,
+        "movimentacoes": 16,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600059579_06844005",
+        "volume": 1200,
+        "movimentacoes": 3,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600060030_08260030",
+        "volume": 4683,
+        "movimentacoes": 7,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600060062_03889000",
+        "volume": 2994,
+        "movimentacoes": 7,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600060107_08664015",
+        "volume": 2405,
+        "movimentacoes": 9,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600060108_08664015",
+        "volume": 3386,
+        "movimentacoes": 10,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600041302_03889000",
+        "volume": 12,
+        "movimentacoes": 6,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600042975_08664015",
+        "volume": 25063,
+        "movimentacoes": 16,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600056089_08260030",
+        "volume": 45003,
+        "movimentacoes": 3,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600057156_08285000",
+        "volume": 13,
+        "movimentacoes": 7,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600060030_08260030",
+        "volume": 969,
+        "movimentacoes": 48,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600060062_03889000",
+        "volume": 4371,
+        "movimentacoes": 56,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600060107_08664015",
+        "volume": 13140,
+        "movimentacoes": 67,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600060108_08664015",
+        "volume": 2823,
+        "movimentacoes": 51,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600042975_08664015",
+        "volume": 4,
+        "movimentacoes": 2,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600059579_06844005",
+        "volume": 2,
+        "movimentacoes": 2,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600060030_08260030",
+        "volume": 2250,
+        "movimentacoes": 6,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600060062_03889000",
+        "volume": 3428,
+        "movimentacoes": 8,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600060107_08664015",
+        "volume": 1605,
+        "movimentacoes": 3,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600060108_08664015",
+        "volume": 973,
+        "movimentacoes": 8,
+        "material": "Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600041302_03889000",
+        "volume": 2187,
+        "movimentacoes": 103,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600042975_08664015",
+        "volume": 3438,
+        "movimentacoes": 163,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600056089_08260030",
+        "volume": 2895,
+        "movimentacoes": 102,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600056260_04728210",
+        "volume": 10,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600057061_05541130",
+        "volume": 912,
+        "movimentacoes": 4,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600057156_08285000",
+        "volume": 2645,
+        "movimentacoes": 39,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600058100_06543001",
+        "volume": 36,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600059852_04348070",
+        "volume": 2,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600059895_02167010",
+        "volume": 6,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600059910_04456160",
+        "volume": 37,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600059912_07191000",
+        "volume": 1060,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600059951_07171150",
+        "volume": 8,
+        "movimentacoes": 3,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600059968_04048000",
+        "volume": 500,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600059980_09840000",
+        "volume": 532,
+        "movimentacoes": 4,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600060020_06381100",
+        "volume": 37,
+        "movimentacoes": 5,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600060030_08260030",
+        "volume": 22271.260000000002,
+        "movimentacoes": 409,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600060037_09290260",
+        "volume": 1008,
+        "movimentacoes": 6,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600060062_03889000",
+        "volume": 17017,
+        "movimentacoes": 440,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600060107_08664015",
+        "volume": 7825.73,
+        "movimentacoes": 400,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600060108_08664015",
+        "volume": 10056,
+        "movimentacoes": 379,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600060110_18205720",
+        "volume": 3,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600060160_17470000",
+        "volume": 37,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600060225_12231140",
+        "volume": 15,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600060240_05419000",
+        "volume": 10,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600060264_18705650",
+        "volume": 22,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600060285_04829280",
+        "volume": 100,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600060322_12209240",
+        "volume": 181,
+        "movimentacoes": 5,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600060323_11250462",
+        "volume": 33,
+        "movimentacoes": 4,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600060345_06856000",
+        "volume": 1,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600060565_05187010",
+        "volume": 100,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600060683_12242000",
+        "volume": 100,
+        "movimentacoes": 3,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600062989_18320000",
+        "volume": 3,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600063172_12910610",
+        "volume": 740,
+        "movimentacoes": 4,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_3000000341_11410410",
+        "volume": 2000,
+        "movimentacoes": 1,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600041302_03889000",
+        "volume": 30300,
+        "movimentacoes": 33,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600042975_08664015",
+        "volume": 45350,
+        "movimentacoes": 41,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600056089_08260030",
+        "volume": 45446,
+        "movimentacoes": 35,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600057156_08285000",
+        "volume": 22700,
+        "movimentacoes": 11,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600059980_09840000",
+        "volume": 600,
+        "movimentacoes": 1,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600060030_08260030",
+        "volume": 104837.4,
+        "movimentacoes": 78,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600060037_09290260",
+        "volume": 348,
+        "movimentacoes": 2,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600060062_03889000",
+        "volume": 60978.03,
+        "movimentacoes": 84,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600060107_08664015",
+        "volume": 38034.94,
+        "movimentacoes": 64,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600060108_08664015",
+        "volume": 69722,
+        "movimentacoes": 78,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600060565_05187010",
+        "volume": 300,
+        "movimentacoes": 1,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600041302_03889000",
+        "volume": 6330,
+        "movimentacoes": 17,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600042975_08664015",
+        "volume": 14910.56,
+        "movimentacoes": 38,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600056089_08260030",
+        "volume": 9246,
+        "movimentacoes": 20,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600057061_05541130",
+        "volume": 2460,
+        "movimentacoes": 3,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600057156_08285000",
+        "volume": 4260,
+        "movimentacoes": 9,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600059912_07191000",
+        "volume": 600,
+        "movimentacoes": 2,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600060030_08260030",
+        "volume": 41144.95,
+        "movimentacoes": 103,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600060062_03889000",
+        "volume": 30544.6,
+        "movimentacoes": 91,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600060107_08664015",
+        "volume": 24802.93,
+        "movimentacoes": 77,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600060108_08664015",
+        "volume": 24418,
+        "movimentacoes": 59,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D040",
+        "destino": "P_4600062989_18320000",
+        "volume": 1626,
+        "movimentacoes": 1,
+        "material": "Tubos rígidos",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D034",
+        "destino": "P_4600060030_08260030",
+        "volume": 560,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D034",
+        "destino": "P_4600060294_06715825",
+        "volume": 2000,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D034",
+        "destino": "P_4600062663_03332050",
+        "volume": 23000,
+        "movimentacoes": 4,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D034",
+        "destino": "P_4600062694_13231600",
+        "volume": 60,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D034",
+        "destino": "P_4600059671_04781065",
+        "volume": 25,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D034",
+        "destino": "P_4600059980_09840000",
+        "volume": 10,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D034",
+        "destino": "P_4600060267_11600733",
+        "volume": 20,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D034",
+        "destino": "P_4600060294_06715825",
+        "volume": 10,
+        "movimentacoes": 2,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D034",
+        "destino": "P_4600062532_13733060",
+        "volume": 5,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D034",
+        "destino": "P_4600059852_04348070",
+        "volume": 30,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D034",
+        "destino": "P_4600059895_02167010",
+        "volume": 10,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D034",
+        "destino": "P_4600059910_04456160",
+        "volume": 1,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D034",
+        "destino": "P_4600059912_07191000",
+        "volume": 9,
+        "movimentacoes": 3,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D034",
+        "destino": "P_4600059951_07171150",
+        "volume": 1,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D034",
+        "destino": "P_4600060020_06381100",
+        "volume": 96,
+        "movimentacoes": 12,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D034",
+        "destino": "P_4600060030_08260030",
+        "volume": 6,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D034",
+        "destino": "P_4600060062_03889000",
+        "volume": 1,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D034",
+        "destino": "P_4600060107_08664015",
+        "volume": 16,
+        "movimentacoes": 8,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D034",
+        "destino": "P_4600060108_08664015",
+        "volume": 10,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D034",
+        "destino": "P_4600060183_11900000",
+        "volume": 2,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D034",
+        "destino": "P_4600060242_11330220",
+        "volume": 5,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D034",
+        "destino": "P_4600060267_11600733",
+        "volume": 10,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D034",
+        "destino": "P_4600060285_04829280",
+        "volume": 6,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D034",
+        "destino": "P_4600060294_06715825",
+        "volume": 52,
+        "movimentacoes": 7,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D034",
+        "destino": "P_4600060323_11250462",
+        "volume": 2,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D034",
+        "destino": "P_4600060345_06856000",
+        "volume": 17,
+        "movimentacoes": 3,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D034",
+        "destino": "P_4600060565_05187010",
+        "volume": 71,
+        "movimentacoes": 5,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D034",
+        "destino": "P_4600060584_11725060",
+        "volume": 2,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D034",
+        "destino": "P_4600062694_13231600",
+        "volume": 35,
+        "movimentacoes": 3,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D034",
+        "destino": "P_4600062805_13187075",
+        "volume": 3,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D034",
+        "destino": "P_4600062946_13590000",
+        "volume": 3,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D034",
+        "destino": "P_4600066038_11925000",
+        "volume": 3,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D034",
+        "destino": "P_4600060107_08664015",
+        "volume": 1100,
+        "movimentacoes": 1,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D034",
+        "destino": "P_4600060322_12209240",
+        "volume": 1300,
+        "movimentacoes": 2,
+        "material": "Tubos flexíveis",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": 0,
+        "destino": "P_4600060565_05187010",
+        "volume": 11775,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D002",
+        "destino": "P_4600059444_06268000",
+        "volume": 1000,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D002",
+        "destino": "P_4600059671_04781065",
+        "volume": 200,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D002",
+        "destino": "P_4600060323_11250462",
+        "volume": 30,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D002",
+        "destino": "P_4600060565_05187010",
+        "volume": 1,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D002",
+        "destino": "P_4600056260_04728210",
+        "volume": 14,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D002",
+        "destino": "P_4600059852_04348070",
+        "volume": 6,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D002",
+        "destino": "P_4600059854_05038090",
+        "volume": 134,
+        "movimentacoes": 9,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D002",
+        "destino": "P_4600059893_01216000",
+        "volume": 340,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D002",
+        "destino": "P_4600059910_04456160",
+        "volume": 20,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D002",
+        "destino": "P_4600059990_05095010",
+        "volume": 80,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D002",
+        "destino": "P_4600060020_06381100",
+        "volume": 20,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D002",
+        "destino": "P_4600060037_09290260",
+        "volume": 30,
+        "movimentacoes": 4,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D002",
+        "destino": "P_4600060107_08664015",
+        "volume": 1,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D002",
+        "destino": "P_4600060108_08664015",
+        "volume": 6,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D002",
+        "destino": "P_4600060240_05419000",
+        "volume": 295,
+        "movimentacoes": 3,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D002",
+        "destino": "P_4600060243_11085601",
+        "volume": 23,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D002",
+        "destino": "P_4600060285_04829280",
+        "volume": 18,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D002",
+        "destino": "P_4600060294_06715825",
+        "volume": 10,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D002",
+        "destino": "P_4600060323_11250462",
+        "volume": 20,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D002",
+        "destino": "P_4600060324_14409406",
+        "volume": 100,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D002",
+        "destino": "P_4600060345_06856000",
+        "volume": 141,
+        "movimentacoes": 4,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D002",
+        "destino": "P_4600060880_05407003",
+        "volume": 21,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "D002",
+        "destino": "P_4600062694_13231600",
+        "volume": 2,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "SAÍDA"
+    },
+    {
+        "origem": "P_7000016468_14401426",
+        "destino": "D024",
+        "volume": 58720,
+        "movimentacoes": 22,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000014785_11660660",
+        "destino": "D024",
+        "volume": 513500,
+        "movimentacoes": 19,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000018322_89219550",
+        "destino": "D024",
+        "volume": 6593,
+        "movimentacoes": 26,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019920_08320280",
+        "destino": "D024",
+        "volume": 106,
+        "movimentacoes": 3,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000013011_09450000",
+        "destino": "D024",
+        "volume": 16152,
+        "movimentacoes": 3,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016882_20031902",
+        "destino": "D024",
+        "volume": 8251,
+        "movimentacoes": 5,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000009927_07224210",
+        "destino": "D024",
+        "volume": 103000,
+        "movimentacoes": 4,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000005544_04164180",
+        "destino": "D024",
+        "volume": 4124,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000010858_04222902",
+        "destino": "D024",
+        "volume": 1182,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_3000000343_06856000",
+        "destino": "D024",
+        "volume": 2,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019088_93180000",
+        "destino": "D024",
+        "volume": 2025,
+        "movimentacoes": 206,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000033719_12072250",
+        "destino": "D024",
+        "volume": 6065370,
+        "movimentacoes": 407,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000009012_03502020",
+        "destino": "D024",
+        "volume": 1233065,
+        "movimentacoes": 82,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000067890_08290220",
+        "destino": "D024",
+        "volume": 16840,
+        "movimentacoes": 7,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019920_08320280",
+        "destino": "D024",
+        "volume": 32245,
+        "movimentacoes": 16,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000017323_04580000",
+        "destino": "D024",
+        "volume": 16,
+        "movimentacoes": 8,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000014073_11669320",
+        "destino": "D024",
+        "volume": 2263,
+        "movimentacoes": 129,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000048172_14340000",
+        "destino": "D024",
+        "volume": 4106,
+        "movimentacoes": 165,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000003745_05382010",
+        "destino": "D024",
+        "volume": 5216,
+        "movimentacoes": 148,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000060976_02123050",
+        "destino": "D024",
+        "volume": 5,
+        "movimentacoes": 5,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000017846_03022000",
+        "destino": "D024",
+        "volume": 1048,
+        "movimentacoes": 58,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000040109_08790260",
+        "destino": "D024",
+        "volume": 2720,
+        "movimentacoes": 64,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019760_02046090",
+        "destino": "D024",
+        "volume": 5364,
+        "movimentacoes": 20,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000030063_13255425",
+        "destino": "D024",
+        "volume": 600,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000015122_08320280",
+        "destino": "D024",
+        "volume": 6687,
+        "movimentacoes": 2,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000017408_08900000",
+        "destino": "D024",
+        "volume": 32,
+        "movimentacoes": 10,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016932_12630000",
+        "destino": "D024",
+        "volume": 68,
+        "movimentacoes": 4,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000011789_18130130",
+        "destino": "D024",
+        "volume": 7,
+        "movimentacoes": 3,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000022742_13213080",
+        "destino": "D024",
+        "volume": 4,
+        "movimentacoes": 2,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000021004_06703570",
+        "destino": "D024",
+        "volume": 897,
+        "movimentacoes": 3,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000018782_12929899",
+        "destino": "D024",
+        "volume": 626,
+        "movimentacoes": 98,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000001501_09843400",
+        "destino": "D024",
+        "volume": 301,
+        "movimentacoes": 17,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000015816_19010030",
+        "destino": "D024",
+        "volume": 4,
+        "movimentacoes": 4,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000021903_02115000",
+        "destino": "D024",
+        "volume": 120,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000014341_08770480",
+        "destino": "D024",
+        "volume": 121.106,
+        "movimentacoes": 2,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000059132_13490000",
+        "destino": "D024",
+        "volume": 1,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000051373_04561004",
+        "destino": "D024",
+        "volume": 47,
+        "movimentacoes": 9,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000057031_07790890",
+        "destino": "D024",
+        "volume": 1211,
+        "movimentacoes": 10,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000018429_13213105",
+        "destino": "D024",
+        "volume": 8,
+        "movimentacoes": 2,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000029973_03109000",
+        "destino": "D024",
+        "volume": 6696,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000007457_06843195",
+        "destino": "D024",
+        "volume": 2,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000004993_06807461",
+        "destino": "D024",
+        "volume": 235,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000010203_09530260",
+        "destino": "D024",
+        "volume": 30,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000009139_09182470",
+        "destino": "D024",
+        "volume": 45,
+        "movimentacoes": 5,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000015013_11380380",
+        "destino": "D024",
+        "volume": 20,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000006522_04764001",
+        "destino": "D024",
+        "volume": 6,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_3000000032_04516000",
+        "destino": "D024",
+        "volume": 1620,
+        "movimentacoes": 3,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016590_08412070",
+        "destino": "D024",
+        "volume": 115079,
+        "movimentacoes": 37,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000051739_13478540",
+        "destino": "D024",
+        "volume": 27000,
+        "movimentacoes": 4,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000077946_06835701",
+        "destino": "D024",
+        "volume": 230,
+        "movimentacoes": 30,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000052709_61888090",
+        "destino": "D024",
+        "volume": 24200,
+        "movimentacoes": 8,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000014279_08673010",
+        "destino": "D024",
+        "volume": 25000,
+        "movimentacoes": 6,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000051961_09890001",
+        "destino": "D024",
+        "volume": 1000,
+        "movimentacoes": 1,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000009110_61890000",
+        "destino": "D024",
+        "volume": 6400,
+        "movimentacoes": 2,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000008353_09890001",
+        "destino": "D024",
+        "volume": 6000,
+        "movimentacoes": 2,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000005716_06278010",
+        "destino": "D024",
+        "volume": 6000,
+        "movimentacoes": 1,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000018634_06835701",
+        "destino": "D024",
+        "volume": 15,
+        "movimentacoes": 1,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000014674_13250250",
+        "destino": "D024",
+        "volume": 32,
+        "movimentacoes": 4,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_3000000321_05711001",
+        "destino": "D024",
+        "volume": 494,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_3000000343_06856000",
+        "destino": "D024",
+        "volume": 3,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_4_05429900",
+        "destino": "D024",
+        "volume": 4,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000017217_04311000",
+        "destino": "D024",
+        "volume": 286,
+        "movimentacoes": 20,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000018986_07776235",
+        "destino": "D024",
+        "volume": 533,
+        "movimentacoes": 52,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019920_08320280",
+        "destino": "D024",
+        "volume": 39425,
+        "movimentacoes": 11,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016835_30441055",
+        "destino": "D024",
+        "volume": 248,
+        "movimentacoes": 28,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016007_11015015",
+        "destino": "D024",
+        "volume": 35,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000071015_17740000",
+        "destino": "D024",
+        "volume": 11667,
+        "movimentacoes": 166,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016882_20031902",
+        "destino": "D024",
+        "volume": 34849,
+        "movimentacoes": 26,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019797_13710000",
+        "destino": "D024",
+        "volume": 11237,
+        "movimentacoes": 19,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000020425_06422122",
+        "destino": "D024",
+        "volume": 7065,
+        "movimentacoes": 15,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016598_18440000",
+        "destino": "D024",
+        "volume": 33195,
+        "movimentacoes": 13,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000020635_06790160",
+        "destino": "D024",
+        "volume": 13064,
+        "movimentacoes": 21,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000008031_15350350",
+        "destino": "D024",
+        "volume": 88,
+        "movimentacoes": 32,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000038540_28470000",
+        "destino": "D024",
+        "volume": 4140,
+        "movimentacoes": 90,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019502_35547000",
+        "destino": "D024",
+        "volume": 5031,
+        "movimentacoes": 24,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000032351_02143060",
+        "destino": "D024",
+        "volume": 335,
+        "movimentacoes": 4,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019400_18087156",
+        "destino": "D024",
+        "volume": 627,
+        "movimentacoes": 64,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000035977_29124076",
+        "destino": "D024",
+        "volume": 206,
+        "movimentacoes": 13,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000015122_08320280",
+        "destino": "D024",
+        "volume": 5300,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000006413_05656020",
+        "destino": "D024",
+        "volume": 4,
+        "movimentacoes": 3,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000002834_09380170",
+        "destino": "D024",
+        "volume": 94,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000005995_02143060",
+        "destino": "D024",
+        "volume": 54,
+        "movimentacoes": 4,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000001662_29124124",
+        "destino": "D024",
+        "volume": 47,
+        "movimentacoes": 8,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000002368_07776235",
+        "destino": "D024",
+        "volume": 37,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000070971_61900360",
+        "destino": "D024",
+        "volume": 15334,
+        "movimentacoes": 78,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000008209_05426100",
+        "destino": "D024",
+        "volume": 205,
+        "movimentacoes": 23,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000047986_13477250",
+        "destino": "D024",
+        "volume": 481,
+        "movimentacoes": 20,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000017408_08900000",
+        "destino": "D024",
+        "volume": 11238,
+        "movimentacoes": 36,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000005483_09260760",
+        "destino": "D024",
+        "volume": 11921,
+        "movimentacoes": 6,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000012058_17495288",
+        "destino": "D024",
+        "volume": 642,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000010658_02124001",
+        "destino": "D024",
+        "volume": 32,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000021663_02552020",
+        "destino": "D024",
+        "volume": 30,
+        "movimentacoes": 8,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000037848_09380170",
+        "destino": "D024",
+        "volume": 3342,
+        "movimentacoes": 9,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000002905_18087087",
+        "destino": "D024",
+        "volume": 38,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000020944_24465270",
+        "destino": "D024",
+        "volume": 400,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000001317_04763280",
+        "destino": "D024",
+        "volume": 1,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000018986_07776235",
+        "destino": "D024",
+        "volume": 14820,
+        "movimentacoes": 78,
+        "material": "Tubos flexíveis",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016598_18440000",
+        "destino": "D024",
+        "volume": 9786,
+        "movimentacoes": 31,
+        "material": "Tubos flexíveis",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000030242_13505600",
+        "destino": "D024",
+        "volume": 447672,
+        "movimentacoes": 298,
+        "material": "Tubos flexíveis",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000047953_13318000",
+        "destino": "D024",
+        "volume": 164968,
+        "movimentacoes": 31,
+        "material": "Tubos flexíveis",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000002368_07776235",
+        "destino": "D024",
+        "volume": 4644,
+        "movimentacoes": 16,
+        "material": "Tubos flexíveis",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000007747_13505505",
+        "destino": "D024",
+        "volume": 34554,
+        "movimentacoes": 25,
+        "material": "Tubos flexíveis",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016598_18440000",
+        "destino": "D024",
+        "volume": 179222,
+        "movimentacoes": 143,
+        "material": "Tubos rígidos",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000030242_13505600",
+        "destino": "D024",
+        "volume": 11376,
+        "movimentacoes": 43,
+        "material": "Tubos rígidos",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000007747_13505505",
+        "destino": "D024",
+        "volume": 3336,
+        "movimentacoes": 20,
+        "material": "Tubos rígidos",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_3000000310_30140140",
+        "destino": "D094",
+        "volume": 3000,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016468_14401426",
+        "destino": "D094",
+        "volume": 53458,
+        "movimentacoes": 7,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000014785_11660660",
+        "destino": "D094",
+        "volume": 404400,
+        "movimentacoes": 17,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000018322_89219550",
+        "destino": "D094",
+        "volume": 7375,
+        "movimentacoes": 21,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019920_08320280",
+        "destino": "D094",
+        "volume": 2020,
+        "movimentacoes": 9,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000013011_09450000",
+        "destino": "D094",
+        "volume": 14000,
+        "movimentacoes": 4,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016882_20031902",
+        "destino": "D094",
+        "volume": 1588,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000020402_06727195",
+        "destino": "D094",
+        "volume": 160,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000028135_08536440",
+        "destino": "D094",
+        "volume": 625,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000009927_07224210",
+        "destino": "D094",
+        "volume": 69000,
+        "movimentacoes": 3,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000005544_04164180",
+        "destino": "D094",
+        "volume": 19032,
+        "movimentacoes": 2,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000010858_04222902",
+        "destino": "D094",
+        "volume": 2674,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000018540_39404166",
+        "destino": "D094",
+        "volume": 10,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000015863_05001000",
+        "destino": "D094",
+        "volume": 200,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000015418_05113020",
+        "destino": "D094",
+        "volume": 4000,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_3000000332_05525080",
+        "destino": "D094",
+        "volume": 16,
+        "movimentacoes": 2,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019088_93180000",
+        "destino": "D094",
+        "volume": 967,
+        "movimentacoes": 88,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000033719_12072250",
+        "destino": "D094",
+        "volume": 4854349.825,
+        "movimentacoes": 310,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000009012_03502020",
+        "destino": "D094",
+        "volume": 1193200,
+        "movimentacoes": 56,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000067890_08290220",
+        "destino": "D094",
+        "volume": 6200,
+        "movimentacoes": 4,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019920_08320280",
+        "destino": "D094",
+        "volume": 29975,
+        "movimentacoes": 15,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000014073_11669320",
+        "destino": "D094",
+        "volume": 49,
+        "movimentacoes": 9,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000048172_14340000",
+        "destino": "D094",
+        "volume": 252,
+        "movimentacoes": 14,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016882_20031902",
+        "destino": "D094",
+        "volume": 8950,
+        "movimentacoes": 3,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000003745_05382010",
+        "destino": "D094",
+        "volume": 60,
+        "movimentacoes": 4,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000060976_02123050",
+        "destino": "D094",
+        "volume": 1,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000030063_13255425",
+        "destino": "D094",
+        "volume": 1000,
+        "movimentacoes": 2,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000015122_08320280",
+        "destino": "D094",
+        "volume": 33198,
+        "movimentacoes": 8,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000014034_02552020",
+        "destino": "D094",
+        "volume": 5,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000017408_08900000",
+        "destino": "D094",
+        "volume": 195,
+        "movimentacoes": 28,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016932_12630000",
+        "destino": "D094",
+        "volume": 61,
+        "movimentacoes": 5,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000011789_18130130",
+        "destino": "D094",
+        "volume": 2,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000022742_13213080",
+        "destino": "D094",
+        "volume": 2,
+        "movimentacoes": 2,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000021663_02552020",
+        "destino": "D094",
+        "volume": 2,
+        "movimentacoes": 2,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000001501_09843400",
+        "destino": "D094",
+        "volume": 78,
+        "movimentacoes": 10,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000017691_04559003",
+        "destino": "D094",
+        "volume": 682,
+        "movimentacoes": 55,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016393_13971045",
+        "destino": "D094",
+        "volume": 4,
+        "movimentacoes": 4,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000059132_13490000",
+        "destino": "D094",
+        "volume": 1,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_3000000310_30140140",
+        "destino": "D094",
+        "volume": 2000,
+        "movimentacoes": 1,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016590_08412070",
+        "destino": "D094",
+        "volume": 165265,
+        "movimentacoes": 34,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000051739_13478540",
+        "destino": "D094",
+        "volume": 15000,
+        "movimentacoes": 4,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000077946_06835701",
+        "destino": "D094",
+        "volume": 68,
+        "movimentacoes": 11,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000052709_61888090",
+        "destino": "D094",
+        "volume": 18200,
+        "movimentacoes": 7,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000014279_08673010",
+        "destino": "D094",
+        "volume": 34500,
+        "movimentacoes": 7,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000051961_09890001",
+        "destino": "D094",
+        "volume": 1000,
+        "movimentacoes": 1,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000009110_61890000",
+        "destino": "D094",
+        "volume": 19200,
+        "movimentacoes": 6,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000008353_09890001",
+        "destino": "D094",
+        "volume": 5998,
+        "movimentacoes": 6,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000005716_06278010",
+        "destino": "D094",
+        "volume": 6000,
+        "movimentacoes": 1,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000018634_06835701",
+        "destino": "D094",
+        "volume": 15,
+        "movimentacoes": 1,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000014674_13250250",
+        "destino": "D094",
+        "volume": 3593,
+        "movimentacoes": 5,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000015083_04571936",
+        "destino": "D094",
+        "volume": 3,
+        "movimentacoes": 1,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_3000000332_05525080",
+        "destino": "D094",
+        "volume": 2,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000017217_04311000",
+        "destino": "D094",
+        "volume": 1257,
+        "movimentacoes": 37,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000018986_07776235",
+        "destino": "D094",
+        "volume": 20714,
+        "movimentacoes": 88,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019920_08320280",
+        "destino": "D094",
+        "volume": 4058,
+        "movimentacoes": 6,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016835_30441055",
+        "destino": "D094",
+        "volume": 81,
+        "movimentacoes": 9,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016007_11015015",
+        "destino": "D094",
+        "volume": 182,
+        "movimentacoes": 3,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000071015_17740000",
+        "destino": "D094",
+        "volume": 88138,
+        "movimentacoes": 187,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016882_20031902",
+        "destino": "D094",
+        "volume": 16126,
+        "movimentacoes": 27,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019797_13710000",
+        "destino": "D094",
+        "volume": 14649,
+        "movimentacoes": 18,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000020425_06422122",
+        "destino": "D094",
+        "volume": 1817,
+        "movimentacoes": 10,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016598_18440000",
+        "destino": "D094",
+        "volume": 7358,
+        "movimentacoes": 16,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000020635_06790160",
+        "destino": "D094",
+        "volume": 5084,
+        "movimentacoes": 16,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000008031_15350350",
+        "destino": "D094",
+        "volume": 481,
+        "movimentacoes": 96,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000059039_06680056",
+        "destino": "D094",
+        "volume": 935,
+        "movimentacoes": 3,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000038540_28470000",
+        "destino": "D094",
+        "volume": 849,
+        "movimentacoes": 25,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019502_35547000",
+        "destino": "D094",
+        "volume": 7657,
+        "movimentacoes": 32,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000032351_02143060",
+        "destino": "D094",
+        "volume": 1159,
+        "movimentacoes": 14,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019400_18087156",
+        "destino": "D094",
+        "volume": 750,
+        "movimentacoes": 51,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000035977_29124076",
+        "destino": "D094",
+        "volume": 10,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000015122_08320280",
+        "destino": "D094",
+        "volume": 4610,
+        "movimentacoes": 4,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000006816_02143060",
+        "destino": "D094",
+        "volume": 34,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000005995_02143060",
+        "destino": "D094",
+        "volume": 270,
+        "movimentacoes": 8,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000001662_29124124",
+        "destino": "D094",
+        "volume": 34,
+        "movimentacoes": 8,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000002368_07776235",
+        "destino": "D094",
+        "volume": 60,
+        "movimentacoes": 4,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000070971_61900360",
+        "destino": "D094",
+        "volume": 3395,
+        "movimentacoes": 33,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000008209_05426100",
+        "destino": "D094",
+        "volume": 912,
+        "movimentacoes": 25,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000047986_13477250",
+        "destino": "D094",
+        "volume": 357,
+        "movimentacoes": 39,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000017408_08900000",
+        "destino": "D094",
+        "volume": 3528,
+        "movimentacoes": 28,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000041943_09521320",
+        "destino": "D094",
+        "volume": 3855,
+        "movimentacoes": 19,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000005483_09260760",
+        "destino": "D094",
+        "volume": 825,
+        "movimentacoes": 6,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000012058_17495288",
+        "destino": "D094",
+        "volume": 1619,
+        "movimentacoes": 6,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000010658_02124001",
+        "destino": "D094",
+        "volume": 10,
+        "movimentacoes": 3,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000021663_02552020",
+        "destino": "D094",
+        "volume": 6,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000007747_13505505",
+        "destino": "D094",
+        "volume": 100,
+        "movimentacoes": 6,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000015682_06790160",
+        "destino": "D094",
+        "volume": 672,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000029703_12960000",
+        "destino": "D094",
+        "volume": 115,
+        "movimentacoes": 5,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000015957_03808120",
+        "destino": "D094",
+        "volume": 10,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000018986_07776235",
+        "destino": "D094",
+        "volume": 12546,
+        "movimentacoes": 69,
+        "material": "Tubos flexíveis",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016598_18440000",
+        "destino": "D094",
+        "volume": 2040,
+        "movimentacoes": 13,
+        "material": "Tubos flexíveis",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000030242_13505600",
+        "destino": "D094",
+        "volume": 274780,
+        "movimentacoes": 167,
+        "material": "Tubos flexíveis",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000047953_13318000",
+        "destino": "D094",
+        "volume": 35000,
+        "movimentacoes": 3,
+        "material": "Tubos flexíveis",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000002368_07776235",
+        "destino": "D094",
+        "volume": 31560,
+        "movimentacoes": 172,
+        "material": "Tubos flexíveis",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000007747_13505505",
+        "destino": "D094",
+        "volume": 439972,
+        "movimentacoes": 92,
+        "material": "Tubos flexíveis",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000014235_88030902",
+        "destino": "D094",
+        "volume": 400,
+        "movimentacoes": 1,
+        "material": "Tubos flexíveis",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016598_18440000",
+        "destino": "D094",
+        "volume": 143598,
+        "movimentacoes": 77,
+        "material": "Tubos rígidos",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000030242_13505600",
+        "destino": "D094",
+        "volume": 16158,
+        "movimentacoes": 96,
+        "material": "Tubos rígidos",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000007747_13505505",
+        "destino": "D094",
+        "volume": 3024,
+        "movimentacoes": 18,
+        "material": "Tubos rígidos",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016468_14401426",
+        "destino": "D028",
+        "volume": 31906,
+        "movimentacoes": 8,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000014785_11660660",
+        "destino": "D028",
+        "volume": 618417,
+        "movimentacoes": 20,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000018322_89219550",
+        "destino": "D028",
+        "volume": 5364,
+        "movimentacoes": 6,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019920_08320280",
+        "destino": "D028",
+        "volume": 2030,
+        "movimentacoes": 5,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000013011_09450000",
+        "destino": "D028",
+        "volume": 24500,
+        "movimentacoes": 3,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016882_20031902",
+        "destino": "D028",
+        "volume": 34817,
+        "movimentacoes": 10,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000020402_06727195",
+        "destino": "D028",
+        "volume": 3333,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000028135_08536440",
+        "destino": "D028",
+        "volume": 438,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000009927_07224210",
+        "destino": "D028",
+        "volume": 73000,
+        "movimentacoes": 3,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000005544_04164180",
+        "destino": "D028",
+        "volume": 9478,
+        "movimentacoes": 2,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000010858_04222902",
+        "destino": "D028",
+        "volume": 4418,
+        "movimentacoes": 2,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_3000001937_01227200",
+        "destino": "D028",
+        "volume": 10,
+        "movimentacoes": 4,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016468_14401426",
+        "destino": "D028",
+        "volume": 2789,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019088_93180000",
+        "destino": "D028",
+        "volume": 6108,
+        "movimentacoes": 307,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000033719_12072250",
+        "destino": "D028",
+        "volume": 2998750,
+        "movimentacoes": 229,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000009012_03502020",
+        "destino": "D028",
+        "volume": 159575,
+        "movimentacoes": 13,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000067890_08290220",
+        "destino": "D028",
+        "volume": 16684,
+        "movimentacoes": 6,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019920_08320280",
+        "destino": "D028",
+        "volume": 21776,
+        "movimentacoes": 17,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000014073_11669320",
+        "destino": "D028",
+        "volume": 1884,
+        "movimentacoes": 83,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000048172_14340000",
+        "destino": "D028",
+        "volume": 1780,
+        "movimentacoes": 120,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016882_20031902",
+        "destino": "D028",
+        "volume": 2500,
+        "movimentacoes": 2,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000003745_05382010",
+        "destino": "D028",
+        "volume": 3128,
+        "movimentacoes": 195,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000060976_02123050",
+        "destino": "D028",
+        "volume": 4,
+        "movimentacoes": 2,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000017846_03022000",
+        "destino": "D028",
+        "volume": 988,
+        "movimentacoes": 84,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000040109_08790260",
+        "destino": "D028",
+        "volume": 1140,
+        "movimentacoes": 45,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000030063_13255425",
+        "destino": "D028",
+        "volume": 500,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000015122_08320280",
+        "destino": "D028",
+        "volume": 51384,
+        "movimentacoes": 8,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000006413_05656020",
+        "destino": "D028",
+        "volume": 6,
+        "movimentacoes": 2,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000017408_08900000",
+        "destino": "D028",
+        "volume": 6,
+        "movimentacoes": 3,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016932_12630000",
+        "destino": "D028",
+        "volume": 421,
+        "movimentacoes": 14,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000021663_02552020",
+        "destino": "D028",
+        "volume": 6,
+        "movimentacoes": 3,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000021004_06703570",
+        "destino": "D028",
+        "volume": 5280,
+        "movimentacoes": 18,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000017691_04559003",
+        "destino": "D028",
+        "volume": 114,
+        "movimentacoes": 12,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019289_14078600",
+        "destino": "D028",
+        "volume": 1,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000003766_11045550",
+        "destino": "D028",
+        "volume": 164,
+        "movimentacoes": 4,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000008538_06804260",
+        "destino": "D028",
+        "volume": 8,
+        "movimentacoes": 4,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000012115_06422122",
+        "destino": "D028",
+        "volume": 76,
+        "movimentacoes": 6,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000006054_09850090",
+        "destino": "D028",
+        "volume": 242,
+        "movimentacoes": 5,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_3000001937_01227200",
+        "destino": "D028",
+        "volume": 2000,
+        "movimentacoes": 1,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016590_08412070",
+        "destino": "D028",
+        "volume": 217408,
+        "movimentacoes": 67,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000051739_13478540",
+        "destino": "D028",
+        "volume": 19000,
+        "movimentacoes": 4,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000077946_06835701",
+        "destino": "D028",
+        "volume": 185,
+        "movimentacoes": 6,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000052709_61888090",
+        "destino": "D028",
+        "volume": 29800,
+        "movimentacoes": 10,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000014279_08673010",
+        "destino": "D028",
+        "volume": 26000,
+        "movimentacoes": 7,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000051961_09890001",
+        "destino": "D028",
+        "volume": 1000,
+        "movimentacoes": 1,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000009110_61890000",
+        "destino": "D028",
+        "volume": 10800,
+        "movimentacoes": 6,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000008353_09890001",
+        "destino": "D028",
+        "volume": 7998,
+        "movimentacoes": 6,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000014674_13250250",
+        "destino": "D028",
+        "volume": 46,
+        "movimentacoes": 8,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000015375_06541065",
+        "destino": "D028",
+        "volume": 11080,
+        "movimentacoes": 5,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_3000000324_01227200",
+        "destino": "D028",
+        "volume": 2,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_3000000326_04719002",
+        "destino": "D028",
+        "volume": 100,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_3000001937_01227200",
+        "destino": "D028",
+        "volume": 43,
+        "movimentacoes": 9,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_3000001938_07171150",
+        "destino": "D028",
+        "volume": 6,
+        "movimentacoes": 3,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000017217_04311000",
+        "destino": "D028",
+        "volume": 1385,
+        "movimentacoes": 42,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000018986_07776235",
+        "destino": "D028",
+        "volume": 33959,
+        "movimentacoes": 111,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019920_08320280",
+        "destino": "D028",
+        "volume": 46804,
+        "movimentacoes": 12,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016835_30441055",
+        "destino": "D028",
+        "volume": 933,
+        "movimentacoes": 41,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016007_11015015",
+        "destino": "D028",
+        "volume": 2321,
+        "movimentacoes": 11,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000071015_17740000",
+        "destino": "D028",
+        "volume": 176805,
+        "movimentacoes": 328,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016882_20031902",
+        "destino": "D028",
+        "volume": 32904,
+        "movimentacoes": 37,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019797_13710000",
+        "destino": "D028",
+        "volume": 13424,
+        "movimentacoes": 23,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000020425_06422122",
+        "destino": "D028",
+        "volume": 10141,
+        "movimentacoes": 17,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016598_18440000",
+        "destino": "D028",
+        "volume": 39641,
+        "movimentacoes": 22,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000020635_06790160",
+        "destino": "D028",
+        "volume": 19570,
+        "movimentacoes": 17,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000008031_15350350",
+        "destino": "D028",
+        "volume": 525,
+        "movimentacoes": 95,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000059039_06680056",
+        "destino": "D028",
+        "volume": 2940,
+        "movimentacoes": 4,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000038540_28470000",
+        "destino": "D028",
+        "volume": 1760,
+        "movimentacoes": 64,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019502_35547000",
+        "destino": "D028",
+        "volume": 21257,
+        "movimentacoes": 48,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000032351_02143060",
+        "destino": "D028",
+        "volume": 1313,
+        "movimentacoes": 11,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019400_18087156",
+        "destino": "D028",
+        "volume": 1675,
+        "movimentacoes": 139,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000035977_29124076",
+        "destino": "D028",
+        "volume": 33,
+        "movimentacoes": 8,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000002834_09380170",
+        "destino": "D028",
+        "volume": 2432,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000005995_02143060",
+        "destino": "D028",
+        "volume": 266,
+        "movimentacoes": 8,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000007917_61900360",
+        "destino": "D028",
+        "volume": 170,
+        "movimentacoes": 6,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000001662_29124124",
+        "destino": "D028",
+        "volume": 156,
+        "movimentacoes": 6,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000002368_07776235",
+        "destino": "D028",
+        "volume": 4,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000014034_02552020",
+        "destino": "D028",
+        "volume": 18,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000070971_61900360",
+        "destino": "D028",
+        "volume": 1448,
+        "movimentacoes": 14,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000008209_05426100",
+        "destino": "D028",
+        "volume": 142,
+        "movimentacoes": 13,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000047986_13477250",
+        "destino": "D028",
+        "volume": 1462,
+        "movimentacoes": 65,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000017408_08900000",
+        "destino": "D028",
+        "volume": 78,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000041943_09521320",
+        "destino": "D028",
+        "volume": 1790,
+        "movimentacoes": 9,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000005483_09260760",
+        "destino": "D028",
+        "volume": 5566,
+        "movimentacoes": 8,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000012058_17495288",
+        "destino": "D028",
+        "volume": 3125,
+        "movimentacoes": 6,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000010658_02124001",
+        "destino": "D028",
+        "volume": 6,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000021663_02552020",
+        "destino": "D028",
+        "volume": 52,
+        "movimentacoes": 11,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000010625_09220720",
+        "destino": "D028",
+        "volume": 28,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000015682_06790160",
+        "destino": "D028",
+        "volume": 988,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000050097_09220720",
+        "destino": "D028",
+        "volume": 522,
+        "movimentacoes": 6,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016092_03620000",
+        "destino": "D028",
+        "volume": 24,
+        "movimentacoes": 3,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000007944_17740000",
+        "destino": "D028",
+        "volume": 12,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_3000000324_01227200",
+        "destino": "D028",
+        "volume": 258,
+        "movimentacoes": 1,
+        "material": "Tubos flexíveis",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000018986_07776235",
+        "destino": "D028",
+        "volume": 26382,
+        "movimentacoes": 114,
+        "material": "Tubos flexíveis",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016598_18440000",
+        "destino": "D028",
+        "volume": 9296,
+        "movimentacoes": 22,
+        "material": "Tubos flexíveis",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000030242_13505600",
+        "destino": "D028",
+        "volume": 406100,
+        "movimentacoes": 111,
+        "material": "Tubos flexíveis",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000047953_13318000",
+        "destino": "D028",
+        "volume": 259100,
+        "movimentacoes": 12,
+        "material": "Tubos flexíveis",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000014235_88030902",
+        "destino": "D028",
+        "volume": 200,
+        "movimentacoes": 1,
+        "material": "Tubos flexíveis",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016598_18440000",
+        "destino": "D028",
+        "volume": 268781,
+        "movimentacoes": 152,
+        "material": "Tubos rígidos",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000030242_13505600",
+        "destino": "D028",
+        "volume": 21996,
+        "movimentacoes": 81,
+        "material": "Tubos rígidos",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016468_14401426",
+        "destino": "D029",
+        "volume": 3367,
+        "movimentacoes": 2,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000014785_11660660",
+        "destino": "D029",
+        "volume": 349705,
+        "movimentacoes": 18,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000018322_89219550",
+        "destino": "D029",
+        "volume": 6863,
+        "movimentacoes": 12,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000013011_09450000",
+        "destino": "D029",
+        "volume": 15000,
+        "movimentacoes": 4,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016882_20031902",
+        "destino": "D029",
+        "volume": 14500,
+        "movimentacoes": 5,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000020402_06727195",
+        "destino": "D029",
+        "volume": 4000,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000028135_08536440",
+        "destino": "D029",
+        "volume": 500,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000009927_07224210",
+        "destino": "D029",
+        "volume": 53000,
+        "movimentacoes": 3,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000005544_04164180",
+        "destino": "D029",
+        "volume": 18712,
+        "movimentacoes": 4,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000010858_04222902",
+        "destino": "D029",
+        "volume": 1904,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019088_93180000",
+        "destino": "D029",
+        "volume": 2675,
+        "movimentacoes": 131,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000033719_12072250",
+        "destino": "D029",
+        "volume": 3356629.175,
+        "movimentacoes": 308,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000003090_11800000",
+        "destino": "D029",
+        "volume": 48,
+        "movimentacoes": 8,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000003801_02871050",
+        "destino": "D029",
+        "volume": 3,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000009012_03502020",
+        "destino": "D029",
+        "volume": 816025,
+        "movimentacoes": 50,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000067890_08290220",
+        "destino": "D029",
+        "volume": 11847,
+        "movimentacoes": 5,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019920_08320280",
+        "destino": "D029",
+        "volume": 25177,
+        "movimentacoes": 14,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000017323_04580000",
+        "destino": "D029",
+        "volume": 800,
+        "movimentacoes": 8,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000014073_11669320",
+        "destino": "D029",
+        "volume": 1739,
+        "movimentacoes": 69,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000048172_14340000",
+        "destino": "D029",
+        "volume": 2200,
+        "movimentacoes": 49,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000003745_05382010",
+        "destino": "D029",
+        "volume": 1156,
+        "movimentacoes": 36,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000060976_02123050",
+        "destino": "D029",
+        "volume": 8,
+        "movimentacoes": 8,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000017846_03022000",
+        "destino": "D029",
+        "volume": 29,
+        "movimentacoes": 9,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000040109_08790260",
+        "destino": "D029",
+        "volume": 520,
+        "movimentacoes": 8,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019760_02046090",
+        "destino": "D029",
+        "volume": 4350,
+        "movimentacoes": 10,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000036835_08675000",
+        "destino": "D029",
+        "volume": 8,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000030063_13255425",
+        "destino": "D029",
+        "volume": 500,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019400_18087156",
+        "destino": "D029",
+        "volume": 10,
+        "movimentacoes": 4,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000015122_08320280",
+        "destino": "D029",
+        "volume": 7244,
+        "movimentacoes": 2,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000014034_02552020",
+        "destino": "D029",
+        "volume": 2,
+        "movimentacoes": 2,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016590_08412070",
+        "destino": "D029",
+        "volume": 113014,
+        "movimentacoes": 23,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000051739_13478540",
+        "destino": "D029",
+        "volume": 27000,
+        "movimentacoes": 7,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000077946_06835701",
+        "destino": "D029",
+        "volume": 43,
+        "movimentacoes": 16,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000052709_61888090",
+        "destino": "D029",
+        "volume": 28000,
+        "movimentacoes": 10,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000014279_08673010",
+        "destino": "D029",
+        "volume": 31000,
+        "movimentacoes": 7,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000051961_09890001",
+        "destino": "D029",
+        "volume": 17000,
+        "movimentacoes": 6,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000009110_61890000",
+        "destino": "D029",
+        "volume": 12000,
+        "movimentacoes": 4,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000008353_09890001",
+        "destino": "D029",
+        "volume": 1000,
+        "movimentacoes": 2,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000005716_06278010",
+        "destino": "D029",
+        "volume": 6000,
+        "movimentacoes": 1,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000003090_11800000",
+        "destino": "D029",
+        "volume": 2,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000017217_04311000",
+        "destino": "D029",
+        "volume": 247,
+        "movimentacoes": 14,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000018986_07776235",
+        "destino": "D029",
+        "volume": 84,
+        "movimentacoes": 8,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019920_08320280",
+        "destino": "D029",
+        "volume": 22557,
+        "movimentacoes": 10,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016835_30441055",
+        "destino": "D029",
+        "volume": 335,
+        "movimentacoes": 27,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016007_11015015",
+        "destino": "D029",
+        "volume": 2710,
+        "movimentacoes": 3,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000071015_17740000",
+        "destino": "D029",
+        "volume": 7492,
+        "movimentacoes": 32,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016882_20031902",
+        "destino": "D029",
+        "volume": 9779,
+        "movimentacoes": 11,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019797_13710000",
+        "destino": "D029",
+        "volume": 1494,
+        "movimentacoes": 12,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000020425_06422122",
+        "destino": "D029",
+        "volume": 10348,
+        "movimentacoes": 19,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016598_18440000",
+        "destino": "D029",
+        "volume": 3295,
+        "movimentacoes": 6,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000030242_13505600",
+        "destino": "D029",
+        "volume": 100,
+        "movimentacoes": 4,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000020635_06790160",
+        "destino": "D029",
+        "volume": 9489,
+        "movimentacoes": 10,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000008031_15350350",
+        "destino": "D029",
+        "volume": 40,
+        "movimentacoes": 4,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000059039_06680056",
+        "destino": "D029",
+        "volume": 3529,
+        "movimentacoes": 3,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000038540_28470000",
+        "destino": "D029",
+        "volume": 569,
+        "movimentacoes": 11,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019502_35547000",
+        "destino": "D029",
+        "volume": 2337,
+        "movimentacoes": 10,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000032351_02143060",
+        "destino": "D029",
+        "volume": 776,
+        "movimentacoes": 29,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019400_18087156",
+        "destino": "D029",
+        "volume": 684,
+        "movimentacoes": 20,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000035977_29124076",
+        "destino": "D029",
+        "volume": 5,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000006413_05656020",
+        "destino": "D029",
+        "volume": 2,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000002834_09380170",
+        "destino": "D029",
+        "volume": 632,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000006816_02143060",
+        "destino": "D029",
+        "volume": 30,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000005995_02143060",
+        "destino": "D029",
+        "volume": 118,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000007917_61900360",
+        "destino": "D029",
+        "volume": 54,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000001662_29124124",
+        "destino": "D029",
+        "volume": 54,
+        "movimentacoes": 4,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000002368_07776235",
+        "destino": "D029",
+        "volume": 74,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000018986_07776235",
+        "destino": "D029",
+        "volume": 150,
+        "movimentacoes": 1,
+        "material": "Tubos flexíveis",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016598_18440000",
+        "destino": "D029",
+        "volume": 8705,
+        "movimentacoes": 12,
+        "material": "Tubos flexíveis",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000030242_13505600",
+        "destino": "D029",
+        "volume": 25014,
+        "movimentacoes": 48,
+        "material": "Tubos flexíveis",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000047953_13318000",
+        "destino": "D029",
+        "volume": 192,
+        "movimentacoes": 1,
+        "material": "Tubos flexíveis",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016598_18440000",
+        "destino": "D029",
+        "volume": 111145,
+        "movimentacoes": 103,
+        "material": "Tubos rígidos",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000009927_07224210",
+        "destino": "D034",
+        "volume": 25000,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000015595_14406406",
+        "destino": "D034",
+        "volume": 20,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019088_93180000",
+        "destino": "D034",
+        "volume": 1660,
+        "movimentacoes": 188,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000014073_11669320",
+        "destino": "D034",
+        "volume": 832,
+        "movimentacoes": 68,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000048172_14340000",
+        "destino": "D034",
+        "volume": 826,
+        "movimentacoes": 56,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000003745_05382010",
+        "destino": "D034",
+        "volume": 192,
+        "movimentacoes": 16,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000017846_03022000",
+        "destino": "D034",
+        "volume": 88,
+        "movimentacoes": 16,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000040109_08790260",
+        "destino": "D034",
+        "volume": 196,
+        "movimentacoes": 36,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019400_18087156",
+        "destino": "D034",
+        "volume": 335,
+        "movimentacoes": 45,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000001501_09843400",
+        "destino": "D034",
+        "volume": 376,
+        "movimentacoes": 17,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000034474_04206000",
+        "destino": "D034",
+        "volume": 3292,
+        "movimentacoes": 32,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000014230_15400069",
+        "destino": "D034",
+        "volume": 805000,
+        "movimentacoes": 7,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000032439_04717003",
+        "destino": "D034",
+        "volume": 365000,
+        "movimentacoes": 7,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000030368_06711250",
+        "destino": "D034",
+        "volume": 40,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000038859_30140091",
+        "destino": "D034",
+        "volume": 32,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000004454_13171171",
+        "destino": "D034",
+        "volume": 9009,
+        "movimentacoes": 2,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000030136_75515610",
+        "destino": "D034",
+        "volume": 2,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000022141_08740110",
+        "destino": "D034",
+        "volume": 1177,
+        "movimentacoes": 11,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000070807_05136001",
+        "destino": "D034",
+        "volume": 1160,
+        "movimentacoes": 4,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000070968_02615060",
+        "destino": "D034",
+        "volume": 9822,
+        "movimentacoes": 11,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000032018_04782000",
+        "destino": "D034",
+        "volume": 6,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000018565_02120020",
+        "destino": "D034",
+        "volume": 120,
+        "movimentacoes": 20,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016592_05814110",
+        "destino": "D034",
+        "volume": 1,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000000086_18314899",
+        "destino": "D034",
+        "volume": 592,
+        "movimentacoes": 21,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000021061_03408020",
+        "destino": "D034",
+        "volume": 40,
+        "movimentacoes": 4,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019372_06543308",
+        "destino": "D034",
+        "volume": 158,
+        "movimentacoes": 8,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016464_11660410",
+        "destino": "D034",
+        "volume": 3,
+        "movimentacoes": 3,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000018916_09190610",
+        "destino": "D034",
+        "volume": 16,
+        "movimentacoes": 4,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000072229_09890510",
+        "destino": "D034",
+        "volume": 60,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000017066_83504450",
+        "destino": "D034",
+        "volume": 5,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000017415_13015082",
+        "destino": "D034",
+        "volume": 2495,
+        "movimentacoes": 48,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000003219_14115000",
+        "destino": "D034",
+        "volume": 20,
+        "movimentacoes": 4,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016943_13731285",
+        "destino": "D034",
+        "volume": 582,
+        "movimentacoes": 2,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000015816_19010030",
+        "destino": "D034",
+        "volume": 88,
+        "movimentacoes": 11,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000035449_03073070",
+        "destino": "D034",
+        "volume": 140,
+        "movimentacoes": 25,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000018927_05311030",
+        "destino": "D034",
+        "volume": 5,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000017494_04041901",
+        "destino": "D034",
+        "volume": 20,
+        "movimentacoes": 16,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019433_13202570",
+        "destino": "D034",
+        "volume": 64,
+        "movimentacoes": 2,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016121_18706706",
+        "destino": "D034",
+        "volume": 1,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000021903_02115000",
+        "destino": "D034",
+        "volume": 1800,
+        "movimentacoes": 4,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000006390_13732540",
+        "destino": "D034",
+        "volume": 212,
+        "movimentacoes": 3,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000017471_03102060",
+        "destino": "D034",
+        "volume": 24,
+        "movimentacoes": 8,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000015038_11020020",
+        "destino": "D034",
+        "volume": 28,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016917_06539010",
+        "destino": "D034",
+        "volume": 9,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000051533_83015130",
+        "destino": "D034",
+        "volume": 30,
+        "movimentacoes": 2,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000021604_13040093",
+        "destino": "D034",
+        "volume": 40,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000018229_13213180",
+        "destino": "D034",
+        "volume": 4,
+        "movimentacoes": 3,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000057073_09290330",
+        "destino": "D034",
+        "volume": 350,
+        "movimentacoes": 2,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000007189_12224853",
+        "destino": "D034",
+        "volume": 475,
+        "movimentacoes": 18,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000002544_41820560",
+        "destino": "D034",
+        "volume": 100,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000021398_08485525",
+        "destino": "D034",
+        "volume": 100,
+        "movimentacoes": 2,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000037790_05069900",
+        "destino": "D034",
+        "volume": 240,
+        "movimentacoes": 2,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016312_03105000",
+        "destino": "D034",
+        "volume": 12,
+        "movimentacoes": 8,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000008291_04571010",
+        "destino": "D034",
+        "volume": 25,
+        "movimentacoes": 11,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000008954_04220002",
+        "destino": "D034",
+        "volume": 11,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000010273_05686900",
+        "destino": "D034",
+        "volume": 6,
+        "movimentacoes": 3,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000077946_06835701",
+        "destino": "D034",
+        "volume": 50,
+        "movimentacoes": 12,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019748_04571936",
+        "destino": "D034",
+        "volume": 2000,
+        "movimentacoes": 1,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000059039_06680056",
+        "destino": "D034",
+        "volume": 5,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019502_35547000",
+        "destino": "D034",
+        "volume": 66,
+        "movimentacoes": 5,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000005995_02143060",
+        "destino": "D034",
+        "volume": 2,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000014785_11660660",
+        "destino": "D019",
+        "volume": 92000,
+        "movimentacoes": 9,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000018322_89219550",
+        "destino": "D019",
+        "volume": 2575,
+        "movimentacoes": 9,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016882_20031902",
+        "destino": "D019",
+        "volume": 2880,
+        "movimentacoes": 2,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000028135_08536440",
+        "destino": "D019",
+        "volume": 500,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019088_93180000",
+        "destino": "D019",
+        "volume": 550,
+        "movimentacoes": 11,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000033719_12072250",
+        "destino": "D019",
+        "volume": 721650,
+        "movimentacoes": 90,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000009012_03502020",
+        "destino": "D019",
+        "volume": 1455725,
+        "movimentacoes": 60,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000017323_04580000",
+        "destino": "D019",
+        "volume": 200,
+        "movimentacoes": 4,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000048172_14340000",
+        "destino": "D019",
+        "volume": 1486,
+        "movimentacoes": 42,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000003745_05382010",
+        "destino": "D019",
+        "volume": 95,
+        "movimentacoes": 11,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019760_02046090",
+        "destino": "D019",
+        "volume": 585,
+        "movimentacoes": 5,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019400_18087156",
+        "destino": "D019",
+        "volume": 2,
+        "movimentacoes": 2,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000015122_08320280",
+        "destino": "D019",
+        "volume": 32,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016932_12630000",
+        "destino": "D019",
+        "volume": 56,
+        "movimentacoes": 4,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000021004_06703570",
+        "destino": "D019",
+        "volume": 2260,
+        "movimentacoes": 9,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000033580_99950000",
+        "destino": "D019",
+        "volume": 26,
+        "movimentacoes": 4,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000018782_12929899",
+        "destino": "D019",
+        "volume": 15,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016614_07171030",
+        "destino": "D019",
+        "volume": 2,
+        "movimentacoes": 2,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000032772_16306172",
+        "destino": "D019",
+        "volume": 200,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000001501_09843400",
+        "destino": "D019",
+        "volume": 331,
+        "movimentacoes": 18,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016590_08412070",
+        "destino": "D019",
+        "volume": 33368,
+        "movimentacoes": 11,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000051739_13478540",
+        "destino": "D019",
+        "volume": 5000,
+        "movimentacoes": 1,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000077946_06835701",
+        "destino": "D019",
+        "volume": 38,
+        "movimentacoes": 3,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000052709_61888090",
+        "destino": "D019",
+        "volume": 5000,
+        "movimentacoes": 2,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000014279_08673010",
+        "destino": "D019",
+        "volume": 19890,
+        "movimentacoes": 9,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000051961_09890001",
+        "destino": "D019",
+        "volume": 1000,
+        "movimentacoes": 1,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000008353_09890001",
+        "destino": "D019",
+        "volume": 1998,
+        "movimentacoes": 2,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000005716_06278010",
+        "destino": "D019",
+        "volume": 1830,
+        "movimentacoes": 1,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_2_05429900",
+        "destino": "D019",
+        "volume": 2,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_3000000337_11410410",
+        "destino": "D019",
+        "volume": 4,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019797_13710000",
+        "destino": "D019",
+        "volume": 3429,
+        "movimentacoes": 8,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016598_18440000",
+        "destino": "D019",
+        "volume": 900,
+        "movimentacoes": 4,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000020635_06790160",
+        "destino": "D019",
+        "volume": 396,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000008031_15350350",
+        "destino": "D019",
+        "volume": 105,
+        "movimentacoes": 41,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019502_35547000",
+        "destino": "D019",
+        "volume": 2099,
+        "movimentacoes": 12,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000032351_02143060",
+        "destino": "D019",
+        "volume": 31,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000035977_29124076",
+        "destino": "D019",
+        "volume": 6,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000008209_05426100",
+        "destino": "D019",
+        "volume": 90,
+        "movimentacoes": 3,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000017408_08900000",
+        "destino": "D019",
+        "volume": 1530,
+        "movimentacoes": 5,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000041943_09521320",
+        "destino": "D019",
+        "volume": 10,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000037848_09380170",
+        "destino": "D019",
+        "volume": 300,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016598_18440000",
+        "destino": "D019",
+        "volume": 1008,
+        "movimentacoes": 4,
+        "material": "Tubos flexíveis",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000030242_13505600",
+        "destino": "D019",
+        "volume": 62100,
+        "movimentacoes": 8,
+        "material": "Tubos flexíveis",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016598_18440000",
+        "destino": "D019",
+        "volume": 27546,
+        "movimentacoes": 25,
+        "material": "Tubos rígidos",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016468_14401426",
+        "destino": "D035",
+        "volume": 32850,
+        "movimentacoes": 4,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000014785_11660660",
+        "destino": "D035",
+        "volume": 179560,
+        "movimentacoes": 10,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000018322_89219550",
+        "destino": "D035",
+        "volume": 8000,
+        "movimentacoes": 4,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000013011_09450000",
+        "destino": "D035",
+        "volume": 5490,
+        "movimentacoes": 2,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000033719_12072250",
+        "destino": "D035",
+        "volume": 751500,
+        "movimentacoes": 75,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000009012_03502020",
+        "destino": "D035",
+        "volume": 658975,
+        "movimentacoes": 44,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000014073_11669320",
+        "destino": "D035",
+        "volume": 960,
+        "movimentacoes": 24,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000048172_14340000",
+        "destino": "D035",
+        "volume": 3088,
+        "movimentacoes": 28,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000003745_05382010",
+        "destino": "D035",
+        "volume": 1691,
+        "movimentacoes": 78,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000017846_03022000",
+        "destino": "D035",
+        "volume": 400,
+        "movimentacoes": 15,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000040109_08790260",
+        "destino": "D035",
+        "volume": 1200,
+        "movimentacoes": 12,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019760_02046090",
+        "destino": "D035",
+        "volume": 1030,
+        "movimentacoes": 8,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000030063_13255425",
+        "destino": "D035",
+        "volume": 200,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000015122_08320280",
+        "destino": "D035",
+        "volume": 64,
+        "movimentacoes": 2,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016932_12630000",
+        "destino": "D035",
+        "volume": 7,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000033580_99950000",
+        "destino": "D035",
+        "volume": 26,
+        "movimentacoes": 4,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000018782_12929899",
+        "destino": "D035",
+        "volume": 50,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000057031_07790890",
+        "destino": "D035",
+        "volume": 310,
+        "movimentacoes": 5,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000017217_04311000",
+        "destino": "D035",
+        "volume": 100,
+        "movimentacoes": 3,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000018986_07776235",
+        "destino": "D035",
+        "volume": 90,
+        "movimentacoes": 9,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016835_30441055",
+        "destino": "D035",
+        "volume": 5,
+        "movimentacoes": 3,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016007_11015015",
+        "destino": "D035",
+        "volume": 90,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000071015_17740000",
+        "destino": "D035",
+        "volume": 156,
+        "movimentacoes": 4,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016882_20031902",
+        "destino": "D035",
+        "volume": 4000,
+        "movimentacoes": 7,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019797_13710000",
+        "destino": "D035",
+        "volume": 600,
+        "movimentacoes": 3,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000008031_15350350",
+        "destino": "D035",
+        "volume": 40,
+        "movimentacoes": 12,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000059039_06680056",
+        "destino": "D035",
+        "volume": 2782,
+        "movimentacoes": 3,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019502_35547000",
+        "destino": "D035",
+        "volume": 2536,
+        "movimentacoes": 9,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000032351_02143060",
+        "destino": "D035",
+        "volume": 33,
+        "movimentacoes": 9,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000006413_05656020",
+        "destino": "D035",
+        "volume": 2,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000001662_29124124",
+        "destino": "D035",
+        "volume": 2,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000021663_02552020",
+        "destino": "D035",
+        "volume": 34,
+        "movimentacoes": 4,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000037848_09380170",
+        "destino": "D035",
+        "volume": 540,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000018986_07776235",
+        "destino": "D035",
+        "volume": 3402,
+        "movimentacoes": 14,
+        "material": "Tubos flexíveis",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000013011_09450000",
+        "destino": "D035",
+        "volume": 13770,
+        "movimentacoes": 36,
+        "material": "Tubos flexíveis",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016598_18440000",
+        "destino": "D035",
+        "volume": 678,
+        "movimentacoes": 10,
+        "material": "Tubos flexíveis",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000030242_13505600",
+        "destino": "D035",
+        "volume": 54200,
+        "movimentacoes": 5,
+        "material": "Tubos flexíveis",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000047953_13318000",
+        "destino": "D035",
+        "volume": 87000,
+        "movimentacoes": 11,
+        "material": "Tubos flexíveis",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000002368_07776235",
+        "destino": "D035",
+        "volume": 4848,
+        "movimentacoes": 22,
+        "material": "Tubos flexíveis",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000007747_13505505",
+        "destino": "D035",
+        "volume": 39964,
+        "movimentacoes": 12,
+        "material": "Tubos flexíveis",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016598_18440000",
+        "destino": "D035",
+        "volume": 41112,
+        "movimentacoes": 39,
+        "material": "Tubos rígidos",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000030242_13505600",
+        "destino": "D035",
+        "volume": 8664,
+        "movimentacoes": 52,
+        "material": "Tubos rígidos",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000007747_13505505",
+        "destino": "D035",
+        "volume": 6000,
+        "movimentacoes": 36,
+        "material": "Tubos rígidos",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016468_14401426",
+        "destino": "D020",
+        "volume": 700,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000014785_11660660",
+        "destino": "D020",
+        "volume": 110500,
+        "movimentacoes": 8,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000013011_09450000",
+        "destino": "D020",
+        "volume": 1200,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000009927_07224210",
+        "destino": "D020",
+        "volume": 65000,
+        "movimentacoes": 3,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000005544_04164180",
+        "destino": "D020",
+        "volume": 1854,
+        "movimentacoes": 2,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000010858_04222902",
+        "destino": "D020",
+        "volume": 502,
+        "movimentacoes": 2,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019040_06411310",
+        "destino": "D020",
+        "volume": 16000,
+        "movimentacoes": 10,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000033719_12072250",
+        "destino": "D020",
+        "volume": 301208,
+        "movimentacoes": 35,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000009012_03502020",
+        "destino": "D020",
+        "volume": 862850,
+        "movimentacoes": 44,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000067890_08290220",
+        "destino": "D020",
+        "volume": 3800,
+        "movimentacoes": 7,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019920_08320280",
+        "destino": "D020",
+        "volume": 5960,
+        "movimentacoes": 12,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019760_02046090",
+        "destino": "D020",
+        "volume": 265,
+        "movimentacoes": 3,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000015122_08320280",
+        "destino": "D020",
+        "volume": 64,
+        "movimentacoes": 2,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000021663_02552020",
+        "destino": "D020",
+        "volume": 100,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000033580_99950000",
+        "destino": "D020",
+        "volume": 42,
+        "movimentacoes": 7,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000018782_12929899",
+        "destino": "D020",
+        "volume": 37,
+        "movimentacoes": 5,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000001501_09843400",
+        "destino": "D020",
+        "volume": 200,
+        "movimentacoes": 9,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000007189_12224853",
+        "destino": "D020",
+        "volume": 270,
+        "movimentacoes": 10,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000007656_06765310",
+        "destino": "D020",
+        "volume": 4,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000012869_05711001",
+        "destino": "D020",
+        "volume": 3088.4260000000004,
+        "movimentacoes": 4,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016590_08412070",
+        "destino": "D020",
+        "volume": 101150,
+        "movimentacoes": 39,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000051739_13478540",
+        "destino": "D020",
+        "volume": 12000,
+        "movimentacoes": 2,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000077946_06835701",
+        "destino": "D020",
+        "volume": 248,
+        "movimentacoes": 31,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000052709_61888090",
+        "destino": "D020",
+        "volume": 6000,
+        "movimentacoes": 1,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000014279_08673010",
+        "destino": "D020",
+        "volume": 5000,
+        "movimentacoes": 1,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000009110_61890000",
+        "destino": "D020",
+        "volume": 36000,
+        "movimentacoes": 6,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000018634_06835701",
+        "destino": "D020",
+        "volume": 2895,
+        "movimentacoes": 3,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000014674_13250250",
+        "destino": "D020",
+        "volume": 19,
+        "movimentacoes": 3,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_3000000341_11410410",
+        "destino": "D020",
+        "volume": 10,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000018986_07776235",
+        "destino": "D020",
+        "volume": 16,
+        "movimentacoes": 6,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019920_08320280",
+        "destino": "D020",
+        "volume": 7000,
+        "movimentacoes": 6,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016835_30441055",
+        "destino": "D020",
+        "volume": 456,
+        "movimentacoes": 3,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000071015_17740000",
+        "destino": "D020",
+        "volume": 72,
+        "movimentacoes": 4,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016882_20031902",
+        "destino": "D020",
+        "volume": 400,
+        "movimentacoes": 6,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019797_13710000",
+        "destino": "D020",
+        "volume": 980,
+        "movimentacoes": 3,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000020425_06422122",
+        "destino": "D020",
+        "volume": 830,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000020635_06790160",
+        "destino": "D020",
+        "volume": 3132,
+        "movimentacoes": 7,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000008031_15350350",
+        "destino": "D020",
+        "volume": 1,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000059039_06680056",
+        "destino": "D020",
+        "volume": 2994,
+        "movimentacoes": 6,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000038540_28470000",
+        "destino": "D020",
+        "volume": 56,
+        "movimentacoes": 8,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019502_35547000",
+        "destino": "D020",
+        "volume": 4196,
+        "movimentacoes": 15,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000032351_02143060",
+        "destino": "D020",
+        "volume": 29,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000035977_29124076",
+        "destino": "D020",
+        "volume": 3,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000002834_09380170",
+        "destino": "D020",
+        "volume": 1626,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000008209_05426100",
+        "destino": "D020",
+        "volume": 56,
+        "movimentacoes": 5,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000047986_13477250",
+        "destino": "D020",
+        "volume": 18,
+        "movimentacoes": 6,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000017408_08900000",
+        "destino": "D020",
+        "volume": 354,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000021663_02552020",
+        "destino": "D020",
+        "volume": 26,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000015682_06790160",
+        "destino": "D020",
+        "volume": 672,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000037848_09380170",
+        "destino": "D020",
+        "volume": 2034,
+        "movimentacoes": 6,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000029703_12960000",
+        "destino": "D020",
+        "volume": 1200,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000018986_07776235",
+        "destino": "D020",
+        "volume": 10740,
+        "movimentacoes": 62,
+        "material": "Tubos flexíveis",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016598_18440000",
+        "destino": "D020",
+        "volume": 300,
+        "movimentacoes": 1,
+        "material": "Tubos flexíveis",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000047953_13318000",
+        "destino": "D020",
+        "volume": 15000,
+        "movimentacoes": 3,
+        "material": "Tubos flexíveis",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000002368_07776235",
+        "destino": "D020",
+        "volume": 576,
+        "movimentacoes": 2,
+        "material": "Tubos flexíveis",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016598_18440000",
+        "destino": "D020",
+        "volume": 21966,
+        "movimentacoes": 30,
+        "material": "Tubos rígidos",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016468_14401426",
+        "destino": "D075",
+        "volume": 1860,
+        "movimentacoes": 2,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000014785_11660660",
+        "destino": "D075",
+        "volume": 19000,
+        "movimentacoes": 5,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000033719_12072250",
+        "destino": "D075",
+        "volume": 288338,
+        "movimentacoes": 39,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000009012_03502020",
+        "destino": "D075",
+        "volume": 424515,
+        "movimentacoes": 28,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000067890_08290220",
+        "destino": "D075",
+        "volume": 3600,
+        "movimentacoes": 6,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019920_08320280",
+        "destino": "D075",
+        "volume": 9370,
+        "movimentacoes": 17,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000048172_14340000",
+        "destino": "D075",
+        "volume": 2708,
+        "movimentacoes": 12,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019760_02046090",
+        "destino": "D075",
+        "volume": 265,
+        "movimentacoes": 3,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000015122_08320280",
+        "destino": "D075",
+        "volume": 64,
+        "movimentacoes": 2,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016932_12630000",
+        "destino": "D075",
+        "volume": 23,
+        "movimentacoes": 2,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000021004_06703570",
+        "destino": "D075",
+        "volume": 80,
+        "movimentacoes": 4,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000033580_99950000",
+        "destino": "D075",
+        "volume": 60,
+        "movimentacoes": 5,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000018782_12929899",
+        "destino": "D075",
+        "volume": 50,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000018986_07776235",
+        "destino": "D075",
+        "volume": 80,
+        "movimentacoes": 4,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019920_08320280",
+        "destino": "D075",
+        "volume": 11000,
+        "movimentacoes": 7,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016007_11015015",
+        "destino": "D075",
+        "volume": 958,
+        "movimentacoes": 4,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016882_20031902",
+        "destino": "D075",
+        "volume": 1710,
+        "movimentacoes": 9,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019797_13710000",
+        "destino": "D075",
+        "volume": 2150,
+        "movimentacoes": 15,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000020425_06422122",
+        "destino": "D075",
+        "volume": 4815,
+        "movimentacoes": 9,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016598_18440000",
+        "destino": "D075",
+        "volume": 1078,
+        "movimentacoes": 5,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000030242_13505600",
+        "destino": "D075",
+        "volume": 50,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000020635_06790160",
+        "destino": "D075",
+        "volume": 396,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019502_35547000",
+        "destino": "D075",
+        "volume": 499,
+        "movimentacoes": 4,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000032351_02143060",
+        "destino": "D075",
+        "volume": 63,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019400_18087156",
+        "destino": "D075",
+        "volume": 238,
+        "movimentacoes": 41,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000006413_05656020",
+        "destino": "D075",
+        "volume": 2,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000007917_61900360",
+        "destino": "D075",
+        "volume": 46,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000014034_02552020",
+        "destino": "D075",
+        "volume": 15,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000008209_05426100",
+        "destino": "D075",
+        "volume": 22,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000017408_08900000",
+        "destino": "D075",
+        "volume": 3568,
+        "movimentacoes": 8,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000005483_09260760",
+        "destino": "D075",
+        "volume": 3733,
+        "movimentacoes": 7,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000012058_17495288",
+        "destino": "D075",
+        "volume": 287,
+        "movimentacoes": 4,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000010658_02124001",
+        "destino": "D075",
+        "volume": 12,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000037848_09380170",
+        "destino": "D075",
+        "volume": 320,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000018986_07776235",
+        "destino": "D075",
+        "volume": 3432,
+        "movimentacoes": 25,
+        "material": "Tubos flexíveis",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016598_18440000",
+        "destino": "D075",
+        "volume": 1008,
+        "movimentacoes": 4,
+        "material": "Tubos flexíveis",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000030242_13505600",
+        "destino": "D075",
+        "volume": 327884,
+        "movimentacoes": 221,
+        "material": "Tubos flexíveis",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000047953_13318000",
+        "destino": "D075",
+        "volume": 28000,
+        "movimentacoes": 4,
+        "material": "Tubos flexíveis",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000002368_07776235",
+        "destino": "D075",
+        "volume": 19056,
+        "movimentacoes": 86,
+        "material": "Tubos flexíveis",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000007747_13505505",
+        "destino": "D075",
+        "volume": 43600,
+        "movimentacoes": 16,
+        "material": "Tubos flexíveis",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016598_18440000",
+        "destino": "D075",
+        "volume": 28446,
+        "movimentacoes": 56,
+        "material": "Tubos rígidos",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000030242_13505600",
+        "destino": "D075",
+        "volume": 3000,
+        "movimentacoes": 18,
+        "material": "Tubos rígidos",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016468_14401426",
+        "destino": "D030",
+        "volume": 400,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000014785_11660660",
+        "destino": "D030",
+        "volume": 9500,
+        "movimentacoes": 3,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016882_20031902",
+        "destino": "D030",
+        "volume": 880,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000003015_07747300",
+        "destino": "D030",
+        "volume": 26,
+        "movimentacoes": 1,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016468_14401426",
+        "destino": "D030",
+        "volume": 1800,
+        "movimentacoes": 2,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019088_93180000",
+        "destino": "D030",
+        "volume": 20,
+        "movimentacoes": 10,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000033719_12072250",
+        "destino": "D030",
+        "volume": 448235,
+        "movimentacoes": 62,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000009012_03502020",
+        "destino": "D030",
+        "volume": 342250,
+        "movimentacoes": 25,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000067890_08290220",
+        "destino": "D030",
+        "volume": 1200,
+        "movimentacoes": 4,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019920_08320280",
+        "destino": "D030",
+        "volume": 45846,
+        "movimentacoes": 23,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000017323_04580000",
+        "destino": "D030",
+        "volume": 400,
+        "movimentacoes": 4,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000014073_11669320",
+        "destino": "D030",
+        "volume": 2580,
+        "movimentacoes": 29,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000048172_14340000",
+        "destino": "D030",
+        "volume": 5182,
+        "movimentacoes": 51,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000003745_05382010",
+        "destino": "D030",
+        "volume": 1560,
+        "movimentacoes": 16,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000040109_08790260",
+        "destino": "D030",
+        "volume": 1502,
+        "movimentacoes": 41,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019760_02046090",
+        "destino": "D030",
+        "volume": 1265,
+        "movimentacoes": 4,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000015122_08320280",
+        "destino": "D030",
+        "volume": 22608,
+        "movimentacoes": 6,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016932_12630000",
+        "destino": "D030",
+        "volume": 30,
+        "movimentacoes": 3,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000021663_02552020",
+        "destino": "D030",
+        "volume": 5600,
+        "movimentacoes": 2,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000021004_06703570",
+        "destino": "D030",
+        "volume": 9600,
+        "movimentacoes": 18,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000033580_99950000",
+        "destino": "D030",
+        "volume": 50,
+        "movimentacoes": 5,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000018782_12929899",
+        "destino": "D030",
+        "volume": 150,
+        "movimentacoes": 6,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000017691_04559003",
+        "destino": "D030",
+        "volume": 285,
+        "movimentacoes": 39,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_3000000348_05419000",
+        "destino": "D030",
+        "volume": 10,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000017217_04311000",
+        "destino": "D030",
+        "volume": 3614,
+        "movimentacoes": 36,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000018986_07776235",
+        "destino": "D030",
+        "volume": 3731,
+        "movimentacoes": 100,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019920_08320280",
+        "destino": "D030",
+        "volume": 19544,
+        "movimentacoes": 11,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016835_30441055",
+        "destino": "D030",
+        "volume": 44,
+        "movimentacoes": 8,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016007_11015015",
+        "destino": "D030",
+        "volume": 409,
+        "movimentacoes": 6,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000071015_17740000",
+        "destino": "D030",
+        "volume": 32930,
+        "movimentacoes": 130,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016882_20031902",
+        "destino": "D030",
+        "volume": 2403,
+        "movimentacoes": 8,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019797_13710000",
+        "destino": "D030",
+        "volume": 3315,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000020425_06422122",
+        "destino": "D030",
+        "volume": 1733,
+        "movimentacoes": 4,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016598_18440000",
+        "destino": "D030",
+        "volume": 900,
+        "movimentacoes": 4,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000020635_06790160",
+        "destino": "D030",
+        "volume": 2734,
+        "movimentacoes": 8,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000008031_15350350",
+        "destino": "D030",
+        "volume": 388,
+        "movimentacoes": 24,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000038540_28470000",
+        "destino": "D030",
+        "volume": 46,
+        "movimentacoes": 6,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019502_35547000",
+        "destino": "D030",
+        "volume": 1336,
+        "movimentacoes": 10,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000032351_02143060",
+        "destino": "D030",
+        "volume": 5721,
+        "movimentacoes": 33,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019400_18087156",
+        "destino": "D030",
+        "volume": 5492,
+        "movimentacoes": 155,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000035977_29124076",
+        "destino": "D030",
+        "volume": 23,
+        "movimentacoes": 5,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000015122_08320280",
+        "destino": "D030",
+        "volume": 204,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000005995_02143060",
+        "destino": "D030",
+        "volume": 372,
+        "movimentacoes": 10,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000001662_29124124",
+        "destino": "D030",
+        "volume": 432,
+        "movimentacoes": 6,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000070971_61900360",
+        "destino": "D030",
+        "volume": 80,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000008209_05426100",
+        "destino": "D030",
+        "volume": 180,
+        "movimentacoes": 10,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000047986_13477250",
+        "destino": "D030",
+        "volume": 265,
+        "movimentacoes": 3,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000017408_08900000",
+        "destino": "D030",
+        "volume": 672,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000037848_09380170",
+        "destino": "D030",
+        "volume": 48,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000015976_05001000",
+        "destino": "D030",
+        "volume": 8,
+        "movimentacoes": 4,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000002905_18087087",
+        "destino": "D030",
+        "volume": 24,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000047953_13318000",
+        "destino": "D030",
+        "volume": 33000,
+        "movimentacoes": 4,
+        "material": "Tubos flexíveis",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016598_18440000",
+        "destino": "D030",
+        "volume": 14688,
+        "movimentacoes": 19,
+        "material": "Tubos rígidos",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016468_14401426",
+        "destino": "D040",
+        "volume": 4528,
+        "movimentacoes": 2,
+        "material": "Componentes de Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019088_93180000",
+        "destino": "D040",
+        "volume": 16,
+        "movimentacoes": 4,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000009012_03502020",
+        "destino": "D040",
+        "volume": 199500,
+        "movimentacoes": 13,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000014073_11669320",
+        "destino": "D040",
+        "volume": 368,
+        "movimentacoes": 20,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000048172_14340000",
+        "destino": "D040",
+        "volume": 1,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019760_02046090",
+        "destino": "D040",
+        "volume": 310,
+        "movimentacoes": 5,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000017408_08900000",
+        "destino": "D040",
+        "volume": 339,
+        "movimentacoes": 35,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016932_12630000",
+        "destino": "D040",
+        "volume": 225,
+        "movimentacoes": 10,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000011789_18130130",
+        "destino": "D040",
+        "volume": 4,
+        "movimentacoes": 2,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000022742_13213080",
+        "destino": "D040",
+        "volume": 3,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000077946_06835701",
+        "destino": "D040",
+        "volume": 9,
+        "movimentacoes": 7,
+        "material": "Hidrômetros",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000017217_04311000",
+        "destino": "D040",
+        "volume": 501,
+        "movimentacoes": 20,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000018986_07776235",
+        "destino": "D040",
+        "volume": 825,
+        "movimentacoes": 33,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016835_30441055",
+        "destino": "D040",
+        "volume": 6,
+        "movimentacoes": 3,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016007_11015015",
+        "destino": "D040",
+        "volume": 2282,
+        "movimentacoes": 11,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000071015_17740000",
+        "destino": "D040",
+        "volume": 40715,
+        "movimentacoes": 77,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016882_20031902",
+        "destino": "D040",
+        "volume": 620,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019797_13710000",
+        "destino": "D040",
+        "volume": 9093,
+        "movimentacoes": 15,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016598_18440000",
+        "destino": "D040",
+        "volume": 5501,
+        "movimentacoes": 8,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000020635_06790160",
+        "destino": "D040",
+        "volume": 15883,
+        "movimentacoes": 15,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000008031_15350350",
+        "destino": "D040",
+        "volume": 124,
+        "movimentacoes": 48,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000059039_06680056",
+        "destino": "D040",
+        "volume": 4733,
+        "movimentacoes": 10,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000038540_28470000",
+        "destino": "D040",
+        "volume": 1184,
+        "movimentacoes": 27,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019502_35547000",
+        "destino": "D040",
+        "volume": 4197,
+        "movimentacoes": 20,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019400_18087156",
+        "destino": "D040",
+        "volume": 1117,
+        "movimentacoes": 76,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000035977_29124076",
+        "destino": "D040",
+        "volume": 4,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000015122_08320280",
+        "destino": "D040",
+        "volume": 12000,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000006413_05656020",
+        "destino": "D040",
+        "volume": 16,
+        "movimentacoes": 4,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000005995_02143060",
+        "destino": "D040",
+        "volume": 366,
+        "movimentacoes": 12,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000001662_29124124",
+        "destino": "D040",
+        "volume": 2,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000002368_07776235",
+        "destino": "D040",
+        "volume": 112,
+        "movimentacoes": 10,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000014034_02552020",
+        "destino": "D040",
+        "volume": 3,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000070971_61900360",
+        "destino": "D040",
+        "volume": 1432,
+        "movimentacoes": 20,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000008209_05426100",
+        "destino": "D040",
+        "volume": 47,
+        "movimentacoes": 7,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000047986_13477250",
+        "destino": "D040",
+        "volume": 1,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000017408_08900000",
+        "destino": "D040",
+        "volume": 1124,
+        "movimentacoes": 19,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000041943_09521320",
+        "destino": "D040",
+        "volume": 3,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000005483_09260760",
+        "destino": "D040",
+        "volume": 21977,
+        "movimentacoes": 11,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000012058_17495288",
+        "destino": "D040",
+        "volume": 386,
+        "movimentacoes": 12,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000010658_02124001",
+        "destino": "D040",
+        "volume": 12,
+        "movimentacoes": 2,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000021663_02552020",
+        "destino": "D040",
+        "volume": 80,
+        "movimentacoes": 4,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000003513_06401000",
+        "destino": "D040",
+        "volume": 14,
+        "movimentacoes": 6,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000010625_09220720",
+        "destino": "D040",
+        "volume": 40,
+        "movimentacoes": 4,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000015682_06790160",
+        "destino": "D040",
+        "volume": 336,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_3000000341_11410410",
+        "destino": "D040",
+        "volume": 2000,
+        "movimentacoes": 1,
+        "material": "Tubos flexíveis",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000018986_07776235",
+        "destino": "D040",
+        "volume": 1404,
+        "movimentacoes": 12,
+        "material": "Tubos flexíveis",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016598_18440000",
+        "destino": "D040",
+        "volume": 1320,
+        "movimentacoes": 1,
+        "material": "Tubos flexíveis",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000030242_13505600",
+        "destino": "D040",
+        "volume": 239800,
+        "movimentacoes": 63,
+        "material": "Tubos flexíveis",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000047953_13318000",
+        "destino": "D040",
+        "volume": 133000,
+        "movimentacoes": 8,
+        "material": "Tubos flexíveis",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000002368_07776235",
+        "destino": "D040",
+        "volume": 384,
+        "movimentacoes": 3,
+        "material": "Tubos flexíveis",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000007747_13505505",
+        "destino": "D040",
+        "volume": 42584,
+        "movimentacoes": 24,
+        "material": "Tubos flexíveis",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000016598_18440000",
+        "destino": "D040",
+        "volume": 36768,
+        "movimentacoes": 28,
+        "material": "Tubos rígidos",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000030242_13505600",
+        "destino": "D040",
+        "volume": 11514,
+        "movimentacoes": 42,
+        "material": "Tubos rígidos",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000007747_13505505",
+        "destino": "D040",
+        "volume": 5004,
+        "movimentacoes": 30,
+        "material": "Tubos rígidos",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019088_93180000",
+        "destino": "D002",
+        "volume": 1235,
+        "movimentacoes": 99,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000017323_04580000",
+        "destino": "D002",
+        "volume": 400,
+        "movimentacoes": 8,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000014073_11669320",
+        "destino": "D002",
+        "volume": 536,
+        "movimentacoes": 64,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000048172_14340000",
+        "destino": "D002",
+        "volume": 800,
+        "movimentacoes": 56,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000003745_05382010",
+        "destino": "D002",
+        "volume": 52,
+        "movimentacoes": 4,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019760_02046090",
+        "destino": "D002",
+        "volume": 700,
+        "movimentacoes": 3,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000001501_09843400",
+        "destino": "D002",
+        "volume": 78,
+        "movimentacoes": 12,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000021398_08485525",
+        "destino": "D002",
+        "volume": 209,
+        "movimentacoes": 4,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000031443_92420530",
+        "destino": "D002",
+        "volume": 3541,
+        "movimentacoes": 34,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000018590_13188900",
+        "destino": "D002",
+        "volume": 6971,
+        "movimentacoes": 462,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000019405_06454000",
+        "destino": "D002",
+        "volume": 20,
+        "movimentacoes": 5,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000079592_05089000",
+        "destino": "D002",
+        "volume": 202,
+        "movimentacoes": 17,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000079600_83434715",
+        "destino": "D002",
+        "volume": 186,
+        "movimentacoes": 8,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000071707_05092000",
+        "destino": "D002",
+        "volume": 7650,
+        "movimentacoes": 4,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000080291_17512875",
+        "destino": "D002",
+        "volume": 178,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000013109_90470470",
+        "destino": "D002",
+        "volume": 50910,
+        "movimentacoes": 9,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000001702_13503503",
+        "destino": "D002",
+        "volume": 12320,
+        "movimentacoes": 1,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000009511_02017002",
+        "destino": "D002",
+        "volume": 53040,
+        "movimentacoes": 4,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000059039_06680056",
+        "destino": "D002",
+        "volume": 130,
+        "movimentacoes": 1,
+        "material": "Tubos e etc",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000030242_13505600",
+        "destino": "D002",
+        "volume": 556,
+        "movimentacoes": 3,
+        "material": "Tubos flexíveis",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000001501_09843400",
+        "destino": 0,
+        "volume": 236,
+        "movimentacoes": 8,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    },
+    {
+        "origem": "P_7000015737_02071010",
+        "destino": 0,
+        "volume": 484,
+        "movimentacoes": 8,
+        "material": "Demais materiais",
+        "direcao": "ENTRADA"
+    }
+];

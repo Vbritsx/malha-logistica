@@ -642,6 +642,26 @@ html, body {
     font-size: 14px;
 }
 
+
+/* Leaflet tooltip custom */
+.leaflet-tooltip {
+    background: var(--bg-panel) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border: 1px solid var(--border-accent) !important;
+    border-radius: var(--radius-sm) !important;
+    color: var(--text-primary) !important;
+    box-shadow: var(--shadow-card) !important;
+    font-family: 'Inter', sans-serif !important;
+    font-size: 11px !important;
+    padding: var(--sp-xs) var(--sp-sm) !important;
+}
+
+.leaflet-tooltip-left::before { border-left-color: var(--border-accent) !important; }
+.leaflet-tooltip-right::before { border-right-color: var(--border-accent) !important; }
+.leaflet-tooltip-top::before { border-top-color: var(--border-accent) !important; }
+.leaflet-tooltip-bottom::before { border-bottom-color: var(--border-accent) !important; }
+
 /* ── Route Point Labels (A / B) ── */
 .route-point-label {
     background: transparent !important;
