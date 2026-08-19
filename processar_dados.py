@@ -100,6 +100,7 @@ def processar():
     idx_rua = header.index("Rua")
     idx_movs = header.index("Soma Linhas (Movimentações)")
     idx_volume = header.index("Soma qtde_positiva (volume)")
+    idx_valor = header.index("Valor_Movimentado")
     
     cache = carregar_cache()
     novos_geocods = 0
@@ -263,6 +264,7 @@ def processar():
         direcao = r[idx_direcao]
         volume = r[idx_volume] or 0
         movs = r[idx_movs] or 0
+        valor = r[idx_valor] or 0
         material = r[idx_material] or "Outros"
         
         cep_clean = str(cep).strip().replace(".", "").replace("-", "") if cep else ""
@@ -288,7 +290,8 @@ def processar():
                     "lng": lng,
                     "tipo": tipo_parceiro,
                     "volume": 0,
-                    "movimentacoes": 0
+                    "movimentacoes": 0,
+                    "valorTotal": 0
                 }
             
             # Se o mesmo parceiro atua em ambas direções, atualiza o tipo ou mantém genérico
@@ -297,6 +300,7 @@ def processar():
                 
             parceiros[partner_id]["volume"] += volume
             parceiros[partner_id]["movimentacoes"] += movs
+            parceiros[partner_id]["valorTotal"] += valor
             
             # Registrar fluxo
             fluxos.append({

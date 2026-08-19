@@ -158,7 +158,8 @@ const PARCEIROS_DATA = [
         "lng": -46.6869678,
         "tipo": "Canteiro",
         "volume": 5477,
-        "movimentacoes": 3
+        "movimentacoes": 3,
+        "valorTotal": 0
     },
     {
         "id": "P_4600042127_05846270",
@@ -170,7 +171,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Canteiro",
         "volume": 1465574,
-        "movimentacoes": 684
+        "movimentacoes": 684,
+        "valorTotal": 0
     },
     {
         "id": "P_4600042952_09840000",
@@ -182,7 +184,8 @@ const PARCEIROS_DATA = [
         "lng": -46.565,
         "tipo": "Canteiro",
         "volume": 1298862.88,
-        "movimentacoes": 1069
+        "movimentacoes": 1069,
+        "valorTotal": 0
     },
     {
         "id": "P_4600059579_06844005",
@@ -194,7 +197,8 @@ const PARCEIROS_DATA = [
         "lng": -46.85222,
         "tipo": "Canteiro",
         "volume": 9906,
-        "movimentacoes": 31
+        "movimentacoes": 31,
+        "valorTotal": 130321.38
     },
     {
         "id": "P_4600059671_04781065",
@@ -206,7 +210,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Canteiro",
         "volume": 65361,
-        "movimentacoes": 189
+        "movimentacoes": 189,
+        "valorTotal": 91327.04999999999
     },
     {
         "id": "P_4600059910_04456160",
@@ -218,7 +223,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Canteiro",
         "volume": 844470,
-        "movimentacoes": 1115
+        "movimentacoes": 1115,
+        "valorTotal": 125250.54000000001
     },
     {
         "id": "P_4600059980_09840000",
@@ -230,7 +236,8 @@ const PARCEIROS_DATA = [
         "lng": -46.565,
         "tipo": "Canteiro",
         "volume": 1108989.7,
-        "movimentacoes": 1066
+        "movimentacoes": 1066,
+        "valorTotal": 173238.07000000004
     },
     {
         "id": "P_4600060285_04829280",
@@ -242,7 +249,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Canteiro",
         "volume": 894359.41,
-        "movimentacoes": 707
+        "movimentacoes": 707,
+        "valorTotal": 190530.16
     },
     {
         "id": "P_4600060345_06856000",
@@ -254,7 +262,8 @@ const PARCEIROS_DATA = [
         "lng": -46.84917,
         "tipo": "Canteiro",
         "volume": 1029085.73,
-        "movimentacoes": 918
+        "movimentacoes": 918,
+        "valorTotal": 277494.19
     },
     {
         "id": "P_4600062805_13187075",
@@ -266,7 +275,8 @@ const PARCEIROS_DATA = [
         "lng": -47.2174083,
         "tipo": "Canteiro",
         "volume": 6109,
-        "movimentacoes": 10
+        "movimentacoes": 10,
+        "valorTotal": 27850.94
     },
     {
         "id": "P_4600063832_09618100",
@@ -278,7 +288,8 @@ const PARCEIROS_DATA = [
         "lng": -46.565,
         "tipo": "Canteiro",
         "volume": 54508,
-        "movimentacoes": 29
+        "movimentacoes": 29,
+        "valorTotal": 604193.7699999999
     },
     {
         "id": "P_4600064867_09190410",
@@ -290,7 +301,8 @@ const PARCEIROS_DATA = [
         "lng": -46.53833,
         "tipo": "Canteiro",
         "volume": 64667.932,
-        "movimentacoes": 16
+        "movimentacoes": 16,
+        "valorTotal": 1722567.06
     },
     {
         "id": "P_3000000343_06856000",
@@ -302,7 +314,8 @@ const PARCEIROS_DATA = [
         "lng": -46.84917,
         "tipo": "Fornecedor/Canteiro",
         "volume": 10,
-        "movimentacoes": 6
+        "movimentacoes": 6,
+        "valorTotal": 0
     },
     {
         "id": "P_4600002300_05429060",
@@ -314,7 +327,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Canteiro",
         "volume": 25,
-        "movimentacoes": 1
+        "movimentacoes": 1,
+        "valorTotal": 0
     },
     {
         "id": "P_4600042686_04351050",
@@ -326,7 +340,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Canteiro",
         "volume": 35604,
-        "movimentacoes": 8
+        "movimentacoes": 8,
+        "valorTotal": 0
     },
     {
         "id": "P_4600043057_05544000",
@@ -338,7 +353,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Canteiro",
         "volume": 1250175,
-        "movimentacoes": 697
+        "movimentacoes": 697,
+        "valorTotal": 0
     },
     {
         "id": "P_4600059912_07191000",
@@ -350,7 +366,8 @@ const PARCEIROS_DATA = [
         "lng": -46.53333,
         "tipo": "Canteiro",
         "volume": 461772.61,
-        "movimentacoes": 680
+        "movimentacoes": 680,
+        "valorTotal": 1582425.33
     },
     {
         "id": "P_4600059951_07171150",
@@ -362,7 +379,8 @@ const PARCEIROS_DATA = [
         "lng": -46.53333,
         "tipo": "Canteiro",
         "volume": 523340.627,
-        "movimentacoes": 474
+        "movimentacoes": 474,
+        "valorTotal": 1692841.65
     },
     {
         "id": "P_4600060030_08260030",
@@ -374,7 +392,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Canteiro",
         "volume": 1272292.3499999999,
-        "movimentacoes": 1201
+        "movimentacoes": 1201,
+        "valorTotal": 1735758.3800000001
     },
     {
         "id": "P_4600060107_08664015",
@@ -386,7 +405,8 @@ const PARCEIROS_DATA = [
         "lng": -46.31083,
         "tipo": "Canteiro",
         "volume": 702867.2999999999,
-        "movimentacoes": 1094
+        "movimentacoes": 1094,
+        "valorTotal": 1023348.94
     },
     {
         "id": "P_4600060108_08664015",
@@ -398,7 +418,8 @@ const PARCEIROS_DATA = [
         "lng": -46.31083,
         "tipo": "Canteiro",
         "volume": 883665.89,
-        "movimentacoes": 1059
+        "movimentacoes": 1059,
+        "valorTotal": 970156.0400000002
     },
     {
         "id": "P_4600060225_12231140",
@@ -410,7 +431,8 @@ const PARCEIROS_DATA = [
         "lng": -45.8855585,
         "tipo": "Canteiro",
         "volume": 266,
-        "movimentacoes": 8
+        "movimentacoes": 8,
+        "valorTotal": 10845.939999999999
     },
     {
         "id": "P_4600060294_06715825",
@@ -422,7 +444,8 @@ const PARCEIROS_DATA = [
         "lng": -46.91917,
         "tipo": "Canteiro",
         "volume": 2218595.78,
-        "movimentacoes": 1423
+        "movimentacoes": 1423,
+        "valorTotal": 696125.4099999999
     },
     {
         "id": "P_4600060323_11250462",
@@ -434,7 +457,8 @@ const PARCEIROS_DATA = [
         "lng": -46.13861,
         "tipo": "Canteiro",
         "volume": 3164,
-        "movimentacoes": 45
+        "movimentacoes": 45,
+        "valorTotal": 240886.93999999997
     },
     {
         "id": "P_4600060346_09663010",
@@ -446,7 +470,8 @@ const PARCEIROS_DATA = [
         "lng": -46.565,
         "tipo": "Canteiro",
         "volume": 29420,
-        "movimentacoes": 6
+        "movimentacoes": 6,
+        "valorTotal": 0
     },
     {
         "id": "P_4600060565_05187010",
@@ -458,7 +483,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Canteiro",
         "volume": 948417.213,
-        "movimentacoes": 878
+        "movimentacoes": 878,
+        "valorTotal": 3161729.38
     },
     {
         "id": "P_4600060683_12242000",
@@ -470,7 +496,8 @@ const PARCEIROS_DATA = [
         "lng": -45.88694,
         "tipo": "Canteiro",
         "volume": 3389,
-        "movimentacoes": 32
+        "movimentacoes": 32,
+        "valorTotal": 49322.229999999996
     },
     {
         "id": "P_4600062532_13733060",
@@ -482,7 +509,8 @@ const PARCEIROS_DATA = [
         "lng": -47.00472,
         "tipo": "Canteiro",
         "volume": 3017,
-        "movimentacoes": 14
+        "movimentacoes": 14,
+        "valorTotal": 99599.77
     },
     {
         "id": "P_4600063172_12910610",
@@ -494,7 +522,8 @@ const PARCEIROS_DATA = [
         "lng": -46.54418,
         "tipo": "Canteiro",
         "volume": 9209,
-        "movimentacoes": 56
+        "movimentacoes": 56,
+        "valorTotal": 486196.15
     },
     {
         "id": "P_3000000032_04516000",
@@ -506,7 +535,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor/Canteiro",
         "volume": 2160,
-        "movimentacoes": 4
+        "movimentacoes": 4,
+        "valorTotal": 0
     },
     {
         "id": "P_4600042058_04557010",
@@ -518,7 +548,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Canteiro",
         "volume": 226,
-        "movimentacoes": 11
+        "movimentacoes": 11,
+        "valorTotal": 120455.0
     },
     {
         "id": "P_4600047828_04516000",
@@ -530,7 +561,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Canteiro",
         "volume": 540,
-        "movimentacoes": 1
+        "movimentacoes": 1,
+        "valorTotal": 0
     },
     {
         "id": "P_4600059968_04048000",
@@ -542,7 +574,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Canteiro",
         "volume": 2049114.25,
-        "movimentacoes": 1063
+        "movimentacoes": 1063,
+        "valorTotal": 4079827.4199999995
     },
     {
         "id": "P_4600063009_04459000",
@@ -554,7 +587,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Canteiro",
         "volume": 142577,
-        "movimentacoes": 42
+        "movimentacoes": 42,
+        "valorTotal": 1125053.3399999999
     },
     {
         "id": "P_3000000321_05711001",
@@ -566,7 +600,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor/Canteiro",
         "volume": 988,
-        "movimentacoes": 4
+        "movimentacoes": 4,
+        "valorTotal": 0
     },
     {
         "id": "P_4_05429900",
@@ -578,7 +613,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor/Canteiro",
         "volume": 8,
-        "movimentacoes": 2
+        "movimentacoes": 2,
+        "valorTotal": 0
     },
     {
         "id": "P_4600056260_04728210",
@@ -590,7 +626,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Canteiro",
         "volume": 22041,
-        "movimentacoes": 60
+        "movimentacoes": 60,
+        "valorTotal": 3013.4400000000005
     },
     {
         "id": "P_4600056982_11410410",
@@ -602,7 +639,8 @@ const PARCEIROS_DATA = [
         "lng": -46.25639,
         "tipo": "Canteiro",
         "volume": 1960,
-        "movimentacoes": 6
+        "movimentacoes": 6,
+        "valorTotal": 61676.45
     },
     {
         "id": "P_4600057061_05541130",
@@ -614,7 +652,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Canteiro",
         "volume": 5352,
-        "movimentacoes": 18
+        "movimentacoes": 18,
+        "valorTotal": 83499.64000000001
     },
     {
         "id": "P_4600057296_11441000",
@@ -626,7 +665,8 @@ const PARCEIROS_DATA = [
         "lng": -46.25639,
         "tipo": "Canteiro",
         "volume": 21312,
-        "movimentacoes": 10
+        "movimentacoes": 10,
+        "valorTotal": 28925.22
     },
     {
         "id": "P_4600059854_05038090",
@@ -638,7 +678,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Canteiro",
         "volume": 80117,
-        "movimentacoes": 199
+        "movimentacoes": 199,
+        "valorTotal": 1246905.5699999998
     },
     {
         "id": "P_4600059895_02167010",
@@ -650,7 +691,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Canteiro",
         "volume": 826608.487,
-        "movimentacoes": 1102
+        "movimentacoes": 1102,
+        "valorTotal": 1354392.8699999994
     },
     {
         "id": "P_4600060020_06381100",
@@ -662,7 +704,8 @@ const PARCEIROS_DATA = [
         "lng": -46.835,
         "tipo": "Canteiro",
         "volume": 1524071.39,
-        "movimentacoes": 1164
+        "movimentacoes": 1164,
+        "valorTotal": 2014174.8300000003
     },
     {
         "id": "P_4600060110_18205720",
@@ -674,7 +717,8 @@ const PARCEIROS_DATA = [
         "lng": -48.05306,
         "tipo": "Canteiro",
         "volume": 103,
-        "movimentacoes": 14
+        "movimentacoes": 14,
+        "valorTotal": 13454.970000000001
     },
     {
         "id": "P_4600060183_11900000",
@@ -686,7 +730,8 @@ const PARCEIROS_DATA = [
         "lng": -47.84361,
         "tipo": "Canteiro",
         "volume": 10,
-        "movimentacoes": 4
+        "movimentacoes": 4,
+        "valorTotal": 6975.99
     },
     {
         "id": "P_4600060205_15150000",
@@ -698,7 +743,8 @@ const PARCEIROS_DATA = [
         "lng": -49.71417,
         "tipo": "Canteiro",
         "volume": 217,
-        "movimentacoes": 3
+        "movimentacoes": 3,
+        "valorTotal": 8111.849999999999
     },
     {
         "id": "P_4600060240_05419000",
@@ -710,7 +756,8 @@ const PARCEIROS_DATA = [
         "lng": -46.6924149,
         "tipo": "Canteiro",
         "volume": 1456485.2249999999,
-        "movimentacoes": 1119
+        "movimentacoes": 1119,
+        "valorTotal": 7534136.56
     },
     {
         "id": "P_4600060241_18240000",
@@ -722,7 +769,8 @@ const PARCEIROS_DATA = [
         "lng": -48.41278,
         "tipo": "Canteiro",
         "volume": 109,
-        "movimentacoes": 7
+        "movimentacoes": 7,
+        "valorTotal": 62351.979999999996
     },
     {
         "id": "P_4600061011_12209240",
@@ -734,7 +782,8 @@ const PARCEIROS_DATA = [
         "lng": -45.8820649,
         "tipo": "Canteiro",
         "volume": 11,
-        "movimentacoes": 1
+        "movimentacoes": 1,
+        "valorTotal": 6809.36
     },
     {
         "id": "P_4600062694_13231600",
@@ -746,7 +795,8 @@ const PARCEIROS_DATA = [
         "lng": -46.7838,
         "tipo": "Canteiro",
         "volume": 225,
-        "movimentacoes": 29
+        "movimentacoes": 29,
+        "valorTotal": 36821.130000000005
     },
     {
         "id": "P_4600059288_09841720",
@@ -758,7 +808,8 @@ const PARCEIROS_DATA = [
         "lng": -46.565,
         "tipo": "Canteiro",
         "volume": 3954,
-        "movimentacoes": 5
+        "movimentacoes": 5,
+        "valorTotal": 0
     },
     {
         "id": "P_4600060228_18304110",
@@ -770,7 +821,8 @@ const PARCEIROS_DATA = [
         "lng": -48.34944,
         "tipo": "Canteiro",
         "volume": 154,
-        "movimentacoes": 3
+        "movimentacoes": 3,
+        "valorTotal": 9870.07
     },
     {
         "id": "P_4600060584_11725060",
@@ -782,7 +834,8 @@ const PARCEIROS_DATA = [
         "lng": -46.40278,
         "tipo": "Canteiro",
         "volume": 654,
-        "movimentacoes": 7
+        "movimentacoes": 7,
+        "valorTotal": 47195.270000000004
     },
     {
         "id": "P_4600060880_05407003",
@@ -794,7 +847,8 @@ const PARCEIROS_DATA = [
         "lng": -46.6767559,
         "tipo": "Canteiro",
         "volume": 5028,
-        "movimentacoes": 41
+        "movimentacoes": 41,
+        "valorTotal": 416771.72000000003
     },
     {
         "id": "P_4600060924_09840070",
@@ -806,7 +860,8 @@ const PARCEIROS_DATA = [
         "lng": -46.565,
         "tipo": "Canteiro",
         "volume": 3180,
-        "movimentacoes": 4
+        "movimentacoes": 4,
+        "valorTotal": 0
     },
     {
         "id": "P_4600054151_09190410",
@@ -818,7 +873,8 @@ const PARCEIROS_DATA = [
         "lng": -46.53833,
         "tipo": "Canteiro",
         "volume": 9368,
-        "movimentacoes": 20
+        "movimentacoes": 20,
+        "valorTotal": 394283.55
     },
     {
         "id": "P_3000000310_30140140",
@@ -830,7 +886,8 @@ const PARCEIROS_DATA = [
         "lng": -43.93778,
         "tipo": "Fornecedor/Canteiro",
         "volume": 10000,
-        "movimentacoes": 6
+        "movimentacoes": 6,
+        "valorTotal": 0
     },
     {
         "id": "P_4600051569_05113020",
@@ -842,7 +899,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Canteiro",
         "volume": 4000,
-        "movimentacoes": 1
+        "movimentacoes": 1,
+        "valorTotal": 0
     },
     {
         "id": "P_4600053308_05786010",
@@ -854,7 +912,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Canteiro",
         "volume": 11141,
-        "movimentacoes": 15
+        "movimentacoes": 15,
+        "valorTotal": 0
     },
     {
         "id": "P_4600054257_05786010",
@@ -866,7 +925,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Canteiro",
         "volume": 15225,
-        "movimentacoes": 11
+        "movimentacoes": 11,
+        "valorTotal": 0
     },
     {
         "id": "P_4600055659_05657140",
@@ -878,7 +938,8 @@ const PARCEIROS_DATA = [
         "lng": -46.7153396,
         "tipo": "Canteiro",
         "volume": 10529,
-        "movimentacoes": 60
+        "movimentacoes": 60,
+        "valorTotal": 3909.26
     },
     {
         "id": "P_4600055937_05626020",
@@ -890,7 +951,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Canteiro",
         "volume": 32388,
-        "movimentacoes": 12
+        "movimentacoes": 12,
+        "valorTotal": 0
     },
     {
         "id": "P_4600057275_06330281",
@@ -902,7 +964,8 @@ const PARCEIROS_DATA = [
         "lng": -46.835,
         "tipo": "Canteiro",
         "volume": 111464,
-        "movimentacoes": 271
+        "movimentacoes": 271,
+        "valorTotal": 0
     },
     {
         "id": "P_4600058493_05001000",
@@ -914,7 +977,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Canteiro",
         "volume": 200,
-        "movimentacoes": 1
+        "movimentacoes": 1,
+        "valorTotal": 0
     },
     {
         "id": "P_4600059444_06268000",
@@ -926,7 +990,8 @@ const PARCEIROS_DATA = [
         "lng": -46.79167,
         "tipo": "Canteiro",
         "volume": 11525,
-        "movimentacoes": 24
+        "movimentacoes": 24,
+        "valorTotal": 70845.44
     },
     {
         "id": "P_4600059502_06397110",
@@ -938,7 +1003,8 @@ const PARCEIROS_DATA = [
         "lng": -46.835,
         "tipo": "Canteiro",
         "volume": 19886,
-        "movimentacoes": 22
+        "movimentacoes": 22,
+        "valorTotal": 76077.38
     },
     {
         "id": "P_4600059508_06529190",
@@ -950,7 +1016,8 @@ const PARCEIROS_DATA = [
         "lng": -46.91778,
         "tipo": "Canteiro",
         "volume": 4315,
-        "movimentacoes": 13
+        "movimentacoes": 13,
+        "valorTotal": 0
     },
     {
         "id": "P_4600060062_03889000",
@@ -962,7 +1029,8 @@ const PARCEIROS_DATA = [
         "lng": -46.4775691,
         "tipo": "Canteiro",
         "volume": 904312.63,
-        "movimentacoes": 1308
+        "movimentacoes": 1308,
+        "valorTotal": 1171450.56
     },
     {
         "id": "P_4600060464_02989095",
@@ -974,7 +1042,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Canteiro",
         "volume": 10057.994999999999,
-        "movimentacoes": 9
+        "movimentacoes": 9,
+        "valorTotal": 146309.41
     },
     {
         "id": "P_4600063664_05307000",
@@ -986,7 +1055,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Canteiro",
         "volume": 109740,
-        "movimentacoes": 87
+        "movimentacoes": 87,
+        "valorTotal": 1118098.6600000001
     },
     {
         "id": "P_3000000332_05525080",
@@ -998,7 +1068,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor/Canteiro",
         "volume": 36,
-        "movimentacoes": 7
+        "movimentacoes": 7,
+        "valorTotal": 5988.03
     },
     {
         "id": "P_4600043552_06362042",
@@ -1010,7 +1081,8 @@ const PARCEIROS_DATA = [
         "lng": -46.835,
         "tipo": "Canteiro",
         "volume": 120000,
-        "movimentacoes": 4
+        "movimentacoes": 4,
+        "valorTotal": 0
     },
     {
         "id": "P_4600044617_05565210",
@@ -1022,7 +1094,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Canteiro",
         "volume": 266,
-        "movimentacoes": 30
+        "movimentacoes": 30,
+        "valorTotal": 0
     },
     {
         "id": "P_4600057156_08285000",
@@ -1034,7 +1107,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Canteiro",
         "volume": 39151,
-        "movimentacoes": 109
+        "movimentacoes": 109,
+        "valorTotal": 1360.7
     },
     {
         "id": "P_4600060037_09290260",
@@ -1046,7 +1120,8 @@ const PARCEIROS_DATA = [
         "lng": -46.53833,
         "tipo": "Canteiro",
         "volume": 689520.55,
-        "movimentacoes": 811
+        "movimentacoes": 811,
+        "valorTotal": 1879250.1499999997
     },
     {
         "id": "P_4600062381_02034000",
@@ -1058,7 +1133,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Canteiro",
         "volume": 82,
-        "movimentacoes": 4
+        "movimentacoes": 4,
+        "valorTotal": 0
     },
     {
         "id": "P_4600037457_04571936",
@@ -1070,7 +1146,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Canteiro",
         "volume": 3,
-        "movimentacoes": 1
+        "movimentacoes": 1,
+        "valorTotal": 0
     },
     {
         "id": "P_4600049948_12245820",
@@ -1082,7 +1159,8 @@ const PARCEIROS_DATA = [
         "lng": -45.88694,
         "tipo": "Canteiro",
         "volume": 556766.5,
-        "movimentacoes": 567
+        "movimentacoes": 567,
+        "valorTotal": 34706.399999999994
     },
     {
         "id": "P_4600063048_09190410",
@@ -1094,7 +1172,8 @@ const PARCEIROS_DATA = [
         "lng": -46.53833,
         "tipo": "Canteiro",
         "volume": 65539.394,
-        "movimentacoes": 46
+        "movimentacoes": 46,
+        "valorTotal": 1678477.69
     },
     {
         "id": "P_4600042911_02167010",
@@ -1106,7 +1185,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Canteiro",
         "volume": 250343,
-        "movimentacoes": 456
+        "movimentacoes": 456,
+        "valorTotal": 0
     },
     {
         "id": "P_4600055660_06397110",
@@ -1118,7 +1198,8 @@ const PARCEIROS_DATA = [
         "lng": -46.835,
         "tipo": "Canteiro",
         "volume": 12089,
-        "movimentacoes": 4
+        "movimentacoes": 4,
+        "valorTotal": 0
     },
     {
         "id": "P_4600057062_04048000",
@@ -1130,7 +1211,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Canteiro",
         "volume": 3714,
-        "movimentacoes": 9
+        "movimentacoes": 9,
+        "valorTotal": 0
     },
     {
         "id": "P_4600057205_05541130",
@@ -1142,7 +1224,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Canteiro",
         "volume": 3029,
-        "movimentacoes": 37
+        "movimentacoes": 37,
+        "valorTotal": 0
     },
     {
         "id": "P_4600059554_22775056",
@@ -1154,7 +1237,8 @@ const PARCEIROS_DATA = [
         "lng": -43.3607904,
         "tipo": "Canteiro",
         "volume": 1064,
-        "movimentacoes": 8
+        "movimentacoes": 8,
+        "valorTotal": 0
     },
     {
         "id": "P_4600059852_04348070",
@@ -1166,7 +1250,8 @@ const PARCEIROS_DATA = [
         "lng": -46.6531635,
         "tipo": "Canteiro",
         "volume": 39977,
-        "movimentacoes": 92
+        "movimentacoes": 92,
+        "valorTotal": 437438.19
     },
     {
         "id": "P_4600059990_05095010",
@@ -1178,7 +1263,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Canteiro",
         "volume": 27520,
-        "movimentacoes": 79
+        "movimentacoes": 79,
+        "valorTotal": 354327.84
     },
     {
         "id": "P_4600060208_11666590",
@@ -1190,7 +1276,8 @@ const PARCEIROS_DATA = [
         "lng": -45.41306,
         "tipo": "Canteiro",
         "volume": 63,
-        "movimentacoes": 9
+        "movimentacoes": 9,
+        "valorTotal": 28855.33
     },
     {
         "id": "P_4600060243_11085601",
@@ -1202,7 +1289,8 @@ const PARCEIROS_DATA = [
         "lng": -46.33361,
         "tipo": "Canteiro",
         "volume": 4742,
-        "movimentacoes": 35
+        "movimentacoes": 35,
+        "valorTotal": 52793.01
     },
     {
         "id": "P_4600060264_18705650",
@@ -1214,7 +1302,8 @@ const PARCEIROS_DATA = [
         "lng": -48.92583,
         "tipo": "Canteiro",
         "volume": 359,
-        "movimentacoes": 7
+        "movimentacoes": 7,
+        "valorTotal": 97834.9
     },
     {
         "id": "P_4600060267_11600733",
@@ -1226,7 +1315,8 @@ const PARCEIROS_DATA = [
         "lng": -45.40972,
         "tipo": "Canteiro",
         "volume": 38,
-        "movimentacoes": 6
+        "movimentacoes": 6,
+        "valorTotal": 44274.74
     },
     {
         "id": "P_4600060299_18900440",
@@ -1238,7 +1328,8 @@ const PARCEIROS_DATA = [
         "lng": -49.6325,
         "tipo": "Canteiro",
         "volume": 356,
-        "movimentacoes": 7
+        "movimentacoes": 7,
+        "valorTotal": 103217.77
     },
     {
         "id": "P_4600060322_12209240",
@@ -1250,7 +1341,8 @@ const PARCEIROS_DATA = [
         "lng": -45.8820649,
         "tipo": "Canteiro",
         "volume": 2155,
-        "movimentacoes": 11
+        "movimentacoes": 11,
+        "valorTotal": 170879.28999999998
     },
     {
         "id": "P_4600062590_18276120",
@@ -1262,7 +1354,8 @@ const PARCEIROS_DATA = [
         "lng": -47.85694,
         "tipo": "Canteiro",
         "volume": 5502,
-        "movimentacoes": 2
+        "movimentacoes": 2,
+        "valorTotal": 18209.86
     },
     {
         "id": "P_4600062946_13590000",
@@ -1274,7 +1367,8 @@ const PARCEIROS_DATA = [
         "lng": -48.3175,
         "tipo": "Canteiro",
         "volume": 7240,
-        "movimentacoes": 8
+        "movimentacoes": 8,
+        "valorTotal": 35953.56
     },
     {
         "id": "P_4600062989_18320000",
@@ -1286,7 +1380,8 @@ const PARCEIROS_DATA = [
         "lng": -48.8425,
         "tipo": "Canteiro",
         "volume": 1700,
-        "movimentacoes": 8
+        "movimentacoes": 8,
+        "valorTotal": 59320.01
     },
     {
         "id": "P_3000000324_01227200",
@@ -1298,7 +1393,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor/Canteiro",
         "volume": 520,
-        "movimentacoes": 6
+        "movimentacoes": 6,
+        "valorTotal": 105795.39
     },
     {
         "id": "P_4600058865_09310000",
@@ -1310,7 +1406,8 @@ const PARCEIROS_DATA = [
         "lng": -46.46139,
         "tipo": "Canteiro",
         "volume": 29156,
-        "movimentacoes": 28
+        "movimentacoes": 28,
+        "valorTotal": 667162.45
     },
     {
         "id": "P_4600059744_04602909",
@@ -1322,7 +1419,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Canteiro",
         "volume": 2800,
-        "movimentacoes": 1
+        "movimentacoes": 1,
+        "valorTotal": 0
     },
     {
         "id": "P_4600041302_03889000",
@@ -1334,7 +1432,8 @@ const PARCEIROS_DATA = [
         "lng": -46.4775691,
         "tipo": "Canteiro",
         "volume": 478554,
-        "movimentacoes": 298
+        "movimentacoes": 298,
+        "valorTotal": 0
     },
     {
         "id": "P_4600042975_08664015",
@@ -1346,7 +1445,8 @@ const PARCEIROS_DATA = [
         "lng": -46.31083,
         "tipo": "Canteiro",
         "volume": 710558.2660000001,
-        "movimentacoes": 449
+        "movimentacoes": 449,
+        "valorTotal": 0
     },
     {
         "id": "P_4600056089_08260030",
@@ -1358,7 +1458,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Canteiro",
         "volume": 517498,
-        "movimentacoes": 306
+        "movimentacoes": 306,
+        "valorTotal": 171.65
     },
     {
         "id": "P_4600056513_08110210",
@@ -1370,7 +1471,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Canteiro",
         "volume": 13500,
-        "movimentacoes": 3
+        "movimentacoes": 3,
+        "valorTotal": 0
     },
     {
         "id": "P_4600057056_09340730",
@@ -1382,7 +1484,8 @@ const PARCEIROS_DATA = [
         "lng": -46.46139,
         "tipo": "Canteiro",
         "volume": 66474,
-        "movimentacoes": 244
+        "movimentacoes": 244,
+        "valorTotal": 13704.82
     },
     {
         "id": "P_4600059922_02945030",
@@ -1394,7 +1497,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Canteiro",
         "volume": 7451,
-        "movimentacoes": 21
+        "movimentacoes": 21,
+        "valorTotal": 35413.7
     },
     {
         "id": "P_4600060324_14409406",
@@ -1406,7 +1510,8 @@ const PARCEIROS_DATA = [
         "lng": -47.40083,
         "tipo": "Canteiro",
         "volume": 690,
-        "movimentacoes": 4
+        "movimentacoes": 4,
+        "valorTotal": 24393.85
     },
     {
         "id": "P_4600064845_09190410",
@@ -1418,7 +1523,8 @@ const PARCEIROS_DATA = [
         "lng": -46.53833,
         "tipo": "Canteiro",
         "volume": 67650,
-        "movimentacoes": 12
+        "movimentacoes": 12,
+        "valorTotal": 70645.73
     },
     {
         "id": "P_4600066304_06404326",
@@ -1430,7 +1536,8 @@ const PARCEIROS_DATA = [
         "lng": -46.87611,
         "tipo": "Canteiro",
         "volume": 1500,
-        "movimentacoes": 3
+        "movimentacoes": 3,
+        "valorTotal": 114038.7
     },
     {
         "id": "P_4600057059_08460245",
@@ -1442,7 +1549,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Canteiro",
         "volume": 5,
-        "movimentacoes": 1
+        "movimentacoes": 1,
+        "valorTotal": 0
     },
     {
         "id": "P_4600060539_05690050",
@@ -1454,7 +1562,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Canteiro",
         "volume": 3232,
-        "movimentacoes": 39
+        "movimentacoes": 39,
+        "valorTotal": 241373.04
     },
     {
         "id": "P_4600043148_05058000",
@@ -1466,7 +1575,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Canteiro",
         "volume": 13878,
-        "movimentacoes": 11
+        "movimentacoes": 11,
+        "valorTotal": 0
     },
     {
         "id": "P_4600045747_06460040",
@@ -1478,7 +1588,8 @@ const PARCEIROS_DATA = [
         "lng": -46.87611,
         "tipo": "Canteiro",
         "volume": 104340,
-        "movimentacoes": 137
+        "movimentacoes": 137,
+        "valorTotal": 0
     },
     {
         "id": "P_4600046032_07171150",
@@ -1490,7 +1601,8 @@ const PARCEIROS_DATA = [
         "lng": -46.53333,
         "tipo": "Canteiro",
         "volume": 77474,
-        "movimentacoes": 111
+        "movimentacoes": 111,
+        "valorTotal": 0
     },
     {
         "id": "P_4600048762_12922670",
@@ -1502,7 +1614,8 @@ const PARCEIROS_DATA = [
         "lng": -46.54418,
         "tipo": "Canteiro",
         "volume": 34640,
-        "movimentacoes": 100
+        "movimentacoes": 100,
+        "valorTotal": 0
     },
     {
         "id": "P_3000001937_01227200",
@@ -1514,7 +1627,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor/Canteiro",
         "volume": 4100,
-        "movimentacoes": 26
+        "movimentacoes": 26,
+        "valorTotal": 0
     },
     {
         "id": "P_3000000326_04719002",
@@ -1526,7 +1640,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor/Canteiro",
         "volume": 200,
-        "movimentacoes": 2
+        "movimentacoes": 2,
+        "valorTotal": 0
     },
     {
         "id": "P_3000001938_07171150",
@@ -1538,7 +1653,8 @@ const PARCEIROS_DATA = [
         "lng": -46.53333,
         "tipo": "Fornecedor/Canteiro",
         "volume": 8,
-        "movimentacoes": 4
+        "movimentacoes": 4,
+        "valorTotal": 0
     },
     {
         "id": "P_4600055784_18211265",
@@ -1550,7 +1666,8 @@ const PARCEIROS_DATA = [
         "lng": -48.05306,
         "tipo": "Canteiro",
         "volume": 50,
-        "movimentacoes": 1
+        "movimentacoes": 1,
+        "valorTotal": 0
     },
     {
         "id": "P_4600060169_11920000",
@@ -1562,7 +1679,8 @@ const PARCEIROS_DATA = [
         "lng": -47.55528,
         "tipo": "Canteiro",
         "volume": 141,
-        "movimentacoes": 5
+        "movimentacoes": 5,
+        "valorTotal": 27205.36
     },
     {
         "id": "P_4600050357_04048000",
@@ -1574,7 +1692,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Canteiro",
         "volume": 1469577,
-        "movimentacoes": 635
+        "movimentacoes": 635,
+        "valorTotal": 84664.31
     },
     {
         "id": "P_4600051554_02501010",
@@ -1586,7 +1705,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Canteiro",
         "volume": 459,
-        "movimentacoes": 15
+        "movimentacoes": 15,
+        "valorTotal": 0
     },
     {
         "id": "P_4600056505_03512050",
@@ -1598,7 +1718,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Canteiro",
         "volume": 9002,
-        "movimentacoes": 4
+        "movimentacoes": 4,
+        "valorTotal": 0
     },
     {
         "id": "P_4600059751_09290416",
@@ -1610,7 +1731,8 @@ const PARCEIROS_DATA = [
         "lng": -46.53833,
         "tipo": "Canteiro",
         "volume": 23058,
-        "movimentacoes": 61
+        "movimentacoes": 61,
+        "valorTotal": 1244932.88
     },
     {
         "id": "P_4600061053_09190410",
@@ -1622,7 +1744,8 @@ const PARCEIROS_DATA = [
         "lng": -46.53833,
         "tipo": "Canteiro",
         "volume": 1538,
-        "movimentacoes": 18
+        "movimentacoes": 18,
+        "valorTotal": 90254.41
     },
     {
         "id": "P_2_05429900",
@@ -1634,7 +1757,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor/Canteiro",
         "volume": 4,
-        "movimentacoes": 2
+        "movimentacoes": 2,
+        "valorTotal": 0
     },
     {
         "id": "P_3000000337_11410410",
@@ -1646,7 +1770,8 @@ const PARCEIROS_DATA = [
         "lng": -46.25639,
         "tipo": "Fornecedor/Canteiro",
         "volume": 8,
-        "movimentacoes": 2
+        "movimentacoes": 2,
+        "valorTotal": 0
     },
     {
         "id": "P_4600053789_01204001",
@@ -1658,7 +1783,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Canteiro",
         "volume": 47,
-        "movimentacoes": 8
+        "movimentacoes": 8,
+        "valorTotal": 0
     },
     {
         "id": "P_4600052767_09190410",
@@ -1670,7 +1796,8 @@ const PARCEIROS_DATA = [
         "lng": -46.53833,
         "tipo": "Canteiro",
         "volume": 2700,
-        "movimentacoes": 6
+        "movimentacoes": 6,
+        "valorTotal": 0
     },
     {
         "id": "P_4600050553_01141030",
@@ -1682,7 +1809,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Canteiro",
         "volume": 54815,
-        "movimentacoes": 56
+        "movimentacoes": 56,
+        "valorTotal": 0
     },
     {
         "id": "P_4600057020_03969000",
@@ -1694,7 +1822,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Canteiro",
         "volume": 26894,
-        "movimentacoes": 120
+        "movimentacoes": 120,
+        "valorTotal": 0
     },
     {
         "id": "P_4600057005_01156000",
@@ -1706,7 +1835,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Canteiro",
         "volume": 17192,
-        "movimentacoes": 5
+        "movimentacoes": 5,
+        "valorTotal": 0
     },
     {
         "id": "P_4600053582_05001000",
@@ -1718,7 +1848,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Canteiro",
         "volume": 1000,
-        "movimentacoes": 1
+        "movimentacoes": 1,
+        "valorTotal": 0
     },
     {
         "id": "P_4600054608_08371440",
@@ -1730,7 +1861,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Canteiro",
         "volume": 3305.9,
-        "movimentacoes": 11
+        "movimentacoes": 11,
+        "valorTotal": 0
     },
     {
         "id": "P_4600052270_04214040",
@@ -1742,7 +1874,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Canteiro",
         "volume": 27891,
-        "movimentacoes": 127
+        "movimentacoes": 127,
+        "valorTotal": 0
     },
     {
         "id": "P_3000000341_11410410",
@@ -1754,7 +1887,8 @@ const PARCEIROS_DATA = [
         "lng": -46.25639,
         "tipo": "Fornecedor/Canteiro",
         "volume": 4020,
-        "movimentacoes": 4
+        "movimentacoes": 4,
+        "valorTotal": 0
     },
     {
         "id": "P_4600052411_03126007",
@@ -1766,7 +1900,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Canteiro",
         "volume": 25,
-        "movimentacoes": 2
+        "movimentacoes": 2,
+        "valorTotal": 0
     },
     {
         "id": "P_4600060160_17470000",
@@ -1778,7 +1913,8 @@ const PARCEIROS_DATA = [
         "lng": -49.40389,
         "tipo": "Canteiro",
         "volume": 79,
-        "movimentacoes": 2
+        "movimentacoes": 2,
+        "valorTotal": 34868.21
     },
     {
         "id": "P_3000000348_05419000",
@@ -1790,7 +1926,8 @@ const PARCEIROS_DATA = [
         "lng": -46.6924149,
         "tipo": "Fornecedor/Canteiro",
         "volume": 20,
-        "movimentacoes": 2
+        "movimentacoes": 2,
+        "valorTotal": 0
     },
     {
         "id": "P_4600049259_18915792",
@@ -1802,7 +1939,8 @@ const PARCEIROS_DATA = [
         "lng": -49.6325,
         "tipo": "Canteiro",
         "volume": 8,
-        "movimentacoes": 4
+        "movimentacoes": 4,
+        "valorTotal": 0
     },
     {
         "id": "P_4600051503_01141030",
@@ -1814,7 +1952,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Canteiro",
         "volume": 921,
-        "movimentacoes": 6
+        "movimentacoes": 6,
+        "valorTotal": 0
     },
     {
         "id": "P_4600059193_18147000",
@@ -1826,7 +1965,8 @@ const PARCEIROS_DATA = [
         "lng": -47.06139,
         "tipo": "Canteiro",
         "volume": 1,
-        "movimentacoes": 1
+        "movimentacoes": 1,
+        "valorTotal": 0.01
     },
     {
         "id": "P_4600060242_11330220",
@@ -1838,7 +1978,8 @@ const PARCEIROS_DATA = [
         "lng": -46.39194,
         "tipo": "Canteiro",
         "volume": 43,
-        "movimentacoes": 5
+        "movimentacoes": 5,
+        "valorTotal": 69278.14000000001
     },
     {
         "id": "P_4600058100_06543001",
@@ -1850,7 +1991,8 @@ const PARCEIROS_DATA = [
         "lng": -46.91778,
         "tipo": "Canteiro",
         "volume": 36,
-        "movimentacoes": 2
+        "movimentacoes": 2,
+        "valorTotal": 21787.46
     },
     {
         "id": "P_4600062663_03332050",
@@ -1862,7 +2004,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Canteiro",
         "volume": 23000,
-        "movimentacoes": 4
+        "movimentacoes": 4,
+        "valorTotal": 4300
     },
     {
         "id": "P_4600066038_11925000",
@@ -1874,7 +2017,8 @@ const PARCEIROS_DATA = [
         "lng": -47.54,
         "tipo": "Canteiro",
         "volume": 3,
-        "movimentacoes": 2
+        "movimentacoes": 2,
+        "valorTotal": 1680.56
     },
     {
         "id": "P_4600059893_01216000",
@@ -1886,7 +2030,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Canteiro",
         "volume": 340,
-        "movimentacoes": 2
+        "movimentacoes": 2,
+        "valorTotal": 45522.62
     },
     {
         "id": "P_7000016468_14401426",
@@ -1898,7 +2043,8 @@ const PARCEIROS_DATA = [
         "lng": -47.40083,
         "tipo": "Fornecedor",
         "volume": 192378,
-        "movimentacoes": 52
+        "movimentacoes": 52,
+        "valorTotal": 15281127.36
     },
     {
         "id": "P_7000014785_11660660",
@@ -1910,7 +2056,8 @@ const PARCEIROS_DATA = [
         "lng": -45.41306,
         "tipo": "Fornecedor",
         "volume": 2296582,
-        "movimentacoes": 109
+        "movimentacoes": 109,
+        "valorTotal": 9629139.35
     },
     {
         "id": "P_7000018322_89219550",
@@ -1922,7 +2069,8 @@ const PARCEIROS_DATA = [
         "lng": -48.84556,
         "tipo": "Fornecedor",
         "volume": 36770,
-        "movimentacoes": 78
+        "movimentacoes": 78,
+        "valorTotal": 1668432.36
     },
     {
         "id": "P_7000019920_08320280",
@@ -1934,7 +2082,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor",
         "volume": 324893,
-        "movimentacoes": 194
+        "movimentacoes": 194,
+        "valorTotal": 4053288.9199999995
     },
     {
         "id": "P_7000013011_09450000",
@@ -1946,7 +2095,8 @@ const PARCEIROS_DATA = [
         "lng": -46.39833,
         "tipo": "Fornecedor",
         "volume": 90112,
-        "movimentacoes": 53
+        "movimentacoes": 53,
+        "valorTotal": 8109346.599999996
     },
     {
         "id": "P_7000016882_20031902",
@@ -1958,7 +2108,8 @@ const PARCEIROS_DATA = [
         "lng": -43.18223,
         "tipo": "Fornecedor",
         "volume": 177157,
-        "movimentacoes": 161
+        "movimentacoes": 161,
+        "valorTotal": 3869986.55
     },
     {
         "id": "P_7000009927_07224210",
@@ -1970,7 +2121,8 @@ const PARCEIROS_DATA = [
         "lng": -46.53333,
         "tipo": "Fornecedor",
         "volume": 388000,
-        "movimentacoes": 17
+        "movimentacoes": 17,
+        "valorTotal": 1579460
     },
     {
         "id": "P_7000005544_04164180",
@@ -1982,7 +2134,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor",
         "volume": 53200,
-        "movimentacoes": 11
+        "movimentacoes": 11,
+        "valorTotal": 3381383.07
     },
     {
         "id": "P_7000010858_04222902",
@@ -1994,7 +2147,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor",
         "volume": 10680,
-        "movimentacoes": 7
+        "movimentacoes": 7,
+        "valorTotal": 272164.2
     },
     {
         "id": "P_7000019088_93180000",
@@ -2006,7 +2160,8 @@ const PARCEIROS_DATA = [
         "lng": -51.24194,
         "tipo": "Fornecedor",
         "volume": 15256,
-        "movimentacoes": 1044
+        "movimentacoes": 1044,
+        "valorTotal": 1110614.2800000003
     },
     {
         "id": "P_7000033719_12072250",
@@ -2018,7 +2173,8 @@ const PARCEIROS_DATA = [
         "lng": -45.55528,
         "tipo": "Fornecedor",
         "volume": 19786030.0,
-        "movimentacoes": 1555
+        "movimentacoes": 1555,
+        "valorTotal": 32633861.500000004
     },
     {
         "id": "P_7000009012_03502020",
@@ -2030,7 +2186,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor",
         "volume": 7345680,
-        "movimentacoes": 415
+        "movimentacoes": 415,
+        "valorTotal": 12137897.799999999
     },
     {
         "id": "P_7000067890_08290220",
@@ -2042,7 +2199,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor",
         "volume": 60171,
-        "movimentacoes": 39
+        "movimentacoes": 39,
+        "valorTotal": 1242531.15
     },
     {
         "id": "P_7000017323_04580000",
@@ -2054,7 +2212,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor",
         "volume": 1816,
-        "movimentacoes": 32
+        "movimentacoes": 32,
+        "valorTotal": 45731.94
     },
     {
         "id": "P_7000014073_11669320",
@@ -2066,7 +2225,8 @@ const PARCEIROS_DATA = [
         "lng": -45.41306,
         "tipo": "Fornecedor",
         "volume": 11211,
-        "movimentacoes": 495
+        "movimentacoes": 495,
+        "valorTotal": 457894.01
     },
     {
         "id": "P_7000048172_14340000",
@@ -2078,7 +2238,8 @@ const PARCEIROS_DATA = [
         "lng": -47.65861,
         "tipo": "Fornecedor",
         "volume": 22429,
-        "movimentacoes": 594
+        "movimentacoes": 594,
+        "valorTotal": 611694.0599999999
     },
     {
         "id": "P_7000003745_05382010",
@@ -2090,7 +2251,8 @@ const PARCEIROS_DATA = [
         "lng": -46.7614661,
         "tipo": "Fornecedor",
         "volume": 13150,
-        "movimentacoes": 508
+        "movimentacoes": 508,
+        "valorTotal": 1007325.9800000002
     },
     {
         "id": "P_7000060976_02123050",
@@ -2102,7 +2264,8 @@ const PARCEIROS_DATA = [
         "lng": -46.583529,
         "tipo": "Fornecedor",
         "volume": 18,
-        "movimentacoes": 16
+        "movimentacoes": 16,
+        "valorTotal": 158811.51
     },
     {
         "id": "P_7000017846_03022000",
@@ -2114,7 +2277,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor",
         "volume": 2553,
-        "movimentacoes": 182
+        "movimentacoes": 182,
+        "valorTotal": 73917.86999999998
     },
     {
         "id": "P_7000040109_08790260",
@@ -2126,7 +2290,8 @@ const PARCEIROS_DATA = [
         "lng": -46.18833,
         "tipo": "Fornecedor",
         "volume": 7278,
-        "movimentacoes": 206
+        "movimentacoes": 206,
+        "valorTotal": 54868.26
     },
     {
         "id": "P_7000019760_02046090",
@@ -2138,7 +2303,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor",
         "volume": 14134,
-        "movimentacoes": 61
+        "movimentacoes": 61,
+        "valorTotal": 741802.66
     },
     {
         "id": "P_7000030063_13255425",
@@ -2150,7 +2316,8 @@ const PARCEIROS_DATA = [
         "lng": -46.83889,
         "tipo": "Fornecedor",
         "volume": 2800,
-        "movimentacoes": 6
+        "movimentacoes": 6,
+        "valorTotal": 538440
     },
     {
         "id": "P_7000015122_08320280",
@@ -2162,7 +2329,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor",
         "volume": 143459,
-        "movimentacoes": 42
+        "movimentacoes": 42,
+        "valorTotal": 1306271.1
     },
     {
         "id": "P_7000017408_08900000",
@@ -2174,7 +2342,8 @@ const PARCEIROS_DATA = [
         "lng": -46.035,
         "tipo": "Fornecedor",
         "volume": 22664,
-        "movimentacoes": 177
+        "movimentacoes": 177,
+        "valorTotal": 7645335.45
     },
     {
         "id": "P_7000016932_12630000",
@@ -2186,7 +2355,8 @@ const PARCEIROS_DATA = [
         "lng": -45.00944,
         "tipo": "Fornecedor",
         "volume": 891,
-        "movimentacoes": 43
+        "movimentacoes": 43,
+        "valorTotal": 500738.12
     },
     {
         "id": "P_7000011789_18130130",
@@ -2198,7 +2368,8 @@ const PARCEIROS_DATA = [
         "lng": -47.13528,
         "tipo": "Fornecedor",
         "volume": 13,
-        "movimentacoes": 6
+        "movimentacoes": 6,
+        "valorTotal": 6060
     },
     {
         "id": "P_7000022742_13213080",
@@ -2210,7 +2381,8 @@ const PARCEIROS_DATA = [
         "lng": -46.9500033,
         "tipo": "Fornecedor",
         "volume": 9,
-        "movimentacoes": 5
+        "movimentacoes": 5,
+        "valorTotal": 187270
     },
     {
         "id": "P_7000021004_06703570",
@@ -2222,7 +2394,8 @@ const PARCEIROS_DATA = [
         "lng": -46.91917,
         "tipo": "Fornecedor",
         "volume": 18117,
-        "movimentacoes": 52
+        "movimentacoes": 52,
+        "valorTotal": 38816
     },
     {
         "id": "P_7000018782_12929899",
@@ -2234,7 +2407,8 @@ const PARCEIROS_DATA = [
         "lng": -46.54418,
         "tipo": "Fornecedor",
         "volume": 928,
-        "movimentacoes": 112
+        "movimentacoes": 112,
+        "valorTotal": 411250
     },
     {
         "id": "P_7000001501_09843400",
@@ -2246,7 +2420,8 @@ const PARCEIROS_DATA = [
         "lng": -46.565,
         "tipo": "Fornecedor",
         "volume": 1364,
-        "movimentacoes": 83
+        "movimentacoes": 83,
+        "valorTotal": 18385.460000000003
     },
     {
         "id": "P_7000015816_19010030",
@@ -2258,7 +2433,8 @@ const PARCEIROS_DATA = [
         "lng": -51.38889,
         "tipo": "Fornecedor",
         "volume": 92,
-        "movimentacoes": 15
+        "movimentacoes": 15,
+        "valorTotal": 187234.66
     },
     {
         "id": "P_7000021903_02115000",
@@ -2270,7 +2446,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor",
         "volume": 1920,
-        "movimentacoes": 5
+        "movimentacoes": 5,
+        "valorTotal": 142875
     },
     {
         "id": "P_7000014341_08770480",
@@ -2282,7 +2459,8 @@ const PARCEIROS_DATA = [
         "lng": -46.18833,
         "tipo": "Fornecedor",
         "volume": 121.106,
-        "movimentacoes": 2
+        "movimentacoes": 2,
+        "valorTotal": 81336.01
     },
     {
         "id": "P_7000059132_13490000",
@@ -2294,7 +2472,8 @@ const PARCEIROS_DATA = [
         "lng": -47.45667,
         "tipo": "Fornecedor",
         "volume": 2,
-        "movimentacoes": 2
+        "movimentacoes": 2,
+        "valorTotal": 37162.86
     },
     {
         "id": "P_7000051373_04561004",
@@ -2306,7 +2485,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor",
         "volume": 47,
-        "movimentacoes": 9
+        "movimentacoes": 9,
+        "valorTotal": 715.7
     },
     {
         "id": "P_7000057031_07790890",
@@ -2318,7 +2498,8 @@ const PARCEIROS_DATA = [
         "lng": -46.87694,
         "tipo": "Fornecedor",
         "volume": 1521,
-        "movimentacoes": 15
+        "movimentacoes": 15,
+        "valorTotal": 211114.8
     },
     {
         "id": "P_7000018429_13213105",
@@ -2330,7 +2511,8 @@ const PARCEIROS_DATA = [
         "lng": -46.88417,
         "tipo": "Fornecedor",
         "volume": 8,
-        "movimentacoes": 2
+        "movimentacoes": 2,
+        "valorTotal": 160866.19999999998
     },
     {
         "id": "P_7000029973_03109000",
@@ -2342,7 +2524,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor",
         "volume": 6696,
-        "movimentacoes": 1
+        "movimentacoes": 1,
+        "valorTotal": 52429.68
     },
     {
         "id": "P_7000007457_06843195",
@@ -2354,7 +2537,8 @@ const PARCEIROS_DATA = [
         "lng": -46.85222,
         "tipo": "Fornecedor",
         "volume": 2,
-        "movimentacoes": 1
+        "movimentacoes": 1,
+        "valorTotal": 381.61
     },
     {
         "id": "P_7000004993_06807461",
@@ -2366,7 +2550,8 @@ const PARCEIROS_DATA = [
         "lng": -46.85222,
         "tipo": "Fornecedor",
         "volume": 235,
-        "movimentacoes": 1
+        "movimentacoes": 1,
+        "valorTotal": 7322.6
     },
     {
         "id": "P_7000010203_09530260",
@@ -2378,7 +2563,8 @@ const PARCEIROS_DATA = [
         "lng": -46.55111,
         "tipo": "Fornecedor",
         "volume": 30,
-        "movimentacoes": 1
+        "movimentacoes": 1,
+        "valorTotal": 9196.1
     },
     {
         "id": "P_7000009139_09182470",
@@ -2390,7 +2576,8 @@ const PARCEIROS_DATA = [
         "lng": -46.53833,
         "tipo": "Fornecedor",
         "volume": 45,
-        "movimentacoes": 5
+        "movimentacoes": 5,
+        "valorTotal": 4312
     },
     {
         "id": "P_7000015013_11380380",
@@ -2402,7 +2589,8 @@ const PARCEIROS_DATA = [
         "lng": -46.39194,
         "tipo": "Fornecedor",
         "volume": 20,
-        "movimentacoes": 1
+        "movimentacoes": 1,
+        "valorTotal": 2380
     },
     {
         "id": "P_7000006522_04764001",
@@ -2414,7 +2602,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor",
         "volume": 6,
-        "movimentacoes": 1
+        "movimentacoes": 1,
+        "valorTotal": 849.42
     },
     {
         "id": "P_7000016590_08412070",
@@ -2426,7 +2615,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor",
         "volume": 745284,
-        "movimentacoes": 211
+        "movimentacoes": 211,
+        "valorTotal": 100413105.34
     },
     {
         "id": "P_7000051739_13478540",
@@ -2438,7 +2628,8 @@ const PARCEIROS_DATA = [
         "lng": -47.33139,
         "tipo": "Fornecedor",
         "volume": 105000,
-        "movimentacoes": 22
+        "movimentacoes": 22,
+        "valorTotal": 16340250
     },
     {
         "id": "P_7000077946_06835701",
@@ -2450,7 +2641,8 @@ const PARCEIROS_DATA = [
         "lng": -46.85222,
         "tipo": "Fornecedor",
         "volume": 871,
-        "movimentacoes": 116
+        "movimentacoes": 116,
+        "valorTotal": 14297436.22
     },
     {
         "id": "P_7000052709_61888090",
@@ -2462,7 +2654,8 @@ const PARCEIROS_DATA = [
         "lng": -38.52806,
         "tipo": "Fornecedor",
         "volume": 111200,
-        "movimentacoes": 38
+        "movimentacoes": 38,
+        "valorTotal": 41372000
     },
     {
         "id": "P_7000014279_08673010",
@@ -2474,7 +2667,8 @@ const PARCEIROS_DATA = [
         "lng": -46.31083,
         "tipo": "Fornecedor",
         "volume": 141390,
-        "movimentacoes": 37
+        "movimentacoes": 37,
+        "valorTotal": 39003785
     },
     {
         "id": "P_7000051961_09890001",
@@ -2486,7 +2680,8 @@ const PARCEIROS_DATA = [
         "lng": -46.565,
         "tipo": "Fornecedor",
         "volume": 21000,
-        "movimentacoes": 10
+        "movimentacoes": 10,
+        "valorTotal": 9820000
     },
     {
         "id": "P_7000009110_61890000",
@@ -2498,7 +2693,8 @@ const PARCEIROS_DATA = [
         "lng": -38.63722,
         "tipo": "Fornecedor",
         "volume": 84400,
-        "movimentacoes": 24
+        "movimentacoes": 24,
+        "valorTotal": 16343999.73
     },
     {
         "id": "P_7000008353_09890001",
@@ -2510,7 +2706,8 @@ const PARCEIROS_DATA = [
         "lng": -46.565,
         "tipo": "Fornecedor",
         "volume": 22994,
-        "movimentacoes": 18
+        "movimentacoes": 18,
+        "valorTotal": 6763595
     },
     {
         "id": "P_7000005716_06278010",
@@ -2522,7 +2719,8 @@ const PARCEIROS_DATA = [
         "lng": -46.79167,
         "tipo": "Fornecedor",
         "volume": 19830,
-        "movimentacoes": 4
+        "movimentacoes": 4,
+        "valorTotal": 1633080.86
     },
     {
         "id": "P_7000018634_06835701",
@@ -2534,7 +2732,8 @@ const PARCEIROS_DATA = [
         "lng": -46.85222,
         "tipo": "Fornecedor",
         "volume": 2925,
-        "movimentacoes": 5
+        "movimentacoes": 5,
+        "valorTotal": 3935169.0
     },
     {
         "id": "P_7000014674_13250250",
@@ -2546,7 +2745,8 @@ const PARCEIROS_DATA = [
         "lng": -46.83889,
         "tipo": "Fornecedor",
         "volume": 3690,
-        "movimentacoes": 20
+        "movimentacoes": 20,
+        "valorTotal": 3582043
     },
     {
         "id": "P_7000017217_04311000",
@@ -2558,7 +2758,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor",
         "volume": 7390,
-        "movimentacoes": 172
+        "movimentacoes": 172,
+        "valorTotal": 2411859.33
     },
     {
         "id": "P_7000018986_07776235",
@@ -2570,7 +2771,8 @@ const PARCEIROS_DATA = [
         "lng": -46.87694,
         "tipo": "Fornecedor",
         "volume": 132908,
-        "movimentacoes": 786
+        "movimentacoes": 786,
+        "valorTotal": 41096992.16999999
     },
     {
         "id": "P_7000016835_30441055",
@@ -2582,7 +2784,8 @@ const PARCEIROS_DATA = [
         "lng": -43.93778,
         "tipo": "Fornecedor",
         "volume": 2108,
-        "movimentacoes": 122
+        "movimentacoes": 122,
+        "valorTotal": 2732405.5900000003
     },
     {
         "id": "P_7000016007_11015015",
@@ -2594,7 +2797,8 @@ const PARCEIROS_DATA = [
         "lng": -46.33361,
         "tipo": "Fornecedor",
         "volume": 8987,
-        "movimentacoes": 40
+        "movimentacoes": 40,
+        "valorTotal": 78647.78
     },
     {
         "id": "P_7000071015_17740000",
@@ -2606,7 +2810,8 @@ const PARCEIROS_DATA = [
         "lng": -50.72222,
         "tipo": "Fornecedor",
         "volume": 357975,
-        "movimentacoes": 928
+        "movimentacoes": 928,
+        "valorTotal": 3269241.0100000002
     },
     {
         "id": "P_7000019797_13710000",
@@ -2618,7 +2823,8 @@ const PARCEIROS_DATA = [
         "lng": -47.27444,
         "tipo": "Fornecedor",
         "volume": 60371,
-        "movimentacoes": 118
+        "movimentacoes": 118,
+        "valorTotal": 910960.47
     },
     {
         "id": "P_7000020425_06422122",
@@ -2630,7 +2836,8 @@ const PARCEIROS_DATA = [
         "lng": -46.87611,
         "tipo": "Fornecedor",
         "volume": 36749,
-        "movimentacoes": 75
+        "movimentacoes": 75,
+        "valorTotal": 1547310.8499999999
     },
     {
         "id": "P_7000016598_18440000",
@@ -2642,7 +2849,8 @@ const PARCEIROS_DATA = [
         "lng": -49.13722,
         "tipo": "Fornecedor",
         "volume": 999281,
-        "movimentacoes": 848
+        "movimentacoes": 848,
+        "valorTotal": 27844907.27000001
     },
     {
         "id": "P_7000020635_06790160",
@@ -2654,7 +2862,8 @@ const PARCEIROS_DATA = [
         "lng": -46.79167,
         "tipo": "Fornecedor",
         "volume": 69748,
-        "movimentacoes": 98
+        "movimentacoes": 98,
+        "valorTotal": 14206368.31
     },
     {
         "id": "P_7000008031_15350350",
@@ -2666,7 +2875,8 @@ const PARCEIROS_DATA = [
         "lng": -50.55472,
         "tipo": "Fornecedor",
         "volume": 1792,
-        "movimentacoes": 353
+        "movimentacoes": 353,
+        "valorTotal": 315286.2100000001
     },
     {
         "id": "P_7000038540_28470000",
@@ -2678,7 +2888,8 @@ const PARCEIROS_DATA = [
         "lng": -42.18028,
         "tipo": "Fornecedor",
         "volume": 8604,
-        "movimentacoes": 231
+        "movimentacoes": 231,
+        "valorTotal": 4748167.920000001
     },
     {
         "id": "P_7000019502_35547000",
@@ -2690,7 +2901,8 @@ const PARCEIROS_DATA = [
         "lng": -44.87056,
         "tipo": "Fornecedor",
         "volume": 51211,
-        "movimentacoes": 189
+        "movimentacoes": 189,
+        "valorTotal": 24642422.05
     },
     {
         "id": "P_7000032351_02143060",
@@ -2702,7 +2914,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor",
         "volume": 9460,
-        "movimentacoes": 106
+        "movimentacoes": 106,
+        "valorTotal": 570971.9199999999
     },
     {
         "id": "P_7000019400_18087156",
@@ -2714,7 +2927,8 @@ const PARCEIROS_DATA = [
         "lng": -47.45806,
         "tipo": "Fornecedor",
         "volume": 10930,
-        "movimentacoes": 597
+        "movimentacoes": 597,
+        "valorTotal": 8719092.8
     },
     {
         "id": "P_7000035977_29124076",
@@ -2726,7 +2940,8 @@ const PARCEIROS_DATA = [
         "lng": -40.2925,
         "tipo": "Fornecedor",
         "volume": 290,
-        "movimentacoes": 34
+        "movimentacoes": 34,
+        "valorTotal": 140315.12
     },
     {
         "id": "P_7000006413_05656020",
@@ -2738,7 +2953,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor",
         "volume": 32,
-        "movimentacoes": 15
+        "movimentacoes": 15,
+        "valorTotal": 92233.15
     },
     {
         "id": "P_7000002834_09380170",
@@ -2750,7 +2966,8 @@ const PARCEIROS_DATA = [
         "lng": -46.46139,
         "tipo": "Fornecedor",
         "volume": 4784,
-        "movimentacoes": 7
+        "movimentacoes": 7,
+        "valorTotal": 1109929.05
     },
     {
         "id": "P_7000005995_02143060",
@@ -2762,7 +2979,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor",
         "volume": 1448,
-        "movimentacoes": 46
+        "movimentacoes": 46,
+        "valorTotal": 145937.34
     },
     {
         "id": "P_7000001662_29124124",
@@ -2774,7 +2992,8 @@ const PARCEIROS_DATA = [
         "lng": -40.2925,
         "tipo": "Fornecedor",
         "volume": 727,
-        "movimentacoes": 36
+        "movimentacoes": 36,
+        "valorTotal": 106398.21
     },
     {
         "id": "P_7000002368_07776235",
@@ -2786,7 +3005,8 @@ const PARCEIROS_DATA = [
         "lng": -46.87694,
         "tipo": "Fornecedor",
         "volume": 61355,
-        "movimentacoes": 320
+        "movimentacoes": 320,
+        "valorTotal": 12437275.780000001
     },
     {
         "id": "P_7000070971_61900360",
@@ -2798,7 +3018,8 @@ const PARCEIROS_DATA = [
         "lng": -38.62556,
         "tipo": "Fornecedor",
         "volume": 21689,
-        "movimentacoes": 147
+        "movimentacoes": 147,
+        "valorTotal": 3143154.42
     },
     {
         "id": "P_7000008209_05426100",
@@ -2810,7 +3031,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor",
         "volume": 1654,
-        "movimentacoes": 88
+        "movimentacoes": 88,
+        "valorTotal": 907201.5899999999
     },
     {
         "id": "P_7000047986_13477250",
@@ -2822,7 +3044,8 @@ const PARCEIROS_DATA = [
         "lng": -47.33139,
         "tipo": "Fornecedor",
         "volume": 2584,
-        "movimentacoes": 134
+        "movimentacoes": 134,
+        "valorTotal": 4291354.8100000005
     },
     {
         "id": "P_7000005483_09260760",
@@ -2834,7 +3057,8 @@ const PARCEIROS_DATA = [
         "lng": -46.53833,
         "tipo": "Fornecedor",
         "volume": 44022,
-        "movimentacoes": 38
+        "movimentacoes": 38,
+        "valorTotal": 278272.74
     },
     {
         "id": "P_7000012058_17495288",
@@ -2846,7 +3070,8 @@ const PARCEIROS_DATA = [
         "lng": -49.13472,
         "tipo": "Fornecedor",
         "volume": 6059,
-        "movimentacoes": 30
+        "movimentacoes": 30,
+        "valorTotal": 3248948.7
     },
     {
         "id": "P_7000010658_02124001",
@@ -2858,7 +3083,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor",
         "volume": 72,
-        "movimentacoes": 10
+        "movimentacoes": 10,
+        "valorTotal": 106416.48
     },
     {
         "id": "P_7000021663_02552020",
@@ -2870,7 +3096,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor",
         "volume": 5936,
-        "movimentacoes": 39
+        "movimentacoes": 39,
+        "valorTotal": 1963737.7400000002
     },
     {
         "id": "P_7000037848_09380170",
@@ -2882,7 +3109,8 @@ const PARCEIROS_DATA = [
         "lng": -46.46139,
         "tipo": "Fornecedor",
         "volume": 6584,
-        "movimentacoes": 19
+        "movimentacoes": 19,
+        "valorTotal": 2826524.75
     },
     {
         "id": "P_7000002905_18087087",
@@ -2894,7 +3122,8 @@ const PARCEIROS_DATA = [
         "lng": -47.45806,
         "tipo": "Fornecedor",
         "volume": 62,
-        "movimentacoes": 3
+        "movimentacoes": 3,
+        "valorTotal": 3370.84
     },
     {
         "id": "P_7000020944_24465270",
@@ -2906,7 +3135,8 @@ const PARCEIROS_DATA = [
         "lng": -43.05389,
         "tipo": "Fornecedor",
         "volume": 400,
-        "movimentacoes": 2
+        "movimentacoes": 2,
+        "valorTotal": 0
     },
     {
         "id": "P_7000001317_04763280",
@@ -2918,7 +3148,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor",
         "volume": 1,
-        "movimentacoes": 1
+        "movimentacoes": 1,
+        "valorTotal": 0
     },
     {
         "id": "P_7000030242_13505600",
@@ -2930,7 +3161,8 @@ const PARCEIROS_DATA = [
         "lng": -47.56139,
         "tipo": "Fornecedor",
         "volume": 1910964,
-        "movimentacoes": 1261
+        "movimentacoes": 1261,
+        "valorTotal": 39015986.860000014
     },
     {
         "id": "P_7000047953_13318000",
@@ -2942,7 +3174,8 @@ const PARCEIROS_DATA = [
         "lng": -47.13278,
         "tipo": "Fornecedor",
         "volume": 755260,
-        "movimentacoes": 77
+        "movimentacoes": 77,
+        "valorTotal": 3250140.999999999
     },
     {
         "id": "P_7000007747_13505505",
@@ -2954,7 +3187,8 @@ const PARCEIROS_DATA = [
         "lng": -47.56139,
         "tipo": "Fornecedor",
         "volume": 618138,
-        "movimentacoes": 279
+        "movimentacoes": 279,
+        "valorTotal": 4380879.0
     },
     {
         "id": "P_7000020402_06727195",
@@ -2966,7 +3200,8 @@ const PARCEIROS_DATA = [
         "lng": -46.91917,
         "tipo": "Fornecedor",
         "volume": 7493,
-        "movimentacoes": 3
+        "movimentacoes": 3,
+        "valorTotal": 3371.85
     },
     {
         "id": "P_7000028135_08536440",
@@ -2978,7 +3213,8 @@ const PARCEIROS_DATA = [
         "lng": -46.36861,
         "tipo": "Fornecedor",
         "volume": 2063,
-        "movimentacoes": 4
+        "movimentacoes": 4,
+        "valorTotal": 100055.5
     },
     {
         "id": "P_7000018540_39404166",
@@ -2990,7 +3226,8 @@ const PARCEIROS_DATA = [
         "lng": -43.86167,
         "tipo": "Fornecedor",
         "volume": 10,
-        "movimentacoes": 1
+        "movimentacoes": 1,
+        "valorTotal": 340
     },
     {
         "id": "P_7000015863_05001000",
@@ -3002,7 +3239,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor",
         "volume": 200,
-        "movimentacoes": 1
+        "movimentacoes": 1,
+        "valorTotal": 0
     },
     {
         "id": "P_7000015418_05113020",
@@ -3014,7 +3252,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor",
         "volume": 4000,
-        "movimentacoes": 1
+        "movimentacoes": 1,
+        "valorTotal": 0
     },
     {
         "id": "P_7000014034_02552020",
@@ -3026,7 +3265,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor",
         "volume": 43,
-        "movimentacoes": 6
+        "movimentacoes": 6,
+        "valorTotal": 167213.19
     },
     {
         "id": "P_7000017691_04559003",
@@ -3038,7 +3278,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor",
         "volume": 1081,
-        "movimentacoes": 106
+        "movimentacoes": 106,
+        "valorTotal": 21672.600000000002
     },
     {
         "id": "P_7000016393_13971045",
@@ -3050,7 +3291,8 @@ const PARCEIROS_DATA = [
         "lng": -46.82167,
         "tipo": "Fornecedor",
         "volume": 4,
-        "movimentacoes": 4
+        "movimentacoes": 4,
+        "valorTotal": 440117
     },
     {
         "id": "P_7000015083_04571936",
@@ -3062,7 +3304,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor",
         "volume": 3,
-        "movimentacoes": 1
+        "movimentacoes": 1,
+        "valorTotal": 0
     },
     {
         "id": "P_7000059039_06680056",
@@ -3074,7 +3317,8 @@ const PARCEIROS_DATA = [
         "lng": -46.93417,
         "tipo": "Fornecedor",
         "volume": 18048,
-        "movimentacoes": 31
+        "movimentacoes": 31,
+        "valorTotal": 7595999.549999999
     },
     {
         "id": "P_7000006816_02143060",
@@ -3086,7 +3330,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor",
         "volume": 64,
-        "movimentacoes": 4
+        "movimentacoes": 4,
+        "valorTotal": 5408.25
     },
     {
         "id": "P_7000041943_09521320",
@@ -3098,7 +3343,8 @@ const PARCEIROS_DATA = [
         "lng": -46.5785025,
         "tipo": "Fornecedor",
         "volume": 5658,
-        "movimentacoes": 31
+        "movimentacoes": 31,
+        "valorTotal": 267333.58
     },
     {
         "id": "P_7000015682_06790160",
@@ -3110,7 +3356,8 @@ const PARCEIROS_DATA = [
         "lng": -46.79167,
         "tipo": "Fornecedor",
         "volume": 2668,
-        "movimentacoes": 7
+        "movimentacoes": 7,
+        "valorTotal": 349264.74
     },
     {
         "id": "P_7000029703_12960000",
@@ -3122,7 +3369,8 @@ const PARCEIROS_DATA = [
         "lng": -46.395,
         "tipo": "Fornecedor",
         "volume": 1315,
-        "movimentacoes": 6
+        "movimentacoes": 6,
+        "valorTotal": 6043.25
     },
     {
         "id": "P_7000015957_03808120",
@@ -3134,7 +3382,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor",
         "volume": 10,
-        "movimentacoes": 2
+        "movimentacoes": 2,
+        "valorTotal": 15833.74
     },
     {
         "id": "P_7000014235_88030902",
@@ -3146,7 +3395,8 @@ const PARCEIROS_DATA = [
         "lng": -48.54917,
         "tipo": "Fornecedor",
         "volume": 600,
-        "movimentacoes": 2
+        "movimentacoes": 2,
+        "valorTotal": 27264
     },
     {
         "id": "P_7000019289_14078600",
@@ -3158,7 +3408,8 @@ const PARCEIROS_DATA = [
         "lng": -47.81028,
         "tipo": "Fornecedor",
         "volume": 1,
-        "movimentacoes": 1
+        "movimentacoes": 1,
+        "valorTotal": 38072.1
     },
     {
         "id": "P_7000003766_11045550",
@@ -3170,7 +3421,8 @@ const PARCEIROS_DATA = [
         "lng": -46.33361,
         "tipo": "Fornecedor",
         "volume": 164,
-        "movimentacoes": 4
+        "movimentacoes": 4,
+        "valorTotal": 1388.8000000000002
     },
     {
         "id": "P_7000008538_06804260",
@@ -3182,7 +3434,8 @@ const PARCEIROS_DATA = [
         "lng": -46.85222,
         "tipo": "Fornecedor",
         "volume": 8,
-        "movimentacoes": 4
+        "movimentacoes": 4,
+        "valorTotal": 32648.3
     },
     {
         "id": "P_7000012115_06422122",
@@ -3194,7 +3447,8 @@ const PARCEIROS_DATA = [
         "lng": -46.87611,
         "tipo": "Fornecedor",
         "volume": 76,
-        "movimentacoes": 6
+        "movimentacoes": 6,
+        "valorTotal": 1825.2600000000002
     },
     {
         "id": "P_7000006054_09850090",
@@ -3206,7 +3460,8 @@ const PARCEIROS_DATA = [
         "lng": -46.565,
         "tipo": "Fornecedor",
         "volume": 242,
-        "movimentacoes": 5
+        "movimentacoes": 5,
+        "valorTotal": 9129.380000000001
     },
     {
         "id": "P_7000015375_06541065",
@@ -3218,7 +3473,8 @@ const PARCEIROS_DATA = [
         "lng": -46.91778,
         "tipo": "Fornecedor",
         "volume": 11080,
-        "movimentacoes": 5
+        "movimentacoes": 5,
+        "valorTotal": 0
     },
     {
         "id": "P_7000007917_61900360",
@@ -3230,7 +3486,8 @@ const PARCEIROS_DATA = [
         "lng": -38.62556,
         "tipo": "Fornecedor",
         "volume": 270,
-        "movimentacoes": 10
+        "movimentacoes": 10,
+        "valorTotal": 32626.53
     },
     {
         "id": "P_7000010625_09220720",
@@ -3242,7 +3499,8 @@ const PARCEIROS_DATA = [
         "lng": -46.5403444,
         "tipo": "Fornecedor",
         "volume": 68,
-        "movimentacoes": 6
+        "movimentacoes": 6,
+        "valorTotal": 16509.72
     },
     {
         "id": "P_7000050097_09220720",
@@ -3254,7 +3512,8 @@ const PARCEIROS_DATA = [
         "lng": -46.5403444,
         "tipo": "Fornecedor",
         "volume": 522,
-        "movimentacoes": 6
+        "movimentacoes": 6,
+        "valorTotal": 0
     },
     {
         "id": "P_7000016092_03620000",
@@ -3266,7 +3525,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor",
         "volume": 24,
-        "movimentacoes": 3
+        "movimentacoes": 3,
+        "valorTotal": 70704
     },
     {
         "id": "P_7000007944_17740000",
@@ -3278,7 +3538,8 @@ const PARCEIROS_DATA = [
         "lng": -50.72222,
         "tipo": "Fornecedor",
         "volume": 12,
-        "movimentacoes": 2
+        "movimentacoes": 2,
+        "valorTotal": 17100
     },
     {
         "id": "P_7000003090_11800000",
@@ -3290,7 +3551,8 @@ const PARCEIROS_DATA = [
         "lng": -47.63472,
         "tipo": "Fornecedor",
         "volume": 50,
-        "movimentacoes": 9
+        "movimentacoes": 9,
+        "valorTotal": 1028.4199999999998
     },
     {
         "id": "P_7000003801_02871050",
@@ -3302,7 +3564,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor",
         "volume": 3,
-        "movimentacoes": 1
+        "movimentacoes": 1,
+        "valorTotal": 389.7
     },
     {
         "id": "P_7000036835_08675000",
@@ -3314,7 +3577,8 @@ const PARCEIROS_DATA = [
         "lng": -46.31083,
         "tipo": "Fornecedor",
         "volume": 8,
-        "movimentacoes": 1
+        "movimentacoes": 1,
+        "valorTotal": 271.2
     },
     {
         "id": "P_7000015595_14406406",
@@ -3326,7 +3590,8 @@ const PARCEIROS_DATA = [
         "lng": -47.40083,
         "tipo": "Fornecedor",
         "volume": 20,
-        "movimentacoes": 1
+        "movimentacoes": 1,
+        "valorTotal": 123614
     },
     {
         "id": "P_7000034474_04206000",
@@ -3338,7 +3603,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor",
         "volume": 3292,
-        "movimentacoes": 32
+        "movimentacoes": 32,
+        "valorTotal": 578219.6900000001
     },
     {
         "id": "P_7000014230_15400069",
@@ -3350,7 +3616,8 @@ const PARCEIROS_DATA = [
         "lng": -48.91472,
         "tipo": "Fornecedor",
         "volume": 805000,
-        "movimentacoes": 7
+        "movimentacoes": 7,
+        "valorTotal": 35983.5
     },
     {
         "id": "P_7000032439_04717003",
@@ -3362,7 +3629,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor",
         "volume": 365000,
-        "movimentacoes": 7
+        "movimentacoes": 7,
+        "valorTotal": 15950.5
     },
     {
         "id": "P_7000030368_06711250",
@@ -3374,7 +3642,8 @@ const PARCEIROS_DATA = [
         "lng": -46.8390873,
         "tipo": "Fornecedor",
         "volume": 40,
-        "movimentacoes": 1
+        "movimentacoes": 1,
+        "valorTotal": 160000
     },
     {
         "id": "P_7000038859_30140091",
@@ -3386,7 +3655,8 @@ const PARCEIROS_DATA = [
         "lng": -43.93778,
         "tipo": "Fornecedor",
         "volume": 32,
-        "movimentacoes": 1
+        "movimentacoes": 1,
+        "valorTotal": 12320
     },
     {
         "id": "P_7000004454_13171171",
@@ -3398,7 +3668,8 @@ const PARCEIROS_DATA = [
         "lng": -47.26694,
         "tipo": "Fornecedor",
         "volume": 9009,
-        "movimentacoes": 2
+        "movimentacoes": 2,
+        "valorTotal": 113490
     },
     {
         "id": "P_7000030136_75515610",
@@ -3410,7 +3681,8 @@ const PARCEIROS_DATA = [
         "lng": -49.21528,
         "tipo": "Fornecedor",
         "volume": 2,
-        "movimentacoes": 1
+        "movimentacoes": 1,
+        "valorTotal": 22361.48
     },
     {
         "id": "P_7000022141_08740110",
@@ -3422,7 +3694,8 @@ const PARCEIROS_DATA = [
         "lng": -46.18833,
         "tipo": "Fornecedor",
         "volume": 1177,
-        "movimentacoes": 11
+        "movimentacoes": 11,
+        "valorTotal": 15709.82
     },
     {
         "id": "P_7000070807_05136001",
@@ -3434,7 +3707,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor",
         "volume": 1160,
-        "movimentacoes": 4
+        "movimentacoes": 4,
+        "valorTotal": 31459.6
     },
     {
         "id": "P_7000070968_02615060",
@@ -3446,7 +3720,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor",
         "volume": 9822,
-        "movimentacoes": 11
+        "movimentacoes": 11,
+        "valorTotal": 32712
     },
     {
         "id": "P_7000032018_04782000",
@@ -3458,7 +3733,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor",
         "volume": 6,
-        "movimentacoes": 1
+        "movimentacoes": 1,
+        "valorTotal": 29074.5
     },
     {
         "id": "P_7000018565_02120020",
@@ -3470,7 +3746,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor",
         "volume": 120,
-        "movimentacoes": 20
+        "movimentacoes": 20,
+        "valorTotal": 45334.8
     },
     {
         "id": "P_7000016592_05814110",
@@ -3482,7 +3759,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor",
         "volume": 1,
-        "movimentacoes": 1
+        "movimentacoes": 1,
+        "valorTotal": 154875
     },
     {
         "id": "P_7000000086_18314899",
@@ -3494,7 +3772,8 @@ const PARCEIROS_DATA = [
         "lng": -48.53278,
         "tipo": "Fornecedor",
         "volume": 592,
-        "movimentacoes": 21
+        "movimentacoes": 21,
+        "valorTotal": 562688.88
     },
     {
         "id": "P_7000021061_03408020",
@@ -3506,7 +3785,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor",
         "volume": 40,
-        "movimentacoes": 4
+        "movimentacoes": 4,
+        "valorTotal": 52191.2
     },
     {
         "id": "P_7000019372_06543308",
@@ -3518,7 +3798,8 @@ const PARCEIROS_DATA = [
         "lng": -46.91778,
         "tipo": "Fornecedor",
         "volume": 158,
-        "movimentacoes": 8
+        "movimentacoes": 8,
+        "valorTotal": 353756.19999999995
     },
     {
         "id": "P_7000016464_11660410",
@@ -3530,7 +3811,8 @@ const PARCEIROS_DATA = [
         "lng": -45.41306,
         "tipo": "Fornecedor",
         "volume": 3,
-        "movimentacoes": 3
+        "movimentacoes": 3,
+        "valorTotal": 55709
     },
     {
         "id": "P_7000018916_09190610",
@@ -3542,7 +3824,8 @@ const PARCEIROS_DATA = [
         "lng": -46.53833,
         "tipo": "Fornecedor",
         "volume": 16,
-        "movimentacoes": 4
+        "movimentacoes": 4,
+        "valorTotal": 12388
     },
     {
         "id": "P_7000072229_09890510",
@@ -3554,7 +3837,8 @@ const PARCEIROS_DATA = [
         "lng": -46.565,
         "tipo": "Fornecedor",
         "volume": 60,
-        "movimentacoes": 1
+        "movimentacoes": 1,
+        "valorTotal": 63974.4
     },
     {
         "id": "P_7000017066_83504450",
@@ -3566,7 +3850,8 @@ const PARCEIROS_DATA = [
         "lng": -49.31,
         "tipo": "Fornecedor",
         "volume": 5,
-        "movimentacoes": 1
+        "movimentacoes": 1,
+        "valorTotal": 26600
     },
     {
         "id": "P_7000017415_13015082",
@@ -3578,7 +3863,8 @@ const PARCEIROS_DATA = [
         "lng": -47.0560834,
         "tipo": "Fornecedor",
         "volume": 2495,
-        "movimentacoes": 48
+        "movimentacoes": 48,
+        "valorTotal": 1655757.5900000008
     },
     {
         "id": "P_7000003219_14115000",
@@ -3590,7 +3876,8 @@ const PARCEIROS_DATA = [
         "lng": -48.03491,
         "tipo": "Fornecedor",
         "volume": 20,
-        "movimentacoes": 4
+        "movimentacoes": 4,
+        "valorTotal": 28500
     },
     {
         "id": "P_7000016943_13731285",
@@ -3602,7 +3889,8 @@ const PARCEIROS_DATA = [
         "lng": -47.00472,
         "tipo": "Fornecedor",
         "volume": 582,
-        "movimentacoes": 2
+        "movimentacoes": 2,
+        "valorTotal": 40158
     },
     {
         "id": "P_7000035449_03073070",
@@ -3614,7 +3902,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor",
         "volume": 140,
-        "movimentacoes": 25
+        "movimentacoes": 25,
+        "valorTotal": 3292500
     },
     {
         "id": "P_7000018927_05311030",
@@ -3626,7 +3915,8 @@ const PARCEIROS_DATA = [
         "lng": -46.7367439,
         "tipo": "Fornecedor",
         "volume": 5,
-        "movimentacoes": 1
+        "movimentacoes": 1,
+        "valorTotal": 24250
     },
     {
         "id": "P_7000017494_04041901",
@@ -3638,7 +3928,8 @@ const PARCEIROS_DATA = [
         "lng": -46.637745657107345,
         "tipo": "Fornecedor",
         "volume": 20,
-        "movimentacoes": 16
+        "movimentacoes": 16,
+        "valorTotal": 178000
     },
     {
         "id": "P_7000019433_13202570",
@@ -3650,7 +3941,8 @@ const PARCEIROS_DATA = [
         "lng": -46.88417,
         "tipo": "Fornecedor",
         "volume": 64,
-        "movimentacoes": 2
+        "movimentacoes": 2,
+        "valorTotal": 261200
     },
     {
         "id": "P_7000016121_18706706",
@@ -3662,7 +3954,8 @@ const PARCEIROS_DATA = [
         "lng": -48.92583,
         "tipo": "Fornecedor",
         "volume": 1,
-        "movimentacoes": 1
+        "movimentacoes": 1,
+        "valorTotal": 149876.26
     },
     {
         "id": "P_7000006390_13732540",
@@ -3674,7 +3967,8 @@ const PARCEIROS_DATA = [
         "lng": -47.00472,
         "tipo": "Fornecedor",
         "volume": 212,
-        "movimentacoes": 3
+        "movimentacoes": 3,
+        "valorTotal": 31951.120000000003
     },
     {
         "id": "P_7000017471_03102060",
@@ -3686,7 +3980,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor",
         "volume": 24,
-        "movimentacoes": 8
+        "movimentacoes": 8,
+        "valorTotal": 34674
     },
     {
         "id": "P_7000015038_11020020",
@@ -3698,7 +3993,8 @@ const PARCEIROS_DATA = [
         "lng": -46.33361,
         "tipo": "Fornecedor",
         "volume": 28,
-        "movimentacoes": 1
+        "movimentacoes": 1,
+        "valorTotal": 19600
     },
     {
         "id": "P_7000016917_06539010",
@@ -3710,7 +4006,8 @@ const PARCEIROS_DATA = [
         "lng": -46.91778,
         "tipo": "Fornecedor",
         "volume": 9,
-        "movimentacoes": 1
+        "movimentacoes": 1,
+        "valorTotal": 7823.25
     },
     {
         "id": "P_7000051533_83015130",
@@ -3722,7 +4019,8 @@ const PARCEIROS_DATA = [
         "lng": -49.20836,
         "tipo": "Fornecedor",
         "volume": 30,
-        "movimentacoes": 2
+        "movimentacoes": 2,
+        "valorTotal": 25502.4
     },
     {
         "id": "P_7000021604_13040093",
@@ -3734,7 +4032,8 @@ const PARCEIROS_DATA = [
         "lng": -47.06083,
         "tipo": "Fornecedor",
         "volume": 40,
-        "movimentacoes": 1
+        "movimentacoes": 1,
+        "valorTotal": 323120
     },
     {
         "id": "P_7000018229_13213180",
@@ -3746,7 +4045,8 @@ const PARCEIROS_DATA = [
         "lng": -46.88417,
         "tipo": "Fornecedor",
         "volume": 4,
-        "movimentacoes": 3
+        "movimentacoes": 3,
+        "valorTotal": 50044.689999999995
     },
     {
         "id": "P_7000057073_09290330",
@@ -3758,7 +4058,8 @@ const PARCEIROS_DATA = [
         "lng": -46.53833,
         "tipo": "Fornecedor",
         "volume": 350,
-        "movimentacoes": 2
+        "movimentacoes": 2,
+        "valorTotal": 45500
     },
     {
         "id": "P_7000007189_12224853",
@@ -3770,7 +4071,8 @@ const PARCEIROS_DATA = [
         "lng": -45.8072864,
         "tipo": "Fornecedor",
         "volume": 745,
-        "movimentacoes": 28
+        "movimentacoes": 28,
+        "valorTotal": 29816.15
     },
     {
         "id": "P_7000002544_41820560",
@@ -3782,7 +4084,8 @@ const PARCEIROS_DATA = [
         "lng": -38.49096,
         "tipo": "Fornecedor",
         "volume": 100,
-        "movimentacoes": 1
+        "movimentacoes": 1,
+        "valorTotal": 1080000
     },
     {
         "id": "P_7000021398_08485525",
@@ -3794,7 +4097,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor",
         "volume": 309,
-        "movimentacoes": 6
+        "movimentacoes": 6,
+        "valorTotal": 49436.3
     },
     {
         "id": "P_7000037790_05069900",
@@ -3806,7 +4110,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor",
         "volume": 240,
-        "movimentacoes": 2
+        "movimentacoes": 2,
+        "valorTotal": 1422292.8
     },
     {
         "id": "P_7000016312_03105000",
@@ -3818,7 +4123,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor",
         "volume": 12,
-        "movimentacoes": 8
+        "movimentacoes": 8,
+        "valorTotal": 720000
     },
     {
         "id": "P_7000008291_04571010",
@@ -3830,7 +4136,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor",
         "volume": 25,
-        "movimentacoes": 11
+        "movimentacoes": 11,
+        "valorTotal": 1763702.0299999998
     },
     {
         "id": "P_7000008954_04220002",
@@ -3842,7 +4149,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor",
         "volume": 11,
-        "movimentacoes": 1
+        "movimentacoes": 1,
+        "valorTotal": 715
     },
     {
         "id": "P_7000010273_05686900",
@@ -3854,7 +4162,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor",
         "volume": 6,
-        "movimentacoes": 3
+        "movimentacoes": 3,
+        "valorTotal": 2861.4
     },
     {
         "id": "P_7000019748_04571936",
@@ -3866,7 +4175,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor",
         "volume": 2000,
-        "movimentacoes": 1
+        "movimentacoes": 1,
+        "valorTotal": 1200000
     },
     {
         "id": "P_7000033580_99950000",
@@ -3878,7 +4188,8 @@ const PARCEIROS_DATA = [
         "lng": -52.01389,
         "tipo": "Fornecedor",
         "volume": 204,
-        "movimentacoes": 25
+        "movimentacoes": 25,
+        "valorTotal": 296604
     },
     {
         "id": "P_7000016614_07171030",
@@ -3890,7 +4201,8 @@ const PARCEIROS_DATA = [
         "lng": -46.53333,
         "tipo": "Fornecedor",
         "volume": 2,
-        "movimentacoes": 2
+        "movimentacoes": 2,
+        "valorTotal": 156812
     },
     {
         "id": "P_7000032772_16306172",
@@ -3902,7 +4214,8 @@ const PARCEIROS_DATA = [
         "lng": -50.0775,
         "tipo": "Fornecedor",
         "volume": 200,
-        "movimentacoes": 1
+        "movimentacoes": 1,
+        "valorTotal": 1940
     },
     {
         "id": "P_7000019040_06411310",
@@ -3914,7 +4227,8 @@ const PARCEIROS_DATA = [
         "lng": -46.87611,
         "tipo": "Fornecedor",
         "volume": 16000,
-        "movimentacoes": 10
+        "movimentacoes": 10,
+        "valorTotal": 59200
     },
     {
         "id": "P_7000007656_06765310",
@@ -3926,7 +4240,8 @@ const PARCEIROS_DATA = [
         "lng": -46.79167,
         "tipo": "Fornecedor",
         "volume": 4,
-        "movimentacoes": 1
+        "movimentacoes": 1,
+        "valorTotal": 4363.88
     },
     {
         "id": "P_7000012869_05711001",
@@ -3938,7 +4253,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor",
         "volume": 3088.4260000000004,
-        "movimentacoes": 4
+        "movimentacoes": 4,
+        "valorTotal": 521106.22
     },
     {
         "id": "P_7000003015_07747300",
@@ -3950,7 +4266,8 @@ const PARCEIROS_DATA = [
         "lng": -46.74056,
         "tipo": "Fornecedor",
         "volume": 26,
-        "movimentacoes": 1
+        "movimentacoes": 1,
+        "valorTotal": 6557.07
     },
     {
         "id": "P_7000015976_05001000",
@@ -3962,7 +4279,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor",
         "volume": 8,
-        "movimentacoes": 4
+        "movimentacoes": 4,
+        "valorTotal": 0
     },
     {
         "id": "P_7000003513_06401000",
@@ -3974,7 +4292,8 @@ const PARCEIROS_DATA = [
         "lng": -46.87611,
         "tipo": "Fornecedor",
         "volume": 14,
-        "movimentacoes": 6
+        "movimentacoes": 6,
+        "valorTotal": 50350
     },
     {
         "id": "P_7000031443_92420530",
@@ -3986,7 +4305,8 @@ const PARCEIROS_DATA = [
         "lng": -51.18361,
         "tipo": "Fornecedor",
         "volume": 3541,
-        "movimentacoes": 34
+        "movimentacoes": 34,
+        "valorTotal": 39051.87
     },
     {
         "id": "P_7000018590_13188900",
@@ -3998,7 +4318,8 @@ const PARCEIROS_DATA = [
         "lng": -47.22,
         "tipo": "Fornecedor",
         "volume": 6971,
-        "movimentacoes": 462
+        "movimentacoes": 462,
+        "valorTotal": 318267
     },
     {
         "id": "P_7000019405_06454000",
@@ -4010,7 +4331,8 @@ const PARCEIROS_DATA = [
         "lng": -46.87611,
         "tipo": "Fornecedor",
         "volume": 20,
-        "movimentacoes": 5
+        "movimentacoes": 5,
+        "valorTotal": 717254.78
     },
     {
         "id": "P_7000079592_05089000",
@@ -4022,7 +4344,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor",
         "volume": 202,
-        "movimentacoes": 17
+        "movimentacoes": 17,
+        "valorTotal": 76809.90000000001
     },
     {
         "id": "P_7000079600_83434715",
@@ -4034,7 +4357,8 @@ const PARCEIROS_DATA = [
         "lng": -49.05528,
         "tipo": "Fornecedor",
         "volume": 186,
-        "movimentacoes": 8
+        "movimentacoes": 8,
+        "valorTotal": 62324.87999999999
     },
     {
         "id": "P_7000071707_05092000",
@@ -4046,7 +4370,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor",
         "volume": 7650,
-        "movimentacoes": 4
+        "movimentacoes": 4,
+        "valorTotal": 18307
     },
     {
         "id": "P_7000080291_17512875",
@@ -4058,7 +4383,8 @@ const PARCEIROS_DATA = [
         "lng": -49.94583,
         "tipo": "Fornecedor",
         "volume": 178,
-        "movimentacoes": 1
+        "movimentacoes": 1,
+        "valorTotal": 9772.2
     },
     {
         "id": "P_7000013109_90470470",
@@ -4070,7 +4396,8 @@ const PARCEIROS_DATA = [
         "lng": -51.23019,
         "tipo": "Fornecedor",
         "volume": 50910,
-        "movimentacoes": 9
+        "movimentacoes": 9,
+        "valorTotal": 198039.90000000002
     },
     {
         "id": "P_7000001702_13503503",
@@ -4082,7 +4409,8 @@ const PARCEIROS_DATA = [
         "lng": -47.56139,
         "tipo": "Fornecedor",
         "volume": 12320,
-        "movimentacoes": 1
+        "movimentacoes": 1,
+        "valorTotal": 23601.96
     },
     {
         "id": "P_7000009511_02017002",
@@ -4094,7 +4422,8 @@ const PARCEIROS_DATA = [
         "lng": -46.63611,
         "tipo": "Fornecedor",
         "volume": 53040,
-        "movimentacoes": 4
+        "movimentacoes": 4,
+        "valorTotal": 32610.77
     }
 ];
 

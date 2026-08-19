@@ -209,12 +209,20 @@ class MeasurementTool {
         const cd = this.hubA;
         const partner = this.hubB;
         const tipo = partner.tipo || "Parceiro";
+        
+        const formatBRL = (val) => new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(val || 0);
+        const formatNum = (val) => new Intl.NumberFormat('pt-BR').format(val || 0);
 
         return `Roteirização de Malha Logística Sabesp\n` +
                `Centro de Distribuição (CD): ${cd.nome} (${cd.cidade} - ${cd.uf})\n` +
                `Endereço CD: ${cd.endereco}\n` +
                `Parceiro (${tipo}): ID ${partner.codigo} (${partner.cidade} - CEP ${partner.cep})\n` +
                `Endereço Parceiro: ${partner.rua || "Não informado"}\n` +
+               `\n[Dados do Parceiro]\n` +
+               `Movimentações: ${formatNum(partner.movimentacoes)}\n` +
+               `Volume Movimentado: ${formatNum(partner.volume)}\n` +
+               `Valor Total: ${formatBRL(partner.valorTotal)}\n\n` +
+               `[Rotas]\n` +
                `Rota por estrada: ${rota}\n` +
                `Linha reta (geodésica): ${reta}\n` +
                `Tempo de viagem estimado: ${tempo}\n`;
@@ -268,19 +276,29 @@ class MeasurementTool {
     _criarLabelPontoB() {
         const partner = this.hubB;
         const tipo = partner.tipo || "Parceiro";
+        
+        const formatBRL = (val) => new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(val || 0);
+        const formatNum = (val) => new Intl.NumberFormat('pt-BR').format(val || 0);
+
         const html = `
-            <div class="point-label-card">
+            <div class="point-label-card" style="padding: 10px; width: 200px;">
                 <div class="point-tag tag-b">${tipo.toUpperCase()}</div>
-                <div class="point-hub-name">ID: ${partner.codigo}</div>
-                <div class="point-volume">${partner.cidade} (CEP: ${partner.cep})</div>
+                <div class="point-hub-name" style="margin-bottom: 4px;">ID: ${partner.codigo}</div>
+                <div class="point-volume" style="margin-bottom: 8px;">${partner.cidade} (CEP: ${partner.cep})</div>
+                
+                <div style="font-size: 11px; color: #a1a1aa; line-height: 1.4; border-top: 1px solid #3f3f46; padding-top: 6px;">
+                    <div><strong>Movimentações:</strong> ${formatNum(partner.movimentacoes)}</div>
+                    <div><strong>Volume:</strong> ${formatNum(partner.volume)}</div>
+                    <div><strong>Valor:</strong> <span style="color: #4ade80;">${formatBRL(partner.valorTotal)}</span></div>
+                </div>
             </div>
         `;
         this.pointLabelB = L.marker([partner.lat, partner.lng], {
             icon: L.divIcon({
                 className: "route-point-label",
                 html: html,
-                iconSize: [180, 70],
-                iconAnchor: [90, -10],
+                iconSize: [220, 140],
+                iconAnchor: [110, -10],
             }),
             interactive: false,
         }).addTo(this.map);
