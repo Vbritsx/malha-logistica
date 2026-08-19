@@ -274,13 +274,32 @@ function _atualizarMarcadoresVisuais() {
     const selectCdVal = document.getElementById("select-cd").value;
     const selectPartnerVal = document.getElementById("select-parceiro").value;
 
-    // Highlight CD (Ponto A)
-    if (selectCdVal && cdMarkers[selectCdVal]) {
-        const el = cdMarkers[selectCdVal].getElement();
-        if (el) {
-            const dot = el.querySelector(".hub-marker");
-            if (dot) dot.classList.add("selected-a");
-        }
+    // Highlight CD (Ponto A) e escurecer os não selecionados
+    if (selectCdVal) {
+        Object.keys(cdMarkers).forEach(id => {
+            const marker = cdMarkers[id];
+            const el = marker.getElement();
+            if (el) {
+                const dot = el.querySelector(".hub-marker");
+                if (dot) {
+                    if (id === selectCdVal) {
+                        dot.classList.add("selected-a");
+                        dot.style.opacity = "1";
+                    } else {
+                        dot.style.opacity = "0.2"; // Escurece os CDs não filtrados
+                    }
+                }
+            }
+        });
+    } else {
+        // Restaurar opacidade de todos se nenhum CD estiver selecionado
+        Object.values(cdMarkers).forEach(marker => {
+            const el = marker.getElement();
+            if (el) {
+                const dot = el.querySelector(".hub-marker");
+                if (dot) dot.style.opacity = "1";
+            }
+        });
     }
 
     // Ponto B (Parceiro) é tratado no redesenho dos fluxos, mas se medido, realça ele.
