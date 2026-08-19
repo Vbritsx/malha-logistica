@@ -323,8 +323,6 @@ function _exibirResultados(resultado) {
     document.getElementById("result-to").innerHTML =
         `Destino: <strong>🔷 ID ${partner.codigo} (${partner.tipo})</strong>`;
 
-    document.getElementById("result-reta-value").textContent =
-        `${resultado.reta.toFixed(1)} km`;
     document.getElementById("result-rota-value").textContent =
         `${resultado.rota.toFixed(1)} km`;
     document.getElementById("result-tempo-value").textContent =
