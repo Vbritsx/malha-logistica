@@ -291,7 +291,8 @@ def processar():
                     "tipo": tipo_parceiro,
                     "volume": 0,
                     "movimentacoes": 0,
-                    "valorTotal": 0
+                    "valorTotal": 0,
+                    "materiais": []
                 }
             
             # Se o mesmo parceiro atua em ambas direções, atualiza o tipo ou mantém genérico
@@ -301,6 +302,8 @@ def processar():
             parceiros[partner_id]["volume"] += volume
             parceiros[partner_id]["movimentacoes"] += movs
             parceiros[partner_id]["valorTotal"] += valor
+            if material and material not in parceiros[partner_id]["materiais"]:
+                parceiros[partner_id]["materiais"].append(material)
             
             # Registrar fluxo
             fluxos.append({

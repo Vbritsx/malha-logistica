@@ -375,15 +375,22 @@ function plotPartners() {
             fillOpacity: 0.6
         });
 
+        const materiaisStr = p.materiais && p.materiais.length > 0 ? p.materiais.join(", ") : "Não informado";
+        const valorFormatado = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(p.valorTotal || 0);
+
         const popupContent = `
-            <div class="hub-popup">
+            <div class="hub-popup" style="width: 240px;">
                 <div class="hub-name">
                     <span class="status-dot" style="background-color: var(--text-secondary)"></span>
                     Parceiro: ${p.codigo}
                 </div>
                 <div class="hub-location">${p.cidade} | CEP: ${p.cep}</div>
-                <div class="hub-volume">Volume Total: <strong>${formatarNumero(p.volume)}</strong></div>
+                <div class="hub-volume" style="margin-top: 6px;">Volume: <strong>${formatarNumero(p.volume)}</strong></div>
                 <div class="hub-volume">Movimentações: <strong>${formatarNumero(p.movimentacoes)}</strong></div>
+                <div class="hub-volume">Valor Total: <strong style="color: #4ade80;">${valorFormatado}</strong></div>
+                <div class="hub-volume" style="margin-top: 6px; border-top: 1px solid #3f3f46; padding-top: 6px;">
+                    Material: <strong>${materiaisStr}</strong>
+                </div>
             </div>
         `;
         marker.bindPopup(popupContent, { maxWidth: 250 });
