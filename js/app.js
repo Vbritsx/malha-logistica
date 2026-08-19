@@ -296,6 +296,15 @@ function _atualizarMarcadoresVisuais() {
             });
         }
     }
+
+    // Ocultar levemente as linhas macro para dar destaque à rota medida
+    flowLayerGroup.eachLayer(layer => {
+        if (measurementTool.isActive) {
+            layer.setStyle({ opacity: 0.1 });
+        } else {
+            layer.setStyle({ opacity: 0.5 });
+        }
+    });
 }
 
 /**
