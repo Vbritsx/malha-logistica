@@ -135,61 +135,24 @@ def processar():
 
     print(f"Total de CDs únicos para geocodificar: {len(cds_info)}")
     for cd_code, info in cds_info.items():
-        # Geocodificar CD
-        lat, lng = None, None
+        # Coordenadas precisas predefinidas para os 12 CDs da Sabesp
+        cd_exact_coords = {
+            "D002": (-23.5262, -46.6346), # Ponte Pequena
+            "D019": (-23.5284, -46.7025), # Lapa
+            "D020": (-23.5593, -46.6083), # Mooca
+            "D024": (-23.6335, -46.6806), # Santo Amaro / Alto da Boa Vista
+            "D028": (-23.4930, -46.7230), # Pirituba
+            "D029": (-23.4952, -46.4388), # São Miguel Paulista
+            "D030": (-23.5788, -46.5922), # Vila Prudente
+            "D034": (-23.4357, -46.6346), # Pedra Branca / Guaraú
+            "D035": (-23.6639, -46.5383), # Santo André
+            "D040": (-23.5425, -46.3108), # Suzano
+            "D075": (-23.6062, -46.4678), # São Mateus
+            "D094": (-23.5230, -46.7554), # Vila dos Remédios
+        }
         
-        # 1. Tentar por CEP
-        if info["cep"]:
-            cep_key = info["cep"]
-            if cep_key in cache and cache[cep_key]:
-                lat = cache[cep_key]["lat"]
-                lng = cache[cep_key]["lng"]
-                print(f"CD {cd_code} ({info['nome']}) geocodificado por CEP no cache.")
-            else:
-                print(f"Buscando coordenadas por CEP para CD {cd_code}...")
-                res = geocodificar_cep(info["cep"])
-                if res:
-                    cache[cep_key] = res
-                    lat, lng = res["lat"], res["lng"]
-                    novos_geocods += 1
-                    time.sleep(0.2)
-                    
-        # 2. Se falhar, tentar por Endereço no Nominatim
-        if (lat is None or lng is None) and info["endereco"]:
-            addr_key = f"ADDR_{info['endereco']}"
-            if addr_key in cache and cache[addr_key]:
-                lat = cache[addr_key]["lat"]
-                lng = cache[addr_key]["lng"]
-                print(f"CD {cd_code} ({info['nome']}) geocodificado por Endereço no cache.")
-            else:
-                print(f"Buscando coordenadas por Endereço para CD {cd_code}...")
-                res = geocodificar_endereco(info["endereco"])
-                if res:
-                    cache[addr_key] = res
-                    lat, lng = res["lat"], res["lng"]
-                    novos_geocods += 1
-                    time.sleep(0.5) # Delay maior para o Nominatim
-
-        # 3. Fallback fixo de segurança se tudo falhar
-        if lat is None or lng is None:
-            # Usar coordenadas aproximadas anteriores ou padrão SP
-            fallback_coords = {
-                "D002": (-22.7388, -47.3323),
-                "D019": (-23.5284, -46.7025),
-                "D020": (-23.5593, -46.6083),
-                "D024": (-23.6335, -46.6806),
-                "D028": (-23.4930, -46.7230),
-                "D029": (-23.4952, -46.4388),
-                "D030": (-23.5788, -46.5922),
-                "D034": (-23.4357, -46.6346),
-                "D035": (-23.6599, -46.5298),
-                "D040": (-23.5604, -46.3090),
-                "D075": (-23.6062, -46.4678),
-                "D094": (-23.5230, -46.7554),
-            }
-            lat, lng = fallback_coords.get(cd_code, (-23.5505, -46.6333))
-            print(f"CD {cd_code} usando fallback fixo.")
-            
+        lat, lng = cd_exact_coords.get(cd_code, (-23.5505, -46.6333))
+        
         info["lat"] = lat
         info["lng"] = lng
 
