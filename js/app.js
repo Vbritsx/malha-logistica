@@ -69,12 +69,13 @@ function initMap() {
  */
 function plotCDs() {
     CDS_DATA.forEach(cd => {
+        const houseSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>`;
         const marker = L.marker([cd.lat, cd.lng], {
             icon: L.divIcon({
                 className: "",
-                html: `<div class="hub-marker" data-cd-id="${cd.id}"></div>`,
-                iconSize: [14, 14],
-                iconAnchor: [7, 7],
+                html: `<div class="hub-marker" data-cd-id="${cd.id}">${houseSvg}</div>`,
+                iconSize: [28, 28],
+                iconAnchor: [14, 14],
             }),
         });
 
