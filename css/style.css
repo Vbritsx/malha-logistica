@@ -935,7 +935,7 @@ html, body {
 .partner-footer {
     position: fixed;
     bottom: -100px;
-    left: 50%;
+    left: calc(340px + (100vw - 340px) / 2);
     transform: translateX(-50%);
     background: var(--bg-panel);
     border: 1px solid var(--border-color);
