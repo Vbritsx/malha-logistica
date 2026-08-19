@@ -136,10 +136,10 @@ function initPanelControls() {
         const cdId = selectCd.value;
         const inboundChecked = checkInbound.checked;
         const outboundChecked = checkOutbound.checked;
-        
+
         measurementTool.limpar();
         document.getElementById("measurement-results").classList.remove("active");
-        
+
         atualizarDropdownParceiros(cdId, inboundChecked, outboundChecked);
         atualizarMapaFluxos(cdId);
         _atualizarMarcadoresVisuais();
@@ -151,10 +151,10 @@ function initPanelControls() {
         const cdId = selectCd.value;
         const inboundChecked = checkInbound.checked;
         const outboundChecked = checkOutbound.checked;
-        
+
         measurementTool.limpar();
         document.getElementById("measurement-results").classList.remove("active");
-        
+
         atualizarDropdownParceiros(cdId, inboundChecked, outboundChecked);
         atualizarMapaFluxos(cdId);
         _atualizarMarcadoresVisuais();
@@ -168,7 +168,7 @@ function initPanelControls() {
     selectParceiro.addEventListener("change", () => {
         measurementTool.limpar();
         document.getElementById("measurement-results").classList.remove("active");
-        
+
         _atualizarMarcadoresVisuais();
         _atualizarEstadoBotaoMedir();
     });
@@ -177,7 +177,7 @@ function initPanelControls() {
     btnMedir.addEventListener("click", async () => {
         const cdId = selectCd.value;
         const partnerId = selectParceiro.value;
-        
+
         const cdObj = CDS_DATA.find(c => c.id === cdId);
         const partnerObj = PARCEIROS_DATA.find(p => p.id === partnerId);
 
@@ -399,25 +399,25 @@ function plotPartners() {
 function atualizarDropdownParceiros(cdId, inboundChecked, outboundChecked) {
     const selectParceiro = document.getElementById("select-parceiro");
     selectParceiro.innerHTML = '<option value="">Selecione o Parceiro...</option>';
-    
+
     if (!cdId || (!inboundChecked && !outboundChecked)) {
         selectParceiro.disabled = true;
         return;
     }
-    
+
     // Filtrar fluxos do CD
     const fluxosCD = FLUXOS_DATA.filter(f => {
         const matchCD = f.origem === cdId || f.destino === cdId;
         if (!matchCD) return false;
-        
+
         if (f.direcao === "SAÍDA") return outboundChecked;
         if (f.direcao === "ENTRADA") return inboundChecked;
         return false;
     });
-    
+
     const parceirosVistos = new Set();
     const parceirosFiltrados = [];
-    
+
     fluxosCD.forEach(f => {
         const partnerId = f.origem === cdId ? f.destino : f.origem;
         if (!parceirosVistos.has(partnerId)) {
@@ -428,10 +428,10 @@ function atualizarDropdownParceiros(cdId, inboundChecked, outboundChecked) {
             }
         }
     });
-    
+
     // Ordenar parceiros por código numérico/alfabético
     parceirosFiltrados.sort((a, b) => a.codigo.localeCompare(b.codigo));
-    
+
     if (parceirosFiltrados.length > 0) {
         selectParceiro.disabled = false;
         parceirosFiltrados.forEach(p => {
@@ -477,7 +477,7 @@ function atualizarMapaFluxos(cdId) {
     const fluxosCD = FLUXOS_DATA.filter(f => {
         const matchCD = f.origem === cdId || f.destino === cdId;
         if (!matchCD) return false;
-        
+
         if (f.direcao === "SAÍDA") return outboundChecked;
         if (f.direcao === "ENTRADA") return inboundChecked;
         return false;
