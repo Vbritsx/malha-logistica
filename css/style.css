@@ -930,3 +930,90 @@ html, body {
         padding: var(--sp-lg);
     }
 }
+
+/* Partner Bottom Footer */
+.partner-footer {
+    position: fixed;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--bg-panel);
+    border: 1px solid var(--border-color);
+    border-radius: 12px 12px 0 0;
+    padding: 12px 24px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+    transition: bottom 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    color: var(--text-primary);
+    pointer-events: auto;
+}
+
+.partner-footer.active {
+    bottom: 0;
+}
+
+.pf-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.pf-tag {
+    font-size: 10px;
+    font-weight: 700;
+    background: var(--accent-cyan);
+    color: #111;
+    padding: 2px 6px;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+}
+
+.pf-header strong {
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.pf-divider {
+    width: 1px;
+    height: 30px;
+    background: var(--border-color);
+}
+
+.pf-data {
+    display: flex;
+    gap: 24px;
+}
+
+.pf-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.pf-item span {
+    font-size: 10px;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 2px;
+}
+
+.pf-item strong {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.pf-material {
+    max-width: 250px;
+}
+
+.pf-material strong {
+    font-size: 12px;
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

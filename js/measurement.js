@@ -130,6 +130,11 @@ class MeasurementTool {
             this.map.removeLayer(this.routeInfoMarker);
             this.routeInfoMarker = null;
         }
+        
+        // Hide footer
+        const footer = document.getElementById("partner-footer");
+        if (footer) footer.classList.remove("active");
+
         this.isActive = false;
     }
 
@@ -260,29 +265,38 @@ class MeasurementTool {
         const formatBRL = (val) => new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(val || 0);
         const formatNum = (val) => new Intl.NumberFormat('pt-BR').format(val || 0);
 
+        // 1. Mostrar um label sutil no mapa (Apenas tag e ID)
         const html = `
-            <div class="point-label-card" style="padding: 10px; width: 220px;">
-                <div class="point-tag tag-b">${tipo.toUpperCase()}</div>
-                <div class="point-hub-name" style="margin-bottom: 4px;">ID: ${partner.codigo}</div>
-                <div class="point-volume" style="margin-bottom: 8px;">${partner.cidade} (CEP: ${partner.cep})</div>
-                
-                <div style="font-size: 11px; color: #a1a1aa; line-height: 1.4; border-top: 1px solid #3f3f46; padding-top: 6px;">
-                    <div><strong>Movimentações:</strong> ${formatNum(partner.movimentacoes)}</div>
-                    <div><strong>Volume:</strong> ${formatNum(partner.volume)}</div>
-                    <div><strong>Valor:</strong> <span style="color: #4ade80;">${formatBRL(partner.valorTotal)}</span></div>
-                    <div style="margin-top: 3px;"><strong>Material:</strong> ${materiaisStr}</div>
-                </div>
+            <div class="point-label-card" style="padding: 6px 12px; width: max-content; min-width: 100px;">
+                <div class="point-tag tag-b" style="margin-bottom: 2px;">${tipo.toUpperCase()}</div>
+                <div class="point-hub-name" style="font-size: 11px;">ID: ${partner.codigo}</div>
             </div>
         `;
         this.pointLabelB = L.marker([partner.lat, partner.lng], {
             icon: L.divIcon({
                 className: "route-point-label",
                 html: html,
-                iconSize: [240, 150],
-                iconAnchor: [120, -10],
+                iconSize: [120, 50],
+                iconAnchor: [60, -10],
             }),
             interactive: false,
         }).addTo(this.map);
+
+        // 2. Preencher o rodapé inferior e ativá-lo
+        const footer = document.getElementById("partner-footer");
+        if (footer) {
+            document.getElementById("pf-tag").textContent = tipo.toUpperCase();
+            document.getElementById("pf-nome").textContent = `ID: ${partner.codigo} (${partner.cidade})`;
+            document.getElementById("pf-mov").textContent = formatNum(partner.movimentacoes);
+            document.getElementById("pf-vol").textContent = formatNum(partner.volume);
+            document.getElementById("pf-val").textContent = formatBRL(partner.valorTotal);
+            document.getElementById("pf-mat").textContent = materiaisStr;
+            
+            // Adicionar uma pequena latência visual para o slide-up ficar charmoso
+            setTimeout(() => {
+                footer.classList.add("active");
+            }, 100);
+        }
     }
 
     _criarInfoRotaMeio(rotaData) {
