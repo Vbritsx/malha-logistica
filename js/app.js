@@ -16,6 +16,8 @@ let cdMarkers = {};  // id → L.marker
 let partnerMarkers = {}; // partner_id → L.circleMarker
 let partnerLayerGroup;
 let flowLayerGroup;
+let currentTileLayer;
+let isDarkMode = true;
 
 /**
  * Formata um número para o padrão de exibição brasileiro.
@@ -48,20 +50,36 @@ function initMap() {
         attributionControl: true,
     });
 
-    // Tiles — CartoDB Dark Matter (tema escuro)
-    L.tileLayer(
-        "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
-        {
-            attribution:
-                '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/">CARTO</a>',
-            subdomains: "abcd",
-            maxZoom: 19,
-        }
-    ).addTo(map);
+    _setMapTheme();
+
+    // Event listener for theme toggle
+    const themeBtn = document.getElementById("map-theme-toggle");
+    if (themeBtn) {
+        themeBtn.addEventListener("click", () => {
+            isDarkMode = !isDarkMode;
+            themeBtn.innerHTML = isDarkMode ? '<span class="icon">☀️</span>' : '<span class="icon">🌙</span>';
+            _setMapTheme();
+        });
+    }
 
     // Grupos de camadas para parceiros e fluxos
     partnerLayerGroup = L.layerGroup().addTo(map);
     flowLayerGroup = L.layerGroup().addTo(map);
+}
+
+function _setMapTheme() {
+    if (currentTileLayer) {
+        map.removeLayer(currentTileLayer);
+    }
+    const tileUrl = isDarkMode 
+        ? "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
+        : "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png";
+
+    currentTileLayer = L.tileLayer(tileUrl, {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/">CARTO</a>',
+        subdomains: "abcd",
+        maxZoom: 19,
+    }).addTo(map);
 }
 
 /**
