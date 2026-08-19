@@ -118,10 +118,6 @@ class MeasurementTool {
             this.map.removeLayer(this.routeLayer);
             this.routeLayer = null;
         }
-        if (this.straightLineLayer) {
-            this.map.removeLayer(this.straightLineLayer);
-            this.straightLineLayer = null;
-        }
         if (this.pointLabelA) {
             this.map.removeLayer(this.pointLabelA);
             this.pointLabelA = null;
@@ -153,29 +149,26 @@ class MeasurementTool {
         const { lat: lat1, lng: lng1 } = this.hubA;
         const { lat: lat2, lng: lng2 } = this.hubB;
 
-        // 1. Distância em linha reta
-        const distanciaReta = calcularDistanciaReta(lat1, lng1, lat2, lng2);
-
-        // 2. Rota OSRM
+        // Distância OSRM
         let rotaData;
         try {
             rotaData = await buscarRotaOSRM(lat1, lng1, lat2, lng2);
         } catch (err) {
             console.error("Erro ao buscar rota OSRM:", err);
-            // Fallback: usar só a linha reta
+            // Fallback (se API falhar, simula)
+            const fallbackDist = calcularDistanciaReta(lat1, lng1, lat2, lng2) * 1.3;
             rotaData = {
-                distance: distanciaReta * 1.3, // Estimativa grosseira
-                duration: (distanciaReta * 1.3) / 80 * 60, // ~80km/h
+                distance: fallbackDist, // Estimativa grosseira
+                duration: fallbackDist / 80 * 60, // ~80km/h
                 coordinates: [[lat1, lng1], [lat2, lng2]],
             };
         }
 
-        // 3. Desenhar no mapa
-        this._desenharLinhaReta(lat1, lng1, lat2, lng2);
+        // Desenhar no mapa
         this._desenharRotaDirigida(rotaData.coordinates);
         this._criarLabelPontoA();
         this._criarLabelPontoB();
-        this._criarInfoRotaMeio(rotaData, distanciaReta);
+        this._criarInfoRotaMeio(rotaData);
 
         // 4. Ajustar o zoom do mapa para enquadrar a rota
         const bounds = L.latLngBounds([
@@ -185,7 +178,6 @@ class MeasurementTool {
         this.map.fitBounds(bounds.pad(0.3));
 
         return {
-            reta: distanciaReta,
             rota: rotaData.distance,
             duracao: rotaData.duration,
         };
@@ -198,11 +190,9 @@ class MeasurementTool {
         if (!this.hubA || !this.hubB || !this.isActive) {
             return "";
         }
-        const retaEl = document.getElementById("result-reta-value");
         const rotaEl = document.getElementById("result-rota-value");
         const tempoEl = document.getElementById("result-tempo-value");
 
-        const reta = retaEl ? retaEl.textContent : "N/A";
         const rota = rotaEl ? rotaEl.textContent : "N/A";
         const tempo = tempoEl ? tempoEl.textContent : "N/A";
 
@@ -226,24 +216,11 @@ class MeasurementTool {
                `Categoria(s) de Material: ${materiaisStr}\n\n` +
                `[Rotas]\n` +
                `Rota por estrada: ${rota}\n` +
-               `Linha reta (geodésica): ${reta}\n` +
                `Tempo de viagem estimado: ${tempo}\n`;
     }
 
 
     /* ── Métodos internos de desenho ── */
-
-    _desenharLinhaReta(lat1, lng1, lat2, lng2) {
-        this.straightLineLayer = L.polyline(
-            [[lat1, lng1], [lat2, lng2]],
-            {
-                color: "#fbbf24",
-                weight: 2.5,
-                dashArray: "10, 8",
-                opacity: 0.8,
-            }
-        ).addTo(this.map);
-    }
 
     _desenharRotaDirigida(coordinates) {
         this.routeLayer = L.polyline(coordinates, {
@@ -308,7 +285,7 @@ class MeasurementTool {
         }).addTo(this.map);
     }
 
-    _criarInfoRotaMeio(rotaData, distanciaReta) {
+    _criarInfoRotaMeio(rotaData) {
         // Ponto médio da rota real (usa o ponto do meio do array de coordenadas)
         const coords = rotaData.coordinates;
         const midIdx = Math.floor(coords.length / 2);
@@ -316,16 +293,12 @@ class MeasurementTool {
 
         const distKm = rotaData.distance.toFixed(1);
         const tempoMin = Math.round(rotaData.duration);
-        const retaKm = distanciaReta.toFixed(1);
 
         const html = `
-            <div class="route-info-card">
+            <div class="route-info-card" style="justify-content: center;">
                 <div class="route-driven">
                     🚗 Rota: ${distKm} km
                     <span class="time-badge">~${tempoMin}min</span>
-                </div>
-                <div class="route-straight">
-                    <span>📏</span> Reta: ${retaKm} km
                 </div>
             </div>
         `;
