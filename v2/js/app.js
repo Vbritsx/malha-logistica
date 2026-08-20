@@ -320,20 +320,8 @@ function _atualizarMarcadoresVisuais() {
         });
     }
 
-    // Ponto B (Parceiro) é tratado no redesenho dos fluxos, mas se medido, realça ele.
-    if (selectPartnerVal && partnerMarkers[selectPartnerVal]) {
-        // Estilizar parceiro selecionado se medição estiver ativa
-        if (measurementTool.isActive) {
-            partnerMarkers[selectPartnerVal].setStyle({
-                radius: 8,
-                fillColor: "#fbbf24", // Amarelo para Ponto B final
-                fillOpacity: 1.0,
-                weight: 2,
-                color: "#ffffff"
-            });
-        }
-    }
-
+    // Ponto B (Parceiro) é tratado no redesenho dos fluxos e no label do measurementTool.
+    // Não precisamos alterar o estilo (SVG) original dele aqui na v2.
     // Ocultar levemente as linhas macro para dar destaque à rota medida
     flowLayerGroup.eachLayer(layer => {
         if (measurementTool.isActive) {
