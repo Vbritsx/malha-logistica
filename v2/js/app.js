@@ -408,7 +408,7 @@ function _mostrarToast(msg) {
 
 const svgTruck = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>`;
 
-const svgConstruction = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"></path><path d="M5 20V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v14"></path><path d="M13 20v-8a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v8"></path><path d="M9 16h2"></path><path d="M9 12h2"></path></svg>`;
+const svgConstruction = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 22v-5l5-5 5 5-5 5z"/><path d="M9.5 14.5L16 8"/><path d="m17 2 5 5-.5.5a2.12 2.12 0 0 1-3 0l-1.5-1.5a2.12 2.12 0 0 1 0-3L17 2z"/></svg>`;
 
 const iconInactive = L.divIcon({
     className: 'partner-icon-inactive',
