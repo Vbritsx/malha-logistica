@@ -406,18 +406,39 @@ function _mostrarToast(msg) {
     }, 2500);
 }
 
+const svgTruck = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>`;
+
+const svgConstruction = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"></path><path d="M5 20V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v14"></path><path d="M13 20v-8a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v8"></path><path d="M9 16h2"></path><path d="M9 12h2"></path></svg>`;
+
+const iconInactive = L.divIcon({
+    className: 'partner-icon-inactive',
+    html: '<div class="dot-inactive"></div>',
+    iconSize: [12, 12],
+    iconAnchor: [6, 6]
+});
+
+const iconFornecedor = L.divIcon({
+    className: 'partner-icon-fornecedor',
+    html: `<div class="icon-wrapper truck-icon">${svgTruck}</div>`,
+    iconSize: [28, 28],
+    iconAnchor: [14, 14]
+});
+
+const iconCanteiro = L.divIcon({
+    className: 'partner-icon-canteiro',
+    html: `<div class="icon-wrapper canteiro-icon">${svgConstruction}</div>`,
+    iconSize: [28, 28],
+    iconAnchor: [14, 14]
+});
+
 /**
- * Plota todos os parceiros (Clientes/Fornecedores) como pequenos círculos no mapa.
+ * Plota todos os parceiros (Clientes/Fornecedores) como pequenos marcadores inativos no mapa.
  */
 function plotPartners() {
     PARCEIROS_DATA.forEach(p => {
-        const marker = L.circleMarker([p.lat, p.lng], {
-            radius: 4,
-            fillColor: "#9898b8",
-            color: "#1a1a2e",
-            weight: 1,
-            opacity: 0.8,
-            fillOpacity: 0.6
+        const marker = L.marker([p.lat, p.lng], {
+            icon: iconInactive,
+            opacity: 0.8
         });
 
         const materiaisStr = p.materiais && p.materiais.length > 0 ? p.materiais.join(", ") : "Não informado";
@@ -516,13 +537,7 @@ async function atualizarMapaFluxos(cdId) {
     // 2. Se nenhum CD selecionado ou nenhuma direção marcada, restaurar todos os parceiros
     if (!cdId || (!inboundChecked && !outboundChecked)) {
         Object.values(partnerMarkers).forEach(marker => {
-            marker.setStyle({
-                radius: 4,
-                fillColor: "#9898b8",
-                fillOpacity: 0.6,
-                weight: 1,
-                color: "#1a1a2e"
-            });
+            marker.setIcon(iconInactive);
             if (!partnerLayerGroup.hasLayer(marker)) {
                 partnerLayerGroup.addLayer(marker);
             }
@@ -552,13 +567,7 @@ async function atualizarMapaFluxos(cdId) {
             const fluxo = fluxosCD.find(f => f.origem === id || f.destino === id);
             const isSaida = fluxo.direcao === "SAÍDA";
 
-            marker.setStyle({
-                radius: 6,
-                fillColor: isSaida ? "#00d4ff" : "#ff8c42", // Ciano para saída (Clientes), Laranja para entrada (Fornecedores)
-                fillOpacity: 0.95,
-                weight: 1,
-                color: "#1a1a2e"
-            });
+            marker.setIcon(isSaida ? iconCanteiro : iconFornecedor);
 
             if (!partnerLayerGroup.hasLayer(marker)) {
                 partnerLayerGroup.addLayer(marker);

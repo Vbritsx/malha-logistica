@@ -1043,3 +1043,47 @@ html, body {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+/* Partner Icons (v2) */
+.partner-icon-inactive {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.partner-icon-inactive .dot-inactive {
+    width: 8px;
+    height: 8px;
+    background-color: #9898b8;
+    border: 1px solid #1a1a2e;
+    border-radius: 50%;
+    opacity: 0.6;
+}
+
+.icon-wrapper {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #1a1a2e;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    color: #1a1a2e;
+}
+
+.truck-icon {
+    background-color: #ff8c42; /* Laranja para fornecedor */
+}
+.truck-icon svg {
+    width: 16px;
+    height: 16px;
+}
+
+.canteiro-icon {
+    background-color: #00d4ff; /* Ciano para canteiro */
+}
+.canteiro-icon svg {
+    width: 16px;
+    height: 16px;
+}
