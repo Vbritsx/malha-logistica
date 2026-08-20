@@ -615,8 +615,11 @@ async function atualizarMapaFluxos(cdId) {
             parceirosUnicos.set(partnerId, f);
         }
 
-        // Se for Canteiro (SAÍDA), somar agregados
-        if (f.direcao === "SAÍDA") {
+        // Agregar de acordo com os filtros de In/Out ativos
+        const matchOutbound = f.direcao === "SAÍDA" && outboundChecked;
+        const matchInbound = f.direcao === "ENTRADA" && inboundChecked;
+
+        if (matchOutbound || matchInbound) {
             volumeTotal += f.volume || 0;
             movimentacoesTotal += f.movimentacoes || 0;
             if (f.material) materiaisSet.add(f.material);
@@ -640,6 +643,29 @@ async function atualizarMapaFluxos(cdId) {
     // Atualizar UI do CD Footer
     const cdFooter = document.getElementById("cd-footer");
     if (cdFooter) {
+        let title = "RESUMO GERAL";
+        let lblQtd = "Qtd. Parceiros";
+        let lblValor = "Valor Total";
+
+        if (inboundChecked && !outboundChecked) {
+            title = "RESUMO (FORNECEDORES)";
+            lblQtd = "Qtd. Fornecedores";
+            lblValor = "Valor Recebido";
+        } else if (!inboundChecked && outboundChecked) {
+            title = "RESUMO (CANTEIROS)";
+            lblQtd = "Qtd. Canteiros";
+            lblValor = "Valor Enviado";
+        }
+
+        const tagTitle = document.getElementById("cdf-tag-title");
+        if (tagTitle) tagTitle.textContent = title;
+        
+        const spanQtd = document.getElementById("cdf-lbl-qtd");
+        if (spanQtd) spanQtd.textContent = lblQtd;
+        
+        const spanValor = document.getElementById("cdf-lbl-valor");
+        if (spanValor) spanValor.textContent = lblValor;
+
         document.getElementById("cdf-nome").textContent = cdObj.nome;
         document.getElementById("cdf-canteiros").textContent = qtdCanteiros;
         document.getElementById("cdf-valor").textContent = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(valorEnviado);
