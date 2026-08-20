@@ -500,8 +500,13 @@ function atualizarDropdownParceiros(cdId, inboundChecked, outboundChecked) {
 
 /**
  * Atualiza o mapa exibindo apenas os parceiros e fluxos vinculados ao CD selecionado.
+ * Na V2, as linhas são rotas terrestres reais via OSRM.
  */
-function atualizarMapaFluxos(cdId) {
+
+// Cache global de rotas OSRM para evitar chamadas repetidas
+const _routeCache = {};
+
+async function atualizarMapaFluxos(cdId) {
     const inboundChecked = document.getElementById("check-inbound").checked;
     const outboundChecked = document.getElementById("check-outbound").checked;
 
@@ -564,28 +569,61 @@ function atualizarMapaFluxos(cdId) {
         }
     });
 
-    // 5. Desenhar linhas de fluxo
+    // 5. Desenhar rotas terrestres reais (OSRM)
     const cdObj = CDS_DATA.find(h => h.id === cdId);
     if (!cdObj) return;
 
     const cdLatLng = [cdObj.lat, cdObj.lng];
     const bounds = L.latLngBounds([cdLatLng]);
 
+    // Agrupar fluxos por parceiro único (evita duplicatas de rota)
+    const parceirosUnicos = new Map();
     fluxosCD.forEach(f => {
         const partnerId = f.origem === cdId ? f.destino : f.origem;
+        if (!parceirosUnicos.has(partnerId)) {
+            parceirosUnicos.set(partnerId, f);
+        }
+    });
+
+    // Processar rotas em lotes para não sobrecarregar a API
+    const entries = Array.from(parceirosUnicos.entries());
+    
+    for (let i = 0; i < entries.length; i++) {
+        const [partnerId, f] = entries[i];
         const partnerObj = PARCEIROS_DATA.find(p => p.id === partnerId);
-        if (!partnerObj) return;
+        if (!partnerObj) continue;
 
         const partnerLatLng = [partnerObj.lat, partnerObj.lng];
         bounds.extend(partnerLatLng);
 
         const isSaida = f.direcao === "SAÍDA";
         const corLinha = isSaida ? "#00d4ff" : "#ff8c42";
+        const peso = Math.max(1.5, Math.min(5, f.volume / 50000));
 
-        // Espessura proporcional ao volume
-        const peso = Math.max(1.5, Math.min(7, f.volume / 50000));
+        // Chave de cache baseada nas coordenadas
+        const cacheKey = `${cdObj.lat},${cdObj.lng}_${partnerObj.lat},${partnerObj.lng}`;
 
-        const poly = L.polyline([cdLatLng, partnerLatLng], {
+        let routeCoords;
+        if (_routeCache[cacheKey]) {
+            // Usar rota do cache
+            routeCoords = _routeCache[cacheKey];
+        } else {
+            // Buscar rota real via OSRM
+            try {
+                const rotaData = await buscarRotaOSRM(cdObj.lat, cdObj.lng, partnerObj.lat, partnerObj.lng);
+                routeCoords = rotaData.coordinates;
+                _routeCache[cacheKey] = routeCoords;
+            } catch (err) {
+                // Fallback: linha reta se a API falhar
+                routeCoords = [cdLatLng, partnerLatLng];
+            }
+            // Pequena pausa entre chamadas para respeitar rate limit da API
+            if (i < entries.length - 1) {
+                await new Promise(r => setTimeout(r, 80));
+            }
+        }
+
+        const poly = L.polyline(routeCoords, {
             color: corLinha,
             weight: peso,
             opacity: 0.5,
