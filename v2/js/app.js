@@ -585,6 +585,28 @@ async function atualizarMapaFluxos(cdId) {
     const cdLatLng = [cdObj.lat, cdObj.lng];
     const bounds = L.latLngBounds([cdLatLng]);
 
+    // Calcular agregados de Inteligência do CD
+    let qtdCanteiros = 0;
+    let valorEnviado = 0;
+    let materiaisSet = new Set();
+    let volumeTotal = 0;
+    let movimentacoesTotal = 0;
+    let dist50 = 0;
+    let dist100 = 0;
+    let distMais = 0;
+    const canteirosUnicos = new Set();
+
+    function calcularDistanciaHaversine(lat1, lon1, lat2, lon2) {
+        const R = 6371; // Raio da Terra em km
+        const dLat = (lat2 - lat1) * Math.PI / 180;
+        const dLon = (lon2 - lon1) * Math.PI / 180;
+        const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+                  Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+                  Math.sin(dLon/2) * Math.sin(dLon/2);
+        const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+        return R * c;
+    }
+
     // Agrupar fluxos por parceiro único (evita duplicatas de rota)
     const parceirosUnicos = new Map();
     fluxosCD.forEach(f => {
@@ -592,7 +614,57 @@ async function atualizarMapaFluxos(cdId) {
         if (!parceirosUnicos.has(partnerId)) {
             parceirosUnicos.set(partnerId, f);
         }
+
+        // Se for Canteiro (SAÍDA), somar agregados
+        if (f.direcao === "SAÍDA") {
+            volumeTotal += f.volume || 0;
+            movimentacoesTotal += f.movimentacoes || 0;
+            if (f.material) materiaisSet.add(f.material);
+
+            if (!canteirosUnicos.has(partnerId)) {
+                canteirosUnicos.add(partnerId);
+                const partnerObj = PARCEIROS_DATA.find(p => p.id === partnerId);
+                if (partnerObj) {
+                    valorEnviado += partnerObj.valorTotal || 0;
+                    const distKm = calcularDistanciaHaversine(cdObj.lat, cdObj.lng, partnerObj.lat, partnerObj.lng);
+                    if (distKm <= 50) dist50++;
+                    else if (distKm <= 100) dist100++;
+                    else distMais++;
+                }
+            }
+        }
     });
+
+    qtdCanteiros = canteirosUnicos.size;
+
+    // Atualizar UI do CD Footer
+    const cdFooter = document.getElementById("cd-footer");
+    if (cdFooter) {
+        document.getElementById("cdf-nome").textContent = cdObj.nome;
+        document.getElementById("cdf-canteiros").textContent = qtdCanteiros;
+        document.getElementById("cdf-valor").textContent = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(valorEnviado);
+        document.getElementById("cdf-materiais").textContent = materiaisSet.size;
+        document.getElementById("cdf-volume").textContent = formatarNumero(volumeTotal);
+        document.getElementById("cdf-movimentacoes").textContent = formatarNumero(movimentacoesTotal);
+
+        document.getElementById("val-50").textContent = dist50;
+        document.getElementById("val-100").textContent = dist100;
+        document.getElementById("val-mais").textContent = distMais;
+
+        const setBar = (id, val) => {
+            const pct = qtdCanteiros === 0 ? 0 : (val / qtdCanteiros) * 100;
+            document.getElementById(id).style.width = pct + "%";
+        };
+        setBar("bar-50", dist50);
+        setBar("bar-100", dist100);
+        setBar("bar-mais", distMais);
+
+        if (qtdCanteiros > 0 || fluxosCD.length > 0) {
+            cdFooter.classList.add("active");
+        } else {
+            cdFooter.classList.remove("active");
+        }
+    }
 
     // Processar rotas em lotes para não sobrecarregar a API
     const entries = Array.from(parceirosUnicos.entries());

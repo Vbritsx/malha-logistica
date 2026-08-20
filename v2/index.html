@@ -195,6 +195,64 @@
     </div>
 
     <!-- ══════════════════════════════════════════════════════════════════════
+         CD INTELLIGENCE FOOTER
+         ══════════════════════════════════════════════════════════════════════ -->
+    <div id="cd-footer" class="cd-footer">
+        <!-- Esquerda: Agregados do CD -->
+        <div class="cd-footer-left">
+            <div class="cdf-header">
+                <span class="cdf-tag">RESUMO DO CD</span>
+                <strong id="cdf-nome">CD Nome</strong>
+            </div>
+            <div class="pf-divider"></div>
+            <div class="cdf-metrics">
+                <div class="cdf-item">
+                    <span>Qtd. Canteiros</span>
+                    <strong id="cdf-canteiros">0</strong>
+                </div>
+                <div class="cdf-item">
+                    <span>Valor Enviado</span>
+                    <strong id="cdf-valor" style="color: #4ade80;">R$ 0,00</strong>
+                </div>
+                <div class="cdf-item">
+                    <span>Qtd. Materiais</span>
+                    <strong id="cdf-materiais">0</strong>
+                </div>
+                <div class="cdf-item">
+                    <span>Volume Total</span>
+                    <strong id="cdf-volume">0</strong>
+                </div>
+                <div class="cdf-item">
+                    <span>Movimentações</span>
+                    <strong id="cdf-movimentacoes">0</strong>
+                </div>
+            </div>
+        </div>
+
+        <!-- Direita: Distribuição por Distância -->
+        <div class="cd-footer-right">
+            <div class="cdf-range-title">Raio de Ação (Distância em Linha Reta)</div>
+            <div class="cdf-ranges">
+                <div class="cdf-range-item">
+                    <div class="range-label">0-50 km</div>
+                    <div class="range-bar"><div id="bar-50" class="bar-fill" style="width: 0%; background: #4ade80;"></div></div>
+                    <div class="range-val" id="val-50">0</div>
+                </div>
+                <div class="cdf-range-item">
+                    <div class="range-label">51-100 km</div>
+                    <div class="range-bar"><div id="bar-100" class="bar-fill" style="width: 0%; background: #facc15;"></div></div>
+                    <div class="range-val" id="val-100">0</div>
+                </div>
+                <div class="cdf-range-item">
+                    <div class="range-label">+100 km</div>
+                    <div class="range-bar"><div id="bar-mais" class="bar-fill" style="width: 0%; background: #f87171;"></div></div>
+                    <div class="range-val" id="val-mais">0</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════════════════════════
          SCRIPTS
          ══════════════════════════════════════════════════════════════════════ -->
     <!-- Leaflet JS -->

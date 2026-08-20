@@ -135,6 +135,10 @@ class MeasurementTool {
         const footer = document.getElementById("partner-footer");
         if (footer) footer.classList.remove("active");
 
+        const selectCdVal = document.getElementById("select-cd")?.value;
+        const cdFooter = document.getElementById("cd-footer");
+        if (cdFooter && selectCdVal) cdFooter.classList.add("active");
+
         this.isActive = false;
     }
 
@@ -294,6 +298,8 @@ class MeasurementTool {
             
             // Adicionar uma pequena latência visual para o slide-up ficar charmoso
             setTimeout(() => {
+                const cdFooter = document.getElementById("cd-footer");
+                if (cdFooter) cdFooter.classList.remove("active");
                 footer.classList.add("active");
             }, 100);
         }

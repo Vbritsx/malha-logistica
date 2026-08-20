@@ -1087,3 +1087,134 @@ html, body {
     width: 16px;
     height: 16px;
 }
+
+/* CD Intelligence Footer (v2) */
+.cd-footer {
+    position: fixed;
+    bottom: -150px; /* Escondido */
+    left: calc(340px + (100vw - 340px) / 2);
+    transform: translateX(-50%);
+    background: var(--bg-panel);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 16px 24px;
+    display: flex;
+    gap: 32px;
+    align-items: stretch;
+    box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.7);
+    z-index: 999; /* Fica abaixo do partner-footer (1000) se ambos ativos */
+    transition: bottom 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    color: var(--text-primary);
+    pointer-events: auto;
+    width: max-content;
+    max-width: calc(100vw - 360px);
+}
+
+.cd-footer.active {
+    bottom: 20px;
+}
+
+.cd-footer-left {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.cdf-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    min-width: 100px;
+}
+
+.cdf-tag {
+    font-size: 10px;
+    font-weight: 700;
+    background: var(--accent-yellow);
+    color: #111;
+    padding: 2px 6px;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+}
+
+.cdf-metrics {
+    display: flex;
+    gap: 24px;
+}
+
+.cdf-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.cdf-item span {
+    font-size: 10px;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 2px;
+}
+
+.cdf-item strong {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* CD Footer Right (Ranges) */
+.cd-footer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 24px;
+    border-left: 1px solid var(--border-color);
+    min-width: 200px;
+}
+
+.cdf-range-title {
+    font-size: 10px;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+}
+
+.cdf-ranges {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.cdf-range-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+}
+
+.range-label {
+    width: 55px;
+    text-align: right;
+    color: var(--text-muted);
+}
+
+.range-bar {
+    flex: 1;
+    height: 6px;
+    background: var(--bg-input);
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+}
+
+.bar-fill {
+    height: 100%;
+    border-radius: 3px;
+    transition: width 0.5s ease-out;
+}
+
+.range-val {
+    width: 20px;
+    font-weight: 600;
+    text-align: left;
+}
