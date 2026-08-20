@@ -640,7 +640,7 @@ async function atualizarMapaFluxos(cdId) {
         `;
         poly.bindTooltip(tooltipContent, { sticky: true, opacity: 0.95 });
         flowLayerGroup.addLayer(poly);
-    });
+    }
 
     // 6. Enquadrar no mapa
     if (parceirosConectados.size > 0) {
