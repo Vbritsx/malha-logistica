@@ -1043,3 +1043,8 @@ html, body {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+/* Dark mode map tiles filter (OSM inverted) */
+.map-dark-tiles {
+    filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%);
+}
