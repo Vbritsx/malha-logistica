@@ -1044,7 +1044,11 @@ html, body {
     text-overflow: ellipsis;
 }
 
-/* Dark mode map tiles filter (OSM inverted) */
+/* Custom map tiles filters to make maps clean and low-contrast */
+.map-light-tiles {
+    filter: grayscale(100%) brightness(108%) contrast(95%) opacity(55%);
+}
+
 .map-dark-tiles {
-    filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%);
+    filter: invert(100%) hue-rotate(180deg) brightness(85%) contrast(90%) grayscale(70%);
 }

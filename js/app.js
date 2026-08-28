@@ -75,7 +75,7 @@ function _setMapTheme() {
 
     currentTileLayer = L.tileLayer(tileUrl, {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-        className: isDarkMode ? 'map-dark-tiles' : '',
+        className: isDarkMode ? 'map-dark-tiles' : 'map-light-tiles',
         maxZoom: 19,
     }).addTo(map);
 }
