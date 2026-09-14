@@ -79,28 +79,26 @@ function _setMapTheme() {
         map.removeLayer(currentLabelsLayer);
     }
 
-    // Base: Tiles SEM labels (mapa limpo)
-    const darkUrl = "https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png";
-    const lightUrl = "https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png";
+    // Base: Tiles SEM labels (mapa limpo) — Esri (gratuito, sem API key)
+    const darkUrl = "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}";
+    const lightUrl = "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}";
 
-    // Overlay: Apenas labels de cidades grandes (camada separada)
-    const darkLabelsUrl = "https://{s}.basemaps.cartocdn.com/dark_only_labels/{z}/{x}/{y}{r}.png";
-    const lightLabelsUrl = "https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}{r}.png";
+    // Overlay: Apenas labels de cidades e referências (camada separada)
+    const darkLabelsUrl = "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}";
+    const lightLabelsUrl = "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Reference/MapServer/tile/{z}/{y}/{x}";
 
     const tileUrl = isDarkMode ? darkUrl : lightUrl;
     const labelsUrl = isDarkMode ? darkLabelsUrl : lightLabelsUrl;
 
     currentTileLayer = L.tileLayer(tileUrl, {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
-        subdomains: 'abcd',
-        maxZoom: 19,
+        attribution: '&copy; <a href="https://www.esri.com">Esri</a>',
+        maxZoom: 16,
     }).addTo(map);
 
     // Labels overlay com opacidade reduzida para não poluir
     currentLabelsLayer = L.tileLayer(labelsUrl, {
-        subdomains: 'abcd',
-        maxZoom: 19,
-        opacity: 0.55,  // Sutil — só nomes de cidades grandes ficam legíveis
+        maxZoom: 16,
+        opacity: 0.6,
         pane: 'overlayPane',
     }).addTo(map);
 }
