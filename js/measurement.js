@@ -175,12 +175,15 @@ class MeasurementTool {
         this._criarLabelPontoB();
         this._criarInfoRotaMeio(rotaData);
 
-        // 4. Ajustar o zoom do mapa para enquadrar a rota
+        // 4. Ajustar o zoom do mapa com flyTo suave para enquadrar a rota
         const bounds = L.latLngBounds([
             [lat1, lng1],
             [lat2, lng2],
         ]);
-        this.map.fitBounds(bounds.pad(0.3));
+        this.map.flyToBounds(bounds.pad(0.3), {
+            duration: 1.5,
+            easeLinearity: 0.2,
+        });
 
         return {
             rota: rotaData.distance,

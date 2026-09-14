@@ -1,9 +1,10 @@
 /**
- * app.js — Inicialização do mapa e orquestração geral
+ * app.js — Inicialização do mapa e orquestração geral (V2 Clean)
  *
- * - Cria o mapa Leaflet com tiles escuros (CartoDB Dark Matter)
- * - Plota marcadores dos CDs da Sabesp (de data.js)
- * - Conecta o painel lateral com a ferramenta de medição CD-Parceiro
+ * - Mapa Leaflet com tiles "no labels" + overlay de cidades grandes
+ * - CDs visíveis sempre; parceiros aparecem apenas ao filtrar
+ * - Transições suaves (flyTo) e efeitos de glow nos pontos selecionados
+ * - CD Intelligence Footer com agregados e raio de ação
  */
 
 /* ══════════════════════════════════════════════════════════════════════════════
@@ -17,7 +18,9 @@ let partnerMarkers = {}; // partner_id → L.circleMarker
 let partnerLayerGroup;
 let flowLayerGroup;
 let currentTileLayer;
+let currentLabelsLayer;
 let isDarkMode = true;
+let partnersPlotted = false; // Parceiros só são plotados ao filtrar CD
 
 /**
  * Formata um número para o padrão de exibição brasileiro.
@@ -34,7 +37,9 @@ function formatarNumero(num) {
 document.addEventListener("DOMContentLoaded", () => {
     initMap();
     plotCDs();
-    plotPartners();
+    // Parceiros NÃO são plotados no início — mapa fica clean
+    // Eles aparecem ao selecionar um CD no painel
+    _ensurePartnersReady();
     initMeasurementTool();
     initPanelControls();
 });
@@ -71,12 +76,33 @@ function _setMapTheme() {
     if (currentTileLayer) {
         map.removeLayer(currentTileLayer);
     }
-    const tileUrl = "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";
+    if (currentLabelsLayer) {
+        map.removeLayer(currentLabelsLayer);
+    }
+
+    // Base: Tiles SEM labels (mapa limpo)
+    const darkUrl = "https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png";
+    const lightUrl = "https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png";
+
+    // Overlay: Apenas labels de cidades grandes (camada separada)
+    const darkLabelsUrl = "https://{s}.basemaps.cartocdn.com/dark_only_labels/{z}/{x}/{y}{r}.png";
+    const lightLabelsUrl = "https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}{r}.png";
+
+    const tileUrl = isDarkMode ? darkUrl : lightUrl;
+    const labelsUrl = isDarkMode ? darkLabelsUrl : lightLabelsUrl;
 
     currentTileLayer = L.tileLayer(tileUrl, {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-        className: isDarkMode ? 'map-dark-tiles' : 'map-light-tiles',
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
+        subdomains: 'abcd',
         maxZoom: 19,
+    }).addTo(map);
+
+    // Labels overlay com opacidade reduzida para não poluir
+    currentLabelsLayer = L.tileLayer(labelsUrl, {
+        subdomains: 'abcd',
+        maxZoom: 19,
+        opacity: 0.55,
+        pane: 'overlayPane',
     }).addTo(map);
 }
 
@@ -318,12 +344,18 @@ function _atualizarMarcadoresVisuais() {
         });
     }
 
-    // Ponto B (Parceiro) é tratado no redesenho dos fluxos e no label do measurementTool.
-    // Não precisamos alterar o estilo (SVG) original dele aqui na v2.
+    // Ponto B (Parceiro) — glow pulsante quando medido
+    if (selectPartnerVal && partnerMarkers[selectPartnerVal]) {
+        if (measurementTool.isActive) {
+            const el = partnerMarkers[selectPartnerVal].getElement();
+            if (el) el.classList.add("partner-glow-pulse");
+        }
+    }
+
     // Ocultar levemente as linhas macro para dar destaque à rota medida
     flowLayerGroup.eachLayer(layer => {
         if (measurementTool.isActive) {
-            layer.setStyle({ opacity: 0.1 });
+            layer.setStyle({ opacity: 0.08 });
         } else {
             layer.setStyle({ opacity: 0.5 });
         }
@@ -378,6 +410,16 @@ function _resetarFiltros(selectCd, selectParceiro, checkInbound, checkOutbound) 
 
     const container = document.getElementById("measurement-results");
     container.classList.remove("active");
+
+    // Esconder CD Intelligence Footer
+    const cdFooter = document.getElementById("cd-footer");
+    if (cdFooter) cdFooter.classList.remove("active");
+
+    // Voltar suavemente para a visão geral de São Paulo
+    map.flyTo([-23.5, -46.6], 8, {
+        duration: 1.2,
+        easeLinearity: 0.25,
+    });
 }
 
 /**
@@ -418,13 +460,17 @@ const iconCanteiro = L.divIcon({
 });
 
 /**
- * Plota todos os parceiros (Clientes/Fornecedores) como pequenos marcadores inativos no mapa.
+ * Prepara os marcadores de parceiros (sem adicioná-los ao mapa).
+ * Eles só ficam visíveis ao filtrar um CD.
  */
-function plotPartners() {
+function _ensurePartnersReady() {
+    if (partnersPlotted) return;
+    partnersPlotted = true;
+
     PARCEIROS_DATA.forEach(p => {
         const marker = L.marker([p.lat, p.lng], {
             icon: iconInactive,
-            opacity: 0.8
+            opacity: 0
         });
 
         const materiaisStr = p.materiais && p.materiais.length > 0 ? p.materiais.join(", ") : "Não informado";
@@ -448,7 +494,7 @@ function plotPartners() {
         marker.bindPopup(popupContent, { maxWidth: 250 });
 
         partnerMarkers[p.id] = marker;
-        partnerLayerGroup.addLayer(marker);
+        // NÃO adiciona ao mapa — ficam ocultos até filtrar um CD
     });
 }
 
@@ -520,14 +566,14 @@ async function atualizarMapaFluxos(cdId) {
     // 1. Limpar fluxos anteriores
     flowLayerGroup.clearLayers();
 
-    // 2. Se nenhum CD selecionado ou nenhuma direção marcada, restaurar todos os parceiros
+    // 2. Se nenhum CD selecionado — ESCONDER todos os parceiros (mapa limpo)
     if (!cdId || (!inboundChecked && !outboundChecked)) {
         Object.values(partnerMarkers).forEach(marker => {
-            marker.setIcon(iconInactive);
-            if (!partnerLayerGroup.hasLayer(marker)) {
-                partnerLayerGroup.addLayer(marker);
-            }
+            partnerLayerGroup.removeLayer(marker);
         });
+        // Esconder CD footer
+        const cdFooter = document.getElementById("cd-footer");
+        if (cdFooter) cdFooter.classList.remove("active");
         return;
     }
 
@@ -547,19 +593,26 @@ async function atualizarMapaFluxos(cdId) {
         parceirosConectados.add(partnerId);
     });
 
-    // 4. Mostrar e estilizar apenas os parceiros conectados
+    // 4. Mostrar APENAS parceiros conectados ao CD (com fade-in)
     Object.entries(partnerMarkers).forEach(([id, marker]) => {
         if (parceirosConectados.has(id)) {
             const fluxo = fluxosCD.find(f => f.origem === id || f.destino === id);
             const isSaida = fluxo.direcao === "SAÍDA";
 
-            marker.setIcon(isSaida ? iconCanteiro : iconFornecedor);
-
+            // Adicionar ao mapa primeiro com opacidade 0
             if (!partnerLayerGroup.hasLayer(marker)) {
+                marker.setOpacity(0);
+                marker.setIcon(iconInactive);
                 partnerLayerGroup.addLayer(marker);
             }
+
+            // Fade-in com setTimeout para efeito de revelação
+            setTimeout(() => {
+                marker.setIcon(isSaida ? iconCanteiro : iconFornecedor);
+                marker.setOpacity(1);
+            }, 50);
         } else {
-            // Ocultar parceiros sem relação
+            // Remover parceiros sem relação
             partnerLayerGroup.removeLayer(marker);
         }
     });
@@ -735,8 +788,11 @@ async function atualizarMapaFluxos(cdId) {
         flowLayerGroup.addLayer(poly);
     }
 
-    // 6. Enquadrar no mapa
+    // 6. Enquadrar no mapa com flyTo suave
     if (parceirosConectados.size > 0) {
-        map.fitBounds(bounds.pad(0.15));
+        map.flyToBounds(bounds.pad(0.15), {
+            duration: 1.2,
+            easeLinearity: 0.25,
+        });
     }
 }
