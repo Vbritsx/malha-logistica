@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mapa dos Centros de Distribuição Atuais da Sabesp no Estado de São Paulo.">
+    <title>Mapa 1 — CDs Atuais</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+        :root {
+            --bg: #0f0f23;
+            --panel-bg: rgba(22, 22, 42, 0.94);
+            --text: #e8e8f0;
+            --text-dim: #9898b8;
+            --border: rgba(100,100,160,0.2);
+            --blue: #3b82f6;
+            --blue-glow: rgba(59,130,246,0.3);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html, body {
+            width: 100%; height: 100%; overflow: hidden;
+            font-family: 'Inter', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+        }
+
+        #map { width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 1; }
+
+        /* Title card */
+        .map-title {
+            position: fixed;
+            top: 16px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+            background: var(--panel-bg);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 12px 28px;
+            text-align: center;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+        }
+
+        .map-title h1 {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 2px;
+        }
+
+        .map-title .subtitle {
+            font-size: 11px;
+            color: var(--text-dim);
+            font-weight: 500;
+        }
+
+        /* Legend */
+        .legend {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+            background: var(--panel-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+            font-size: 12px;
+            color: var(--text-dim);
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .legend-dot {
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Water drop marker */
+        .water-drop {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 26px;
+            height: 26px;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.4));
+            transition: transform 0.2s ease;
+        }
+
+        .water-drop:hover {
+            transform: scale(1.3);
+        }
+
+        .water-drop svg {
+            width: 26px;
+            height: 26px;
+        }
+
+        /* Leaflet popup */
+        .leaflet-popup-content-wrapper {
+            background: var(--panel-bg) !important;
+            backdrop-filter: blur(20px) !important;
+            border: 1px solid var(--border) !important;
+            border-radius: 12px !important;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.4) !important;
+            color: var(--text) !important;
+        }
+        .leaflet-popup-content { margin: 0 !important; font-family: 'Inter', sans-serif !important; }
+        .leaflet-popup-tip { background: var(--panel-bg) !important; border: 1px solid var(--border) !important; }
+        .leaflet-popup-close-button { color: var(--text-dim) !important; }
+
+        .popup-card {
+            padding: 12px 16px;
+        }
+        .popup-card .cd-name {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--blue);
+            margin-bottom: 4px;
+        }
+        .popup-card .cd-addr {
+            font-size: 11px;
+            color: var(--text-dim);
+            line-height: 1.4;
+        }
+
+        /* Leaflet controls dark */
+        .leaflet-control-zoom a {
+            background: var(--panel-bg) !important;
+            color: var(--text) !important;
+            border-color: var(--border) !important;
+        }
+        .leaflet-control-zoom a:hover { background: rgba(50,50,80,0.5) !important; }
+        .leaflet-control-attribution {
+            background: rgba(15,15,35,0.7) !important;
+            color: var(--text-dim) !important;
+            font-size: 10px !important;
+        }
+        .leaflet-control-attribution a { color: var(--text-dim) !important; }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+
+    <div class="map-title">
+        <h1>💧 CDs Atuais — Sabesp</h1>
+        <div class="subtitle">26 Centros de Distribuição no Estado de São Paulo</div>
+    </div>
+
+    <div class="legend">
+        <div class="legend-item">
+            <div class="legend-dot">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="#3b82f6"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/></svg>
+            </div>
+            <span style="color: var(--text); font-weight: 600;">CD Atual</span>
+            <span>— Centro de Distribuição ativo</span>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <script>
+        const CDS_ATUAIS = [
+            { nome: "Itapetininga", lat: -23.588607, lng: -48.048326, endereco: "Rua Tosca Medina Nunes, S/N, Vila Apolo, Itapetininga - SP" },
+            { nome: "Itatiba", lat: -22.98345, lng: -46.841099, endereco: "Av. Fioravante Piovani, 108, Itatiba - SP" },
+            { nome: "Hortolândia", lat: -22.849402, lng: -47.203328, endereco: "Av. José Augusto de Araújo, 365, Hortolândia - SP" },
+            { nome: "Franca", lat: -20.538177, lng: -47.400979, endereco: "Rua Moacir Vieira Coelho, 300, Franca - SP" },
+            { nome: "Fernandópolis", lat: -20.282565, lng: -50.250076, endereco: "Travessa Bom Retiro, 80, Fernandópolis - SP" },
+            { nome: "Botucatu", lat: -22.932378, lng: -48.464578, endereco: "Av. José Ítalo Bacchi, S/N, Botucatu - SP" },
+            { nome: "Presidente Prudente", lat: -22.137749, lng: -51.405021, endereco: "Rua Manoel Eugênio, 875, Presidente Prudente - SP" },
+            { nome: "Lins", lat: -21.681753, lng: -49.760392, endereco: "Av. José Ariano Rodrigues, 936, Lins - SP" },
+            { nome: "São João da Boa Vista", lat: -21.978854, lng: -46.79808, endereco: "Av. João Osório, 230, São João da Boa Vista - SP" },
+            { nome: "Lapa", lat: -23.5319, lng: -46.698023, endereco: "Rua Aurélia, 1125, Vila Romana, São Paulo - SP" },
+            { nome: "Ponte Pequena", lat: -23.524508, lng: -46.631121, endereco: "Av. Santos Dumont, 555, São Paulo - SP" },
+            { nome: "Mooca", lat: -23.567998, lng: -46.58781, endereco: "Rua Sebastião Preto, 122, Mooca, São Paulo - SP" },
+            { nome: "Vila Prudente", lat: -23.595241, lng: -46.566805, endereco: "Rua Paramu, 716, Vila Bela, São Paulo - SP" },
+            { nome: "Pirituba", lat: -23.486551, lng: -46.73809, endereco: "Av. do Anastácio, 2445, Pirituba, São Paulo - SP" },
+            { nome: "Guaianases", lat: -23.404406, lng: -46.642994, endereco: "Estrada Santa Inês, KM 2, São Paulo - SP" },
+            { nome: "São Mateus", lat: -23.610409, lng: -46.495323, endereco: "Rua Nelson de Oliveira, 50, São Paulo - SP" },
+            { nome: "Vila dos Remédios", lat: -23.521173, lng: -46.758386, endereco: "Rua Pedro Rissato, 221, Osasco - SP" },
+            { nome: "Alto da Boa Vista", lat: -23.641852, lng: -46.689982, endereco: "Rua Alberto Hodge, 247, São Paulo - SP" },
+            { nome: "São Miguel Paulista", lat: -23.498392, lng: -46.446484, endereco: "Trav. Lamberto Silvestre, S/N, São Paulo - SP" },
+            { nome: "Santo André", lat: -23.679593, lng: -46.5327, endereco: "Rua Juquiá, 50, Santo André - SP" },
+            { nome: "Suzano", lat: -23.558263, lng: -46.321585, endereco: "Rua Luiz Bianconi, 91, Suzano - SP" },
+            { nome: "Caraguatatuba", lat: -23.692677, lng: -45.448758, endereco: "Estrada do Rio Claro, 420, Caraguatatuba - SP" },
+            { nome: "Santos", lat: -23.984899, lng: -46.294982, endereco: "Av. Gov. Mário Covas Júnior, 1040, Santos - SP" },
+            { nome: "São José dos Campos", lat: -23.186778, lng: -45.885454, endereco: "Rua Guilherme Rosa da Silva, 300, SJC - SP" },
+            { nome: "Itanhaém", lat: -24.187415, lng: -46.796642, endereco: "Rua Urcezino Ferreira, 280, Itanhaém - SP" },
+            { nome: "Registro", lat: -24.484443, lng: -47.85613, endereco: "Rua Joaquim Marques Alves, 1002, Registro - SP" },
+        ];
+
+        const dropSvg = `<svg viewBox="0 0 24 24" fill="#3b82f6" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5" fill="#ffffff"/></svg>`;
+
+        const map = L.map("map", { center: [-22.5, -48.5], zoom: 7, zoomControl: true });
+
+        // Esri Dark tiles (sem API key)
+        L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}", {
+            attribution: '&copy; <a href="https://www.esri.com">Esri</a>',
+            maxZoom: 16,
+        }).addTo(map);
+
+        L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}", {
+            maxZoom: 16, opacity: 0.6, pane: "overlayPane",
+        }).addTo(map);
+
+        // Plot markers
+        CDS_ATUAIS.forEach((cd, i) => {
+            const marker = L.marker([cd.lat, cd.lng], {
+                icon: L.divIcon({
+                    className: "",
+                    html: `<div class="water-drop">${dropSvg}</div>`,
+                    iconSize: [26, 26],
+                    iconAnchor: [13, 26],
+                }),
+            });
+
+            marker.bindPopup(`
+                <div class="popup-card">
+                    <div class="cd-name">💧 ${i + 1}. ${cd.nome}</div>
+                    <div class="cd-addr">${cd.endereco}</div>
+                </div>
+            `, { maxWidth: 260 });
+
+            marker.addTo(map);
+        });
+    </script>
+</body>
+</html>
