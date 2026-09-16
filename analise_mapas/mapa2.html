@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mapa dos CDs e PAs Futuros da Sabesp no Estado de São Paulo.">
-    <title>Mapa 2 — CDs Futuro + PAs Futuro</title>
+    <meta name="description" content="Mapa dos CDs e Postos Avançados Futuros da Sabesp no Estado de São Paulo.">
+    <title>Mapa 2 — CDs Futuro + Postos Avançados</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
           integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     <style>
@@ -12,12 +12,16 @@
 
         :root {
             --bg: #f5f5f7;
-            --panel-bg: rgba(255, 255, 255, 0.95);
+            --panel-bg: rgba(255, 255, 255, 0.96);
             --text: #1a1a2e;
             --text-dim: #6b7280;
             --border: rgba(0,0,0,0.08);
             --cyan: #0891b2;
+            --cyan-light: #cffafe;
+            --cyan-glow: rgba(8,145,178,0.35);
             --orange: #ea580c;
+            --orange-light: #ffedd5;
+            --orange-glow: rgba(234,88,12,0.35);
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -31,78 +35,109 @@
 
         #map { width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 1; }
 
+        /* Title */
         .map-title {
-            position: fixed;
-            top: 16px;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 1000;
-            background: var(--panel-bg);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border: 1px solid var(--border);
-            border-radius: 14px;
-            padding: 12px 28px;
-            text-align: center;
+            position: fixed; top: 16px; left: 50%; transform: translateX(-50%); z-index: 1000;
+            background: var(--panel-bg); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--border); border-radius: 14px;
+            padding: 12px 28px; text-align: center;
             box-shadow: 0 4px 20px rgba(0,0,0,0.08);
         }
+        .map-title h1 { font-size: 16px; font-weight: 700; margin-bottom: 2px; }
+        .map-title .subtitle { font-size: 11px; color: var(--text-dim); font-weight: 500; }
 
-        .map-title h1 {
-            font-size: 16px;
-            font-weight: 700;
-            color: var(--text);
-            margin-bottom: 2px;
-        }
-
-        .map-title .subtitle {
-            font-size: 11px;
-            color: var(--text-dim);
-            font-weight: 500;
-        }
-
+        /* Legend */
         .legend {
-            position: fixed;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 1000;
-            background: var(--panel-bg);
-            backdrop-filter: blur(20px);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 10px 24px;
-            display: flex;
-            align-items: center;
-            gap: 24px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-            font-size: 12px;
-            color: var(--text-dim);
+            position: fixed; bottom: 20px; left: 20px; z-index: 1000;
+            background: var(--panel-bg); backdrop-filter: blur(20px);
+            border: 1px solid var(--border); border-radius: 12px;
+            padding: 10px 24px; display: flex; align-items: center; gap: 24px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08); font-size: 12px; color: var(--text-dim);
+        }
+        .legend-item { display: flex; align-items: center; gap: 6px; }
+
+        /* List panel */
+        .list-panel {
+            position: fixed; bottom: 20px; right: 20px; z-index: 1000;
+            background: var(--panel-bg); backdrop-filter: blur(20px);
+            border: 1px solid var(--border); border-radius: 14px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.1);
+            width: 280px; max-height: 65vh; display: flex; flex-direction: column;
+            overflow: hidden;
         }
 
-        .legend-item {
-            display: flex;
-            align-items: center;
-            gap: 6px;
+        .list-section-header {
+            padding: 10px 16px 6px; border-bottom: 1px solid var(--border);
+            font-size: 11px; font-weight: 700; text-transform: uppercase;
+            letter-spacing: 0.5px; display: flex; align-items: center; gap: 6px;
+            flex-shrink: 0;
+        }
+        .list-section-header.cd-header { color: var(--cyan); }
+        .list-section-header.pa-header { color: var(--orange); border-top: 1px solid var(--border); }
+
+        .list-body {
+            overflow-y: auto; flex: 1; padding: 0;
+        }
+        .list-body::-webkit-scrollbar { width: 4px; }
+        .list-body::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 4px; }
+
+        .list-item {
+            display: flex; align-items: center; gap: 10px;
+            padding: 8px 16px; cursor: pointer;
+            transition: background 0.15s ease;
+            border-left: 3px solid transparent;
+        }
+        .list-item:hover { background: #f0f4ff; }
+        .list-item.active-cd {
+            background: var(--cyan-light);
+            border-left-color: var(--cyan);
+        }
+        .list-item.active-pa {
+            background: var(--orange-light);
+            border-left-color: var(--orange);
         }
 
+        .list-item .num {
+            font-size: 10px; font-weight: 700; color: #fff;
+            border-radius: 50%; width: 22px; height: 22px;
+            display: flex; align-items: center; justify-content: center;
+            flex-shrink: 0;
+        }
+        .list-item .num.num-cd { background: var(--cyan); }
+        .list-item .num.num-pa { background: var(--orange); }
+
+        .list-item .info { flex: 1; min-width: 0; }
+        .list-item .info .name { font-size: 12px; font-weight: 600; color: var(--text); }
+        .list-item .info .addr {
+            font-size: 10px; color: var(--text-dim); white-space: nowrap;
+            overflow: hidden; text-overflow: ellipsis;
+        }
+
+        /* Marker styles */
         .water-drop {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 28px;
-            height: 28px;
+            display: flex; align-items: center; justify-content: center;
+            width: 28px; height: 28px;
             filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
-            transition: transform 0.2s ease;
+            transition: transform 0.3s ease, filter 0.3s ease;
         }
-
         .water-drop:hover { transform: scale(1.3); }
         .water-drop svg { width: 28px; height: 28px; }
 
+        .water-drop.highlighted-cd {
+            transform: scale(1.6);
+            filter: drop-shadow(0 0 8px var(--cyan-glow)) drop-shadow(0 0 20px var(--cyan-glow));
+            z-index: 9999 !important;
+        }
+        .water-drop.highlighted-pa {
+            transform: scale(1.6);
+            filter: drop-shadow(0 0 8px var(--orange-glow)) drop-shadow(0 0 20px var(--orange-glow));
+            z-index: 9999 !important;
+        }
+
+        /* Leaflet popup */
         .leaflet-popup-content-wrapper {
-            background: var(--panel-bg) !important;
-            border: 1px solid var(--border) !important;
-            border-radius: 12px !important;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1) !important;
+            background: var(--panel-bg) !important; border: 1px solid var(--border) !important;
+            border-radius: 12px !important; box-shadow: 0 4px 20px rgba(0,0,0,0.1) !important;
             color: var(--text) !important;
         }
         .leaflet-popup-content { margin: 0 !important; font-family: 'Inter', sans-serif !important; }
@@ -110,27 +145,14 @@
         .leaflet-popup-close-button { color: var(--text-dim) !important; }
 
         .popup-card { padding: 12px 16px; }
-        .popup-card .cd-name {
-            font-size: 14px;
-            font-weight: 700;
-            margin-bottom: 4px;
-        }
+        .popup-card .cd-name { font-size: 14px; font-weight: 700; margin-bottom: 4px; }
         .popup-card .cd-name.cd-futuro { color: var(--cyan); }
         .popup-card .cd-name.pa-futuro { color: var(--orange); }
-        .popup-card .cd-addr {
-            font-size: 11px;
-            color: var(--text-dim);
-            line-height: 1.4;
-        }
+        .popup-card .cd-addr { font-size: 11px; color: var(--text-dim); line-height: 1.4; }
         .popup-card .cd-tag {
-            display: inline-block;
-            font-size: 9px;
-            font-weight: 700;
-            padding: 2px 6px;
-            border-radius: 4px;
-            letter-spacing: 0.5px;
-            margin-bottom: 4px;
-            color: #fff;
+            display: inline-block; font-size: 9px; font-weight: 700;
+            padding: 2px 6px; border-radius: 4px; letter-spacing: 0.5px;
+            margin-bottom: 4px; color: #fff;
         }
         .popup-card .cd-tag.tag-cd { background: var(--cyan); }
         .popup-card .cd-tag.tag-pa { background: var(--orange); }
@@ -140,21 +162,34 @@
     <div id="map"></div>
 
     <div class="map-title">
-        <h1>💧 Rede Futura — CDs + PAs</h1>
-        <div class="subtitle">5 Centros de Distribuição + 5 Pontos de Apoio no Estado de São Paulo</div>
+        <h1>💧 Rede Futura — CDs + Postos Avançados</h1>
+        <div class="subtitle">5 Centros de Distribuição + 5 Postos Avançados no Estado de São Paulo</div>
     </div>
 
     <div class="legend">
         <div class="legend-item">
             <svg viewBox="0 0 24 24" width="18" height="18" fill="#0891b2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5" fill="#ffffff"/></svg>
             <span style="color: var(--cyan); font-weight: 600;">CD Futuro</span>
-            <span>— Centro de Distribuição</span>
         </div>
         <div style="width: 1px; height: 20px; background: var(--border);"></div>
         <div class="legend-item">
             <svg viewBox="0 0 24 24" width="18" height="18" fill="#ea580c"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5" fill="#ffffff"/></svg>
-            <span style="color: var(--orange); font-weight: 600;">PA Futuro</span>
-            <span>— Ponto de Apoio</span>
+            <span style="color: var(--orange); font-weight: 600;">Posto Avançado</span>
+        </div>
+    </div>
+
+    <div class="list-panel">
+        <div class="list-body" id="list-body">
+            <div class="list-section-header cd-header">
+                <svg viewBox="0 0 24 24" width="13" height="13" fill="#0891b2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5" fill="#fff"/></svg>
+                CDs Futuro (5)
+            </div>
+            <div id="list-cd"></div>
+            <div class="list-section-header pa-header">
+                <svg viewBox="0 0 24 24" width="13" height="13" fill="#ea580c"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5" fill="#fff"/></svg>
+                Postos Avançados (5)
+            </div>
+            <div id="list-pa"></div>
         </div>
     </div>
 
@@ -163,19 +198,19 @@
 
     <script>
         const CDS_FUTURO = [
-            { nome: "Parque Novo Mundo", lat: -23.513687, lng: -46.560627, endereco: "Av. Educador Paulo Freire, 986, São Paulo - SP" },
-            { nome: "Hortolândia", lat: -22.849402, lng: -47.203328, endereco: "Av. José Augusto de Araújo, 365, Hortolândia - SP" },
-            { nome: "Botucatu", lat: -22.932378, lng: -48.464578, endereco: "Av. José Ítalo Bacchi, S/N, Botucatu - SP" },
-            { nome: "Lins", lat: -21.681753, lng: -49.760392, endereco: "Av. José Ariano Rodrigues, 936, Lins - SP" },
-            { nome: "São José dos Campos", lat: -23.186778, lng: -45.885454, endereco: "Rua Guilherme Rosa da Silva, 300, SJC - SP" },
+            { nome: "Parque Novo Mundo", lat: -23.513687, lng: -46.560627, endereco: "Av. Educador Paulo Freire, 986, São Paulo" },
+            { nome: "Hortolândia", lat: -22.849402, lng: -47.203328, endereco: "Av. José Augusto de Araújo, 365, Hortolândia" },
+            { nome: "Botucatu", lat: -22.932378, lng: -48.464578, endereco: "Av. José Ítalo Bacchi, S/N, Botucatu" },
+            { nome: "Lins", lat: -21.681753, lng: -49.760392, endereco: "Av. José Ariano Rodrigues, 936, Lins" },
+            { nome: "São José dos Campos", lat: -23.186778, lng: -45.885454, endereco: "Rua Guilherme Rosa da Silva, 300, SJC" },
         ];
 
         const PAS_FUTURO = [
-            { nome: "Franca", lat: -20.538177, lng: -47.400979, endereco: "Rua Moacir Vieira Coelho, 300, Franca - SP" },
-            { nome: "Caraguatatuba", lat: -23.692677, lng: -45.448758, endereco: "Estrada do Rio Claro, 420, Caraguatatuba - SP" },
-            { nome: "Santos", lat: -23.984899, lng: -46.294982, endereco: "Av. Gov. Mário Covas Júnior, 1040, Santos - SP" },
-            { nome: "Registro", lat: -24.484443, lng: -47.85613, endereco: "Rua Joaquim Marques Alves, 1002, Registro - SP" },
-            { nome: "Presidente Prudente", lat: -22.137749, lng: -51.405021, endereco: "Rua Manoel Eugênio, 875, Presidente Prudente - SP" },
+            { nome: "Franca", lat: -20.538177, lng: -47.400979, endereco: "Rua Moacir Vieira Coelho, 300, Franca" },
+            { nome: "Caraguatatuba", lat: -23.692677, lng: -45.448758, endereco: "Estrada do Rio Claro, 420, Caraguatatuba" },
+            { nome: "Santos", lat: -23.984899, lng: -46.294982, endereco: "Av. Gov. Mário Covas Jr., 1040, Santos" },
+            { nome: "Registro", lat: -24.484443, lng: -47.85613, endereco: "Rua Joaquim Marques Alves, 1002, Registro" },
+            { nome: "Presidente Prudente", lat: -22.137749, lng: -51.405021, endereco: "Rua Manoel Eugênio, 875, Pres. Prudente" },
         ];
 
         const dropCyan = `<svg viewBox="0 0 24 24" fill="#0891b2" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5" fill="#ffffff"/></svg>`;
@@ -183,27 +218,27 @@
 
         const map = L.map("map", { center: [-22.5, -48.5], zoom: 7, zoomControl: true });
 
-        // Esri Light Gray tiles (claro, sem API key)
         L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}", {
-            attribution: '&copy; <a href="https://www.esri.com">Esri</a>',
-            maxZoom: 16,
+            attribution: '&copy; <a href="https://www.esri.com">Esri</a>', maxZoom: 16,
         }).addTo(map);
-
         L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Reference/MapServer/tile/{z}/{y}/{x}", {
             maxZoom: 16, opacity: 0.7, pane: "overlayPane",
         }).addTo(map);
 
-        // Plot CDs Futuro (Ciano)
+        const cdMarkers = [];
+        const paMarkers = [];
+        let activeType = null; // "cd" or "pa"
+        let activeIndex = -1;
+
+        // Plot CDs
         CDS_FUTURO.forEach((cd, i) => {
             const marker = L.marker([cd.lat, cd.lng], {
                 icon: L.divIcon({
                     className: "",
-                    html: `<div class="water-drop">${dropCyan}</div>`,
-                    iconSize: [28, 28],
-                    iconAnchor: [14, 28],
+                    html: `<div class="water-drop" id="drop-cd-${i}">${dropCyan}</div>`,
+                    iconSize: [28, 28], iconAnchor: [14, 28],
                 }),
             });
-
             marker.bindPopup(`
                 <div class="popup-card">
                     <span class="cd-tag tag-cd">CD FUTURO</span>
@@ -211,31 +246,90 @@
                     <div class="cd-addr">${cd.endereco}</div>
                 </div>
             `, { maxWidth: 260 });
-
             marker.addTo(map);
+            cdMarkers.push(marker);
         });
 
-        // Plot PAs Futuro (Laranja)
+        // Plot PAs
         PAS_FUTURO.forEach((pa, i) => {
             const marker = L.marker([pa.lat, pa.lng], {
                 icon: L.divIcon({
                     className: "",
-                    html: `<div class="water-drop">${dropOrange}</div>`,
-                    iconSize: [28, 28],
-                    iconAnchor: [14, 28],
+                    html: `<div class="water-drop" id="drop-pa-${i}">${dropOrange}</div>`,
+                    iconSize: [28, 28], iconAnchor: [14, 28],
                 }),
             });
-
             marker.bindPopup(`
                 <div class="popup-card">
-                    <span class="cd-tag tag-pa">PA FUTURO</span>
+                    <span class="cd-tag tag-pa">POSTO AVANÇADO</span>
                     <div class="cd-name pa-futuro">💧 ${i + 1}. ${pa.nome}</div>
                     <div class="cd-addr">${pa.endereco}</div>
                 </div>
             `, { maxWidth: 260 });
-
             marker.addTo(map);
+            paMarkers.push(marker);
         });
+
+        // Build lists
+        function buildList(containerId, data, type) {
+            const container = document.getElementById(containerId);
+            data.forEach((item, i) => {
+                const el = document.createElement("div");
+                el.className = "list-item";
+                el.id = `list-${type}-${i}`;
+                el.innerHTML = `
+                    <div class="num num-${type}">${i + 1}</div>
+                    <div class="info">
+                        <div class="name">${item.nome}</div>
+                        <div class="addr">${item.endereco}</div>
+                    </div>
+                `;
+                el.addEventListener("click", () => selectItem(type, i));
+                container.appendChild(el);
+            });
+        }
+
+        buildList("list-cd", CDS_FUTURO, "cd");
+        buildList("list-pa", PAS_FUTURO, "pa");
+
+        function clearSelection() {
+            if (activeType && activeIndex >= 0) {
+                document.getElementById(`list-${activeType}-${activeIndex}`)?.classList.remove(`active-${activeType}`);
+                const prevDrop = document.getElementById(`drop-${activeType}-${activeIndex}`);
+                if (prevDrop) prevDrop.classList.remove(`highlighted-${activeType}`);
+            }
+        }
+
+        function selectItem(type, index) {
+            clearSelection();
+
+            // Toggle off
+            if (activeType === type && activeIndex === index) {
+                activeType = null;
+                activeIndex = -1;
+                map.flyTo([-22.5, -48.5], 7, { duration: 0.8 });
+                return;
+            }
+
+            activeType = type;
+            activeIndex = index;
+
+            // Highlight list
+            const listItem = document.getElementById(`list-${type}-${index}`);
+            listItem.classList.add(`active-${type}`);
+            listItem.scrollIntoView({ behavior: "smooth", block: "nearest" });
+
+            // Highlight marker
+            const drop = document.getElementById(`drop-${type}-${index}`);
+            if (drop) drop.classList.add(`highlighted-${type}`);
+
+            // Fly to
+            const data = type === "cd" ? CDS_FUTURO : PAS_FUTURO;
+            const markers = type === "cd" ? cdMarkers : paMarkers;
+            const item = data[index];
+            map.flyTo([item.lat, item.lng], 12, { duration: 1.0 });
+            setTimeout(() => markers[index].openPopup(), 600);
+        }
     </script>
 </body>
 </html>
