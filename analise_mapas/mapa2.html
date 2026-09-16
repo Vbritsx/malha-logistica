@@ -157,6 +157,52 @@
         }
         .popup-card .cd-tag.tag-cd { background: var(--cyan); }
         .popup-card .cd-tag.tag-pa { background: var(--orange); }
+
+        /* City Labels */
+        .leaflet-tooltip.city-label {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 6px;
+            padding: 2px 7px;
+            font-family: 'Inter', sans-serif;
+            font-size: 10.5px;
+            font-weight: 700;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+            white-space: nowrap;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .leaflet-tooltip.cd-label {
+            color: #0e7490;
+            border: 1px solid rgba(8, 145, 178, 0.3);
+        }
+        .leaflet-tooltip.cd-label:hover,
+        .leaflet-tooltip.cd-label.highlighted {
+            background: #0891b2 !important;
+            color: #ffffff !important;
+            border-color: #0891b2 !important;
+            box-shadow: 0 4px 14px rgba(8, 145, 178, 0.4) !important;
+            transform: scale(1.08);
+            z-index: 9999 !important;
+        }
+        .leaflet-tooltip.pa-label {
+            color: #c2410c;
+            border: 1px solid rgba(234, 88, 12, 0.3);
+        }
+        .leaflet-tooltip.pa-label:hover,
+        .leaflet-tooltip.pa-label.highlighted {
+            background: #ea580c !important;
+            color: #ffffff !important;
+            border-color: #ea580c !important;
+            box-shadow: 0 4px 14px rgba(234, 88, 12, 0.4) !important;
+            transform: scale(1.08);
+            z-index: 9999 !important;
+        }
+        .leaflet-tooltip-top:before,
+        .leaflet-tooltip-bottom:before,
+        .leaflet-tooltip-left:before,
+        .leaflet-tooltip-right:before {
+            display: none !important;
+        }
     </style>
 </head>
 <body>
@@ -233,20 +279,12 @@
             zoomControl: true,
         });
 
-        // 1. Camada Base dos Mapas
+        // 1. Camada Base dos Mapas (sem nomes de cidades/municípios genéricos)
         L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}", {
             attribution: '&copy; <a href="https://www.esri.com">Esri</a>', maxZoom: 16,
         }).addTo(map);
 
-        // 2. Rótulos das cidades abaixo da máscara
-        map.createPane("labelsPane");
-        map.getPane("labelsPane").style.zIndex = 250;
-
-        L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Reference/MapServer/tile/{z}/{y}/{x}", {
-            maxZoom: 16, opacity: 0.85, pane: "labelsPane",
-        }).addTo(map);
-
-        // 3. Máscara que oculta 100% dos estados vizinhos (Minas Gerais, Paraná, RJ, etc.) e oceano
+        // 2. Máscara que oculta 100% dos estados vizinhos (Minas Gerais, Paraná, RJ, etc.) e oceano
         map.createPane("maskPane");
         map.getPane("maskPane").style.zIndex = 350;
 
@@ -260,7 +298,7 @@
             }
         }).addTo(map);
 
-        // 4. Linha de contorno oficial de São Paulo
+        // 3. Linha de contorno oficial de São Paulo
         map.createPane("borderPane");
         map.getPane("borderPane").style.zIndex = 360;
 
@@ -280,7 +318,7 @@
         let activeType = null; // "cd" or "pa"
         let activeIndex = -1;
 
-        // Plot CDs
+        // Plot CDs com rótulos exclusivos
         CDS_FUTURO.forEach((cd, i) => {
             const marker = L.marker([cd.lat, cd.lng], {
                 icon: L.divIcon({
@@ -296,11 +334,22 @@
                     <div class="cd-addr">${cd.endereco}</div>
                 </div>
             `, { maxWidth: 260 });
+
+            // Rótulo permanente apenas no CD
+            marker.bindTooltip(cd.nome, {
+                permanent: true,
+                direction: "top",
+                offset: [0, -28],
+                className: "city-label cd-label",
+            });
+
+            marker.on("click", () => selectItem("cd", i));
+
             marker.addTo(map);
             cdMarkers.push(marker);
         });
 
-        // Plot PAs
+        // Plot PAs com rótulos exclusivos
         PAS_FUTURO.forEach((pa, i) => {
             const marker = L.marker([pa.lat, pa.lng], {
                 icon: L.divIcon({
@@ -316,6 +365,17 @@
                     <div class="cd-addr">${pa.endereco}</div>
                 </div>
             `, { maxWidth: 260 });
+
+            // Rótulo permanente apenas no Posto Avançado
+            marker.bindTooltip(pa.nome, {
+                permanent: true,
+                direction: "top",
+                offset: [0, -28],
+                className: "city-label pa-label",
+            });
+
+            marker.on("click", () => selectItem("pa", i));
+
             marker.addTo(map);
             paMarkers.push(marker);
         });
@@ -347,6 +407,8 @@
                 document.getElementById(`list-${activeType}-${activeIndex}`)?.classList.remove(`active-${activeType}`);
                 const prevDrop = document.getElementById(`drop-${activeType}-${activeIndex}`);
                 if (prevDrop) prevDrop.classList.remove(`highlighted-${activeType}`);
+                const markers = activeType === "cd" ? cdMarkers : paMarkers;
+                markers[activeIndex]?.getTooltip()?.getElement()?.classList.remove("highlighted");
             }
         }
 
@@ -369,13 +431,14 @@
             listItem.classList.add(`active-${type}`);
             listItem.scrollIntoView({ behavior: "smooth", block: "nearest" });
 
-            // Highlight marker
+            // Highlight marker & tooltip
             const drop = document.getElementById(`drop-${type}-${index}`);
             if (drop) drop.classList.add(`highlighted-${type}`);
+            const markers = type === "cd" ? cdMarkers : paMarkers;
+            markers[index]?.getTooltip()?.getElement()?.classList.add("highlighted");
 
             // Fly to
             const data = type === "cd" ? CDS_FUTURO : PAS_FUTURO;
-            const markers = type === "cd" ? cdMarkers : paMarkers;
             const item = data[index];
             map.flyTo([item.lat, item.lng], 12, { duration: 1.0 });
             setTimeout(() => markers[index].openPopup(), 600);

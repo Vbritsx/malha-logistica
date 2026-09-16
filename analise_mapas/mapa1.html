@@ -129,6 +129,37 @@
         .popup-card { padding: 12px 16px; }
         .popup-card .cd-name { font-size: 14px; font-weight: 700; color: var(--blue); margin-bottom: 4px; }
         .popup-card .cd-addr { font-size: 11px; color: var(--text-dim); line-height: 1.4; }
+
+        /* City Label on Map */
+        .leaflet-tooltip.city-label {
+            background: rgba(255, 255, 255, 0.94);
+            border: 1px solid rgba(37, 99, 235, 0.25);
+            border-radius: 6px;
+            padding: 2px 7px;
+            font-family: 'Inter', sans-serif;
+            font-size: 10.5px;
+            font-weight: 700;
+            color: #1e3a8a;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+            white-space: nowrap;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .leaflet-tooltip.city-label:hover,
+        .leaflet-tooltip.city-label.highlighted {
+            background: #2563eb !important;
+            color: #ffffff !important;
+            border-color: #2563eb !important;
+            box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4) !important;
+            transform: scale(1.08);
+            z-index: 9999 !important;
+        }
+        .leaflet-tooltip-top:before,
+        .leaflet-tooltip-bottom:before,
+        .leaflet-tooltip-left:before,
+        .leaflet-tooltip-right:before {
+            display: none !important;
+        }
     </style>
 </head>
 <body>
@@ -206,20 +237,12 @@
             zoomControl: true,
         });
 
-        // 1. Camada Base dos Mapas
+        // 1. Camada Base dos Mapas (sem nomes de cidades/municípios genéricos)
         L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}", {
             attribution: '&copy; <a href="https://www.esri.com">Esri</a>', maxZoom: 16,
         }).addTo(map);
 
-        // 2. Rótulos das cidades (abaixo da máscara para não sobrepor outros estados)
-        map.createPane("labelsPane");
-        map.getPane("labelsPane").style.zIndex = 250;
-
-        L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Reference/MapServer/tile/{z}/{y}/{x}", {
-            maxZoom: 16, opacity: 0.85, pane: "labelsPane",
-        }).addTo(map);
-
-        // 3. Máscara que oculta 100% dos estados vizinhos (Minas Gerais, Paraná, RJ, etc.) e oceano
+        // 2. Máscara que oculta 100% dos estados vizinhos (Minas Gerais, Paraná, RJ, etc.) e oceano
         map.createPane("maskPane");
         map.getPane("maskPane").style.zIndex = 350;
 
@@ -233,7 +256,7 @@
             }
         }).addTo(map);
 
-        // 4. Linha de contorno oficial de São Paulo
+        // 3. Linha de contorno oficial de São Paulo
         map.createPane("borderPane");
         map.getPane("borderPane").style.zIndex = 360;
 
@@ -248,7 +271,7 @@
             }
         }).addTo(map);
 
-        // Create markers
+        // Create markers com rótulos exclusivos para onde tem CDs
         const markers = [];
         let activeIndex = -1;
 
@@ -267,6 +290,16 @@
                     <div class="cd-addr">${cd.endereco}</div>
                 </div>
             `, { maxWidth: 260 });
+
+            // Rótulo visível apenas na cidade onde tem CD
+            marker.bindTooltip(cd.nome, {
+                permanent: true,
+                direction: "top",
+                offset: [0, -26],
+                className: "city-label",
+            });
+
+            marker.on("click", () => selectItem(i));
 
             marker.addTo(map);
             markers.push(marker);
@@ -296,6 +329,7 @@
                 document.getElementById(`list-${activeIndex}`)?.classList.remove("active");
                 const prevDrop = document.getElementById(`drop-${activeIndex}`);
                 if (prevDrop) prevDrop.classList.remove("highlighted");
+                markers[activeIndex]?.getTooltip()?.getElement()?.classList.remove("highlighted");
             }
 
             // If clicking same item, deselect
@@ -312,9 +346,10 @@
             listItem.classList.add("active");
             listItem.scrollIntoView({ behavior: "smooth", block: "nearest" });
 
-            // Highlight marker
+            // Highlight marker & tooltip
             const drop = document.getElementById(`drop-${index}`);
             if (drop) drop.classList.add("highlighted");
+            markers[index]?.getTooltip()?.getElement()?.classList.add("highlighted");
 
             // Fly to marker & open popup
             const cd = CDS_ATUAIS[index];
