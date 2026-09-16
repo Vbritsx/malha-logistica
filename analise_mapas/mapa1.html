@@ -189,7 +189,20 @@
 
         const dropSvg = `<svg viewBox="0 0 24 24" fill="#2563eb" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5" fill="#ffffff"/></svg>`;
 
-        const map = L.map("map", { center: [-22.5, -48.5], zoom: 7, zoomControl: true });
+        // Limites do estado de São Paulo
+        const spBounds = L.latLngBounds(
+            L.latLng(-25.3, -53.2),  // Sudoeste (Registro / Pontal do Paranapanema)
+            L.latLng(-19.8, -44.2)   // Nordeste (Franca / divisa MG)
+        );
+
+        const map = L.map("map", {
+            center: [-22.3, -48.5],
+            zoom: 7,
+            minZoom: 7,
+            maxBounds: spBounds,
+            maxBoundsViscosity: 1.0,
+            zoomControl: true,
+        });
 
         L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}", {
             attribution: '&copy; <a href="https://www.esri.com">Esri</a>', maxZoom: 16,
@@ -251,7 +264,7 @@
             // If clicking same item, deselect
             if (activeIndex === index) {
                 activeIndex = -1;
-                map.flyTo([-22.5, -48.5], 7, { duration: 0.8 });
+                map.flyTo([-22.3, -48.5], 7, { duration: 0.8 });
                 return;
             }
 
