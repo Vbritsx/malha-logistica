@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "../../robo_sap_me32k"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../AutomaRC"
+		},
+		{
+			"path": "../../data-hub"
+		}
+	],
+	"settings": {}
+}

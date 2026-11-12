@@ -1,0 +1,224 @@
+{
+  "cds_atuais": [
+    {
+      "nome": "Itapetininga",
+      "lat": -23.588607,
+      "lng": -48.048326,
+      "endereco": "RUA TOSCA MEDINA NUNES, S/N, VILA APOLO, Itapetininga, SP, 18206-420"
+    },
+    {
+      "nome": "Itatiba",
+      "lat": -22.98345,
+      "lng": -46.841099,
+      "endereco": "AVENIDA FIORAVANTE PIOVANI, 108, Itatiba, SP, 13257-700"
+    },
+    {
+      "nome": "Hortolândia",
+      "lat": -22.849402,
+      "lng": -47.203328,
+      "endereco": "AVENIDA JOSE AUGUSTO DE ARAUJO, 365, Hortolândia, SP, 13183-091"
+    },
+    {
+      "nome": "Franca",
+      "lat": -20.538177,
+      "lng": -47.400979,
+      "endereco": "RUA MOACIR VIEIRA COELHO, 300, Franca, SP, 14405-106"
+    },
+    {
+      "nome": "Fernandópolis",
+      "lat": -20.282565,
+      "lng": -50.250076,
+      "endereco": "TRAVESSA BOM RETIRO, 80, Fernandópolis, SP, 15603-471"
+    },
+    {
+      "nome": "Botucatu",
+      "lat": -22.932378,
+      "lng": -48.464578,
+      "endereco": "AVENIDA JOSÉ ITALO BACCHI, S/N, Botucatu, SP, 18606-851"
+    },
+    {
+      "nome": "Presidente Prudente",
+      "lat": -22.137749,
+      "lng": -51.405021,
+      "endereco": "RUA MANOEL EUGÊNIO, 875, Presidente Prudente, SP, 19050-300"
+    },
+    {
+      "nome": "Lins",
+      "lat": -21.681753,
+      "lng": -49.760392,
+      "endereco": "AVENIDA JOSÉ ARIANO RODRIGUES, 936, Lins, SP, 16400-400"
+    },
+    {
+      "nome": "São João da Boa Vista",
+      "lat": -21.978854,
+      "lng": -46.79808,
+      "endereco": "AVENIDA JOÃO OSORIO, 230, São João da Boa Vista, SP, 13870-251"
+    },
+    {
+      "nome": "Lapa",
+      "lat": -23.5319,
+      "lng": -46.698023,
+      "endereco": "RUA AURELIA, 1125, São Paulo, SP, 05046-001"
+    },
+    {
+      "nome": "Ponte Pequena",
+      "lat": -23.524508,
+      "lng": -46.631121,
+      "endereco": "AVENIDA SANTOS DUMONT, 555, São Paulo, SP, 01101-000"
+    },
+    {
+      "nome": "Mooca",
+      "lat": -23.567998,
+      "lng": -46.58781,
+      "endereco": "RUA SEBASTIÃO PRETO, 122, Mooca, São Paulo, SP, 03119-040"
+    },
+    {
+      "nome": "Vila Prudente",
+      "lat": -23.595241,
+      "lng": -46.566805,
+      "endereco": "RUA PARAMU, 716, São Paulo, SP, 03147-100"
+    },
+    {
+      "nome": "Pirituba",
+      "lat": -23.486551,
+      "lng": -46.73809,
+      "endereco": "AVENIDA DO ANASTÁCIO, 2445, Pirituba, São Paulo, SP, 05119-000"
+    },
+    {
+      "nome": "Guaianases",
+      "lat": -23.404406,
+      "lng": -46.642994,
+      "endereco": "ESTRADA SANTA INÊS, KM 2, São Paulo, SP, 02639-000"
+    },
+    {
+      "nome": "São Mateus",
+      "lat": -23.610409,
+      "lng": -46.495323,
+      "endereco": "RUA NELSON DE OLIVEIRA, 50, São Paulo, SP, 03976-010"
+    },
+    {
+      "nome": "Vila dos Remédios",
+      "lat": -23.521173,
+      "lng": -46.758386,
+      "endereco": "RUA PEDRO RISSATO, 221, Osasco, SP, 06296-220"
+    },
+    {
+      "nome": "Alto da Boa Vista",
+      "lat": -23.641852,
+      "lng": -46.689982,
+      "endereco": "RUA ALBERTO HODGE, 247, São Paulo, SP, 04740-020"
+    },
+    {
+      "nome": "São Miguel Paulista",
+      "lat": -23.498392,
+      "lng": -46.446484,
+      "endereco": "TRAVESSA LAMBERTO SILVESTRE, S/N, São Paulo, SP, 08011-395"
+    },
+    {
+      "nome": "Santo André",
+      "lat": -23.679593,
+      "lng": -46.5327,
+      "endereco": "RUA JUQUIÁ, 50, Santo André, SP, 09181-720"
+    },
+    {
+      "nome": "Suzano",
+      "lat": -23.558263,
+      "lng": -46.321585,
+      "endereco": "RUA LUIZ BIANCONI, 91, Suzano, SP, 08664-250"
+    },
+    {
+      "nome": "Caraguatatuba",
+      "lat": -23.692677,
+      "lng": -45.448758,
+      "endereco": "ESTRADA DO RIO CLARO, 420, Caraguatatuba, SP, 11660-490"
+    },
+    {
+      "nome": "Santos",
+      "lat": -23.984899,
+      "lng": -46.294982,
+      "endereco": "AVENIDA GOVERNADOR MÁRIO COVAS JÚNIOR, 1040, Santos, SP, 11020-300"
+    },
+    {
+      "nome": "São José dos Campos",
+      "lat": -23.186778,
+      "lng": -45.885454,
+      "endereco": "RUA GUILHERME ROSA DA SILVA, 300, São José dos Campos, SP, 12244-648"
+    },
+    {
+      "nome": "Itanhaém",
+      "lat": -24.187415,
+      "lng": -46.796642,
+      "endereco": "RUA URCEZINO FERREIRA, 280, Itanhaém, SP, 11740-000"
+    },
+    {
+      "nome": "Registro",
+      "lat": -24.484443,
+      "lng": -47.85613,
+      "endereco": "RUA JOAQUIM MARQUES ALVES, 1002, Registro, SP, 11900-000"
+    }
+  ],
+  "cds_futuro": [
+    {
+      "nome": "Parque Novo Mundo",
+      "lat": -23.513687,
+      "lng": -46.560627,
+      "endereco": "Avenida Educador Paulo Freire, 986, São Paulo, SP"
+    },
+    {
+      "nome": "Hortolândia",
+      "lat": -22.849402,
+      "lng": -47.203328,
+      "endereco": "AVENIDA JOSE AUGUSTO DE ARAUJO, 365, Hortolândia, SP, 13183-091"
+    },
+    {
+      "nome": "Botucatu",
+      "lat": -22.932378,
+      "lng": -48.464578,
+      "endereco": "AVENIDA JOSÉ ITALO BACCHI, S/N, Botucatu, SP, 18606-851"
+    },
+    {
+      "nome": "Lins",
+      "lat": -21.681753,
+      "lng": -49.760392,
+      "endereco": "AVENIDA JOSÉ ARIANO RODRIGUES, 936, Lins, SP, 16400-400"
+    },
+    {
+      "nome": "São José dos Campos",
+      "lat": -23.186778,
+      "lng": -45.885454,
+      "endereco": "RUA GUILHERME ROSA DA SILVA, 300, São José dos Campos, SP, 12244-648"
+    }
+  ],
+  "pas_futuro": [
+    {
+      "nome": "Franca",
+      "lat": -20.538177,
+      "lng": -47.400979,
+      "endereco": "RUA MOACIR VIEIRA COELHO, 300, Franca, SP, 14405-106"
+    },
+    {
+      "nome": "Caraguatatuba",
+      "lat": -23.692677,
+      "lng": -45.448758,
+      "endereco": "ESTRADA DO RIO CLARO, 420, Caraguatatuba, SP, 11660-490"
+    },
+    {
+      "nome": "Santos",
+      "lat": -23.984899,
+      "lng": -46.294982,
+      "endereco": "AVENIDA GOVERNADOR MÁRIO COVAS JÚNIOR, 1040, Santos, SP, 11020-300"
+    },
+    {
+      "nome": "Registro",
+      "lat": -24.484443,
+      "lng": -47.85613,
+      "endereco": "RUA JOAQUIM MARQUES ALVES, 1002, Registro, SP, 11900-000"
+    },
+    {
+      "nome": "Presidente Prudente",
+      "lat": -22.137749,
+      "lng": -51.405021,
+      "endereco": "RUA MANOEL EUGÊNIO, 875, Presidente Prudente, SP, 19050-300"
+    }
+  ]
+}
